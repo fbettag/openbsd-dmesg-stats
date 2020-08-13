@@ -1,0 +1,246 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-07-02 05:06:10</em><br />
+<strong>From:</strong> <em>Mashio M</em><br />
+<strong>Description:</strong> <em>Fujitsu Primergy ES320
+OpenBSD 3.5</em><br />
+
+<pre>
+OpenBSD 3.5-stable (DeltaWorks) #0: Mon Jun 21 14:25:15 JST 2004
+    xxx@xxx.xxx:/home/moto/works/sys/kernel/DeltaWorks
+cpu0: Intel Pentium III (&quot;GenuineIntel&quot; 686-class) 802 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE
+real mem  = 402173952 (392748K)
+avail mem = 366288896 (357704K)
+using 4278 buffers containing 20209664 bytes (19736K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(ff) BIOS, date 04/01/99, BIOS32 rev. 0 @ 0xf0210
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0200/0xb00
+pcibios0: PCI BIOS has 9 Interrupt Routing table entries
+pcibios0: PCI Interrupt Router at 000:07:0 (&quot;Intel 82371AB PIIX4 ISA&quot; rev 0x00)
+pcibios0: PCI bus #2 is the last bus
+bios0: ROM list: 0xc0000/0xa800 0xca800/0xc00 0xe0000/0x800
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82443BX AGP&quot; rev 0x03
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82443BX AGP&quot; rev 0x03
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;ATI Mach64 GM&quot; rev 0x27
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371AB PIIX4 ISA&quot; rev 0x02
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371AB IDE&quot; rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;TEAC, CD-540E, 1.0A&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+uhci0 at pci0 dev 7 function 2 &quot;Intel 82371AB USB&quot; rev 0x01: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+&quot;Intel 82371AB Power Mgmt&quot; rev 0x02 at pci0 dev 7 function 3 not configured
+siop0 at pci0 dev 11 function 0 &quot;Symbios Logic 53c875&quot; rev 0x26: irq 11, using 4K of on-board RAM
+scsibus1 at siop0: 16 targets
+siop0: target 6 now using 8 bit 10.0 MHz 16 REQ/ACK offset xfers
+st0 at scsibus1 targ 6 lun 0: &lt;HP, C1537A, L111&gt; SCSI2 1/sequential removable
+st0: drive empty
+ppb1 at pci0 dev 13 function 0 &quot;Intel i960 RP PCI-PCI&quot; rev 0x05
+pci2 at ppb1 bus 2
+ami0 at pci0 dev 13 function 1 &quot;Intel 80960RP ATU&quot; rev 0x05: irq 11 HP 466/32b
+ami0: FW F.02.02, BIOS vB.02.01, 16MB RAM
+ami0: 1 channels, 16 targets, 1 logical drives
+scsibus2 at ami0: 8 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;AMI, Host drive #00, &gt; SCSI2 0/direct fixed
+sd0: 8714MB, 1110 cyl, 255 head, 63 sec, 512 bytes/sec, 17846272 sec total
+fxp0 at pci0 dev 16 function 0 &quot;Intel 82557&quot; rev 0x05: irq 10, address xx:xx:xx:xx:xx:xx
+inphy0 at fxp0 phy 1: i82555 10/100 media interface, rev. 0
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt2 at isa0 port 0x3bc/4: polled
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+biomask 8840 netmask 8c40 ttymask 8c42
+pctr: 686-class user-level performance counters enabled
+mtrr: Pentium Pro MTRR support
+dkcsum: sd0 matched BIOS disk 80
+root on sd0a
+rootdev=0x400 rrootdev=0xd00 rawdev=0xd02
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

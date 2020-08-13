@@ -1,0 +1,270 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-03-28 11:35:29</em><br />
+<strong>From:</strong> <em>Ypnose</em><br />
+<strong>Description:</strong> <em>Dell Latitude E6410 (OpenBSD)</em><br />
+
+<pre>
+OpenBSD 5.7-current (RAMDISK_CD) #819: Thu Mar 26 15:01:02 MDT 2015
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+RTC BIOS diagnostic error 30&lt;config_unit,memory_size&gt;
+real mem = 4129681408 (3938MB)
+avail mem = 4002807808 (3817MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xf2420 (70 entries)
+bios0: vendor Dell Inc. version &quot;A16&quot; date 12/05/2013
+bios0: Dell Inc. Latitude E6410
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP APIC TCPA MCFG HPET BOOT SLIC SSDT DMAR
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7 CPU M 620 @ 2.67GHz, 3059.54 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,LONG,LAHF,PERF,ITSC
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 133MHz
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (AGP_)
+acpiprt2 at acpi0: bus 12 (P0P1)
+acpiprt3 at acpi0: bus 2 (RP01)
+acpiprt4 at acpi0: bus 3 (RP02)
+acpiprt5 at acpi0: bus 4 (RP03)
+acpiprt6 at acpi0: bus 6 (RP04)
+acpiprt7 at acpi0: bus -1 (RP05)
+acpiprt8 at acpi0: bus -1 (RP07)
+acpiprt9 at acpi0: bus -1 (RP08)
+acpiprt10 at acpi0: bus -1 (PEG3)
+acpiprt11 at acpi0: bus -1 (PEG5)
+acpiec0 at acpi0
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core Host&quot; rev 0x02
+ppb0 at pci0 dev 1 function 0 &quot;Intel 3400 PCIE&quot; rev 0x02: msi
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x0a6c rev 0xa2
+vga1: aperture needed
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+vendor &quot;NVIDIA&quot;, unknown product 0x0be3 (class multimedia subclass hdaudio, rev 0xa1) at pci1 dev 0 function 1 not configured
+&quot;Intel 3400 MEI&quot; rev 0x06 at pci0 dev 22 function 0 not configured
+&quot;Intel 3400 KT&quot; rev 0x06 at pci0 dev 22 function 3 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel 82577LM&quot; rev 0x05: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 3400 HD Audio&quot; rev 0x05 at pci0 dev 27 function 0 not configured
+ppb1 at pci0 dev 28 function 0 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 &quot;Intel Centrino Advanced-N 6200&quot; rev 0x35: msi, MIMO 2T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 2 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci4 at ppb3 bus 4
+sdhc0 at pci4 dev 0 function 0 &quot;Ricoh 5U822 SD/MMC&quot; rev 0x03: apic 2 int 19
+sdmmc0 at sdhc0
+&quot;Ricoh 5U832 Firewire&quot; rev 0x03 at pci4 dev 0 function 4 not configured
+ppb4 at pci0 dev 28 function 3 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci5 at ppb4 bus 6
+ehci1 at pci0 dev 29 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 2 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xa5
+pci6 at ppb5 bus 12
+&quot;Intel QM57 LPC&quot; rev 0x05 at pci0 dev 31 function 0 not configured
+pciide0 at pci0 dev 31 function 2 &quot;Intel 82081HBM RAID&quot; rev 0x05: DMA, channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide0: using apic 2 int 19 for native-PCI interrupt
+&quot;Intel 3400 SMBus&quot; rev 0x05 at pci0 dev 31 function 3 not configured
+&quot;Intel 3400 Thermal&quot; rev 0x05 at pci0 dev 31 function 6 not configured
+pci7 at mainbus0 bus 63
+pchb1 at pci7 dev 0 function 0 &quot;Intel QuickPath&quot; rev 0x02
+pchb2 at pci7 dev 0 function 1 &quot;Intel QuickPath&quot; rev 0x02
+pchb3 at pci7 dev 2 function 0 &quot;Intel QPI Link&quot; rev 0x02
+pchb4 at pci7 dev 2 function 1 &quot;Intel QPI Physical&quot; rev 0x02
+pchb5 at pci7 dev 2 function 2 &quot;Intel Reserved&quot; rev 0x02
+pchb6 at pci7 dev 2 function 3 &quot;Intel Reserved&quot; rev 0x02
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pckbc0: using irq 12 for aux slot
+uhub2 at uhub0 port 1 &quot;vendor 0x8087 product 0x0020&quot; rev 2.00/0.00 addr 2
+&quot;CN06YWTK7248707F09FZ Laptop_Integrated_Webcam_3M&quot; rev 2.00/3.31 addr 3 at uhub2 port 4 not configured
+uhub3 at uhub1 port 1 &quot;vendor 0x8087 product 0x0020&quot; rev 2.00/0.00 addr 2
+umass0 at uhub3 port 3 configuration 1 interface 0 &quot;SMI Corporation USB DISK&quot; rev 2.00/11.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;, , 1100&gt; SCSI0 0/direct removable serial.090c1000000360007317
+sd0: 1947MB, 512 bytes/sector, 3987456 sectors
+&quot;Dell Computer Corp DW375 Bluetooth Module&quot; rev 2.00/5.17 addr 4 at uhub3 port 7 not configured
+&quot;Broadcom Corp 5880&quot; rev 1.10/1.01 addr 5 at uhub3 port 8 not configured
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,379 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-11-25 18:42:05</em><br />
+<strong>From:</strong> <em>tm</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.4-current on ThinkPad X1 Carbon 6th with Thunderbolt BIOS Assist Mode Disabled</em><br />
+
+<pre>
+OpenBSD 6.4-current (HAVANNA.MP) #2: Tue Nov 20 12:01:36 CET 2018
+    tm@havanna:/usr/src/sys/arch/amd64/compile/HAVANNA.MP
+real mem = 16900440064 (16117MB)
+avail mem = 16378957824 (15620MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0xbf01a000 (63 entries)
+bios0: vendor LENOVO version &quot;N23ET56W (1.31 )&quot; date 09/17/2018
+bios0: LENOVO 20KHCTO1WW
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT SSDT TPM2 UEFI SSDT SSDT HPET APIC MCFG ECDT SSDT SSDT BOOT BATB SSDT SSDT SSDT LPIT WSMT SSDT SSDT SSDT DBGP DBG2 MSDM DMAR NHLT ASF! FPDT UEFI
+acpi0: wakeup devices GLAN(S4) XHC_(S3) XDCI(S4) HDAS(S4) RP01(S4) PXSX(S4) RP02(S4) PXSX(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) RP06(S4) PXSX(S4) RP07(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 23999999 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 1387.82 MHz, 06-8e-0a
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 1144.86 MHz, 06-8e-0a
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 956.12 MHz, 06-8e-0a
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 898.26 MHz, 06-8e-0a
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 1 (application processor)
+cpu4: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 897.92 MHz, 06-8e-0a
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 1, core 0, package 0
+cpu5 at mainbus0: apid 3 (application processor)
+cpu5: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 897.92 MHz, 06-8e-0a
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 1, core 1, package 0
+cpu6 at mainbus0: apid 5 (application processor)
+cpu6: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 897.92 MHz, 06-8e-0a
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 1, core 2, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, 897.92 MHz, 06-8e-0a
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 1, core 3, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf0000000, bus 0-127
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus 4 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiprt7 at acpi0: bus -1 (RP07)
+acpiprt8 at acpi0: bus -1 (RP08)
+acpiprt9 at acpi0: bus 5 (RP09)
+acpiprt10 at acpi0: bus -1 (RP10)
+acpiprt11 at acpi0: bus -1 (RP11)
+acpiprt12 at acpi0: bus -1 (RP12)
+acpiprt13 at acpi0: bus -1 (RP13)
+acpiprt14 at acpi0: bus -1 (RP14)
+acpiprt15 at acpi0: bus -1 (RP15)
+acpiprt16 at acpi0: bus -1 (RP16)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP21)
+acpiprt22 at acpi0: bus -1 (RP22)
+acpiprt23 at acpi0: bus -1 (RP23)
+acpiprt24 at acpi0: bus -1 (RP24)
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu4 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu5 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu6 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu7 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHC_
+acpipwrres1 at acpi0: PXP_, resource for RP09
+acpitz0 at acpi0: critical temperature is 128 degC
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpithinkpad0 at acpi0
+acpiac0 at acpi0: AC unit offline
+acpibat0 at acpi0: BAT0 model &quot;01AV494&quot; serial  1285 type LiP oem &quot;LGC&quot;
+&quot;LEN0100&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;INT344B&quot; at acpi0 not configured
+&quot;NXP1001&quot; at acpi0 not configured
+&quot;INT0E0C&quot; at acpi0 not configured
+acpibtn0 at acpi0: SLPB
+&quot;PNP0C14&quot; at acpi0 not configured
+acpibtn1 at acpi0: LID_
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+&quot;IFX0763&quot; at acpi0 not configured
+&quot;USBC000&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 1387 MHz: speeds: 2101, 2100, 1900, 1800, 1700, 1600, 1500, 1400, 1200, 1100, 1000, 800, 700, 600, 500, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 8G Host&quot; rev 0x08
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel UHD Graphics 620&quot; rev 0x07
+drm0 at inteldrm0
+inteldrm0: msi
+error: [drm:pid0:i915_firmware_load_error_print] *ERROR* failed to load firmware i915/kbl_dmc_ver1.bin (-22)
+inteldrm0: 2560x1440, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel Core 6G Thermal&quot; rev 0x08 at pci0 dev 4 function 0 not configured
+&quot;Intel Core GMM&quot; rev 0x00 at pci0 dev 8 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 100 Series xHCI&quot; rev 0x21: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+pchtemp0 at pci0 dev 20 function 2 &quot;Intel 100 Series Thermal&quot; rev 0x21
+dwiic0 at pci0 dev 21 function 0 &quot;Intel 100 Series I2C&quot; rev 0x21: apic 2 int 16
+iic0 at dwiic0
+&quot;NXP1001&quot; at iic0 addr 0x29 not configured
+&quot;Intel 100 Series MEI&quot; rev 0x21 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 100 Series KT&quot; rev 0x21: ports: 16 com
+com4 at puc0 port 0 apic 2 int 19: ns16550a, 16 byte fifo
+ppb0 at pci0 dev 28 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci1 at ppb0 bus 2
+iwm0 at pci1 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 8265&quot; rev 0x78, msi
+ppb1 at pci0 dev 28 function 4 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci2 at ppb1 bus 4
+nvme0 at pci2 dev 0 function 0 &quot;Samsung SM981/PM981 NVMe&quot; rev 0x00: msi, NVMe 1.2
+nvme0: SAMSUNG MZVLB1T0HALR-000L7, firmware 3L2QEXA7, serial S3TPNE0K109482
+scsibus1 at nvme0: 1 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;NVMe, SAMSUNG MZVLB1T0, 3L2Q&gt; SCSI4 0/direct fixed
+sd0: 976762MB, 512 bytes/sector, 2000409264 sectors
+ppb2 at pci0 dev 29 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci3 at ppb2 bus 5
+ppb3 at pci3 dev 0 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02
+pci4 at ppb3 bus 6
+ppb4 at pci4 dev 0 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02: msi
+pci5 at ppb4 bus 7
+&quot;Intel JHL6540 Thunderbolt&quot; rev 0x02 at pci5 dev 0 function 0 not configured
+ppb5 at pci4 dev 1 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02: msi
+pci6 at ppb5 bus 8
+ppb6 at pci4 dev 2 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02: msi
+pci7 at ppb6 bus 59
+xhci1 at pci7 dev 0 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02: msi, xHCI 1.16
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+ppb7 at pci4 dev 4 function 0 &quot;Intel JHL6540 Thunderbolt&quot; rev 0x02: msi
+pci8 at ppb7 bus 60
+pcib0 at pci0 dev 31 function 0 &quot;Intel 200 Series LPC&quot; rev 0x21
+&quot;Intel 100 Series PMC&quot; rev 0x21 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 &quot;Intel 200 Series HD Audio&quot; rev 0x21: msi
+azalia0: codecs: Realtek/0x0285, Intel/0x280b, using Realtek/0x0285
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 &quot;Intel 100 Series SMBus&quot; rev 0x21: apic 2 int 16
+iic1 at ichiic0
+em0 at pci0 dev 31 function 6 &quot;Intel I219-LM&quot; rev 0x21: msi, address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 9.16, 0x1e2a1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+uvideo0 at uhub0 port 8 configuration 1 interface 0 &quot;SunplusIT Inc Integrated Camera&quot; rev 2.01/54.20 addr 2
+video0 at uvideo0
+ugen0 at uhub0 port 9 &quot;vendor 0x06cb product 0x009a&quot; rev 2.00/1.64 addr 3
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/29.08 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC CRW, 1.00&gt; SCSI4 0/direct removable serial.0bda0328008282014000
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+sd2 at scsibus4 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd2: 976761MB, 512 bytes/sector, 2000407649 sectors
+root on sd2a (29ffcc527a600f5f.a) swap on sd2b dump on sd2b
+iwm0: hw rev 0x230, fw ver 22.361476.0, address xx:xx:xx:xx:xx:xx
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

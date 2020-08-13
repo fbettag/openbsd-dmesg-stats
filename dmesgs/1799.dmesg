@@ -1,0 +1,234 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2006-04-11 22:49:09</em><br />
+<strong>From:</strong> <em>nikolai</em><br />
+<strong>Description:</strong> <em>Soekris net4801</em><br />
+
+<pre>
+OpenBSD 3.9-current (GENERIC) #17: Tue Apr  4 23:53:34 EDT 2006
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Geode(TM) Integrated Processor by National Semi (Geode by NSC 586-class) 267 MHz
+cpu0: FPU,TSC,MSR,CX8,CMOV,MMX
+cpu0: TSC disabled
+real mem  = 133787648 (130652K)
+avail mem = 115343360 (112640K)
+using 1658 buffers containing 6791168 bytes (6632K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(00) BIOS, date 20/40/21, BIOS32 rev. 0 @ 0xf7840
+pcibios0 at bios0: rev 2.0 @ 0xf0000/0x10000
+pcibios0: pcibios_get_intr_routing - function not supported
+pcibios0: PCI IRQ Routing information unavailable.
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc8000/0x9000
+cpu0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 Cyrix GXm PCI rev 0x00
+sis0 at pci0 dev 6 function 0 NS DP83815 10/100 rev 0x00, DP83816A: irq 10, address xx:xx:xx:xx:xx:xx
+nsphyter0 at sis0 phy 0: DP83815 10/100 PHY, rev. 1
+sis1 at pci0 dev 7 function 0 NS DP83815 10/100 rev 0x00, DP83816A: irq 10, address xx:xx:xx:xx:xx:xx
+nsphyter1 at sis1 phy 0: DP83815 10/100 PHY, rev. 1
+sis2 at pci0 dev 8 function 0 NS DP83815 10/100 rev 0x00, DP83816A: irq 10, address xx:xx:xx:xx:xx:xx
+nsphyter2 at sis2 phy 0: DP83815 10/100 PHY, rev. 1
+ath0 at pci0 dev 10 function 0 Atheros AR5212 rev 0x01: irq 11
+ath0: AR5213 5.9 phy 4.3 rf5112 3.6, FCC2A*, address xx:xx:xx:xx:xx:xx
+hifn0 at pci0 dev 14 function 0 Hifn 7955/7954 rev 0x00: LZS 3DES ARC4 MD5 SHA1 RNG AES PK, 32KB dram, irq 5
+gscpcib0 at pci0 dev 18 function 0 NS SC1100 ISA rev 0x00
+gpio0 at gscpcib0: 64 pins
+NS SC1100 SMI rev 0x00 at pci0 dev 18 function 1 not configured
+pciide0 at pci0 dev 18 function 2 NS SCx200 IDE rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;TOSHIBA THNCF512MMG&gt;
+wd0: 1-sector PIO, LBA, 488MB, 1000944 sectors
+wd0(pciide0:0:0): using PIO mode 2
+geodesc0 at pci0 dev 18 function 5 NS SC1100 X-Bus rev 0x00: iid 6 revision 3 wdstatus 0
+ohci0 at pci0 dev 19 function 0 Compaq USB OpenHost rev 0x08: irq 9, version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Compaq OHCI root hub, rev 1.00/1.00, addr 1
+uhub0: 3 ports with 3 removable, self powered
+isa0 at gscpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+nsclpcsio0 at isa0 port 0x2e/2: NSC PC87366 rev 9: GPIO VLM TMS
+gpio1 at nsclpcsio0: 29 pins
+gscsio0 at isa0 port 0x15c/2: SC1100 SIO rev 1:
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom0: console
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+biomask f3c5 netmask ffe5 ttymask ffe7
+pctr: no performance counters in CPU
+dkcsum: wd0 matches BIOS drive 0x80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

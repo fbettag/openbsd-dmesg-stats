@@ -1,0 +1,287 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-06-23 08:58:21</em><br />
+<strong>From:</strong> <em>Micky Wicky</em><br />
+<strong>Description:</strong> <em>HP Mini 110-1120 netbook, replaced internal wifi, everything works flawlessly</em><br />
+
+<pre>
+OpenBSD 6.3 (GENERIC.MP) #3: Fri May 18 00:10:46 CEST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Atom(TM) CPU N270 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+real mem  = 2138259456 (2039MB)
+avail mem = 2085269504 (1988MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 01/12/10, BIOS32 rev. 0 @ 0xf0010, SMBIOS rev. 2.4 @ 0xfc8a0 (18 entries)
+bios0: vendor Hewlett-Packard version &quot;308F0 Ver. F.19&quot; date 01/12/2010
+bios0: Hewlett-Packard HP Mini 110-1100
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC APIC MCFG OEMS OEMB HPET ASF! SSDT
+acpi0: wakeup devices P0P2(S4) P0P1(S4) LAN2(S3) USB0(S3) USB3(S3) EUSB(S3) MC97(S4) P0P4(S4) P0P5(S4) P0P6(S4) P0P7(S4) P0P8(S4) P0P9(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.0.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU N270 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 2
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (P0P1)
+acpiprt2 at acpi0: bus 2 (P0P5)
+acpiprt3 at acpi0: bus -1 (P0P6)
+acpiprt4 at acpi0: bus -1 (P0P7)
+acpiprt5 at acpi0: bus -1 (P0P8)
+acpiprt6 at acpi0: bus -1 (P0P9)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(100@57 mwait.3@0x30), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 100 degC
+&quot;SYN1E0C&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT1 model &quot;Primary&quot; serial   type LION oem &quot;Hewlett-Packard&quot;
+acpiac0 at acpi0: AC unit offline
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;PNP0C14&quot; at acpi0 not configured
+acpibtn2 at acpi0: PWRB
+acpivideo0 at acpi0: IGD_
+acpivout0 at acpivideo0: LCD_
+bios0: ROM list: 0xc0000/0xec00!
+cpu0: Enhanced SpeedStep 1597 MHz: speeds: 1600, 1333, 1067, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945GME Host&quot; rev 0x03
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel 82945GME Video&quot; rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: apic 2 int 16
+inteldrm0: 1024x600, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 82945GM Video&quot; rev 0x03 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801GB HD Audio&quot; rev 0x02: msi
+azalia0: codecs: IDT 92HD81B1X
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 2 int 16
+pci1 at ppb0 bus 1
+iwn0 at pci1 dev 0 function 0 &quot;Intel WiFi Link 5100&quot; rev 0x00: msi, MIMO 1T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb1 at pci0 dev 28 function 1 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 2 int 17
+pci2 at ppb1 bus 2
+alc0 at pci2 dev 0 function 0 &quot;Attansic Technology L2C&quot; rev 0xc0: msi, address xx:xx:xx:xx:xx:xx
+atphy0 at alc0 phy 0: F1 10/100/1000 PHY, rev. 11
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x02: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x02: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x02: apic 2 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x02: apic 2 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x02: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xe2
+pci3 at ppb2 bus 3
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GBM LPC&quot; rev 0x02: PM disabled
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801GBM AHCI&quot; rev 0x02: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+ahci0: PHY offline on port 2
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, WDC WD3200BEVT-2, 01.0&gt; SCSI3 0/direct fixed naa.50014ee203b2ba56
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2, 0x1c0b1 0xa00000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uvideo0 at uhub0 port 4 configuration 1 interface 0 &quot;importek HP Webcam-50&quot; rev 2.00/37.12 addr 2
+video0 at uvideo0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (b5906b49f67e06e9.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,328 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-06-23 21:51:39</em><br />
+<strong>From:</strong> <em>dgv</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.3 (GENERIC.MP) on Dell Latitude E6410</em><br />
+
+<pre>
+OpenBSD 6.3 (GENERIC.MP) #4: Sun Jun 17 11:22:20 CEST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4133875712 (3942MB)
+avail mem = 4001517568 (3816MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xf2440 (67 entries)
+bios0: vendor Dell Inc. version &quot;A07&quot; date 02/15/2011
+bios0: Dell Inc. Latitude E6410
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC TCPA MCFG HPET BOOT SLIC SSDT
+acpi0: wakeup devices AGP_(S4) P0P1(S4) HDEF(S4) PXSX(S4) RP01(S4) PXSX(S4) RP02(S4) PXSX(S4) RP03(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) RP07(S4) PXSX(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.50 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+acpitimer0: recalibrated TSC frequency 2660010027 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu1 at mainbus0: apid 4 (application processor)
+cpu1: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 2, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Core(TM) i5 CPU M 560 @ 2.67GHz, 2926.01 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 2, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpihpet0: recalibrated TSC frequency 2660007219 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (AGP_)
+acpiprt2 at acpi0: bus 11 (P0P1)
+acpiprt3 at acpi0: bus 1 (RP01)
+acpiprt4 at acpi0: bus 2 (RP02)
+acpiprt5 at acpi0: bus 3 (RP03)
+acpiprt6 at acpi0: bus 5 (RP04)
+acpiprt7 at acpi0: bus -1 (RP05)
+acpiprt8 at acpi0: bus -1 (RP07)
+acpiprt9 at acpi0: bus -1 (RP08)
+acpiprt10 at acpi0: bus -1 (PEG3)
+acpiprt11 at acpi0: bus -1 (PEG5)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu1 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu2 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu3 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+&quot;PNP0A05&quot; at acpi0 not configured
+&quot;DLL040A&quot; at acpi0 not configured
+&quot;SMO8800&quot; at acpi0 not configured
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model &quot;DELL 7P9T211&quot; serial 1525 type LION oem &quot;SMP&quot;
+acpibat1 at acpi0: BAT1 not present
+&quot;*pnp0c14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivideo1 at acpi0: VID_
+acpivout0 at acpivideo1: LCD_
+cpu0: Enhanced SpeedStep 2926 MHz: speeds: 2667, 2666, 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core Host&quot; rev 0x02
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x02
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0: msi
+inteldrm0: 1280x800, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+em0 at pci0 dev 25 function 0 &quot;Intel 82577LM&quot; rev 0x05: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 3400 HD Audio&quot; rev 0x05: msi
+azalia0: codecs: IDT 92HD81B1C, Intel/0x2804, using IDT 92HD81B1C
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci2 at ppb1 bus 2
+&quot;Broadcom BCM43224&quot; rev 0x01 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 2 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci3 at ppb2 bus 3
+cbb0 at pci3 dev 0 function 0 vendor &quot;Ricoh&quot;, unknown product 0xe476 rev 0x02: apic 2 int 18
+sdhc0 at pci3 dev 0 function 1 &quot;Ricoh 5U822 SD/MMC&quot; rev 0x03: apic 2 int 19
+sdhc0: SDHC 3.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+&quot;Ricoh 5U832 Firewire&quot; rev 0x03 at pci3 dev 0 function 4 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 4 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+ppb3 at pci0 dev 28 function 3 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci4 at ppb3 bus 5
+ehci1 at pci0 dev 29 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 2 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xa5
+pci5 at ppb4 bus 11
+pcib0 at pci0 dev 31 function 0 &quot;Intel QM57 LPC&quot; rev 0x05
+ahci0 at pci0 dev 31 function 2 &quot;Intel 3400 AHCI&quot; rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, ST320LM001 HN-M3, 2AR1&gt; SCSI3 0/direct fixed naa.50004cf206beabc0
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+cd0 at scsibus1 targ 1 lun 0: &lt;TSSTcorp, DVD+-RW TS-U633J, D300&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 3400 SMBus&quot; rev 0x05: apic 2 int 18
+iic0 at ichiic0
+lisa0 at iic0 addr 0x1d: lis331dl
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci0 dev 31 function 6 &quot;Intel 3400 Thermal&quot; rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+pci6 at mainbus0 bus 63
+pchb1 at pci6 dev 0 function 0 &quot;Intel QuickPath&quot; rev 0x02
+pchb2 at pci6 dev 0 function 1 &quot;Intel QuickPath&quot; rev 0x02
+pchb3 at pci6 dev 2 function 0 &quot;Intel QPI Link&quot; rev 0x02
+pchb4 at pci6 dev 2 function 1 &quot;Intel QPI Physical&quot; rev 0x02
+pchb5 at pci6 dev 2 function 2 &quot;Intel Reserved&quot; rev 0x02
+pchb6 at pci6 dev 2 function 3 &quot;Intel Reserved&quot; rev 0x02
+vmm0 at mainbus0: VMX/EPT
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 4 configuration 1 interface 0 &quot;CN06YWTK7248712O05FKA01 Laptop_Integrated_Webcam_3M&quot; rev 2.00/3.31 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub3 port 8 &quot;Broadcom Corp 5880&quot; rev 1.10/1.01 addr 3
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (24cb501aec6ef190.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

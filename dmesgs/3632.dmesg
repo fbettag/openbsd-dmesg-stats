@@ -1,0 +1,297 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-06-05 15:21:37</em><br />
+<strong>From:</strong> <em>dave</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.3 (i386) on Dell Inspiron Mini 10V</em><br />
+
+<pre>
+OpenBSD 6.3 (GENERIC.MP) #3: Fri May 18 00:10:46 CEST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Atom(TM) CPU N270 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+real mem  = 2137341952 (2038MB)
+avail mem = 2084376576 (1987MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 07/29/09, BIOS32 rev. 0 @ 0xfdc40, SMBIOS rev. 2.5 @ 0xf1fc0 (33 entries)
+bios0: vendor Dell Inc. version &quot;A06&quot; date 07/29/2009
+bios0: Dell Inc. Inspiron 1011
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC HPET MCFG TCPA TMOR APIC BOOT SLIC SSDT SSDT SSDT
+acpi0: wakeup devices LID0(S3) HDEF(S4) PXS1(S4) PXS2(S4) PXS3(S3) PXS4(S4) PXS5(S4) PXS6(S4) USB1(S0) USB2(S0) USB3(S0) USB4(S0) USB7(S0) SLT0(S4) SLT1(S4) SLT2(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.0.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU N270 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 1
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus 3 (RP02)
+acpiprt3 at acpi0: bus 4 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus -1 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiprt7 at acpi0: bus 5 (PCIB)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(100@100 mwait.3@0x30), !C2(500@20 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(100@100 mwait.3@0x30), !C2(500@20 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 102 degC
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+&quot;CPL0002&quot; at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model &quot;DELL N531P9C8&quot; serial 11 type Lion oem &quot;Simplo&quot;
+&quot;SYN0601&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: LCD_
+bios0: ROM list: 0xc0000/0xec00! 0xcf000/0x1000 0xe0000/0x1800!
+cpu0: Enhanced SpeedStep 1597 MHz: speeds: 1600, 1333, 1067, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945GME Host&quot; rev 0x03
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel 82945GME Video&quot; rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: apic 1 int 16
+inteldrm0: 1024x600, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 82945GM Video&quot; rev 0x03 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801GB HD Audio&quot; rev 0x02: msi
+azalia0: codecs: Realtek ALC272
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 17
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 1 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 16
+pci2 at ppb1 bus 3
+&quot;Broadcom BCM4315&quot; rev 0x01 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 2 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 18
+pci3 at ppb2 bus 4
+re0 at pci3 dev 0 function 0 &quot;Realtek 8101E&quot; rev 0x02: RTL8102EL (0x2480), msi, address 00:xx:01
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xe2
+pci4 at ppb3 bus 5
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GBM LPC&quot; rev 0x02: PM disabled
+pciide0 at pci0 dev 31 function 2 &quot;Intel 82801GBM SATA&quot; rev 0x02: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using apic 1 int 19 for native-PCI interrupt
+wd0 at pciide0 channel 0 drive 0: &lt;INTEL SSDSC2CT080A4&gt;
+wd0: 16-sector PIO, LBA48, 76319MB, 156301488 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 6
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x02: apic 1 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL5 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.4, 0x1e0b1 0xa40000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uvideo0 at uhub0 port 2 configuration 1 interface 0 &quot;D-MAX(Sunplus) Integrated Webcam&quot; rev 2.00/8b.28 addr 2
+video0 at uvideo0
+umass0 at uhub0 port 3 configuration 1 interface 0 &quot;Generic USB2.0-CRW&quot; rev 2.00/58.88 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: &lt;Generic-, Multi-Card, 1.00&gt; SCSI0 0/direct removable serial.0xxx0
+ugen0 at uhub3 port 2 &quot;Broadcom Corp BCM2046 Bluetooth Device&quot; rev 2.00/4.67 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (5xxxa.a) swap on wd0b dump on wd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

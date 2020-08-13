@@ -1,0 +1,582 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-08-24 02:23:18</em><br />
+<strong>From:</strong> <em>jhuldtgren</em><br />
+<strong>Description:</strong> <em>Asus Z10PE-D16 w/2x Intel Xeon E5-2620 v3</em><br />
+
+<pre>
+OpenBSD 5.8 (GENERIC.MP) #1236: Sun Aug 16 02:31:04 MDT 2015
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 137323704320 (130962MB)
+avail mem = 133157974016 (126989MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0x7db95000 (134 entries)
+bios0: vendor American Megatrends Inc. version &quot;0602&quot; date 02/05/2015
+bios0: ASUSTeK COMPUTER INC. Z10PE-D16 Series
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG EINJ UEFI BDAT HPET MSCT PMCT SLIT SRAT WDDT SSDT SPMI SSDT SSDT PRAD DMAR HEST BERT ERST
+acpi0: wakeup devices PS2K(S4) PS2M(S4) IP2P(S3) XHCI(S4) EHC1(S4) BR1A(S4) BR1B(S4) BR2A(S4) BR2B(S4) BR2C(S4) BR2D(S4) BR3A(S4) BR3B(S4) BR3C(S4) BR3D(S4) RP01(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.80 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 8 (application processor)
+cpu4: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 0, core 4, package 0
+cpu5 at mainbus0: apid 10 (application processor)
+cpu5: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 0, core 5, package 0
+cpu6 at mainbus0: apid 16 (application processor)
+cpu6: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2391.21 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 0, core 0, package 1
+cpu7 at mainbus0: apid 18 (application processor)
+cpu7: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 0, core 1, package 1
+cpu8 at mainbus0: apid 20 (application processor)
+cpu8: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu8: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu8: 256KB 64b/line 8-way L2 cache
+cpu8: smt 0, core 2, package 1
+cpu9 at mainbus0: apid 22 (application processor)
+cpu9: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu9: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu9: 256KB 64b/line 8-way L2 cache
+cpu9: smt 0, core 3, package 1
+cpu10 at mainbus0: apid 24 (application processor)
+cpu10: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu10: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu10: 256KB 64b/line 8-way L2 cache
+cpu10: smt 0, core 4, package 1
+cpu11 at mainbus0: apid 26 (application processor)
+cpu11: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu11: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu11: 256KB 64b/line 8-way L2 cache
+cpu11: smt 0, core 5, package 1
+cpu12 at mainbus0: apid 1 (application processor)
+cpu12: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu12: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu12: 256KB 64b/line 8-way L2 cache
+cpu12: smt 1, core 0, package 0
+cpu13 at mainbus0: apid 3 (application processor)
+cpu13: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu13: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu13: 256KB 64b/line 8-way L2 cache
+cpu13: smt 1, core 1, package 0
+cpu14 at mainbus0: apid 5 (application processor)
+cpu14: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu14: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu14: 256KB 64b/line 8-way L2 cache
+cpu14: smt 1, core 2, package 0
+cpu15 at mainbus0: apid 7 (application processor)
+cpu15: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu15: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu15: 256KB 64b/line 8-way L2 cache
+cpu15: smt 1, core 3, package 0
+cpu16 at mainbus0: apid 9 (application processor)
+cpu16: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu16: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu16: 256KB 64b/line 8-way L2 cache
+cpu16: smt 1, core 4, package 0
+cpu17 at mainbus0: apid 11 (application processor)
+cpu17: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu17: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu17: 256KB 64b/line 8-way L2 cache
+cpu17: smt 1, core 5, package 0
+cpu18 at mainbus0: apid 17 (application processor)
+cpu18: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu18: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu18: 256KB 64b/line 8-way L2 cache
+cpu18: smt 1, core 0, package 1
+cpu19 at mainbus0: apid 19 (application processor)
+cpu19: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu19: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu19: 256KB 64b/line 8-way L2 cache
+cpu19: smt 1, core 1, package 1
+cpu20 at mainbus0: apid 21 (application processor)
+cpu20: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu20: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu20: 256KB 64b/line 8-way L2 cache
+cpu20: smt 1, core 2, package 1
+cpu21 at mainbus0: apid 23 (application processor)
+cpu21: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu21: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu21: 256KB 64b/line 8-way L2 cache
+cpu21: smt 1, core 3, package 1
+cpu22 at mainbus0: apid 25 (application processor)
+cpu22: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu22: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu22: 256KB 64b/line 8-way L2 cache
+cpu22: smt 1, core 4, package 1
+cpu23 at mainbus0: apid 27 (application processor)
+cpu23: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz, 2394.45 MHz
+cpu23: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu23: 256KB 64b/line 8-way L2 cache
+cpu23: smt 1, core 5, package 1
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec01000, version 20, 24 pins
+ioapic2 at mainbus0: apid 10 pa 0xfec40000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0x80000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 255 (UNC1)
+acpiprt1 at acpi0: bus 127 (UNC0)
+acpiprt2 at acpi0: bus 0 (PCI0)
+acpiprt3 at acpi0: bus 1 (BR1A)
+acpiprt4 at acpi0: bus 2 (BR2A)
+acpiprt5 at acpi0: bus 3 (BR3A)
+acpiprt6 at acpi0: bus 4 (BR3C)
+acpiprt7 at acpi0: bus 5 (BR3D)
+acpiprt8 at acpi0: bus 7 (RP08)
+acpiprt9 at acpi0: bus 8 (BR77)
+acpiprt10 at acpi0: bus 128 (PCI1)
+acpiprt11 at acpi0: bus -1 (QR2A)
+acpiprt12 at acpi0: bus -1 (QR3A)
+acpicpu0 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu1 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu2 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu3 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu4 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu5 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu6 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu7 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu8 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu9 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu10 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu11 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu12 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu13 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu14 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu15 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu16 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu17 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu18 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu19 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu20 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu21 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu22 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpicpu23 at acpi0: C2(350@41 io@0x415), C1(1016@1 halt), PSS
+acpibtn0 at acpi0: PWRB
+ipmi at mainbus0 not configured
+cpu0: Enhanced SpeedStep 2394 MHz: speeds: 2401, 2400, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel E5 v3 Host&quot; rev 0x02
+ppb0 at pci0 dev 1 function 0 &quot;Intel E5 v3 PCIE&quot; rev 0x02: msi
+pci1 at ppb0 bus 1
+mfi0 at pci1 dev 0 function 0 &quot;Symbios Logic MegaRAID SAS2108 GEN2&quot; rev 0x05: apic 9 int 2
+mfi0: &quot;LSI MegaRAID SAS 9260-8i&quot;, firmware 12.13.0-0154, 512MB cache
+scsibus1 at mfi0: 64 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;LSI, MR9260-8i, 2.13&gt; SCSI3 0/direct fixed naa.600605b0092d72f01d4549d73382f681
+sd0: 19075072MB, 512 bytes/sector, 39065747456 sectors
+ppb1 at pci0 dev 2 function 0 &quot;Intel E5 v3 PCIE&quot; rev 0x02: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 3 function 0 &quot;Intel E5 v3 PCIE&quot; rev 0x02
+pci3 at ppb2 bus 3
+em0 at pci3 dev 0 function 0 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci3 dev 0 function 1 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 3 function 2 &quot;Intel E5 v3 PCIE&quot; rev 0x02
+pci4 at ppb3 bus 4
+em2 at pci4 dev 0 function 0 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em2: PHY reset is blocked due to SOL/IDER session.
+em3 at pci4 dev 0 function 1 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb4 at pci0 dev 3 function 3 &quot;Intel E5 v3 PCIE&quot; rev 0x02: msi
+pci5 at ppb4 bus 5
+&quot;Intel E5 v3 Address Map&quot; rev 0x02 at pci0 dev 5 function 0 not configured
+&quot;Intel E5 v3 Hot Plug&quot; rev 0x02 at pci0 dev 5 function 1 not configured
+&quot;Intel E5 v3 Error Reporting&quot; rev 0x02 at pci0 dev 5 function 2 not configured
+&quot;Intel E5 v3 I/O APIC&quot; rev 0x02 at pci0 dev 5 function 4 not configured
+&quot;Intel C610 MS SPSR&quot; rev 0x05 at pci0 dev 17 function 0 not configured
+ahci0 at pci0 dev 17 function 4 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+scsibus2 at ahci0: 32 targets
+xhci0 at pci0 dev 20 function 0 &quot;Intel C610 xHCI&quot; rev 0x05: apic 8 int 19
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel C610 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+&quot;Intel C610 MEI&quot; rev 0x05 at pci0 dev 22 function 1 not configured
+ehci0 at pci0 dev 26 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 19
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 28 function 0 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 28 function 7 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci7 at ppb6 bus 7
+ppb7 at pci7 dev 0 function 0 &quot;ASPEED Technology AST1150 PCI&quot; rev 0x03
+pci8 at ppb7 bus 8
+vga1 at pci8 dev 0 function 0 &quot;ASPEED Technology AST2000&quot; rev 0x30
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ehci1 at pci0 dev 29 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel C610 LPC&quot; rev 0x05
+ahci1 at pci0 dev 31 function 2 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+ahci1: port 0: 1.5Gb/s
+ahci1: port 1: 6.0Gb/s
+scsibus3 at ahci1: 32 targets
+cd0 at scsibus3 targ 0 lun 0: &lt;HL-DT-ST, DVDRAM GH24NSC0, LK00&gt; ATAPI 5/cdrom removable
+sd1 at scsibus3 targ 1 lun 0: &lt;ATA, Samsung SSD 850, EMT0&gt; SCSI3 0/direct fixed naa.5002538d7000d47c
+sd1: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel C610 SMBus&quot; rev 0x05: apic 8 int 18
+iic0 at ichiic0
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+pci9 at mainbus0 bus 255
+255:30:3: mem address conflict 0x10/0x10
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci9 dev 8 function 0 not configured
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci9 dev 8 function 2 not configured
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci9 dev 8 function 3 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci9 dev 11 function 0 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci9 dev 11 function 1 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci9 dev 11 function 2 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 0 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 1 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 2 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 3 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 4 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci9 dev 12 function 5 not configured
+&quot;Intel E5 v3 Ring Agent&quot; rev 0x02 at pci9 dev 15 function 0 not configured
+&quot;Intel E5 v3 Ring Agent&quot; rev 0x02 at pci9 dev 15 function 1 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci9 dev 15 function 4 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci9 dev 15 function 5 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci9 dev 15 function 6 not configured
+&quot;Intel E5 v3 PCIE Ring&quot; rev 0x02 at pci9 dev 16 function 0 not configured
+&quot;Intel E5 v3 PCIE Monitor&quot; rev 0x02 at pci9 dev 16 function 1 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci9 dev 16 function 5 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci9 dev 16 function 6 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci9 dev 16 function 7 not configured
+&quot;Intel E5 v3 Home Agent&quot; rev 0x02 at pci9 dev 18 function 0 not configured
+&quot;Intel E5 v3 Home Agent&quot; rev 0x02 at pci9 dev 18 function 1 not configured
+&quot;Intel E5 v3 Memory&quot; rev 0x02 at pci9 dev 19 function 0 not configured
+&quot;Intel E5 v3 RAS&quot; rev 0x02 at pci9 dev 19 function 1 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci9 dev 19 function 2 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci9 dev 19 function 3 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci9 dev 19 function 4 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci9 dev 19 function 5 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci9 dev 19 function 6 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci9 dev 19 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci9 dev 20 function 0 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci9 dev 20 function 1 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci9 dev 20 function 2 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci9 dev 20 function 3 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 20 function 6 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 20 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci9 dev 21 function 0 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci9 dev 21 function 1 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci9 dev 21 function 2 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci9 dev 21 function 3 not configured
+&quot;Intel E5 v3 TA&quot; rev 0x02 at pci9 dev 22 function 0 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci9 dev 22 function 6 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci9 dev 22 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci9 dev 23 function 0 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 23 function 4 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 23 function 5 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 23 function 6 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci9 dev 23 function 7 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci9 dev 30 function 0 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci9 dev 30 function 1 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci9 dev 30 function 2 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci9 dev 30 function 3 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci9 dev 30 function 4 not configured
+&quot;Intel E5 v3 VCU&quot; rev 0x02 at pci9 dev 31 function 0 not configured
+&quot;Intel E5 v3 VCU&quot; rev 0x02 at pci9 dev 31 function 2 not configured
+pci10 at mainbus0 bus 127
+127:30:3: mem address conflict 0x10/0x10
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci10 dev 8 function 0 not configured
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci10 dev 8 function 2 not configured
+&quot;Intel E5 v3 QPI&quot; rev 0x02 at pci10 dev 8 function 3 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci10 dev 11 function 0 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci10 dev 11 function 1 not configured
+&quot;Intel E5 v3 QPI Monitor&quot; rev 0x02 at pci10 dev 11 function 2 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 0 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 1 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 2 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 3 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 4 not configured
+&quot;Intel E5 v3 Unicast&quot; rev 0x02 at pci10 dev 12 function 5 not configured
+&quot;Intel E5 v3 Ring Agent&quot; rev 0x02 at pci10 dev 15 function 0 not configured
+&quot;Intel E5 v3 Ring Agent&quot; rev 0x02 at pci10 dev 15 function 1 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci10 dev 15 function 4 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci10 dev 15 function 5 not configured
+&quot;Intel E5 v3 SAD&quot; rev 0x02 at pci10 dev 15 function 6 not configured
+&quot;Intel E5 v3 PCIE Ring&quot; rev 0x02 at pci10 dev 16 function 0 not configured
+&quot;Intel E5 v3 PCIE Monitor&quot; rev 0x02 at pci10 dev 16 function 1 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci10 dev 16 function 5 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci10 dev 16 function 6 not configured
+&quot;Intel E5 v3 Scratch&quot; rev 0x02 at pci10 dev 16 function 7 not configured
+&quot;Intel E5 v3 Home Agent&quot; rev 0x02 at pci10 dev 18 function 0 not configured
+&quot;Intel E5 v3 Home Agent&quot; rev 0x02 at pci10 dev 18 function 1 not configured
+&quot;Intel E5 v3 Memory&quot; rev 0x02 at pci10 dev 19 function 0 not configured
+&quot;Intel E5 v3 RAS&quot; rev 0x02 at pci10 dev 19 function 1 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci10 dev 19 function 2 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci10 dev 19 function 3 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci10 dev 19 function 4 not configured
+&quot;Intel E5 v3 TAD&quot; rev 0x02 at pci10 dev 19 function 5 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci10 dev 19 function 6 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci10 dev 19 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci10 dev 20 function 0 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci10 dev 20 function 1 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci10 dev 20 function 2 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci10 dev 20 function 3 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 20 function 6 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 20 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci10 dev 21 function 0 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci10 dev 21 function 1 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci10 dev 21 function 2 not configured
+&quot;Intel E5 v3 Error&quot; rev 0x02 at pci10 dev 21 function 3 not configured
+&quot;Intel E5 v3 TA&quot; rev 0x02 at pci10 dev 22 function 0 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci10 dev 22 function 6 not configured
+&quot;Intel E5 v3 DDR Broadcast&quot; rev 0x02 at pci10 dev 22 function 7 not configured
+&quot;Intel E5 v3 Thermal&quot; rev 0x02 at pci10 dev 23 function 0 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 23 function 4 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 23 function 5 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 23 function 6 not configured
+&quot;Intel E5 v3 DDRIO&quot; rev 0x02 at pci10 dev 23 function 7 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci10 dev 30 function 0 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci10 dev 30 function 1 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci10 dev 30 function 2 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci10 dev 30 function 3 not configured
+&quot;Intel E5 v3 PCU&quot; rev 0x02 at pci10 dev 30 function 4 not configured
+&quot;Intel E5 v3 VCU&quot; rev 0x02 at pci10 dev 31 function 0 not configured
+&quot;Intel E5 v3 VCU&quot; rev 0x02 at pci10 dev 31 function 2 not configured
+pci11 at mainbus0 bus 128
+&quot;Intel E5 v3 Address Map&quot; rev 0x02 at pci11 dev 5 function 0 not configured
+&quot;Intel E5 v3 Hot Plug&quot; rev 0x02 at pci11 dev 5 function 1 not configured
+&quot;Intel E5 v3 Error Reporting&quot; rev 0x02 at pci11 dev 5 function 2 not configured
+&quot;Intel E5 v3 I/O APIC&quot; rev 0x02 at pci11 dev 5 function 4 not configured
+pci12 at mainbus0 bus 224
+uhub3 at uhub0 port 7 &quot;American Megatrends Inc. Virtual Hub&quot; rev 2.00/1.00 addr 2
+umass0 at uhub3 port 1 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual Cdrom Device&quot; rev 2.00/1.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus4 at umass0: 2 targets, initiator 0
+cd1 at scsibus4 targ 1 lun 0: &lt;AMI, Virtual CDROM0, 1.00&gt; SCSI0 5/cdrom removable
+cd2 at scsibus4 targ 1 lun 1: &lt;AMI, Virtual CDROM1, 1.00&gt; SCSI0 5/cdrom removable
+umass1 at uhub3 port 2 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual Floppy Device&quot; rev 2.00/1.00 addr 4
+umass1: using SCSI over Bulk-Only
+scsibus5 at umass1: 2 targets, initiator 0
+sd2 at scsibus5 targ 1 lun 0: &lt;AMI, Virtual Floppy0, 1.00&gt; SCSI0 0/direct removable
+sd3 at scsibus5 targ 1 lun 1: &lt;AMI, Virtual Floppy1, 1.00&gt; SCSI0 0/direct removable
+umass2 at uhub3 port 3 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual HardDisk Device&quot; rev 2.00/1.00 addr 5
+umass2: using SCSI over Bulk-Only
+scsibus6 at umass2: 2 targets, initiator 0
+sd4 at scsibus6 targ 1 lun 0: &lt;AMI, Virtual HDisk0, 1.00&gt; SCSI0 0/direct removable
+sd5 at scsibus6 targ 1 lun 1: &lt;AMI, Virtual HDisk1, 1.00&gt; SCSI0 0/direct removable
+sd6 at scsibus6 targ 1 lun 2: &lt;AMI, Virtual HDisk2, 1.00&gt; SCSI0 0/direct removable
+uhidev0 at uhub3 port 4 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual Keyboard and Mouse&quot; rev 1.10/1.00 addr 6
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub3 port 4 configuration 1 interface 1 &quot;American Megatrends Inc. Virtual Keyboard and Mouse&quot; rev 1.10/1.00 addr 6
+uhidev1: iclass 3/1
+ums0 at uhidev1: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+uhub4 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.05 addr 2
+uhub5 at uhub2 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.05 addr 2
+vscsi0 at root
+scsibus7 at vscsi0: 256 targets
+softraid0 at root
+scsibus8 at softraid0: 256 targets
+root on sd1a (7336a1556dde6f59.a) swap on sd1b dump on sd1b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

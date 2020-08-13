@@ -1,0 +1,334 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-09-25 08:48:33</em><br />
+<strong>From:</strong> <em>jj</em><br />
+<strong>Description:</strong> <em>Ubiquiti Edgerouter 12</em><br />
+
+<pre>
+&gt;&gt; OpenBSD/octeon BOOT 1.0
+boot&gt; 
+booting sd0a:/bsd
+launching kernel
+bootmem desc 0x6c108 version 3.0
+avail phys mem 0x0000000000100000 - 0x0000000001000000
+avail phys mem 0x00000000017151f0 - 0x000000000fdb0390
+avail phys mem 0x000000000fdb3480 - 0x000000000fdc1ca0
+avail phys mem 0x000000000fdc1d00 - 0x000000000fdc2500
+avail phys mem 0x000000000ffb5d00 - 0x000000000ffb5ff0
+avail phys mem 0x000000000ffd5d00 - 0x000000000ffd5d80
+avail phys mem 0x000000000fff5100 - 0x000000000fff5140
+avail phys mem 0x000000000fff5280 - 0x000000000fff5300
+avail phys mem 0x0000000020000000 - 0x000000004effe4c0
+avail phys mem 0x000000004effef80 - 0x000000004f000000
+Total DRAM Size 0x0000000040000000
+mem_layout[0] page 0x0000000000000040 -&gt; 0x0000000000000400
+mem_layout[1] page 0x00000000000005C6 -&gt; 0x0000000000003F6CInitial setup done, switching console.
+boot_desc-&gt;desc_ver:7
+boot_desc-&gt;desc_size:400
+boot_desc-&gt;stack_top:0
+boot_desc-&gt;heap_start:0
+boot_desc-&gt;heap_end:0
+boot_desc-&gt;argc:1
+boot_desc-&gt;flags:0x5
+boot_desc-&gt;core_mask:0xf
+boot_desc-&gt;dram_size:1024
+boot_desc-&gt;phy_mem_desc_addr:0
+boot_desc-&gt;debugger_flag_addr:0xec4
+boot_desc-&gt;eclock:1000000000
+boot_desc-&gt;boot_info_addr:0x4effecd0
+boot_info-&gt;ver_major:1
+boot_info-&gt;ver_minor:4
+boot_info-&gt;stack_top:0
+boot_info-&gt;heap_start:0
+boot_info-&gt;heap_end:0
+boot_info-&gt;boot_desc_addr:0
+boot_info-&gt;exception_base_addr:0x1000
+boot_info-&gt;stack_size:0
+boot_info-&gt;flags:0x5
+boot_info-&gt;core_mask:0xf
+boot_info-&gt;dram_size:1024
+boot_info-&gt;phys_mem_desc_addr:0x6c108
+boot_info-&gt;debugger_flags_addr:0
+boot_info-&gt;eclock:1000000000
+boot_info-&gt;dclock:533000000
+boot_info-&gt;board_type:20300
+boot_info-&gt;board_rev_major:2
+boot_info-&gt;board_rev_minor:13
+boot_info-&gt;mac_addr_count:13
+boot_info-&gt;cf_common_addr:0
+boot_info-&gt;cf_attr_addr:0
+boot_info-&gt;led_display_addr:0
+boot_info-&gt;dfaclock:0
+boot_info-&gt;config_flags:0x9
+boot_info-&gt;fdt_addr:0xfdb0400
+[ using 585624 bytes of bsd ELF symbol table ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2019 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.6-beta (GENERIC.MP) #73: Tue Sep 24 15:43:26 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/octeon/compile/GENERIC.MP
+real mem = 1073741824 (1024MB)
+avail mem = 1020919808 (973MB)
+mainbus0 at root: board 20300 rev 2.13
+cpu0 at mainbus0: CN70xx/CN71xx CPU rev 0.2 1000 MHz, CN70xx/CN71xx FPU rev 0.0
+cpu0: cache L1-I 78KB 39 way D 32KB 32 way, L2 1024KB 8 way
+cpu1 at mainbus0: CN70xx/CN71xx CPU rev 0.2 1000 MHz, CN70xx/CN71xx FPU rev 0.0
+cpu1: cache L1-I 78KB 39 way D 32KB 32 way, L2 1024KB 8 way
+cpu2 at mainbus0: CN70xx/CN71xx CPU rev 0.2 1000 MHz, CN70xx/CN71xx FPU rev 0.0
+cpu2: cache L1-I 78KB 39 way D 32KB 32 way, L2 1024KB 8 way
+cpu3 at mainbus0: CN70xx/CN71xx CPU rev 0.2 1000 MHz, CN70xx/CN71xx FPU rev 0.0
+cpu3: cache L1-I 78KB 39 way D 32KB 32 way, L2 1024KB 8 way
+clock0 at mainbus0: int 5
+octcrypto0 at mainbus0
+iobus0 at mainbus0
+simplebus0 at iobus0: &quot;soc&quot;
+&quot;bootbus&quot; at simplebus0 not configured
+octciu0 at simplebus0
+octcib0 at simplebus0: max-bits 23
+octcib1 at simplebus0: max-bits 12
+octcib2 at simplebus0: max-bits 6
+octcib3 at simplebus0: max-bits 15
+octcib4 at simplebus0: max-bits 4
+octcib5 at simplebus0: max-bits 11
+octcib6 at simplebus0: max-bits 11
+octgpio0 at simplebus0: 20 pins, xbit 16
+cn30xxsmi0 at simplebus0
+cn30xxsmi1 at simplebus0
+octpip0 at simplebus0
+cn30xxgmx0 at octpip0 interface 0
+cnmac0 at cn30xxgmx0: SGMII, address xx:xx:xx:xx:xx:xx
+ukphy0 at cnmac0 phy 4: Generic IEEE 802.3u media interface, rev. 2: OUI 0x0001c1, model 0x000c
+cnmac1 at cn30xxgmx0: SGMII, address xx:xx:xx:xx:xx:xx
+ukphy1 at cnmac1 phy 5: Generic IEEE 802.3u media interface, rev. 2: OUI 0x0001c1, model 0x000c
+cnmac2 at cn30xxgmx0: SGMII, address xx:xx:xx:xx:xx:xx
+ukphy2 at cnmac2 phy 6: Generic IEEE 802.3u media interface, rev. 2: OUI 0x0001c1, model 0x000c
+cnmac3 at cn30xxgmx0: SGMII, address xx:xx:xx:xx:xx:xx
+ukphy3 at cnmac3 phy 7: Generic IEEE 802.3u media interface, rev. 2: OUI 0x0001c1, model 0x000c
+cn30xxgmx1 at octpip0 interface 1
+octsctl0 at simplebus0: disabled
+octxctl0 at simplebus0: DWC3 rev 0x250a
+xhci0 at octxctl0, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+octxctl1 at simplebus0: DWC3 rev 0x250a
+xhci1 at octxctl1, xHCI 1.0
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;i2c&quot; at simplebus0 not configured
+&quot;i2c&quot; at simplebus0 not configured
+com0 at simplebus0: ns16550a, 64 byte fifo
+com0: console
+com1 at simplebus0: ns16550a, 64 byte fifo
+com1: probed fifo depth: 0 bytes
+octmmc0 at simplebus0
+sdmmc0 at octmmc0: 8-bit, mmc high-speed
+&quot;spi&quot; at simplebus0 not configured
+&quot;ocla0&quot; at simplebus0 not configured
+&quot;dma-engine&quot; at simplebus0 not configured
+&quot;dma-engine&quot; at simplebus0 not configured
+octrng0 at iobus0 base 0x1400000000000 irq 0
+octpcie0 at iobus0: 3 ports
+octpcie0 port 0: link timeout
+octpcie0 port 1: reset timeout
+octpcie0 port 2: reset timeout
+scsibus0 at sdmmc0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;Kingston, MMC4GB, 0000&gt; removable
+sd0: 3728MB, 512 bytes/sector, 7634944 sectors
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (f56907f99a0bc95a.a) swap on sd0b dump on sd0b
+WARNING: No TOD clock, believing file system.
+WARNING: CHECK AND RESET THE DATE!
+Automatic boot in progress: starting file system checks.
+/dev/sd0a (f56907f99a0bc95a.a): file system is clean; not checking
+/dev/sd0e (f56907f99a0bc95a.e): file system is clean; not checking
+/dev/sd0d (f56907f99a0bc95a.d): file system is clean; not checking
+pf enabled
+starting network
+cnmac2: xxx.xxx.xxx.xxx lease accepted from xxx.xxx.xxx.xxx (xx:xx:xx:xx:xx:xx)
+reordering libraries: done.
+starting early daemons: syslogd pflogd ntpd.
+starting RPC daemons:.
+savecore: no core dump
+checking quotas: done.
+clearing /tmp
+kern.securelevel: 0 -&gt; 1
+creating runtime link editor directory cache.
+preserving editor files.
+starting network daemons: sshd smtpd sndiod.
+starting local daemons: cron.
+Wed Sep 25 10:24:14 CEST 2019
+
+OpenBSD/octeon (hostname.goes.here) (console)
+
+login:
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

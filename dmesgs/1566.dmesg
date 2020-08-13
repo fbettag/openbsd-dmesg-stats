@@ -1,0 +1,220 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-12-28 06:55:19</em><br />
+<strong>From:</strong> <em>tingo</em><br />
+<strong>Description:</strong> <em>OpenBSD 3.6 on a Sun Ultra 1E (Creator 3D, but the gfx card doesn`t work yet)</em><br />
+
+<pre>
+console is keyboard/display
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2004 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 3.6 (GENERIC) #304: Fri Sep 17 13:01:33 MDT 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC
+total memory = 402653184
+avail memory = 357605376
+using 2457 buffers containing 20127744 bytes of memory
+bootpath: /sbus@1f,0/SUNW,fas@e,8800000/sd@0,0
+mainbus0 (root): Sun Ultra 1 UPA/SBus (UltraSPARC 167MHz)
+cpu0 at mainbus0: SUNW,UltraSPARC @ 166.970 MHz, version 0 FPU
+cpu0: physical 32K instruction (32 b/l), 16K data (32 b/l), 512K external (64 b/l)
+timer0 at mainbus0 addr 0xfffc7c00 irq vectors 7f0 and 7f1
+sbus0 at mainbus0 addr 0xfffcc000: clock = 25 MHz
+STC0 on /mainbus enabled
+DVMA map: ff800000 to ffffe000
+IOTDB: 1d46000 to 1d48000
+audiocs0 at sbus0 slot 13 offset 0xc000000 vector 24 ipl 13
+audio0 at audiocs0
+auxio0 at sbus0 slot 15 offset 0x1900000
+flashprom at sbus0 slot 15 offset 0x0 not configured
+SUNW,fdtwo at sbus0 class block slot 15 offset 0x1400000 vector 29 ipl 11 not configured
+clock0 at sbus0 slot 15 offset 0x1200000: mk48t59: hostid xxxxxxxx
+zs0 at sbus0 slot 15 offset 0x1100000 vector 28 ipl 12 softpri 6
+zstty0 at zs0 channel 0
+zstty1 at zs0 channel 1
+zs1 at sbus0 slot 15 offset 0x1000000 vector 28 ipl 12 softpri 6
+zskbd0 at zs1 channel 0: layout 33
+wskbd0 at zskbd0: console keyboard
+zstty2 at zs1 channel 1, mouse
+uperf0 at sbus0 slot 15 offset 0x1300000: model SUNW,sc-up (0/0) ports 3
+SUNW,pll at sbus0 slot 15 offset 0x1304000 not configured
+esp0 at sbus0 slot 14 offset 0x8800000 vector 20 ipl 3: dma rev fas
+esp0: FAS366/HME, 40MHz, SCSI ID 7
+scsibus0 at esp0: 8 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;SEAGATE, ST32171W SUN2.1G, 7462&gt; SCSI2 0/direct fixed
+sd0: 2029MB, 2735 cyl, 19 head, 80 sec, 512 bytes/sec, 4157201 sec total
+hme0 at sbus0 slot 14 offset 0x8c00000 vector 21 ipl 6: address xx:xx:xx:xx:xx:xx
+nsphy0 at hme0 phy 1: DP83840 10/100 media interface, rev. 0
+SUNW,bpp at sbus0 slot 14 offset 0xc800000 vector 22 ipl 2 not configured
+creator0 at mainbus0 addr 0xfec00000: Creator3D, model SUNW,501-2633, dac 10
+wsdisplay0 at creator0: console (std, sun emulation), using wskbd0
+pcons at mainbus0 not configured
+root on sd0a
+rootdev=0x700 rrootdev=0x1100 rawdev=0x1102
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

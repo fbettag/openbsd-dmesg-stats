@@ -1,0 +1,646 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-09-11 05:02:54</em><br />
+<strong>From:</strong> <em>hugga</em><br />
+<strong>Description:</strong> <em>Lenovo Thinkpad T-25 (25th Anniversay Edition)</em><br />
+
+<pre>
+OpenBSD 6.5 (GENERIC.MP) #1: Mon May 27 18:27:59 CEST 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 16665505792 (15893MB)
+avail mem = 16150798336 (15402MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x6f070000 (62 entries)
+bios0: vendor LENOVO version &quot;N1QET84W (1.59 )&quot; date 06/21/2019
+bios0: LENOVO 20K70004US
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT TPM2 UEFI SSDT SSDT HPET APIC MCFG ECDT SSDT SSDT BOOT BATB SLIC SSDT SSDT SSDT WSMT SSDT SSDT DBGP DBG2 MSDM SSDT SSDT DMAR ASF! FPDT UEFI
+acpi0: wakeup devices GLAN(S4) XHC_(S3) XDCI(S4) HDAS(S4) RP01(S4) RP02(S4) RP03(S4) RP04(S4) RP05(S4) RP06(S4) RP08(S4) RP09(S4) RP10(S4) RP11(S4) RP12(S4) RP13(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 23999999 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 1296.05 MHz, 06-8e-09
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 1127.98 MHz, 06-8e-09
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 1008.40 MHz, 06-8e-09
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 999.13 MHz, 06-8e-09
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf0000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus -1 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiprt7 at acpi0: bus 4 (RP07)
+acpiprt8 at acpi0: bus -1 (RP08)
+acpiprt9 at acpi0: bus 5 (RP09)
+acpiprt10 at acpi0: bus -1 (RP10)
+acpiprt11 at acpi0: bus 62 (RP11)
+acpiprt12 at acpi0: bus -1 (RP12)
+acpiprt13 at acpi0: bus -1 (RP13)
+acpiprt14 at acpi0: bus -1 (RP14)
+acpiprt15 at acpi0: bus -1 (RP15)
+acpiprt16 at acpi0: bus -1 (RP16)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP21)
+acpiprt22 at acpi0: bus -1 (RP22)
+acpiprt23 at acpi0: bus -1 (RP23)
+acpiprt24 at acpi0: bus -1 (RP24)
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHC_
+acpipwrres1 at acpi0: PC01, resource for RP01
+acpipwrres2 at acpi0: WRST
+acpipwrres3 at acpi0: WRST
+acpitz0 at acpi0: critical temperature is 128 degC
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpithinkpad0 at acpi0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model &quot;01AV421&quot; serial  1911 type LiP oem &quot;SMP&quot;
+acpibat1 at acpi0: BAT1 model &quot;01AV490&quot; serial  2985 type LiP oem &quot;LGC&quot;
+acpicmos0 at acpi0
+&quot;INT0E0C&quot; at acpi0 not configured
+acpibtn0 at acpi0: SLPB
+&quot;PNP0C14&quot; at acpi0 not configured
+acpibtn1 at acpi0: LID_
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;USBC000&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout at acpivideo0 not configured
+cpu0: using VERW MDS workaround
+cpu0: Enhanced SpeedStep 1296 MHz: speeds: 2701, 2700, 2600, 2500, 2400, 2200, 2000, 1800, 1600, 1500, 1300, 1100, 800, 700, 600, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 7G Host&quot; rev 0x02
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 620&quot; rev 0x02
+drm0 at inteldrm0
+inteldrm0: msi
+error: [drm:pid0:i915_firmware_load_error_print] *ERROR* failed to load firmware i915/kbl_dmc_ver1.bin (-22)
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+xhci0 at pci0 dev 20 function 0 &quot;Intel 100 Series xHCI&quot; rev 0x21: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+pchtemp0 at pci0 dev 20 function 2 &quot;Intel 100 Series Thermal&quot; rev 0x21
+&quot;Intel 100 Series MEI&quot; rev 0x21 at pci0 dev 22 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci1 at ppb0 bus 2
+2:0:0: mem address conflict 0xfff80000/0x80000
+&quot;NVIDIA GeForce 940MX&quot; rev 0xa2 at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 28 function 6 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci2 at ppb1 bus 4
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 8265&quot; rev 0x78, msi
+ppb2 at pci0 dev 29 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci3 at ppb2 bus 5
+ppb3 at pci0 dev 29 function 2 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci4 at ppb3 bus 62
+nvme0 at pci4 dev 0 function 0 vendor &quot;Lenovo&quot;, unknown product 0x0004 rev 0x00: apic 2 int 18, NVMe 1.2
+nvme0: LENSE20512GMSP34MEAT2TA, firmware 1.9.8341, serial 1150592304819
+scsibus1 at nvme0: 1 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;NVMe, LENSE20512GMSP34, 1.9.&gt; SCSI4 0/direct fixed
+sd0: 488386MB, 512 bytes/sector, 1000215216 sectors
+pcib0 at pci0 dev 31 function 0 &quot;Intel 200 Series LPC&quot; rev 0x21
+&quot;Intel 100 Series PMC&quot; rev 0x21 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 &quot;Intel 200 Series HD Audio&quot; rev 0x21: msi
+azalia0: codecs: Realtek ALC298, Intel/0x280b, using Realtek ALC298
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 &quot;Intel 100 Series SMBus&quot; rev 0x21: apic 2 int 16
+iic0 at ichiic0
+em0 at pci0 dev 31 function 6 &quot;Intel I219-V&quot; rev 0x21: msi, address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.16, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+uhidev0 at uhub0 port 10 configuration 1 interface 0 &quot;Raydium Corporation Raydium Touch System&quot; rev 2.01/0.00 addr 2
+uhidev0: iclass 3/0, 68 report ids
+uhid0 at uhidev0 reportid 1: input=0, output=63, feature=0
+uhid1 at uhidev0 reportid 2: input=63, output=0, feature=0
+uhid2 at uhidev0 reportid 3: input=0, output=63, feature=0
+uhid3 at uhidev0 reportid 4: input=0, output=63, feature=0
+uhid4 at uhidev0 reportid 5: input=0, output=63, feature=0
+uhid5 at uhidev0 reportid 6: input=63, output=0, feature=0
+uhid6 at uhidev0 reportid 7: input=0, output=63, feature=0
+uhid7 at uhidev0 reportid 8: input=0, output=63, feature=0
+uhid8 at uhidev0 reportid 9: input=63, output=0, feature=0
+ums0 at uhidev0 reportid 10: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid9 at uhidev0 reportid 11: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/2.04 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC, 1.00&gt; SCSI4 0/direct removable serial.0bda0316501030900000
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (9df6ef279a2a166f.a) swap on sd0b dump on sd0b
+WARNING: / was not properly unmounted
+iwm0: hw rev 0x230, fw ver 22.361476.0, address xx:xx:xx:xx:xx:xx
+acpivideo0: unknown event 0x00
+uhid0 detached
+uhid1 detached
+uhid2 detached
+uhid3 detached
+uhid4 detached
+uhid5 detached
+uhid6 detached
+uhid7 detached
+uhid8 detached
+wsmouse2 detached
+ums0 detached
+uhid9 detached
+ums1 detached
+uhidev0 detached
+sd1 detached
+scsibus2 detached
+umass0 detached
+uhub0 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhidev0 at uhub0 port 10 configuration 1 interface 0 &quot;Raydium Corporation Raydium Touch System&quot; rev 2.01/0.00 addr 2
+uhidev0: iclass 3/0, 68 report ids
+uhid0 at uhidev0 reportid 1: input=0, output=63, feature=0
+uhid1 at uhidev0 reportid 2: input=63, output=0, feature=0
+uhid2 at uhidev0 reportid 3: input=0, output=63, feature=0
+uhid3 at uhidev0 reportid 4: input=0, output=63, feature=0
+uhid4 at uhidev0 reportid 5: input=0, output=63, feature=0
+uhid5 at uhidev0 reportid 6: input=63, output=0, feature=0
+uhid6 at uhidev0 reportid 7: input=0, output=63, feature=0
+uhid7 at uhidev0 reportid 8: input=0, output=63, feature=0
+uhid8 at uhidev0 reportid 9: input=63, output=0, feature=0
+ums0 at uhidev0 reportid 10: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid9 at uhidev0 reportid 11: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/2.04 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC, 1.00&gt; SCSI4 0/direct removable serial.0bda0316501030900000
+acpivideo0: unknown event 0x00
+uhid0 detached
+uhid1 detached
+uhid2 detached
+uhid3 detached
+uhid4 detached
+uhid5 detached
+uhid6 detached
+uhid7 detached
+uhid8 detached
+wsmouse2 detached
+ums0 detached
+uhid9 detached
+ums1 detached
+uhidev0 detached
+sd1 detached
+scsibus2 detached
+umass0 detached
+uhub0 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhidev0 at uhub0 port 10 configuration 1 interface 0 &quot;Raydium Corporation Raydium Touch System&quot; rev 2.01/0.00 addr 2
+uhidev0: iclass 3/0, 68 report ids
+uhid0 at uhidev0 reportid 1: input=0, output=63, feature=0
+uhid1 at uhidev0 reportid 2: input=63, output=0, feature=0
+uhid2 at uhidev0 reportid 3: input=0, output=63, feature=0
+uhid3 at uhidev0 reportid 4: input=0, output=63, feature=0
+uhid4 at uhidev0 reportid 5: input=0, output=63, feature=0
+uhid5 at uhidev0 reportid 6: input=63, output=0, feature=0
+uhid6 at uhidev0 reportid 7: input=0, output=63, feature=0
+uhid7 at uhidev0 reportid 8: input=0, output=63, feature=0
+uhid8 at uhidev0 reportid 9: input=63, output=0, feature=0
+ums0 at uhidev0 reportid 10: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid9 at uhidev0 reportid 11: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/2.04 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC, 1.00&gt; SCSI4 0/direct removable serial.0bda0316501030900000
+acpivideo0: unknown event 0x00
+uhid0 detached
+uhid1 detached
+uhid2 detached
+uhid3 detached
+uhid4 detached
+uhid5 detached
+uhid6 detached
+uhid7 detached
+uhid8 detached
+wsmouse2 detached
+ums0 detached
+uhid9 detached
+ums1 detached
+uhidev0 detached
+sd1 detached
+scsibus2 detached
+umass0 detached
+uhub0 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhidev0 at uhub0 port 10 configuration 1 interface 0 &quot;Raydium Corporation Raydium Touch System&quot; rev 2.01/0.00 addr 2
+uhidev0: iclass 3/0, 68 report ids
+uhid0 at uhidev0 reportid 1: input=0, output=63, feature=0
+uhid1 at uhidev0 reportid 2: input=63, output=0, feature=0
+uhid2 at uhidev0 reportid 3: input=0, output=63, feature=0
+uhid3 at uhidev0 reportid 4: input=0, output=63, feature=0
+uhid4 at uhidev0 reportid 5: input=0, output=63, feature=0
+uhid5 at uhidev0 reportid 6: input=63, output=0, feature=0
+uhid6 at uhidev0 reportid 7: input=0, output=63, feature=0
+uhid7 at uhidev0 reportid 8: input=0, output=63, feature=0
+uhid8 at uhidev0 reportid 9: input=63, output=0, feature=0
+ums0 at uhidev0 reportid 10: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid9 at uhidev0 reportid 11: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/2.04 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC, 1.00&gt; SCSI4 0/direct removable serial.0bda0316501030900000
+arp: attempt to add entry for 192.168.4.99 on iwm0 by xx:xx:xx:xx:xx:xx on em0
+syncing disks... done
+reboot
+OpenBSD 6.5 (GENERIC.MP) #5: Thu Aug 29 20:38:30 CEST 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 16665505792 (15893MB)
+avail mem = 16150781952 (15402MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x6f070000 (62 entries)
+bios0: vendor LENOVO version &quot;N1QET84W (1.59 )&quot; date 06/21/2019
+bios0: LENOVO 20K70004US
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT TPM2 UEFI SSDT SSDT HPET APIC MCFG ECDT SSDT SSDT BOOT BATB SLIC SSDT SSDT SSDT WSMT SSDT SSDT DBGP DBG2 MSDM SSDT SSDT DMAR ASF! FPDT UEFI
+acpi0: wakeup devices GLAN(S4) XHC_(S3) XDCI(S4) HDAS(S4) RP01(S4) RP02(S4) RP03(S4) RP04(S4) RP05(S4) RP06(S4) RP08(S4) RP09(S4) RP10(S4) RP11(S4) RP12(S4) RP13(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 23999999 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 1316.13 MHz, 06-8e-09
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 23MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 1122.76 MHz, 06-8e-09
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 997.67 MHz, 06-8e-09
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 997.67 MHz, 06-8e-09
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf0000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus -1 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiprt7 at acpi0: bus 4 (RP07)
+acpiprt8 at acpi0: bus -1 (RP08)
+acpiprt9 at acpi0: bus 5 (RP09)
+acpiprt10 at acpi0: bus -1 (RP10)
+acpiprt11 at acpi0: bus 62 (RP11)
+acpiprt12 at acpi0: bus -1 (RP12)
+acpiprt13 at acpi0: bus -1 (RP13)
+acpiprt14 at acpi0: bus -1 (RP14)
+acpiprt15 at acpi0: bus -1 (RP15)
+acpiprt16 at acpi0: bus -1 (RP16)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP21)
+acpiprt22 at acpi0: bus -1 (RP22)
+acpiprt23 at acpi0: bus -1 (RP23)
+acpiprt24 at acpi0: bus -1 (RP24)
+acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHC_
+acpipwrres1 at acpi0: PC01, resource for RP01
+acpipwrres2 at acpi0: WRST
+acpipwrres3 at acpi0: WRST
+acpitz0 at acpi0: critical temperature is 128 degC
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpithinkpad0 at acpi0
+acpiac0 at acpi0: AC unit offline
+acpibat0 at acpi0: BAT0 model &quot;01AV421&quot; serial  1911 type LiP oem &quot;SMP&quot;
+acpibat1 at acpi0: BAT1 model &quot;01AV490&quot; serial  2985 type LiP oem &quot;LGC&quot;
+acpicmos0 at acpi0
+&quot;INT0E0C&quot; at acpi0 not configured
+acpibtn0 at acpi0: SLPB
+&quot;PNP0C14&quot; at acpi0 not configured
+acpibtn1 at acpi0: LID_
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;USBC000&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout at acpivideo0 not configured
+cpu0: using VERW MDS workaround
+cpu0: Enhanced SpeedStep 1316 MHz: speeds: 2701, 2700, 2600, 2500, 2400, 2200, 2000, 1800, 1600, 1500, 1300, 1100, 800, 700, 600, 400 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 7G Host&quot; rev 0x02
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 620&quot; rev 0x02
+drm0 at inteldrm0
+inteldrm0: msi
+error: [drm:pid0:i915_firmware_load_error_print] *ERROR* failed to load firmware i915/kbl_dmc_ver1.bin (-22)
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+xhci0 at pci0 dev 20 function 0 &quot;Intel 100 Series xHCI&quot; rev 0x21: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+pchtemp0 at pci0 dev 20 function 2 &quot;Intel 100 Series Thermal&quot; rev 0x21
+&quot;Intel 100 Series MEI&quot; rev 0x21 at pci0 dev 22 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci1 at ppb0 bus 2
+2:0:0: mem address conflict 0xfff80000/0x80000
+&quot;NVIDIA GeForce 940MX&quot; rev 0xa2 at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 28 function 6 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci2 at ppb1 bus 4
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 8265&quot; rev 0x78, msi
+ppb2 at pci0 dev 29 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci3 at ppb2 bus 5
+ppb3 at pci0 dev 29 function 2 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci4 at ppb3 bus 62
+nvme0 at pci4 dev 0 function 0 vendor &quot;Lenovo&quot;, unknown product 0x0004 rev 0x00: apic 2 int 18, NVMe 1.2
+nvme0: LENSE20512GMSP34MEAT2TA, firmware 1.9.8341, serial 1150592304819
+scsibus1 at nvme0: 1 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;NVMe, LENSE20512GMSP34, 1.9.&gt; SCSI4 0/direct fixed
+sd0: 488386MB, 512 bytes/sector, 1000215216 sectors
+pcib0 at pci0 dev 31 function 0 &quot;Intel 200 Series LPC&quot; rev 0x21
+&quot;Intel 100 Series PMC&quot; rev 0x21 at pci0 dev 31 function 2 not configured
+azalia0 at pci0 dev 31 function 3 &quot;Intel 200 Series HD Audio&quot; rev 0x21: msi
+azalia0: codecs: Realtek ALC298, Intel/0x280b, using Realtek ALC298
+audio0 at azalia0
+ichiic0 at pci0 dev 31 function 4 &quot;Intel 100 Series SMBus&quot; rev 0x21: apic 2 int 16
+iic0 at ichiic0
+em0 at pci0 dev 31 function 6 &quot;Intel I219-V&quot; rev 0x21: msi, address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.16, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+uhidev0 at uhub0 port 10 configuration 1 interface 0 &quot;Raydium Corporation Raydium Touch System&quot; rev 2.01/0.00 addr 2
+uhidev0: iclass 3/0, 68 report ids
+uhid0 at uhidev0 reportid 1: input=0, output=63, feature=0
+uhid1 at uhidev0 reportid 2: input=63, output=0, feature=0
+uhid2 at uhidev0 reportid 3: input=0, output=63, feature=0
+uhid3 at uhidev0 reportid 4: input=0, output=63, feature=0
+uhid4 at uhidev0 reportid 5: input=0, output=63, feature=0
+uhid5 at uhidev0 reportid 6: input=63, output=0, feature=0
+uhid6 at uhidev0 reportid 7: input=0, output=63, feature=0
+uhid7 at uhidev0 reportid 8: input=0, output=63, feature=0
+uhid8 at uhidev0 reportid 9: input=63, output=0, feature=0
+ums0 at uhidev0 reportid 10: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid9 at uhidev0 reportid 11: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+umass0 at uhub0 port 15 configuration 1 interface 0 &quot;Generic USB3.0-CRW&quot; rev 3.00/2.04 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Generic-, SD/MMC, 1.00&gt; SCSI4 0/direct removable serial.0bda0316501030900000
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (9df6ef279a2a166f.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x230, fw ver 22.361476.0, address xx:xx:xx:xx:xx:xx
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

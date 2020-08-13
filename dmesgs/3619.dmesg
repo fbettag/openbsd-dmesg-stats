@@ -1,0 +1,328 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-05-19 22:55:46</em><br />
+<strong>From:</strong> <em>dgv</em><br />
+<strong>Description:</strong> <em>Sony Vaio VGN-FW170J Laptop OpenBSD 6.3</em><br />
+
+<pre>
+OpenBSD 6.3 (GENERIC.MP) #107: Sat Mar 24 14:21:59 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4139401216 (3947MB)
+avail mem = 4006875136 (3821MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xb7c2e010 (17 entries)
+bios0: vendor American Megatrends Inc. version &quot;R0250Y0&quot; date 06/05/2008
+bios0: Sony Corporation VGN-FW170J
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG HPET SLIC SSDT
+acpi0: wakeup devices USB0(S3) USB1(S3) USB2(S3) USBR(S3) EHC1(S3) USB3(S3) USB4(S3) USB5(S3) EHC2(S3) PXSX(S3) RP01(S3) PXSX(S3) RP02(S3) PSL1(S3) PXSX(S3) RP03(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2126.78 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu0: 3MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 265MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2.1.3, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU P8400 @ 2.26GHz, 2126.46 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu1: 3MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 9 (P0P1)
+acpiprt2 at acpi0: bus 1 (RP01)
+acpiprt3 at acpi0: bus 3 (RP02)
+acpiprt4 at acpi0: bus -1 (RP03)
+acpiprt5 at acpi0: bus 5 (RP04)
+acpiprt6 at acpi0: bus 7 (RP05)
+acpiprt7 at acpi0: bus -1 (RP06)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(250@17 mwait.3@0x20), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(250@17 mwait.3@0x20), !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 127 degC
+acpitz1 at acpi0: critical temperature is 110 degC
+&quot;SNY9001&quot; at acpi0 not configured
+&quot;SNY5001&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 not present
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpivideo0 at acpi0: GFX0
+cpu0: Enhanced SpeedStep 2126 MHz: speeds: 2267, 2266, 1600, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel GM45 Host&quot; rev 0x07
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel GM45 Video&quot; rev 0x07
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xc0000000, size 0x10000000
+inteldrm0: msi
+inteldrm0: 1600x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel GM45 Video&quot; rev 0x07 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 16
+uhci1 at pci0 dev 26 function 1 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 21
+ehci0 at pci0 dev 26 function 7 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801I HD Audio&quot; rev 0x03: msi
+azalia0: codecs: Realtek ALC262, Conexant/0x2c06, Intel/0x2802, using Realtek ALC262
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci2 at ppb1 bus 3
+ppb2 at pci0 dev 28 function 3 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci3 at ppb2 bus 5
+iwn0 at pci3 dev 0 function 0 &quot;Intel WiFi Link 5100&quot; rev 0x00: msi, MIMO 1T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 4 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci4 at ppb3 bus 7
+mskc0 at pci4 dev 0 function 0 &quot;Marvell Yukon 88E8055&quot; rev 0x13, Yukon-2 EC Ultra rev. B0 (0x3): msi
+msk0 at mskc0 port A: address xx:xx:xx:xx:xx:xx
+eephy0 at msk0 phy 0: 88E1149 Gigabit PHY, rev. 1
+uhci2 at pci0 dev 29 function 0 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 23
+uhci3 at pci0 dev 29 function 1 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 19
+uhci4 at pci0 dev 29 function 2 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 18
+uhci5 at pci0 dev 29 function 3 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 16
+ehci1 at pci0 dev 29 function 7 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0x93
+pci5 at ppb4 bus 9
+&quot;Ricoh 5C832 Firewire&quot; rev 0x05 at pci5 dev 3 function 0 not configured
+sdhc0 at pci5 dev 3 function 1 &quot;Ricoh 5C822 SD/MMC&quot; rev 0x22: apic 2 int 17
+sdhc0: SDHC 1.0, 33 MHz base clock
+sdmmc0 at sdhc0: 4-bit
+&quot;Ricoh 5C592 Memory Stick&quot; rev 0x12 at pci5 dev 3 function 2 not configured
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801IBM LPC&quot; rev 0x03
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801I AHCI&quot; rev 0x03: msi, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+ahci0: PHY offline on port 1
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, ST320LM001 HN-M3, 2AR1&gt; SCSI3 0/direct fixed naa.50004cf206beabc0
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801I SMBus&quot; rev 0x03: apic 2 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: ALPS Glidepoint, version 0x7321
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uvideo0 at uhub0 port 2 configuration 1 interface 0 &quot;Ricoh product 0x183d&quot; rev 2.00/40.02 addr 2
+video0 at uvideo0
+umass0 at uhub1 port 6 configuration 1 interface 0 &quot;Sony Sony VAIO USB Internal Optical Drive&quot; rev 2.00/20.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+cd0 at scsibus2 targ 1 lun 0: &lt;MATSHITA, BD-CMB UJ-120, 1.01&gt; SCSI0 5/cdrom removable serial.054c0377F760000393BE
+uhidev0 at uhub4 port 2 configuration 1 interface 0 &quot;MOSART Semi. 2.4G Keyboard Mouse&quot; rev 1.10/1.02 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub4 port 2 configuration 1 interface 1 &quot;MOSART Semi. 2.4G Keyboard Mouse&quot; rev 1.10/1.02 addr 2
+uhidev1: iclass 3/1, 5 report ids
+uhid0 at uhidev1 reportid 1: input=2, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
+ums0 at uhidev1 reportid 3: 5 buttons, Z and W dir
+wsmouse1 at ums0 mux 0
+uhid2 at uhidev1 reportid 5: input=5, output=6, feature=0
+ugen0 at uhub6 port 1 &quot;Broadcom Corp BCM2046 Bluetooth Device&quot; rev 2.00/2.18 addr 2
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (29bc45ab3d1cd688.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

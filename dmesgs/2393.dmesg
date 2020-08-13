@@ -1,0 +1,298 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2012-05-27 20:54:20</em><br />
+<strong>From:</strong> <em>thenitch</em><br />
+<strong>Description:</strong> <em>Asus EPC900b w/ intel Celeron M cpu</em><br />
+
+<pre>
+OpenBSD 5.1-current (GENERIC) #210: Thu Apr 26 01:36:40 MDT 2012
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Celeron(R) M processor 900MHz (&quot;GenuineIntel&quot; 686-class) 901 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,SBF,NXE
+real mem  = 1064366080 (1015MB)
+avail mem = 1036148736 (988MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 03/03/09, BIOS32 rev. 0 @ 0xf0010, SMBIOS rev. 2.5 @ 0xf06f0 (37 entries)
+bios0: vendor American Megatrends Inc. version &quot;1006&quot; date 03/03/2009
+bios0: ASUSTeK Computer INC. 900
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC OEMB MCFG
+acpi0: wakeup devices P0P3(S4) P0P4(S4) P0P5(S4) P0P6(S4) P0P7(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) EUSB(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 100MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 5 (P0P3)
+acpiprt2 at acpi0: bus 3 (P0P5)
+acpiprt3 at acpi0: bus 1 (P0P6)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2
+acpitz0 at acpi0: critical temperature is 90 degC
+acpibat0 at acpi0: BAT0 model &quot;900&quot; serial   type LION oem &quot;ASUS&quot;
+acpiac0 at acpi0: AC unit online
+acpiasus0 at acpi0
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpibtn2 at acpi0: PWRB
+acpivideo0 at acpi0: VGA_
+bios0: ROM list: 0xc0000/0xf800!
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82915GM Host&quot; rev 0x04
+vga1 at pci0 dev 2 function 0 &quot;Intel 82915GM Video&quot; rev 0x04
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0 at vga1: apic 1 int 16
+drm0 at inteldrm0
+&quot;Intel 82915GM Video&quot; rev 0x04 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801FB HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Realtek ALC662
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801FB PCIE&quot; rev 0x04: apic 1 int 16
+pci1 at ppb0 bus 4
+ppb1 at pci0 dev 28 function 1 &quot;Intel 82801FB PCIE&quot; rev 0x04: apic 1 int 17
+pci2 at ppb1 bus 3
+lii0 at pci2 dev 0 function 0 &quot;Attansic Technology L2&quot; rev 0xa0: apic 1 int 17, address xx:xx:xx:xx:xx:xx
+atphy0 at lii0 phy 1: F2 10/100 PHY, rev. 2
+ppb2 at pci0 dev 28 function 2 &quot;Intel 82801FB PCIE&quot; rev 0x04: apic 1 int 18
+pci3 at ppb2 bus 1
+ath0 at pci3 dev 0 function 0 &quot;Atheros AR5424&quot; rev 0x01: apic 1 int 18
+ath0: AR5424 14.2 phy 7.0 rf 0.0, WOR0W, address xx:xx:xx:xx:xx:xx
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801FB USB&quot; rev 0x04: apic 1 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801FB USB&quot; rev 0x04: apic 1 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801FB USB&quot; rev 0x04: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801FB USB&quot; rev 0x04: apic 1 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801FB USB&quot; rev 0x04: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xd4
+pci4 at ppb3 bus 5
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801FBM LPC&quot; rev 0x04: PM disabled
+pciide0 at pci0 dev 31 function 2 &quot;Intel 82801FBM SATA&quot; rev 0x04: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ASUS-JM S41 SSD&gt;
+wd0: 1-sector PIO, LBA, 15392MB, 31522816 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801FB SMBus&quot; rev 0x04: apic 1 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+umass0 at uhub0 port 3 configuration 1 interface 0 &quot;Lexar USB Flash Drive&quot; rev 2.00/1.03 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;Lexar, USB Flash Drive, 8.07&gt; SCSI2 0/direct removable serial.05dcc75301413529680E
+sd0: 15276MB, 512 bytes/sector, 31285248 sectors
+umass1 at uhub0 port 5 configuration 1 interface 0 &quot;ENE UB6225&quot; rev 2.00/1.00 addr 3
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;USB2.0, CardReader SD0, 0100&gt; SCSI0 0/direct removable serial.09511606146030377350
+uvideo0 at uhub0 port 8 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. CNF7129&quot; rev 2.00/15.70 addr 4
+video0 at uvideo0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (34a42f40578a8e32.a) swap on sd0b dump on sd0b
+ath0: unable to reset hardware; hal status 4120271500
+ath0: unable to reset hardware; hal status 4120272268
+hw.sensors.acpitz0.temp0=58.00 degC (zone temperature)
+hw.sensors.acpibat0.volt0=8.40 VDC (voltage)
+hw.sensors.acpibat0.volt1=8.00 VDC (current voltage)
+hw.sensors.acpibat0.current0=unknown (rate), UNKNOWN
+hw.sensors.acpibat0.amphour0=0.10 Ah (last full capacity)
+hw.sensors.acpibat0.amphour1=0.02 Ah (warning capacity)
+hw.sensors.acpibat0.amphour2=0.01 Ah (low capacity)
+hw.sensors.acpibat0.amphour3=0.10 Ah (remaining capacity), OK
+hw.sensors.acpibat0.raw0=0 (battery full), OK
+hw.sensors.acpiac0.indicator0=On (power supply)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2006-01-26 17:00:46</em><br />
+<strong>From:</strong> <em>masika</em><br />
+<strong>Description:</strong> <em>nForce 3 250 motherboard; 3500+; 5-1 in media reader</em><br />
+
+<pre>
+OpenBSD 3.8-current (GENERIC) #0: Tue Jan 17 16:48:19 CST 2006
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 1073278976 (1048124K)
+avail mem = 908673024 (887376K)
+using 22937 buffers containing 107536384 bytes (105016K) of memory
+mainbus0 (root)
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Athlon(tm) 64 Processor 3500+, 2211.01 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,NXE,MMXX,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 &quot;Nvidia nForce3 250 PCI Host&quot; rev 0xa1
+pcib0 at pci0 dev 1 function 0 &quot;Nvidia nForce3 250 ISA&quot; rev 0xa2
+nviic0 at pci0 dev 1 function 1 &quot;Nvidia nForce3 250 SMBus&quot; rev 0xa1
+iic0 at nviic0
+iic1 at nviic0
+iic1: addr 0x2f 00=12 01=0f 02=10 03=01 04=07 05=00 06=18 07=00 08=00 14=14 15=62 16=02 17=05
+ohci0 at pci0 dev 2 function 0 &quot;Nvidia nForce3 250 USB&quot; rev 0xa1: irq 14, version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Nvidia OHCI root hub, rev 1.00/1.00, addr 1
+uhub0: 4 ports with 4 removable, self powered
+ohci1 at pci0 dev 2 function 1 &quot;Nvidia nForce3 250 USB&quot; rev 0xa1: irq 14, version 1.0, legacy support
+usb1 at ohci1: USB revision 1.0
+uhub1 at usb1
+uhub1: Nvidia OHCI root hub, rev 1.00/1.00, addr 1
+uhub1: 4 ports with 4 removable, self powered
+ehci0 at pci0 dev 2 function 2 &quot;Nvidia nForce3 250 USB2&quot; rev 0xa2: irq 14
+usb2 at ehci0: USB revision 2.0
+uhub2 at usb2
+uhub2: Nvidia EHCI root hub, rev 2.00/1.00, addr 1
+uhub2: 8 ports with 8 removable, self powered
+&quot;Nvidia nForce3 LAN&quot; rev 0xa2 at pci0 dev 5 function 0 not configured
+pciide0 at pci0 dev 8 function 0 &quot;Nvidia nForce3 250 IDE&quot; rev 0xa2: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pciide0: channel 0 ignored (disabled)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;TDK, CDRW401240B, Z7SB&gt; SCSI0 5/cdrom removable
+atapiscsi1 at pciide0 channel 1 drive 1
+scsibus1 at atapiscsi1: 2 targets
+cd1 at scsibus1 targ 0 lun 0: &lt;SONY, DVD RW DRU-710A, BY01&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+cd1(pciide0:1:1): using PIO mode 4, Ultra-DMA mode 4
+pciide1 at pci0 dev 9 function 0 &quot;Nvidia nForce3 250 SATA&quot; rev 0xa2: DMA
+pciide1: using irq 11 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;WDC WD2000JD-00GBB0&gt;
+wd0: 16-sector PIO, LBA48, 190782MB, 390721968 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 5
+ppb0 at pci0 dev 11 function 0 &quot;Nvidia nForce3 250 AGP&quot; rev 0xa2
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;Nvidia GeForce4 MX 4000&quot; rev 0xc1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 14 function 0 &quot;Nvidia nForce3 250 PCI-PCI&quot; rev 0xa2
+pci2 at ppb1 bus 2
+emu0 at pci2 dev 6 function 0 &quot;Creative Labs SoundBlaster Live&quot; rev 0x07: irq 3
+ac97: codec id 0x54524123 (TriTech Microelectronics TR28602)
+audio0 at emu0
+&quot;Creative Labs PCI Gameport Joystick&quot; rev 0x07 at pci2 dev 6 function 1 not configured
+ohci2 at pci2 dev 7 function 0 &quot;NEC USB&quot; rev 0x43: irq 10, version 1.0
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3
+uhub3: NEC OHCI root hub, rev 1.00/1.00, addr 1
+uhub3: 3 ports with 3 removable, self powered
+ohci3 at pci2 dev 7 function 1 &quot;NEC USB&quot; rev 0x43: irq 10, version 1.0
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4
+uhub4: NEC OHCI root hub, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4
+uhub4: NEC OHCI root hub, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+ehci1 at pci2 dev 7 function 2 &quot;NEC USB&quot; rev 0x04: irq 11
+usb5 at ehci1: USB revision 2.0
+uhub5 at usb5
+uhub5: NEC EHCI root hub, rev 2.00/1.00, addr 1
+uhub5: 5 ports with 5 removable, self powered
+pciide2 at pci2 dev 8 function 0 &quot;Promise PDC20267&quot; rev 0x02: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide2: using irq 10 for native-PCI interrupt
+pciide2: channel 0 disabled (no drives)
+pciide2: channel 1 disabled (no drives)
+&quot;VIA VT6306 FireWire&quot; rev 0x46 at pci2 dev 12 function 0 not configured
+re0 at pci2 dev 13 function 0 &quot;Realtek 8169&quot; rev 0x10: irq 14, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 0
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 DRAM Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 3 &quot;AMD AMD64 Misc Cfg&quot; rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+lm0 at isa0 port 0x290/8: W83627THF
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+umass0 at uhub5 port 1 configuration 1 interface 0
+umass0: Y-E DATA Silicon Media R/W, rev 2.00/3.10, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets
+sd0 at scsibus2 targ 1 lun 0: &lt;Y-E DATA, SM Card Reader, 3.10&gt; SCSI0 0/direct removable
+sd0: drive offline
+sd1 at scsibus2 targ 1 lun 1: &lt;Y-E DATA, SM Card Reader, 3.10&gt; SCSI0 0/direct removable
+sd1: drive offline
+sd2 at scsibus2 targ 1 lun 2: &lt;Y-E DATA, MS Card Reader, 3.10&gt; SCSI0 0/direct removable
+sd2: drive offline
+sd3 at scsibus2 targ 1 lun 3: &lt;Y-E DATA, SD Card Reader, 3.10&gt; SCSI0 0/direct removable
+sd3: drive offline
+dkcsum: wd0 matches BIOS drive 0x80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

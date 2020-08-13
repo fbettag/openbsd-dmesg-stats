@@ -1,0 +1,227 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-01-05 17:19:04</em><br />
+<strong>From:</strong> <em>Sikevux</em><br />
+<strong>Description:</strong> <em>Supermicro A2SDi-2C-HLN4F</em><br />
+
+<pre>
+OpenBSD 6.2-current (RAMDISK_CD) #320: Thu Jan  4 23:48:28 MST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4250882048 (4053MB)
+avail mem = 4118294528 (3927MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x7f0c7000 (31 entries)
+bios0: vendor American Megatrends Inc. version &quot;1.0&quot; date 08/02/2017
+bios0: Supermicro Super Server
+acpi0 at bios0: rev 2, can't enable ACPI
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel(R) Atom(TM) CPU C3338 @ 1.50GHz, 2200.41 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,SENSOR,ARAT
+cpu0: 2MB 64b/line 16-way L2 cache
+cpu0: cannot disable silicon debug
+cpu0: mwait min=64, max=64, C-substates=0.2.0.2, IBE
+pci0 at mainbus0 bus 0
+0:31:5: mem address conflict 0xfe010000/0x1000
+pchb0 at pci0 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x1980 rev 0x11
+pchb1 at pci0 dev 4 function 0 vendor &quot;Intel&quot;, unknown product 0x19a1 rev 0x11
+vendor &quot;Intel&quot;, unknown product 0x19a2 (class system subclass root complex event, rev 0x11) at pci0 dev 5 function 0 not configured
+ppb0 at pci0 dev 10 function 0 vendor &quot;Intel&quot;, unknown product 0x19a5 rev 0x11
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 17 function 0 vendor &quot;Intel&quot;, unknown product 0x19ab rev 0x11
+pci2 at ppb1 bus 2
+ppb2 at pci2 dev 0 function 0 &quot;ASPEED Technology AST1150 PCI&quot; rev 0x03
+pci3 at ppb2 bus 3
+&quot;ASPEED Technology AST2000&quot; rev 0x30 at pci3 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19ac (class system subclass miscellaneous, rev 0x11) at pci0 dev 18 function 0 not configured
+ahci0 at pci0 dev 19 function 0 vendor &quot;Intel&quot;, unknown product 0x19b2 rev 0x11: unable to map interrupt
+ahci1 at pci0 dev 20 function 0 vendor &quot;Intel&quot;, unknown product 0x19c2 rev 0x11: unable to map interrupt
+xhci0 at pci0 dev 21 function 0 vendor &quot;Intel&quot;, unknown product 0x19d0 rev 0x11: couldn't map interrupt
+ppb3 at pci0 dev 22 function 0 vendor &quot;Intel&quot;, unknown product 0x19d1 rev 0x11
+pci4 at ppb3 bus 4
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci4 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci4 dev 0 function 1 not configured
+ppb4 at pci0 dev 23 function 0 vendor &quot;Intel&quot;, unknown product 0x19d2 rev 0x11
+pci5 at ppb4 bus 5
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci5 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci5 dev 0 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x19d3 (class communications subclass miscellaneous, rev 0x11) at pci0 dev 24 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19dc (class bridge subclass ISA, rev 0x11) at pci0 dev 31 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19de (class memory subclass miscellaneous, rev 0x11) at pci0 dev 31 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x19df (class serial bus subclass SMBus, rev 0x11) at pci0 dev 31 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x19e0 (class serial bus unknown subclass 0x80, rev 0x11) at pci0 dev 31 function 5 not configured
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: console
+efifb0 at mainbus0: 1024x768, 32bpp
+wsdisplay at efifb0 not configured
+softraid0 at root
+scsibus0 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

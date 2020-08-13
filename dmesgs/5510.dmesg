@@ -1,0 +1,360 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-05-25 00:59:50</em><br />
+<strong>From:</strong> <em>afresh1</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.7 (GENERIC.MP) sparc64 on Oracle ORCL,SPARC-T4-1</em><br />
+
+<pre>
+OpenBSD 6.7 (GENERIC.MP) #310: Thu May  7 18:41:00 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC.MP
+real mem = 16642998272 (15872MB)
+avail mem = 16321773568 (15565MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root: SPARC T4-1
+cpu0 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu1 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu2 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu3 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu4 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu5 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu6 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu7 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu8 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu9 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu10 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu11 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu12 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu13 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu14 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu15 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu16 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu17 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu18 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu19 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu20 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu21 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu22 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu23 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu24 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu25 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu26 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu27 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu28 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu29 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu30 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu31 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu32 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu33 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu34 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu35 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu36 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu37 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu38 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu39 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu40 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu41 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu42 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu43 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu44 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu45 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu46 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu47 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu48 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu49 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu50 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu51 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu52 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu53 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu54 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu55 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu56 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu57 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu58 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu59 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu60 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu61 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu62 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+cpu63 at mainbus0: SPARC-T4 (rev 0.0) @ 2847.862 MHz
+&quot;reboot-memory&quot; at mainbus0 not configured
+vbus0 at mainbus0
+&quot;flashprom&quot; at vbus0 not configured
+&quot;tpm&quot; at vbus0 not configured
+cbus0 at vbus0
+vldc0 at cbus0
+vldcp0 at vldc0 chan 0x0: ivec 0x0, 0x1 channel &quot;hvctl&quot;
+&quot;ldom-primary&quot; at vldc0 chan 0x1 not configured
+&quot;fmactl&quot; at vldc0 chan 0x3 not configured
+vldc1 at cbus0
+&quot;ldmfma&quot; at vldc1 chan 0x4 not configured
+vldc2 at cbus0
+&quot;spfma&quot; at vldc2 chan 0x5 not configured
+vldc3 at cbus0
+vldcp1 at vldc3 chan 0x14: ivec 0x28, 0x29 channel &quot;spds&quot;
+&quot;sunvts&quot; at vldc3 chan 0x6 not configured
+&quot;sunmc&quot; at vldc3 chan 0x7 not configured
+&quot;explorer&quot; at vldc3 chan 0x8 not configured
+&quot;flashupdate&quot; at vldc3 chan 0x9 not configured
+&quot;ipmi&quot; at vldc3 chan 0xb not configured
+&quot;virtual-domain-service&quot; at cbus0 not configured
+vrng0 at vbus0
+vcons0 at vbus0: ivec 0x8011, console
+vrtc0 at vbus0
+vpci0 at mainbus0: bus 0 to 18, dvma map 80000000-ffffffff
+pci0 at vpci0
+ppb0 at pci0 dev 1 function 0 &quot;Sun SPARC-T3/T4 PCIE&quot; rev 0x01
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 0 function 0 &quot;IDT 89HPES48H12G2&quot; rev 0x02
+pci2 at ppb1 bus 2
+ppb2 at pci2 dev 0 function 0 &quot;IDT 89HPES48H12G2&quot; rev 0x02: msi
+pci3 at ppb2 bus 3
+ppb3 at pci2 dev 4 function 0 &quot;IDT 89HPES48H12G2&quot; rev 0x02
+pci4 at ppb3 bus 4
+mpii0 at pci4 dev 0 function 0 &quot;Symbios Logic SAS2008&quot; rev 0x03: msi
+mpii0: RF On-Board, firmware xxx.xxx.xxx.xxx IR, MPI 2.0
+scsibus1 at mpii0: 834 targets
+ppb4 at pci2 dev 6 function 0 &quot;IDT 89HPES48H12G2&quot; rev 0x02: msi
+pci5 at ppb4 bus 5
+ppb5 at pci2 dev 8 function 0 &quot;IDT 89HPES48H12G2&quot; rev 0x02: msi
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 2 function 0 &quot;Sun SPARC-T3/T4 PCIE&quot; rev 0x01
+pci7 at ppb6 bus 7
+ppb7 at pci7 dev 0 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci8 at ppb7 bus 8
+ppb8 at pci8 dev 0 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci9 at ppb8 bus 9
+ppb9 at pci9 dev 0 function 0 &quot;ASPEED Technology AST1150 PCI&quot; rev 0x02
+pci10 at ppb9 bus 10
+&quot;ASPEED Technology AST2000&quot; rev 0x10 at pci10 dev 0 function 0 not configured
+ppb10 at pci8 dev 4 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci11 at ppb10 bus 11
+mpii1 at pci11 dev 0 function 0 &quot;Symbios Logic SAS2008&quot; rev 0x03: msi
+mpii1: RF On-Board, firmware xxx.xxx.xxx.xxx IR, MPI 2.0
+scsibus2 at mpii1: 834 targets
+ppb11 at pci8 dev 6 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci12 at ppb11 bus 12
+em0 at pci12 dev 0 function 0 &quot;Intel 82576&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci12 dev 0 function 1 &quot;Intel 82576&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb12 at pci8 dev 7 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci13 at ppb12 bus 13
+em2 at pci13 dev 0 function 0 &quot;Intel 82576&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em3 at pci13 dev 0 function 1 &quot;Intel 82576&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb13 at pci8 dev 8 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02: msi
+pci14 at ppb13 bus 14
+ppb14 at pci8 dev 10 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02: msi
+pci15 at ppb14 bus 15
+ppb15 at pci8 dev 12 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02: msi
+pci16 at ppb15 bus 16
+ppb16 at pci8 dev 15 function 0 &quot;IDT 89HPES64H16G2&quot; rev 0x02
+pci17 at ppb16 bus 17
+ppb17 at pci17 dev 0 function 0 &quot;PLX PEX 8112&quot; rev 0xaa
+pci18 at ppb17 bus 18
+ohci0 at pci18 dev 0 function 0 &quot;NEC USB&quot; rev 0x43: ivec 0x2, version 1.0
+ohci1 at pci18 dev 0 function 1 &quot;NEC USB&quot; rev 0x43: ivec 0x3, version 1.0
+ehci0 at pci18 dev 0 function 2 &quot;NEC USB&quot; rev 0x04: ivec 0x4
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NEC EHCI root hub&quot; rev 2.00/1.00 addr 1
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+&quot;niu&quot; at mainbus0 not configured
+&quot;pci-performance-counters&quot; at mainbus0 not configured
+sd0 at scsibus1 targ 2 lun 0: &lt;HITACHI, H103030SCSUN300G, A2A8&gt; naa.5000cca00a5978f0
+sd0: 286102MB, 512 bytes/sector, 585937500 sectors
+cd0 at scsibus2 targ 8 lun 0: &lt;TEAC, DV-W28S-A, 9.2A&gt; removable
+uhub3 at uhub0 port 2 configuration 1 interface 0 &quot;Cypress Semiconductor USB2 Hub&quot; rev 2.00/0.0b addr 2
+uhub4 at uhub3 port 3 configuration 1 interface 0 &quot;American Megatrends Inc. Generic Hub&quot; rev 2.00/1.00 addr 3
+umass0 at uhub4 port 2 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual Cdrom Device&quot; rev 2.00/1.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus3 at umass0: 2 targets, initiator 0
+cd1 at scsibus3 targ 1 lun 0: &lt;AMI, Virtual CDROM, 1.00&gt; removable
+cdce0 at uhub4 port 3 configuration 2 interface 0 &quot;SunMicro Virtual Eth Device&quot; rev 2.00/1.00 addr 5
+cdce0: address xx:xx:xx:xx:xx:xx
+uhidev0 at uhub3 port 4 configuration 1 interface 0 &quot;American Megatrends Inc. Virtual Keyboard and Mouse&quot; rev 1.10/1.00 addr 6
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd0 at ukbd0 mux 1
+uhidev1 at uhub3 port 4 configuration 1 interface 1 &quot;American Megatrends Inc. Virtual Keyboard and Mouse&quot; rev 1.10/1.00 addr 6
+uhidev1: iclass 3/1
+ums0 at uhidev1: 3 buttons
+wsmouse0 at ums0 mux 0
+uhub5 at uhub0 port 4 configuration 1 interface 0 &quot;Cypress Semiconductor USB2 Hub&quot; rev 2.00/0.0b addr 7
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+bootpath: /pci@400,0/pci@1,0/pci@0,0/pci@4,0/scsi@0,0/disk@5000cca00a5978f1,0
+root on sd0a (ba0759e5604134d0.a) swap on sd0b dump on sd0b
+umass1 at uhub5 port 2 configuration 1 interface 0 &quot;SanDisk Ultra USB 3.0&quot; rev 2.10/1.00 addr 8
+umass1: using SCSI over Bulk-Only
+scsibus6 at umass1: 2 targets, initiator 0
+sd1 at scsibus6 targ 1 lun 0: &lt;SanDisk, Ultra USB 3.0, 1.00&gt; removable serial.07815591270114112225
+sd1: 29327MB, 512 bytes/sector, 60062500 sectors
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

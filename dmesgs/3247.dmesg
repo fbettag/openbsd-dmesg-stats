@@ -1,0 +1,619 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-08-11 16:14:14</em><br />
+<strong>From:</strong> <em>Cornwallis</em><br />
+<strong>Description:</strong> <em>vmware virtual server</em><br />
+
+<pre>
+OpenBSD 6.1 (GENERIC.MP) #8: Tue Jun 27 08:50:26 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130640896 (2031MB)
+avail mem = 2061447168 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0010 (242 entries)
+bios0: vendor Phoenix Technologies LTD version &quot;6.00&quot; date 04/05/2016
+bios0: VMware, Inc. VMware Virtual Platform
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP BOOT APIC MCFG SRAT HPET WAET
+acpi0: wakeup devices PCI0(S3) USB_(S1) P2P0(S3) S1F0(S3) S2F0(S3) S8F0(S3) S16F(S3) S18F(S3) S22F(S3) S23F(S3) S24F(S3) S25F(S3) PE40(S3) S1F0(S3) PE50(S3) S1F0(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.25 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2199253470 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 65MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.47 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 0, package 2
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-127
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;PNP0001&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0A05&quot; at acpi0 not configured
+&quot;PNP0700&quot; at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+pvbus0 at mainbus0: VMware
+vmt0 at pvbus0
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+pci1 at ppb0 bus 1
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371AB PIIX4 ISA&quot; rev 0x08
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371AB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;VMware Virtual IDE Hard Drive&gt;
+wd0: 64-sector PIO, LBA, 30720MB, 62914560 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;NECVMWar, VMware IDE CDR10, 1.00&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+piixpm0 at pci0 dev 7 function 3 &quot;Intel 82371AB Power&quot; rev 0x08: SMBus disabled
+&quot;VMware VMCI&quot; rev 0x10 at pci0 dev 7 function 7 not configured
+vga1 at pci0 dev 15 function 0 &quot;VMware SVGA II&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 17 function 0 &quot;VMware PCI&quot; rev 0x02
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 21 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci3 at ppb2 bus 3
+vmx0 at pci3 dev 0 function 0 &quot;VMware VMXNET3&quot; rev 0x01: apic 1 int 18, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 21 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 21 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 21 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 21 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 21 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci8 at ppb7 bus 8
+ppb8 at pci0 dev 21 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci9 at ppb8 bus 9
+ppb9 at pci0 dev 21 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci10 at ppb9 bus 10
+ppb10 at pci0 dev 22 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci11 at ppb10 bus 11
+ppb11 at pci0 dev 22 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci12 at ppb11 bus 12
+ppb12 at pci0 dev 22 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci13 at ppb12 bus 13
+ppb13 at pci0 dev 22 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci14 at ppb13 bus 14
+ppb14 at pci0 dev 22 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci15 at ppb14 bus 15
+ppb15 at pci0 dev 22 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci16 at ppb15 bus 16
+ppb16 at pci0 dev 22 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci17 at ppb16 bus 17
+ppb17 at pci0 dev 22 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci18 at ppb17 bus 18
+ppb18 at pci0 dev 23 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci19 at ppb18 bus 19
+ppb19 at pci0 dev 23 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci20 at ppb19 bus 20
+ppb20 at pci0 dev 23 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci21 at ppb20 bus 21
+ppb21 at pci0 dev 23 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci22 at ppb21 bus 22
+ppb22 at pci0 dev 23 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci23 at ppb22 bus 23
+ppb23 at pci0 dev 23 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci24 at ppb23 bus 24
+ppb24 at pci0 dev 23 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci25 at ppb24 bus 25
+ppb25 at pci0 dev 23 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci26 at ppb25 bus 26
+ppb26 at pci0 dev 24 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci27 at ppb26 bus 27
+ppb27 at pci0 dev 24 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci28 at ppb27 bus 28
+ppb28 at pci0 dev 24 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci29 at ppb28 bus 29
+ppb29 at pci0 dev 24 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci30 at ppb29 bus 30
+ppb30 at pci0 dev 24 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci31 at ppb30 bus 31
+ppb31 at pci0 dev 24 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci32 at ppb31 bus 32
+ppb32 at pci0 dev 24 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci33 at ppb32 bus 33
+ppb33 at pci0 dev 24 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci34 at ppb33 bus 34
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (0438e11759a232ba.a) swap on wd0b dump on wd0b
+carp0: state transition: INIT -&gt; BACKUP
+carp0: state transition: BACKUP -&gt; MASTER
+carp0: state transition: MASTER -&gt; INIT
+syncing disks... done
+carp: carp0 demoted group carp by 1 to 1 (carpdev)
+rebooting...
+OpenBSD 6.1 (GENERIC.MP) #8: Tue Jun 27 08:50:26 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130640896 (2031MB)
+avail mem = 2061447168 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0010 (242 entries)
+bios0: vendor Phoenix Technologies LTD version &quot;6.00&quot; date 04/05/2016
+bios0: VMware, Inc. VMware Virtual Platform
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP BOOT APIC MCFG SRAT HPET WAET
+acpi0: wakeup devices PCI0(S3) USB_(S1) P2P0(S3) S1F0(S3) S2F0(S3) S8F0(S3) S16F(S3) S18F(S3) S22F(S3) S23F(S3) S24F(S3) S25F(S3) PE40(S3) S1F0(S3) PE50(S3) S1F0(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.26 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2199258740 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 65MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.50 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 0, package 2
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-127
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;PNP0001&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0A05&quot; at acpi0 not configured
+&quot;PNP0700&quot; at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+pvbus0 at mainbus0: VMware
+vmt0 at pvbus0
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+pci1 at ppb0 bus 1
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371AB PIIX4 ISA&quot; rev 0x08
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371AB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;VMware Virtual IDE Hard Drive&gt;
+wd0: 64-sector PIO, LBA, 30720MB, 62914560 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;NECVMWar, VMware IDE CDR10, 1.00&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+piixpm0 at pci0 dev 7 function 3 &quot;Intel 82371AB Power&quot; rev 0x08: SMBus disabled
+&quot;VMware VMCI&quot; rev 0x10 at pci0 dev 7 function 7 not configured
+vga1 at pci0 dev 15 function 0 &quot;VMware SVGA II&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 17 function 0 &quot;VMware PCI&quot; rev 0x02
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 21 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci3 at ppb2 bus 3
+vmx0 at pci3 dev 0 function 0 &quot;VMware VMXNET3&quot; rev 0x01: apic 1 int 18, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 21 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 21 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 21 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 21 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 21 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci8 at ppb7 bus 8
+ppb8 at pci0 dev 21 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci9 at ppb8 bus 9
+ppb9 at pci0 dev 21 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci10 at ppb9 bus 10
+ppb10 at pci0 dev 22 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci11 at ppb10 bus 11
+ppb11 at pci0 dev 22 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci12 at ppb11 bus 12
+ppb12 at pci0 dev 22 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci13 at ppb12 bus 13
+ppb13 at pci0 dev 22 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci14 at ppb13 bus 14
+ppb14 at pci0 dev 22 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci15 at ppb14 bus 15
+ppb15 at pci0 dev 22 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci16 at ppb15 bus 16
+ppb16 at pci0 dev 22 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci17 at ppb16 bus 17
+ppb17 at pci0 dev 22 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci18 at ppb17 bus 18
+ppb18 at pci0 dev 23 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci19 at ppb18 bus 19
+ppb19 at pci0 dev 23 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci20 at ppb19 bus 20
+ppb20 at pci0 dev 23 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci21 at ppb20 bus 21
+ppb21 at pci0 dev 23 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci22 at ppb21 bus 22
+ppb22 at pci0 dev 23 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci23 at ppb22 bus 23
+ppb23 at pci0 dev 23 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci24 at ppb23 bus 24
+ppb24 at pci0 dev 23 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci25 at ppb24 bus 25
+ppb25 at pci0 dev 23 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci26 at ppb25 bus 26
+ppb26 at pci0 dev 24 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci27 at ppb26 bus 27
+ppb27 at pci0 dev 24 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci28 at ppb27 bus 28
+ppb28 at pci0 dev 24 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci29 at ppb28 bus 29
+ppb29 at pci0 dev 24 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci30 at ppb29 bus 30
+ppb30 at pci0 dev 24 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci31 at ppb30 bus 31
+ppb31 at pci0 dev 24 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci32 at ppb31 bus 32
+ppb32 at pci0 dev 24 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci33 at ppb32 bus 33
+ppb33 at pci0 dev 24 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci34 at ppb33 bus 34
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (0438e11759a232ba.a) swap on wd0b dump on wd0b
+carp0: state transition: INIT -&gt; BACKUP
+carp0: state transition: BACKUP -&gt; MASTER
+carp0: state transition: MASTER -&gt; INIT
+syncing disks... done
+carp: carp0 demoted group carp by 1 to 1 (carpdev)
+rebooting...
+OpenBSD 6.1 (GENERIC.MP) #19: Thu Aug  3 14:59:44 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130640896 (2031MB)
+avail mem = 2061447168 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0010 (242 entries)
+bios0: vendor Phoenix Technologies LTD version &quot;6.00&quot; date 04/05/2016
+bios0: VMware, Inc. VMware Virtual Platform
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP BOOT APIC MCFG SRAT HPET WAET
+acpi0: wakeup devices PCI0(S3) USB_(S1) P2P0(S3) S1F0(S3) S2F0(S3) S8F0(S3) S16F(S3) S18F(S3) S22F(S3) S23F(S3) S24F(S3) S25F(S3) PE40(S3) S1F0(S3) PE50(S3) S1F0(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.23 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2199233730 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 65MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz, 2199.25 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,MMX,FXSR,SSE,SSE2,SS,SSE3,PCLMUL,SSSE3,CX16,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,HV,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 0, package 2
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-127
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;PNP0001&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0A05&quot; at acpi0 not configured
+&quot;PNP0700&quot; at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+pvbus0 at mainbus0: VMware
+vmt0 at pvbus0
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82443BX AGP&quot; rev 0x01
+pci1 at ppb0 bus 1
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371AB PIIX4 ISA&quot; rev 0x08
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371AB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;VMware Virtual IDE Hard Drive&gt;
+wd0: 64-sector PIO, LBA, 30720MB, 62914560 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;NECVMWar, VMware IDE CDR10, 1.00&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+piixpm0 at pci0 dev 7 function 3 &quot;Intel 82371AB Power&quot; rev 0x08: SMBus disabled
+&quot;VMware VMCI&quot; rev 0x10 at pci0 dev 7 function 7 not configured
+vga1 at pci0 dev 15 function 0 &quot;VMware SVGA II&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 17 function 0 &quot;VMware PCI&quot; rev 0x02
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 21 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci3 at ppb2 bus 3
+vmx0 at pci3 dev 0 function 0 &quot;VMware VMXNET3&quot; rev 0x01: apic 1 int 18, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 21 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 21 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 21 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 21 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 21 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci8 at ppb7 bus 8
+ppb8 at pci0 dev 21 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci9 at ppb8 bus 9
+ppb9 at pci0 dev 21 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci10 at ppb9 bus 10
+ppb10 at pci0 dev 22 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci11 at ppb10 bus 11
+ppb11 at pci0 dev 22 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci12 at ppb11 bus 12
+ppb12 at pci0 dev 22 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci13 at ppb12 bus 13
+ppb13 at pci0 dev 22 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci14 at ppb13 bus 14
+ppb14 at pci0 dev 22 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci15 at ppb14 bus 15
+ppb15 at pci0 dev 22 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci16 at ppb15 bus 16
+ppb16 at pci0 dev 22 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci17 at ppb16 bus 17
+ppb17 at pci0 dev 22 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci18 at ppb17 bus 18
+ppb18 at pci0 dev 23 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci19 at ppb18 bus 19
+ppb19 at pci0 dev 23 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci20 at ppb19 bus 20
+ppb20 at pci0 dev 23 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci21 at ppb20 bus 21
+ppb21 at pci0 dev 23 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci22 at ppb21 bus 22
+ppb22 at pci0 dev 23 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci23 at ppb22 bus 23
+ppb23 at pci0 dev 23 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci24 at ppb23 bus 24
+ppb24 at pci0 dev 23 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci25 at ppb24 bus 25
+ppb25 at pci0 dev 23 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci26 at ppb25 bus 26
+ppb26 at pci0 dev 24 function 0 &quot;VMware PCIE&quot; rev 0x01
+pci27 at ppb26 bus 27
+ppb27 at pci0 dev 24 function 1 &quot;VMware PCIE&quot; rev 0x01
+pci28 at ppb27 bus 28
+ppb28 at pci0 dev 24 function 2 &quot;VMware PCIE&quot; rev 0x01
+pci29 at ppb28 bus 29
+ppb29 at pci0 dev 24 function 3 &quot;VMware PCIE&quot; rev 0x01
+pci30 at ppb29 bus 30
+ppb30 at pci0 dev 24 function 4 &quot;VMware PCIE&quot; rev 0x01
+pci31 at ppb30 bus 31
+ppb31 at pci0 dev 24 function 5 &quot;VMware PCIE&quot; rev 0x01
+pci32 at ppb31 bus 32
+ppb32 at pci0 dev 24 function 6 &quot;VMware PCIE&quot; rev 0x01
+pci33 at ppb32 bus 33
+ppb33 at pci0 dev 24 function 7 &quot;VMware PCIE&quot; rev 0x01
+pci34 at ppb33 bus 34
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (0438e11759a232ba.a) swap on wd0b dump on wd0b
+carp0: state transition: INIT -&gt; BACKUP
+carp0: state transition: BACKUP -&gt; MASTER
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

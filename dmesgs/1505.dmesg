@@ -1,0 +1,282 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-08-25 13:50:22</em><br />
+<strong>From:</strong> <em>kind bro</em><br />
+<strong>Description:</strong> <em>Supermicro 6023L-8R
+-OpenBSD 3.6 snapshot w/ MP kernel
+-Serverworks GC-LE chipset
+-onboard Adaptec 7902 still doesn`t work
+-will hang on boot unless legacy usb support is disabled in bios
+-sucky limited console redirection support in bios</em><br />
+
+<pre>
+OpenBSD 3.6 (GENERIC.MP) #151: Tue Aug 24 11:25:10 MDT 2004
+   xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Xeon(TM) CPU 2.40GHz (&quot;GenuineIntel&quot; 686-class) 2.40 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,CNXT-ID
+real mem  = 2147000320 (2096680K)
+avail mem = 1953034240 (1907260K)
+using 4278 buffers containing 107454464 bytes (104936K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(00) BIOS, date 01/28/04, BIOS32 rev. 0 @ 0xfdb30
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0x10000
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xf4880/160 (8 entries)
+pcibios0: PCI Interrupt Router at 000:01:7 (&quot;ServerWorks CSB5 SouthBridge&quot; rev 0x00)
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x6600
+mainbus0: Intel MP Specification (Version 1.4) (AMI      GCHE        )
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 132 MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Xeon(TM) CPU 2.40GHz (&quot;GenuineIntel&quot; 686-class) 2.40 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,CNXT-ID
+cpu2 at mainbus0: apid 6 (application processor)
+cpu2: Intel(R) Xeon(TM) CPU 2.40GHz (&quot;GenuineIntel&quot; 686-class) 2.40 GHz
+cpu2: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,CNXT-ID
+cpu3 at mainbus0: apid 7 (application processor)
+cpu3: Intel(R) Xeon(TM) CPU 2.40GHz (&quot;GenuineIntel&quot; 686-class) 2.40 GHz
+cpu3: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,CNXT-ID
+mainbus0: bus 0 is type PCI
+mainbus0: bus 1 is type PCI
+mainbus0: bus 2 is type PCI
+mainbus0: bus 3 is type PCI
+mainbus0: bus 4 is type PCI
+mainbus0: bus 5 is type ISA
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 11, 16 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec01000, version 11, 16 pins
+ioapic2 at mainbus0: apid 10 pa 0xfec02000, version 11, 16 pins
+ioapic3 at mainbus0: apid 11 pa 0xfec03000, version 11, 16 pins
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;ServerWorks CNB20-HE&quot; rev 0x31
+pchb1 at pci0 dev 0 function 1 &quot;ServerWorks CNB20-HE&quot; rev 0x00
+pci1 at pchb1 bus 1
+ahd0 at pci1 dev 2 function 0 &quot;Adaptec AIC-7902B U320&quot; rev 0x10: apic 9 int 14 (irq 11)
+aic7902: U320 Wide Channel A, SCSI Id=7, PCI-X 67-100Mhz, 512 SCBs
+scsibus0 at ahd0: 16 targets
+ahd1 at pci1 dev 2 function 1 &quot;Adaptec AIC-7902B U320&quot; rev 0x10: apic 9 int 15 (irq 10)
+aic7902: U320 Wide Channel B, SCSI Id=7, PCI-X 67-100Mhz, 512 SCBs
+scsibus1 at ahd1: 16 targets
+pchb2 at pci0 dev 0 function 2 &quot;ServerWorks CNB20-HE&quot; rev 0x00
+pci2 at pchb2 bus 3
+vga1 at pci0 dev 2 function 0 &quot;ATI Rage XL&quot; rev 0x27
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 15 function 0 &quot;ServerWorks CSB5 SouthBridge&quot; rev 0x93
+pciide0 at pci0 dev 15 function 1 &quot;ServerWorks CSB5 IDE&quot; rev 0x93: DMA
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus2 at atapiscsi0: 2 targets
+cd0 at scsibus2 targ 0 lun 0: &lt;TEAC, CD-224E, 1.9A&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 2
+ohci0 at pci0 dev 15 function 2 &quot;ServerWorks OSB4/CSB5 USB&quot; rev 0x05: apic 8 int 10 (irq 10), version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: ServerWorks OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 4 ports with 4 removable, self powered
+pchb3 at pci0 dev 15 function 3 &quot;ServerWorks CSB5 PCI&quot; rev 0x00
+pchb4 at pci0 dev 16 function 0 &quot;ServerWorks CIOB-E&quot; rev 0x12
+pchb5 at pci0 dev 16 function 2 &quot;ServerWorks CIOB-E&quot; rev 0x12
+pci3 at pchb5 bus 2
+bge0 at pci3 dev 0 function 0 &quot;Broadcom BCM5704C&quot; rev 0x02: apic 9 int 13 (irq 11) address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5704 10/100/1000baseT PHY, rev. 0
+bge1 at pci3 dev 0 function 1 &quot;Broadcom BCM5704C&quot; rev 0x02: apic 9 int 12 (irq 5) address xx:xx:xx:xx:xx:xx
+brgphy1 at bge1 phy 1: BCM5704 10/100/1000baseT PHY, rev. 0
+pchb6 at pci0 dev 17 function 0 &quot;ServerWorks CIOBX2&quot; rev 0x03
+pchb7 at pci0 dev 17 function 2 &quot;ServerWorks CIOBX2&quot; rev 0x03
+pci4 at pchb7 bus 4
+ahc1 at pci4 dev 2 function 0 &quot;Adaptec AHA-29160 U160&quot; rev 0x02: apic 9 int 5 (irq 9)
+scsibus3 at ahc1: 16 targets
+sd0 at scsibus3 targ 0 lun 0: &lt;SEAGATE, ST336607LC, 0007&gt; SCSI3 0/direct fixed
+sd0: 35003MB, 49855 cyl, 2 head, 718 sec, 512 bytes/sec, 71687372 sec total
+uk0 at scsibus3 targ 6 lun 0: &lt;SUPER, GEM318, 0&gt; SCSI2 3/processor fixed
+uk0: unknown device
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+biomask 0 netmask 0 ttymask 0
+pctr: user-level cycle counter enabled
+ahc1: target 0 using 16bit transfers
+ahc1: target 0 synchronous at 80.0MHz DT, offset = 0x3f
+dkcsum: sd0 matched BIOS disk 80
+root on sd0a
+rootdev=0x400 rrootdev=0xd00 rawdev=0xd02
+apm0: disconnected
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

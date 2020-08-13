@@ -1,0 +1,263 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-09-17 18:27:03</em><br />
+<strong>From:</strong> <em>Marvin</em><br />
+<strong>Description:</strong> <em>SPARC Enterprise M3000 booting OpenBSD 5.5</em><br />
+
+<pre>
+OpenBSD 5.5 (RAMDISK) #153: Tue Mar  4 15:12:10 MST 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/RAMDISK
+real mem = 17179869184 (16384MB)
+avail mem = 16888078336 (16105MB)
+mainbus0 at root: SPARC Enterprise M3000 Server
+cmp0 at mainbus0
+core0 at cmp0
+cpu0 at core0: FJSV,SPARC64-VII (rev 10.1) @ 2750 MHz
+cpu0: physical 64K instruction (64 b/l), 64K data (64 b/l), 5120K external (256 b/l)
+&quot;FJSV,SPARC64-VII&quot; at core0 not configured
+core1 at cmp0
+&quot;FJSV,SPARC64-VII&quot; at core1 not configured
+&quot;FJSV,SPARC64-VII&quot; at core1 not configured
+core2 at cmp0
+&quot;FJSV,SPARC64-VII&quot; at core2 not configured
+&quot;FJSV,SPARC64-VII&quot; at core2 not configured
+core3 at cmp0
+&quot;FJSV,SPARC64-VII&quot; at core3 not configured
+&quot;FJSV,SPARC64-VII&quot; at core3 not configured
+&quot;pseudo-mc&quot; at mainbus0 not configured
+psycho0 at mainbus0: pci10cf,138f, impl 0, version 4, ign 200
+psycho0: bus range 0-0, PCI bus 0
+pci0 at psycho0
+ebus0 at pci0 dev 1 function 0 &quot;Sun PCIO EBus2&quot; rev 0x01
+&quot;flashprom&quot; at ebus0 addr 0-3fffff not configured
+com0 at ebus0 addr 400000-400007 ivec 0x2b: ns16550, no working fifo
+com0: console
+&quot;scfc&quot; at ebus0 addr 200000-20012f, 210000-210007, 300000-30ffff, 310000-31ffff, 320000-37ffff ivec 0x27 not configured
+&quot;panel&quot; at ebus0 addr 280030-280030 ivec 0x25 not configured
+pyro0 at mainbus0: &quot;Oberon&quot;, rev 0, ign 0, bus A 2 to 255
+pyro0: dvma map c0000000-ffffffff
+pci1 at pyro0
+ppb0 at pci1 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci2 at ppb0 bus 3
+ppb1 at pci2 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci3 at ppb1 bus 4
+mpi0 at pci3 dev 0 function 0 &quot;Symbios Logic SAS1068E&quot; rev 0x08: msi
+scsibus0 at mpi0: 173 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;FUJITSU, MBD2147RC, 3701&gt; SCSI3 0/direct fixed naa.500000e113XXXXXX
+sd0: 140009MB, 512 bytes/sector, 286739329 sectors
+sd1 at scsibus0 targ 1 lun 0: &lt;FUJITSU, MBD2147RC, 3701&gt; SCSI3 0/direct fixed naa.500000e113XXXXXX
+sd1: 140009MB, 512 bytes/sector, 286739329 sectors
+sd2 at scsibus0 targ 2 lun 0: &lt;FUJITSU, MBD2147RC, 3701&gt; SCSI3 0/direct fixed naa.500000e113XXXXXX
+sd2: 140009MB, 512 bytes/sector, 286739329 sectors
+sd3 at scsibus0 targ 3 lun 0: &lt;FUJITSU, MBD2147RC, 3701&gt; SCSI3 0/direct fixed naa.500000e113XXXXXX
+sd3: 140009MB, 512 bytes/sector, 286739329 sectors
+cd0 at scsibus0 targ 4 lun 0: &lt;MATSHITA, DVD-RAM UJ875AS, 1.00&gt; ATAPI 5/cdrom removable
+ppb2 at pci2 dev 1 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci4 at ppb2 bus 5
+ppb3 at pci4 dev 0 function 0 &quot;ServerWorks PCIE-PCIX&quot; rev 0xb5
+pci5 at ppb3 bus 6
+bge0 at pci5 dev 4 function 0 &quot;Broadcom BCM5715&quot; rev 0xa3, BCM5715 A3 (0x9003): ivec 0x15, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+bge1 at pci5 dev 4 function 1 &quot;Broadcom BCM5715&quot; rev 0xa3, BCM5715 A3 (0x9003): ivec 0x16, address xx:xx:xx:xx:xx:xx
+brgphy1 at bge1 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+ppb4 at pci2 dev 2 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci6 at ppb4 bus 7
+ppb5 at pci6 dev 0 function 0 &quot;ServerWorks PCIE-PCIX&quot; rev 0xb5
+pci7 at ppb5 bus 8
+bge2 at pci7 dev 4 function 0 &quot;Broadcom BCM5715&quot; rev 0xa3, BCM5715 A3 (0x9003): ivec 0x16, address xx:xx:xx:xx:xx:xx
+brgphy2 at bge2 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+bge3 at pci7 dev 4 function 1 &quot;Broadcom BCM5715&quot; rev 0xa3, BCM5715 A3 (0x9003): ivec 0x17, address xx:xx:xx:xx:xx:xx
+brgphy3 at bge3 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+ppb6 at pci2 dev 8 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci8 at ppb6 bus 9
+pyro1 at mainbus0: &quot;Oberon&quot;, rev 0, ign 40, bus B 2 to 255
+pyro1: dvma map c0000000-ffffffff
+pci9 at pyro1
+ppb7 at pci9 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci10 at ppb7 bus 3
+ppb8 at pci10 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci11 at ppb8 bus 4
+&quot;QLogic ISP2432&quot; rev 0x03 at pci11 dev 0 function 0 not configured
+&quot;QLogic ISP2432&quot; rev 0x03 at pci11 dev 0 function 1 not configured
+ppb9 at pci10 dev 8 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci12 at ppb9 bus 5
+&quot;QLogic ISP2432&quot; rev 0x03 at pci12 dev 0 function 0 not configured
+&quot;QLogic ISP2432&quot; rev 0x03 at pci12 dev 0 function 1 not configured
+ppb10 at pci10 dev 9 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci13 at ppb10 bus 6
+prtc0 at mainbus0
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+bootpath: /pci@0,600000/pci@0,0/pci@0,0/scsi@0,0/disk@4,0:f
+root on rd0a swap on rd0b dump on rd0b
+erase ^?, werase ^W, kill ^U, intr ^C, status ^T
+
+Welcome to the OpenBSD/sparc64 5.5 installation program.
+(I)nstall, (U)pgrade, (A)utoinstall or (S)hell?
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

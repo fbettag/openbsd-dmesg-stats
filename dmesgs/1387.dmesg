@@ -1,0 +1,252 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-06-30 05:37:44</em><br />
+<strong>From:</strong> <em>pbug</em><br />
+<strong>Description:</strong> <em>my old P200 with OpenBSD 3.2
+2 NIC`s, SCSI (CD-RW not turned on)
+on PC card adapter with lucent orinoco silver card
+oh, the bios doesn`t see the second harddrive only OpenBSD sees it hence I have to 
+boot off the small first harddrive</em><br />
+
+<pre>
+OpenBSD 3.2 (CHARON) #2: Sat May  8 15:07:31 CEST 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/CHARON
+cpu0: F00F bug workaround installed
+cpu0: Intel Pentium (P54C) (&quot;GenuineIntel&quot; 586-class) 200 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,MCE,CX8
+real mem  = 66695168 (65132K)
+avail mem = 56332288 (55012K)
+using 839 buffers containing 3436544 bytes (3356K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(86) BIOS, date 05/29/97, BIOS32 rev. 0 @ 0xfb2a0
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0000/0xb75c
+pcibios0: PCI BIOS has 6 Interrupt Routing table entries
+pcibios0: PCI Interrupt Router at 000:07:0 (&quot;Intel 82371SB PCI-ISA&quot; rev 0x00)
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x800 0xc9000/0x800
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82437VX&quot; rev 0x02
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371SB PCI-ISA&quot; rev 0x01
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371SB IDE&quot; rev 0x00: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ST33240A&gt;
+wd0: 16-sector PIO, LBA, 3077MB, 6253 cyl, 16 head, 63 sec, 6303024 sectors
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;LITEON, CD-ROM LTN202, HL24&gt; SCSI0 5/cdrom removable
+wd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+cd0(pciide0:0:1): using PIO mode 3
+wd1 at pciide0 channel 1 drive 1: &lt;ST320014A&gt;
+wd1: 16-sector PIO, LBA, 19092MB, 16383 cyl, 16 head, 63 sec, 39102336 sectors
+wd1(pciide0:1:1): using PIO mode 4, DMA mode 2
+rl0 at pci0 dev 9 function 0 &quot;Realtek 8139&quot; rev 0x10: irq 11 address xx:xx:xx:xx:xx:xx
+rlphy0 at rl0 phy 0: RTL internal phy
+xl0 at pci0 dev 10 function 0 &quot;3Com 3c905C 100Base-TX&quot; rev 0x78: irq 10xl0: command never completed!
+xl0: command never completed!
+xl0: command never completed!
+ address xx:xx:xx:xx:xx:xx
+exphy0 at xl0 phy 24: 3Com internal media interface
+xl0: command never completed!
+xl0: command never completed!
+xl0: command never completed!
+ahc1 at pci0 dev 11 function 0 &quot;Adaptec AHA-2940AU&quot; rev 0x01: irq 9
+ahc1: aic7860: Ultra Single Channel A, SCSI Id=7, 3/255 SCBs
+scsibus1 at ahc1: 8 targets
+vga1 at pci0 dev 12 function 0 &quot;S3 Trio32/64&quot; rev 0x54
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+pcic1 at isa0 port 0x3e2/2 iomem 0xe0000/16384
+pcic1 controller 0: &lt;Vadem VG469&gt; has sockets A and B
+pcmcia0 at pcic1 controller 0 socket 0
+wi0 at pcmcia0 function 0 &quot;Lucent Technologies, WaveLAN/IEEE, Version 01.01&quot; port 0x400/64: irq 5
+wi0: Firmware 6.6 variant 1, address xx:xx:xx:xx:xx:xx
+pcmcia1 at pcic1 controller 0 socket 1
+pcic1: irq 12, polling enabled
+biomask c240 netmask ce60 ttymask dee2
+pctr: 586-class performance counters and user-level cycle counter enabled
+dkcsum: wd0 matched BIOS disk 80
+dkcsum: wd1 had no matching BIOS disk
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

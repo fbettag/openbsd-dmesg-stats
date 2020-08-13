@@ -1,0 +1,326 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-07-13 12:14:30</em><br />
+<strong>From:</strong> <em>Tom</em><br />
+<strong>Description:</strong> <em>Dell Latitude E7440 / OpenBSD 6.3</em><br />
+
+<pre>
+OpenBSD 6.3 (GENERIC.MP) #9: Tue Apr 23 11:07:02 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8470163456 (8077MB)
+avail mem = 8206372864 (7826MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xed6e0 (95 entries)
+bios0: vendor Dell Inc. version &quot;A27&quot; date 10/09/2018
+bios0: Dell Inc. Latitude E7440
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT SLIC LPIT SSDT SSDT SSDT HPET SSDT MCFG ASF! SSDT DMAR TCPA
+acpi0: wakeup devices PXSX(S4) RP01(S4) PXSX(S4) PXSX(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) PXSX(S4) PXSX(S4) GLAN(S4) EHC1(S3) EHC2(S3) XHC_(S3) HDEF(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-4310U CPU @ 2.00GHz, 2594.39 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,IBRS,IBPB,STIBP,L1DF,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+acpitimer0: recalibrated TSC frequency 2593998720 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-4310U CPU @ 2.00GHz, 2594.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,IBRS,IBPB,STIBP,L1DF,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i5-4310U CPU @ 2.00GHz, 2594.00 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,IBRS,IBPB,STIBP,L1DF,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i5-4310U CPU @ 2.00GHz, 2594.00 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,IBRS,IBPB,STIBP,L1DF,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 40 pins
+acpihpet0 at acpi0: 14318179 Hz
+acpihpet0: recalibrated TSC frequency 2593960440 Hz
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (RP01)
+acpiprt2 at acpi0: bus 2 (RP04)
+acpiprt3 at acpi0: bus 3 (RP05)
+acpiprt4 at acpi0: bus -1 (PEG0)
+acpiprt5 at acpi0: bus -1 (PEG1)
+acpiprt6 at acpi0: bus -1 (PEG2)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 107 degC
+&quot;INT3F0D&quot; at acpi0 not configured
+&quot;DLLK05CB&quot; at acpi0 not configured
+&quot;DLL05CB&quot; at acpi0 not configured
+&quot;INT33D7&quot; at acpi0 not configured
+&quot;SMO8810&quot; at acpi0 not configured
+&quot;*pnp0c14&quot; at acpi0 not configured
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PBTN
+acpibtn2 at acpi0: SBTN
+acpiac0 at acpi0: AC unit offline
+acpibat0 at acpi0: BAT0 model &quot;DELL 0D47W4C&quot; serial 10668 type LiP oem &quot;LGC-LGC6.2&quot;
+acpibat1 at acpi0: BAT1 not present
+&quot;DELLABCE&quot; at acpi0 not configured
+tpm0 at acpi0: TPM_ addr 0xfed40000/0x5000: device 0x32041114 rev 0x40
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: LCD_
+cpu0: Enhanced SpeedStep 2594 MHz: speeds: 2601, 2600, 2500, 2300, 2200, 2000, 1900, 1800, 1600, 1500, 1400, 1200, 1100, 1000, 800, 754 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 4G Host&quot; rev 0x0b
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x0b
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 4G HD Audio&quot; rev 0x0b: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 8 Series xHCI&quot; rev 0x04: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 8 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 8 Series KT&quot; rev 0x04: ports: 1 com
+com4 at puc0 port 0 apic 8 int 19: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 8 Series HD Audio&quot; rev 0x04: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 8 Series PCIE&quot; rev 0xe4
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 3 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci2 at ppb1 bus 2
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7260&quot; rev 0x73, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci3 at ppb2 bus 3
+sdhc0 at pci3 dev 0 function 0 vendor &quot;O2 Micro&quot;, unknown product 0x8520 rev 0x01: apic 8 int 16
+sdhc0: SDHC 4.0, 50 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+ehci0 at pci0 dev 29 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 8 int 21
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 8 Series LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 8 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 1: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 1 lun 0: &lt;ATA, SAMSUNG SSD PM85, EXT4&gt; SCSI3 0/direct fixed naa.5002538844584d30
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 8 Series SMBus&quot; rev 0x04: apic 8 int 17
+iic0 at ichiic0
+iic0: addr 0x29 07=ff 0f=33 10=02 11=8e 12=05 13=52 14=b2 15=22 16=23 17=27 18=25 19=a0 1a=70 1b=63 1c=c0 1e=20 20=7f 22=40 27=ff 29=04 2b=fd 2d=47 2f=20 30=95 31=25 32=0e 33=16 87=ff 8f=33 90=02 91=8e 92=05 93=52 94=b2 95=22 96=23 97=27 98=25 99=a0 9a=70 9b=63 9c=c0 9e=20 a0=7f a2=40 a7=ff a9=fc ad=40 af=20 b0=95 b1=25 b2=0e b3=16 words 00=0000 01=0000 02=0000 03=0000 04=0000 05=0000 06=0000 07=ffff
+spdmem0 at iic0 addr 0x52: 8GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+uhidev0 at uhub0 port 2 configuration 1 interface 0 &quot;G-Tech Wireless Dongle&quot; rev 2.00/1.20 addr 2
+uhidev0: iclass 3/1, 6 report ids
+ums0 at uhidev0 reportid 1: 5 buttons, Z and W dir
+wsmouse1 at ums0 mux 0
+uhid0 at uhidev0 reportid 2: input=7, output=0, feature=0
+uhid1 at uhidev0 reportid 3: input=1, output=0, feature=0
+uhid2 at uhidev0 reportid 4: input=1, output=0, feature=0
+uhid3 at uhidev0 reportid 5: input=2, output=0, feature=0
+uhid4 at uhidev0 reportid 6: input=0, output=0, feature=7
+uvideo0 at uhub0 port 4 configuration 1 interface 0 &quot;CN07YYTT724874APAF7GA00 Laptop_Integrated_Webcam_HD&quot; rev 2.00/35.06 addr 3
+video0 at uvideo0
+umass0 at uhub0 port 11 configuration 1 interface 0 &quot;JMicron External USB 3.0&quot; rev 3.00/2.04 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;External, USB3.0, 0204&gt; SCSI4 0/direct fixed serial.152d057801703310007F
+sd1: 152627MB, 512 bytes/sector, 312581808 sectors
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+ugen0 at uhub2 port 3 &quot;Intel product 0x07dc&quot; rev 2.00/0.01 addr 3
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+sd2 at scsibus4 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd2: 151597MB, 512 bytes/sector, 310471662 sectors
+root on sd2a (5d66b6ad64a05817.a) swap on sd2b dump on sd2b
+iwm0: hw rev 0x140, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

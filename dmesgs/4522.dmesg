@@ -1,0 +1,304 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-10-23 21:53:53</em><br />
+<strong>From:</strong> <em>int16h</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.4/sparc64 - SPARC Enterprise T5120 / sysfw 7.2.2.e, obp 4.30.2.b</em><br />
+
+<pre>
+console is /virtual-devices@100/console@1
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2018 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.4 (GENERIC.MP) #6: Fri Oct 12 09:57:36 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC.MP
+real mem = 4294967296 (4096MB)
+avail mem = 4199587840 (4005MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root: SPARC Enterprise T5120
+cpu0 at mainbus0: SUNW,UltraSPARC-T2 (rev 0.0) @ 1165.379 MHz
+cpu1 at mainbus0: SUNW,UltraSPARC-T2 (rev 0.0) @ 1165.379 MHz
+cpu2 at mainbus0: SUNW,UltraSPARC-T2 (rev 0.0) @ 1165.379 MHz
+cpu3 at mainbus0: SUNW,UltraSPARC-T2 (rev 0.0) @ 1165.379 MHz
+vbus0 at mainbus0
+&quot;flashprom&quot; at vbus0 not configured
+cbus0 at vbus0
+vldc0 at cbus0
+vldcp0 at vldc0 chan 0x14: ivec 0x28, 0x29 channel &quot;spds&quot;
+&quot;sunvts&quot; at vldc0 chan 0x6 not configured
+&quot;sunmc&quot; at vldc0 chan 0x7 not configured
+&quot;explorer&quot; at vldc0 chan 0x8 not configured
+&quot;led&quot; at vldc0 chan 0x9 not configured
+&quot;flashupdate&quot; at vldc0 chan 0xa not configured
+&quot;ipmi&quot; at vldc0 chan 0xc not configured
+&quot;system-management&quot; at vldc0 chan 0xd not configured
+vldc1 at cbus0
+&quot;spfma&quot; at vldc1 chan 0x5 not configured
+vldc2 at cbus0
+vldcp1 at vldc2 chan 0x0: ivec 0x0, 0x1 channel &quot;hvctl&quot;
+&quot;ldom-primary&quot; at vldc2 chan 0x1 not configured
+&quot;fmactl&quot; at vldc2 chan 0x3 not configured
+vldcp2 at vldc2 chan 0x19: ivec 0x32, 0x33 channel &quot;ldom-space10&quot;
+vldcp3 at vldc2 chan 0x1d: ivec 0x3a, 0x3b channel &quot;ldom-space11&quot;
+vldcp4 at vldc2 chan 0x21: ivec 0x42, 0x43 channel &quot;ldom-space12&quot;
+vldcp5 at vldc2 chan 0x25: ivec 0x4a, 0x4b channel &quot;ldom-space13&quot;
+vldc3 at cbus0
+&quot;ldmfma&quot; at vldc3 chan 0x4 not configured
+vcc0 at cbus0
+vcctty0 at vcc0 chan 0x18: ivec 0x30, 0x31 domain &quot;space10&quot;
+vcctty1 at vcc0 chan 0x1c: ivec 0x38, 0x39 domain &quot;space11&quot;
+vcctty2 at vcc0 chan 0x20: ivec 0x40, 0x41 domain &quot;space12&quot;
+vcctty3 at vcc0 chan 0x24: ivec 0x48, 0x49 domain &quot;space13&quot;
+vds0 at cbus0
+vdsp0 at vds0 chan 0x1a: ivec 0x34, 0x35
+vdsp1 at vds0 chan 0x1e: ivec 0x3c, 0x3d
+vdsp2 at vds0 chan 0x22: ivec 0x44, 0x45
+vdsp3 at vds0 chan 0x26: ivec 0x4c, 0x4d
+vsw0 at cbus0
+vnet0 at vsw0 chan 0x1b: ivec 0x36, 0x37
+vnet1 at vsw0 chan 0x1f: ivec 0x3e, 0x3f
+vnet2 at vsw0 chan 0x23: ivec 0x46, 0x47
+vnet3 at vsw0 chan 0x27: ivec 0x4e, 0x4f
+vrng0 at vbus0
+vcons0 at vbus0: ivec 0x111, console
+vrtc0 at vbus0
+&quot;niu&quot; at mainbus0 not configured
+vpci0 at mainbus0: bus 2 to 18, dvma map 80000000-ffffffff
+pci0 at vpci0
+ppb0 at pci0 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci1 at ppb0 bus 3
+ppb1 at pci1 dev 1 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci2 at ppb1 bus 4
+ppb2 at pci2 dev 0 function 0 &quot;PLX PEX 8517&quot; rev 0xac
+pci3 at ppb2 bus 5
+ppb3 at pci3 dev 1 function 0 &quot;PLX PEX 8517&quot; rev 0xac
+pci4 at ppb3 bus 6
+ppb4 at pci4 dev 0 function 0 &quot;PLX PEX 8112&quot; rev 0xaa
+pci5 at ppb4 bus 7
+ohci0 at pci5 dev 0 function 0 &quot;NEC USB&quot; rev 0x43: ivec 0x16, version 1.0
+ohci1 at pci5 dev 0 function 1 &quot;NEC USB&quot; rev 0x43: ivec 0x17, version 1.0
+ehci0 at pci5 dev 0 function 2 &quot;NEC USB&quot; rev 0x04: ivec 0x14
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NEC EHCI root hub&quot; rev 2.00/1.00 addr 1
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+ppb5 at pci3 dev 2 function 0 &quot;PLX PEX 8517&quot; rev 0xac
+pci6 at ppb5 bus 8
+em0 at pci6 dev 0 function 0 &quot;Intel 82571EB&quot; rev 0x06: ivec 0x17, address xx:xx:xx:xx:xx:xx
+em1 at pci6 dev 0 function 1 &quot;Intel 82571EB&quot; rev 0x06: ivec 0x14, address xx:xx:xx:xx:xx:xx
+ppb6 at pci3 dev 3 function 0 &quot;PLX PEX 8517&quot; rev 0xaa
+pci7 at ppb6 bus 9
+em2 at pci7 dev 0 function 0 &quot;Intel 82571EB&quot; rev 0x06: ivec 0x14, address xx:xx:xx:xx:xx:xx
+em3 at pci7 dev 0 function 1 &quot;Intel 82571EB&quot; rev 0x06: ivec 0x15, address xx:xx:xx:xx:xx:xx
+ppb7 at pci1 dev 2 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci8 at ppb7 bus 10
+mpi0 at pci8 dev 0 function 0 &quot;Symbios Logic SAS1068E&quot; rev 0x04: msi
+mpi0: UNUSED, firmware xxx.xxx.xxx.xxx
+scsibus1 at mpi0: 112 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;LSILOGIC, Logical Volume, 3000&gt; SCSI2 0/direct fixed naa.600508e000000000c653802778e62e02
+sd0: 139945MB, 512 bytes/sector, 286607360 sectors
+ppb8 at pci1 dev 8 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci9 at ppb8 bus 11
+ppb9 at pci9 dev 0 function 0 &quot;PLX PEX 8533&quot; rev 0xaa
+pci10 at ppb9 bus 12
+ppb10 at pci10 dev 1 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci11 at ppb10 bus 13
+ppb11 at pci10 dev 2 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci12 at ppb11 bus 14
+ppb12 at pci10 dev 8 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci13 at ppb12 bus 15
+ppb13 at pci10 dev 9 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci14 at ppb13 bus 16
+&quot;Emulex LPe12000-S&quot; rev 0x03 at pci14 dev 0 function 0 not configured
+&quot;Emulex LPe12000-S&quot; rev 0x03 at pci14 dev 0 function 1 not configured
+ppb14 at pci10 dev 10 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci15 at ppb14 bus 17
+ppb15 at pci1 dev 9 function 0 &quot;PLX PEX 8533&quot; rev 0xaa: msi
+pci16 at ppb15 bus 18
+&quot;pci-performance-counters&quot; at mainbus0 not configured
+ebus0 at mainbus0
+com0 at ebus0 addr ca0000-ca0007 ivec 0x13: ns16550a, 16 byte fifo
+uhub3 at uhub0 port 4 configuration 1 interface 0 &quot;Cypress Semiconductor USB2 Hub&quot; rev 2.00/0.0b addr 2
+umass0 at uhub3 port 4 configuration 1 interface 0 &quot;OEM Mass Storage plus&quot; rev 2.00/0.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+cd0 at scsibus2 targ 1 lun 0: &lt;TSSTcorp, CDDVDW TS-T633A, SR00&gt; SCSI0 5/cdrom removable serial.09280000EF0123456789
+uhidev0 at uhub3 port 4 configuration 1 interface 1 &quot;OEM Mass Storage plus&quot; rev 2.00/0.00 addr 3
+uhidev0: iclass 3/0
+uhid0 at uhidev0: input=1, output=1, feature=0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+bootpath: /pci@0,0/pci@0,0/pci@2,0/scsi@0,0/disk@0,0
+root on sd0a (d457caa7fa9dfe61.a) swap on sd0b dump on sd0b
+hw.sensors.mpi0.drive0=degraded (sd0), WARNING
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

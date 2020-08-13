@@ -1,0 +1,243 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-06-25 07:30:37</em><br />
+<strong>From:</strong> <em>Wu</em><br />
+<strong>Description:</strong> <em>OpenBSD -current (june 2004) in PentiumII 333Mhz, 128Mb RAM. This one acts like a firewall (home-bussines) and has some services like cvs, ftp, etc. It works as my Wifi AP too.</em><br />
+
+<pre>
+OpenBSD 3.5-current (GENERIC) #4: Thu Jun 10 11:35:00 CEST 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel Pentium II (&quot;GenuineIntel&quot; 686-class, 512KB L2 cache) 334 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR
+real mem  = 133738496 (130604K)
+avail mem = 115552256 (112844K)
+using 1658 buffers containing 6791168 bytes (6632K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(85) BIOS, date 03/16/98, BIOS32 rev. 0 @ 0xfb100
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0000/0xb578
+pcibios0: PCI IRQ Routing Table rev. 1.0 @ 0xfda10/128 (6 entries)
+pcibios0: PCI Exclusive IRQs: 10 11 12
+pcibios0: PCI Interrupt Router at 000:07:0 (&quot;Intel 82371SB ISA&quot; rev 0x00)
+pcibios0: PCI bus #1 is the last bus
+bios0: ROM list: 0xc0000/0x8000
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82443LX AGP&quot; rev 0x03
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82443LX AGP&quot; rev 0x03
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;ATI Rage Pro&quot; rev 0x5c
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371AB PIIX4 ISA&quot; rev 0x01
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371AB IDE&quot; rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ST34321A&gt;
+wd0: 32-sector PIO, LBA, 4103MB, 8404830 sectors
+wd1 at pciide0 channel 0 drive 1: &lt;ST340810A&gt;
+wd1: 16-sector PIO, LBA, 32253MB, 66055248 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+wd1(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;SAMSUNG, CD-ROM SC-148F, PS06&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+uhci0 at pci0 dev 7 function 2 &quot;Intel 82371AB USB&quot; rev 0x01: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+&quot;Intel 82371AB Power Mgmt&quot; rev 0x01 at pci0 dev 7 function 3 not configured
+rl0 at pci0 dev 10 function 0 &quot;Realtek 8139&quot; rev 0x10: irq 10 address xx:xx:xx:xx:xx:xx
+rlphy0 at rl0 phy 0: RTL internal phy
+dc0 at pci0 dev 11 function 0 &quot;Davicom DM9102&quot; rev 0x40: irq 12, address xx:xx:xx:xx:xx:xx
+amphy0 at dc0 phy 1: Am79C873 10/100 media interface, rev. 1
+wi0 at pci0 dev 12 function 0 &quot;US Robotics WL11000P&quot; rev 0x02: irq 11
+wi0: &quot;U.S. Robotics, IEEE 802.11b PC-CARD, Version 01.02&quot;
+wi0: PRISM2 HWB3163 rev.A, Firmware 0.3.0 (primary), 1.4.9 (station), address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+biomask c840 netmask dc40 ttymask dcc2
+pctr: 686-class user-level performance counters enabled
+mtrr: Pentium Pro MTRR support
+dkcsum: wd0 matched BIOS disk 80
+dkcsum: wd1 matched BIOS disk 81
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

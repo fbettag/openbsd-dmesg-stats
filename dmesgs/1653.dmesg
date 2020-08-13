@@ -1,0 +1,243 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-04-10 06:54:45</em><br />
+<strong>From:</strong> <em>tonyo</em><br />
+<strong>Description:</strong> <em>Macintosh PowerPC G4 blue&white with openbsd 3.7</em><br />
+
+<pre>
+[ using 268288 bytes of bsd ELF symbol table ]
+console out [ATY,Rage128y]console in [keyboard] USB and ADB found, using USB
+: memaddr 84000000 size 4000000, : consaddr 84000000, : ioaddr 80920000, size 20000: memtag 8000, iotag 8000: width 640 linebytes 640 height 480 depth 8
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2005 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 3.7 (wintermute) #0: Wed Apr  6 16:57:53 CEST 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/macppc/compile/wintermute
+real mem = 469762048 (458752K)
+avail mem = 424493056 (414544K)
+using 1254 buffers containing 23486464 bytes of memory
+mainbus0 (root)
+cpu0 at mainbus0: 750 (Revision 0x202): 400 MHz: 1MB backside cache
+mpcpcibr0 at mainbus0: grackle, Revision 0x40
+pci0 at mpcpcibr0 bus 0
+pchb0 at pci0 dev 0 function 0 vendor 0x1057 product 0x0002 rev 0x40
+ppb0 at pci0 dev 13 function 0 vendor 0x1011 product 0x0026 rev 0x02
+pci1 at ppb0 bus 1
+vendor 0x104c product 0x8000 (class serial bus subclass Firewire, rev 0x02) at pci1 dev 0 function 0 not configured
+pciide0 at pci1 dev 1 function 0 vendor 0x1095 product 0x0646 rev 0x07: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using irq 26 for native-PCI interrupt
+wd0 at pciide0 channel 0 drive 0: &lt;Maxtor 6Y080P0&gt;
+wd0: 16-sector PIO, LBA, 78167MB, 160086528 sectors
+wd1 at pciide0 channel 0 drive 1: &lt;SAMSUNG SP0812N&gt;
+wd1: 16-sector PIO, LBA48, 76351MB, 156368016 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+wd1(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+rl0 at pci1 dev 4 function 0 vendor 0x10ec product 0x8139 rev 0x10: irq 25 address xx:xx:xx:xx:xx:xx
+rlphy0 at rl0 phy 0: RTL internal phy
+macobio0 at pci1 dev 5 function 0 vendor 0x106b product 0x0017 rev 0x00
+macintr0 at macobio0
+zsc0 at macobio0: irq 15,16
+zstty0 at zsc0 channel 0
+zstty1 at zsc0 channel 1
+awacs0 at macobio0: irq 17,8,9 headphones
+audio at awacs0 not configured
+adb0 at macobio0 irq 18: via-cuda 0 targets
+aed0 at adb0 addr 0: ADB Event device
+wdc0 at macobio0 irq 13: DMA
+atapiscsi0 at wdc0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+scsibus0 targ 0 lun 0: &lt;MATSHITA, CD-ROM CR-589, GA0W&gt; SCSI0 5/cdrom removable not configured
+atapiscsi0(wdc0:0:0): using BIOS timings, DMA mode 2
+bm0 at macobio0 irq 42,33: address xx:xx:xx:xx:xx:xx
+lxtphy0 at bm0 phy 0: LXT970 10/100 PHY, rev. 3
+ohci0 at pci1 dev 6 function 0 vendor 0x1045 product 0xc861 rev 0x10: irq 28, version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: vendor 0x1045 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+vgafb0 at pci0 dev 16 function 0 vendor 0x1002 product 0x5245 rev 0x00, mmio
+wsdisplay0 at vgafb0: console (std, vt100 emulation)
+uhub1 at uhub0 port 2
+uhub1: Mitsumi Electric Hub in Apple Extended USB Keyboard, class 9/0, rev 1.10/1.22, addr 2
+uhub1: 3 ports with 2 removable, bus powered
+uhidev0 at uhub1 port 1 configuration 1 interface 0
+uhidev0: Mitsumi Electric Apple Extended USB Keyboard, rev 1.10/1.22, addr 3, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0 (mux 1 ignored for console): console keyboard, using wsdisplay0
+uhidev1 at uhub1 port 1 configuration 1 interface 1
+uhidev1: Mitsumi Electric Apple Extended USB Keyboard, rev 1.10/1.22, addr 3, iclass 3/0
+uhidev1: 3 report ids
+uhid0 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 3: input=3, output=0, feature=0
+bootpath: `/pci/@d/pci-ata@1/ata-4@0/disk@0/bsd`
+boot device: wd0.
+root on wd0a
+rootdev=0x0 rrootdev=0xb00 rawdev=0xb02
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

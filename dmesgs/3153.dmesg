@@ -1,0 +1,276 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-04-06 15:27:18</em><br />
+<strong>From:</strong> <em>Brian Conway</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.1-release i386 VirtualBox 5.1.18</em><br />
+
+<pre>
+OpenBSD 6.1 (GENERIC.MP) #0: Tue Apr  4 21:21:31 UTC 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz (&quot;GenuineIntel&quot; 686-class) 2.30 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,NXE,LONG,SSE3,PCLMUL,SSSE3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,RDRAND,HV,LAHF,ITSC
+real mem  = 804732928 (767MB)
+avail mem = 776552448 (740MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 06/23/99, BIOS32 rev. 0 @ 0xfda00, SMBIOS rev. 2.5 @ 0xe1000 (10 entries)
+bios0: vendor innotek GmbH version &quot;VirtualBox&quot; date 12/01/2006
+bios0: innotek GmbH VirtualBox
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S5
+acpi0: tables DSDT FACP APIC SSDT
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: CPU supports MTRRs but not enabled by BIOS
+cpu0: apic clock running at 1000MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz (&quot;GenuineIntel&quot; 686-class) 2.30 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,NXE,LONG,SSE3,PCLMUL,SSSE3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,RDRAND,HV,LAHF,ITSC
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz (&quot;GenuineIntel&quot; 686-class) 2.30 GHz
+cpu2: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,NXE,LONG,SSE3,PCLMUL,SSSE3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,RDRAND,HV,LAHF,ITSC
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz (&quot;GenuineIntel&quot; 686-class) 2.30 GHz
+cpu3: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,NXE,LONG,SSE3,PCLMUL,SSSE3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,RDRAND,HV,LAHF,ITSC
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+acpicpu2 at acpi0: C1(@1 halt!)
+acpicpu3 at acpi0: C1(@1 halt!)
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F03&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;1&quot; serial 0 type VBOX oem &quot;innotek&quot;
+acpiac0 at acpi0: AC unit online
+acpivideo0 at acpi0: GFX0
+bios0: ROM list: 0xc0000/0x8000 0xe2000/0xd400
+pvbus0 at mainbus0: KVM
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x02
+pcib0 at pci0 dev 1 function 0 &quot;Intel 82371SB ISA&quot; rev 0x00
+vga1 at pci0 dev 2 function 0 &quot;InnoTek VirtualBox Graphics Adapter&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+em0 at pci0 dev 3 function 0 &quot;Intel 82540EM&quot; rev 0x02: apic 4 int 19, address xx:xx:xx:xx:xx:xx
+&quot;InnoTek VirtualBox Guest Service&quot; rev 0x00 at pci0 dev 4 function 0 not configured
+piixpm0 at pci0 dev 7 function 0 &quot;Intel 82371AB Power&quot; rev 0x08: apic 4 int 23
+iic0 at piixpm0
+ahci0 at pci0 dev 13 function 0 &quot;Intel 82801HBM AHCI&quot; rev 0x02: apic 4 int 21, AHCI 1.1
+ahci0: device on port 0 didn't come ready, TFD: 0x171&lt;ERR&gt;
+ahci0: port 0: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, VBOX HARDDISK, 1.0&gt; SCSI3 0/direct fixed t10.ATA_VBOX_HARDDISK_VBef63bd79-2a11028c_
+sd0: 12288MB, 512 bytes/sector, 25165824 sectors
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (aadc4914e0407681.a) swap on sd0b dump on sd0b
+
+hw.machine=i386
+hw.model=Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz (&quot;GenuineIntel&quot; 686-class)
+hw.ncpu=4
+hw.byteorder=1234
+hw.pagesize=4096
+hw.disknames=sd0:aadc4914e0407681
+hw.diskcount=1
+hw.sensors.acpibat0.volt0=10.00 VDC (voltage)
+hw.sensors.acpibat0.volt1=10.00 VDC (current voltage)
+hw.sensors.acpibat0.power0=0.00 W (rate)
+hw.sensors.acpibat0.watthour0=50.00 Wh (last full capacity)
+hw.sensors.acpibat0.watthour1=0.10 Wh (warning capacity)
+hw.sensors.acpibat0.watthour2=0.05 Wh (low capacity)
+hw.sensors.acpibat0.watthour3=48.50 Wh (remaining capacity), OK
+hw.sensors.acpibat0.watthour4=50.00 Wh (design capacity)
+hw.sensors.acpibat0.raw0=0 (battery idle), OK
+hw.sensors.acpiac0.indicator0=On (power supply)
+hw.cpuspeed=2295
+hw.vendor=innotek GmbH
+hw.product=VirtualBox
+hw.version=1.2
+hw.serialno=0
+hw.uuid=846b8128-0702-4f40-97c2-591e1708df36
+hw.physmem=804732928
+hw.usermem=804524032
+hw.ncpufound=4
+hw.allowpowerdown=1
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

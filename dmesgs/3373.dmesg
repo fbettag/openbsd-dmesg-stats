@@ -1,0 +1,294 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-10-22 18:23:09</em><br />
+<strong>From:</strong> <em>Sevan / Venture37</em><br />
+<strong>Description:</strong> <em>iEi IMBA-9454G-R40 motherboard, Areca ARC-1882IX-24 controller</em><br />
+
+<pre>
+OpenBSD 6.2 (GENERIC.MP) #134: Tue Oct  3 21:22:29 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 1055522816 (1006MB)
+avail mem = 1016565760 (969MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f800 (24 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 08/01/2011
+bios0: ICP / iEi B188
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB SSDT
+acpi0: wakeup devices P0P2(S4) P0P1(S4) PS2K(S4) EUSB(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6(S4) P0P7(S4) P0P8(S4) P0P9(S4) USB0(S1) USB1(S1) USB2(S1) USB3(S1)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 CPU 6700 @ 2.66GHz, 2667.17 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR
+cpu0: 4MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 266MHz
+cpu0: mwait min=64, max=64, C-substates=0.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 CPU 6700 @ 2.66GHz, 2666.76 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR
+cpu1: 4MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (P0P1)
+acpiprt2 at acpi0: bus 2 (P0P4)
+acpiprt3 at acpi0: bus 3 (P0P5)
+acpiprt4 at acpi0: bus -1 (P0P6)
+acpiprt5 at acpi0: bus -1 (P0P7)
+acpiprt6 at acpi0: bus -1 (P0P8)
+acpiprt7 at acpi0: bus -1 (P0P9)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0400&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: Enhanced SpeedStep 2667 MHz: speeds: 2670, 2403, 2136, 1870, 1603 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945G Host&quot; rev 0x02
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82945G PCIE&quot; rev 0x02: msi
+pci1 at ppb0 bus 1
+arc0 at pci1 dev 0 function 0 &quot;Areca ARC-1880&quot; rev 0x05: apic 2 int 16
+arc0: 8 ports, 1024MB SDRAM, firmware V1.54 2017-08-11
+scsibus1 at arc0: 16 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;WDC, WD3000FYYZ-01UL1, R001&gt; SCSI3 0/direct fixed eui.001b4d204eaaa66d
+sd0: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd1 at scsibus1 targ 0 lun 1: &lt;WDC, WD3000FYYZ-01UL1, R001&gt; SCSI3 0/direct fixed eui.001b4d208ee06500
+sd1: 2861588MB, 512 bytes/sector, 5860533168 sectors
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel 82945G Video&quot; rev 0x02
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x10000000
+inteldrm0: apic 2 int 16
+inteldrm0: 1280x1024, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+ppb1 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci2 at ppb1 bus 2
+re0 at pci2 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: RTL8168E/8111E (0x2c00), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ppb2 at pci0 dev 28 function 1 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci3 at ppb2 bus 3
+re1 at pci3 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: RTL8168E/8111E (0x2c00), msi, address xx:xx:xx:xx:xx:xx
+rgephy1 at re1 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xe1
+pci4 at ppb3 bus 4
+auich0 at pci0 dev 30 function 2 &quot;Intel 82801GB AC97&quot; rev 0x01: apic 2 int 17, ICH7
+ac97: codec id 0x414c4760 (Avance Logic ALC655 rev 0)
+audio0 at auich0
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801GB LPC&quot; rev 0x01
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus2 at atapiscsi0: 2 targets
+cd0 at scsibus2 targ 0 lun 0: &lt;TEAC, CD-224E-R, 1.CA&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+pciide1 at pci0 dev 31 function 2 &quot;Intel 82801GB SATA&quot; rev 0x01: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 2 int 19 for native-PCI interrupt
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x01: apic 2 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x52: 1GB DDR2 SDRAM non-parity PC2-5300CL5
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+com2: probed fifo depth: 15 bytes
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+it0 at isa0 port 0x2e/2: IT8712F rev 8, EC port 0xa10
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (18f5b7dde36f4db3.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

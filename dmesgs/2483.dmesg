@@ -1,0 +1,335 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2013-09-04 18:20:35</em><br />
+<strong>From:</strong> <em>Sevan / Venture37</em><br />
+<strong>Description:</strong> <em>Apple MacBook Air 5,1 (mid-2012, 2Ghz i7, 11", 8GB RAM, 128GB SSD)</em><br />
+
+<pre>
+OpenBSD 5.4-current (GENERIC.MP) #50: Mon Sep  2 13:43:54 MDT 2013
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+RTC BIOS diagnostic error b1&lt;clock_battery,config_unit,memory_size&gt;
+real mem = 8475713536 (8083MB)
+avail mem = 8242003968 (7860MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0000 (54 entries)
+bios0: vendor Apple Inc. version &quot;MBA51.88Z.00EF.B02.1211271028&quot; date 11/27/2012
+bios0: Apple Inc. MacBookAir5,1
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC SBST ECDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT DMAR MCFG
+acpi0: wakeup devices P0P2(S4) PEG2(S4) EC__(S4) HDEF(S4) RP02(S4) ARPT(S4) RP05(S4) EHC1(S4) EHC2(S4) XHC1(S4) ADP1(S4) LID0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz, 1896.01 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+cpu0: apic clock running at 99MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz, 1895.70 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz, 1895.70 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 1, core 0, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz, 1895.70 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 2
+acpiec0 at acpi0
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-153
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P2)
+acpiprt2 at acpi0: bus -1 (PEG2)
+acpiprt3 at acpi0: bus 2 (RP02)
+acpiprt4 at acpi0: bus 3 (RP05)
+acpicpu0 at acpi0: C3, C1, PSS
+acpicpu1 at acpi0: C3, C1, PSS
+acpicpu2 at acpi0: C3, C1, PSS
+acpicpu3 at acpi0: C3, C1, PSS
+acpibat0 at acpi0: BAT0 model &quot;3545797981023400290&quot; type 3545797981528607052 oem &quot;3545797981528673619&quot;
+acpiac0 at acpi0: AC unit offline
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpibtn2 at acpi0: SLPB
+acpivideo0 at acpi0: IGPU
+acpivout0 at acpivideo0: DD02
+cpu0: Enhanced SpeedStep 1896 MHz: speeds: 2001, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200, 1100, 1000, 900, 800 MHz
+memory map conflict 0xe00f8000/0x1000
+memory map conflict 0xfed1c000/0x4000
+memory map conflict 0xffe70000/0x30000
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 3G Host&quot; rev 0x09
+vga1 at pci0 dev 2 function 0 &quot;Intel HD Graphics 4000&quot; rev 0x09
+intagp0 at vga1
+agp0 at intagp0: aperture at 0x90000000, size 0x10000000
+inteldrm0 at vga1
+drm0 at inteldrm0
+inteldrm0: 1366x768
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 7 Series xHCI&quot; rev 0x04 at pci0 dev 20 function 0 not configured
+&quot;Intel 7 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 7 Series HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Cirrus Logic CS4206, Intel/0x2806, using Cirrus Logic CS4206
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci2 at ppb1 bus 2
+&quot;Broadcom BCM43224&quot; rev 0x01 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 4 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci3 at ppb2 bus 3
+ppb3 at pci3 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03
+pci4 at ppb3 bus 4
+ppb4 at pci4 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03: msi
+pci5 at ppb4 bus 5
+vendor &quot;Intel&quot;, unknown product 0x1547 (class system subclass miscellaneous, rev 0x03) at pci5 dev 0 function 0 not configured
+ppb5 at pci4 dev 3 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03: msi
+pci6 at ppb5 bus 6
+ppb6 at pci4 dev 4 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03: msi
+pci7 at ppb6 bus 55
+ppb7 at pci4 dev 5 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03: msi
+pci8 at ppb7 bus 104
+ppb8 at pci4 dev 6 function 0 vendor &quot;Intel&quot;, unknown product 0x1547 rev 0x03: msi
+pci9 at ppb8 bus 105
+ehci1 at pci0 dev 29 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 22
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 vendor &quot;Intel&quot;, unknown product 0x1e56 rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 7 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, APPLE SSD TS128E, TPVA&gt; SCSI3 0/direct fixed naa.0000000000000000
+sd0: 115712MB, 512 bytes/sector, 236978176 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 7 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+iic0: addr 0x2c 03=fc 05=66 06=40 71=06 72=80 86=70 90=37 91=1c 92=35 93=3f 94=62 95=8c 96=63 97=85 98=24 99=04 9a=88 9f=7c a0=7f a1=b5 a2=bf a3=7b a4=28 a5=cf a6=64 a7=2d words 00=0000 01=0000 02=00fc 03=fc00 04=0066 05=6640 06=4000 07=0000
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns8250, no fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+nvram: invalid checksum
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+uhub2 at uhub0 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 1 configuration 1 interface 0 &quot;Apple Inc. FaceTime HD Camera (Built-in)&quot; rev 2.00/80.25 addr 3
+video0 at uvideo0
+ugen0 at uhub2 port 1 configuration 1 &quot;Apple Inc. FaceTime HD Camera (Built-in)&quot; rev 2.00/80.25 addr 3
+uhub3 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhub4 at uhub3 port 8 &quot;Standard Microsystems product 0x2512&quot; rev 2.00/b.b3 addr 3
+uhub5 at uhub4 port 1 &quot;Apple Inc. BRCM20702 Hub&quot; rev 2.00/1.00 addr 4
+uhub5: device problem, disabling port 1
+uhidev0 at uhub5 port 2 configuration 1 interface 0 &quot;Apple Computer product 0x820b&quot; rev 2.00/1.00 addr 5
+uhidev0: iclass 3/1, 2 report ids
+ums0 at uhidev0 reportid 2: 3 buttons
+wsmouse0 at ums0 mux 0
+ugen1 at uhub5 port 3 &quot;Apple Inc. Bluetooth USB Host Controller&quot; rev 2.00/1.00 addr 6
+uhidev1 at uhub4 port 2 configuration 1 interface 0 &quot;Apple Inc. Apple Internal Keyboard / Trackpad&quot; rev 2.00/2.19 addr 7
+uhidev1: iclass 3/1, 9 report ids
+ukbd0 at uhidev1 reportid 1: 8 variable keys, 6 key codes, country code 15
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhid0 at uhidev1 reportid 9: input=0, output=0, feature=3
+uhidev2 at uhub4 port 2 configuration 1 interface 1 &quot;Apple Inc. Apple Internal Keyboard / Trackpad&quot; rev 2.00/2.19 addr 7
+uhidev2: iclass 3/0, 68 report ids
+uhid1 at uhidev2 reportid 68: input=511, output=0, feature=0
+uhidev3 at uhub4 port 2 configuration 1 interface 2 &quot;Apple Inc. Apple Internal Keyboard / Trackpad&quot; rev 2.00/2.19 addr 7
+uhidev3: iclass 3/1, 2 report ids
+ums1 at uhidev3 reportid 2: 3 buttons
+wsmouse1 at ums1 mux 0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on sd0a (0f625884de9eca57.a) swap on sd0b dump on sd0b
+clock: unknown CMOS layout
+hw.sensors.cpu0.temp0=36.00 degC
+hw.sensors.cpu1.temp0=36.00 degC
+hw.sensors.cpu2.temp0=36.00 degC
+hw.sensors.cpu3.temp0=36.00 degC
+hw.sensors.acpibat0.volt0=7.50 VDC (voltage)
+hw.sensors.acpibat0.volt1=7.23 VDC (current voltage)
+hw.sensors.acpibat0.power0=12.26 W (rate)
+hw.sensors.acpibat0.watthour0=42.41 Wh (last full capacity)
+hw.sensors.acpibat0.watthour1=0.25 Wh (warning capacity)
+hw.sensors.acpibat0.watthour2=0.10 Wh (low capacity)
+hw.sensors.acpibat0.watthour3=6.90 Wh (remaining capacity), OK
+hw.sensors.acpibat0.raw0=1 (battery discharging), OK
+hw.sensors.acpiac0.indicator0=Off (power supply)
+hw.sensors.acpibtn0.indicator0=On (lid open)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

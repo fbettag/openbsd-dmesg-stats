@@ -1,0 +1,234 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2013-12-17 10:02:43</em><br />
+<strong>From:</strong> <em>jaredd</em><br />
+<strong>Description:</strong> <em>PC Engines APU Platform - AMD G series T40N</em><br />
+
+<pre>
+OpenBSD 5.4 (RAMDISK_CD) #34: Tue Jul 30 15:35:37 MDT 2013
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+RTC BIOS diagnostic error ff&lt;clock_battery,ROM_cksum,config_unit,memory_size,fixed_disk,invalid_time&gt;
+real mem = 2098642944 (2001MB)
+avail mem = 2037927936 (1943MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0x7e17c420 (6 entries)
+bios0: vendor coreboot version &quot;EDK_2.08.00_20130410_221-1434-g871c820-dirty&quot; date 08/20/2013
+bios0: PC Engines APU
+acpi0 at bios0: rev 0, ACPI control unavailable
+mpbios at bios0 not configured
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD G-T40N Processor, 1000.13 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMC
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD AMD64 14h Host&quot; rev 0x00
+ppb0 at pci0 dev 4 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: couldn't map interrupt
+ppb1 at pci0 dev 5 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00
+pci2 at ppb1 bus 2
+re1 at pci2 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: couldn't map interrupt
+ppb2 at pci0 dev 6 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00
+pci3 at ppb2 bus 3
+re2 at pci3 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: couldn't map interrupt
+ahci0 at pci0 dev 17 function 0 &quot;ATI SBx00 SATA&quot; rev 0x40: unable to map interrupt
+ohci0 at pci0 dev 18 function 0 &quot;ATI SB700 USB&quot; rev 0x00: couldn't map interrupt
+ehci0 at pci0 dev 18 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: couldn't map interrupt
+ohci1 at pci0 dev 19 function 0 &quot;ATI SB700 USB&quot; rev 0x00: couldn't map interrupt
+ehci1 at pci0 dev 19 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: couldn't map interrupt
+&quot;ATI SBx00 SMBus&quot; rev 0x42 at pci0 dev 20 function 0 not configured
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB700 IDE&quot; rev 0x40: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+&quot;ATI SB700 ISA&quot; rev 0x40 at pci0 dev 20 function 3 not configured
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x40
+pci4 at ppb3 bus 4
+ohci2 at pci0 dev 20 function 5 &quot;ATI SB700 USB&quot; rev 0x00: couldn't map interrupt
+ppb4 at pci0 dev 21 function 0 &quot;ATI SB800 PCIE&quot; rev 0x00
+pci5 at ppb4 bus 5
+ohci3 at pci0 dev 22 function 0 &quot;ATI SB700 USB&quot; rev 0x00: couldn't map interrupt
+ehci2 at pci0 dev 22 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: couldn't map interrupt
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 14h Link Cfg&quot; rev 0x43
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 14h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 14h DRAM Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 3 &quot;AMD AMD64 14h Misc Cfg&quot; rev 0x00
+pchb5 at pci0 dev 24 function 4 &quot;AMD AMD64 14h CPU Power&quot; rev 0x00
+pchb6 at pci0 dev 24 function 5 &quot;AMD AMD64 14h Reserved&quot; rev 0x00
+pchb7 at pci0 dev 24 function 6 &quot;AMD AMD64 14h NB Power&quot; rev 0x00
+pchb8 at pci0 dev 24 function 7 &quot;AMD AMD64 14h Reserved&quot; rev 0x00
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+softraid0 at root
+scsibus0 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+WARNING: clock time much less than file system time
+WARNING: using file system time
+WARNING: CHECK AND RESET THE DATE!
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,264 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-08-01 11:27:16</em><br />
+<strong>From:</strong> <em>peter_ljung</em><br />
+<strong>Description:</strong> <em>VIA EPIA-EK8000EG, Luke/800Mhz,Mini-ITX, 2 LAN</em><br />
+
+<pre>
+OpenBSD 5.5-current (GENERIC) #5: Wed Jun 25 16:20:13 CEST 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: VIA Samuel 2 (&quot;CentaurHauls&quot; 686-class) 602 MHz
+cpu0: FPU,DE,TSC,MSR,MTRR,PGE,MMX,3DNOW
+real mem  = 234323968 (223MB)
+avail mem = 218054656 (207MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/01/03, BIOS32 rev. 0 @ 0xfaff0, SMBIOS rev. 2.2 @ 0xf0800 (26 entries)
+bios0: vendor Award Software International, Inc. version &quot;6.00 PG&quot; date 08/01/2003
+bios0: VIA Technologies, Inc. VT8623-8235
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP
+acpi0: wakeup devices PCI0(S5) USB0(S5) USB1(S5) USB2(S5) USB3(S3) USB4(S3) USB5(S3) USB6(S3) LAN0(S5) AC97(S5) UAR1(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (AGPB)
+acpicpu0 at acpi0: C3, C2
+acpibtn0 at acpi0: PWRB
+bios0: ROM list: 0xc0000/0xe000 0xd0000/0x8000! 0xd8000/0x9800
+cpu0 at mainbus0: (uniprocessor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;VIA VT8623 PCI&quot; rev 0x00
+viaagp0 at pchb0: v2
+agp0 at viaagp0: aperture at 0xe6000000, size 0xf000000
+ppb0 at pci0 dev 1 function 0 &quot;VIA VT8633 AGP&quot; rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;VIA CLE266&quot; rev 0x03
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+vr0 at pci0 dev 15 function 0 &quot;VIA VT6105 RhineIII&quot; rev 0x8b: irq 12, address xx:xx:xx:xx:xx:xx
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 9: OUI 0x004063, model 0x0034
+uhci0 at pci0 dev 16 function 0 &quot;VIA VT83C572 USB&quot; rev 0x80: irq 11
+uhci1 at pci0 dev 16 function 1 &quot;VIA VT83C572 USB&quot; rev 0x80: irq 11
+uhci2 at pci0 dev 16 function 2 &quot;VIA VT83C572 USB&quot; rev 0x80: irq 9
+ehci0 at pci0 dev 16 function 3 &quot;VIA VT6202 USB&quot; rev 0x82: irq 12
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;VIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+viapm0 at pci0 dev 17 function 0 &quot;VIA VT8235 ISA&quot; rev 0x00: SMI
+iic0 at viapm0
+spdmem0 at iic0 addr 0x50: 256MB DDR SDRAM non-parity PC2700CL2.5
+pciide0 at pci0 dev 17 function 1 &quot;VIA VT82C571 IDE&quot; rev 0x06: ATA133, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;WDC WD1600AAJB-00PVA0&gt;
+wd0: 16-sector PIO, LBA48, 152627MB, 312581808 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+pciide0: channel 1 disabled (no drives)
+auvia0 at pci0 dev 17 function 5 &quot;VIA VT8233 AC97&quot; rev 0x50: irq 9
+ac97: codec id 0x56494161 (VIA Technologies VT1612A)
+ac97: codec features headphone, 18 bit DAC, 18 bit ADC, KS Waves 3D
+audio0 at auvia0
+vr1 at pci0 dev 18 function 0 &quot;VIA RhineII-2&quot; rev 0x74: irq 11, address xx:xx:xx:xx:xx:xx
+ukphy1 at vr1 phy 1: Generic IEEE 802.3u media interface, rev. 5: OUI 0x004063, model 0x0032
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at mainbus0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+viasio0 at isa0 port 0x2e/2: VT1211 rev 0x02, HM, WDG not activated
+viasio1 at isa0 port 0x4e/2: VT1211 rev 0x02, HM not activated, WDG not activated
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (f0e85fb73d33781e.a) swap on wd0b dump on wd0b
+hw.sensors.viasio0.temp0=1.59 degC
+hw.sensors.viasio0.fan1=2647 RPM
+hw.sensors.viasio0.volt0=3.40 VDC (UCH1)
+hw.sensors.viasio0.volt1=2.42 VDC (UCH2)
+hw.sensors.viasio0.volt2=2.05 VDC (UCH3)
+hw.sensors.viasio0.volt3=4.76 VDC (UCH4)
+hw.sensors.viasio0.volt4=11.78 VDC (UCH5)
+hw.sensors.viasio0.volt5=3.35 VDC (+3.3V)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

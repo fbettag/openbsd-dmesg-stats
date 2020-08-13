@@ -1,0 +1,392 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-02-24 10:08:17</em><br />
+<strong>From:</strong> <em>afresh1</em><br />
+<strong>Description:</strong> <em>HP ProLiant DL380 G6</em><br />
+
+<pre>
+OpenBSD 5.6 (GENERIC.MP) #333: Fri Aug  8 00:20:21 MDT 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 6415310848 (6118MB)
+avail mem = 6235754496 (5946MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xdf7fe000 (133 entries)
+bios0: vendor HP version &quot;P62&quot; date 07/02/2013
+bios0: HP ProLiant DL380 G6
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP SPCR MCFG HPET FFFF SPMI ERST APIC SRAT FFFF BERT HEST DMAR SSDT SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2267.09 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.0, IBE
+cpu1 at mainbus0: apid 4 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 2, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 1 (application processor)
+cpu4: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 1, core 0, package 0
+cpu5 at mainbus0: apid 5 (application processor)
+cpu5: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 1, core 2, package 0
+cpu6 at mainbus0: apid 3 (application processor)
+cpu6: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 1, core 1, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz, 2266.74 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF,PERF,ITSC
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 1, core 3, package 0
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 0 pa 0xfec80000, version 20, 24 pins
+acpiprt0 at acpi0: bus 1 (IP2P)
+acpiprt1 at acpi0: bus 2 (IPT1)
+acpiprt2 at acpi0: bus 3 (IPT3)
+acpiprt3 at acpi0: bus 4 (PT01)
+acpiprt4 at acpi0: bus 16 (PT03)
+acpiprt5 at acpi0: bus 19 (PT04)
+acpiprt6 at acpi0: bus 20 (PT05)
+acpiprt7 at acpi0: bus 23 (PT06)
+acpiprt8 at acpi0: bus 13 (PT07)
+acpiprt9 at acpi0: bus 10 (PT08)
+acpiprt10 at acpi0: bus 7 (PT09)
+acpiprt11 at acpi0: bus 6 (PT0A)
+acpiprt12 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C3, C3, C1
+acpicpu1 at acpi0: C3, C3, C1
+acpicpu2 at acpi0: C3, C3, C1
+acpicpu3 at acpi0: C3, C3, C1
+acpicpu4 at acpi0: C3, C3, C1
+acpicpu5 at acpi0: C3, C3, C1
+acpicpu6 at acpi0: C3, C3, C1
+acpicpu7 at acpi0: C3, C3, C1
+acpitz0 at acpi0: critical temperature is 31 degC
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 5520 Host&quot; rev 0x13
+ppb0 at pci0 dev 1 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci1 at ppb0 bus 4
+ciss0 at pci1 dev 0 function 0 &quot;Hewlett-Packard Smart Array&quot; rev 0x01: apic 0 int 4
+ciss0: 1 LD, HW rev 2, FW 6.60/6.60, 64bit fifo rro
+scsibus1 at ciss0: 1 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;HP, LOGICAL VOLUME, 6.60&gt; SCSI3 0/direct fixed
+sd0: 979875MB, 512 bytes/sector, 2006785840 sectors
+ppb1 at pci0 dev 2 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci2 at ppb1 bus 5
+ppb2 at pci0 dev 3 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci3 at ppb2 bus 16
+ppb3 at pci0 dev 4 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci4 at ppb3 bus 19
+ppb4 at pci0 dev 5 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci5 at ppb4 bus 20
+ppb5 at pci0 dev 6 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci6 at ppb5 bus 23
+ppb6 at pci0 dev 7 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci7 at ppb6 bus 13
+ppb7 at pci0 dev 8 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci8 at ppb7 bus 10
+ppb8 at pci0 dev 9 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci9 at ppb8 bus 7
+ppb9 at pci0 dev 10 function 0 &quot;Intel X58 PCIE&quot; rev 0x13
+pci10 at ppb9 bus 6
+pchb1 at pci0 dev 13 function 0 vendor &quot;Intel&quot;, unknown product 0x343a rev 0x13
+pchb2 at pci0 dev 13 function 1 vendor &quot;Intel&quot;, unknown product 0x343b rev 0x13
+pchb3 at pci0 dev 13 function 2 vendor &quot;Intel&quot;, unknown product 0x343c rev 0x13
+pchb4 at pci0 dev 13 function 3 vendor &quot;Intel&quot;, unknown product 0x343d rev 0x13
+pchb5 at pci0 dev 13 function 4 &quot;Intel 5520/X58 QuickPath&quot; rev 0x13
+pchb6 at pci0 dev 13 function 5 &quot;Intel 5520 QuickPath&quot; rev 0x13
+pchb7 at pci0 dev 13 function 6 vendor &quot;Intel&quot;, unknown product 0x341a rev 0x13
+pchb8 at pci0 dev 14 function 0 vendor &quot;Intel&quot;, unknown product 0x341c rev 0x13
+pchb9 at pci0 dev 14 function 1 vendor &quot;Intel&quot;, unknown product 0x341d rev 0x13
+pchb10 at pci0 dev 14 function 2 vendor &quot;Intel&quot;, unknown product 0x341e rev 0x13
+pchb11 at pci0 dev 14 function 3 vendor &quot;Intel&quot;, unknown product 0x341f rev 0x13
+pchb12 at pci0 dev 14 function 4 vendor &quot;Intel&quot;, unknown product 0x3439 rev 0x13
+&quot;Intel X58 Misc&quot; rev 0x13 at pci0 dev 20 function 0 not configured
+&quot;Intel X58 GPIO&quot; rev 0x13 at pci0 dev 20 function 1 not configured
+&quot;Intel X58 RAS&quot; rev 0x13 at pci0 dev 20 function 2 not configured
+ppb10 at pci0 dev 28 function 0 &quot;Intel 82801JI PCIE&quot; rev 0x00
+pci11 at ppb10 bus 2
+bnx0 at pci11 dev 0 function 0 &quot;Broadcom BCM5709&quot; rev 0x20: apic 8 int 16
+bnx1 at pci11 dev 0 function 1 &quot;Broadcom BCM5709&quot; rev 0x20: apic 8 int 17
+ppb11 at pci0 dev 28 function 2 &quot;Intel 82801JI PCIE&quot; rev 0x00
+pci12 at ppb11 bus 3
+bnx2 at pci12 dev 0 function 0 &quot;Broadcom BCM5709&quot; rev 0x20: apic 8 int 18
+bnx3 at pci12 dev 0 function 1 &quot;Broadcom BCM5709&quot; rev 0x20: apic 8 int 19
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801JI USB&quot; rev 0x00: apic 8 int 20
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801JI USB&quot; rev 0x00: apic 8 int 23
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801JI USB&quot; rev 0x00: apic 8 int 22
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801JI USB&quot; rev 0x00: apic 8 int 23
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801JI USB&quot; rev 0x00: apic 8 int 20
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb12 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0x90
+pci13 at ppb12 bus 1
+radeondrm0 at pci13 dev 3 function 0 &quot;ATI ES1000&quot; rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 8 int 23
+&quot;Compaq iLO&quot; rev 0x03 at pci13 dev 4 function 0 not configured
+&quot;Compaq iLO&quot; rev 0x03 at pci13 dev 4 function 2 not configured
+uhci4 at pci13 dev 4 function 4 &quot;Hewlett-Packard USB&quot; rev 0x00: apic 8 int 22
+&quot;Hewlett-Packard IPMI&quot; rev 0x00 at pci13 dev 4 function 6 not configured
+usb1 at uhci4: USB revision 1.0
+uhub1 at usb1 &quot;Hewlett-Packard UHCI root hub&quot; rev 1.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801JIB LPC&quot; rev 0x00
+pciide0 at pci0 dev 31 function 2 &quot;Intel 82801JI SATA&quot; rev 0x00: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using apic 8 int 17 for native-PCI interrupt
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus2 at atapiscsi0: 2 targets
+cd0 at scsibus2 targ 0 lun 0: &lt;TEAC, DV-28S-W, C.2D&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: probed fifo depth: 0 bytes
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhidev0 at uhub1 port 1 configuration 1 interface 0 &quot;HP Virtual Keyboard&quot; rev 1.10/0.02 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes, country code 33
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub1 port 1 configuration 1 interface 1 &quot;HP Virtual Keyboard&quot; rev 1.10/0.02 addr 2
+uhidev1: iclass 3/1
+ums0 at uhidev1: 3 buttons
+wsmouse1 at ums0 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (be4f8e626c6e191c.a) swap on sd0b dump on sd0b
+bnx0: address xx:xx:xx:xx:xx:xx
+brgphy0 at bnx0 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+bnx1: address xx:xx:xx:xx:xx:xx
+brgphy1 at bnx1 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+bnx2: address xx:xx:xx:xx:xx:xx
+brgphy2 at bnx2 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+bnx3: address xx:xx:xx:xx:xx:xx
+brgphy3 at bnx3 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+drm: initializing kernel modesetting (RV100 0x1002:0x515E 0x103C:0x31FB).
+radeondrm0: VRAM: 128M 0x00000000E8000000 - 0x00000000EFFFFFFF (64M used)
+radeondrm0: GTT: 512M 0x00000000C8000000 - 0x00000000E7FFFFFF
+drm: PCI GART of 512M enabled (table at 0x000000000C371000).
+error: [drm:pid0:r100_cp_init_microcode] *ERROR* radeon_cp: Failed to load firmware &quot;radeon-r100_cp&quot;
+error: [drm:pid0:r100_cp_init] *ERROR* Failed to load firmware!
+error: [drm:pid0:r100_startup] *ERROR* failed initializing CP (-2).
+error: [drm:pid0:r100_init] *ERROR* Disabling GPU acceleration
+drm: radeon: cp finalized
+drm: No TV DAC info found in BIOS
+radeondrm0: 1024x768
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

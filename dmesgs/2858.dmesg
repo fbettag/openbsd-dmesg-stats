@@ -1,0 +1,282 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-11-21 17:18:44</em><br />
+<strong>From:</strong> <em>EdaSky</em><br />
+<strong>Description:</strong> <em>CompuLab FIT PC2i</em><br />
+
+<pre>
+OpenBSD 5.8 (GENERIC.MP) #0: Tue Nov 10 12:19:45 CET 2015
+    xxx@xxx.xxx:/binpatchng/work-binpatch58-i386/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Atom(TM) CPU Z550 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+real mem  = 2137018368 (2038MB)
+avail mem = 2081755136 (1985MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 09/14/10, BIOS32 rev. 0 @ 0xfdc70, SMBIOS rev. 2.5 @ 0x7f69f000 (33 entries)
+bios0: vendor Phoenix Technologies LTD version &quot;NAPA0001.86C.0000.D.1009141059&quot; date 09/14/2010
+bios0: CompuLab CM-iAM/SBC-FITPC2i
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET MCFG TCPA TMOR APIC BOOT SSDT
+acpi0: wakeup devices PXS1(S3) PXS2(S3) USB1(S3) USB2(S3) USB3(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 132MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.0.2.0.3, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU Z550 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,xTPR,PDCM,MOVBE,LAHF,PERF,SENSOR
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 2 (RP01)
+acpiprt2 at acpi0: bus 3 (RP02)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(10@140 mwait.3@0x52), !C3(100@100 mwait.3@0x30), !C2(500@20 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(10@140 mwait.3@0x52), !C3(100@100 mwait.3@0x30), !C2(500@20 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0: critical temperature is 127 degC
+acpitz1 at acpi0: critical temperature is 95 degC
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 not present
+acpibat1 at acpi0: BAT1 not present
+acpibat2 at acpi0: BAT2 not present
+acpibtn0 at acpi0: PWRB
+acpivideo0 at acpi0: GFX0
+bios0: ROM list: 0xc0000/0xe600! 0xce800/0x1000 0xcf800/0x1000 0xe0000/0x1800!
+cpu0: Enhanced SpeedStep 1995 MHz: speeds: 2000, 1600, 1333, 1067, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel US15W Host&quot; rev 0x07
+vga1 at pci0 dev 2 function 0 &quot;Intel US15W Video&quot; rev 0x07
+intagp at vga1 not configured
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb0 at pci0 dev 28 function 0 &quot;Intel SCH PCIE&quot; rev 0x07: apic 2 int 17
+pci1 at ppb0 bus 2
+re0 at pci1 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x02: RTL8168C/8111C (0x3c00), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 2
+ppb1 at pci0 dev 28 function 1 &quot;Intel SCH PCIE&quot; rev 0x07: apic 2 int 16
+pci2 at ppb1 bus 3
+re1 at pci2 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x02: RTL8168C/8111C (0x3c00), msi, address xx:xx:xx:xx:xx:xx
+rgephy1 at re1 phy 7: RTL8169S/8110S/8211 PHY, rev. 2
+uhci0 at pci0 dev 29 function 0 &quot;Intel SCH USB&quot; rev 0x07: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel SCH USB&quot; rev 0x07: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel SCH USB&quot; rev 0x07: apic 2 int 18
+ehci0 at pci0 dev 29 function 7 &quot;Intel SCH USB&quot; rev 0x07: apic 2 int 21
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+sdhc0 at pci0 dev 30 function 0 &quot;Intel SCH SD/MMC&quot; rev 0x07: apic 2 int 22
+sdmmc0 at sdhc0
+sdhc1 at pci0 dev 30 function 1 &quot;Intel SCH SD/MMC&quot; rev 0x07: apic 2 int 20
+sdmmc1 at sdhc1
+sdhc2 at pci0 dev 30 function 2 &quot;Intel SCH SD/MMC&quot; rev 0x07: apic 2 int 18
+sdmmc2 at sdhc2
+pcib0 at pci0 dev 31 function 0 &quot;Intel SCH LPC&quot; rev 0x07
+pciide0 at pci0 dev 31 function 1 &quot;Intel SCH IDE&quot; rev 0x07: DMA, channel 0 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;Hitachi HTS545016B9A300&gt;
+wd0: 16-sector PIO, LBA48, 152627MB, 312581808 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+scsibus1 at sdmmc1: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: &lt;SD/MMC, Drive #01, &gt; SCSI2 0/direct fixed
+sd0: 1898MB, 512 bytes/sector, 3887104 sectors
+umass0 at uhub0 port 2 configuration 1 interface 0 &quot;Kingston SNA-DC/U&quot; rev 2.00/1.08 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Kingston, SNA-DC/U, 1.08&gt; SCSI2 0/direct fixed serial.11b06298414337303835
+sd1: 953869MB, 512 bytes/sector, 1953525168 sectors
+run0 at uhub0 port 7 configuration 1 interface 0 &quot;Ralink 802.11 n WLAN&quot; rev 2.00/1.01 addr 3
+run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address xx:xx:xx:xx:xx:xx
+uftdi0 at uhub1 port 1 configuration 1 interface 0 &quot;Papouch s.r.o. Papouch USB - RS232&quot; rev 2.00/6.00 addr 2
+ucom0 at uftdi0 portno 1
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on wd0a (60b42e3c58fda2a7.a) swap on wd0b dump on wd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

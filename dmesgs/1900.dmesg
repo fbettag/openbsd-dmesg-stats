@@ -1,0 +1,283 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2007-07-05 13:57:46</em><br />
+<strong>From:</strong> <em>uv-negativa</em><br />
+<strong>Description:</strong> <em>HP Pavilion tx 1000</em><br />
+
+<pre>
+OpenBSD 4.1-current (GENERIC) #1128: Thu Jun 28 00:53:16 MDT 2007
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 1005178880 (958MB)
+avail mem = 964595712 (919MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf1870 (20 entries)
+bios0: Hewlett-Packard HP Pavilion tx1000 Notebook PC
+acpi at mainbus0 not configured
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Turion(tm) 64 X2 Mobile Technology TL-50, 1607.54 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,NXE,MMXX,FFXSR,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 256KB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+NVIDIA C51 Host rev 0xa2 at pci0 dev 0 function 0 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 1 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 2 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 3 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 4 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 5 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 6 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 7 not configured
+ppb0 at pci0 dev 2 function 0 NVIDIA C51 PCIE rev 0xa1
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 3 function 0 NVIDIA C51 PCIE rev 0xa1
+pci2 at ppb1 bus 3
+Broadcom BCM4312 rev 0x01 at pci2 dev 0 function 0 not configured
+vga1 at pci0 dev 5 function 0 vendor NVIDIA, unknown product 0x0244 rev 0xa2
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+NVIDIA MCP51 Host rev 0xa2 at pci0 dev 9 function 0 not configured
+pcib0 at pci0 dev 10 function 0 NVIDIA MCP51 ISA rev 0xa3
+nviic0 at pci0 dev 10 function 1 NVIDIA MCP51 SMBus rev 0xa3
+iic0 at nviic0
+iic1 at nviic0
+NVIDIA MCP51 PMU rev 0xa3 at pci0 dev 10 function 3 not configured
+ohci0 at pci0 dev 11 function 0 NVIDIA MCP51 USB rev 0xa3: irq 11, version 1.0, legacy support
+ehci0 at pci0 dev 11 function 1 NVIDIA MCP51 USB rev 0xa3: irq 7
+ehci0: timed out waiting for BIOS
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0: NVIDIA EHCI root hub, rev 2.00/1.00, addr 1
+pciide0 at pci0 dev 13 function 0 NVIDIA MCP51 IDE rev 0xf1: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;HL-DT-ST, DVDRAM GSA-4084N, KQ09&gt; SCSI0 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 14 function 0 NVIDIA MCP51 SATA rev 0xf1: DMA
+pciide1: using irq 5 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;FUJITSU MHV2120BH PL&gt;
+wd0: 16-sector PIO, LBA48, 114473MB, 234441648 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 5
+ppb2 at pci0 dev 16 function 0 NVIDIA MCP51 PCI-PCI rev 0xa2
+pci3 at ppb2 bus 7
+azalia0 at pci0 dev 16 function 1 NVIDIA MCP51 HD Audio rev 0xa2: irq 10
+azalia0: host: High Definition Audio rev. 1.0
+azalia0: codec: 0x10ec/0x0862 (rev. 0.1), HDA version 1.0
+azalia0: codec: 0x1057/0x3055 (rev. 7.0), HDA version 1.0
+azalia0: codec[1]: No support for modem function groups
+azalia0: codec[1]: No audio function groups
+audio0 at azalia0
+nfe0 at pci0 dev 20 function 0 NVIDIA MCP51 LAN rev 0xa3: irq 11, address xx:xx:xx:xx:xx:xx
+rgephy0 at nfe0 phy 1: RTL8169S/8110S PHY, rev. 2
+pchb0 at pci0 dev 24 function 0 AMD AMD64 HyperTransport rev 0x00
+pchb1 at pci0 dev 24 function 1 AMD AMD64 Address Map rev 0x00
+pchb2 at pci0 dev 24 function 2 AMD AMD64 DRAM Cfg rev 0x00
+pchb3 at pci0 dev 24 function 3 AMD AMD64 Misc Cfg rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pmsi0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pmsi0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1: NVIDIA OHCI root hub, rev 1.00/1.00, addr 1
+uhub2 at uhub0 port 2: Cypress Semiconductor USB2 Hub, rev 2.00/90.15, addr 2
+ugen0 at uhub2 port 1
+ugen0: Sonix Technology Co., Ltd. USB 2.0 Camera, rev 2.00/2.10, addr 3
+ugen1 at uhub2 port 2
+ugen1: AuthenTec Fingerprint Sensor, rev 1.10/c.10, addr 4
+uts0 at uhub2 port 3 configuration 1 interface 0
+uts0: eGalax INC. USB TouchController, rev 1.10/1.00, addr 5
+wsmouse1 at uts0 mux 0
+dkcsum: wd0 matches BIOS drive 0x80
+root on wd0a swap on wd0b dump on wd0b
+uhub3 at uhub0 port 1: Genesys Logic USB2.0 Hub, rev 2.00/7.02, addr 6
+uhidev0 at uhub3 port 2 configuration 1 interface 0
+uhidev0: vendor 0x04d9 product 0x1203, rev 2.00/2.60, addr 7, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub3 port 2 configuration 1 interface 1
+uhidev1: vendor 0x04d9 product 0x1203, rev 2.00/2.60, addr 7, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub3 port 3 configuration 1 interface 0
+uhidev2: Genius 4D Scroll Mouse, rev 1.10/0.00, addr 8, iclass 3/1
+ums0 at uhidev2: 3 buttons and Z dir.
+wsmouse2 at ums0 mux 0
+rum0 at uhub0 port 8
+rum0: Airlink101 Airlink101 USB XR Adapter, rev 2.00/0.01, addr 9
+rum0: MAC/BBP RT2573 (rev 0x2573a), RF RT2528, address xx:xx:xx:xx:xx:xx
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

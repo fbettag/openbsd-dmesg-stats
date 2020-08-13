@@ -1,0 +1,282 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-12-28 16:19:51</em><br />
+<strong>From:</strong> <em>JAWA</em><br />
+<strong>Description:</strong> <em>OpenBSD P233MMX/384mb/AMI MegaRAID</em><br />
+
+<pre>
+OpenBSD 3.5 (GENERIC) #34: Mon Mar 29 12:24:55 MST 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel Pentium/MMX (&quot;GenuineIntel&quot; 586-class) 233 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,MCE,CX8,MMX
+cpu0: F00F bug workaround installed
+real mem  = 402239488 (392812K)
+avail mem = 366391296 (357804K)
+using 4278 buffers containing 20213760 bytes (19740K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(68) BIOS, date 07/12/00, BIOS32 rev. 0 @ 0xfb4b0
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0000/0xb928
+pcibios0: PCI IRQ Routing Table rev. 1.0 @ 0xfded0/128 (6 entries)
+pcibios0: PCI Exclusive IRQs: 6 11
+pcibios0: PCI Interrupt Router at 000:07:0 (&quot;VIA VT82C586 ISA&quot; rev 0x00)
+pcibios0: PCI bus #2 is the last bus
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x4000! 0xcc000/0x800 0xcd000/0x3000
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;VIA VT82C598 PCI&quot; rev 0x04
+ppb0 at pci0 dev 1 function 0 &quot;VIA VT82C598 AGP&quot; rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;ATI Rage Magnum&quot; rev 0x00
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 7 function 0 &quot;VIA VT82C586 ISA&quot; rev 0x41
+pciide0 at pci0 dev 7 function 1 &quot;VIA VT82C571 IDE&quot; rev 0x06: ATA33, channel 0 c
+onfigured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;MITSUMI, CD-ROM FX400E !B, K04&gt; SCSI0 5/cdrom rem
+ovable
+cd0(pciide0:0:1): using PIO mode 3
+pciide0: channel 1 disabled (no drives)
+uhci0 at pci0 dev 7 function 2 &quot;VIA VT83C572 USB&quot; rev 0x02: irq 6
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+pchb1 at pci0 dev 7 function 3 &quot;VIA VT82C586 Power Mgmt&quot; rev 0x10
+ppb1 at pci0 dev 9 function 0 vendor &quot;Picopower&quot;, unknown product 0x4 rev 0x01
+pci2 at ppb1 bus 2
+adv0 at pci2 dev 8 function 0 &quot;Advansys ABP-930/40UA&quot; rev 0x03: irq 6
+scsibus1 at adv0: 7 targets
+&quot;Zoran TV&quot; rev 0x02 at pci2 dev 9 function 0 not configured
+ohci0 at pci0 dev 10 function 0 &quot;Acer Labs M5237 USB&quot; rev 0x03: irq 6, version 1
+.0, legacy support
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1
+uhub1: Acer Labs OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+ohci1 at pci0 dev 10 function 1 &quot;Acer Labs M5237 USB&quot; rev 0x03: irq 11, version 
+1.0, legacy support
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2
+uhub2: Acer Labs OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+ohci2 at pci0 dev 10 function 2 &quot;Acer Labs M5237 USB&quot; rev 0x03: irq 6, version 1
+.0, legacy support
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3
+uhub3: Acer Labs OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+vendor &quot;Acer Labs&quot;, unknown product 0x5239 (class serial bus subclass USB, rev 0
+x01) at pci0 dev 10 function 3 not configured
+ami0 at pci0 dev 11 function 0 &quot;AMI MegaRAID Series 434&quot; rev 0x03: irq 6 AMI 434
+/32b
+ami0: FW Aq75, BIOS v1.56, 16MB RAM
+ami0: 3 channels, 16 targets, 1 logical drives
+scsibus2 at ami0: 8 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;AMI, Host drive #00, &gt; SCSI2 0/direct fixed
+sd0: 34732MB, 4427 cyl, 255 head, 63 sec, 512 bytes/sec, 71131136 sec total
+sis0 at pci0 dev 12 function 0 &quot;SIS 900 10/100BaseTX&quot; rev 0x02:  irq 11, address
+ xx:xx:xx:xx:xx:xx
+ukphy0 at sis0 phy 0: Generic IEEE 802.3u media interface
+ukphy0: OUI 0x000760, model 0x0000, rev. 0
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+isapnp0 at isa0 port 0x279: read port 0x203
+&quot;OPTi Audio 16, OPT0000, , Pro Audio 16&quot; at isapnp0 port 0x380/12,0x220/16,0x130
+/8 irq 5 drq 0 not configured
+joy0 at isapnp0 &quot;OPTi Audio 16, OPT0001, PNPB02F, Game Port&quot; port 0x201/1
+mpu0 at isapnp0 &quot;OPTi Audio 16, OPT0002, , MPU401&quot; port 0x300/2 irq 5
+mpu0: OPTi Audio 16 MPU401
+midi1 at mpu0: &lt;MPU-401 MIDI UART&gt;
+wdc2 at isapnp0 &quot;OPTi Audio 16, OPT0003, PNP0600, CD&quot; port 0x386/2,0x180/8 irq 1
+5
+&quot;OPTi Audio 16, OPT0004, PNP0500, Modem&quot; at isapnp0 port 0x2e8/8 irq 9 not confi
+gured
+&quot;OPTi Audio 16, OPT0005, , OPT924&quot; at isapnp0 port 0x30d/9 not configured
+biomask c840 netmask c840 ttymask d8c2
+pctr: 586-class performance counters and user-level cycle counter enabled
+dkcsum: sd0 matched BIOS disk 80
+root on sd0a
+rootdev=0x400 rrootdev=0xd00 rawdev=0xd02
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,796 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-05-04 05:14:30</em><br />
+<strong>From:</strong> <em>Wojciech Adam Koszek</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.3 GENERIC.MP amd64 on Lenovo T410</em><br />
+
+<pre>
+OpenBSD 6.3 (RAMDISK_CD) #98: Sat Mar 24 14:26:39 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 8357658624 (7970MB)
+avail mem = 8100577280 (7725MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xe0010 (78 entries)
+bios0: vendor LENOVO version &quot;6IET65WW (1.25 )&quot; date 06/07/2010
+bios0: LENOVO 2522BE3
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP SSDT ECDT APIC MCFG HPET ASF! SLIC BOOT SSDT TCPA DMAR SSDT SSDT SSDT
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz, 2660.50 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 1
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus -1 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpiprt5 at acpi0: bus 5 (EXP4)
+acpiprt6 at acpi0: bus 13 (EXP5)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;LEN0015&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;IBM0068&quot; at acpi0 not configured
+&quot;*pnp0c14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core Host&quot; rev 0x02
+vga1 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x02
+wsdisplay1 at vga1 mux 1: console (80x25, vt100 emulation)
+&quot;Intel 3400 MEI&quot; rev 0x06 at pci0 dev 22 function 0 not configured
+&quot;Intel 3400 KT&quot; rev 0x06 at pci0 dev 22 function 3 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel 82577LM&quot; rev 0x06: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 3400 USB&quot; rev 0x06: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 3400 HD Audio&quot; rev 0x06 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 3 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci2 at ppb1 bus 5
+ppb2 at pci0 dev 28 function 4 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci3 at ppb2 bus 13
+sdhc0 at pci3 dev 0 function 0 &quot;Ricoh 5U822 SD/MMC&quot; rev 0x01: apic 1 int 16
+sdhc0: SDHC 1.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+&quot;Ricoh 5U230 Memory Stick&quot; rev 0x01 at pci3 dev 0 function 1 not configured
+&quot;Ricoh 5U832 Firewire&quot; rev 0x01 at pci3 dev 0 function 3 not configured
+ehci1 at pci0 dev 29 function 0 &quot;Intel 3400 USB&quot; rev 0x06: apic 1 int 19
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xa6
+pci4 at ppb3 bus 14
+&quot;Intel QM57 LPC&quot; rev 0x06 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 3400 AHCI&quot; rev 0x06: msi, AHCI 1.3
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, Samsung SSD 840, DXT0&gt; SCSI3 0/direct fixed naa.50025385a006a586
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors, thin
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, ST9500325AS, 0001&gt; SCSI3 0/direct fixed naa.5000c50027aaf9fa
+sd1: 476940MB, 512 bytes/sector, 976773168 sectors
+&quot;Intel 3400 SMBus&quot; rev 0x06 at pci0 dev 31 function 3 not configured
+&quot;Intel 3400 Thermal&quot; rev 0x06 at pci0 dev 31 function 6 not configured
+pci5 at mainbus0 bus 255
+pchb1 at pci5 dev 0 function 0 &quot;Intel QuickPath&quot; rev 0x02
+pchb2 at pci5 dev 0 function 1 &quot;Intel QuickPath&quot; rev 0x02
+pchb3 at pci5 dev 2 function 0 &quot;Intel QPI Link&quot; rev 0x02
+pchb4 at pci5 dev 2 function 1 &quot;Intel QPI Physical&quot; rev 0x02
+pchb5 at pci5 dev 2 function 2 &quot;Intel Reserved&quot; rev 0x02
+pchb6 at pci5 dev 2 function 3 &quot;Intel Reserved&quot; rev 0x02
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x0020&quot; rev 2.00/0.00 addr 2
+umass0 at uhub2 port 2 configuration 1 interface 0 &quot;GoodSun Flash Disk&quot; rev 2.00/1.00 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd2 at scsibus1 targ 1 lun 0: &lt;Generic, Mass storage, 1.68&gt; SCSI2 0/direct removable serial.19081320251208001047
+sd2: 2012MB, 512 bytes/sector, 4120576 sectors
+&quot;UPEK Biometric Coprocessor&quot; rev 1.01/0.02 addr 4 at uhub2 port 3 not configured
+&quot;Broadcom Corp Broadcom Bluetooth Device&quot; rev 2.00/3.60 addr 5 at uhub2 port 4 not configured
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x0020&quot; rev 2.00/0.00 addr 2
+urtwn0 at uhub3 port 2 configuration 1 interface 0 &quot;Realtek 802.11n WLAN Adapter&quot; rev 2.00/2.00 addr 3
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+syncing disks... done
+rebooting...
+OpenBSD 6.3 (GENERIC.MP) #107: Sat Mar 24 14:21:59 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8357658624 (7970MB)
+avail mem = 8097304576 (7722MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xe0010 (78 entries)
+bios0: vendor LENOVO version &quot;6IET65WW (1.25 )&quot; date 06/07/2010
+bios0: LENOVO 2522BE3
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT APIC MCFG HPET ASF! SLIC BOOT SSDT TCPA DMAR SSDT SSDT SSDT
+acpi0: wakeup devices LID_(S3) SLPB(S3) IGBE(S4) EXP1(S4) EXP2(S4) EXP3(S4) EXP4(S4) EXP5(S4) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz, 2660.48 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+acpitimer0: recalibrated TSC frequency 2394003359 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz, 2660.01 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz, 2660.00 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHz, 2660.01 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,AES,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 2, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpihpet0: recalibrated TSC frequency 2394005669 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus -1 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpiprt5 at acpi0: bus 5 (EXP4)
+acpiprt6 at acpi0: bus 13 (EXP5)
+acpicpu0 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu1 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu2 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpicpu3 at acpi0: C3(350@245 mwait.3@0x20), C2(500@205 mwait.3@0x10), C1(1000@3 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;LEN0015&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;42T4795&quot; serial   907 type LION oem &quot;SONY&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+&quot;*pnp0c14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout0 at acpivideo0: LCD0
+acpivideo1 at acpi0: VID_
+cpu0: Enhanced SpeedStep 2660 MHz: speeds: 2400, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core Host&quot; rev 0x02
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x02
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0: msi
+inteldrm0: 1440x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 3400 MEI&quot; rev 0x06 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 3400 KT&quot; rev 0x06: ports: 1 com
+com4 at puc0 port 0 apic 1 int 17: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel 82577LM&quot; rev 0x06: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 3400 USB&quot; rev 0x06: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 3400 HD Audio&quot; rev 0x06: msi
+azalia0: codecs: Conexant/0x5069, Intel/0x2804, using Conexant/0x5069
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 3 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci2 at ppb1 bus 5
+ppb2 at pci0 dev 28 function 4 &quot;Intel 3400 PCIE&quot; rev 0x06: msi
+pci3 at ppb2 bus 13
+sdhc0 at pci3 dev 0 function 0 &quot;Ricoh 5U822 SD/MMC&quot; rev 0x01: apic 1 int 16
+sdhc0: SDHC 1.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed
+&quot;Ricoh 5U230 Memory Stick&quot; rev 0x01 at pci3 dev 0 function 1 not configured
+&quot;Ricoh 5U832 Firewire&quot; rev 0x01 at pci3 dev 0 function 3 not configured
+ehci1 at pci0 dev 29 function 0 &quot;Intel 3400 USB&quot; rev 0x06: apic 1 int 19
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xa6
+pci4 at ppb3 bus 14
+pcib0 at pci0 dev 31 function 0 &quot;Intel QM57 LPC&quot; rev 0x06
+ahci0 at pci0 dev 31 function 2 &quot;Intel 3400 AHCI&quot; rev 0x06: msi, AHCI 1.3
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Samsung SSD 840, DXT0&gt; SCSI3 0/direct fixed naa.50025385a006a586
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors, thin
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, ST9500325AS, 0001&gt; SCSI3 0/direct fixed naa.5000c50027aaf9fa
+sd1: 476940MB, 512 bytes/sector, 976773168 sectors
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 3400 SMBus&quot; rev 0x06: apic 1 int 23
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+itherm0 at pci0 dev 31 function 6 &quot;Intel 3400 Thermal&quot; rev 0x06
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2, 0x1c0b1 0xb40000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+pci5 at mainbus0 bus 255
+pchb1 at pci5 dev 0 function 0 &quot;Intel QuickPath&quot; rev 0x02
+pchb2 at pci5 dev 0 function 1 &quot;Intel QuickPath&quot; rev 0x02
+pchb3 at pci5 dev 2 function 0 &quot;Intel QPI Link&quot; rev 0x02
+pchb4 at pci5 dev 2 function 1 &quot;Intel QPI Physical&quot; rev 0x02
+pchb5 at pci5 dev 2 function 2 &quot;Intel Reserved&quot; rev 0x02
+pchb6 at pci5 dev 2 function 3 &quot;Intel Reserved&quot; rev 0x02
+vmm0 at mainbus0: VMX/EPT
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub2 port 3 &quot;UPEK Biometric Coprocessor&quot; rev 1.01/0.02 addr 3
+ugen1 at uhub2 port 4 &quot;Broadcom Corp Broadcom Bluetooth Device&quot; rev 2.00/3.60 addr 4
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+urtwn0 at uhub3 port 2 configuration 1 interface 0 &quot;Realtek 802.11n WLAN Adapter&quot; rev 2.00/2.00 addr 3
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd1a (085a1836220cfe92.a) swap on sd1b dump on sd1b
+ugen0 detached
+ugen1 detached
+uhub2 detached
+uhub0 detached
+urtwn0 detached
+uhub3 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub2 port 3 &quot;UPEK Biometric Coprocessor&quot; rev 1.01/0.02 addr 3
+ugen1 at uhub2 port 4 &quot;Broadcom Corp Broadcom Bluetooth Device&quot; rev 2.00/3.60 addr 4
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+urtwn0 at uhub3 port 2 configuration 1 interface 0 &quot;Realtek 802.11n WLAN Adapter&quot; rev 2.00/2.00 addr 3
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+EIR: 0x00000000
+IER: 0x8ebc8585
+GTIER: 0x00000031
+PGTBL_ER: 0x00000000
+FORCEWAKE: 0x00000000
+DERRMR: 0x00000000
+CCID: 0x00000000
+Missed interrupts: 0x00000000
+  INSTDONE_0: 0xfffffffe
+  INSTDONE_1: 0xffffffff
+  INSTDONE_2: 0x00000000
+  INSTDONE_3: 0x00000000
+render command stream:
+  START: 0x00003000
+  HEAD:  0x00000968
+  TAIL:  0x00000968
+  CTL:   0x0001f001
+  HWS:   0x00001000
+  ACTHD: 0x00000000 00000968
+  IPEIR: 0x00000000
+  IPEHR: 0x7a005502
+  INSTDONE: 0xfffffffe
+  BBADDR: 0x00000000 0fffe020
+  BB_STATE: 0x00000080
+  INSTPS: 0x00000000
+  INSTPM: 0x00000000
+  FADDR: 0x00000000 00003968
+  seqno: 0x000100ce
+  waiting: no
+  ring-&gt;head: 0x00000000
+  ring-&gt;tail: 0x00000968
+  hangcheck: idle [0]
+render ring --- ringbuffer = 0x00003000
+00000000 :  7a005402
+00000004 :  00024004
+00000008 :  000100be
+0000000c :  00000000
+00000010 :  7a006002
+00000014 :  00024084
+00000018 :  00000000
+0000001c :  00000000
+00000020 :  7a006002
+00000024 :  00024104
+00000028 :  00000000
+0000002c :  00000000
+00000030 :  7a006002
+00000034 :  00024184
+00000038 :  00000000
+0000003c :  00000000
+00000040 :  7a006002
+00000044 :  00024204
+00000048 :  00000000
+0000004c :  00000000
+00000050 :  7a006002
+00000054 :  00024284
+00000058 :  00000000
+0000005c :  00000000
+00000060 :  7a006002
+00000064 :  00024304
+00000068 :  00000000
+0000006c :  00000000
+00000070 :  7a005502
+00000074 :  00024004
+00000078 :  000100be
+0000007c :  00000000
+00000080 :  02000022
+00000084 :  00000000
+00000088 :  18800180
+0000008c :  0fffe000
+00000090 :  02000000
+00000094 :  00000000
+00000098 :  7a005402
+0000009c :  00024004
+000000a0 :  000100c0
+000000a4 :  00000000
+000000a8 :  7a006002
+000000ac :  00024084
+000000b0 :  00000000
+000000b4 :  00000000
+000000b8 :  7a006002
+000000bc :  00024104
+000000c0 :  00000000
+000000c4 :  00000000
+000000c8 :  7a006002
+000000cc :  00024184
+000000d0 :  00000000
+000000d4 :  00000000
+000000d8 :  7a006002
+000000dc :  00024204
+000000e0 :  00000000
+000000e4 :  00000000
+000000e8 :  7a006002
+000000ec :  00024284
+000000f0 :  00000000
+000000f4 :  00000000
+000000f8 :  7a006002
+000000fc :  00024304
+render ring --- HW Status = 0x00001000
+[0000] 00000000 00000000 00000000 00000000
+[0010] 00000000 00000000 00000000 00000000
+[0020] 00000000 00000000 00000000 00000000
+[0030] 00000000 00000000 00000000 00000000
+[0040] 00000000 00000000 00000000 00000000
+[0050] 00000000 00000000 00000000 00000000
+[0060] 00000000 00000000 00000000 00000000
+[0070] 00000000 00000000 00000000 00000000
+[0080] 00000000 00000000 00000000 00000000
+[0090] 00000000 00000000 00000000 00000000
+[00a0] 00000000 00000000 00000000 00000000
+[00b0] 00000000 00000000 00000000 00000000
+[00c0] 00000000 00000000 00000000 00000000
+[00d0] 00000000 00000000 00000000 00000000
+[00e0] 00000000 00000000 00000000 00000000
+[00f0] 00000000 00000000 00000000 00000000
+[0100] 00000000 00000000 00000000 00000000
+[0110] 00000000 00000000 00000000 00000000
+[0120] 00000000 00000000 00000000 00000000
+[0130] 00000000 00000000 00000000 00000000
+[0140] 00000000 00000000 00000000 00000000
+[0150] 00000000 00000000 00000000 00000000
+[0160] 00000000 00000000 00000000 00000000
+[0170] 00000000 00000000 00000000 00000000
+[0180] 00000000 00000000 00000000 00000000
+[0190] 00000000 00000000 00000000 00000000
+[01a0] 00000000 00000000 00000000 00000000
+[01b0] 00000000 00000000 00000000 00000000
+[01c0] 00000000 00000000 00000000 00000000
+[01d0] 00000000 00000000 00000000 00000000
+[01e0] 00000000 00000000 00000000 00000000
+[01f0] 00000000 00000000 00000000 00000000
+[0200] 00000000 00000000 00000000 00000000
+[0210] 00000000 00000000 00000000 00000000
+[0220] 00000000 00000000 00000000 00000000
+[0230] 00000000 00000000 00000000 00000000
+[0240] 00000000 00000000 00000000 00000000
+[0250] 00000000 00000000 00000000 00000000
+[0260] 00000000 00000000 00000000 00000000
+[0270] 00000000 00000000 00000000 00000000
+[0280] 00000000 00000000 00000000 00000000
+[0290] 00000000 00000000 00000000 00000000
+[02a0] 00000000 00000000 00000000 00000000
+[02b0] 00000000 00000000 00000000 00000000
+[02c0] 00000000 00000000 00000000 00000000
+[02d0] 00000000 00000000 00000000 00000000
+[02e0] 00000000 00000000 00000000 00000000
+[02f0] 00000000 00000000 00000000 00000000
+[0300] 00000000 00000000 00000000 00000000
+[0310] 00000000 00000000 00000000 00000000
+[0320] 00000000 00000000 00000000 00000000
+[0330] 00000000 00000000 00000000 00000000
+[0340] 00000000 00000000 00000000 00000000
+[0350] 00000000 00000000 00000000 00000000
+[0360] 00000000 00000000 00000000 00000000
+[0370] 00000000 00000000 00000000 00000000
+[0380] 00000000 00000000 00000000 00000000
+[0390] 00000000 00000000 00000000 00000000
+[03a0] 00000000 00000000 00000000 00000000
+[03b0] 00000000 00000000 00000000 00000000
+[03c0] 00000000 00000000 00000000 00000000
+[03d0] 00000000 00000000 00000000 00000000
+[03e0] 00000000 00000000 00000000 00000000
+[03f0] 00000000 00000000 00000000 00000000
+bsd command stream:
+  START: 0x00027000
+  HEAD:  0x00000010
+  TAIL:  0x00000010
+  CTL:   0x0001f001
+  HWS:   0x00025000
+  ACTHD: 0x00000000 00000010
+  IPEIR: 0x00000000
+  IPEHR: 0x00000000
+  INSTDONE: 0x00000000
+  BBADDR: 0x00000000 00000000
+  BB_STATE: 0x00000000
+  INSTPS: 0x00000000
+  INSTPM: 0x00000000
+  FADDR: 0x00000000 00027010
+  seqno: 0x000100bd
+  waiting: no
+  ring-&gt;head: 0x00000000
+  ring-&gt;tail: 0x00000010
+  hangcheck: hung [40]
+bsd ring --- ringbuffer = 0x00027000
+00000000 :  10800001
+00000004 :  000000c0
+00000008 :  000100bf
+0000000c :  01000000
+00000010 :  10800001
+00000014 :  000000c0
+00000018 :  0000ffbd
+0000001c :  01000000
+00000020 :  00000000
+00000024 :  00000000
+00000028 :  00000000
+0000002c :  00000000
+00000030 :  00000000
+00000034 :  00000000
+00000038 :  00000000
+0000003c :  00000000
+00000040 :  00000000
+00000044 :  00000000
+00000048 :  00000000
+0000004c :  00000000
+00000050 :  00000000
+00000054 :  00000000
+00000058 :  00000000
+0000005c :  00000000
+00000060 :  00000000
+00000064 :  00000000
+00000068 :  00000000
+0000006c :  00000000
+00000070 :  00000000
+00000074 :  00000000
+00000078 :  00000000
+0000007c :  00000000
+00000080 :  00000000
+00000084 :  00000000
+00000088 :  00000000
+0000008c :  00000000
+00000090 :  00000000
+00000094 :  00000000
+00000098 :  00000000
+0000009c :  00000000
+000000a0 :  00000000
+000000a4 :  00000000
+000000a8 :  00000000
+000000ac :  00000000
+000000b0 :  00000000
+000000b4 :  00000000
+000000b8 :  00000000
+000000bc :  00000000
+000000c0 :  00000000
+000000c4 :  00000000
+000000c8 :  00000000
+000000cc :  00000000
+000000d0 :  00000000
+000000d4 :  00000000
+000000d8 :  00000000
+000000dc :  00000000
+000000e0 :  00000000
+000000e4 :  00000000
+000000e8 :  00000000
+000000ec :  00000000
+000000f0 :  00000000
+000000f4 :  00000000
+000000f8 :  00000000
+000000fc :  00000000
+bsd ring --- HW Status = 0x00025000
+[0000] 00000000 00000000 00000000 00000000
+[0010] 00000000 00000000 00000000 00000000
+[0020] 00000000 00000000 00000000 00000000
+[0030] 00000000 00000000 00000000 00000000
+[0040] 00000000 00000000 00000000 00000000
+[0050] 00000000 00000000 00000000 00000000
+[0060] 00000000 00000000 00000000 00000000
+[0070] 00000000 00000000 00000000 00000000
+[0080] 00000000 00000000 00000000 00000000
+[0090] 00000000 00000000 00000000 00000000
+[00a0] 00000000 00000000 00000000 00000000
+[00b0] 00000000 00000000 00000000 00000000
+[00c0] 000100bd 00000000 00000000 00000000
+[00d0] 00000000 00000000 00000000 00000000
+[00e0] 00000000 00000000 00000000 00000000
+[00f0] 00000000 00000000 00000000 00000000
+[0100] 00000000 00000000 00000000 00000000
+[0110] 00000000 00000000 00000000 00000000
+[0120] 00000000 00000000 00000000 00000000
+[0130] 00000000 00000000 00000000 00000000
+[0140] 00000000 00000000 00000000 00000000
+[0150] 00000000 00000000 00000000 00000000
+[0160] 00000000 00000000 00000000 00000000
+[0170] 00000000 00000000 00000000 00000000
+[0180] 00000000 00000000 00000000 00000000
+[0190] 00000000 00000000 00000000 00000000
+[01a0] 00000000 00000000 00000000 00000000
+[01b0] 00000000 00000000 00000000 00000000
+[01c0] 00000000 00000000 00000000 00000000
+[01d0] 00000000 00000000 00000000 00000000
+[01e0] 00000000 00000000 00000000 00000000
+[01f0] 00000000 00000000 00000000 00000000
+[0200] 00000000 00000000 00000000 00000000
+[0210] 00000000 00000000 00000000 00000000
+[0220] 00000000 00000000 00000000 00000000
+[0230] 00000000 00000000 00000000 00000000
+[0240] 00000000 00000000 00000000 00000000
+[0250] 00000000 00000000 00000000 00000000
+[0260] 00000000 00000000 00000000 00000000
+[0270] 00000000 00000000 00000000 00000000
+[0280] 00000000 00000000 00000000 00000000
+[0290] 00000000 00000000 00000000 00000000
+[02a0] 00000000 00000000 00000000 00000000
+[02b0] 00000000 00000000 00000000 00000000
+[02c0] 00000000 00000000 00000000 00000000
+[02d0] 00000000 00000000 00000000 00000000
+[02e0] 00000000 00000000 00000000 00000000
+[02f0] 00000000 00000000 00000000 00000000
+[0300] 00000000 00000000 00000000 00000000
+[0310] 00000000 00000000 00000000 00000000
+[0320] 00000000 00000000 00000000 00000000
+[0330] 00000000 00000000 00000000 00000000
+[0340] 00000000 00000000 00000000 00000000
+[0350] 00000000 00000000 00000000 00000000
+[0360] 00000000 00000000 00000000 00000000
+[0370] 00000000 00000000 00000000 00000000
+[0380] 00000000 00000000 00000000 00000000
+[0390] 00000000 00000000 00000000 00000000
+[03a0] 00000000 00000000 00000000 00000000
+[03b0] 00000000 00000000 00000000 00000000
+[03c0] 00000000 00000000 00000000 00000000
+[03d0] 00000000 00000000 00000000 00000000
+[03e0] 00000000 00000000 00000000 00000000
+[03f0] 00000000 00000000 00000000 00000000
+drm/i915: Resetting chip after gpu hang
+usb_transfer_complete: actlen &gt; len 4294951300 &gt; 4
+usb_transfer_complete: actlen &gt; len 4294951300 &gt; 4
+ugen0 detached
+ugen1 detached
+uhub2 detached
+uhub0 detached
+urtwn0 detached
+uhub3 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub2 port 3 &quot;UPEK Biometric Coprocessor&quot; rev 1.01/0.02 addr 3
+ugen1 at uhub2 port 4 &quot;Broadcom Corp Broadcom Bluetooth Device&quot; rev 2.00/3.60 addr 4
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+urtwn0 at uhub3 port 2 configuration 1 interface 0 &quot;Realtek 802.11n WLAN Adapter&quot; rev 2.00/2.00 addr 3
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+error: [drm:pid67518:i915_context_is_banned] *ERROR* gpu hanging too fast, banning!
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+drm/i915: Resetting chip after gpu hang
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

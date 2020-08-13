@@ -1,0 +1,307 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2008-05-07 14:12:26</em><br />
+<strong>From:</strong> <em>uv.negativa</em><br />
+<strong>Description:</strong> <em>HP tx 1000</em><br />
+
+<pre>
+OpenBSD 4.3 (GENERIC) #698: Wed Mar 12 11:07:05 MDT 2008
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: AMD Turion(tm) 64 X2 Mobile Technology TL-50 (AuthenticAMD 686-class, 25
+6KB L2 cache) 1.60 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CF
+LUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16
+real mem  = 3085520896 (2942MB)
+avail mem = 2987880448 (2849MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 11/01/07, BIOS32 rev. 0 @ 0xfdd04, SMBIOS
+rev. 2.4 @ 0xf0c30 (20 entries)
+bios0: vendor Hewlett-Packard version F.1C date 11/01/2007
+bios0: Hewlett-Packard HP Pavilion tx1000 Notebook PC
+acpi0 at bios0: rev 0
+acpi0: tables DSDT FACP SSDT MCFG HPET APIC BOOT SLIC
+acpi0: wakeup devices USB0(S0) USB2(S0) MAC0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 25000000 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 7 (P2P0)
+acpiprt2 at acpi0: bus 255 (XVR0)
+acpiprt3 at acpi0: bus 3 (XVR1)
+acpiprt4 at acpi0: bus 1 (XVR2)
+acpiec0 at acpi0
+acpicpu0 at acpi0: PSS
+acpitz0 at acpi0: critical temperature 95 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model Primary serial   type LION oem Hewlett-Packard
+acpibtn2 at acpi0: LID_
+bios0: ROM list: 0xc0000/0xf200 0xcf800/0x1800
+cpu0 at mainbus0
+cpu0: PowerNow! K8 1596 MHz: speeds: 1600 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+NVIDIA C51 Host rev 0xa2 at pci0 dev 0 function 0 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 1 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 2 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 3 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 4 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 5 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 6 not configured
+NVIDIA C51 Memory rev 0xa2 at pci0 dev 0 function 7 not configured
+ppb0 at pci0 dev 2 function 0 NVIDIA C51 PCIE rev 0xa1
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 3 function 0 NVIDIA C51 PCIE rev 0xa1
+pci2 at ppb1 bus 3
+vga1 at pci0 dev 5 function 0 vendor NVIDIA, unknown product 0x0244 rev 0xa2
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+NVIDIA MCP51 Host rev 0xa2 at pci0 dev 9 function 0 not configured
+pcib0 at pci0 dev 10 function 0 NVIDIA MCP51 ISA rev 0xa3
+nviic0 at pci0 dev 10 function 1 NVIDIA MCP51 SMBus rev 0xa3
+iic0 at nviic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+spdmem1 at iic0 addr 0x51: 2GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+iic1 at nviic0
+NVIDIA MCP51 PMU rev 0xa3 at pci0 dev 10 function 3 not configured
+ohci0 at pci0 dev 11 function 0 NVIDIA MCP51 USB rev 0xa3: irq 11, version 1.0
+, legacy support
+ehci0 at pci0 dev 11 function 1 NVIDIA MCP51 USB rev 0xa3: irq 7
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 NVIDIA EHCI root hub rev 2.00/1.00 addr 1
+pciide0 at pci0 dev 13 function 0 NVIDIA MCP51 IDE rev 0xf1: DMA, channel 0 co
+nfigured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;HL-DT-ST, DVDRAM GSA-4084N, KQ09&gt; SCSI0 5/cdrom r
+emovable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 14 function 0 NVIDIA MCP51 SATA rev 0xf1: DMA
+pciide1: using irq 5 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;FUJITSU MHV2120BH PL&gt;
+wd0: 16-sector PIO, LBA48, 114473MB, 234441648 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 5
+ppb2 at pci0 dev 16 function 0 NVIDIA MCP51 PCI-PCI rev 0xa2
+pci3 at ppb2 bus 7
+azalia0 at pci0 dev 16 function 1 NVIDIA MCP51 HD Audio rev 0xa2: irq 10
+azalia0: codec[s]: Realtek/0x0862, Motorola/0x3055, using Realtek/0x0862
+audio0 at azalia0
+nfe0 at pci0 dev 20 function 0 NVIDIA MCP51 LAN rev 0xa3: irq 11, address 00:1
+6:36:f0:c5:52
+rgephy0 at nfe0 phy 1: RTL8169S/8110S PHY, rev. 2
+pchb0 at pci0 dev 24 function 0 AMD AMD64 HyperTransport rev 0x00
+pchb1 at pci0 dev 24 function 1 AMD AMD64 Address Map rev 0x00
+pchb2 at pci0 dev 24 function 2 AMD AMD64 DRAM Cfg rev 0x00
+pchb3 at pci0 dev 24 function 3 AMD AMD64 Misc Cfg rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pmsi0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pmsi0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 NVIDIA OHCI root hub rev 1.00/1.00 addr 1
+biomask e9fd netmask e9fd ttymask fbff
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 Genesys Logic USB2.0 Hub rev 2.00/7.02 addr 2
+uhidev0 at uhub2 port 3 configuration 1 interface 0 DARFON USB Composite Keyboa
+rd rev 1.10/1.00 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub2 port 3 configuration 1 interface 1 DARFON USB Composite Keyboa
+rd rev 1.10/1.00 addr 3
+uhidev1: iclass 3/0, 3 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhid2 at uhidev1 reportid 3: input=2, output=0, feature=0
+uhidev2 at uhub2 port 4 configuration 1 interface 0 Genius NetScroll+ Superior
+ rev 1.10/0.00 addr 4
+uhidev2: iclass 3/1, 3 report ids
+ums0 at uhidev2 reportid 1: 5 buttons and Z dir.
+wsmouse1 at ums0 mux 0
+uhid3 at uhidev2 reportid 3: input=2, output=0, feature=0
+uhub3 at uhub0 port 2 Cypress Semiconductor USB2 Hub rev 2.00/90.15 addr 5
+ugen0 at uhub3 port 1 Sonix Technology Co., Ltd. USB 2.0 Camera rev 2.00/2.10                                                                              addr 6
+ugen1 at uhub3 port 2 AuthenTec Fingerprint Sensor rev 1.10/c.10 addr 7
+uts0 at uhub3 port 3 configuration 1 interface 0 eGalax INC. USB TouchControlle                                                                             r rev 1.10/1.00 addr 8
+wsmouse2 at uts0 mux 0
+uipaq0 at uhub1 port 5 Hewlett Packard iPAQ 22xx/Jornada 548 rev 1.00/0.00 add                                                                             r 2
+ucom0 at uipaq0, Generic
+ugen2 at uhub1 port 7 Broadcom Corp HP Integrated Module rev 2.00/1.00 addr 3
+softraid0 at root
+root on wd0a swap on wd0b dump on wd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

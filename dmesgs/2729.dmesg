@@ -1,0 +1,278 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-05-29 06:06:05</em><br />
+<strong>From:</strong> <em>brycec</em><br />
+<strong>Description:</strong> <em>Axiomtek box (model unknown), OpenBSD 5.5 (5.6 panicked on bsd.rd)</em><br />
+
+<pre>
+OpenBSD 5.5 (GENERIC) #4: Thu Dec 11 10:42:06 CET 2014
+    xxx@xxx.xxx:/binpatchng/work-binpatch55-i386/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Celeron(R) M processor 1.50GHz (&quot;GenuineIntel&quot; 686-class) 1.50 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,PBE,PERF
+real mem  = 534212608 (509MB)
+avail mem = 513179648 (489MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/28/09, BIOS32 rev. 0 @ 0xfb240, SMBIOS rev. 2.2 @ 0xf0800 (34 entries)
+bios0: vendor Phoenix Technologies, LTD version &quot;6.00 PG&quot; date 08/28/2009
+acpi at bios0 function 0x0 not configured
+apm0 at bios0: Power Management spec V1.2 (slowidle)
+mpbios0 at bios0: Intel MP Specification 1.4
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+mpbios0: bus 0 is type PCI   
+mpbios0: bus 1 is type PCI   
+mpbios0: bus 2 is type ISA   
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0xdf84
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xfdeb0/192 (10 entries)
+pcibios0: PCI Exclusive IRQs: 5 9 10 11 12
+pcibios0: PCI Interrupt Router at 000:31:0 (&quot;Intel 82801DBM LPC&quot; rev 0x00)
+pcibios0: PCI bus #1 is the last bus
+bios0: ROM list: 0xc0000/0xc800
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82855GM Host&quot; rev 0x02
+&quot;Intel 82855GM Memory&quot; rev 0x02 at pci0 dev 0 function 1 not configured
+&quot;Intel 82855GM Config&quot; rev 0x02 at pci0 dev 0 function 3 not configured
+vga1 at pci0 dev 2 function 0 &quot;Intel 82855GM Video&quot; rev 0x02
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xe0000000, size 0x8000000
+inteldrm0 at vga1
+drm0 at inteldrm0
+inteldrm0: 1024x768
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 82855GM Video&quot; rev 0x02 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 16
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 19
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb0 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0x82
+pci_intr_map: bus 0 dev 30 func 0 pin 1; line 5
+pci_intr_map: no MP mapping found
+pci_intr_map: bus 0 dev 30 func 0 pin 2; line 11
+pci_intr_map: no MP mapping found
+pci_intr_map: bus 0 dev 30 func 0 pin 3; line 10
+pci_intr_map: no MP mapping found
+pci_intr_map: bus 0 dev 30 func 0 pin 4; line 12
+pci_intr_map: no MP mapping found
+pci1 at ppb0 bus 1
+fxp0 at pci1 dev 4 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 19, address xx:xx:xx:xx:xx:xx
+inphy0 at fxp0 phy 1: i82555 10/100 PHY, rev. 4
+fxp1 at pci1 dev 5 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+inphy1 at fxp1 phy 1: i82555 10/100 PHY, rev. 4
+fxp2 at pci1 dev 6 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 17, address xx:xx:xx:xx:xx:xx
+inphy2 at fxp2 phy 1: i82555 10/100 PHY, rev. 4
+fxp3 at pci1 dev 7 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 16, address xx:xx:xx:xx:xx:xx
+inphy3 at fxp3 phy 1: i82555 10/100 PHY, rev. 4
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801DB LPC&quot; rev 0x02: 24-bit timer at 3579545Hz
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801DB IDE&quot; rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ST9160314AS&gt;
+wd0: 16-sector PIO, LBA48, 152627MB, 312581808 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801DB SMBus&quot; rev 0x02: apic 2 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 512MB DDR SDRAM non-parity PC2100CL2.5
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+uhub3 at uhub0 port 1 &quot;GenesysLogic USB2.0 Hub&quot; rev 2.00/90.30 addr 2
+uplcom0 at uhub3 port 1 &quot;Prolific Technology Inc. USB-Serial Controller D&quot; rev 1.10/4.00 addr 3
+ucom0 at uplcom0
+uplcom1 at uhub3 port 2 &quot;Prolific Technology Inc. USB-Serial Controller D&quot; rev 1.10/4.00 addr 4
+ucom1 at uplcom1
+uplcom2 at uhub3 port 3 &quot;Prolific Technology Inc. USB-Serial Controller D&quot; rev 1.10/4.00 addr 5
+ucom2 at uplcom2
+uhub4 at uhub3 port 4 &quot;GenesysLogic USB2.0 Hub&quot; rev 2.00/90.30 addr 6
+uplcom3 at uhub4 port 1 &quot;Prolific Technology Inc. USB-Serial Controller D&quot; rev 1.10/4.00 addr 7
+ucom3 at uplcom3
+vscsi0 at root
+scsibus0 at vscsi0: 256 targets
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on wd0a (ef5b3a0ab00940f5.a) swap on wd0b dump on wd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

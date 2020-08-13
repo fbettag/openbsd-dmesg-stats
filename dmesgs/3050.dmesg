@@ -1,0 +1,431 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2016-11-10 13:11:14</em><br />
+<strong>From:</strong> <em>janus</em><br />
+<strong>Description:</strong> <em>HP Microserver N36L</em><br />
+
+<pre>
+OpenBSD 6.0 (GENERIC.MP) #2319: Tue Jul 26 13:00:43 MDT 2016
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8539144192 (8143MB)
+avail mem = 8275877888 (7892MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xfb330 (35 entries)
+bios0: vendor HP version &quot;O41&quot; date 07/29/2011
+bios0: HP ProLiant MicroServerr
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC MCFG SPMI OEMB HPET EINJ BERT ERST HEST SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) PCE9(S4) PCEA(S4) PCEB(S4) PCEC(S4) SBAZ(S4) P0PC(S4) PE20(S4) PE21(S4) PE22(S4) PE23(S4)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Athlon(tm) II Neo N36L Dual-Core Processor, 1298.04 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,3DNOWP,OSVW,IBS,SKINIT,NODEID,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD Athlon(tm) II Neo N36L Dual-Core Processor, 1297.85 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,3DNOWP,OSVW,IBS,SKINIT,NODEID,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpi0: unable to load \\_SB_._INI.EXH2
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus 2 (PCE2)
+acpiprt3 at acpi0: bus -1 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE6)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpibtn0 at acpi0: PWRB
+ipmi at mainbus0 not configured
+cpu0: 1298 MHz: speeds: 1300 1100 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD RS880 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 vendor &quot;Hewlett-Packard&quot;, unknown product 0x9602 rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Mobility Radeon HD 4200&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: apic 2 int 18
+ppb1 at pci0 dev 2 function 0 &quot;AMD RS780 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82572EI&quot; rev 0x06: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 6 function 0 &quot;AMD RS780 PCIE&quot; rev 0x00
+pci3 at ppb2 bus 3
+bge0 at pci3 dev 0 function 0 &quot;Broadcom BCM5723&quot; rev 0x10, BCM5784 A1 (0x5784100): msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5784 10/100/1000baseT PHY, rev. 4
+ahci0 at pci0 dev 17 function 0 &quot;ATI SBx00 SATA&quot; rev 0x40: apic 2 int 19, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+ahci0: port 2: 3.0Gb/s
+ahci0: port 3: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e9001dae575
+sd0: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e900461ac24
+sd1: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd2 at scsibus1 targ 2 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e9201a7a3b3
+sd2: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd3 at scsibus1 targ 3 lun 0: &lt;ATA, ST31500341AS, CC1H&gt; SCSI3 0/direct fixed naa.5000c50026a904a2
+sd3: 1430799MB, 512 bytes/sector, 2930277168 sectors
+ohci0 at pci0 dev 18 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x41: polling
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB700 IDE&quot; rev 0x40: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB700 ISA&quot; rev 0x40
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x40
+pci4 at ppb3 bus 4
+ohci2 at pci0 dev 22 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci2 at pci0 dev 22 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb2 at ehci2: USB revision 2.0
+uhub2 at usb2 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb3 at ohci0: USB revision 1.0
+uhub3 at usb3 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci1: USB revision 1.0
+uhub4 at usb4 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb5 at ohci2: USB revision 1.0
+uhub5 at usb5 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd4 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd4: 122887MB, 512 bytes/sector, 251673698 sectors
+sd5 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd5: 1307908MB, 512 bytes/sector, 2678597104 sectors
+sd6 at scsibus3 targ 3 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd6: 1307908MB, 512 bytes/sector, 2678597104 sectors
+root on sd4a (ab63ad605210a523.a) swap on sd4b dump on sd4b
+radeondrm0: 1024x768
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+syncing disks... done
+sd6 detached
+sd5 detached
+sd4 detached
+OpenBSD 6.0 (GENERIC.MP) #2: Mon Oct 17 10:22:47 CEST 2016
+    xxx@xxx.xxx:/binpatchng/work-binpatch60-amd64/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8539144192 (8143MB)
+avail mem = 8275877888 (7892MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xfb330 (35 entries)
+bios0: vendor HP version &quot;O41&quot; date 07/29/2011
+bios0: HP ProLiant MicroServerr
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC MCFG SPMI OEMB HPET EINJ BERT ERST HEST SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) PCE9(S4) PCEA(S4) PCEB(S4) PCEC(S4) SBAZ(S4) P0PC(S4) PE20(S4) PE21(S4) PE22(S4) PE23(S4)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Athlon(tm) II Neo N36L Dual-Core Processor, 1298.09 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,3DNOWP,OSVW,IBS,SKINIT,NODEID,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD Athlon(tm) II Neo N36L Dual-Core Processor, 1297.02 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,3DNOWP,OSVW,IBS,SKINIT,NODEID,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpi0: unable to load \\_SB_._INI.EXH2
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus 2 (PCE2)
+acpiprt3 at acpi0: bus -1 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE6)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpibtn0 at acpi0: PWRB
+ipmi at mainbus0 not configured
+cpu0: 1298 MHz: speeds: 1300 1100 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD RS880 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 vendor &quot;Hewlett-Packard&quot;, unknown product 0x9602 rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Mobility Radeon HD 4200&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: apic 2 int 18
+ppb1 at pci0 dev 2 function 0 &quot;AMD RS780 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82572EI&quot; rev 0x06: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 6 function 0 &quot;AMD RS780 PCIE&quot; rev 0x00
+pci3 at ppb2 bus 3
+bge0 at pci3 dev 0 function 0 &quot;Broadcom BCM5723&quot; rev 0x10, BCM5784 A1 (0x5784100): msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5784 10/100/1000baseT PHY, rev. 4
+ahci0 at pci0 dev 17 function 0 &quot;ATI SBx00 SATA&quot; rev 0x40: apic 2 int 19, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+ahci0: port 2: 3.0Gb/s
+ahci0: port 3: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e9001dae575
+sd0: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e900461ac24
+sd1: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd2 at scsibus1 targ 2 lun 0: &lt;ATA, SAMSUNG HD154UI, 1AG0&gt; SCSI3 0/direct fixed naa.50024e9201a7a3b3
+sd2: 1430799MB, 512 bytes/sector, 2930277168 sectors
+sd3 at scsibus1 targ 3 lun 0: &lt;ATA, ST31500341AS, CC1H&gt; SCSI3 0/direct fixed naa.5000c50026a904a2
+sd3: 1430799MB, 512 bytes/sector, 2930277168 sectors
+ohci0 at pci0 dev 18 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x41: polling
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB700 IDE&quot; rev 0x40: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB700 ISA&quot; rev 0x40
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x40
+pci4 at ppb3 bus 4
+ohci2 at pci0 dev 22 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 2 int 18, version 1.0, legacy support
+ehci2 at pci0 dev 22 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 2 int 17
+usb2 at ehci2: USB revision 2.0
+uhub2 at usb2 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb3 at ohci0: USB revision 1.0
+uhub3 at usb3 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci1: USB revision 1.0
+uhub4 at usb4 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb5 at ohci2: USB revision 1.0
+uhub5 at usb5 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd4 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd4: 122887MB, 512 bytes/sector, 251673698 sectors
+sd5 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd5: 1307908MB, 512 bytes/sector, 2678597104 sectors
+sd6 at scsibus3 targ 3 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd6: 1307908MB, 512 bytes/sector, 2678597104 sectors
+root on sd4a (ab63ad605210a523.a) swap on sd4b dump on sd4b
+radeondrm0: 1024x768
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

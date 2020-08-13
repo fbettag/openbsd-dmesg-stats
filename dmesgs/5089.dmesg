@@ -1,0 +1,388 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-08-16 09:18:40</em><br />
+<strong>From:</strong> <em>Jon</em><br />
+<strong>Description:</strong> <em>RockPro64</em><br />
+
+<pre>
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2019 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.6-beta (GENERIC.MP) #181: Fri Aug 16 02:18:12 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/arm64/compile/GENERIC.MP
+real mem  = 4096454656 (3906MB)
+avail mem = 3899707392 (3719MB)
+mainbus0 at root: Pine64 RockPro64
+cpu0 at mainbus0 mpidr 0: ARM Cortex-A53 r0p4
+cpu0: 32KB 64b/line 2-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu0: 512KB 64b/line 16-way L2 cache
+efi0 at mainbus0: UEFI 2.0.5
+efi0: Das U-boot rev 0x0
+apm0 at mainbus0
+psci0 at mainbus0: PSCI 1.0
+agintc0 at mainbus0 sec shift 3:4 nirq 288 nredist 6 ipi: 0, 1: &quot;interrupt-controller&quot;
+agintcmsi0 at agintc0
+syscon0 at mainbus0: &quot;qos&quot;
+syscon1 at mainbus0: &quot;qos&quot;
+syscon2 at mainbus0: &quot;qos&quot;
+syscon3 at mainbus0: &quot;qos&quot;
+syscon4 at mainbus0: &quot;qos&quot;
+syscon5 at mainbus0: &quot;qos&quot;
+syscon6 at mainbus0: &quot;qos&quot;
+syscon7 at mainbus0: &quot;qos&quot;
+syscon8 at mainbus0: &quot;qos&quot;
+syscon9 at mainbus0: &quot;qos&quot;
+syscon10 at mainbus0: &quot;qos&quot;
+syscon11 at mainbus0: &quot;qos&quot;
+syscon12 at mainbus0: &quot;qos&quot;
+syscon13 at mainbus0: &quot;qos&quot;
+syscon14 at mainbus0: &quot;qos&quot;
+syscon15 at mainbus0: &quot;qos&quot;
+syscon16 at mainbus0: &quot;qos&quot;
+syscon17 at mainbus0: &quot;qos&quot;
+syscon18 at mainbus0: &quot;qos&quot;
+syscon19 at mainbus0: &quot;qos&quot;
+syscon20 at mainbus0: &quot;qos&quot;
+syscon21 at mainbus0: &quot;qos&quot;
+syscon22 at mainbus0: &quot;qos&quot;
+syscon23 at mainbus0: &quot;qos&quot;
+syscon24 at mainbus0: &quot;qos&quot;
+syscon25 at mainbus0: &quot;power-management&quot;
+&quot;power-controller&quot; at syscon25 not configured
+syscon26 at mainbus0: &quot;syscon&quot;
+&quot;io-domains&quot; at syscon26 not configured
+&quot;reboot-mode&quot; at syscon26 not configured
+&quot;pmu-pvtm&quot; at syscon26 not configured
+rkclock0 at mainbus0
+rkclock_set_frequency: 0x0000002c
+rkclock1 at mainbus0
+rkclock_set_frequency: 0x000000d9
+rkclock_set_frequency: 0x000001d9
+rkclock_set_frequency: 0x000000db
+rkclock_set_frequency: 0x000001db
+rkclock_set_frequency: 0x000000d0
+syscon27 at mainbus0: &quot;syscon&quot;
+&quot;io-domains&quot; at syscon27 not configured
+&quot;phy&quot; at syscon27 not configured
+&quot;usb2-phy&quot; at syscon27 not configured
+&quot;usb2-phy&quot; at syscon27 not configured
+&quot;pvtm&quot; at syscon27 not configured
+rkpinctrl0 at mainbus0: &quot;pinctrl&quot;
+rkgpio0 at rkpinctrl0
+rkgpio1 at rkpinctrl0
+rkgpio2 at rkpinctrl0
+rkgpio3 at rkpinctrl0
+rkgpio4 at rkpinctrl0
+&quot;ddr_timing&quot; at mainbus0 not configured
+&quot;pmu_a53&quot; at mainbus0 not configured
+&quot;pmu_a72&quot; at mainbus0 not configured
+agtimer0 at mainbus0: tick rate 24000 KHz
+&quot;xin24m&quot; at mainbus0 not configured
+&quot;dummy_cpll&quot; at mainbus0 not configured
+&quot;dummy_vpll&quot; at mainbus0 not configured
+&quot;amba&quot; at mainbus0 not configured
+dwge0 at mainbus0
+dwge0: address: xx:xx:xx:xx:xx:xx
+rgephy0 at dwge0 phy 0: RTL8169S/8110S/8211 PHY, rev. 6
+dwmmc0 at mainbus0: 50 MHz base clock
+sdmmc0 at dwmmc0: 4-bit, sd high-speed, mmc high-speed, dma
+sdhc0 at mainbus0
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc1 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+ehci0 at mainbus0
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Generic EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci0 at mainbus0: version 1.0
+ehci1 at mainbus0
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Generic EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at mainbus0: version 1.0
+rkdwusb0 at mainbus0: &quot;usb&quot;
+xhci0 at rkdwusb0, xHCI 1.10
+usb2 at xhci0: USB revision 3.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+rkdwusb1 at mainbus0: &quot;usb&quot;
+xhci1 at rkdwusb1, xHCI 1.10
+usb3 at xhci1: USB revision 3.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;dp&quot; at mainbus0 not configured
+&quot;saradc&quot; at mainbus0 not configured
+rkiic0 at mainbus0
+iic0 at rkiic0
+fanpwr0 at iic0 addr 0x40: SYR827, 1.00 VDC
+fanpwr1 at iic0 addr 0x41: SYR828, 1.00 VDC
+rkpmic0 at iic0 addr 0x1b: RK808
+rkiic1 at mainbus0
+iic1 at rkiic1
+&quot;everest,es8316&quot; at iic1 addr 0x10 not configured
+com0 at mainbus0: ns16550, no working fifo
+com0: console
+&quot;spi&quot; at mainbus0 not configured
+&quot;thermal-zones&quot; at mainbus0 not configured
+rktemp0 at mainbus0
+rkiic2 at mainbus0
+iic2 at rkiic2
+&quot;fairchild,fusb302&quot; at iic2 addr 0x22 not configured
+&quot;pcie-phy&quot; at mainbus0 not configured
+rkpcie0 at mainbus0
+rkpcie0: link training timeout
+&quot;pwm&quot; at mainbus0 not configured
+&quot;pwm&quot; at mainbus0 not configured
+&quot;pwm&quot; at mainbus0 not configured
+&quot;iommu&quot; at mainbus0 not configured
+&quot;iommu&quot; at mainbus0 not configured
+&quot;efuse&quot; at mainbus0 not configured
+&quot;phy&quot; at mainbus0 not configured
+&quot;phy&quot; at mainbus0 not configured
+&quot;watchdog&quot; at mainbus0 not configured
+&quot;rktimer&quot; at mainbus0 not configured
+&quot;spdif&quot; at mainbus0 not configured
+&quot;i2s&quot; at mainbus0 not configured
+&quot;i2s&quot; at mainbus0 not configured
+&quot;i2s&quot; at mainbus0 not configured
+&quot;gpu&quot; at mainbus0 not configured
+&quot;vop&quot; at mainbus0 not configured
+&quot;vop&quot; at mainbus0 not configured
+&quot;iommu&quot; at mainbus0 not configured
+&quot;hdmi&quot; at mainbus0 not configured
+&quot;display-subsystem&quot; at mainbus0 not configured
+&quot;nocp-cci-msch0&quot; at mainbus0 not configured
+&quot;nocp-gpu-msch0&quot; at mainbus0 not configured
+&quot;nocp-hp-msch0&quot; at mainbus0 not configured
+&quot;nocp-lp-msch0&quot; at mainbus0 not configured
+&quot;nocp-video-msch0&quot; at mainbus0 not configured
+&quot;nocp-vio0-msch0&quot; at mainbus0 not configured
+&quot;nocp-vio1-msch0&quot; at mainbus0 not configured
+&quot;nocp-cci-msch1&quot; at mainbus0 not configured
+&quot;nocp-gpu-msch1&quot; at mainbus0 not configured
+&quot;nocp-hp-msch1&quot; at mainbus0 not configured
+&quot;nocp-lp-msch1&quot; at mainbus0 not configured
+&quot;nocp-video-msch1&quot; at mainbus0 not configured
+&quot;nocp-vio0-msch1&quot; at mainbus0 not configured
+&quot;nocp-vio1-msch1&quot; at mainbus0 not configured
+&quot;rockchip-suspend&quot; at mainbus0 not configured
+&quot;energy-costs&quot; at mainbus0 not configured
+&quot;opp-table0&quot; at mainbus0 not configured
+&quot;opp-table1&quot; at mainbus0 not configured
+&quot;opp-table2&quot; at mainbus0 not configured
+&quot;opp-table3&quot; at mainbus0 not configured
+&quot;reserved-memory&quot; at mainbus0 not configured
+&quot;sram&quot; at mainbus0 not configured
+&quot;dc-12v&quot; at mainbus0 not configured
+&quot;vcc3v3-pcie-regulator&quot; at mainbus0 not configured
+&quot;vcc1v8-s0&quot; at mainbus0 not configured
+&quot;vcc-sys&quot; at mainbus0 not configured
+&quot;vcc-phy-regulator&quot; at mainbus0 not configured
+&quot;vcc3v3-sys&quot; at mainbus0 not configured
+&quot;vcc5v0-host-regulator&quot; at mainbus0 not configured
+&quot;vdd-log&quot; at mainbus0 not configured
+&quot;external-gmac-clock&quot; at mainbus0 not configured
+&quot;spdif-out&quot; at mainbus0 not configured
+&quot;sdio-pwrseq&quot; at mainbus0 not configured
+&quot;xin32k&quot; at mainbus0 not configured
+&quot;wireless-wlan&quot; at mainbus0 not configured
+&quot;wireless-bluetooth&quot; at mainbus0 not configured
+&quot;hdmi-dp-sound&quot; at mainbus0 not configured
+&quot;es8316-sound&quot; at mainbus0 not configured
+&quot;spdif-sound&quot; at mainbus0 not configured
+&quot;test-power&quot; at mainbus0 not configured
+&quot;leds&quot; at mainbus0 not configured
+&quot;pwm-fan&quot; at mainbus0 not configured
+&quot;rockchip-key&quot; at mainbus0 not configured
+cpu1 at mainbus0 mpidr 1: ARM Cortex-A53 r0p4
+cpu1: 32KB 64b/line 2-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu1: 512KB 64b/line 16-way L2 cache
+cpu2 at mainbus0 mpidr 2: ARM Cortex-A53 r0p4
+cpu2: 32KB 64b/line 2-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu2: 512KB 64b/line 16-way L2 cache
+cpu3 at mainbus0 mpidr 3: ARM Cortex-A53 r0p4
+cpu3: 32KB 64b/line 2-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu3: 512KB 64b/line 16-way L2 cache
+cpu4 at mainbus0 mpidr 100: ARM Cortex-A72 r0p2
+cpu4: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu4: 1024KB 64b/line 16-way L2 cache
+cpu5 at mainbus0 mpidr 101: ARM Cortex-A72 r0p2
+cpu5: 48KB 64b/line 3-way L1 PIPT I-cache, 32KB 64b/line 2-way L1 D-cache
+cpu5: 1024KB 64b/line 16-way L2 cache
+usb4 at ohci0: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Generic OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci1: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;Generic OHCI root hub&quot; rev 1.00/1.00 addr 1
+scsibus0 at sdmmc0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;SD/MMC, SL32G, 0080&gt; SCSI2 0/direct removable
+sd0: 30436MB, 512 bytes/sector, 62333952 sectors
+sdmmc1: can't enable card
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+bootfile: sd0a:/bsd
+boot device: sd0
+root on sd0a (9f12881c2b644f51.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,277 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-07-21 12:52:39</em><br />
+<strong>From:</strong> <em>brainbomb</em><br />
+<strong>Description:</strong> <em>Astaro ASG 220 </em><br />
+
+<pre>
+OpenBSD 6.5 (GENERIC) #1338: Sat Apr 13 15:07:04 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 1064779776 (1015MB)
+avail mem = 1030111232 (982MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 05/09/07, BIOS32 rev. 0 @ 0xfb240, SMBIOS rev. 2.2 @ 0xf0800 (34 entries)
+bios0: vendor Phoenix Technologies, LTD version &quot;6.00 PG&quot; date 05/09/2007
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S5
+acpi0: tables DSDT FACP APIC
+acpi0: wakeup devices HUB0(S5) UAR1(S5) UAR2(S5) USB0(S1) USB1(S1) USBE(S1) MODM(S5) PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Pentium(R) 4 CPU 2.80GHz (&quot;GenuineIntel&quot; 686-class) 2.80 GHz, 0f-02-09
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,CNXT-ID,xTPR,PERF,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 132MHz
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (HUB0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: PWRB
+&quot;PNP0A03&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;PNP0C0B&quot; at acpi0 not configured
+bios0: ROM list: 0xc0000/0xb400 0xcc000/0x4000!
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82845G Host&quot; rev 0x03
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel 82845G Video&quot; rev 0x03
+drm0 at inteldrm0
+intagp0 at inteldrm0
+agp0 at intagp0: aperture at 0xe0000000, size 0x8000000
+inteldrm0: apic 2 int 16
+error: [drm:pid0:parse_device_mapping] *ERROR* Child device config size 27 is too small.
+inteldrm0: 1920x1200, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 16
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 19
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801DB USB&quot; rev 0x02: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb0 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0x82
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 7 function 0 vendor &quot;Pericom&quot;, unknown product 0x8152 rev 0x01
+pci2 at ppb1 bus 2
+ppb2 at pci1 dev 9 function 0 &quot;Pericom PCI-PCI&quot; rev 0x02
+pci3 at ppb2 bus 3
+fxp0 at pci3 dev 8 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 19, address xx:xx:xx:xx:xx:xx
+inphy0 at fxp0 phy 1: i82555 10/100 PHY, rev. 4
+fxp1 at pci3 dev 9 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 16, address xx:xx:xx:xx:xx:xx
+inphy1 at fxp1 phy 1: i82555 10/100 PHY, rev. 4
+fxp2 at pci3 dev 10 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 17, address xx:xx:xx:xx:xx:xx
+inphy2 at fxp2 phy 1: i82555 10/100 PHY, rev. 4
+fxp3 at pci3 dev 11 function 0 &quot;Intel 8255x&quot; rev 0x10, i82551: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+inphy3 at fxp3 phy 1: i82555 10/100 PHY, rev. 4
+em0 at pci1 dev 10 function 0 &quot;Intel 82541GI&quot; rev 0x05: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+em1 at pci1 dev 11 function 0 &quot;Intel 82541GI&quot; rev 0x05: apic 2 int 17, address xx:xx:xx:xx:xx:xx
+em2 at pci1 dev 12 function 0 &quot;Intel 82541GI&quot; rev 0x05: apic 2 int 16, address xx:xx:xx:xx:xx:xx
+em3 at pci1 dev 13 function 0 &quot;Intel 82541GI&quot; rev 0x05: apic 2 int 19, address xx:xx:xx:xx:xx:xx
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801DB LPC&quot; rev 0x02
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801DB IDE&quot; rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ST380215A&gt;
+wd0: 16-sector PIO, LBA48, 76319MB, 156301488 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801DB SMBus&quot; rev 0x02: apic 2 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 512MB DDR SDRAM non-parity PC3200CL3.0
+spdmem1 at iic0 addr 0x51: 512MB DDR SDRAM non-parity PC3200CL3.0
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+acpitz0: _AL0[0] _PR0 failed
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Fujitsu Component product 0x100e&quot; rev 2.00/1.04 addr 2
+uhidev0 at uhub3 port 4 configuration 1 interface 0 &quot;Fujitsu Component Sun USB Keyboard&quot; rev 2.00/1.04 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes, country code 33
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (ea65eb8bbe17463a.a) swap on wd0b dump on wd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

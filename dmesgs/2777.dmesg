@@ -1,0 +1,505 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-07-22 15:10:07</em><br />
+<strong>From:</strong> <em>Mark Saad</em><br />
+<strong>Description:</strong> <em>OpenBSD on a SuperMicro SiRouter</em><br />
+
+<pre>
+Loading /5.8/AMD64/CDBOOT                                                       
+probing: pc0 com0 com1 mem[619K 2013M 63488M a20=on]                            
+disk: hd0+* hd1+* cd0                                                           
+&gt;&gt; OpenBSD/amd64 CDBOOT 3.23                                                    
+boot&gt; stty com1 115200                                                          
+boot&gt; set tty com1&gt;&gt; OpenBSD/amd64 CDBOOT 3.23                                  
+boot&gt; boot                                                                      
+cannot open cd0a:/etc/random.seed: No such file or directory                    
+booting cd0a:/5.8/amd64/bsd.rd: 3251624+1391232+2401280+0+520192 [72+360648+235373]=0x7c9b00
+entry point at 0x1000160 [7205c766, 34000004, 24448b12, a680a304]               
+Copyright (c) 1982, 1986, 1989, 1991, 1993                                      
+        The Regents of the University of California.  All rights reserved.      
+Copyright (c) 1995-2015 OpenBSD. All rights reserved.  http://www.OpenBSD.org   
+                                                                                
+OpenBSD 5.8-beta (RAMDISK_CD) #1088: Tue Jul 21 05:28:06 MDT 2015               
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD        
+real mem = 68667281408 (65486MB)                                                
+avail mem = 66584481792 (63499MB)                                               
+mainbus0 at root                                                                
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xec700 (140 entries)                      
+bios0: vendor American Megatrends Inc. version &quot;3.2&quot; date 01/15/2015            
+bios0: Supermicro X9DRX+-F                                                      
+acpi0 at bios0: rev 2                                                          
+acpi0: tables DSDT FACP APIC FPDT SRAT SLIT HPET PRAD SPMI SSDT EINJ ERST HEST BERT DMAR MCFG
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-2630L 0 @ 2.00GHz, 2000.28 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,PAGE1GB,LONG,LAHF,PERF,ITSC,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 100MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 2 pa 0xfec01000, version 20, 24 pins
+ioapic2 at mainbus0: apid 3 pa 0xfec40000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 25 (P0P9)
+acpiprt2 at acpi0: bus 23 (PEX0)
+acpiprt3 at acpi0: bus 22 (P0PA)
+acpiprt4 at acpi0: bus 1 (NPE1)
+acpiprt5 at acpi0: bus 3 (NPE3)
+acpiprt6 at acpi0: bus 11 (NPE5)
+acpiprt7 at acpi0: bus 19 (NPE7)
+acpiprt8 at acpi0: bus 21 (NPE9)
+acpiprt9 at acpi0: bus 128 (PCI1)
+acpiprt10 at acpi0: bus 129 (NPE0)
+acpiprt11 at acpi0: bus 130 (NPE1)
+acpiprt12 at acpi0: bus 132 (NPE3)
+acpiprt13 at acpi0: bus 134 (NPE5)
+acpiprt14 at acpi0: bus 135 (NPE7)
+acpiprt15 at acpi0: bus 137 (NPE9)
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel E5 Host&quot; rev 0x07
+ppb0 at pci0 dev 1 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci1 at ppb0 bus 1
+em0 at pci1 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci1 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em2 at pci1 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em3 at pci1 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb1 at pci0 dev 2 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci2 at ppb1 bus 3
+ppb2 at pci2 dev 0 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca
+pci3 at ppb2 bus 4
+ppb3 at pci3 dev 8 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci4 at ppb3 bus 5
+ix0 at pci4 dev 0 function 0 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ix1 at pci4 dev 0 function 1 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb4 at pci3 dev 9 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci5 at ppb4 bus 7
+ix2 at pci5 dev 0 function 0 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ix3 at pci5 dev 0 function 1 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb5 at pci3 dev 16 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci6 at ppb5 bus 9
+ppb6 at pci3 dev 17 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci7 at ppb6 bus 10
+ppb7 at pci0 dev 2 function 2 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci8 at ppb7 bus 11
+ppb8 at pci8 dev 0 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca
+pci9 at ppb8 bus 12
+ppb9 at pci9 dev 8 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci10 at ppb9 bus 13
+ix4 at pci10 dev 0 function 0 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ix5 at pci10 dev 0 function 1 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb10 at pci9 dev 9 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci11 at ppb10 bus 15
+ix6 at pci11 dev 0 function 0 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ix7 at pci11 dev 0 function 1 &quot;Intel 82599&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb11 at pci9 dev 16 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci12 at ppb11 bus 17
+ppb12 at pci9 dev 17 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci13 at ppb12 bus 18
+ppb13 at pci0 dev 3 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci14 at ppb13 bus 19
+em4 at pci14 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em5 at pci14 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em6 at pci14 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em7 at pci14 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb14 at pci0 dev 3 function 2 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci15 at ppb14 bus 21
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 0 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 1 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 2 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 3 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 4 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 5 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 6 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 7 not configured
+&quot;Intel E5 Address Map&quot; rev 0x07 at pci0 dev 5 function 0 not configured
+&quot;Intel E5 Error Reporting&quot; rev 0x07 at pci0 dev 5 function 2 not configured
+&quot;Intel E5 I/O APIC&quot; rev 0x07 at pci0 dev 5 function 4 not configured
+ppb15 at pci0 dev 17 function 0 &quot;Intel C600 Virtual PCIE&quot; rev 0x06
+pci16 at ppb15 bus 22
+vendor &quot;Intel&quot;, unknown product 0x1d6b (class mass storage subclass SAS, rev 0x06) at pci16 dev 0 function 0 not configured
+&quot;Intel C600 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+&quot;Intel C600 MEI&quot; rev 0x05 at pci0 dev 22 function 1 not configured
+ehci0 at pci0 dev 26 function 0 &quot;Intel C600 USB&quot; rev 0x06: apic 0 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb16 at pci0 dev 28 function 0 &quot;Intel C600 PCIE&quot; rev 0xb6: msi
+pci17 at ppb16 bus 23
+em8 at pci17 dev 0 function 0 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em9 at pci17 dev 0 function 1 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ehci1 at pci0 dev 29 function 0 &quot;Intel C600 USB&quot; rev 0x06: apic 0 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb17 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xa6
+pci18 at ppb17 bus 25
+vga1 at pci18 dev 1 function 0 &quot;Matrox MGA G200eW&quot; rev 0x0a
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+&quot;Intel C600 LPC&quot; rev 0x06 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel C600 AHCI&quot; rev 0x06: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, INTEL SSDSC2CW12, 400i&gt; SCSI3 0/direct fixed naa.55cd2e400029f3af
+sd0: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, INTEL SSDSC2CW12, 400i&gt; SCSI3 0/direct fixed naa.55cd2e400029f191
+sd1: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+&quot;Intel C600 SMBus&quot; rev 0x06 at pci0 dev 31 function 3 not configured
+&quot;Intel C600 Thermal&quot; rev 0x06 at pci0 dev 31 function 6 not configured
+pci19 at mainbus0 bus 127
+&quot;Intel E5 QPI Link&quot; rev 0x07 at pci19 dev 8 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c83 (class system subclass miscellaneous, rev 0x07) at pci19 dev 8 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c84 (class system subclass miscellaneous, rev 0x07) at pci19 dev 8 function 4 not configured
+&quot;Intel E5 QPI Link&quot; rev 0x07 at pci19 dev 9 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c93 (class system subclass miscellaneous, rev 0x07) at pci19 dev 9 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c94 (class system subclass miscellaneous, rev 0x07) at pci19 dev 9 function 4 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci19 dev 10 function 0 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci19 dev 10 function 1 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci19 dev 10 function 2 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci19 dev 10 function 3 not configured
+&quot;Intel E5 Scratch&quot; rev 0x07 at pci19 dev 11 function 0 not configured
+&quot;Intel E5 Scratch&quot; rev 0x07 at pci19 dev 11 function 3 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 12 function 0 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 12 function 1 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 12 function 2 not configured
+&quot;Intel E5 SAD&quot; rev 0x07 at pci19 dev 12 function 6 not configured
+&quot;Intel E5 SAD&quot; rev 0x07 at pci19 dev 12 function 7 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 13 function 0 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 13 function 1 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci19 dev 13 function 2 not configured
+&quot;Intel E5 Broadcast&quot; rev 0x07 at pci19 dev 13 function 6 not configured
+&quot;Intel E5 Home Agent&quot; rev 0x07 at pci19 dev 14 function 0 not configured
+&quot;Intel E5 Home Agent&quot; rev 0x07 at pci19 dev 14 function 1 not configured
+&quot;Intel E5 TA&quot; rev 0x07 at pci19 dev 15 function 0 not configured
+&quot;Intel E5 RAS&quot; rev 0x07 at pci19 dev 15 function 1 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci19 dev 15 function 2 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci19 dev 15 function 3 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci19 dev 15 function 4 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci19 dev 15 function 5 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci19 dev 15 function 6 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci19 dev 16 function 0 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci19 dev 16 function 1 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci19 dev 16 function 2 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci19 dev 16 function 3 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci19 dev 16 function 4 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci19 dev 16 function 5 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci19 dev 16 function 6 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci19 dev 16 function 7 not configured
+&quot;Intel E5 DDRIO&quot; rev 0x07 at pci19 dev 17 function 0 not configured
+&quot;Intel E5 R2PCIE&quot; rev 0x07 at pci19 dev 19 function 0 not configured
+&quot;Intel E5 PCIE Monitor&quot; rev 0x07 at pci19 dev 19 function 1 not configured
+&quot;Intel E5 QPI&quot; rev 0x07 at pci19 dev 19 function 4 not configured
+&quot;Intel E5 QPI Link Monitor&quot; rev 0x07 at pci19 dev 19 function 5 not configured
+&quot;Intel E5 QPI Link Monitor&quot; rev 0x07 at pci19 dev 19 function 6 not configured
+pci20 at mainbus0 bus 128
+ppb18 at pci20 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x3c01 rev 0x07: msi
+pci21 at ppb18 bus 129
+ppb19 at pci20 dev 1 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci22 at ppb19 bus 130
+em10 at pci22 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em11 at pci22 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em12 at pci22 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em13 at pci22 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb20 at pci20 dev 2 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci23 at ppb20 bus 132
+em14 at pci23 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em15 at pci23 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em16 at pci23 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em17 at pci23 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb21 at pci20 dev 2 function 2 &quot;Intel E5 PCIE&quot; rev 0x07failed to allocate interrupt slot for PIC msi pin -2139090432
+
+pci24 at ppb21 bus 134
+ppb22 at pci20 dev 3 function 0 &quot;Intel E5 PCIE&quot; rev 0x07failed to allocate interrupt slot for PIC msi pin -2139088896
+
+pci25 at ppb22 bus 135
+em18 at pci25 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138636288
+: couldn't establish interrupt at msi
+em19 at pci25 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138636032
+: couldn't establish interrupt at msi
+em20 at pci25 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138635776
+: couldn't establish interrupt at msi
+em21 at pci25 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138635520
+: couldn't establish interrupt at msi
+ppb23 at pci20 dev 3 function 2 &quot;Intel E5 PCIE&quot; rev 0x07failed to allocate interrupt slot for PIC msi pin -2139088384
+
+pci26 at ppb23 bus 137
+em22 at pci26 dev 0 function 0 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138505216
+: couldn't establish interrupt at msi
+em23 at pci26 dev 0 function 1 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138504960
+: couldn't establish interrupt at msi
+em24 at pci26 dev 0 function 2 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138504704
+: couldn't establish interrupt at msi
+em25 at pci26 dev 0 function 3 &quot;Intel I350 Fiber&quot; rev 0x01failed to allocate interrupt slot for PIC msi pin -2138504448
+: couldn't establish interrupt at msi
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 0 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 1 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 2 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 3 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 4 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 5 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 6 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci20 dev 4 function 7 not configured
+&quot;Intel E5 Address Map&quot; rev 0x07 at pci20 dev 5 function 0 not configured
+&quot;Intel E5 Error Reporting&quot; rev 0x07 at pci20 dev 5 function 2 not configured
+&quot;Intel E5 I/O APIC&quot; rev 0x07 at pci20 dev 5 function 4 not configured
+pci27 at mainbus0 bus 255
+&quot;Intel E5 QPI Link&quot; rev 0x07 at pci27 dev 8 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c83 (class system subclass miscellaneous, rev 0x07) at pci27 dev 8 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c84 (class system subclass miscellaneous, rev 0x07) at pci27 dev 8 function 4 not configured
+&quot;Intel E5 QPI Link&quot; rev 0x07 at pci27 dev 9 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c93 (class system subclass miscellaneous, rev 0x07) at pci27 dev 9 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c94 (class system subclass miscellaneous, rev 0x07) at pci27 dev 9 function 4 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci27 dev 10 function 0 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci27 dev 10 function 1 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci27 dev 10 function 2 not configured
+&quot;Intel E5 PCU&quot; rev 0x07 at pci27 dev 10 function 3 not configured
+&quot;Intel E5 Scratch&quot; rev 0x07 at pci27 dev 11 function 0 not configured
+&quot;Intel E5 Scratch&quot; rev 0x07 at pci27 dev 11 function 3 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 12 function 0 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 12 function 1 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 12 function 2 not configured
+&quot;Intel E5 SAD&quot; rev 0x07 at pci27 dev 12 function 6 not configured
+&quot;Intel E5 SAD&quot; rev 0x07 at pci27 dev 12 function 7 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 13 function 0 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 13 function 1 not configured
+&quot;Intel E5 Unicast&quot; rev 0x07 at pci27 dev 13 function 2 not configured
+&quot;Intel E5 Broadcast&quot; rev 0x07 at pci27 dev 13 function 6 not configured
+&quot;Intel E5 Home Agent&quot; rev 0x07 at pci27 dev 14 function 0 not configured
+&quot;Intel E5 Home Agent&quot; rev 0x07 at pci27 dev 14 function 1 not configured
+&quot;Intel E5 TA&quot; rev 0x07 at pci27 dev 15 function 0 not configured
+&quot;Intel E5 RAS&quot; rev 0x07 at pci27 dev 15 function 1 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci27 dev 15 function 2 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci27 dev 15 function 3 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci27 dev 15 function 4 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci27 dev 15 function 5 not configured
+&quot;Intel E5 TAD&quot; rev 0x07 at pci27 dev 15 function 6 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci27 dev 16 function 0 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci27 dev 16 function 1 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci27 dev 16 function 2 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci27 dev 16 function 3 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci27 dev 16 function 4 not configured
+&quot;Intel E5 Thermal&quot; rev 0x07 at pci27 dev 16 function 5 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci27 dev 16 function 6 not configured
+&quot;Intel E5 Error&quot; rev 0x07 at pci27 dev 16 function 7 not configured
+&quot;Intel E5 DDRIO&quot; rev 0x07 at pci27 dev 17 function 0 not configured
+&quot;Intel E5 R2PCIE&quot; rev 0x07 at pci27 dev 19 function 0 not configured
+&quot;Intel E5 PCIE Monitor&quot; rev 0x07 at pci27 dev 19 function 1 not configured
+&quot;Intel E5 QPI&quot; rev 0x07 at pci27 dev 19 function 4 not configured
+&quot;Intel E5 QPI Link Monitor&quot; rev 0x07 at pci27 dev 19 function 5 not configured
+&quot;Intel E5 QPI Link Monitor&quot; rev 0x07 at pci27 dev 19 function 6 not configured
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: console
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+uhub2 at uhub0 port 1 &quot;vendor 0x8087 product 0x0024&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub2 port 3 configuration 1 interface 0 &quot;Winbond Electronics Corp Hermon USB hidmouse Device&quot; rev 1.10/0.01 addr 3
+uhidev0: iclass 3/1
+uhid at uhidev0 not configured
+uhidev1 at uhub2 port 3 configuration 1 interface 1 &quot;Winbond Electronics Corp Hermon USB hidmouse Device&quot; rev 1.10/0.01 addr 3
+uhidev1: iclass 3/1
+ukbd0 at uhidev1
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+umass0 at uhub2 port 4 configuration 1 interface 0 &quot;vendor 0x0ea0 product 0x2222&quot; rev 2.00/2.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd2 at scsibus1 targ 1 lun 0: &lt;IPMI, Virtual Disk, 3000&gt; SCSI0 0/direct removable
+umass1 at uhub2 port 4 configuration 1 interface 1 &quot;vendor 0x0ea0 product 0x2222&quot; rev 2.00/2.00 addr 4
+umass1: using ATAPI over Bulk-Only
+scsibus2 at umass1: 2 targets, initiator 0
+cd0 at scsibus2 targ 1 lun 0: &lt;IPMI, Virtual CDROM, 3000&gt; ATAPI 5/cdrom removable
+uhub3 at uhub1 port 1 &quot;vendor 0x8087 product 0x0024&quot; rev 2.00/0.00 addr 2
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+erase ^?, werase ^W, kill ^U, intr ^C, status ^T
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

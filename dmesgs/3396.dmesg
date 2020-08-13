@@ -1,0 +1,485 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-11-13 21:58:16</em><br />
+<strong>From:</strong> <em>Ben.Bai</em><br />
+<strong>Description:</strong> <em>GPD Win</em><br />
+
+<pre>
+OpenBSD 6.2-current (GENERIC.MP) #200: Wed Nov  8 18:47:18 MST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4182315008 (3988MB)
+avail mem = 4048723968 (3861MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x7b8de000 (51 entries)
+bios0: vendor American Megatrends Inc. version &quot;5.11&quot; date 05/25/2017
+bios0: Default string Default string
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG SSDT SSDT SSDT UEFI SSDT HPET SSDT SSDT SSDT LPIT BCFG PRAM BGRT TPM2 CSRT WDAT SSDT SSDT SSDT
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz, 1600.36 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS,SENSOR,ARAT
+cpu0: 1MB 64b/line 16-way L2 cache
+acpitimer0: recalibrated TSC frequency 1599950213 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 79MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.0.0.0.3.3, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz, 1599.95 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS,SENSOR,ARAT
+cpu1: 1MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz, 1599.95 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS,SENSOR,ARAT
+cpu2: 1MB 64b/line 16-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz, 1599.95 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS,SENSOR,ARAT
+cpu3: 1MB 64b/line 16-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 115 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpihpet0: recalibrated TSC frequency 1599953800 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpicpu0 at acpi0
+C2: state 6: substate 8 &gt;= num 3
+C3: state 7: substate 4 &gt;= num 3: C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0
+C2: state 6: substate 8 &gt;= num 3
+C3: state 7: substate 4 &gt;= num 3: C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0
+C2: state 6: substate 8 &gt;= num 3
+C3: state 7: substate 4 &gt;= num 3: C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0
+C2: state 6: substate 8 &gt;= num 3
+C3: state 7: substate 4 &gt;= num 3: C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: ID3C, resource for ISP3
+acpipwrres1 at acpi0: WWPR, resource for HS03, MDM1
+acpipwrres2 at acpi0: WWPR, resource for HS13, MDM1
+acpipwrres3 at acpi0: WWPR, resource for SSC1, MDM3
+acpipwrres4 at acpi0: WWPR, resource for SSCW, MDM3
+acpipwrres5 at acpi0: WWPR, resource for HSC1, MDM2
+acpipwrres6 at acpi0: WWPR, resource for HSC3, MDM4
+acpipwrres7 at acpi0: CLK3, resource for RTK1, RTKA
+acpipwrres8 at acpi0: CLK4
+acpipwrres9 at acpi0: CLK2, resource for NFC2
+acpipwrres10 at acpi0: CLK1
+acpipwrres11 at acpi0: CLK0, resource for CA10, CAM9, CAM3
+acpipwrres12 at acpi0: CLK1, resource for CAM4
+acpipwrres13 at acpi0: USBC, resource for XHC1, OTG1
+acpipwrres14 at acpi0: P28X
+acpipwrres15 at acpi0: P18X
+acpipwrres16 at acpi0: P12X
+acpipwrres17 at acpi0: P28P
+acpipwrres18 at acpi0: P18P
+acpipwrres19 at acpi0: P19X
+acpipwrres20 at acpi0: P06X
+acpipwrres21 at acpi0: P12A
+acpipwrres22 at acpi0: P28T
+acpipwrres23 at acpi0: P18D
+acpipwrres24 at acpi0: P18T
+acpipwrres25 at acpi0: P3P3
+acpipwrres26 at acpi0: P12T
+acpipwrres27 at acpi0: P28W
+acpipwrres28 at acpi0: P18W
+acpipwrres29 at acpi0: P12W
+acpipwrres30 at acpi0: P33W
+acpipwrres31 at acpi0: P33X
+acpipwrres32 at acpi0: P4BW
+acpitz0 at acpi0: critical temperature is 90 degC
+&quot;INT33A4&quot; at acpi0 not configured
+&quot;INT33BD&quot; at acpi0 not configured
+chvgpio0 at acpi0: GPO1 uid 2 addr 0xfed88000/0x8000 irq 48, 59 pins
+chvgpio1 at acpi0: GPO3 uid 4 addr 0xfed98000/0x8000 irq 91, 55 pins
+dwiic0 at acpi0: I2C7 addr 0xa1a26000/0x1000 irq 38
+iic0 at dwiic0
+&quot;INT34D3&quot; at acpi0 not configured
+dwiic1 at acpi0: I2C1 addr 0xa1a32000/0x1000 irq 32
+iic1 at dwiic1
+chvgpio2 at acpi0: GPO0 uid 1 addr 0xfed80000/0x8000 irq 49, 56 pins
+chvgpio3 at acpi0: GPO2 uid 3 addr 0xfed90000/0x8000 irq 50, 24 pins
+&quot;INT33FE&quot; at acpi0 not configured
+sdhc0 at acpi0: SDHA addr 0xa1a3a000/0x1000 irq 45
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+sdhc1 at acpi0: SDHB addr 0xa1a38000/0x1000 irq 46
+sdhc1: SDHC 3.0, 200 MHz base clock
+sdmmc1 at sdhc1: 4-bit, sd high-speed, mmc high-speed, dma
+sdhc2 at acpi0: SHC1 addr 0xa1a36000/0x1000 irq 47, gpio
+sdhc2: SDHC 3.0, 200 MHz base clock
+sdmmc2 at sdhc2: 4-bit, sd high-speed, mmc high-speed, dma
+&quot;INTL9C60&quot; at acpi0 not configured
+&quot;INTL9C60&quot; at acpi0 not configured
+&quot;8086228A&quot; at acpi0 not configured
+&quot;BCM2E7E&quot; at acpi0 not configured
+&quot;8086228A&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+dwiic2 at acpi0: I2C2 addr 0xa1a30000/0x1000 irq 33
+iic2 at dwiic2
+&quot;10EC5645&quot; at acpi0 not configured
+dwiic3 at acpi0: I2C3 addr 0xa1a2e000/0x1000 irq 34
+iic3 at dwiic3
+dwiic4 at acpi0: I2C4 addr 0xa1a2c000/0x1000 irq 35
+iic4 at dwiic4
+dwiic5 at acpi0: I2C5 addr 0xa1a2a000/0x1000 irq 36
+iic5 at dwiic5
+dwiic6 at acpi0: I2C6 addr 0xa1a28000/0x1000 irq 37
+iic6 at dwiic6
+&quot;GDIX1001&quot; at acpi0 not configured
+&quot;808622A8&quot; at acpi0 not configured
+&quot;INT33D5&quot; at acpi0 not configured
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+chvgpio4 at acpi0: GPO4 uid 5
+&quot;ACPI0011&quot; at acpi0 not configured
+&quot;ACPI000C&quot; at acpi0 not configured
+acpiac0 at acpi0: AC unit online
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+&quot;INT3407&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3409&quot; at acpi0 not configured
+&quot;INT3406&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;USBC000&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD01
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 1600 MHz: speeds: 1601, 1600, 1520, 1440, 1360, 1280, 1200, 1120, 1040, 960, 880, 800, 720, 640, 560, 480 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Braswell Host&quot; rev 0x34
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x34
+drm0 at inteldrm0
+inteldrm0: msi
+error: [drm:pid0:parse_mipi] *ERROR* Unable to parse MIPI Sequence Block v3+
+error: [drm:pid0:pwm_setup_backlight] *ERROR* Failed to own the pwm chip
+WARNING clock-&gt;n == 0 || clock-&gt;p == 0 failed at /usr/src/sys/dev/pci/drm/i915/intel_display.c:694
+error: [drm:pid0:drm_calc_timestamping_constants] *ERROR* crtc 26: Can't calculate constants, dotclock = 0!
+error: [drm:pid0:chv_set_memory_dvfs] *ERROR* timed out waiting for Punit DDR DVFS request
+inteldrm0: 720x1280, 32bpp
+attached crtc is active, but connector isn't
+DPIO read pipe B reg 0x8080 == 0xffffffff
+DPIO read pipe B reg 0x8180 == 0xffffffff
+DPIO read pipe B reg 0x8184 == 0xffffffff
+DPIO read pipe B reg 0x8188 == 0xffffffff
+DPIO read pipe B reg 0x818c == 0xffffffff
+[ENCODER:45] active 0 with crtc active 1
+error: [drm:pid0:intel_pipe_config_compare] *ERROR* mismatch in dpll_hw_state.dpll (expected 0x30002000, found 0x30006000)
+error: [drm:pid0:intel_pipe_config_compare] *ERROR* mismatch in dpll_hw_state.dpll_md (expected 0x00000000, found 0x00000003)
+error: [drm:pid0:intel_pipe_config_compare] *ERROR* mismatch in base.adjusted_mode.crtc_clock (expected 61000, found 0)
+error: [drm:pid0:intel_pipe_config_compare] *ERROR* mismatch in port_clock (expected 61000, found 0)
+pipe state doesn't match!
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel Braswell Power&quot; rev 0x34 at pci0 dev 11 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel Braswell xHCI&quot; rev 0x34: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel Braswell TXE&quot; rev 0x34 at pci0 dev 26 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel Braswell PCIE&quot; rev 0x34: msi
+pci1 at ppb0 bus 1
+&quot;Broadcom BCM4356&quot; rev 0x02 at pci1 dev 0 function 0 not configured
+pcib0 at pci0 dev 31 function 0 &quot;Intel Braswell PCU LPC&quot; rev 0x34
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+sdmmc1: can't enable card
+scsibus1 at sdmmc2: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: &lt;SD/MMC, 00000, 0010&gt; SCSI2 0/direct removable
+sd0: 61056MB, 512 bytes/sector, 125042688 sectors
+scsibus2 at sdmmc0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Toshiba, 064G30, 0000&gt; SCSI2 0/direct removable
+sd1: 59640MB, 512 bytes/sector, 122142720 sectors
+uhidev0 at uhub0 port 2 configuration 1 interface 0 &quot;HK-XBOXKB-US-A0-10-00 USB KEYBOARD&quot; rev 1.10/1.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 2 configuration 1 interface 1 &quot;HK-XBOXKB-US-A0-10-00 USB KEYBOARD&quot; rev 1.10/1.00 addr 2
+uhidev1: iclass 3/0, 9 report ids
+ums0 at uhidev1 reportid 1: 5 buttons, Z and W dir
+wsmouse0 at ums0 mux 0
+uhid0 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 3: input=3, output=0, feature=0
+uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
+uhid3 at uhidev1 reportid 9: input=1, output=0, feature=0
+uhidev2 at uhub0 port 3 configuration 1 interface 0 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev2: iclass 3/0
+ums1 at uhidev2: 5 buttons, Z dir
+wsmouse1 at ums1 mux 0
+uhidev3 at uhub0 port 3 configuration 1 interface 1 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev3: iclass 3/0
+ukbd1 at uhidev3: 8 variable keys, 6 key codes
+wskbd1 at ukbd1 mux 1
+wskbd1: connecting to wsdisplay0
+umass0 at uhub0 port 4 configuration 1 interface 0 &quot;Silicon Integrated Systems Corp. USB Mass Storage Device&quot; rev 2.00/1.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus3 at umass0: 2 targets, initiator 0
+sd2 at scsibus3 targ 1 lun 0: &lt;TinyDisk, 2006-06-29, 0.00&gt; SCSI2 0/direct removable serial.0457015100000000010E
+sd2: 2000MB, 512 bytes/sector, 4096000 sectors
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd2a (3971af12453c831f.a) swap on sd2b dump on sd2b
+wsmouse1 detached
+ums1 detached
+uhidev2 detached
+wskbd1: disconnecting from wsdisplay0
+wskbd1 detached
+ukbd1 detached
+uhidev3 detached
+uhidev2 at uhub0 port 3 configuration 1 interface 0 &quot;1 Controller for Windows&quot; rev 2.00/1.00 addr 3
+uhidev2: iclass 255/93
+uhid4 at uhidev2: input=20, output=0, feature=0
+ugen0 at uhub0 port 3 configuration 1 &quot;1 Controller for Windows&quot; rev 2.00/1.00 addr 3
+uhid4 detached
+uhidev2 detached
+ugen0 detached
+uhidev2 at uhub0 port 3 configuration 1 interface 0 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev2: iclass 3/0
+ums1 at uhidev2: 5 buttons, Z dir
+wsmouse1 at ums1 mux 0
+uhidev3 at uhub0 port 3 configuration 1 interface 1 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev3: iclass 3/0
+ukbd1 at uhidev3: 8 variable keys, 6 key codes
+wskbd1 at ukbd1 mux 1
+wskbd1: connecting to wsdisplay0
+wsmouse1 detached
+ums1 detached
+uhidev2 detached
+wskbd1: disconnecting from wsdisplay0
+wskbd1 detached
+ukbd1 detached
+uhidev3 detached
+uhidev2 at uhub0 port 3 configuration 1 interface 0 &quot;1 Controller for PC&quot; rev 2.00/1.00 addr 3
+uhidev2: iclass 3/0
+uhid4 at uhidev2: input=27, output=4, feature=0
+uhid4 detached
+uhidev2 detached
+uhidev2 at uhub0 port 3 configuration 1 interface 0 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev2: iclass 3/0
+ums1 at uhidev2: 5 buttons, Z dir
+wsmouse1 at ums1 mux 0
+uhidev3 at uhub0 port 3 configuration 1 interface 1 &quot;vendor 0x0079 Mouce for Android&quot; rev 2.00/1.00 addr 3
+uhidev3: iclass 3/0
+ukbd1 at uhidev3: 8 variable keys, 6 key codes
+wskbd1 at ukbd1 mux 1
+wskbd1: connecting to wsdisplay0
+
+
+hw.machine=amd64
+hw.model=Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz
+hw.ncpu=4
+hw.byteorder=1234
+hw.pagesize=4096
+hw.disknames=sd0:,sd1:,sd2:3971af12453c831f
+hw.diskcount=3
+hw.sensors.cpu0.temp0=35.00 degC
+hw.sensors.acpitz0.temp0=0.00 degC (zone temperature)
+hw.sensors.acpibtn0.indicator0=On (lid open)
+hw.sensors.acpiac0.indicator0=On (power supply)
+hw.cpuspeed=480
+hw.setperf=0
+hw.vendor=Default string
+hw.product=Default string
+hw.version=Default string
+hw.serialno=Default string
+hw.uuid=00020003-0004-0005-0006-000700080009
+hw.physmem=4182315008
+hw.usermem=4182159360
+hw.ncpufound=4
+hw.allowpowerdown=1
+hw.perfpolicy=auto
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

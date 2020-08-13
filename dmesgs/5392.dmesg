@@ -1,0 +1,255 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-02-29 00:45:51</em><br />
+<strong>From:</strong> <em>julianaito</em><br />
+<strong>Description:</strong> <em>Mac Mini G4 1.25Ghz running OpenBSD/macppc</em><br />
+
+<pre>
+OpenBSD 6.6-current (GENERIC) #674: Thu Feb 27 22:36:03 MST 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/macppc/compile/GENERIC
+real mem = 536870912 (512MB)
+avail mem = 504594432 (481MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root: model PowerMac10,1
+cpu0 at mainbus0: 7447A (Revision 0x102): 1249 MHz: 512KB L2 cache
+mem0 at mainbus0
+spdmem0 at mem0: 512MB DDR SDRAM non-parity PC3200CL3.0
+memc0 at mainbus0: uni-n rev 0xd2
+&quot;hw-clock&quot; at memc0 not configured
+kiic0 at memc0 offset 0xf8001000
+iic0 at kiic0
+mpcpcibr0 at mainbus0 pci: uni-north
+pci0 at mpcpcibr0 bus 0
+pchb0 at pci0 dev 11 function 0 &quot;Apple UniNorth AGP&quot; rev 0x00
+agp at pchb0 not configured
+radeondrm0 at pci0 dev 16 function 0 &quot;ATI Radeon 9200&quot; rev 0x01
+drm0 at radeondrm0
+radeondrm0: irq 48
+mpcpcibr1 at mainbus0 pci: uni-north
+pci1 at mpcpcibr1 bus 0
+macobio0 at pci1 dev 23 function 0 &quot;Apple Intrepid&quot; rev 0x00
+openpic0 at macobio0 offset 0x40000: version 0x4614 feature 3f0302 LE
+macgpio0 at macobio0 offset 0x50
+&quot;modem-reset&quot; at macgpio0 offset 0x1d not configured
+&quot;modem-power&quot; at macgpio0 offset 0x1c not configured
+macgpio1 at macgpio0 offset 0x9: irq 47
+&quot;programmer-switch&quot; at macgpio0 offset 0x11 not configured
+&quot;gpio5&quot; at macgpio0 offset 0x6f not configured
+&quot;gpio6&quot; at macgpio0 offset 0x70 not configured
+&quot;extint-gpio15&quot; at macgpio0 offset 0x67 not configured
+&quot;escc-legacy&quot; at macobio0 offset 0x12000 not configured
+zs0 at macobio0 offset 0x13000: irq 22,23
+zstty0 at zs0 channel 0
+zstty1 at zs0 channel 1
+aoa0 at macobio0 offset 0x10000: irq 30,1,2
+&quot;timer&quot; at macobio0 offset 0x15000 not configured
+adb0 at macobio0 offset 0x16000
+apm0 at adb0: battery flags 0x0, 0% charged
+piic0 at adb0
+iic1 at piic0
+maxtmp0 at iic1 addr 0xc8: max6642
+kiic1 at macobio0 offset 0x18000
+iic2 at kiic1
+wdc0 at macobio0 offset 0x20000 irq 24: DMA
+audio0 at aoa0
+ohci0 at pci1 dev 26 function 0 &quot;Apple Intrepid USB&quot; rev 0x00: irq 29, version 1.0, legacy support
+ohci1 at pci1 dev 27 function 0 &quot;NEC USB&quot; rev 0x43: irq 63, version 1.0
+ohci2 at pci1 dev 27 function 1 &quot;NEC USB&quot; rev 0x43: irq 63, version 1.0
+ehci0 at pci1 dev 27 function 2 &quot;NEC USB&quot; rev 0x04: irq 63
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NEC EHCI root hub&quot; rev 2.00/1.00 addr 1
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Apple OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;NEC OHCI root hub&quot; rev 1.00/1.00 addr 1
+mpcpcibr2 at mainbus0 pci: uni-north
+pci2 at mpcpcibr2 bus 0
+kauaiata0 at pci2 dev 13 function 0 &quot;Apple Intrepid ATA&quot; rev 0x00
+wdc1 at kauaiata0 irq 39: DMA
+wd0 at wdc1 channel 0 drive 0: &lt;ST940110A&gt;
+wd0: 16-sector PIO, LBA48, 38154MB, 78140160 sectors
+wd0(wdc1:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5
+&quot;Apple UniNorth Firewire&quot; rev 0x81 at pci2 dev 14 function 0 not configured
+gem0 at pci2 dev 15 function 0 &quot;Apple Uni-N2 GMAC&quot; rev 0x80: irq 41, address xx:xx:xx:xx:xx:xx
+bmtphy0 at gem0 phy 0: BCM5221 100baseTX PHY, rev. 4
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+bootpath: /pci@f4000000/ata-6@d/disk@0:/bsd
+root on wd0a (d441334f5bb9c48d.a) swap on wd0b dump on wd0b
+initializing kernel modesetting (RV280 0x1002:0x5962 0x1002:0x5962 0x01).
+[drm] *ERROR* Unable to locate a BIOS ROM
+radeondrm0: 1024x768, 16bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

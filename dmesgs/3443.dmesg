@@ -1,0 +1,322 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-01-04 03:06:46</em><br />
+<strong>From:</strong> <em>bsdtester</em><br />
+<strong>Description:</strong> <em>Apple iMac 9,1 24-inch early 2009</em><br />
+
+<pre>
+OpenBSD 6.2 (GENERIC.MP) #2: Sun Dec 10 21:14:42 CET 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8566067200 (8169MB)
+avail mem = 8299433984 (7914MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xbfec6000 (43 entries)
+bios0: vendor Apple Inc. version &quot;IM91.88Z.008D.B08.0904271717&quot; date 04/27/09
+bios0: Apple Inc. iMac9,1
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG ASF! SBST ECDT SSDT SSDT
+acpi0: wakeup devices EC__(S3) OHC1(S3) EHC1(S3) OHC2(S3) EHC2(S3) GIGE(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 25000000 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU E8335 @ 2.93GHz, 1592.24 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR
+cpu0: 6MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 265MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU E8335 @ 2.93GHz, 1592.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF,SENSOR
+cpu1: 6MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 11, 24 pins
+, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-255
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (IXVE)
+acpicpu0 at acpi0: !C3(100@57 mwait.3@0x31), !C2(500@1 mwait@0x10), C1(1000@1 mwait), PSS
+acpicpu1 at acpi0: !C3(100@57 mwait.3@0x31), !C2(500@1 mwait@0x10), C1(1000@1 mwait), PSS
+&quot;APP0002&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+&quot;APP0001&quot; at acpi0 not configured
+cpu0: Enhanced SpeedStep 1592 MHz: speeds: 2926, 2660, 2394, 2128, 1862, 1596 MHz
+pci0 at mainbus0 bus 0
+0:3:5: mem address conflict 0xd3400000/0x80000
+pchb0 at pci0 dev 0 function 0 &quot;NVIDIA MCP79 Host&quot; rev 0xb1
+&quot;NVIDIA MCP79 Memory&quot; rev 0xb1 at pci0 dev 0 function 1 not configured
+pcib0 at pci0 dev 3 function 0 &quot;NVIDIA MCP79 ISA&quot; rev 0xb2
+&quot;NVIDIA MCP79 Memory&quot; rev 0xb1 at pci0 dev 3 function 1 not configured
+nviic0 at pci0 dev 3 function 2 &quot;NVIDIA MCP79 SMBus&quot; rev 0xb1
+iic0 at nviic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-8500 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-8500 SO-DIMM
+iic1 at nviic0
+&quot;NVIDIA MCP79 Memory&quot; rev 0xb1 at pci0 dev 3 function 3 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0a98 (class memory subclass RAM, rev 0xb1) at pci0 dev 3 function 4 not configured
+&quot;NVIDIA MCP79 Co-processor&quot; rev 0xb1 at pci0 dev 3 function 5 not configured
+ohci0 at pci0 dev 4 function 0 &quot;NVIDIA MCP79 USB&quot; rev 0xb1: apic 1 int 17, version 1.0, legacy support
+ehci0 at pci0 dev 4 function 1 &quot;NVIDIA MCP79 USB&quot; rev 0xb1: apic 1 int 22
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NVIDIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 6 function 0 &quot;NVIDIA MCP79 USB&quot; rev 0xb1: apic 1 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 6 function 1 &quot;NVIDIA MCP79 USB&quot; rev 0xb1: apic 1 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;NVIDIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 8 function 0 &quot;NVIDIA MCP79 HD Audio&quot; rev 0xb1: apic 1 int 20
+azalia0: codecs: Realtek ALC885
+audio0 at azalia0
+ppb0 at pci0 dev 9 function 0 &quot;NVIDIA MCP79 PCIE&quot; rev 0xb1
+pci1 at ppb0 bus 1
+nfe0 at pci0 dev 10 function 0 &quot;NVIDIA MCP79 LAN&quot; rev 0xb1: apic 1 int 17, address xx:xx:xx:xx:xx:xx
+rgephy0 at nfe0 phy 1: RTL8169S/8110S/8211 PHY, rev. 2
+ahci0 at pci0 dev 11 function 0 &quot;NVIDIA MCP79 AHCI&quot; rev 0xb1: msi, AHCI 1.2
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, WDC WD6400AAKS-4, 07.0&gt; SCSI3 0/direct fixed naa.50014ee056583d32
+sd0: 610480MB, 512 bytes/sector, 1250263728 sectors
+cd0 at scsibus1 targ 1 lun 0: &lt;OPTIARC, DVD RW AD-5670S, 2AHH&gt; ATAPI 5/cdrom removable
+ppb1 at pci0 dev 12 function 0 &quot;NVIDIA MCP79 PCIE&quot; rev 0xb1: msi
+pci2 at ppb1 bus 2
+vendor &quot;NVIDIA&quot;, unknown product 0x0655 (class display subclass VGA, rev 0xa1) at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 21 function 0 &quot;NVIDIA MCP79 PCIE&quot; rev 0xb1: msi
+pci3 at ppb2 bus 3
+&quot;Broadcom BCM4322&quot; rev 0x01 at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 22 function 0 &quot;NVIDIA MCP79 PCIE&quot; rev 0xb1: msi
+pci4 at ppb3 bus 4
+&quot;AT&amp;T/Lucent FW643 1394&quot; rev 0x07 at pci4 dev 0 function 0 not configured
+isa0 at pcib0
+isadma0 at isa0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+asmc0 at isa0 port 0x300/32: rev 1.37f537, 240 keys
+usb2 at ohci0: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;NVIDIA OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci1: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;NVIDIA OHCI root hub&quot; rev 1.00/1.00 addr 1
+vmm0 at mainbus0: VMX
+efifb0 at mainbus0: 1024x640, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+uhub4 at uhub0 port 1 configuration 1 interface 0 &quot;Apple Inc. Keyboard Hub&quot; rev 2.00/96.15 addr 2
+uhidev0 at uhub4 port 2 configuration 1 interface 0 &quot;Apple Inc. Apple Keyboard&quot; rev 2.00/0.70 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 5 key codes, country code 13
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub4 port 2 configuration 1 interface 1 &quot;Apple Inc. Apple Keyboard&quot; rev 2.00/0.70 addr 3
+uhidev1: iclass 3/0
+uhid0 at uhidev1: input=1, output=0, feature=0
+uhidev2 at uhub4 port 3 configuration 1 interface 0 &quot;Microsoft Microsoft\M-. Comfort Mouse 4500&quot; rev 2.00/0.83 addr 4
+uhidev2: iclass 3/1, 28 report ids
+ums0 at uhidev2 reportid 16: 5 buttons, Z and W dir
+wsmouse0 at ums0 mux 0
+uhid1 at uhidev2 reportid 18: input=0, output=0, feature=1
+uhid2 at uhidev2 reportid 19: input=1, output=0, feature=0
+uhid3 at uhidev2 reportid 22: input=4, output=0, feature=0
+uhid4 at uhidev2 reportid 23: input=0, output=0, feature=1
+uhid5 at uhidev2 reportid 24: input=0, output=0, feature=1
+uhid6 at uhidev2 reportid 28: input=1, output=0, feature=0
+uvideo0 at uhub0 port 4 configuration 1 interface 0 &quot;Apple Inc. Built-in iSight&quot; rev 2.00/2.19 addr 5
+video0 at uvideo0
+ugen0 at uhub0 port 4 configuration 1 &quot;Apple Inc. Built-in iSight&quot; rev 2.00/2.19 addr 5
+umass0 at uhub1 port 2 configuration 1 interface 0 &quot;Seagate Expansion Desk&quot; rev 2.10/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;Seagate, Expansion Desk, 9401&gt; SCSI4 0/direct fixed
+sd1: 3815447MB, 512 bytes/sector, 7814037167 sectors
+uhidev3 at uhub2 port 5 configuration 1 interface 0 &quot;Apple Computer, Inc. IR Receiver&quot; rev 2.00/0.16 addr 2
+uhidev3: iclass 3/0, 38 report ids
+uhid7 at uhidev3 reportid 36: input=4, output=0, feature=0
+uhid8 at uhidev3 reportid 37: input=4, output=0, feature=0
+uhid9 at uhidev3 reportid 38: input=4, output=0, feature=0
+uhub5 at uhub3 port 1 configuration 1 interface 0 &quot;Apple Inc. BRCM2046 Hub&quot; rev 2.00/1.00 addr 2
+ugen1 at uhub5 port 1 &quot;Apple Inc. Bluetooth USB Host Controller&quot; rev 2.00/2.08 addr 3
+uhidev4 at uhub5 port 2 configuration 1 interface 0 &quot;Apple Computer product 0x820a&quot; rev 2.00/1.00 addr 4
+uhidev4: iclass 3/1, 1 report id
+ukbd1 at uhidev4 reportid 1: 8 variable keys, 6 key codes
+wskbd1 at ukbd1 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev5 at uhub5 port 3 configuration 1 interface 0 &quot;Apple Computer product 0x820b&quot; rev 2.00/1.00 addr 5
+uhidev5: iclass 3/1, 2 report ids
+ums1 at uhidev5 reportid 2: 3 buttons
+wsmouse1 at ums1 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd1a (a322cee4128c1f6f.a) swap on sd1b dump on sd1b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

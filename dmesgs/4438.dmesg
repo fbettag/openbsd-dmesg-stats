@@ -1,0 +1,775 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-10-20 05:43:39</em><br />
+<strong>From:</strong> <em>Lluis</em><br />
+<strong>Description:</strong> <em>Thinkpad T450s with Nvidia G940m</em><br />
+
+<pre>
+OpenBSD 6.4 (RAMDISK_CD) #348: Thu Oct 11 13:36:16 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 8470216704 (8077MB)
+avail mem = 8209723392 (7829MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xacbfd000 (65 entries)
+bios0: vendor LENOVO version &quot;JBET70WW (1.34 )&quot; date 06/15/2018
+bios0: LENOVO 20BXCTO1WW
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.60 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;PNP0B00&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;LEN0068&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+&quot;Intel HD Graphics 5500&quot; rev 0x09 at pci0 dev 2 function 0 not configured
+&quot;Intel Core 5G HD Audio&quot; rev 0x09 at pci0 dev 3 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+&quot;Intel 9 Series HD Audio&quot; rev 0x03 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci3 at ppb2 bus 4
+4:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1347 (class display subclass 3D, rev 0xa2) at pci3 dev 0 function 0 not configured
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 9 Series LPC&quot; rev 0x03 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, TOSHIBA THNSNJ12, JULA&gt; SCSI3 0/direct fixed naa.500080d910434a0f
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+&quot;Intel 9 Series SMBus&quot; rev 0x03 at pci0 dev 31 function 3 not configured
+&quot;Intel 9 Series Thermal&quot; rev 0x03 at pci0 dev 31 function 6 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1920x1080, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+umass0 at uhub0 port 1 configuration 1 interface 0 &quot;General USB Flash Disk&quot; rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;General, USB Flash Disk, 1.0&gt; SCSI2 0/direct removable serial.8644800b051000009B44
+sd1: 3824MB, 512 bytes/sector, 7831552 sectors
+&quot;vendor 0x8087 product 0x0a2a&quot; rev 2.01/0.01 addr 3 at uhub0 port 7 not configured
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x8001&quot; rev 2.00/0.03 addr 2
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+iwm0: could not read firmware iwm-7265-16 (error 2)
+iwm0: failed to load init firmware
+OpenBSD 6.4 (RAMDISK_CD) #348: Thu Oct 11 13:36:16 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 8470216704 (8077MB)
+avail mem = 8209723392 (7829MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xacbfd000 (65 entries)
+bios0: vendor LENOVO version &quot;JBET70WW (1.34 )&quot; date 06/15/2018
+bios0: LENOVO 20BXCTO1WW
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.57 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;PNP0B00&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;LEN0068&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+&quot;Intel HD Graphics 5500&quot; rev 0x09 at pci0 dev 2 function 0 not configured
+&quot;Intel Core 5G HD Audio&quot; rev 0x09 at pci0 dev 3 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+&quot;Intel 9 Series HD Audio&quot; rev 0x03 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci3 at ppb2 bus 4
+4:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1347 (class display subclass 3D, rev 0xa2) at pci3 dev 0 function 0 not configured
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 9 Series LPC&quot; rev 0x03 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, TOSHIBA THNSNJ12, JULA&gt; SCSI3 0/direct fixed naa.500080d910434a0f
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+&quot;Intel 9 Series SMBus&quot; rev 0x03 at pci0 dev 31 function 3 not configured
+&quot;Intel 9 Series Thermal&quot; rev 0x03 at pci0 dev 31 function 6 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1920x1080, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+umass0 at uhub0 port 1 configuration 1 interface 0 &quot;General USB Flash Disk&quot; rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;General, USB Flash Disk, 1.0&gt; SCSI2 0/direct removable serial.8644800b051000009B44
+sd1: 3824MB, 512 bytes/sector, 7831552 sectors
+&quot;vendor 0x8087 product 0x0a2a&quot; rev 2.01/0.01 addr 3 at uhub0 port 7 not configured
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x8001&quot; rev 2.00/0.03 addr 2
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+iwm0: could not read firmware iwm-7265-16 (error 2)
+iwm0: failed to load init firmware
+OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8470216704 (8077MB)
+avail mem = 8204242944 (7824MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xacbfd000 (65 entries)
+bios0: vendor LENOVO version &quot;JBET70WW (1.34 )&quot; date 06/15/2018
+bios0: LENOVO 20BXCTO1WW
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.65 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.24 MHz, 06-3d-04
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.24 MHz, 06-3d-04
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.24 MHz, 06-3d-04
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 128 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+acpibat0 at acpi0: BAT0 model &quot;45N1773&quot; serial   949 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial  7003 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 2494 MHz: speeds: 2601, 2600, 2500, 2300, 2100, 2000, 1800, 1700, 1500, 1400, 1200, 1100, 900, 800, 600, 500 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 5500&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 5G HD Audio&quot; rev 0x09: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 9 Series HD Audio&quot; rev 0x03: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci3 at ppb2 bus 4
+4:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1347 (class display subclass 3D, rev 0xa2) at pci3 dev 0 function 0 not configured
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 9 Series LPC&quot; rev 0x03
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, TOSHIBA THNSNJ12, JULA&gt; SCSI3 0/direct fixed naa.500080d910434a0f
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 9 Series SMBus&quot; rev 0x03: apic 2 int 18
+iic0 at ichiic0
+pchtemp0 at pci0 dev 31 function 6 &quot;Intel 9 Series Thermal&quot; rev 0x03
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x943300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+ugen0 at uhub0 port 7 &quot;Intel Bluetooth&quot; rev 2.01/0.01 addr 2
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.03 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (d8e10bfd622c762e.a) swap on sd0b dump on sd0b
+iwm0: could not read firmware iwm-7265-16 (error 2)
+iwm0: failed to load init firmware
+error: [drm:pid25940:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+syncing disks... done
+rebooting...
+OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8470216704 (8077MB)
+avail mem = 8204230656 (7824MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xacbfd000 (65 entries)
+bios0: vendor LENOVO version &quot;JBET70WW (1.34 )&quot; date 06/15/2018
+bios0: LENOVO 20BXCTO1WW
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.57 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.23 MHz, 06-3d-04
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.23 MHz, 06-3d-04
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 2494.23 MHz, 06-3d-04
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 128 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+acpibat0 at acpi0: BAT0 model &quot;45N1773&quot; serial   949 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial  7003 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 2494 MHz: speeds: 2601, 2600, 2500, 2300, 2100, 2000, 1800, 1700, 1500, 1400, 1200, 1100, 900, 800, 600, 500 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 5500&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 5G HD Audio&quot; rev 0x09: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 9 Series HD Audio&quot; rev 0x03: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci3 at ppb2 bus 4
+4:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1347 (class display subclass 3D, rev 0xa2) at pci3 dev 0 function 0 not configured
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 9 Series LPC&quot; rev 0x03
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, TOSHIBA THNSNJ12, JULA&gt; SCSI3 0/direct fixed naa.500080d910434a0f
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 9 Series SMBus&quot; rev 0x03: apic 2 int 18
+iic0 at ichiic0
+pchtemp0 at pci0 dev 31 function 6 &quot;Intel 9 Series Thermal&quot; rev 0x03
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x943300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+ugen0 at uhub0 port 7 &quot;Intel Bluetooth&quot; rev 2.01/0.01 addr 2
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.03 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (d8e10bfd622c762e.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x210, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+error: [drm:pid30561:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid30561:intel_pipe_update_end] *ERROR* Atomic update failure on pipe A (start=95664 end=95665) time 0 us, min 1073, max 1079, scanline start 1077, end 1080
+error: [drm:pid13821:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid13821:intel_pipe_update_end] *ERROR* Atomic update failure on pipe A (start=98795 end=98796) time 0 us, min 1073, max 1079, scanline start 1078, end 1080
+ugen0 detached
+uhub0 detached
+uhub2 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ugen0 at uhub0 port 7 &quot;Intel Bluetooth&quot; rev 2.01/0.01 addr 2
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.03 addr 2
+syncing disks... done
+rebooting...
+OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8470216704 (8077MB)
+avail mem = 8204226560 (7824MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xacbfd000 (65 entries)
+bios0: vendor LENOVO version &quot;JBET70WW (1.34 )&quot; date 06/15/2018
+bios0: LENOVO 20BXCTO1WW
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 798.27 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 798.15 MHz, 06-3d-04
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 798.15 MHz, 06-3d-04
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 798.15 MHz, 06-3d-04
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 128 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+acpibat0 at acpi0: BAT0 model &quot;45N1773&quot; serial   949 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial  7003 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit offline
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 798 MHz: speeds: 2601, 2600, 2500, 2300, 2100, 2000, 1800, 1700, 1500, 1400, 1200, 1100, 900, 800, 600, 500 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 5500&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 5G HD Audio&quot; rev 0x09: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 9 Series HD Audio&quot; rev 0x03: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ppb2 at pci0 dev 28 function 4 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci3 at ppb2 bus 4
+4:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1347 (class display subclass 3D, rev 0xa2) at pci3 dev 0 function 0 not configured
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 9 Series LPC&quot; rev 0x03
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, TOSHIBA THNSNJ12, JULA&gt; SCSI3 0/direct fixed naa.500080d910434a0f
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 9 Series SMBus&quot; rev 0x03: apic 2 int 18
+iic0 at ichiic0
+pchtemp0 at pci0 dev 31 function 6 &quot;Intel 9 Series Thermal&quot; rev 0x03
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbdprobe: reset response 0x0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x943300
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+ugen0 at uhub0 port 7 &quot;Intel Bluetooth&quot; rev 2.01/0.01 addr 2
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.03 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (d8e10bfd622c762e.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x210, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

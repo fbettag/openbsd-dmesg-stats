@@ -1,0 +1,292 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-09-23 19:35:45</em><br />
+<strong>From:</strong> <em>schaafuit</em><br />
+<strong>Description:</strong> <em>dmesg of OpenBSD i386 bsd on Thinkpad R40</em><br />
+
+<pre>
+OpenBSD 6.1 (GENERIC) #291: Sat Apr  1 13:49:08 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Pentium(R) M processor 1300MHz (&quot;GenuineIntel&quot; 686-class) 1.30 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,TM,PBE,EST,TM2,PERF
+real mem  = 535707648 (510MB)
+avail mem = 512741376 (488MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 07/15/03, BIOS32 rev. 0 @ 0xfd7b0, SMBIOS rev. 2.31 @ 0xe0010 (53 entries)
+bios0: vendor IBM version &quot;1PET46WW (1.14 )&quot; date 07/15/2003
+bios0: IBM 27223DG
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT TCPA BOOT
+acpi0: wakeup devices LID_(S3) SLPB(S3) UART(S3) PCI0(S3) PCI1(S4) USB0(S3) USB1(S3) USB2(S3) AC9M(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (AGP_)
+acpiprt2 at acpi0: bus 2 (PCI1)
+acpipwrres0 at acpi0: PUBS, resource for USB0, USB1, USB7
+acpitz0 at acpi0: critical temperature is 97 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;IBM0057&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0400&quot; at acpi0 not configured
+&quot;IBM0071&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;IBM-02K6928&quot; serial  2694 type LION oem &quot;Panasonic&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+acpivideo0 at acpi0: VID_
+bios0: ROM list: 0xc0000/0x10000 0xe0000/0x10000
+cpu0 at mainbus0: (uniprocessor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: Enhanced SpeedStep 1300 MHz: speeds: 1300, 1200, 1000, 800, 600 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82855PM Host&quot; rev 0x03
+intelagp0 at pchb0
+agp0 at intelagp0: aperture at 0xd0000000, size 0x10000000
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82855PM AGP&quot; rev 0x03
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 0 function 0 &quot;ATI Radeon Mobility M7&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: irq 11
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801DB USB&quot; rev 0x01: irq 11
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801DB USB&quot; rev 0x01: irq 11
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801DB USB&quot; rev 0x01: irq 11
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801DB USB&quot; rev 0x01: irq 11
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb1 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0x81
+pci2 at ppb1 bus 2
+cbb0 at pci2 dev 0 function 0 &quot;TI PCI1510 CardBus&quot; rev 0x00: irq 11
+ipw0 at pci2 dev 2 function 0 &quot;Intel PRO/Wireless 2100&quot; rev 0x04: irq 11, address xx:xx:xx:xx:xx:xx
+&quot;TI TSB43AB21 FireWire&quot; rev 0x00 at pci2 dev 7 function 0 not configured
+fxp0 at pci2 dev 8 function 0 &quot;Intel PRO/100 VE&quot; rev 0x81, i82562: irq 11, address xx:xx:xx:xx:xx:xx
+inphy0 at fxp0 phy 1: i82562ET 10/100 PHY, rev. 0
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x8, lattimer 0xb0
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801DBM LPC&quot; rev 0x01
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801DBM IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;IC25N040ATMR04-0&gt;
+wd0: 16-sector PIO, LBA, 38154MB, 78140160 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;HL-DT-ST, RW/DVD GCC-4240N, 1202&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801DB SMBus&quot; rev 0x01: irq 11
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 256MB DDR SDRAM non-parity PC2100CL2.5
+spdmem1 at iic0 addr 0x51: 256MB DDR SDRAM non-parity PC2100CL2.5
+auich0 at pci0 dev 31 function 5 &quot;Intel 82801DB AC97&quot; rev 0x01: irq 11, ICH4
+ac97: codec id 0x41445374 (Analog Devices AD1981B)
+ac97: codec features headphone, 20 bit DAC, No 3D Stereo
+audio0 at auich0
+&quot;Intel 82801DB Modem&quot; rev 0x01 at pci0 dev 31 function 6 not configured
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt2 at isa0 port 0x3bc/4: polled
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (f46aa9338c499cec.a) swap on wd0b dump on wd0b
+error: [drm:pid0:r100_cp_init_microcode] *ERROR* radeon_cp: Failed to load firmware &quot;radeon-r100_cp&quot;
+error: [drm:pid0:r100_cp_init] *ERROR* Failed to load firmware!
+drm:pid0:r100_startup *ERROR* failed initializing CP (-2).
+drm:pid0:r100_init *ERROR* Disabling GPU acceleration
+ttm_pool_mm_shrink_fini stub
+error: [drm:pid0:r100_cp_init_microcode] *ERROR* radeon_cp: Failed to load firmware &quot;radeon-r100_cp&quot;
+error: [drm:pid0:r100_cp_init] *ERROR* Failed to load firmware!
+drm:pid0:r100_startup *ERROR* failed initializing CP (-2).
+drm:pid0:r100_init *ERROR* Disabling GPU acceleration
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+wdc2 at pcmcia0 function 0 &quot;TRANSCEND, TS64GCF400, &quot; port 0x4000/16
+wd1 at wdc2 channel 0 drive 0: &lt;TS64GCF400&gt;
+wd1: 1-sector PIO, LBA48, 61064MB, 125059072 sectors
+wd1(wdc2:0:0): using BIOS timings
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

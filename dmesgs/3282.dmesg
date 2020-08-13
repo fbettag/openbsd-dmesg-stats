@@ -1,0 +1,367 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-09-08 20:55:50</em><br />
+<strong>From:</strong> <em>drkhsh</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.1 on KVM</em><br />
+
+<pre>
+OpenBSD 6.1 (GENERIC.MP) #20: Sat Aug 26 18:16:12 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130571264 (2031MB)
+avail mem = 2061381632 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xf6900 (9 entries)
+bios0: vendor SeaBIOS version &quot;rel-1.10.2-0-g5f4c7b1-prebuilt.qemu-project.org&quot; date 04/01/2014
+bios0: QEMU Standard PC (i440FX + PIIX, 1996)
+acpi0 at bios0: rev 0
+acpi0: sleep states S3 S4 S5
+acpi0: tables DSDT FACP APIC HPET
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Common KVM processor, 3411.55 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,x2APIC,HV,NXE,LONG,LAHF
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu0: DTLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 1000MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Common KVM processor, 3411.17 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,x2APIC,HV,NXE,LONG,LAHF
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu1: ITLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu1: DTLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 11, 24 pins
+acpihpet0 at acpi0: 100000000 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;ACPI0006&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0700&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;QEMU0002&quot; at acpi0 not configured
+&quot;ACPI0010&quot; at acpi0 not configured
+pvbus0 at mainbus0: KVM
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x02
+pcib0 at pci0 dev 1 function 0 &quot;Intel 82371SB ISA&quot; rev 0x00
+pciide0 at pci0 dev 1 function 1 &quot;Intel 82371SB IDE&quot; rev 0x00: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;QEMU, QEMU DVD-ROM, 2.5+&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+uhci0 at pci0 dev 1 function 2 &quot;Intel 82371SB USB&quot; rev 0x01: apic 0 int 11
+piixpm0 at pci0 dev 1 function 3 &quot;Intel 82371AB Power&quot; rev 0x03: apic 0 int 9
+iic0 at piixpm0
+vga1 at pci0 dev 2 function 0 &quot;Bochs VGA&quot; rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ahci0 at pci0 dev 7 function 0 &quot;Intel 82801I AHCI&quot; rev 0x02: apic 0 int 11, AHCI 1.0
+ahci0: port 0: 1.5Gb/s
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;ATA, QEMU HARDDISK, 2.5+&gt; SCSI3 0/direct fixed t10.ATA_QEMU_HARDDISK_QM00005_
+sd0: 51200MB, 512 bytes/sector, 104857600 sectors, thin
+virtio0 at pci0 dev 18 function 0 &quot;Qumranet Virtio Network&quot; rev 0x00
+vio0 at virtio0: address xx:xx:xx:xx:xx:xx
+virtio0: msix shared
+ppb0 at pci0 dev 30 function 0 &quot;Red Hat Qemu PCI-PCI&quot; rev 0x00
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 31 function 0 &quot;Red Hat Qemu PCI-PCI&quot; rev 0x00
+pci2 at ppb1 bus 2
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 1: density unknown
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+uhidev0 at uhub0 port 1 configuration 1 interface 0 &quot;QEMU QEMU USB Tablet&quot; rev 2.00/0.00 addr 2
+uhidev0: iclass 3/0
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse1 at ums0 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (648e22a7922f2723.a) swap on sd0b dump on sd0b
+syncing disks... done
+rebooting...
+OpenBSD 6.1 (GENERIC.MP) #20: Sat Aug 26 18:16:12 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130571264 (2031MB)
+avail mem = 2061381632 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xf6900 (9 entries)
+bios0: vendor SeaBIOS version &quot;rel-1.10.2-0-g5f4c7b1-prebuilt.qemu-project.org&quot; date 04/01/2014
+bios0: QEMU Standard PC (i440FX + PIIX, 1996)
+acpi0 at bios0: rev 0
+acpi0: sleep states S3 S4 S5
+acpi0: tables DSDT FACP APIC HPET
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Common KVM processor, 3411.90 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,x2APIC,HV,NXE,LONG,LAHF
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu0: DTLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 1000MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Common KVM processor, 3411.55 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,x2APIC,HV,NXE,LONG,LAHF
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu1: ITLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu1: DTLB 255 4KB entries direct-mapped, 255 4MB entries direct-mapped
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 11, 24 pins
+acpihpet0 at acpi0: 100000000 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;ACPI0006&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0700&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;QEMU0002&quot; at acpi0 not configured
+&quot;ACPI0010&quot; at acpi0 not configured
+pvbus0 at mainbus0: KVM
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x02
+pcib0 at pci0 dev 1 function 0 &quot;Intel 82371SB ISA&quot; rev 0x00
+pciide0 at pci0 dev 1 function 1 &quot;Intel 82371SB IDE&quot; rev 0x00: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;QEMU, QEMU DVD-ROM, 2.5+&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+uhci0 at pci0 dev 1 function 2 &quot;Intel 82371SB USB&quot; rev 0x01: apic 0 int 11
+piixpm0 at pci0 dev 1 function 3 &quot;Intel 82371AB Power&quot; rev 0x03: apic 0 int 9
+iic0 at piixpm0
+vga1 at pci0 dev 2 function 0 &quot;Bochs VGA&quot; rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ahci0 at pci0 dev 7 function 0 &quot;Intel 82801I AHCI&quot; rev 0x02: apic 0 int 11, AHCI 1.0
+ahci0: port 0: 1.5Gb/s
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;ATA, QEMU HARDDISK, 2.5+&gt; SCSI3 0/direct fixed t10.ATA_QEMU_HARDDISK_QM00005_
+sd0: 51200MB, 512 bytes/sector, 104857600 sectors, thin
+virtio0 at pci0 dev 18 function 0 &quot;Qumranet Virtio Network&quot; rev 0x00
+vio0 at virtio0: address xx:xx:xx:xx:xx:xx
+virtio0: msix shared
+ppb0 at pci0 dev 30 function 0 &quot;Red Hat Qemu PCI-PCI&quot; rev 0x00
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 31 function 0 &quot;Red Hat Qemu PCI-PCI&quot; rev 0x00
+pci2 at ppb1 bus 2
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 1: density unknown
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+uhidev0 at uhub0 port 1 configuration 1 interface 0 &quot;QEMU QEMU USB Tablet&quot; rev 2.00/0.00 addr 2
+uhidev0: iclass 3/0
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse1 at ums0 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (648e22a7922f2723.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

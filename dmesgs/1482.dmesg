@@ -1,0 +1,257 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-08-01 22:03:15</em><br />
+<strong>From:</strong> <em>George</em><br />
+<strong>Description:</strong> <em>The box is a Dell Poweredge 2400, Pentium III.  Earlier listed as an OpenBSD 3.5 box, it`s been rebuilt as a FreeBSD 4.10 because of security tools I need in the ports.</em><br />
+
+<pre>
+Copyright (c) 1992-2004 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+	The Regents of the University of California. All rights reserved.
+FreeBSD 4.10-RELEASE #0: Tue May 25 22:47:12 GMT 2004
+    xxx@xxx.xxx:/usr/obj/usr/src/sys/GENERIC
+Timecounter &quot;i8254&quot;  frequency 1193182 Hz
+CPU: Intel Pentium III (731.02-MHz 686-class CPU)
+  Origin = &quot;GenuineIntel&quot;  Id = 0x683  Stepping = 3
+  Features=0x383fbff&lt;FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE&gt;
+real memory  = 536862720 (524280K bytes)
+avail memory = 516915200 (504800K bytes)
+Preloaded elf kernel &quot;kernel&quot; at 0xc0551000.
+Pentium Pro MTRR support enabled
+md0: Malloc disk
+Using $PIR table, 11 entries at 0xc00fc320
+npx0: &lt;math processor&gt; on motherboard
+npx0: INT 16 interface
+pcib0: &lt;ServerWorks NB6635 3.0LE host to PCI bridge&gt; on motherboard
+pci0: &lt;PCI bus&gt; on pcib0
+pcib1: &lt;PCI to PCI bridge (vendor=8086 device=0962)&gt; at device 2.0 on pci0
+pci1: &lt;PCI bus&gt; on pcib1
+ahc0: &lt;Adaptec aic7890/91 Ultra2 SCSI adapter&gt; port 0xfc00-0xfcff mem 0xfcfff000-0xfcffffff irq 14 at device 4.0 on pci1
+aic7890/91: Ultra2 Wide Channel A, SCSI Id=7, 32/253 SCBs
+ahc1: &lt;Adaptec aic7880 Ultra SCSI adapter&gt; port 0xf800-0xf8ff mem 0xfcffe000-0xfcffefff irq 5 at device 6.0 on pci1
+aic7880: Ultra Single Channel A, SCSI Id=7, 16/253 SCBs
+ahc2: &lt;Adaptec 2940 Ultra SCSI adapter&gt; port 0xec00-0xecff mem 0xfe103000-0xfe103fff irq 11 at device 4.0 on pci0
+aic7880: Ultra Wide Channel A, SCSI Id=7, 16/253 SCBs
+fxp0: &lt;Intel 82559 Pro/100 Ethernet&gt; port 0xe8c0-0xe8ff mem 0xfe000000-0xfe0fffff,0xfe102000-0xfe102fff irq 10 at device 8.0 on pci0
+fxp0: Ethernet address xx:xx:xx:xx:xx:xx
+inphy0: &lt;i82555 10/100 media interface&gt; on miibus0
+inphy0:  10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+pci0: &lt;ATI model 4759 graphics accelerator&gt; at 14.0
+isab0: &lt;ServerWorks IB6566 PCI to ISA bridge&gt; at device 15.0 on pci0
+isa0: &lt;ISA bus&gt; on isab0
+ohci0: &lt;OHCI (generic) USB controller&gt; mem 0xfe100000-0xfe100fff irq 7 at device 15.2 on pci0
+usb0: OHCI version 1.0, legacy support
+usb0: &lt;OHCI (generic) USB controller&gt; on ohci0
+usb0: USB revision 1.0
+uhub0: (0x1166) OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 4 ports with 4 removable, self powered
+pcib2: &lt;ServerWorks NB6635 3.0LE host to PCI bridge&gt; on motherboard
+pci2: &lt;PCI bus&gt; on pcib2
+pci2: &lt;unknown card&gt; (vendor=0x10ec, dev=0x8169) at 6.0 irq 4
+pci2: &lt;unknown card&gt; (vendor=0x10ec, dev=0x8169) at 12.0 irq 3
+orm0: &lt;Option ROMs&gt; at iomem 0xc0000-0xc7fff,0xce800-0xcefff on isa0
+pmtimer0 on isa0
+fdc0: &lt;NEC 72065B or clone&gt; at port 0x3f0-0x3f5,0x3f7 irq 6 drq 2 on isa0
+fdc0: FIFO enabled, 8 bytes threshold
+fd0: &lt;1440-KB 3.5&quot; drive&gt; on fdc0 drive 0
+ata0 at port 0x1f0-0x1f7,0x3f6 irq 14 on isa0
+ata1 at port 0x170-0x177,0x376 irq 15 on isa0
+atkbdc0: &lt;Keyboard controller (i8042)&gt; at port 0x60,0x64 on isa0
+atkbd0: &lt;AT Keyboard&gt; flags 0x1 irq 1 on atkbdc0
+kbd0 at atkbd0
+psm0: &lt;PS/2 Mouse&gt; irq 12 on atkbdc0
+psm0: model Generic PS/2 mouse, device ID 0
+vga0: &lt;Generic ISA VGA&gt; at port 0x3c0-0x3df iomem 0xa0000-0xbffff on isa0
+sc0: &lt;System console&gt; at flags 0x100 on isa0
+sc0: VGA &lt;16 virtual consoles, flags=0x300&gt;
+sio0: configured irq 4 not in bitmap of probed irqs 0
+sio0 at port 0x3f8-0x3ff irq 4 flags 0x10 on isa0
+sio0: type 8250
+sio1: configured irq 3 not in bitmap of probed irqs 0
+ppc0: parallel port not found.
+Waiting 15 seconds for SCSI devices to settle
+sa0 at ahc2 bus 0 target 6 lun 0
+sa0: &lt;QUANTUM DLT7000 1624&gt; Removable Sequential Access SCSI-2 device 
+sa0: 20.000MB/s transfers (10.000MHz, offset 8, 16bit)
+pass2 at ahc0 bus 0 target 6 lun 0
+pass2: &lt;DELL 1x6 U2W SCSI BP 5.35&gt; Fixed Processor SCSI-2 device 
+pass2: 3.300MB/s transfers
+da0 at ahc0 bus 0 target 0 lun 0
+da0: &lt;SEAGATE ST39103LC 0001&gt; Fixed Direct Access SCSI-2 device 
+da0: 80.000MB/s transfers (40.000MHz, offset 15, 16bit), Tagged Queueing Enabled
+da0: 8683MB (17783240 512 byte sectors: 255H 63S/T 1106C)
+Mounting root from ufs:/dev/da0s1a
+cd0 at ahc1 bus 0 target 5 lun 0
+cd0: &lt;NEC CD-ROM DRIVE:466 1.06&gt; Removable CD-ROM SCSI-2 device 
+cd0: 20.000MB/s transfers (20.000MHz, offset 15)
+cd0: Attempt to query device size failed: NOT READY, Medium not present
+da1 at ahc0 bus 0 target 1 lun 0
+da1: &lt;IBM DNES-309170Y SA60&gt; Fixed Direct Access SCSI-3 device 
+da1: 80.000MB/s transfers (40.000MHz, offset 31, 16bit), Tagged Queueing Enabled
+da1: 8683MB (17783301 512 byte sectors: 255H 63S/T 1106C)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

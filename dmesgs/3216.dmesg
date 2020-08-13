@@ -1,0 +1,302 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-07-01 13:32:36</em><br />
+<strong>From:</strong> <em>Sergey Bronnikov</em><br />
+<strong>Description:</strong> <em>Dell Latitude e7470</em><br />
+
+<pre>
+OpenBSD 6.1-current (RAMDISK_CD) #2: Sun Jun 11 22:30:15 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 17040498688 (16251MB)
+avail mem = 16520302592 (15754MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xeac40 (106 entries)
+bios0: vendor Dell Inc. version &quot;1.5.3&quot; date 04/18/2016
+bios0: Dell Inc. Latitude E7470
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG HPET SSDT LPIT SSDT SSDT SSDT DBGP DBG2 SSDT UEFI SSDT SSDT MSDM SLIC DMAR ASF!
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz, 2808.00 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,SGX,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2808000000 Hz
+cpu0: apic clock running at 23MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG0)
+acpiprt2 at acpi0: bus -1 (PEG1)
+acpiprt3 at acpi0: bus -1 (PEG2)
+acpiprt4 at acpi0: bus -1 (RP09)
+acpiprt5 at acpi0: bus -1 (RP10)
+acpiprt6 at acpi0: bus 2 (RP11)
+acpiprt7 at acpi0: bus -1 (RP12)
+acpiprt8 at acpi0: bus -1 (RP13)
+acpiprt9 at acpi0: bus -1 (RP01)
+acpiprt10 at acpi0: bus -1 (RP02)
+acpiprt11 at acpi0: bus -1 (RP03)
+acpiprt12 at acpi0: bus -1 (RP04)
+acpiprt13 at acpi0: bus 1 (RP05)
+acpiprt14 at acpi0: bus -1 (RP06)
+acpiprt15 at acpi0: bus -1 (RP07)
+acpiprt16 at acpi0: bus -1 (RP08)
+acpiprt17 at acpi0: bus -1 (RP17)
+acpiprt18 at acpi0: bus -1 (RP18)
+acpiprt19 at acpi0: bus -1 (RP19)
+acpiprt20 at acpi0: bus -1 (RP20)
+acpiprt21 at acpi0: bus -1 (RP14)
+acpiprt22 at acpi0: bus -1 (RP15)
+acpiprt23 at acpi0: bus -1 (RP16)
+acpiec0 at acpi0
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;INT3F0D&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;DLLK06DC&quot; at acpi0 not configured
+&quot;DLL06DC&quot; at acpi0 not configured
+&quot;PNP0401&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT33A1&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;DELLABC6&quot; at acpi0 not configured
+&quot;DELLABCE&quot; at acpi0 not configured
+&quot;INT340E&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 6G Host&quot; rev 0x08
+&quot;Intel HD Graphics 520&quot; rev 0x07 at pci0 dev 2 function 0 not configured
+&quot;Intel Core 6G Thermal&quot; rev 0x08 at pci0 dev 4 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 100 Series xHCI&quot; rev 0x21: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 100 Series Thermal&quot; rev 0x21 at pci0 dev 20 function 2 not configured
+&quot;Intel 100 Series MEI&quot; rev 0x21 at pci0 dev 22 function 0 not configured
+&quot;Intel 100 Series KT&quot; rev 0x21 at pci0 dev 22 function 3 not configured
+pciide0 at pci0 dev 23 function 0 &quot;Intel 82801HBM RAID&quot; rev 0x21: DMA, channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide0: using apic 2 int 16 for native-PCI interrupt
+ppb0 at pci0 dev 28 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci1 at ppb0 bus 1
+iwm0 at pci1 dev 0 function 0 &quot;Intel Dual Band Wireless AC 8260&quot; rev 0x3a, msi
+ppb1 at pci0 dev 29 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+pci2 at ppb1 bus 2
+&quot;Realtek RTS525A Card Reader&quot; rev 0x01 at pci2 dev 0 function 0 not configured
+&quot;Intel 100 Series LPC&quot; rev 0x21 at pci0 dev 31 function 0 not configured
+&quot;Intel 100 Series PMC&quot; rev 0x21 at pci0 dev 31 function 2 not configured
+&quot;Intel 100 Series HD Audio&quot; rev 0x21 at pci0 dev 31 function 3 not configured
+&quot;Intel 100 Series SMBus&quot; rev 0x21 at pci0 dev 31 function 4 not configured
+em0 at pci0 dev 31 function 6 &quot;Intel I219-LM&quot; rev 0x21: msi, address xx:xx:xx:xx:xx:xx
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1920x1080, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+umass0 at uhub0 port 1 configuration 1 interface 0 &quot;Kingmax USB2.0 FlashDisk&quot; rev 2.00/11.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;Kingmax, USB2.0 FlashDisk, 1100&gt; SCSI0 0/direct removable serial.xx:xx:xx:xx:xx:xx742
+sd0: 1896MB, 512 bytes/sector, 3883008 sectors
+&quot;CNFEH53M044040037102 Integrated_Webcam_HD&quot; rev 2.00/57.29 addr 3 at uhub0 port 2 not configured
+&quot;Broadcom Corp 5880&quot; rev 1.10/1.01 addr 4 at uhub0 port 7 not configured
+&quot;vendor 0x8087 product 0x0a2b&quot; rev 2.00/0.01 addr 5 at uhub0 port 8 not configured
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+iwm0: could not read firmware iwm-8000C-16 (error 2)
+iwm0: failed to load init firmware
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

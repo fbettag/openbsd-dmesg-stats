@@ -1,0 +1,421 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-12-21 16:12:47</em><br />
+<strong>From:</strong> <em>ariel</em><br />
+<strong>Description:</strong> <em>LENOVO ThinkPad T450 20BU000GUS</em><br />
+
+<pre>
+OpenBSD 6.4-current (RAMDISK_CD) #519: Fri Dec 21 02:06:24 MST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 17036697600 (16247MB)
+avail mem = 16516395008 (15751MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xccbfd000 (66 entries)
+bios0: vendor LENOVO version &quot;JBET71WW (1.35 )&quot; date 09/14/2018
+bios0: LENOVO 20BU000GUS
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP SLIC ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT TCPA SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, 2195.21 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;PNP0A08&quot; at acpi0 not configured
+&quot;PNP0B00&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;LEN0068&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+&quot;Intel HD Graphics 5500&quot; rev 0x09 at pci0 dev 2 function 0 not configured
+&quot;Intel Core 5G HD Audio&quot; rev 0x09 at pci0 dev 3 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+&quot;Intel 9 Series HD Audio&quot; rev 0x03 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 9 Series LPC&quot; rev 0x03 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, INTEL SSDSC2BF18, LT6i&gt; SCSI3 0/direct fixed naa.55cd2e404bf8d857
+sd0: 171705MB, 512 bytes/sector, 351651888 sectors, thin
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, SB2, SBFM&gt; SCSI3 0/direct fixed naa.0000000000000000
+sd1: 228936MB, 512 bytes/sector, 468862128 sectors, thin
+&quot;Intel 9 Series SMBus&quot; rev 0x03 at pci0 dev 31 function 3 not configured
+&quot;Intel 9 Series Thermal&quot; rev 0x03 at pci0 dev 31 function 6 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1600x900, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+&quot;vendor 0x138a product 0x0017&quot; rev 1.10/0.78 addr 2 at uhub0 port 6 not configured
+&quot;vendor 0x8087 product 0x0a2a&quot; rev 2.01/0.01 addr 3 at uhub0 port 7 not configured
+&quot;Chicony Electronics Co.,Ltd. Integrated Camera&quot; rev 2.00/0.44 addr 4 at uhub0 port 8 not configured
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x8001&quot; rev 2.00/0.03 addr 2
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+iwm0: could not read firmware iwm-7265-16 (error 2)
+iwm0: failed to load init firmware
+iwm0: hw rev 0x210, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+syncing disks...
+OpenBSD 6.4-current (GENERIC.MP) #541: Fri Dec 21 02:00:37 MST 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17036697600 (16247MB)
+avail mem = 16510873600 (15745MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xccbfd000 (66 entries)
+bios0: vendor LENOVO version &quot;JBET71WW (1.35 )&quot; date 09/14/2018
+bios0: LENOVO 20BU000GUS
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC ASF! HPET ECDT APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT TCPA SSDT UEFI MSDM BATB FPDT UEFI BGRT DMAR
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, 2195.27 MHz, 06-3d-04
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, 2194.92 MHz, 06-3d-04
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,RDSEED,ADX,SMAP,PT,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@233 mwait.1@0x40), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 128 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpicmos0 at acpi0
+acpibat0 at acpi0: BAT0 model &quot;45N1111&quot; serial 13423 type LiP oem &quot;SONY&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial  3596 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+tpm0 at acpi0: TPM_ addr 0xfed40000/0x5000: device 0x0000104a rev 0x4e
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+cpu0: Enhanced SpeedStep 2195 MHz: speeds: 2301, 2300, 2200, 2000, 1900, 1800, 1700, 1500, 1400, 1300, 1100, 1000, 900, 800, 600, 500 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 5G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 5500&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1600x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 5G HD Audio&quot; rev 0x09: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 9 Series xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 9 Series MEI&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 9 Series HD Audio&quot; rev 0x03: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+ppb1 at pci0 dev 28 function 1 &quot;Intel 9 Series PCIE&quot; rev 0xe3: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7265&quot; rev 0x59, msi
+ehci0 at pci0 dev 29 function 0 &quot;Intel 9 Series USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 9 Series LPC&quot; rev 0x03
+ahci0 at pci0 dev 31 function 2 &quot;Intel 9 Series AHCI&quot; rev 0x03: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, INTEL SSDSC2BF18, LT6i&gt; SCSI3 0/direct fixed naa.55cd2e404bf8d857
+sd0: 171705MB, 512 bytes/sector, 351651888 sectors, thin
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, SB2, SBFM&gt; SCSI3 0/direct fixed naa.0000000000000000
+sd1: 228936MB, 512 bytes/sector, 468862128 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 9 Series SMBus&quot; rev 0x03: apic 2 int 18
+iic0 at ichiic0
+pchtemp0 at pci0 dev 31 function 6 &quot;Intel 9 Series Thermal&quot; rev 0x03
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x943300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+ugen0 at uhub0 port 6 &quot;Validity Sensors VFS5011 Fingerprint Reader&quot; rev 1.10/0.78 addr 2
+ugen1 at uhub0 port 7 &quot;Intel Bluetooth&quot; rev 2.01/0.01 addr 3
+uvideo0 at uhub0 port 8 configuration 1 interface 0 &quot;Chicony Electronics Co.,Ltd. Integrated Camera&quot; rev 2.00/0.44 addr 4
+video0 at uvideo0
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.03 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd1a (505774b7cb1abb72.a) swap on sd1b dump on sd1b
+iwm0: hw rev 0x210, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+hw.sensors.cpu0.temp0=38.00 degC
+hw.sensors.acpitz0.temp0=38.00 degC (zone temperature)
+hw.sensors.acpibtn0.indicator0=On (lid open)
+hw.sensors.acpibat0.volt0=11.10 VDC (voltage)
+hw.sensors.acpibat0.volt1=12.24 VDC (current voltage)
+hw.sensors.acpibat0.power0=0.00 W (rate)
+hw.sensors.acpibat0.watthour0=20.65 Wh (last full capacity)
+hw.sensors.acpibat0.watthour1=1.03 Wh (warning capacity)
+hw.sensors.acpibat0.watthour2=0.20 Wh (low capacity)
+hw.sensors.acpibat0.watthour3=20.65 Wh (remaining capacity), OK
+hw.sensors.acpibat0.watthour4=23.20 Wh (design capacity)
+hw.sensors.acpibat0.raw0=0 (battery full), OK
+hw.sensors.acpibat1.volt0=11.10 VDC (voltage)
+hw.sensors.acpibat1.volt1=12.22 VDC (current voltage)
+hw.sensors.acpibat1.power0=0.00 W (rate)
+hw.sensors.acpibat1.watthour0=14.67 Wh (last full capacity)
+hw.sensors.acpibat1.watthour1=0.73 Wh (warning capacity)
+hw.sensors.acpibat1.watthour2=0.20 Wh (low capacity)
+hw.sensors.acpibat1.watthour3=14.44 Wh (remaining capacity), OK
+hw.sensors.acpibat1.watthour4=23.20 Wh (design capacity)
+hw.sensors.acpibat1.raw0=0 (battery idle), OK
+hw.sensors.acpiac0.indicator0=On (power supply)
+hw.sensors.acpithinkpad0.temp0=38.00 degC
+hw.sensors.acpithinkpad0.temp1=38.00 degC
+hw.sensors.acpithinkpad0.temp2=38.00 degC
+hw.sensors.acpithinkpad0.temp3=38.00 degC
+hw.sensors.acpithinkpad0.temp4=38.00 degC
+hw.sensors.acpithinkpad0.temp5=38.00 degC
+hw.sensors.acpithinkpad0.temp6=38.00 degC
+hw.sensors.acpithinkpad0.temp7=38.00 degC
+hw.sensors.acpithinkpad0.fan0=0 RPM
+hw.sensors.acpithinkpad0.indicator0=Off (port replicator), UNKNOWN
+hw.sensors.pchtemp0.temp0=43.00 degC
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

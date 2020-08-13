@@ -1,0 +1,301 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2009-05-27 11:45:13</em><br />
+<strong>From:</strong> <em>ptigael</em><br />
+<strong>Description:</strong> <em>Sun Fire 880</em><br />
+
+<pre>
+console is /pci@9,700000/ebus@1/rsc-console@1,3083f8
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2009 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 4.5 (GENERIC.MP) #634: Sat Feb 28 17:58:35 MST 2009
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC.MP
+real mem = 4294967296 (4096MB)
+avail mem = 4140982272 (3949MB)
+mainbus0 at root: Sun Fire 880
+cpu0 at mainbus0: SUNW,UltraSPARC-III (rev 5.4) @ 750 MHz
+cpu0: physical 32K instruction (32 b/l), 64K data (32 b/l), 8192K external (512 b/l)
+cpu1 at mainbus0: SUNW,UltraSPARC-III (rev 5.4) @ 750 MHz
+cpu1: physical 32K instruction (32 b/l), 64K data (32 b/l), 8192K external (512 b/l)
+memory-controller at mainbus0 not configured
+memory-controller at mainbus0 not configured
+schizo0 at mainbus0: Schizo, version 4, ign 200, bus B 0 to 0
+schizo0: dvma map c0000000-ffffffff
+pci0 at schizo0
+siop0 at pci0 dev 1 function 0 Symbios Logic 53c875 rev 0x04: ivec 0x21c, using 4K of on-board RAM
+scsibus0 at siop0: 16 targets, initiator 7
+cd0 at scsibus0 targ 6 lun 0: &lt;TOSHIBA, DVD-ROM SD-M1401, 1009&gt; SCSI2 5/cdrom removable
+schizo1 at mainbus0: Schizo, version 4, ign 200, bus A 0 to 0
+schizo1: dvma map c0000000-ffffffff
+pci1 at schizo1
+gem0 at pci1 dev 1 function 0 Sun GEM rev 0x01: ivec 0x200, address xx:xx:xx:xx:xx:xx
+gentbi0 at gem0 phy 0: Generic ten-bit interface, rev. 0
+isp0 at pci1 dev 2 function 0 QLogic ISP2200 rev 0x05: ivec 0x204
+scsibus1 at isp0: 256 targets, initiator 107
+sd0 at scsibus1 targ 0 lun 0: &lt;SEAGATE, ST336605FSUN36G, 0438&gt; SCSI3 0/direct fixed
+sd0: 34732MB, 512 bytes/sec, 71132959 sec total
+sd1 at scsibus1 targ 1 lun 0: &lt;SEAGATE, ST336704FSUN36G, 1126&gt; SCSI3 0/direct fixed
+sd1: 34732MB, 512 bytes/sec, 71132959 sec total
+sd2 at scsibus1 targ 2 lun 0: &lt;SEAGATE, ST336605FSUN36G, 0438&gt; SCSI3 0/direct fixed
+sd2: 34732MB, 512 bytes/sec, 71132959 sec total
+sd3 at scsibus1 targ 3 lun 0: &lt;SEAGATE, ST336605FSUN36G, 0438&gt; SCSI3 0/direct fixed
+sd3: 34732MB, 512 bytes/sec, 71132959 sec total
+sd4 at scsibus1 targ 4 lun 0: &lt;SEAGATE, ST336605FSUN36G, 0438&gt; SCSI3 0/direct fixed
+sd4: 34732MB, 512 bytes/sec, 71132959 sec total
+sd5 at scsibus1 targ 5 lun 0: &lt;SEAGATE, ST336605FSUN36G, 0638&gt; SCSI3 0/direct fixed
+sd5: 34732MB, 512 bytes/sec, 71132959 sec total
+ses0 at scsibus1 targ 6 lun 0: &lt;SUNW, SUNWGS INT FCBPL, 922A&gt; SCSI3 13/enclosure services fixed
+schizo2 at mainbus0: Schizo, version 4, ign 240, bus B 0 to 1
+schizo2: dvma map c0000000-ffffffff
+pci2 at schizo2
+ebus0 at pci2 dev 1 function 0 Sun RIO EBus rev 0x01
+flashprom at ebus0 addr 0-1fffff not configured
+bbc0 at ebus0 addr 0-fffff: AID 0x00
+power0 at ebus0 addr 30002e-30002f, 300600-300607
+pcfiic0 at ebus0 addr 2e-2f, 2d-2d ivec 0x23
+iic0 at pcfiic0
+admtemp0 at iic0 addr 0x218: max1617
+admtemp1 at iic0 addr 0x219: max1617
+admtemp2 at iic0 addr 0x21a: max1617
+admtemp3 at iic0 addr 0x229: max1617
+admtemp4 at iic0 addr 0x22a: max1617
+admtemp5 at iic0 addr 0x22b: max1617
+admtemp6 at iic0 addr 0x24c: max1617
+pcfiic1 at ebus0 addr 30-31 ivec 0x23
+iic1 at pcfiic1
+ssc100 at iic1 addr 0xb not configured
+smbus-ara at iic1 addr 0xc not configured
+ssc100 at iic1 addr 0xd not configured
+admtemp7 at iic1 addr 0x18: max1617
+admtemp8 at iic1 addr 0x1a: max1617
+pcf8574 at iic1 addr 0x23 not configured
+x9241 at iic1 addr 0x2c not configured
+ltc1427 at iic1 addr 0x2d not configured
+ltc1427 at iic1 addr 0x2f not configured
+pcf8574 at iic1 addr 0x38 not configured
+pcf8574 at iic1 addr 0x39 not configured
+pcf8574 at iic1 addr 0x3a not configured
+ssc050 at iic1 addr 0x40 not configured
+ssc050 at iic1 addr 0x41 not configured
+ssc050 at iic1 addr 0x44 not configured
+ssc050 at iic1 addr 0x45 not configured
+pcf8591 at iic1 addr 0x48 not configured
+pcf8591 at iic1 addr 0x49 not configured
+pcf8591 at iic1 addr 0x4a not configured
+pcf8591 at iic1 addr 0x4b not configured
+lmtemp0 at iic1 addr 0x4e: lm75
+ds1307 at iic1 addr 0x68 not configured
+hpc3130 at iic1 addr 0x71 not configured
+hpc3130 at iic1 addr 0x73 not configured
+hpc3130 at iic1 addr 0x74 not configured
+hpc3130 at iic1 addr 0x76 not configured
+bbc1 at ebus0 addr 500000-5fffff: AID 0x04
+pcfiic2 at ebus0 addr 50002e-50002f, 50002d-50002d ivec 0x28
+iic2 at pcfiic2
+admtemp9 at iic2 addr 0x229: max1617
+admtemp10 at iic2 addr 0x22a: max1617
+admtemp11 at iic2 addr 0x22b: max1617
+pcfiic3 at ebus0 addr 500030-500031 ivec 0x28
+iic3 at pcfiic3
+rtc0 at ebus0 addr 300070-300071 ivec 0x24: ds1287
+gpio at ebus0 addr 300600-300607 not configured
+pmc0 at ebus0 addr 300700-300701
+rsc-control at ebus0 addr 3062f8-3062ff ivec 0x2e not configured
+com0 at ebus0 addr 3083f8-3083ff ivec 0x2d: ns16550a, 16 byte fifo
+com0: console
+sab0 at ebus0 addr 400000-40007f ivec 0x22: rev 3.2
+sabtty0 at sab0 port 0
+sabtty1 at sab0 port 1
+gem1 at pci2 dev 1 function 1 Sun ERI Ether rev 0x01: ivec 0x25d, address xx:xx:xx:xx:xx:xx
+luphy0 at gem1 phy 1: LU6612 10/100 PHY, rev. 1
+ohci0 at pci2 dev 1 function 3 Sun USB rev 0x01: ivec 0x25f, version 1.0, legacy support
+ppb0 at pci2 dev 4 function 0 Intel S21154AE/BE PCI-PCI rev 0x00
+pci3 at ppb0 bus 1
+Sun PCIO EBus2 rev 0x01 at pci3 dev 0 function 0 not configured
+hme0 at pci3 dev 0 function 1 Sun HME rev 0x01: ivec 0x255, address xx:xx:xx:xx:xx:xx
+luphy1 at hme0 phy 1: LU6612 10/100 PHY, rev. 1
+Sun PCIO EBus2 rev 0x01 at pci3 dev 1 function 0 not configured
+hme1 at pci3 dev 1 function 1 Sun HME rev 0x01: ivec 0x256, address xx:xx:xx:xx:xx:xx
+luphy2 at hme1 phy 1: LU6612 10/100 PHY, rev. 1
+Sun PCIO EBus2 rev 0x01 at pci3 dev 2 function 0 not configured
+hme2 at pci3 dev 2 function 1 Sun HME rev 0x01: ivec 0x257, address xx:xx:xx:xx:xx:xx
+luphy3 at hme2 phy 1: LU6612 10/100 PHY, rev. 1
+Sun PCIO EBus2 rev 0x01 at pci3 dev 3 function 0 not configured
+hme3 at pci3 dev 3 function 1 Sun HME rev 0x01: ivec 0x254, address xx:xx:xx:xx:xx:xx
+luphy4 at hme3 phy 1: LU6612 10/100 PHY, rev. 1
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0 Sun OHCI root hub rev 1.00/1.00 addr 1
+schizo3 at mainbus0: Schizo, version 4, ign 240, bus A 0 to 0
+schizo3: dvma map c0000000-ffffffff
+pci4 at schizo3
+softraid0 at root
+bootpath: /pci@8,600000/SUNW,qlc@2,0/fp@0,0/disk@2100002037f315e1,0
+root on sd1a swap on sd1b dump on sd1b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

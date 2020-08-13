@@ -1,0 +1,346 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-06-26 14:14:13</em><br />
+<strong>From:</strong> <em>[tj]</em><br />
+<strong>Description:</strong> <em>GPD Pocket</em><br />
+
+<pre>
+OpenBSD 6.1-current (RAMDISK_CD) #40: Sun Jun 25 11:57:49 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+RTC BIOS diagnostic error 3f&lt;config_unit,memory_size,fixed_disk,invalid_time&gt;
+real mem = 8477282304 (8084MB)
+avail mem = 8216608768 (7835MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x7b8de000 (51 entries)
+bios0: vendor American Megatrends Inc. version &quot;5.11&quot; date 05/26/2017
+bios0: Default string Default string
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG SSDT SSDT SSDT UEFI SSDT HPET SSDT SSDT SSDT LPIT BCFG PRAM TPM2 CSRT WDAT SSDT SSDT SSDT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Atom(TM) x7-Z8750 CPU @ 1.60GHz, 1600.41 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,RDRAND,NXE,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,SMEP,ERMS,SENSOR,ARAT
+cpu0: 1MB 64b/line 16-way L2 cache
+cpu0: TSC frequency 1600405600 Hz
+cpu0: apic clock running at 79MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.0.0.0.3.3, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 115 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (RP01)
+acpiprt2 at acpi0: bus -1 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;INT33A4&quot; at acpi0 not configured
+sdhc0 at acpi0: SDHA addr 0xa1a3a000/0x1000 irq 45
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+&quot;INT33BD&quot; at acpi0 not configured
+chvgpio0 at acpi0: GPO1 uid 2 addr 0xfed88000/0x8000 irq 48, 59 pins
+chvgpio1 at acpi0: GPO3 uid 4 addr 0xfed98000/0x8000 irq 91, 55 pins
+sdhc1 at acpi0: SDHB addr 0xa1a38000/0x1000 irq 46
+sdhc1: SDHC 3.0, 200 MHz base clock
+sdmmc1 at sdhc1: 4-bit, sd high-speed, mmc high-speed, dma
+dwiic0 at acpi0: I2C7 addr 0xa1a26000/0x1000 irq 38
+iic0 at dwiic0
+sdhc2 at acpi0: SHC1 addr 0xa1a36000/0x1000 irq 47, gpio
+sdhc2: SDHC 3.0, 200 MHz base clock
+sdmmc2 at sdhc2: 4-bit, sd high-speed, mmc high-speed, dma
+&quot;INTL9C60&quot; at acpi0 not configured
+&quot;INTL9C60&quot; at acpi0 not configured
+&quot;8086228A&quot; at acpi0 not configured
+&quot;BCM2E7E&quot; at acpi0 not configured
+&quot;8086228A&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+&quot;8086228E&quot; at acpi0 not configured
+dwiic1 at acpi0: I2C1 addr 0xa1a32000/0x1000 irq 32
+iic1 at dwiic1
+dwiic2 at acpi0: I2C2 addr 0xa1a30000/0x1000 irq 33
+iic2 at dwiic2
+&quot;10EC5645&quot; at acpi0 not configured
+dwiic3 at acpi0: I2C3 addr 0xa1a2e000/0x1000 irq 34
+iic3 at dwiic3
+chvgpio2 at acpi0: GPO0 uid 1 addr 0xfed80000/0x8000 irq 49, 56 pins
+dwiic4 at acpi0: I2C4 addr 0xa1a2c000/0x1000 irq 35
+iic4 at dwiic4
+dwiic5 at acpi0: I2C5 addr 0xa1a2a000/0x1000 irq 36
+iic5 at dwiic5
+dwiic6 at acpi0: I2C6 addr 0xa1a28000/0x1000 irq 37
+iic6 at dwiic6
+&quot;GDIX1001&quot; at acpi0 not configured
+&quot;INT34D3&quot; at acpi0 not configured
+&quot;INT33FE&quot; at acpi0 not configured
+&quot;808622A8&quot; at acpi0 not configured
+&quot;INT33D5&quot; at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;FAN02501&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+chvgpio3 at acpi0: GPO2 uid 3 addr 0xfed90000/0x8000 irq 50, 24 pins
+chvgpio4 at acpi0: GPO4 uid 5
+&quot;ACPI0011&quot; at acpi0 not configured
+&quot;ACPI000C&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+&quot;INT3407&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;INT3409&quot; at acpi0 not configured
+&quot;INT3406&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;USBC000&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Braswell Host&quot; rev 0x34
+&quot;Intel HD Graphics&quot; rev 0x34 at pci0 dev 2 function 0 not configured
+&quot;Intel Braswell Power&quot; rev 0x34 at pci0 dev 11 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel Braswell xHCI&quot; rev 0x34: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel Braswell TXE&quot; rev 0x34 at pci0 dev 26 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel Braswell PCIE&quot; rev 0x34: msi
+pci1 at ppb0 bus 1
+&quot;Broadcom BCM4356&quot; rev 0x02 at pci1 dev 0 function 0 not configured
+&quot;Intel Braswell PCU LPC&quot; rev 0x34 at pci0 dev 31 function 0 not configured
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+efifb0 at mainbus0: 1200x1920, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation)
+sdmmc1: can't enable card
+scsibus0 at sdmmc0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;Samsung, DJNB4R, 0000&gt; SCSI2 0/direct removable
+sd0: 119276MB, 512 bytes/sector, 244277248 sectors
+uhidev0 at uhub0 port 2 configuration 1 interface 0 &quot;SINO WEALTH Gaming Keyboard&quot; rev 1.10/1.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 2 configuration 1 interface 1 &quot;SINO WEALTH Gaming Keyboard&quot; rev 1.10/1.00 addr 2
+uhidev1: iclass 3/0, 39 report ids
+uhid at uhidev1 reportid 5 not configured
+uhid at uhidev1 reportid 35 not configured
+uhid at uhidev1 reportid 37 not configured
+uhid at uhidev1 reportid 38 not configured
+uhid at uhidev1 reportid 39 not configured
+&quot;Broadcom Corp BCM2045A0&quot; rev 2.00/1.12 addr 3 at uhub0 port 3 not configured
+umass0 at uhub0 port 4 configuration 1 interface 0 &quot;Imation Nano Pro&quot; rev 2.00/1.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;Imation, Nano Pro, PMAP&gt; SCSI0 0/direct removable serial.071806381703A69F015D
+sd1: 3821MB, 512 bytes/sector, 7826688 sectors
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+sd1 detached
+scsibus1 detached
+umass0 detached
+umass0 at uhub0 port 4 configuration 1 interface 0 &quot;Chipsbnk UDisk&quot; rev 2.00/1.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;Chipsbnk, UDisk, 5.00&gt; SCSI2 0/direct removable serial.abcd1234281340675006
+sd1: 1901MB, 512 bytes/sector, 3893248 sectors
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

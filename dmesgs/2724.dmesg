@@ -1,0 +1,340 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-05-28 11:41:41</em><br />
+<strong>From:</strong> <em>dxtr</em><br />
+<strong>Description:</strong> <em>Supermicro X7DBT</em><br />
+
+<pre>
+OpenBSD 5.7-stable (GENERIC.MP) #0: Mon May 25 01:55:57 CEST 2015
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8572436480 (8175MB)
+avail mem = 8340320256 (7953MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0xcff6a000 (39 entries)
+bios0: vendor Phoenix Technologies LTD version &quot;2.1c&quot; date 07/04/2011
+bios0: Supermicro X7DBT
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC SSDT SPMI MCFG BOOT SPCR ERST HEST BERT EINJ SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices BPD2(S5) P0P6(S5) USB1(S1) USB2(S1) USB3(S1) EUSB(S1) PCIB(S5) COM1(S5) COM2(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1867.00 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu0: 4MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 266MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.0.0, IBE
+cpu1 at mainbus0: apid 4 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu1: 4MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 0, package 1
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu2: 4MB 64b/line 16-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu3: 4MB 64b/line 16-way L2 cache
+cpu3: smt 0, core 1, package 1
+cpu4 at mainbus0: apid 2 (application processor)
+cpu4: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.74 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu4: 4MB 64b/line 16-way L2 cache
+cpu4: smt 0, core 2, package 0
+cpu5 at mainbus0: apid 6 (application processor)
+cpu5: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu5: 4MB 64b/line 16-way L2 cache
+cpu5: smt 0, core 2, package 1
+cpu6 at mainbus0: apid 3 (application processor)
+cpu6: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu6: 4MB 64b/line 16-way L2 cache
+cpu6: smt 0, core 3, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: Intel(R) Xeon(R) CPU E5320 @ 1.86GHz, 1866.73 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF
+cpu7: 4MB 64b/line 16-way L2 cache
+cpu7: smt 0, core 3, package 1
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec80000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-7
+acpiprt0 at acpi0: bus 1 (P0P2)
+acpiprt1 at acpi0: bus 2 (BMD0)
+acpiprt2 at acpi0: bus 4 (BPD2)
+acpiprt3 at acpi0: bus 6 (P0P4)
+acpiprt4 at acpi0: bus 7 (P0P6)
+acpiprt5 at acpi0: bus 0 (PCI0)
+acpiprt6 at acpi0: bus 8 (PCIB)
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+acpicpu2 at acpi0
+acpicpu3 at acpi0
+acpicpu4 at acpi0
+acpicpu5 at acpi0
+acpicpu6 at acpi0
+acpicpu7 at acpi0
+acpibtn0 at acpi0: PWRB
+ipmi0 at mainbus0: version 2.0 interface KCS iobase 0xca2/2 spacing 1
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 5000P Host&quot; rev 0xb1
+ppb0 at pci0 dev 2 function 0 &quot;Intel 5000 PCIE x8&quot; rev 0xb1
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 0 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci2 at ppb1 bus 2
+ppb2 at pci2 dev 0 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci3 at ppb2 bus 3
+ppb3 at pci2 dev 2 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci4 at ppb3 bus 4
+em0 at pci4 dev 0 function 0 &quot;Intel 80003ES2&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci4 dev 0 function 1 &quot;Intel 80003ES2&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb4 at pci1 dev 0 function 3 &quot;Intel 6321ESB PCIE-PCIX&quot; rev 0x01
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 4 function 0 &quot;Intel 5000 PCIE x8&quot; rev 0xb1: msi
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 6 function 0 &quot;Intel 5000 PCIE x8&quot; rev 0xb1: msi
+pci7 at ppb6 bus 7
+&quot;Intel I/OAT&quot; rev 0xb1 at pci0 dev 8 function 0 not configured
+pchb1 at pci0 dev 16 function 0 &quot;Intel 5000 Error Reporting&quot; rev 0xb1
+pchb2 at pci0 dev 16 function 1 &quot;Intel 5000 Error Reporting&quot; rev 0xb1
+pchb3 at pci0 dev 16 function 2 &quot;Intel 5000 Error Reporting&quot; rev 0xb1
+pchb4 at pci0 dev 17 function 0 &quot;Intel 5000 Reserved&quot; rev 0xb1
+pchb5 at pci0 dev 19 function 0 &quot;Intel 5000 Reserved&quot; rev 0xb1
+pchb6 at pci0 dev 21 function 0 &quot;Intel 5000 FBD&quot; rev 0xb1
+pchb7 at pci0 dev 22 function 0 &quot;Intel 5000 FBD&quot; rev 0xb1
+uhci0 at pci0 dev 29 function 0 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 17
+uhci1 at pci0 dev 29 function 1 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 18
+ehci0 at pci0 dev 29 function 7 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 17
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb7 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xd9
+pci8 at ppb7 bus 8
+radeondrm0 at pci8 dev 1 function 0 &quot;ATI ES1000&quot; rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 8 int 18
+pcib0 at pci0 dev 31 function 0 &quot;Intel 6321ESB LPC&quot; rev 0x09
+pciide0 at pci0 dev 31 function 2 &quot;Intel 6321ESB SATA&quot; rev 0x09: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using apic 8 int 19 for native-PCI interrupt
+wd0 at pciide0 channel 0 drive 0: &lt;WDC WD1003FBYX-01Y7B0&gt;
+wd0: 16-sector PIO, LBA48, 953869MB, 1953525168 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 6
+wd1 at pciide0 channel 1 drive 0: &lt;WDC WD1002FBYS-02A6B0&gt;
+wd1: 16-sector PIO, LBA48, 953869MB, 1953525168 sectors
+wd1(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 6
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 6321ESB SMBus&quot; rev 0x09: apic 8 int 19
+iic0 at ichiic0
+iic0: skipping sensors to avoid ipmi0 interactions
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: console
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x2e/2: W83627HF rev 0x41
+lm1 at wbsio0 port 0x290/8: W83627HF
+uhub0: device problem, disabling port 6
+uhidev0 at uhub1 port 2 configuration 1 interface 0 &quot;ATEN UC-10KM V1.3.121&quot; rev 1.10/1.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes, country code 3
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub1 port 2 configuration 1 interface 1 &quot;ATEN UC-10KM V1.3.121&quot; rev 1.10/1.00 addr 2
+uhidev1: iclass 3/1
+ums0 at uhidev1: 5 buttons, Z dir
+wsmouse0 at ums0 mux 0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+sd0 at scsibus2 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 005&gt; SCSI2 0/direct fixed
+sd0: 953869MB, 512 bytes/sector, 1953524576 sectors
+root on sd0a (dec94cfe42ec5f71.a) swap on sd0b dump on sd0b
+radeondrm0: 1024x768
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

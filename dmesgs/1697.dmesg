@@ -1,0 +1,269 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-07-05 06:37:51</em><br />
+<strong>From:</strong> <em>jage</em><br />
+<strong>Description:</strong> <em>AMD64, Asus K8V, Matrox G450 PCI, Matrox P750 AGP, SATA and PATA HDD</em><br />
+
+<pre>
+OpenBSD 3.7-current (GENERIC) #145: Fri Jun 24 23:34:11 MDT 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 1072492544 (1047356K)
+avail mem = 908521472 (887228K)
+using 22937 buffers containing 107458560 bytes (104940K) of memory
+mainbus0 (root)
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Athlon(tm) 64 Processor 3000+, 2002.84 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,NXE,MMXX,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 &quot;VIA K8HTB Host&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;VIA K8HTB AGP&quot; rev 0x00
+pci1 at ppb0 bus 2
+vendor &quot;Matrox&quot;, unknown product 0x2537 (class display subclass VGA, rev 0x02) at pci1 dev 0 function 0 not configured
+skc0 at pci0 dev 10 function 0 &quot;Marvell SKv2&quot; rev 0x13: irq 10
+skc0: Marvell Yukon Lite rev. A3 (0x7)
+sk0 at skc0 port A: address xx:xx:xx:xx:xx:xx
+eephy0 at sk0 phy 0: Marvell 88E1011 Gigabit PHY, rev. 5
+ppb1 at pci0 dev 11 function 0 vendor &quot;Hint&quot;, unknown product 0x0021 rev 0x13
+pci2 at ppb1 bus 1
+vga1 at pci2 dev 0 function 0 &quot;Matrox MGA G400/G450 AGP&quot; rev 0x85
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pciide0 at pci0 dev 15 function 0 &quot;VIA VT8237 SATA&quot; rev 0x80: DMA
+pciide0: using irq 10 for native-PCI interrupt
+wd0 at pciide0 channel 0 drive 0: &lt;WDC WD360GD-00FLA2&gt;
+wd0: 16-sector PIO, LBA48, 35304MB, 72303840 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+pciide1 at pci0 dev 15 function 1 &quot;VIA VT82C571 IDE&quot; rev 0x06: ATA133, channel 0 configured to compatibility, channel 1 configured to compatibility
+pciide1: channel 0 disabled (no drives)
+wd1 at pciide1 channel 1 drive 0: &lt;ST3120022A&gt;
+wd1: 16-sector PIO, LBA48, 114473MB, 234441648 sectors
+wd2 at pciide1 channel 1 drive 1: &lt;ST3120022A&gt;
+wd2: 16-sector PIO, LBA48, 114473MB, 234441648 sectors
+wd1(pciide1:1:0): using PIO mode 4, Ultra-DMA mode 5
+wd2(pciide1:1:1): using PIO mode 4, Ultra-DMA mode 5
+uhci0 at pci0 dev 16 function 0 &quot;VIA VT83C572 USB&quot; rev 0x81: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhci1 at pci0 dev 16 function 1 &quot;VIA VT83C572 USB&quot; rev 0x81: irq 11
+usb1 at uhci1: USB revision 1.0
+uhub1 at usb1
+uhub1: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhci2 at pci0 dev 16 function 2 &quot;VIA VT83C572 USB&quot; rev 0x81: irq 10
+usb2 at uhci2: USB revision 1.0
+uhub2 at usb2
+uhub2: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhci3 at pci0 dev 16 function 3 &quot;VIA VT83C572 USB&quot; rev 0x81: irq 10
+usb3 at uhci3: USB revision 1.0
+uhub3 at usb3
+uhub3: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+ehci0 at pci0 dev 16 function 4 &quot;VIA VT6202 USB&quot; rev 0x86: irq 5
+ehci0: timed out waiting for BIOS
+usb4 at ehci0: USB revision 2.0
+uhub4 at usb4
+uhub4: VIA EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub4: 8 ports with 8 removable, self powered
+&quot;VIA VT8237 ISA&quot; rev 0x00 at pci0 dev 17 function 0 not configured
+auvia0 at pci0 dev 17 function 5 &quot;VIA VT8233 AC97&quot; rev 0x60: irq 5
+ac97: codec id 0x41445370 (Analog Devices AD1980)
+ac97: codec features headphone, 20 bit DAC, No 3D Stereo
+audio0 at auvia0
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 DRAM Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 3 &quot;AMD AMD64 Misc Cfg&quot; rev 0x00
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+sysbeep0 at pcppi0
+lm0 at isa0 port 0x290/8: W83697HF
+uhub5 at uhub4 port 4
+uhub5: NEC product 0x0059, class 9/0, rev 2.00/1.00, addr 2
+uhub5: 4 ports with 4 removable, self powered, single transaction translator
+uhidev0 at uhub5 port 4 configuration 1 interface 0
+uhidev0: Logitech Trackball, rev 1.10/2.20, addr 3, iclass 3/1
+ums0 at uhidev0: 3 buttons and Z dir.
+wsmouse0 at ums0 mux 0
+dkcsum: wd0 matched BIOS disk 80
+dkcsum: wd1 matched BIOS disk 82
+dkcsum: wd2 matched BIOS disk 81
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

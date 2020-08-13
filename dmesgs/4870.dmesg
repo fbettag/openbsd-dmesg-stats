@@ -1,0 +1,368 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-04-24 18:44:36</em><br />
+<strong>From:</strong> <em>gsalz</em><br />
+<strong>Description:</strong> <em>OpenBSD on a Lattepanda Delta, WiFi (CNVi) NOK /w patches from  James Hastings</em><br />
+
+<pre>
+OpenBSD 6.5-current (GENERIC.MP) #1: Wed Apr 24 12:11:34 CEST 2019
+    xxx@xxx.xxx:/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4090777600 (3901MB)
+avail mem = 3956752384 (3773MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0x79ca8000 (75 entries)
+bios0: vendor (null) version &quot;CDJQ-BI-7-xxxxxxxx-xxxxx-xxx-F&quot; date 03/14/2019
+bios0: LattePanda S70GR100
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP FPDT FIDT MCFG DBG2 DBGP HPET LPIT APIC NPKT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT UEFI TPM2 DMAR WDAT WSMT
+acpi0: wakeup devices LID0(S3) HDAS(S3) XHC_(S4) XDCI(S4) PXSX(S4) RP01(S4) PXSX(S4) RP02(S4) PXSX(S4) RP03(S4) PXSX(S4) RP04(S4) PXSX(S4) RP05(S4) PXSX(S4) RP06(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 19200000 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Celeron(R) N4100 CPU @ 1.10GHz, 4372.73 MHz, 06-7a-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SGX,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,UMIP,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 4MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 76MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.2.4.2.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Celeron(R) N4100 CPU @ 1.10GHz, 4372.78 MHz, 06-7a-01
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SGX,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,UMIP,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu1: 4MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Celeron(R) N4100 CPU @ 1.10GHz, 4372.78 MHz, 06-7a-01
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SGX,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,UMIP,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu2: 4MB 64b/line 16-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Celeron(R) N4100 CPU @ 1.10GHz, 4372.78 MHz, 06-7a-01
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SGX,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,UMIP,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu3: 4MB 64b/line 16-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 120 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (RP01)
+acpiprt2 at acpi0: bus 4 (RP02)
+acpiprt3 at acpi0: bus 1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus 2 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiec0 at acpi0
+acpi0: GPE 0x26 already enabled
+acpipwrres0 at acpi0: DRST
+acpipwrres1 at acpi0: DRST
+acpipwrres2 at acpi0: DRST
+acpipwrres3 at acpi0: DRST
+acpipwrres4 at acpi0: DRST
+acpipwrres5 at acpi0: DRST
+acpipwrres6 at acpi0: WRST
+acpicpu0 at acpi0: C3(10@150 mwait.1@0x60), C2(10@50 mwait.1@0x21), C1(1000@1 mwait.1@0x1), PSS
+acpicpu1 at acpi0: C3(10@150 mwait.1@0x60), C2(10@50 mwait.1@0x21), C1(1000@1 mwait.1@0x1), PSS
+acpicpu2 at acpi0: C3(10@150 mwait.1@0x60), C2(10@50 mwait.1@0x21), C1(1000@1 mwait.1@0x1), PSS
+acpicpu3 at acpi0: C3(10@150 mwait.1@0x60), C2(10@50 mwait.1@0x21), C1(1000@1 mwait.1@0x1), PSS
+acpipwrres7 at acpi0: FN00, resource for FAN0
+acpitz0 at acpi0: critical temperature is 85 degC
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT3453&quot; at acpi0 not configured
+acpipci0 at acpi0 PCI0: 0x00000000 0x00000011 0x00000001
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID0
+&quot;GDIX1001&quot; at acpi0 not configured
+&quot;ID9001&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT33A1&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+acpibtn1 at acpi0: PWRB
+&quot;INT33D5&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD1F
+cpu0: Enhanced SpeedStep 4372 MHz: speeds: 1101, 1100, 1000, 900, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Gemini Lake Host&quot; rev 0x03
+&quot;Intel Gemini Lake DPTF&quot; rev 0x03 at pci0 dev 0 function 1 not configured
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel UHD Graphics 600&quot; rev 0x03
+drm0 at inteldrm0
+inteldrm0: msi
+&quot;Intel Gemini Lake CNVi&quot; rev 0x03 at pci0 dev 12 function 0 not configured
+azalia0 at pci0 dev 14 function 0 &quot;Intel Gemini Lake HD Audio&quot; rev 0x03: msi
+azalia0: codecs: Realtek ALC269, Intel/0x280d, using Realtek ALC269
+audio0 at azalia0
+&quot;Intel Gemini Lake MEI&quot; rev 0x03 at pci0 dev 15 function 0 not configured
+ahci0 at pci0 dev 18 function 0 &quot;Intel Gemini Lake AHCI&quot; rev 0x03: msi, AHCI 1.3.1
+ahci0: PHY offline on port 0
+scsibus1 at ahci0: 32 targets
+ppb0 at pci0 dev 19 function 0 &quot;Intel Gemini Lake PCIE&quot; rev 0xf3: msi
+pci1 at ppb0 bus 1
+nvme0 at pci1 dev 0 function 0 &quot;Intel Optane&quot; rev 0x00: apic 1 int 22, NVMe 1.1
+nvme0: INTEL MEMPEK1W016GA, firmware K3110310, serial PHBxxxxxxxxxxxxx
+scsibus2 at nvme0: 1 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;NVMe, INTEL MEMPEK1W01, K311&gt; SCSI4 0/direct fixed
+sd0: 13736MB, 512 bytes/sector, 28131328 sectors
+ppb1 at pci0 dev 19 function 2 &quot;Intel Gemini Lake PCIE&quot; rev 0xf3: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 20 function 0 &quot;Intel Gemini Lake PCIE&quot; rev 0xf3: msi
+pci3 at ppb2 bus 3
+re0 at pci3 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x07: RTL8168E/8111E-VL (0x2c80), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 5
+ppb3 at pci0 dev 20 function 1 &quot;Intel Gemini Lake PCIE&quot; rev 0xf3
+pci4 at ppb3 bus 4
+xhci0 at pci0 dev 21 function 0 &quot;Intel Gemini Lake xHCI&quot; rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 22 function 0 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 22 function 1 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 22 function 2 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 22 function 3 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 23 function 0 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 23 function 1 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 23 function 2 not configured
+&quot;Intel Gemini Lake I2C&quot; rev 0x03 at pci0 dev 23 function 3 not configured
+&quot;Intel Gemini Lake HSUART&quot; rev 0x03 at pci0 dev 24 function 0 not configured
+&quot;Intel Gemini Lake HSUART&quot; rev 0x03 at pci0 dev 24 function 1 not configured
+&quot;Intel Gemini Lake HSUART&quot; rev 0x03 at pci0 dev 24 function 2 not configured
+&quot;Intel Gemini Lake HSUART&quot; rev 0x03 at pci0 dev 24 function 3 not configured
+&quot;Intel Gemini Lake SPI&quot; rev 0x03 at pci0 dev 25 function 0 not configured
+&quot;Intel Gemini Lake SPI&quot; rev 0x03 at pci0 dev 25 function 1 not configured
+&quot;Intel Gemini Lake SPI&quot; rev 0x03 at pci0 dev 25 function 2 not configured
+sdhc0 at pci0 dev 28 function 0 &quot;Intel Gemini Lake eMMC&quot; rev 0x03: apic 1 int 39
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc0 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+sdhc1 at pci0 dev 30 function 0 &quot;Intel Gemini Lake SDIO&quot; rev 0x03: apic 1 int 42
+sdhc1: SDHC 3.0, 200 MHz base clock
+sdmmc1 at sdhc1: 4-bit, sd high-speed, mmc high-speed, dma
+pcib0 at pci0 dev 31 function 0 &quot;Intel Gemini Lake LPC&quot; rev 0x03
+&quot;Intel Gemini Lake SMBus&quot; rev 0x03 at pci0 dev 31 function 1 not configured
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0 mux 1
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+sdmmc1: can't enable card
+scsibus3 at sdmmc0: 2 targets, initiator 0
+sd1 at scsibus3 targ 1 lun 0: &lt;Sandisk, DF4032, 0000&gt; SCSI2 0/direct removable
+sd1: 29820MB, 512 bytes/sector, 61071360 sectors
+uhidev0 at uhub0 port 1 configuration 1 interface 0 &quot;Lenovo ThinkPad Compact USB Keyboard with TrackPoint&quot; rev 2.00/3.30 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub0 port 1 configuration 1 interface 1 &quot;Lenovo ThinkPad Compact USB Keyboard with TrackPoint&quot; rev 2.00/3.30 addr 2
+uhidev1: iclass 3/1, 22 report ids
+ums0 at uhidev1 reportid 1: 5 buttons, Z and W dir
+wsmouse0 at ums0 mux 0
+uhid0 at uhidev1 reportid 16: input=2, output=0, feature=0
+uhid1 at uhidev1 reportid 17: input=2, output=0, feature=0
+uhid2 at uhidev1 reportid 19: input=8, output=8, feature=8
+uhid3 at uhidev1 reportid 21: input=2, output=0, feature=0
+uhid4 at uhidev1 reportid 22: input=2, output=0, feature=0
+ugen0 at uhub0 port 4 &quot;Generic USB2.0-CRW&quot; rev 2.00/39.60 addr 3
+uxrcom0 at uhub0 port 5 configuration 1 interface 0 &quot;Exar XR21V1410&quot; rev 2.00/0.03 addr 4
+ucom0 at uxrcom0 portno 0
+uhub1 at uhub0 port 7 configuration 1 interface 0 &quot;Genesys Logic USB2.0 Hub&quot; rev 2.00/85.37 addr 5
+umodem0 at uhub0 port 8 configuration 1 interface 0 &quot;Arduino LLC Arduino Leonardo&quot; rev 2.00/1.00 addr 6
+umodem0: data interface 1, has no CM over data, has break
+umodem0: status change notification available
+ucom1 at umodem0
+uhidev2 at uhub0 port 8 configuration 1 interface 2 &quot;Arduino LLC Arduino Leonardo&quot; rev 2.00/1.00 addr 6
+uhidev2: iclass 3/0, 2 report ids
+ums1 at uhidev2 reportid 1: 3 buttons, Z dir
+wsmouse1 at ums1 mux 0
+ukbd1 at uhidev2 reportid 2: 8 variable keys, 6 key codes
+wskbd2 at ukbd1 mux 1
+ugen1 at uhub0 port 9 &quot;Intel product 0x0aaa&quot; rev 2.00/0.02 addr 7
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd0a (xxxxxxxxxxxxxxxx.a) swap on sd0b dump on sd0b
+[drm] GuC: No firmware known for this platform!
+[drm] HuC: No firmware known for this platform!
+inteldrm0: 1920x1080, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wskbd0: connecting to wsdisplay0
+wskbd1: connecting to wsdisplay0
+wskbd2: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

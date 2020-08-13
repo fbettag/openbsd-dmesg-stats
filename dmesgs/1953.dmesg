@@ -1,0 +1,421 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2008-05-24 14:29:52</em><br />
+<strong>From:</strong> <em>Venture37</em><br />
+<strong>Description:</strong> <em>Vostro 1310</em><br />
+
+<pre>
+OpenBSD 4.3-current (GENERIC) #1434: Wed May 21 02:36:38 MDT 2008
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 2145841152 (2046MB)
+avail mem = 2072182784 (1976MB)
+User Kernel Config
+UKC&gt; disable acpi
+286 acpi0 disabled
+UKC&gt; ?
+command   args                description
+add       dev                 add a device
+base      8|10|16             base on large numbers
+change    devno|dev           change devices
+ddb                           enter ddb
+disable   attr val|devno|dev  disable devices
+enable    attr val|devno|dev  enable devices
+exit                          leave UKC
+find      devno|dev           find devices
+help                          this message
+list                          list configuration
+lines     [count]             number of lines before more
+quit                          leave UKC
+show      [attr [val]]        show attributes (or devices with an attribute)
+timezone  [mins [dst]]        set timezone/dst
+verbose                       toggle verbose booting
+?                             this message
+UKC&gt; quit
+Continuing...
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xdc010 (38 entries)
+bios0: vendor Dell Inc. version A06 date 05/05/2008
+bios0: Dell Inc. Vostro1310
+acpi at bios0 not configured
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T5670 @ 1.80GHz, 1795.75 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,EST,TM2,CX16,xTPR,NXE,LONG
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: unknown Enhanced SpeedStep CPU, msr 0x06120a2d06000a2d
+cpu0: using only highest and lowest power states
+cpu0: Enhanced SpeedStep 2000 MHz (1420 mV): speeds: 2000, 1200 MHz
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 Intel GM965 Host rev 0x0c
+ppb0 at pci0 dev 1 function 0 Intel GM965 PCIE rev 0x0c: irq 5
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor NVIDIA, unknown product 0x0427 rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+agp0 at vga1: no integrated graphics
+uhci0 at pci0 dev 26 function 0 Intel 82801H USB rev 0x03: irq 5
+uhci1 at pci0 dev 26 function 1 Intel 82801H USB rev 0x03: irq 11
+ehci0 at pci0 dev 26 function 7 Intel 82801H USB rev 0x03: irq 10
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 Intel 82801H HD Audio rev 0x03: irq 10
+azalia0: codec[s]: Realtek/0x0268
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 Intel 82801H PCIE rev 0x03: irq 11
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 Intel 82801H PCIE rev 0x03: irq 5
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 3 Intel 82801H PCIE rev 0x03: irq 11
+pci4 at ppb3 bus 6
+wpi0 at pci4 dev 0 function 0 Intel PRO/Wireless 3945ABG rev 0x02: irq 11, MoW2, address xx:xx:xx:xx:xx:xx
+ppb4 at pci0 dev 28 function 4 Intel 82801H PCIE rev 0x03: irq 11
+pci5 at ppb4 bus 7
+re0 at pci5 dev 0 function 0 Realtek 8168 rev 0x02: RTL8168C (0x3c00), irq 5, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 2
+uhci2 at pci0 dev 29 function 0 Intel 82801H USB rev 0x03: irq 10
+uhci3 at pci0 dev 29 function 1 Intel 82801H USB rev 0x03: irq 11
+uhci4 at pci0 dev 29 function 2 Intel 82801H USB rev 0x03: irq 10
+ehci1 at pci0 dev 29 function 7 Intel 82801H USB rev 0x03: irq 10
+ehci1: timed out waiting for BIOS
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0xf3
+pci6 at ppb5 bus 8
+O2 Micro Firewire rev 0x02 at pci6 dev 5 function 0 not configured
+sdhc0 at pci6 dev 5 function 2 O2 Micro OZ711MP1 SDHC rev 0x02: irq 10
+sdmmc0 at sdhc0
+O2 Micro OZ711MP1 XDHC rev 0x01 at pci6 dev 5 function 3 not configured
+pcib0 at pci0 dev 31 function 0 Intel 82801HBM LPC rev 0x03
+pciide0 at pci0 dev 31 function 1 Intel 82801HBM IDE rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;TEAC, DVD+-RW DVW28SLC, A.06&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+ahci0 at pci0 dev 31 function 2 Intel 82801HBM AHCI rev 0x03: irq 10, AHCI 1.1
+ahci0: PHY offline on port 1
+ahci0: PHY offline on port 2
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, SAMSUNG HM160HI, HH10&gt; SCSI3 0/direct fixed
+sd0: 152627MB, 19457 cyl, 255 head, 63 sec, 512 bytes/sec, 312581808 sec total
+ichiic0 at pci0 dev 31 function 3 Intel 82801H SMBus rev 0x03: irq 10
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+spdmem1 at iic0 addr 0x52: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+nvram: invalid checksum
+softraid0 at root
+root on sd0a swap on sd0b dump on sd0b
+
+OpenBSD 4.3-current (GENERIC.MP) #1665: Wed May 21 02:47:49 MDT 2008
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2145841152 (2046MB)
+avail mem = 2072051712 (1976MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xdc010 (38 entries)
+bios0: vendor Dell Inc. version A06 date 05/05/2008
+bios0: Dell Inc. Vostro1310
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP APIC HPET MCFG TCPA TMOR OSFR APIC BOOT SLIC SSDT SSDT SSDT SSDT
+acpi0: wakeup devices LID0(S3) HDEF(S3) PXSX(S3) PXSX(S5) USB1(S0) USB2(S0) USB3(S0) USB4(S0) USB5(S0) EHC1(S0) EHC2(S0)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T5670 @ 1.80GHz, 1795.74 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,EST,TM2,CX16,xTPR,NXE,LONG
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: apic clock running at 199MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU T5670 @ 1.80GHz, 1795.50 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,EST,TM2,CX16,xTPR,NXE,LONG
+cpu1: 2MB 64b/line 8-way L2 cache
+ioapic0 at mainbus0 apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 2, remapped to apid 1
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEGP)
+acpiprt2 at acpi0: bus 2 (RP01)
+acpiprt3 at acpi0: bus 3 (RP02)
+acpiprt4 at acpi0: bus -1 (RP03)
+acpiprt5 at acpi0: bus 6 (RP04)
+acpiprt6 at acpi0: bus 7 (RP05)
+acpiprt7 at acpi0: bus -1 (RP06)
+acpiprt8 at acpi0: bus 8 (PCIB)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2
+acpicpu1 at acpi0: C3, C2
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpibtn2 at acpi0: SLPB
+acpiac0 at acpi0: AC unit offline
+acpibat0 at acpi0: BAT1 serial 11 type Lion oem Dell
+cpu0: unknown Enhanced SpeedStep CPU, msr 0x0612092506000925
+cpu0: using only highest and lowest power states
+cpu0: Enhanced SpeedStep 1800 MHz (1292 mV): speeds: 1800, 1200 MHz
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 Intel GM965 Host rev 0x0c
+ppb0 at pci0 dev 1 function 0 Intel GM965 PCIE rev 0x0c: apic 1 int 16 (irq 5)
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor NVIDIA, unknown product 0x0427 rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+agp0 at vga1: no integrated graphics
+uhci0 at pci0 dev 26 function 0 Intel 82801H USB rev 0x03: apic 1 int 16 (irq 5)
+uhci1 at pci0 dev 26 function 1 Intel 82801H USB rev 0x03: apic 1 int 21 (irq 11)
+ehci0 at pci0 dev 26 function 7 Intel 82801H USB rev 0x03: apic 1 int 18 (irq 10)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 Intel 82801H HD Audio rev 0x03: apic 1 int 22 (irq 10)
+azalia0: codec[s]: Realtek/0x0268
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 Intel 82801H PCIE rev 0x03: apic 1 int 17 (irq 11)
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 Intel 82801H PCIE rev 0x03: apic 1 int 16 (irq 5)
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 3 Intel 82801H PCIE rev 0x03: apic 1 int 19 (irq 11)
+pci4 at ppb3 bus 6
+wpi0 at pci4 dev 0 function 0 Intel PRO/Wireless 3945ABG rev 0x02: apic 1 int 19 (irq 11), MoW2, address xx:xx:xx:xx:xx:xx
+ppb4 at pci0 dev 28 function 4 Intel 82801H PCIE rev 0x03: apic 1 int 17 (irq 11)
+pci5 at ppb4 bus 7
+re0 at pci5 dev 0 function 0 Realtek 8168 rev 0x02: RTL8168C (0x3c00), apic 1 int 16 (irq 5), address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 2
+uhci2 at pci0 dev 29 function 0 Intel 82801H USB rev 0x03: apic 1 int 23 (irq 10)
+uhci3 at pci0 dev 29 function 1 Intel 82801H USB rev 0x03: apic 1 int 19 (irq 11)
+uhci4 at pci0 dev 29 function 2 Intel 82801H USB rev 0x03: apic 1 int 18 (irq 10)
+ehci1 at pci0 dev 29 function 7 Intel 82801H USB rev 0x03: apic 1 int 23 (irq 10)
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0xf3
+pci6 at ppb5 bus 8
+O2 Micro Firewire rev 0x02 at pci6 dev 5 function 0 not configured
+sdhc0 at pci6 dev 5 function 2 O2 Micro OZ711MP1 SDHC rev 0x02: apic 1 int 22 (irq 10)
+sdmmc0 at sdhc0
+O2 Micro OZ711MP1 XDHC rev 0x01 at pci6 dev 5 function 3 not configured
+pcib0 at pci0 dev 31 function 0 Intel 82801HBM LPC rev 0x03
+pciide0 at pci0 dev 31 function 1 Intel 82801HBM IDE rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;TEAC, DVD+-RW DVW28SLC, A.06&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+ahci0 at pci0 dev 31 function 2 Intel 82801HBM AHCI rev 0x03: apic 1 int 18 (irq 10), AHCI 1.1
+ahci0: PHY offline on port 1
+ahci0: PHY offline on port 2
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, SAMSUNG HM160HI, HH10&gt; SCSI3 0/direct fixed
+sd0: 152627MB, 19457 cyl, 255 head, 63 sec, 512 bytes/sec, 312581808 sec total
+ichiic0 at pci0 dev 31 function 3 Intel 82801H SMBus rev 0x03: apic 1 int 18 (irq 10)
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+spdmem1 at iic0 addr 0x52: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+ugen0 at uhub0 port 3 SONiX Technology Inc Integrated Webcam rev 2.00/83.04 addr 2
+softraid0 at root
+root on sd0a swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

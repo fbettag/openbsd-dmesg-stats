@@ -1,0 +1,272 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-10-19 13:11:10</em><br />
+<strong>From:</strong> <em>Ypnose</em><br />
+<strong>Description:</strong> <em>Dell Studio 1537 (OpenBSD)</em><br />
+
+<pre>
+OpenBSD 5.5 (RAMDISK_CD) #237: Wed Mar  5 09:43:42 MST 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4240130048 (4043MB)
+avail mem = 4122300416 (3931MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0xf0fd0 (51 entries)
+bios0: vendor Dell Inc. version &quot;A11&quot; date 04/14/2011
+bios0: Dell Inc. Studio 1537
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET MCFG APIC BOOT SLIC OSFR SSDT SSDT SSDT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T6400 @ 2.00GHz, 1995.56 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG,LAHF,PERF
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: apic clock running at 289MHz
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P2)
+acpiprt2 at acpi0: bus 9 (P0P1)
+acpiprt3 at acpi0: bus 2 (RP01)
+acpiprt4 at acpi0: bus 4 (RP02)
+acpiprt5 at acpi0: bus -1 (RP03)
+acpiprt6 at acpi0: bus 6 (RP04)
+acpiprt7 at acpi0: bus 8 (RP06)
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel GM45 Host&quot; rev 0x07
+ppb0 at pci0 dev 1 function 0 &quot;Intel GM45 PCIE&quot; rev 0x07: msi
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;ATI Mobility Radeon HD 3400&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+&quot;ATI Radeon HD 34xx HD Audio&quot; rev 0x00 at pci1 dev 0 function 1 not configured
+uhci0 at pci0 dev 26 function 0 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 16
+uhci1 at pci0 dev 26 function 1 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 21
+uhci2 at pci0 dev 26 function 2 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 19
+ehci0 at pci0 dev 26 function 7 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 82801I HD Audio&quot; rev 0x03 at pci0 dev 27 function 0 not configured
+ppb1 at pci0 dev 28 function 0 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 1 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci3 at ppb2 bus 4
+&quot;Broadcom BCM4315&quot; rev 0x01 at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 28 function 3 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci4 at ppb3 bus 6
+ppb4 at pci0 dev 28 function 5 &quot;Intel 82801I PCIE&quot; rev 0x03: msi
+pci5 at ppb4 bus 8
+bge0 at pci5 dev 0 function 0 &quot;Broadcom BCM5784&quot; rev 0x10, BCM5784 A1 (0x5784100): msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5784 10/100/1000baseT PHY, rev. 4
+uhci3 at pci0 dev 29 function 0 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 23
+uhci4 at pci0 dev 29 function 1 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 19
+uhci5 at pci0 dev 29 function 2 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 18
+ehci1 at pci0 dev 29 function 7 &quot;Intel 82801I USB&quot; rev 0x03: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0x93
+pci6 at ppb5 bus 9
+&quot;Ricoh 5C832 Firewire&quot; rev 0x05 at pci6 dev 1 function 0 not configured
+sdhc0 at pci6 dev 1 function 1 &quot;Ricoh 5C822 SD/MMC&quot; rev 0x22: apic 2 int 18
+sdmmc0 at sdhc0
+&quot;Ricoh 5C843 MMC&quot; rev 0x12 at pci6 dev 1 function 2 not configured
+&quot;Ricoh 5C592 Memory Stick&quot; rev 0x12 at pci6 dev 1 function 3 not configured
+&quot;Ricoh 5C852 xD&quot; rev 0x12 at pci6 dev 1 function 4 not configured
+&quot;Intel 82801IBM LPC&quot; rev 0x03 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801I AHCI&quot; rev 0x03: msi, AHCI 1.2
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, Hitachi HTS54323, FB4O&gt; SCSI3 0/direct fixed naa.5000cca55de02932
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+cd0 at scsibus0 targ 1 lun 0: &lt;HL-DT-ST, DVD+-RW GA10N, A102&gt; ATAPI 5/cdrom removable
+&quot;Intel 82801I SMBus&quot; rev 0x03 at pci0 dev 31 function 3 not configured
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+&quot;SONiX Technology Inc. Laptop_Integrated_Webcam_2M&quot; rev 2.00/82.29 addr 2 at uhub0 port 6 not configured
+umass0 at uhub1 port 3 configuration 1 interface 0 &quot;SMI Corporation USB DISK&quot; rev 2.00/11.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;, , 1100&gt; SCSI0 0/direct removable serial.090c1000000360007317
+sd1: 1947MB, 512 bytes/sector, 3987456 sectors
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

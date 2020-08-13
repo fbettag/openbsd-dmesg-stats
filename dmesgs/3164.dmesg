@@ -1,0 +1,219 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-04-13 18:30:26</em><br />
+<strong>From:</strong> <em>janus</em><br />
+<strong>Description:</strong> <em>Ubiquity Networks EdgeRouter Lite </em><br />
+
+<pre>
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2017 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.1 (GENERIC.MP) #0: Mon Apr  3 08:08:00 UTC 2017
+    visa@octeon:/usr/src/sys/arch/octeon/compile/GENERIC.MP
+real mem = 536870912 (512MB)
+avail mem = 524189696 (499MB)
+warning: no entropy supplied by boot loader
+mainbus0 at root
+cpu0 at mainbus0: CN50xx CPU rev 0.1 500 MHz, Software FP emulation
+cpu0: cache L1-I 32KB 4 way D 8KB 64 way, L2 128KB 8 way
+cpu1 at mainbus0: CN50xx CPU rev 0.1 500 MHz, Software FP emulation
+cpu1: cache L1-I 32KB 4 way D 8KB 64 way, L2 128KB 8 way
+clock0 at mainbus0: int 5
+iobus0 at mainbus0
+dwctwo0 at iobus0 base 0x1180068000000 irq 56
+usb0 at dwctwo0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Octeon DWC2 root hub&quot; rev 2.00/1.00 addr 1
+octrng0 at iobus0 base 0x1400000000000 irq 0
+cn30xxgmx0 at iobus0 base 0x1180008000000
+cnmac0 at cn30xxgmx0: RGMII, address xx:xx:xx:xx:xx:xx
+atphy0 at cnmac0 phy 7: AR8035 10/100/1000 PHY, rev. 2
+cnmac1 at cn30xxgmx0: RGMII, address xx:xx:xx:xx:xx:xx
+atphy1 at cnmac1 phy 6: AR8035 10/100/1000 PHY, rev. 2
+cnmac2 at cn30xxgmx0: RGMII, address xx:xx:xx:xx:xx:xx
+atphy2 at cnmac2 phy 5: AR8035 10/100/1000 PHY, rev. 2
+uartbus0 at mainbus0
+com0 at uartbus0 base 0x1180000000800 irq 34: ns16550a, 64 byte fifo
+com0: console
+com1 at uartbus0 base 0x1180000000c00 irq 35: ns16550a, 64 byte fifo
+/dev/ksyms: Symbol table not valid.
+umass0 at uhub0 port 1 configuration 1 interface 0 &quot;Kingston DataTraveler SE9&quot; rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;Kingston, DataTraveler SE9, PMAP&gt; SCSI0 0/direct removable serial.09511689000000069E
+sd0: 7596MB, 512 bytes/sector, 15556608 sectors
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+boot device: sd0
+root on sd0a (a6b1a946e7ac8673.a) swap on sd0b dump on sd0b
+WARNING: No TOD clock, believing file system.
+WARNING: CHECK AND RESET THE DATE!
+cpu1 launched
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

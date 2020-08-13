@@ -1,0 +1,259 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-06-25 14:48:30</em><br />
+<strong>From:</strong> <em>dj3mc</em><br />
+<strong>Description:</strong> <em>DELL C800</em><br />
+
+<pre>
+OpenBSD 3.5 (MYKERNEL) #0: Mon May  3 19:39:43 CEST 2004
+    xxx@xxx.xxx:/sys/arch/i386/compile/MYKERNEL
+cpu0: Intel Pentium III (&quot;GenuineIntel&quot; 686-class) 848 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE
+real mem  = 536367104 (523796K)
+avail mem = 493924352 (482348K)
+using 4278 buffers containing 26923008 bytes (26292K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(00) BIOS, date 03/03/03, BIOS32 rev. 0 @ 0xffe90
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0000/0x10000
+pcibios0: PCI IRQ Routing Table rev. 1.0 @ 0xfbc20/192 (10 entries)
+pcibios0: PCI Interrupt Router at 000:31:0 (&quot;Intel 82371 ISA and IDE&quot; rev 0x00)
+pcibios0: PCI bus #4 is the last bus
+bios0: ROM list: 0xc0000/0x10000
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82815 Hub&quot; rev 0x02: rng active, 7Kb/sec
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82815 AGP&quot; rev 0x02
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;ATI Rage 128 Mobility MF&quot; rev 0x00
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0x02
+pci2 at ppb1 bus 2
+esa0 at pci2 dev 3 function 0 &quot;ESS Maestro 3&quot; rev 0x10: irq 5
+ac97: codec id 0x83847609 (SigmaTel STAC9721/23)
+ac97: codec features 18 bit DAC, 18 bit ADC, SigmaTel 3D
+audio0 at esa0
+xl0 at pci2 dev 6 function 0 &quot;3Com 3c556 100Base-TX&quot; rev 0x10: irq 10 address xx:xx:xx:xx:xx:xx
+ukphy0 at xl0 phy 0: Generic IEEE 802.3u media interface
+ukphy0: OUI 0x00c000, model 0x0000, rev. 0
+&quot;3Com Mini-PCI V.90 Modem&quot; rev 0x10 at pci2 dev 6 function 1 not configured
+cbb0 at pci2 dev 15 function 0 &quot;Texas Instruments PCI4451 CardBus&quot; rev 0x00: irq 10
+cbb1 at pci2 dev 15 function 1 &quot;Texas Instruments PCI4451 CardBus&quot; rev 0x00: irq 10
+fwohci0 at pci2 dev 15 function 2 &quot;Texas Instruments PCI4451 FireWire&quot; rev 0x00: irq 10
+fwohci0: OHCI 1.0, xx:xx:xx:xx:xx:xx:84:10, 400Mb/s, 2048 max_rec, 4 iso_ctx
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x8, lattimer 0x20
+pcmcia0 at cardslot0
+cardslot1 at cbb1 slot 1 flags 0
+cardbus1 at cardslot1: bus 4 device 0 cacheline 0x8, lattimer 0x20
+pcmcia1 at cardslot1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801BAM LPC&quot; rev 0x02
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801BAM IDE&quot; rev 0x02: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;IC25N040ATCS05-0&gt;
+wd0: 16-sector PIO, LBA, 38154MB, 78140160 sectors
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;TEAC, CD-224E, 3.7C&gt; SCSI0 5/cdrom removable
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+cd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+uhci0 at pci0 dev 31 function 2 &quot;Intel 82801BA USB&quot; rev 0x02: irq 10
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+biomask 4440 netmask 4440 ttymask 54c2
+pctr: 686-class user-level performance counters enabled
+mtrr: Pentium Pro MTRR support
+dkcsum: wd0 matched BIOS disk 80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+fw at fwohci0 not configured
+uhidev0 at uhub0 port 2 configuration 1 interface 0
+uhidev0: Microsoft Microsoft Notebook/Mobile Optical Mouse 2.0, rev 1.10/2.00, addr 2, iclass 3/1
+ums0 at uhidev0: 3 buttons and Z dir.
+wsmouse1 at ums0 mux 0
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

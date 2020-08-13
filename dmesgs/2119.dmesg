@@ -1,0 +1,296 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-05-19 19:38:11</em><br />
+<strong>From:</strong> <em>Dave Anderson</em><br />
+<strong>Description:</strong> <em>compaq presario cq62-410us notebook</em><br />
+
+<pre>
+OpenBSD 4.9-current (GENERIC) #65: Fri Apr 29 16:17:01 MDT 2011
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+RTC BIOS diagnostic error 80&lt;clock_battery&gt;
+cpu0: Intel(R) Celeron(R) CPU 900 @ 2.20GHz (GenuineIntel 686-class) 2.20 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,SBF,SSE3,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,XSAVE
+real mem  = 2074058752 (1977MB)
+avail mem = 2029977600 (1935MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 11/07/10, SMBIOS rev. 2.6 @ 0xe8220 (28 entries)
+bios0: vendor Hewlett-Packard version F.26 date 11/07/2010
+bios0: Hewlett-Packard Presario CQ62 Notebook PC
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG ASF! SLIC BOOT SSDT SSDT
+acpi0: wakeup devices LANC(S4) P32_(S0) KBC_(S3) MOUE(S3) UHC0(S3) EHC1(S3) UHC3(S3) UHC4(S3) EHC2(S3) EXP2(S5) PXSX(S5) EXP6(S0) PXSX(S0)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 199MHz
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 4
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEGP)
+acpiprt2 at acpi0: bus 4 (P32_)
+acpiprt3 at acpi0: bus 2 (EXP1)
+acpiprt4 at acpi0: bus 3 (EXP2)
+acpiprt5 at acpi0: bus -1 (EXP3)
+acpiprt6 at acpi0: bus -1 (EXP4)
+acpiprt7 at acpi0: bus -1 (EXP5)
+acpiprt8 at acpi0: bus -1 (EXP6)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2, C1
+acpitz0 at acpi0acpitz0: TZ01: failed to read _CRT
+: no critical temperature defined
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 not present
+acpivideo0 at acpi0: OVGA
+acpivout0 at acpivideo0: DD03
+acpivideo1 at acpi0: VGA_
+bios0: ROM list: 0xc0000/0xfc00! 0xd0000/0x2c00!
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 Intel GM45 Host rev 0x07
+vga1 at pci0 dev 2 function 0 Intel GM45 Video rev 0x07
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0x80000000, size 0x10000000
+inteldrm0 at vga1: apic 4 int 16
+drm0 at inteldrm0
+Intel GM45 Video rev 0x07 at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 Intel 82801I USB rev 0x03: apic 4 int 16
+uhci1 at pci0 dev 26 function 1 Intel 82801I USB rev 0x03: apic 4 int 21
+ehci0 at pci0 dev 26 function 7 Intel 82801I USB rev 0x03: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 Intel 82801I HD Audio rev 0x03: apic 4 int 22
+azalia0: codecs: Realtek/0x0270
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 Intel 82801I PCIE rev 0x03: apic 4 int 17
+pci1 at ppb0 bus 2
+vendor Realtek, unknown product 0x8171 (class network subclass miscellaneous, rev 0x10) at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 28 function 1 Intel 82801I PCIE rev 0x03: apic 4 int 16
+pci2 at ppb1 bus 3
+re0 at pci2 dev 0 function 0 Realtek 8101E rev 0x02: RTL8102EL (0x2480), apic 4 int 17, address xx:xx:xx:xx:xx:xx
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+uhci2 at pci0 dev 29 function 0 Intel 82801I USB rev 0x03: apic 4 int 20
+uhci3 at pci0 dev 29 function 1 Intel 82801I USB rev 0x03: apic 4 int 19
+uhci4 at pci0 dev 29 function 2 Intel 82801I USB rev 0x03: apic 4 int 16
+uhci5 at pci0 dev 29 function 3 Intel 82801I USB rev 0x03: apic 4 int 18
+ehci1 at pci0 dev 29 function 7 Intel 82801I USB rev 0x03: apic 4 int 20
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0x93
+pci3 at ppb2 bus 4
+pcib0 at pci0 dev 31 function 0 Intel 82801IBM LPC rev 0x03
+ahci0 at pci0 dev 31 function 2 Intel 82801I AHCI rev 0x03: apic 4 int 19, AHCI 1.2
+ahci0: PHY offline on port 4
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, Hitachi HTS72502, PC2O&gt; SCSI3 0/direct fixed naa.5000cca5b8ea4599
+sd0: 238475MB, 512 bytes/sec, 488397168 sec total
+cd0 at scsibus0 targ 1 lun 0: &lt;hp, DVD RW AD-7701H, 2.86&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 Intel 82801I SMBus rev 0x03: apic 4 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+Intel 82801I Thermal rev 0x03 at pci0 dev 31 function 6 not configured
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+umass0 at uhub1 port 1 configuration 1 interface 0 HP v125w rev 2.00/40.96 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;hp, v125w, 4096&gt; SCSI0 0/direct removable serial.03f03307104A00000902
+sd1: 3864MB, 512 bytes/sec, 7913472 sec total
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+root on sd1a (b49dd4ca234422c3.a) swap on sd1b dump on sd1b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

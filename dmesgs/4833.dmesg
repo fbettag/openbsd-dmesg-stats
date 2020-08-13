@@ -1,0 +1,324 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-03-24 14:06:21</em><br />
+<strong>From:</strong> <em> 18oct99</em><br />
+<strong>Description:</strong> <em>Lenovo Thinkpad X131e -  (BCM43228 not working yet, shows in lspci)</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC.MP) #8: Thu Mar 21 14:26:24 CET 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8094179328 (7719MB)
+avail mem = 7839588352 (7476MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xdecf3000 (38 entries)
+bios0: vendor LENOVO version &quot;G9ET90WW (2.50 )&quot; date 12/24/2012
+bios0: LENOVO 33717LU
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC HPET APIC MCFG SBST FPDT UEFI UEFI MSDM SSDT SSDT UEFI DBG2
+acpi0: wakeup devices _SB_(S3) PB4_(S4) PB5_(S4) PB6_(S4) PB7_(S4) XHC0(S3) OHC1(S3) OHC2(S3) EHC2(S3) OHC3(S3) EHC3(S3) OHC4(S3) SBAZ(S4) GEC_(S4) P2P_(S5) SPB0(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpihpet0 at acpi0: 14318180 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD E2-1800 APU with Radeon(tm) HD Graphics, 1697.38 MHz, 14-02-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD E2-1800 APU with Radeon(tm) HD Graphics, 1696.91 MHz, 14-02-00
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu1: 8 4MB entries fully associative
+cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 21, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PB4_)
+acpiprt2 at acpi0: bus 2 (PB5_)
+acpiprt3 at acpi0: bus 3 (PB6_)
+acpiprt4 at acpi0: bus 4 (PB7_)
+acpiprt5 at acpi0: bus 5 (P2P_)
+acpiprt6 at acpi0: bus -1 (SPB0)
+acpiprt7 at acpi0: bus -1 (SPB1)
+acpiprt8 at acpi0: bus -1 (SPB2)
+acpiprt9 at acpi0: bus -1 (SPB3)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C2(0@100 io@0x841), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@100 io@0x841), C1(@1 halt!), PSS
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+acpithinkpad0 at acpi0
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model &quot;45N1063&quot; serial  6011 type LION oem &quot;LGC&quot;
+acpibtn2 at acpi0: LID_
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VGA_
+acpivideo1 at acpi0: VGA_
+cpu0: 1697 MHz: speeds: 1700 1360 850 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD AMD64 14h Host&quot; rev 0x00
+radeondrm0 at pci0 dev 1 function 0 &quot;ATI Radeon HD 7340&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+azalia0 at pci0 dev 1 function 1 &quot;ATI Radeon HD 6310 HD Audio&quot; rev 0x00: msi
+azalia0: no supported codecs
+ppb0 at pci0 dev 5 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00: msi
+pci1 at ppb0 bus 2
+vendor &quot;Broadcom&quot;, unknown product 0x4359 (class network subclass miscellaneous, rev 0x00) at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 6 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 3
+re0 at pci2 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x07: RTL8168E/8111E-VL (0x2c80), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 5
+ppb2 at pci0 dev 7 function 0 &quot;AMD AMD64 14h PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 4
+rtsx0 at pci3 dev 0 function 0 &quot;Realtek RTS5209 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit, dma
+xhci0 at pci0 dev 16 function 0 &quot;AMD Hudson-2 xHCI&quot; rev 0x03: msi, xHCI 0.150
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+ahci0 at pci0 dev 17 function 0 &quot;AMD Hudson-2 SATA&quot; rev 0x00: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, M4-CT512M4SSD2, 070H&gt; SCSI3 0/direct fixed naa.500a0751091df643
+sd0: 488386MB, 512 bytes/sector, 1000215216 sectors, thin
+ohci0 at pci0 dev 18 function 0 &quot;AMD Hudson-2 USB&quot; rev 0x11: apic 2 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 &quot;AMD Hudson-2 USB2&quot; rev 0x11: apic 2 int 17
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 &quot;AMD Hudson-2 USB&quot; rev 0x11: apic 2 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 &quot;AMD Hudson-2 USB2&quot; rev 0x11: apic 2 int 17
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;AMD EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;AMD Hudson-2 SMBus&quot; rev 0x14: polling
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+azalia1 at pci0 dev 20 function 2 &quot;AMD Hudson-2 HD Audio&quot; rev 0x01: apic 2 int 16
+azalia1: codecs: Realtek ALC269
+audio0 at azalia1
+pcib0 at pci0 dev 20 function 3 &quot;AMD Hudson-2 LPC&quot; rev 0x11
+ppb3 at pci0 dev 20 function 4 &quot;AMD Hudson-2 PCI&quot; rev 0x40
+pci4 at ppb3 bus 5
+ohci2 at pci0 dev 20 function 5 &quot;AMD Hudson-2 USB&quot; rev 0x11: apic 2 int 18, version 1.0, legacy support
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 14h Link Cfg&quot; rev 0x43
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 14h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 14h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 14h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 14h CPU Power&quot; rev 0x00
+pchb5 at pci0 dev 24 function 5 &quot;AMD AMD64 14h Reserved&quot; rev 0x00
+pchb6 at pci0 dev 24 function 6 &quot;AMD AMD64 14h NB Power&quot; rev 0x00
+pchb7 at pci0 dev 24 function 7 &quot;AMD AMD64 14h Reserved&quot; rev 0x00
+usb3 at ohci0: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;AMD OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci1: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;AMD OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.0, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb5 at ohci2: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;AMD OHCI root hub&quot; rev 1.00/1.00 addr 1
+efifb at mainbus0 not configured
+uvideo0 at uhub2 port 4 configuration 1 interface 0 &quot;Vimicro corp. Integrated Camera&quot; rev 2.00/0.05 addr 2
+video0 at uvideo0
+ugen0 at uhub4 port 3 &quot;Broadcom Corp BCM20702A0&quot; rev 2.00/1.12 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd1 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd1: 488385MB, 512 bytes/sector, 1000213601 sectors
+root on sd1a (21c5397442706409.a) swap on sd1b dump on sd1b
+initializing kernel modesetting (PALM 0x1002:0x9808 0x17AA:0x21FD).
+radeondrm0: 1366x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+chrome[12020]: pledge &quot;flock&quot;, syscall 92
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

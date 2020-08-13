@@ -1,0 +1,983 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-09-08 15:36:28</em><br />
+<strong>From:</strong> <em>Dettus</em><br />
+<strong>Description:</strong> <em>Xeon Numbercruncher, 128GByte Ram, 7TB hard drive</em><br />
+
+<pre>
+OpenBSD 6.1 (RAMDISK_CD) #19: Sat Apr  1 13:49:18 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 137334185984 (130972MB)
+avail mem = 133168283648 (126999MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xcb374000 (80 entries)
+bios0: vendor Hewlett-Packard version &quot;M60 v02.34&quot; date 05/18/2017
+bios0: Hewlett-Packard HP Z440 Workstation
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP TCPA SSDT SSDT UEFI BDAT WSMT HPET APIC MCFG WDDT SSDT NITR ASF! BGRT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.67 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 3392673760 Hz
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec01000, version 20, 24 pins
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpiprt0 at acpi0: bus 255 (UNC0)
+acpiprt1 at acpi0: bus 0 (PCI0)
+acpiprt2 at acpi0: bus 1 (BR1A)
+acpiprt3 at acpi0: bus -1 (BR1B)
+acpiprt4 at acpi0: bus 2 (BR2A)
+acpiprt5 at acpi0: bus -1 (BR2B)
+acpiprt6 at acpi0: bus -1 (BR2C)
+acpiprt7 at acpi0: bus -1 (BR2D)
+acpiprt8 at acpi0: bus 3 (BR3A)
+acpiprt9 at acpi0: bus -1 (BR3B)
+acpiprt10 at acpi0: bus -1 (BR3C)
+acpiprt11 at acpi0: bus -1 (BR3D)
+acpiprt12 at acpi0: bus 4 (RP01)
+acpiprt13 at acpi0: bus 5 (RP02)
+acpiprt14 at acpi0: bus -1 (RP03)
+acpiprt15 at acpi0: bus 6 (RP04)
+acpiprt16 at acpi0: bus 8 (RP05)
+acpiprt17 at acpi0: bus -1 (RP06)
+acpiprt18 at acpi0: bus -1 (RP07)
+acpiprt19 at acpi0: bus -1 (RP08)
+acpiprt20 at acpi0: bus -1 (QRP0)
+acpiprt21 at acpi0: bus 1 (QR1A)
+acpiprt22 at acpi0: bus -1 (QR1B)
+acpiprt23 at acpi0: bus 2 (QR2A)
+acpiprt24 at acpi0: bus -1 (QR2B)
+acpiprt25 at acpi0: bus -1 (QR2C)
+acpiprt26 at acpi0: bus -1 (QR2D)
+acpiprt27 at acpi0: bus 3 (QR3A)
+acpiprt28 at acpi0: bus -1 (QR3B)
+acpiprt29 at acpi0: bus -1 (QR3C)
+acpiprt30 at acpi0: bus -1 (QR3D)
+acpicpu at acpi0 not configured
+&quot;ACPI0004&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+&quot;PNP0003&quot; at acpi0 not configured
+&quot;PNP0F03&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;IFX0102&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Xeon-D Host&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 2 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci2 at ppb1 bus 2
+2:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1c82 (class display subclass VGA, rev 0xa1) at pci2 dev 0 function 0 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0fb9 (class multimedia subclass hdaudio, rev 0xa1) at pci2 dev 0 function 1 not configured
+ppb2 at pci0 dev 3 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci3 at ppb2 bus 3
+&quot;Intel Xeon-D Address Map&quot; rev 0x01 at pci0 dev 5 function 0 not configured
+&quot;Intel Xeon-D Hot Plug&quot; rev 0x01 at pci0 dev 5 function 1 not configured
+&quot;Intel Xeon-D RAS&quot; rev 0x01 at pci0 dev 5 function 2 not configured
+&quot;Intel Xeon-D I/O APIC&quot; rev 0x01 at pci0 dev 5 function 4 not configured
+&quot;Intel C610 MS SPSR&quot; rev 0x05 at pci0 dev 17 function 0 not configured
+ahci0 at pci0 dev 17 function 4 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+ahci0: port 2: 6.0Gb/s
+ahci0: port 3: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, MTFDDAK1T0TBN-1A, HPC&gt; SCSI3 0/direct fixed naa.500a075115b16ed5
+sd0: 976762MB, 512 bytes/sector, 2000409264 sectors, thin
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9d0e
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd2 at scsibus0 targ 2 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9f2b
+sd2: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd3 at scsibus0 targ 3 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd7b7f
+sd3: 1907729MB, 512 bytes/sector, 3907029168 sectors
+xhci0 at pci0 dev 20 function 0 &quot;Intel C610 xHCI&quot; rev 0x05: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel C610 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x8d3d (class communications subclass serial, rev 0x05) at pci0 dev 22 function 3 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x05: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel C610 HD Audio&quot; rev 0x05 at pci0 dev 27 function 0 not configured
+ppb3 at pci0 dev 28 function 0 &quot;Intel C610 PCIE&quot; rev 0xd5
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 1 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 28 function 3 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci6 at ppb5 bus 6
+ppb6 at pci6 dev 0 function 0 &quot;ITExpress IT8893E PCIE-PCI&quot; rev 0x52
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 28 function 4 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci8 at ppb7 bus 8
+ehci1 at pci0 dev 29 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel C610 LPC&quot; rev 0x05 at pci0 dev 31 function 0 not configured
+ahci1 at pci0 dev 31 function 2 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+scsibus1 at ahci1: 32 targets
+&quot;Intel C610 SMBus&quot; rev 0x05 at pci0 dev 31 function 3 not configured
+pci9 at mainbus0 bus 255
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 0 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 1 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 2 not configured
+&quot;Intel Xeon-D QPI Debug&quot; rev 0x01 at pci9 dev 11 function 3 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 0 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 2 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 3 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 4 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe6 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe7 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 7 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 0 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 15 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 4 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 5 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 6 not configured
+&quot;Intel Xeon-D PCIE&quot; rev 0x01 at pci9 dev 16 function 0 not configured
+&quot;Intel E5 v4 R2PCIe Agent&quot; rev 0x01 at pci9 dev 16 function 1 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 5 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 6 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 7 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 0 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 3 not configured
+&quot;Intel E5 v4 RAS&quot; rev 0x01 at pci9 dev 22 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 7 not configured
+&quot;Intel E5 v4 Thermal&quot; rev 0x01 at pci9 dev 23 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 4 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 5 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 7 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 1 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 2 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 3 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 4 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 2 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1024x768, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+uhidev0 at uhub0 port 5 configuration 1 interface 0 &quot;vendor 0x046a product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub0 port 5 configuration 1 interface 1 &quot;vendor 0x046a product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev1: iclass 3/0, 2 report ids
+uhid at uhidev1 reportid 1 not configured
+uhid at uhidev1 reportid 2 not configured
+umass0 at uhub0 port 11 configuration 1 interface 0 &quot;Generic USB Storage&quot; rev 2.00/2.72 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd4 at scsibus2 targ 1 lun 0: &lt;Generic, STORAGE DEVICE, 0272&gt; SCSI0 0/direct removable serial.05e30736000000000272
+sd4: 3796MB, 512 bytes/sector, 7774208 sectors
+uhub3 at uhub0 port 13 configuration 1 interface 0 &quot;vendor 0x0451 product 0x8142&quot; rev 2.10/1.00 addr 4
+uhub4 at uhub0 port 19 configuration 1 interface 0 &quot;vendor 0x0451 product 0x8140&quot; rev 3.00/1.00 addr 5
+uhub5 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x800a&quot; rev 2.00/0.05 addr 2
+uhub6 at uhub2 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x8002&quot; rev 2.00/0.05 addr 2
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+OpenBSD 6.1 (RAMDISK_CD) #19: Sat Apr  1 13:49:18 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 137334185984 (130972MB)
+avail mem = 133168283648 (126999MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xcb374000 (80 entries)
+bios0: vendor Hewlett-Packard version &quot;M60 v02.34&quot; date 05/18/2017
+bios0: Hewlett-Packard HP Z440 Workstation
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP TCPA SSDT SSDT UEFI BDAT WSMT HPET APIC MCFG WDDT SSDT NITR ASF! BGRT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.66 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 3392655880 Hz
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec01000, version 20, 24 pins
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpiprt0 at acpi0: bus 255 (UNC0)
+acpiprt1 at acpi0: bus 0 (PCI0)
+acpiprt2 at acpi0: bus 1 (BR1A)
+acpiprt3 at acpi0: bus -1 (BR1B)
+acpiprt4 at acpi0: bus 2 (BR2A)
+acpiprt5 at acpi0: bus -1 (BR2B)
+acpiprt6 at acpi0: bus -1 (BR2C)
+acpiprt7 at acpi0: bus -1 (BR2D)
+acpiprt8 at acpi0: bus 3 (BR3A)
+acpiprt9 at acpi0: bus -1 (BR3B)
+acpiprt10 at acpi0: bus -1 (BR3C)
+acpiprt11 at acpi0: bus -1 (BR3D)
+acpiprt12 at acpi0: bus 4 (RP01)
+acpiprt13 at acpi0: bus 5 (RP02)
+acpiprt14 at acpi0: bus -1 (RP03)
+acpiprt15 at acpi0: bus 6 (RP04)
+acpiprt16 at acpi0: bus 8 (RP05)
+acpiprt17 at acpi0: bus -1 (RP06)
+acpiprt18 at acpi0: bus -1 (RP07)
+acpiprt19 at acpi0: bus -1 (RP08)
+acpiprt20 at acpi0: bus -1 (QRP0)
+acpiprt21 at acpi0: bus 1 (QR1A)
+acpiprt22 at acpi0: bus -1 (QR1B)
+acpiprt23 at acpi0: bus 2 (QR2A)
+acpiprt24 at acpi0: bus -1 (QR2B)
+acpiprt25 at acpi0: bus -1 (QR2C)
+acpiprt26 at acpi0: bus -1 (QR2D)
+acpiprt27 at acpi0: bus 3 (QR3A)
+acpiprt28 at acpi0: bus -1 (QR3B)
+acpiprt29 at acpi0: bus -1 (QR3C)
+acpiprt30 at acpi0: bus -1 (QR3D)
+acpicpu at acpi0 not configured
+&quot;ACPI0004&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+&quot;PNP0003&quot; at acpi0 not configured
+&quot;PNP0F03&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;IFX0102&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Xeon-D Host&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 2 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci2 at ppb1 bus 2
+2:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x1c82 (class display subclass VGA, rev 0xa1) at pci2 dev 0 function 0 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0fb9 (class multimedia subclass hdaudio, rev 0xa1) at pci2 dev 0 function 1 not configured
+ppb2 at pci0 dev 3 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci3 at ppb2 bus 3
+&quot;Intel Xeon-D Address Map&quot; rev 0x01 at pci0 dev 5 function 0 not configured
+&quot;Intel Xeon-D Hot Plug&quot; rev 0x01 at pci0 dev 5 function 1 not configured
+&quot;Intel Xeon-D RAS&quot; rev 0x01 at pci0 dev 5 function 2 not configured
+&quot;Intel Xeon-D I/O APIC&quot; rev 0x01 at pci0 dev 5 function 4 not configured
+&quot;Intel C610 MS SPSR&quot; rev 0x05 at pci0 dev 17 function 0 not configured
+ahci0 at pci0 dev 17 function 4 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+ahci0: port 2: 6.0Gb/s
+ahci0: port 3: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, MTFDDAK1T0TBN-1A, HPC&gt; SCSI3 0/direct fixed naa.500a075115b16ed5
+sd0: 976762MB, 512 bytes/sector, 2000409264 sectors, thin
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9d0e
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd2 at scsibus0 targ 2 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9f2b
+sd2: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd3 at scsibus0 targ 3 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd7b7f
+sd3: 1907729MB, 512 bytes/sector, 3907029168 sectors
+xhci0 at pci0 dev 20 function 0 &quot;Intel C610 xHCI&quot; rev 0x05: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel C610 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x8d3d (class communications subclass serial, rev 0x05) at pci0 dev 22 function 3 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x05: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel C610 HD Audio&quot; rev 0x05 at pci0 dev 27 function 0 not configured
+ppb3 at pci0 dev 28 function 0 &quot;Intel C610 PCIE&quot; rev 0xd5
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 1 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 28 function 3 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci6 at ppb5 bus 6
+ppb6 at pci6 dev 0 function 0 &quot;ITExpress IT8893E PCIE-PCI&quot; rev 0x52
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 28 function 4 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci8 at ppb7 bus 8
+ehci1 at pci0 dev 29 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel C610 LPC&quot; rev 0x05 at pci0 dev 31 function 0 not configured
+ahci1 at pci0 dev 31 function 2 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+scsibus1 at ahci1: 32 targets
+&quot;Intel C610 SMBus&quot; rev 0x05 at pci0 dev 31 function 3 not configured
+pci9 at mainbus0 bus 255
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 0 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 1 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 2 not configured
+&quot;Intel Xeon-D QPI Debug&quot; rev 0x01 at pci9 dev 11 function 3 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 0 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 2 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 3 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 4 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe6 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe7 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 7 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 0 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 15 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 4 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 5 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 6 not configured
+&quot;Intel Xeon-D PCIE&quot; rev 0x01 at pci9 dev 16 function 0 not configured
+&quot;Intel E5 v4 R2PCIe Agent&quot; rev 0x01 at pci9 dev 16 function 1 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 5 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 6 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 7 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 0 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 3 not configured
+&quot;Intel E5 v4 RAS&quot; rev 0x01 at pci9 dev 22 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 7 not configured
+&quot;Intel E5 v4 Thermal&quot; rev 0x01 at pci9 dev 23 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 4 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 5 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 7 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 1 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 2 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 3 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 4 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 2 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1024x768, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+uhidev0 at uhub0 port 5 configuration 1 interface 0 &quot;vendor 0x046a product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub0 port 5 configuration 1 interface 1 &quot;vendor 0x046a product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev1: iclass 3/0, 2 report ids
+uhid at uhidev1 reportid 1 not configured
+uhid at uhidev1 reportid 2 not configured
+umass0 at uhub0 port 11 configuration 1 interface 0 &quot;Generic USB Storage&quot; rev 2.00/2.72 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd4 at scsibus2 targ 1 lun 0: &lt;Generic, STORAGE DEVICE, 0272&gt; SCSI0 0/direct removable serial.05e30736000000000272
+sd4: 3796MB, 512 bytes/sector, 7774208 sectors
+uhub3 at uhub0 port 13 configuration 1 interface 0 &quot;vendor 0x0451 product 0x8142&quot; rev 2.10/1.00 addr 4
+uhub4 at uhub0 port 19 configuration 1 interface 0 &quot;vendor 0x0451 product 0x8140&quot; rev 3.00/1.00 addr 5
+uhub5 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x800a&quot; rev 2.00/0.05 addr 2
+uhub6 at uhub2 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x8002&quot; rev 2.00/0.05 addr 2
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+syncing disks... 
+OpenBSD 6.1 (GENERIC.MP) #20: Sat Apr  1 13:45:56 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 137334185984 (130972MB)
+avail mem = 133167357952 (126998MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xcb374000 (80 entries)
+bios0: vendor Hewlett-Packard version &quot;M60 v02.34&quot; date 05/18/2017
+bios0: Hewlett-Packard HP Z440 Workstation
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP TCPA SSDT SSDT UEFI BDAT WSMT HPET APIC MCFG WDDT SSDT NITR ASF! BGRT
+acpi0: wakeup devices PWRB(S4) BR1A(S4) BR1B(S4) BR2A(S4) BR3A(S4) XHCI(S3) GBEM(S4) EHC2(S3) RP01(S4) RP02(S4) RP03(S4) RP04(S4) RP05(S4) RP06(S4) RP07(S4) RP08(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.66 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 3392661880 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 8 (application processor)
+cpu4: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 0, core 4, package 0
+cpu5 at mainbus0: apid 10 (application processor)
+cpu5: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 0, core 5, package 0
+cpu6 at mainbus0: apid 12 (application processor)
+cpu6: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 0, core 6, package 0
+cpu7 at mainbus0: apid 14 (application processor)
+cpu7: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 0, core 7, package 0
+cpu8 at mainbus0: apid 1 (application processor)
+cpu8: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu8: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu8: 256KB 64b/line 8-way L2 cache
+cpu8: smt 1, core 0, package 0
+cpu9 at mainbus0: apid 3 (application processor)
+cpu9: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu9: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu9: 256KB 64b/line 8-way L2 cache
+cpu9: smt 1, core 1, package 0
+cpu10 at mainbus0: apid 5 (application processor)
+cpu10: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu10: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu10: 256KB 64b/line 8-way L2 cache
+cpu10: smt 1, core 2, package 0
+cpu11 at mainbus0: apid 7 (application processor)
+cpu11: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu11: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu11: 256KB 64b/line 8-way L2 cache
+cpu11: smt 1, core 3, package 0
+cpu12 at mainbus0: apid 9 (application processor)
+cpu12: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu12: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu12: 256KB 64b/line 8-way L2 cache
+cpu12: smt 1, core 4, package 0
+cpu13 at mainbus0: apid 11 (application processor)
+cpu13: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu13: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu13: 256KB 64b/line 8-way L2 cache
+cpu13: smt 1, core 5, package 0
+cpu14 at mainbus0: apid 13 (application processor)
+cpu14: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu14: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu14: 256KB 64b/line 8-way L2 cache
+cpu14: smt 1, core 6, package 0
+cpu15 at mainbus0: apid 15 (application processor)
+cpu15: Intel(R) Xeon(R) CPU E5-1680 v4 @ 3.40GHz, 3392.14 MHz
+cpu15: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,BMI1,HLE,AVX2,SMEP,BMI2,ERMS,INVPCID,RTM,PQM,RDSEED,ADX,SMAP,PT,SENSOR,ARAT
+cpu15: 256KB 64b/line 8-way L2 cache
+cpu15: smt 1, core 7, package 0
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 9 pa 0xfec01000, version 20, 24 pins
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpimadt0: unknown apic structure type 7f
+acpimcfg0 at acpi0 addr 0xd0000000, bus 0-255
+acpiprt0 at acpi0: bus 255 (UNC0)
+acpiprt1 at acpi0: bus 0 (PCI0)
+acpiprt2 at acpi0: bus 1 (BR1A)
+acpiprt3 at acpi0: bus -1 (BR1B)
+acpiprt4 at acpi0: bus 2 (BR2A)
+acpiprt5 at acpi0: bus -1 (BR2B)
+acpiprt6 at acpi0: bus -1 (BR2C)
+acpiprt7 at acpi0: bus -1 (BR2D)
+acpiprt8 at acpi0: bus 3 (BR3A)
+acpiprt9 at acpi0: bus -1 (BR3B)
+acpiprt10 at acpi0: bus -1 (BR3C)
+acpiprt11 at acpi0: bus -1 (BR3D)
+acpiprt12 at acpi0: bus 4 (RP01)
+acpiprt13 at acpi0: bus 5 (RP02)
+acpiprt14 at acpi0: bus -1 (RP03)
+acpiprt15 at acpi0: bus 6 (RP04)
+acpiprt16 at acpi0: bus 8 (RP05)
+acpiprt17 at acpi0: bus -1 (RP06)
+acpiprt18 at acpi0: bus -1 (RP07)
+acpiprt19 at acpi0: bus -1 (RP08)
+acpiprt20 at acpi0: bus -1 (QRP0)
+acpiprt21 at acpi0: bus 1 (QR1A)
+acpiprt22 at acpi0: bus -1 (QR1B)
+acpiprt23 at acpi0: bus 2 (QR2A)
+acpiprt24 at acpi0: bus -1 (QR2B)
+acpiprt25 at acpi0: bus -1 (QR2C)
+acpiprt26 at acpi0: bus -1 (QR2D)
+acpiprt27 at acpi0: bus 3 (QR3A)
+acpiprt28 at acpi0: bus -1 (QR3B)
+acpiprt29 at acpi0: bus -1 (QR3C)
+acpiprt30 at acpi0: bus -1 (QR3D)
+acpicpu0 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu4 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu5 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu6 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu7 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu8 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu9 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu10 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu11 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu12 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu13 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu14 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+acpicpu15 at acpi0: C2(350@41 mwait.3@0x20), C1(1000@1 mwait.1), PSS
+&quot;ACPI0004&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+&quot;PNP0003&quot; at acpi0 not configured
+&quot;PNP0F03&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+tpm0 at acpi0: TPM_ addr 0xfed40000/0x5000: device 0x001a15d1 rev 0x10
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+cpu0: Enhanced SpeedStep 3392 MHz: speeds: 3401, 3400, 3200, 3100, 2900, 2800, 2600, 2500, 2300, 2100, 2000, 1800, 1700, 1500, 1400, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Xeon-D Host&quot; rev 0x01
+ppb0 at pci0 dev 1 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 2 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci2 at ppb1 bus 2
+2:0:0: mem address conflict 0xfff80000/0x80000
+vga1 at pci2 dev 0 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x1c82 rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+azalia0 at pci2 dev 0 function 1 vendor &quot;NVIDIA&quot;, unknown product 0x0fb9 rev 0xa1: msi
+azalia0: no supported codecs
+ppb2 at pci0 dev 3 function 0 &quot;Intel Xeon-D PCIE&quot; rev 0x01: msi
+pci3 at ppb2 bus 3
+&quot;Intel Xeon-D Address Map&quot; rev 0x01 at pci0 dev 5 function 0 not configured
+&quot;Intel Xeon-D Hot Plug&quot; rev 0x01 at pci0 dev 5 function 1 not configured
+&quot;Intel Xeon-D RAS&quot; rev 0x01 at pci0 dev 5 function 2 not configured
+&quot;Intel Xeon-D I/O APIC&quot; rev 0x01 at pci0 dev 5 function 4 not configured
+&quot;Intel C610 MS SPSR&quot; rev 0x05 at pci0 dev 17 function 0 not configured
+ahci0 at pci0 dev 17 function 4 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+ahci0: port 2: 6.0Gb/s
+ahci0: port 3: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, MTFDDAK1T0TBN-1A, HPC&gt; SCSI3 0/direct fixed naa.500a075115b16ed5
+sd0: 976762MB, 512 bytes/sector, 2000409264 sectors, thin
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9d0e
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd2 at scsibus1 targ 2 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd9f2b
+sd2: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd3 at scsibus1 targ 3 lun 0: &lt;ATA, ST2000DM001-1ER1, HP51&gt; SCSI3 0/direct fixed naa.5000c500a3cd7b7f
+sd3: 1907729MB, 512 bytes/sector, 3907029168 sectors
+xhci0 at pci0 dev 20 function 0 &quot;Intel C610 xHCI&quot; rev 0x05: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel C610 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x8d3d (class communications subclass serial, rev 0x05) at pci0 dev 22 function 3 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x05: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia1 at pci0 dev 27 function 0 &quot;Intel C610 HD Audio&quot; rev 0x05: msi
+azalia1: codecs: Realtek ALC221
+audio0 at azalia1
+ppb3 at pci0 dev 28 function 0 &quot;Intel C610 PCIE&quot; rev 0xd5
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 1 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 28 function 3 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci6 at ppb5 bus 6
+ppb6 at pci6 dev 0 function 0 &quot;ITExpress IT8893E PCIE-PCI&quot; rev 0x52
+pci7 at ppb6 bus 7
+ppb7 at pci0 dev 28 function 4 &quot;Intel C610 PCIE&quot; rev 0xd5: msi
+pci8 at ppb7 bus 8
+ehci1 at pci0 dev 29 function 0 &quot;Intel C610 USB&quot; rev 0x05: apic 8 int 18
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel C610 LPC&quot; rev 0x05
+ahci1 at pci0 dev 31 function 2 &quot;Intel C610 AHCI&quot; rev 0x05: msi, AHCI 1.3
+scsibus2 at ahci1: 32 targets
+ichiic0 at pci0 dev 31 function 3 &quot;Intel C610 SMBus&quot; rev 0x05: apic 8 int 18
+iic0 at ichiic0
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+pci9 at mainbus0 bus 255
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 0 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 1 not configured
+&quot;Intel Xeon-D QPI Link&quot; rev 0x01 at pci9 dev 11 function 2 not configured
+&quot;Intel Xeon-D QPI Debug&quot; rev 0x01 at pci9 dev 11 function 3 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 0 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 2 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 12 function 3 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 4 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 12 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe6 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x6fe7 (class system subclass miscellaneous, rev 0x01) at pci9 dev 12 function 7 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 0 not configured
+&quot;Intel E5 v4 Cache&quot; rev 0x01 at pci9 dev 15 function 1 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 4 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 5 not configured
+&quot;Intel Xeon-D Cache&quot; rev 0x01 at pci9 dev 15 function 6 not configured
+&quot;Intel Xeon-D PCIE&quot; rev 0x01 at pci9 dev 16 function 0 not configured
+&quot;Intel E5 v4 R2PCIe Agent&quot; rev 0x01 at pci9 dev 16 function 1 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 5 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 6 not configured
+&quot;Intel Xeon-D Ubox&quot; rev 0x01 at pci9 dev 16 function 7 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 0 not configured
+&quot;Intel Xeon-D Home Agent&quot; rev 0x01 at pci9 dev 18 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 19 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 3 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 4 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 5 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 6 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 20 function 7 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 0 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 1 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 2 not configured
+&quot;Intel Xeon-D Memory&quot; rev 0x01 at pci9 dev 21 function 3 not configured
+&quot;Intel E5 v4 RAS&quot; rev 0x01 at pci9 dev 22 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 22 function 7 not configured
+&quot;Intel E5 v4 Thermal&quot; rev 0x01 at pci9 dev 23 function 0 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 4 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 5 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 6 not configured
+&quot;Intel E5 v4 DDRIO&quot; rev 0x01 at pci9 dev 23 function 7 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 1 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 2 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 3 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 30 function 4 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 0 not configured
+&quot;Intel Xeon-D PCU&quot; rev 0x01 at pci9 dev 31 function 2 not configured
+uhidev0 at uhub0 port 5 configuration 1 interface 0 &quot;Cherry Mikroschalter product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub0 port 5 configuration 1 interface 1 &quot;Cherry Mikroschalter product 0x0023&quot; rev 2.00/2.20 addr 2
+uhidev1: iclass 3/0, 2 report ids
+uhid0 at uhidev1 reportid 1: input=2, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhub3 at uhub0 port 13 configuration 1 interface 0 &quot;Texas Instruments product 0x8142&quot; rev 2.10/1.00 addr 3
+uhub4 at uhub0 port 19 configuration 1 interface 0 &quot;Texas Instruments product 0x8140&quot; rev 3.00/1.00 addr 4
+uhub5 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.05 addr 2
+uhub6 at uhub2 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.05 addr 2
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (3eb14cf29c49a408.a) swap on sd0b dump on sd0b
+sd4 at scsibus4 targ 1 lun 0: &lt;OPENBSD, SR RAID 5, 006&gt; SCSI2 0/direct fixed
+sd4: 3815452MB, 512 bytes/sector, 7814046720 sectors
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

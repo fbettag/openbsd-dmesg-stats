@@ -1,0 +1,174 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-05-19 19:15:34</em><br />
+<strong>From:</strong> <em>Dave Anderson</em><br />
+<strong>Description:</strong> <em>hp dv5-2231nr notebook</em><br />
+
+<pre>
+OpenBSD 4.9-current (GENERIC) #23: Wed Apr 13 01:44:45 MDT 2011    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERICcpu0: Intel(R) Core(TM) i3 CPU M 380 @ 2.53GHz (GenuineIntel 686-class) 2.53 GHzcpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNTreal mem  = 2606579712 (2485MB)avail mem = 2553798656 (2435MB)mainbus0 at rootbios0 at mainbus0: AT/286+ BIOS, date 12/27/10, SMBIOS rev. 2.6 @ 0xe9000 (30 entries)bios0: vendor Hewlett-Packard version F.25 date 12/27/2010bios0: Hewlett-Packard HP Pavilion dv5 Notebook PCacpi0 at bios0: rev 2acpi0: sleep states S0 S3 S4 S5acpi0: tables DSDT FACP ASF! HPET APIC MCFG SLIC SSDT SSDT BOOT SSDT SSDT ASPT SSDTacpi0: wakeup devices P0P2(S4) PEGP(S4) P0P1(S0) EHC1(S3) USB1(S4) USB2(S4) USB3(S4) USB4(S4) EHC2(S4) USB5(S4) USB6(S4) USB7(S4) HDEF(S0) PXSX(S4) NIC_(S5) PXSX(S4) RP03(S0) PXSX(S4) RP04(S0) PXSX(S4) RP05(S0) PXSX(S4) RP06(S0) PXSX(S4) RP07(S0) PXSX(S4) RP08(S0) PEG3(S4) PEGP(S4) PEG5(S4) PEG6(S4) PWRB(S4)acpitimer0 at acpi0: 3579545 Hz, 24 bitsacpihpet0 at acpi0: 14318179 Hzacpimadt0 at acpi0 addr 0xfee00000: PC-AT compatcpu0 at mainbus0: apid 0 (boot processor)cpu0: apic clock running at 132MHzcpu at mainbus0: not configuredcpu at mainbus0: not configuredcpu at mainbus0: not configuredioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pinsioapic0: misconfigured as apic 0, remapped to apid 2acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255acpiprt0 at acpi0: bus 0 (PCI0)acpiprt1 at acpi0: bus -1 (P0P2)acpiprt2 at acpi0: bus 3 (P0P1)acpiprt3 at acpi0: bus 1 (RP01)acpiprt4 at acpi0: bus 2 (RP02)acpiprt5 at acpi0: bus -1 (RP03)acpiprt6 at acpi0: bus -1 (RP04)acpiprt7 at acpi0: bus -1 (RP05)acpiprt8 at acpi0: bus -1 (RP06)acpiprt9 at acpi0: bus -1 (RP07)acpiprt10 at acpi0: bus -1 (RP08)acpiprt11 at acpi0: bus -1 (PEG3)acpiprt12 at acpi0: bus -1 (PEG5)acpiec0 at acpi0acpicpu0 at acpi0: C3, C1, PSSacpipwrres0 at acpi0: FN00acpitz0 at acpi0: critical temperature 110 degCacpitz1 at acpi0: critical temperature 127 degCacpitz2 at acpi0acpitz2: TZ02: failed to read _TMPacpibtn0 at acpi0: LID0acpibtn1 at acpi0: PWRBacpibat0 at acpi0: BAT0 not presentacpibat1 at acpi0: BAT1 not presentacpiac0 at acpi0: AC unit onlineacpivideo0 at acpi0: GFX0acpivout0 at acpivideo0: DD02bios0: ROM list: 0xc0000/0xf000 0xcf000/0x2c00!cpu0: Enhanced SpeedStep 2528 MHz: speeds: 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199, 1066, 933 MHzpci0 at mainbus0 bus 0: configuration mode 1 (bios)pchb0 at pci0 dev 0 function 0 Intel Core Host rev 0x02vga1 at pci0 dev 2 function 0 Intel Mobile HD graphics rev 0x02wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)wsdisplay0: screen 1-5 added (80x25, vt100 emulation)intagp0 at vga1agp0 at intagp0: aperture at 0xa0000000, size 0x10000000inteldrm0 at vga1: apic 2 int 16 (irq 5)drm0 at inteldrm0Intel 3400 MEI rev 0x06 at pci0 dev 22 function 0 not configuredehci0 at pci0 dev 26 function 0 Intel 3400 USB rev 0x05: apic 2 int 16 (irq 5)usb0 at ehci0: USB revision 2.0uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1azalia0 at pci0 dev 27 function 0 Intel 3400 HD Audio rev 0x05: apic 2 int 22 (irq 11)azalia0: codecs: IDT 92HD81B1X, Intel/0x2804, using IDT 92HD81B1Xaudio0 at azalia0ppb0 at pci0 dev 28 function 0 Intel 3400 PCIE rev 0x05: apic 2 int 17 (irq 255)pci1 at ppb0 bus 1re0 at pci1 dev 0 function 0 Realtek 8168 rev 0x03: RTL8168D/8111D (0x2800), apic 2 int 16 (irq 5), address xx:xx:xx:xx:xx:xxrgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 2ppb1 at pci0 dev 28 function 1 Intel 3400 PCIE rev 0x05: apic 2 int 16 (irq 255)pci2 at ppb1 bus 2iwn0 at pci2 dev 0 function 0 Intel WiFi Link 1000 rev 0x00: apic 2 int 17 (irq 10), MIMO 1T2R, BGS, address xx:xx:xx:xx:xx:xxehci1 at pci0 dev 29 function 0 Intel 3400 USB rev 0x05: apic 2 int 20 (irq 11)usb1 at ehci1: USB revision 2.0uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1ppb2 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0xa5pci3 at ppb2 bus 3pcib0 at pci0 dev 31 function 0 Intel HM55 LPC rev 0x05ahci0 at pci0 dev 31 function 2 Intel 3400 AHCI rev 0x05: apic 2 int 19 (irq 5), AHCI 1.3scsibus0 at ahci0: 32 targetssd0 at scsibus0 targ 0 lun 0: &lt;ATA, Hitachi HTS54503, PB3O&gt; SCSI3 0/direct fixed naa.5000cca627ed166esd0: 305245MB, 512 bytes/sec, 625142448 sec totalcd0 at scsibus0 targ 1 lun 0: &lt;hp, CDDVDW TS-L633R, 0300&gt; ATAPI 5/cdrom removableichiic0 at pci0 dev 31 function 3 Intel 3400 SMBus rev 0x05: apic 2 int 19 (irq 10)iic0 at ichiic0iic0: addr 0x18 00=00 01=02 02=05 03=05 04=04 05=21 06=00 07=21 08=01 09=60 0a=a1 0b=29 0c=00 0d=00 words 00=00ef 01=020c 02=0588 03=0588 04=04e8 05=21bc 06=0054 07=2101iic0: addr 0x1a 00=00 01=02 02=05 03=05 04=04 05=21 06=00 07=21 08=01 09=60 0a=a2 0b=25 0c=00 0d=00 words 00=00ef 01=020c 02=0588 03=0588 04=04e8 05=21b8 06=0054 07=2101lisa0 at iic0 addr 0x1d: lis331dlspdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM with thermal sensorspdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600 SO-DIMM with thermal sensoritherm0 at pci0 dev 31 function 6 Intel 3400 Thermal rev 0x05isa0 at pcib0isadma0 at isa0pckbc0 at isa0 port 0x60/5pckbd0 at pckbc0 (kbd slot)pckbc0: using irq 1 for kbd slotwskbd0 at pckbd0: console keyboard, using wsdisplay0pms0 at pckbc0 (aux slot)pckbc0: using irq 12 for aux slotwsmouse0 at pms0 mux 0pcppi0 at isa0 port 0x61spkr0 at pcppi0npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16mtrr: Pentium Pro MTRR supportuhub2 at uhub0 port 1 Intel Rate Matching Hub rev 2.00/0.00 addr 2umass0 at uhub2 port 2 configuration 1 interface 0 HP v125w rev 2.00/40.96 addr 3umass0: using SCSI over Bulk-Onlyscsibus1 at umass0: 2 targets, initiator 0sd1 at scsibus1 targ 1 lun 0: &lt;hp, v125w, 4096&gt; SCSI0 0/direct removable serial.AA12104A00000902sd1: 3864MB, 512 bytes/sec, 7913472 sec totaluhub3 at uhub1 port 1 Intel Rate Matching Hub rev 2.00/0.00 addr 2uvideo0 at uhub3 port 6 configuration 1 interface 0 Importek HP Webcam rev 2.00/66.08 addr 3video0 at uvideo0vscsi0 at rootscsibus2 at vscsi0: 256 targetssoftraid0 at rootroot on sd1a swap on sd1b dump on sd1b--=_=_=--
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

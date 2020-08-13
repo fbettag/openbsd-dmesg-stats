@@ -1,0 +1,286 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-02-01 20:42:27</em><br />
+<strong>From:</strong> <em>petrus</em><br />
+<strong>Description:</strong> <em>Cisco ACE 4710</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC.MP) #6: Sat Jan 26 20:37:44 CET 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 6425608192 (6127MB)
+avail mem = 6221598720 (5933MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.3 @ 0xfb2d0 (37 entries)
+bios0: vendor American Megatrends Inc. version &quot;S27S1A05&quot; date 03/19/2008
+bios0: Quanta Computer Inc. S27S
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB
+acpi0: wakeup devices P0P2(S4) P0P3(S4) P0P1(S4) USB0(S4) USB1(S4) USB2(S4) USB3(S4) EUSB(S4) MC97(S4) P0P4(S4) P0P5(S4) P0P6(S4) P0P7(S4) P0P8(S4) P0P9(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Pentium(R) 4 CPU 3.40GHz, 3400.64 MHz, 0f-06-05
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,CNXT-ID,CX16,xTPR,PDCM,NXE,LONG,LAHF,MELTDOWN
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Pentium(R) 4 CPU 3.40GHz, 3400.13 MHz, 0f-06-05
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,EST,TM2,CNXT-ID,CX16,xTPR,PDCM,NXE,LONG,LAHF,MELTDOWN
+cpu1: 2MB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus 4 (P0P4)
+acpiprt3 at acpi0: bus 5 (PXHA)
+acpiprt4 at acpi0: bus 3 (P0P8)
+acpiprt5 at acpi0: bus 2 (P0P9)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel E7230 Host&quot; rev 0xc0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci1 at ppb0 bus 4
+ppb1 at pci1 dev 0 function 0 &quot;Intel 6702PXH PCIE-PCIX&quot; rev 0x09
+pci2 at ppb1 bus 5
+ppb2 at pci2 dev 2 function 0 &quot;Pericom PI7C21P100 PCIX-PCIX&quot; rev 0x01
+pci3 at ppb2 bus 6
+em0 at pci3 dev 4 function 0 &quot;Intel 82546GB&quot; rev 0x03: apic 2 int 19, address xx:xx:xx:xx:xx:xx
+em1 at pci3 dev 4 function 1 &quot;Intel 82546GB&quot; rev 0x03: apic 2 int 18, address xx:xx:xx:xx:xx:xx
+em2 at pci3 dev 6 function 0 &quot;Intel 82546GB&quot; rev 0x03: apic 2 int 17, address xx:xx:xx:xx:xx:xx
+em3 at pci3 dev 6 function 1 &quot;Intel 82546GB&quot; rev 0x03: apic 2 int 16, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 4 &quot;Intel 82801G PCIE&quot; rev 0x01: msi
+pci4 at ppb3 bus 3
+bge0 at pci4 dev 0 function 0 &quot;Broadcom BCM5721&quot; rev 0x21, BCM5750 C1 (0x4201): msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb4 at pci0 dev 28 function 5 &quot;Intel 82801G PCIE&quot; rev 0x01
+pci5 at ppb4 bus 2
+bge1 at pci5 dev 0 function 0 &quot;Broadcom BCM5721&quot; rev 0x21, BCM5750 C1 (0x4201): msi, address xx:xx:xx:xx:xx:xx
+brgphy1 at bge1 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xe1
+pci6 at ppb5 bus 1
+vga1 at pci6 dev 5 function 0 &quot;XGI Technology Volari Z7&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801GB LPC&quot; rev 0x01
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 1: &lt;SMART CF&gt;
+wd0: 2-sector PIO, LBA, 3907MB, 8003520 sectors
+wd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 31 function 2 &quot;Intel 82801GB SATA&quot; rev 0x01: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 2 int 19 for native-PCI interrupt
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x01: apic 2 int 19
+iic0 at ichiic0
+adt0 at iic0 addr 0x2e: lm96000 rev 0x68
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM ECC PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 2GB DDR2 SDRAM ECC PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 1GB DDR2 SDRAM ECC PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 2GB DDR2 SDRAM ECC PC2-5300CL5
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (f2b1c8c26785e724.a) swap on wd0b dump on wd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

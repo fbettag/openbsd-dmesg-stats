@@ -1,0 +1,1034 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-09-11 18:21:46</em><br />
+<strong>From:</strong> <em>Ben.Bai</em><br />
+<strong>Description:</strong> <em>Rented Root Server - AMD Opteron based</em><br />
+
+<pre>
+OpenBSD 6.1-current (GENERIC.MP) #49: Thu May  4 00:32:34 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17129209856 (16335MB)
+avail mem = 16604286976 (15835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) SBAZ(S4) PS2K(S3) P0PC(S4) AC97(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.50 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700497370 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: 2700 MHz: speeds: 2700 2000 1500 800 MHz
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x14: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB600 ISA&quot; rev 0x00
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627DHG rev 0x23
+lm1 at wbsio0 port 0xa10/8: W83627DHG
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+softraid0: sd2 was not shutdown properly
+sd2 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+softraid0: sd3 was not shutdown properly
+sd3 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on sd0a (14bf82c64d9b673b.a) swap on sd0b dump on sd0b
+WARNING: / was not properly unmounted
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+syncing disks... 
+OpenBSD 6.1-current (GENERIC.MP) #53: Wed May 10 19:00:28 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17129209856 (16335MB)
+avail mem = 16604286976 (15835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) SBAZ(S4) PS2K(S3) P0PC(S4) AC97(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.48 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700481700 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: 2700 MHz: speeds: 2700 2000 1500 800 MHz
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x14: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB600 ISA&quot; rev 0x00
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627DHG rev 0x23
+lm1 at wbsio0 port 0xa10/8: W83627DHG
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd2 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+sd3 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on sd0a (14bf82c64d9b673b.a) swap on sd0b dump on sd0b
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+syncing disks... 
+OpenBSD 6.1-current (GENERIC.MP) #53: Wed May 10 19:00:28 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17129209856 (16335MB)
+avail mem = 16604286976 (15835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) SBAZ(S4) PS2K(S3) P0PC(S4) AC97(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.47 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700470060 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Quad-Core AMD Opteron(tm) Processor 1385, 2700.11 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: 2700 MHz: speeds: 2700 2000 1500 800 MHz
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x14: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB600 ISA&quot; rev 0x00
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627DHG rev 0x23
+lm1 at wbsio0 port 0xa10/8: W83627DHG
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd2 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+sd3 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on sd0a (14bf82c64d9b673b.a) swap on sd0b dump on sd0b
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+syncing disks... 
+OpenBSD 6.1-current (RAMDISK_CD) #91: Mon Jul 17 16:57:40 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 17129209856 (16335MB)
+avail mem = 16606330880 (15837MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.52 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700518450 Hz
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+wsdisplay1 at vga1 mux 1: console (80x25, vt100 emulation)
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;ATI SBx00 SMBus&quot; rev 0x14 at pci0 dev 20 function 0 not configured
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+&quot;ATI SB600 ISA&quot; rev 0x00 at pci0 dev 20 function 3 not configured
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb5 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay1
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+sd2 at scsibus1 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+sd3 at scsibus1 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on rd0a swap on rd0b dump on rd0b
+syncing disks... 
+OpenBSD 6.1-current (GENERIC.MP) #99: Mon Jul 17 16:53:49 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17129209856 (16335MB)
+avail mem = 16604286976 (15835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) SBAZ(S4) PS2K(S3) P0PC(S4) AC97(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.43 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700434720 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: 2700 MHz: speeds: 2700 2000 1500 800 MHz
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x14: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB600 ISA&quot; rev 0x00
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627DHG rev 0x23
+lm1 at wbsio0 port 0xa10/8: W83627DHG
+vmm0 at mainbus0: SVM/RVI
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd2 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+sd3 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on sd0a (14bf82c64d9b673b.a) swap on sd0b dump on sd0b
+radeondrm0: 1024x768, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+syncing disks... 
+OpenBSD 6.1-current (GENERIC.MP) #99: Mon Jul 17 16:53:49 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 17129209856 (16335MB)
+avail mem = 16604286976 (15835MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0x9f400 (48 entries)
+bios0: vendor American Megatrends Inc. version &quot;080014&quot; date 03/25/2010
+bios0: MICRO-STAR INTERNATIONAL CO., LTD MS-96B3
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB HPET SSDT
+acpi0: wakeup devices PCE2(S4) PCE3(S4) PCE4(S4) PCE5(S4) PCE6(S4) PCE7(S4) SBAZ(S4) PS2K(S3) P0PC(S4) AC97(S4) MC97(S4) USB1(S3) USB2(S3) USB3(S3) USB4(S3) USB5(S3) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Quad-Core AMD Opteron(tm) Processor 1385, 2700.49 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 2700485940 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Quad-Core AMD Opteron(tm) Processor 1385, 2700.10 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus -1 (PCE3)
+acpiprt3 at acpi0: bus 2 (PCE4)
+acpiprt4 at acpi0: bus 3 (PCE5)
+acpiprt5 at acpi0: bus 4 (P0PC)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+cpu0: 2700 MHz: speeds: 2700 2000 1500 800 MHz
+pci0 at mainbus0 bus 0
+0:20:0: mem address conflict 0x8000a010/0x10
+pchb0 at pci0 dev 0 function 0 &quot;ATI RS690 Host&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 5 function 0 &quot;ATI Radeon X1250 IGP&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+ppb1 at pci0 dev 4 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 5 function 0 &quot;ATI RS690 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+ahci0 at pci0 dev 18 function 0 &quot;ATI SB600 SATA&quot; rev 0x00: apic 4 int 22, AHCI 1.1
+ahci0: port 0: 3.0Gb/s
+ahci0: port 1: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f29c28
+sd0: 1907729MB, 512 bytes/sector, 3907029168 sectors
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, Hitachi HDS72302, MN6O&gt; SCSI3 0/direct fixed naa.5000cca369f408cd
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+ohci0 at pci0 dev 19 function 0 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 16, version 1.0, legacy support
+ohci1 at pci0 dev 19 function 1 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci2 at pci0 dev 19 function 2 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ohci3 at pci0 dev 19 function 3 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 17, version 1.0, legacy support
+ohci4 at pci0 dev 19 function 4 &quot;ATI SB600 USB&quot; rev 0x00: apic 4 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 19 function 5 &quot;ATI SB600 USB2&quot; rev 0x00: apic 4 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x14: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem1 at iic0 addr 0x51: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem2 at iic0 addr 0x52: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+spdmem3 at iic0 addr 0x53: 4GB DDR2 SDRAM non-parity PC2-5300CL5
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB600 IDE&quot; rev 0x00: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB600 ISA&quot; rev 0x00
+ppb3 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x00
+pci4 at ppb3 bus 4
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at ohci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at ohci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci4: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x4e/2: W83627DHG rev 0x23
+lm1 at wbsio0 port 0xa10/8: W83627DHG
+vmm0 at mainbus0: SVM/RVI
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+splassert: usb_transfer_complete: want 5 have 6
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd2 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd2: 409602MB, 512 bytes/sector, 838865577 sectors
+sd3 at scsibus3 targ 2 lun 0: &lt;OPENBSD, SR RAID 1, 006&gt; SCSI2 0/direct fixed
+sd3: 409602MB, 512 bytes/sector, 838865520 sectors
+root on sd0a (14bf82c64d9b673b.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

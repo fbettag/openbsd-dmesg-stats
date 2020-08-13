@@ -1,0 +1,375 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2010-09-05 08:50:25</em><br />
+<strong>From:</strong> <em>Sevan / Venture37</em><br />
+<strong>Description:</strong> <em>Apple MacBook Pro 17 MacBookPro3,1</em><br />
+
+<pre>
+Copyright (c) 1992-2010 The FreeBSD Project.
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+	The Regents of the University of California. All rights reserved.
+FreeBSD is a registered trademark of The FreeBSD Foundation.
+FreeBSD 9.0-CURRENT-201008 #0: Tue Aug  3 20:09:44 UTC 2010
+    xxx@xxx.xxx:/usr/obj/usr/src/sys/GENERIC amd64
+WARNING: WITNESS option enabled, expect reduced performance.
+CPU: Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz (2394.06-MHz K8-class CPU)
+  Origin = GenuineIntel  Id = 0x6fa  Family = 6  Model = f  Stepping = 10
+  Features=0xbfebfbff&lt;FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CLFLUSH,DTS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE&gt;
+  Features2=0xe3bd&lt;SSE3,DTES64,MON,DS_CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM&gt;
+  AMD Features=0x20100800&lt;SYSCALL,NX,LM&gt;
+  AMD Features2=0x1&lt;LAHF&gt;
+  TSC: P-state invariant
+real memory  = 4294967296 (4096 MB)
+avail memory = 4078764032 (3889 MB)
+Event timer LAPIC frequency 0 Hz quality 500
+ACPI APIC Table: &lt;APPLE  Apple00&gt;
+FreeBSD/SMP: Multiprocessor System Detected: 2 CPUs
+FreeBSD/SMP: 1 package(s) x 2 core(s)
+ cpu0 (BSP): APIC ID:  0
+ cpu1 (AP): APIC ID:  1
+ioapic0: Changing APIC ID to 1
+ioapic0 &lt;Version 2.0&gt; irqs 0-23 on motherboard
+kbd0 at kbdmux0
+acpi0: &lt;APPLE Apple00&gt; on motherboard
+acpi0: [ITHREAD]
+acpi_ec0: &lt;Embedded Controller: GPE 0x17, ECDT&gt; port 0x62,0x66 on acpi0
+acpi0: Power Button (fixed)
+hpet0: &lt;High Precision Event Timer&gt; iomem 0xfed00000-0xfed003ff irq 0,8 on acpi0
+Timecounter HPET frequency 14318180 Hz quality 900
+hpet0: [FILTER]
+Event timer HPET frequency 14318180 Hz quality 450
+Event timer HPET1 frequency 14318180 Hz quality 440
+Event timer HPET2 frequency 14318180 Hz quality 440
+Timecounter ACPI-safe frequency 3579545 Hz quality 850
+acpi_timer0: &lt;24-bit timer at 3.579545MHz&gt; port 0x408-0x40b on acpi0
+cpu0: &lt;ACPI CPU&gt; on acpi0
+cpu1: &lt;ACPI CPU&gt; on acpi0
+acpi_acad0: &lt;AC Adapter&gt; on acpi0
+acpi_lid0: &lt;Control Method Lid Switch&gt; on acpi0
+acpi_button0: &lt;Power Button&gt; on acpi0
+acpi_button1: &lt;Sleep Button&gt; on acpi0
+pcib0: &lt;ACPI Host-PCI bridge&gt; port 0xcf8-0xcff on acpi0
+pci0: &lt;ACPI PCI bus&gt; on pcib0
+pcib1: &lt;ACPI PCI-PCI bridge&gt; at device 1.0 on pci0
+pci1: &lt;ACPI PCI bus&gt; on pcib1
+vgapci0: &lt;VGA-compatible display&gt; port 0x5000-0x507f mem 0xd2000000-0xd2ffffff,0xc0000000-0xcfffffff,0xd0000000-0xd1ffffff irq 16 at device 0.0 on pci1
+uhci0: &lt;Intel 82801H (ICH8) USB controller USB-D&gt; port 0x60c0-0x60df irq 20 at device 26.0 on pci0
+uhci0: [ITHREAD]
+usbus0: &lt;Intel 82801H (ICH8) USB controller USB-D&gt; on uhci0
+uhci1: &lt;Intel 82801H (ICH8) USB controller USB-E&gt; port 0x60a0-0x60bf irq 16 at device 26.1 on pci0
+uhci1: [ITHREAD]
+usbus1: &lt;Intel 82801H (ICH8) USB controller USB-E&gt; on uhci1
+ehci0: &lt;Intel 82801H (ICH8) USB 2.0 controller USB2-B&gt; mem 0xdb504c00-0xdb504fff irq 21 at device 26.7 on pci0
+ehci0: [ITHREAD]
+usbus2: EHCI version 1.0
+usbus2: &lt;Intel 82801H (ICH8) USB 2.0 controller USB2-B&gt; on ehci0
+pci0: &lt;multimedia, HDA&gt; at device 27.0 (no driver attached)
+pcib2: &lt;PCI-PCI bridge&gt; at device 28.0 on pci0
+pci2: &lt;PCI bus&gt; on pcib2
+pcib3: &lt;ACPI PCI-PCI bridge&gt; at device 28.2 on pci0
+pci3: &lt;ACPI PCI bus&gt; on pcib3
+pcib4: &lt;ACPI PCI-PCI bridge&gt; at device 28.4 on pci0
+pci11: &lt;ACPI PCI bus&gt; on pcib4
+ath0: &lt;Atheros 5416&gt; mem 0xd7300000-0xd730ffff irq 16 at device 0.0 on pci11
+ath0: [ITHREAD]
+ath0: AR5418 mac 12.10 RF5133 phy 8.1
+pcib5: &lt;ACPI PCI-PCI bridge&gt; at device 28.5 on pci0
+pci12: &lt;ACPI PCI bus&gt; on pcib5
+mskc0: &lt;Marvell Yukon 88E8058 Gigabit Ethernet&gt; port 0x3000-0x30ff mem 0xd7200000-0xd7203fff irq 17 at device 0.0 on pci12
+msk0: &lt;Marvell Technology Group Ltd. Yukon EC Ultra Id 0xb4 Rev 0x03&gt; on mskc0
+msk0: Ethernet address: xx:xx:xx:xx:xx:xx
+miibus0: &lt;MII bus&gt; on msk0
+e1000phy0: &lt;Marvell 88E1149 Gigabit PHY&gt; PHY 0 on miibus0
+e1000phy0:  10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+mskc0: [ITHREAD]
+uhci2: &lt;Intel 82801H (ICH8) USB controller USB-A&gt; port 0x6080-0x609f irq 16 at device 29.0 on pci0
+uhci2: [ITHREAD]
+uhci2: LegSup = 0x3000
+usbus3: &lt;Intel 82801H (ICH8) USB controller USB-A&gt; on uhci2
+uhci3: &lt;Intel 82801H (ICH8) USB controller USB-B&gt; port 0x6060-0x607f irq 18 at device 29.1 on pci0
+uhci3: [ITHREAD]
+usbus4: &lt;Intel 82801H (ICH8) USB controller USB-B&gt; on uhci3
+uhci4: &lt;Intel 82801H (ICH8) USB controller USB-C&gt; port 0x6040-0x605f irq 21 at device 29.2 on pci0
+uhci4: [ITHREAD]
+uhci4: LegSup = 0x3000
+usbus5: &lt;Intel 82801H (ICH8) USB controller USB-C&gt; on uhci4
+ehci1: &lt;Intel 82801H (ICH8) USB 2.0 controller USB2-A&gt; mem 0xdb504800-0xdb504bff irq 20 at device 29.7 on pci0
+ehci1: [ITHREAD]
+usbus6: EHCI version 1.0
+usbus6: &lt;Intel 82801H (ICH8) USB 2.0 controller USB2-A&gt; on ehci1
+pcib6: &lt;ACPI PCI-PCI bridge&gt; at device 30.0 on pci0
+pci13: &lt;ACPI PCI bus&gt; on pcib6
+fwohci0: &lt;Texas Instruments TSB82AA2&gt; mem 0xd7104000-0xd71047ff,0xd7100000-0xd7103fff at device 3.0 on pci13
+fwohci0: [ITHREAD]
+fwohci0: OHCI version 1.10 (ROM=0)
+fwohci0: No. of Isochronous channels is 4.
+fwohci0: EUI64 xx:xx:xx:xx:xx:xx:12:3c
+fwohci0: invalid speed 7 (fixed to 3).
+fwohci0: Phy 1394a available S800, 3 ports.
+fwohci0: Link S800, max_rec 4096 bytes.
+firewire0: &lt;IEEE1394(FireWire) bus&gt; on fwohci0
+fwe0: &lt;Ethernet over FireWire&gt; on firewire0
+if_fwe0: Fake Ethernet address: xx:xx:xx:xx:xx:xx
+fwe0: Ethernet address: xx:xx:xx:xx:xx:xx
+fwip0: &lt;IP over FireWire&gt; on firewire0
+fwip0: Firewire address: xx:xx:xx:xx:xx:xx:12:3c @ 0xfffe00000000, S800, maxrec 4096
+sbp0: &lt;SBP-2/SCSI over FireWire&gt; on firewire0
+dcons_crom0: &lt;dcons configuration ROM&gt; on firewire0
+dcons_crom0: bus_addr 0x10e8000
+fwohci0: Initiate bus reset
+fwohci0: fwohci_intr_core: BUS reset
+fwohci0: fwohci_intr_core: node_id=0x00000000, SelfID Count=1, CYCLEMASTER mode
+isab0: &lt;PCI-ISA bridge&gt; at device 31.0 on pci0
+isa0: &lt;ISA bus&gt; on isab0
+atapci0: &lt;Intel ICH8M UDMA100 controller&gt; port 0x1f0-0x1f7,0x3f6,0x170-0x177,0x376,0x60e0-0x60ef irq 21 at device 31.1 on pci0
+ata0: &lt;ATA channel 0&gt; on atapci0
+ata0: [ITHREAD]
+atapci1: &lt;Intel ICH8M SATA300 controller&gt; port 0x60f8-0x60ff,0x6114-0x6117,0x60f0-0x60f7,0x6110-0x6113,0x6020-0x602f,0x4000-0x400f irq 18 at device 31.2 on pci0
+atapci1: [ITHREAD]
+ata2: &lt;ATA channel 0&gt; on atapci1
+ata2: [ITHREAD]
+ata3: &lt;ATA channel 1&gt; on atapci1
+ata3: [ITHREAD]
+pci0: &lt;serial bus, SMBus&gt; at device 31.3 (no driver attached)
+battery0: &lt;ACPI Control Method Battery&gt; on acpi0
+atrtc0: &lt;AT realtime clock&gt; port 0x70-0x77 on acpi0
+atrtc0: Warning: Couldnt map I/O.
+atrtc0: [FILTER]
+Event timer RTC frequency 32768 Hz quality 0
+attimer0: &lt;AT timer&gt; port 0x40-0x43,0x50-0x53 on acpi0
+Timecounter i8254 frequency 1193182 Hz quality 0
+attimer0: [FILTER]
+Event timer i8254 frequency 1193182 Hz quality 100
+sc0: &lt;System console&gt; at flags 0x100 on isa0
+sc0: VGA &lt;16 virtual consoles, flags=0x300&gt;
+vga0: &lt;Generic ISA VGA&gt; at port 0x3c0-0x3df iomem 0xa0000-0xbffff on isa0
+ppc0: cannot reserve I/O port range
+est0: &lt;Enhanced SpeedStep Frequency Control&gt; on cpu0
+p4tcc0: &lt;CPU Frequency Thermal Control&gt; on cpu0
+est1: &lt;Enhanced SpeedStep Frequency Control&gt; on cpu1
+p4tcc1: &lt;CPU Frequency Thermal Control&gt; on cpu1
+Starting kernel event timers: LAPIC @ 1000Hz, HPET @ 127Hz
+Timecounters tick every 1.000 msec
+firewire0: 1 nodes, maxhop &lt;= 0 cable IRM irm(0)  (me) 
+firewire0: bus manager 0 
+fwohci0: phy int
+usbus0: 12Mbps Full Speed USB v1.0
+usbus1: 12Mbps Full Speed USB v1.0
+usbus2: 480Mbps High Speed USB v2.0
+usbus3: 12Mbps Full Speed USB v1.0
+usbus4: 12Mbps Full Speed USB v1.0
+usbus5: 12Mbps Full Speed USB v1.0
+usbus6: 480Mbps High Speed USB v2.0
+acd0: DVDR &lt;MATSHITADVD-R UJ-85J/FBZ8&gt; at ata0-master UDMA66 
+ugen0.1: &lt;Intel&gt; at usbus0
+uhub0: &lt;Intel UHCI root HUB, class 9/0, rev 1.00/1.00, addr 1&gt; on usbus0
+ugen1.1: &lt;Intel&gt; at usbus1
+uhub1: &lt;Intel UHCI root HUB, class 9/0, rev 1.00/1.00, addr 1&gt; on usbus1
+ugen2.1: &lt;Intel&gt; at usbus2
+uhub2: &lt;Intel EHCI root HUB, class 9/0, rev 2.00/1.00, addr 1&gt; on usbus2
+ugen3.1: &lt;Intel&gt; at usbus3
+uhub3: &lt;Intel UHCI root HUB, class 9/0, rev 1.00/1.00, addr 1&gt; on usbus3
+ugen4.1: &lt;Intel&gt; at usbus4
+uhub4: &lt;Intel UHCI root HUB, class 9/0, rev 1.00/1.00, addr 1&gt; on usbus4
+ugen5.1: &lt;Intel&gt; at usbus5
+uhub5: &lt;Intel UHCI root HUB, class 9/0, rev 1.00/1.00, addr 1&gt; on usbus5
+ugen6.1: &lt;Intel&gt; at usbus6
+uhub6: &lt;Intel EHCI root HUB, class 9/0, rev 2.00/1.00, addr 1&gt; on usbus6
+ad4: 152627MB &lt;FUJITSU MHW2160BHPL 0081001C&gt; at ata2-master UDMA100 SATA 1.5Gb/s
+uhub0: 2 ports with 2 removable, self powered
+uhub1: 2 ports with 2 removable, self powered
+uhub3: 2 ports with 2 removable, self powered
+uhub4: 2 ports with 2 removable, self powered
+uhub5: 2 ports with 2 removable, self powered
+GEOM: ad4p4: geometry does not match label (255h,63s != 16h,63s).
+GEOM: gpt/OPENBSD: geometry does not match label (255h,63s != 16h,63s).
+GEOM: gptid/aa8d8185-4521-4f42-8085-01d7969d6d7c: geometry does not match label (255h,63s != 16h,63s).
+uhub2: 4 ports with 4 removable, self powered
+uhub6: 6 ports with 6 removable, self powered
+ugen6.2: &lt;Apple Inc.&gt; at usbus6
+ugen1.2: &lt;Logitech&gt; at usbus1
+ugen0.2: &lt;vendor 0x05ac&gt; at usbus0
+ums1: &lt;Logitech USB Trackball, class 0/0, rev 1.10/14.00, addr 2&gt; on usbus1
+ukbd0: &lt;vendor 0x05ac product 0x1000, class 0/0, rev 2.00/19.65, addr 2&gt; on usbus0
+device_attach: ukbd0 attach returned 6
+ukbd0: &lt;vendor 0x05ac product 0x1000, class 0/0, rev 2.00/19.65, addr 2&gt; on usbus0
+device_attach: ukbd0 attach returned 6
+ums1: 5 buttons and [XY] coordinates ID=0
+SMP: AP CPU #1 Launched!
+WARNING: WITNESS option enabled, expect reduced performance.
+Trying to mount root from ufs:/dev/ad4p3a
+ugen5.2: &lt;Apple Computer, Inc.&gt; at usbus5
+uhid0: &lt;Apple Computer, Inc. IR Receiver, class 0/0, rev 2.00/0.16, addr 2&gt; on usbus5
+GEOM_PART: Partition ad4p3 not suitable for kernel dumps (wrong type?)
+ugen5.3: &lt;Apple Computer&gt; at usbus5
+ukbd0: &lt;Apple Internal Keyboard&gt; on usbus5
+kbd1 at ukbd0
+atp0: &lt;Touchpad&gt; on usbus5
+uhid1: &lt;Apple Internal Keyboard&gt; on usbus5
+wlan0: Ethernet address: xx:xx:xx:xx:xx:xx
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

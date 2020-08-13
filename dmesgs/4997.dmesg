@@ -1,0 +1,271 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-06-03 01:19:51</em><br />
+<strong>From:</strong> <em>Raka</em><br />
+<strong>Description:</strong> <em>Lenovo Flex 11 (6-11IGM)</em><br />
+
+<pre>
+OpenBSD 6.5 (RAMDISK_CD) #3: Sat Apr 13 14:55:38 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4091908096 (3902MB)
+avail mem = 3963916288 (3780MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.1 @ 0x75b27000 (43 entries)
+bios0: vendor LENOVO version &quot;6QCN46WW&quot; date 11/27/2018
+bios0: LENOVO 81A7
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP UEFI SSDT TPM2 BDAT HPET LPIT APIC MCFG NPKT PRAM WSMT SSDT SSDT SSDT BATB SSDT SSDT SSDT SSDT MSDM SSDT BERT FPDT BGRT DBGP DBG2 DMAR WDAT UEFI
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Celeron(R) N4000 CPU @ 1.10GHz, 4458.49 MHz, 06-7a-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SGX,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,UMIP,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+cpu0: 4MB 64b/line 16-way L2 cache
+cpu0: apic clock running at 78MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.2.4.2.1.1, IBE
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 120 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (RP01)
+acpiprt2 at acpi0: bus 2 (RP02)
+acpiprt3 at acpi0: bus -1 (RP03)
+acpiprt4 at acpi0: bus -1 (RP04)
+acpiprt5 at acpi0: bus -1 (RP05)
+acpiprt6 at acpi0: bus -1 (RP06)
+acpiec0 at acpi0
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0A08&quot; at acpi0 not configured
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;INT33D3&quot; at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;VPC2004&quot; at acpi0 not configured
+&quot;INT3453&quot; at acpi0 not configured
+&quot;SYNA7611&quot; at acpi0 not configured
+&quot;SYNA2B38&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;PNP0C0C&quot; at acpi0 not configured
+&quot;INT33D5&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT3453&quot; at acpi0 not configured
+&quot;INT33A1&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;INT3400&quot; at acpi0 not configured
+&quot;INT3403&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x31f0 rev 0x03
+vendor &quot;Intel&quot;, unknown product 0x318c (class DASP subclass miscellaneous, rev 0x03) at pci0 dev 0 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3190 (class system subclass miscellaneous, rev 0x03) at pci0 dev 0 function 3 not configured
+&quot;Intel UHD Graphics 600&quot; rev 0x03 at pci0 dev 2 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3198 (class multimedia subclass hdaudio, rev 0x03) at pci0 dev 14 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x319a (class communications subclass miscellaneous, rev 0x03) at pci0 dev 15 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x31a2 (class prehistoric unknown subclass 0x50, rev 0x03) at pci0 dev 17 function 0 not configured
+ahci0 at pci0 dev 18 function 0 vendor &quot;Intel&quot;, unknown product 0x31e3 rev 0x03: msi, AHCI 1.3.1
+ahci0: PHY offline on port 0
+scsibus0 at ahci0: 32 targets
+ppb0 at pci0 dev 20 function 0 vendor &quot;Intel&quot;, unknown product 0x31d6 rev 0xf3: msi
+pci1 at ppb0 bus 1
+sdhc0 at pci1 dev 0 function 0 &quot;O2 Micro 0Z8621 SD/MMC&quot; rev 0x01: apic 1 int 22
+sdhc0: SDHC 4.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+ppb1 at pci0 dev 20 function 1 vendor &quot;Intel&quot;, unknown product 0x31d7 rev 0xf3: msi
+pci2 at ppb1 bus 2
+vendor &quot;Atheros&quot;, unknown product 0x0042 (class network subclass miscellaneous, rev 0x31) at pci2 dev 0 function 0 not configured
+xhci0 at pci0 dev 21 function 0 vendor &quot;Intel&quot;, unknown product 0x31a8 rev 0x03: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+vendor &quot;Intel&quot;, unknown product 0x31ac (class DASP subclass miscellaneous, rev 0x03) at pci0 dev 22 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x31b2 (class DASP subclass miscellaneous, rev 0x03) at pci0 dev 22 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x31b4 (class DASP subclass miscellaneous, rev 0x03) at pci0 dev 23 function 0 not configured
+sdhc1 at pci0 dev 28 function 0 vendor &quot;Intel&quot;, unknown product 0x31cc rev 0x03: apic 1 int 39
+sdhc1: SDHC 3.0, 200 MHz base clock
+sdmmc1 at sdhc1: 8-bit, sd high-speed, mmc high-speed, dma
+vendor &quot;Intel&quot;, unknown product 0x31e8 (class bridge subclass ISA, rev 0x03) at pci0 dev 31 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x31d4 (class serial bus subclass SMBus, rev 0x03) at pci0 dev 31 function 1 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+efifb0 at mainbus0: 1366x768, 32bpp
+wsdisplay0 at efifb0 mux 1: console (std, vt100 emulation), using wskbd0
+umass0 at uhub0 port 1 configuration 1 interface 0 &quot;SanDisk Cruzer Glide&quot; rev 2.00/1.00 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: &lt;SanDisk, Cruzer Glide, 1.00&gt; SCSI4 0/direct removable serial.07815575020226104102
+sd0: 29952MB, 512 bytes/sector, 61341696 sectors
+&quot;vendor 0x0cf3 product 0xe500&quot; rev 2.01/0.01 addr 3 at uhub0 port 7 not configured
+&quot;Chicony Electronics Co.,Ltd. EasyCamera&quot; rev 2.00/26.22 addr 4 at uhub0 port 8 not configured
+sdmmc1: can't enable card
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

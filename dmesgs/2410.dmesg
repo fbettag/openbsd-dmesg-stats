@@ -1,0 +1,266 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2012-09-05 10:17:00</em><br />
+<strong>From:</strong> <em>Sevan / Venture37</em><br />
+<strong>Description:</strong> <em>Sun Fire T1000 (8 Core @ 1GHZ, 8GB RAM, 2x 2.5" 73GB SAS Disks)</em><br />
+
+<pre>
+Boot device: disk  File and args:
+OpenBSD IEEE 1275 Bootblock 1.3
+..&gt;&gt; OpenBSD BOOT 1.4
+Trying bsd...
+Booting /pci@7c0/pci@0/pci@8/scsi@2/disk@0,0:a/bsd
+6608864@0x1000000+2080@0x164d7e0+173400@0x1800000+4020904@0x182a558
+symbols @ 0xfeca02c0 81+405600+256132 start=0x1000000
+[ using 662528 bytes of bsd ELF symbol table ]
+console is /virtual-devices@100/console@1
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2012 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 5.2-current (GENERIC.MP) #3: Sat Aug 25 15:54:01 MDT 2012
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC.MP
+real mem = 8455716864 (8064MB)
+avail mem = 8304148480 (7919MB)
+mainbus0 at root: Sun Fire(TM) T1000
+cpu0 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu1 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu2 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu3 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu4 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu5 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu6 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu7 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu8 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu9 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu10 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu11 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu12 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu13 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu14 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu15 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu16 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu17 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu18 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu19 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu20 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu21 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu22 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu23 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu24 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu25 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu26 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu27 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu28 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu29 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu30 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+cpu31 at mainbus0: SUNW,UltraSPARC-T1 (rev 0.0) @ 1000 MHz
+vbus0 at mainbus0
+&quot;flashprom&quot; at vbus0 not configured
+cbus0 at vbus0
+&quot;virtual-channel&quot; at cbus0 not configured
+&quot;virtual-channel-client&quot; at cbus0 not configured
+&quot;virtual-channel&quot; at cbus0 not configured
+vcons0 at vbus0: ivec 0x111, console
+vrtc0 at vbus0
+&quot;fma&quot; at vbus0 not configured
+&quot;sunvts&quot; at vbus0 not configured
+&quot;sunmc&quot; at vbus0 not configured
+&quot;explorer&quot; at vbus0 not configured
+&quot;led&quot; at vbus0 not configured
+&quot;flashupdate&quot; at vbus0 not configured
+&quot;ncp&quot; at vbus0 not configured
+vpci0 at mainbus0: bus 2 to 2, dvma map 80000000-ffffffff
+pci0 at vpci0
+ebus0 at mainbus0
+com0 at ebus0 addr c2c000-c2c007 ivec 0xa: st16650, 32 byte fifo
+vpci1 at mainbus0: bus 2 to 4, dvma map 80000000-ffffffff
+pci1 at vpci1
+ppb0 at pci1 dev 0 function 0 &quot;ServerWorks PCIE-PCIX&quot; rev 0xb3
+pci2 at ppb0 bus 3
+bge0 at pci2 dev 4 function 0 &quot;Broadcom BCM5714&quot; rev 0xa2, BCM5715 A1 (0x9001): ivec 0x7d4, address 00:14:4f:
+brgphy0 at bge0 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+bge1 at pci2 dev 4 function 1 &quot;Broadcom BCM5714&quot; rev 0xa2, BCM5715 A1 (0x9001): ivec 0x7d5, address 00:14:4f:
+brgphy1 at bge1 phy 1: BCM5714 10/100/1000baseT/SX PHY, rev. 0
+ppb1 at pci2 dev 8 function 0 &quot;ServerWorks HT-1000 PCIX&quot; rev 0xb3
+pci3 at ppb1 bus 4
+bge2 at pci3 dev 1 function 0 &quot;Broadcom BCM5704C&quot; rev 0x10, BCM5704 B0 (0x2100): ivec 0x7c2, address 00:14:4f:
+brgphy2 at bge2 phy 1: BCM5704 10/100/1000baseT PHY, rev. 0
+bge3 at pci3 dev 1 function 1 &quot;Broadcom BCM5704C&quot; rev 0x10, BCM5704 B0 (0x2100): ivec 0x7c1, address 00:14:4f:
+brgphy3 at bge3 phy 1: BCM5704 10/100/1000baseT PHY, rev. 0
+mpi0 at pci3 dev 2 function 0 &quot;Symbios Logic SAS1064&quot; rev 0x02: ivec 0x7c0
+scsibus0 at mpi0: 63 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;LSILOGIC, Logical Volume, 3000&gt; SCSI2 0/direct fixed naa.600508e0000000007e823e9f00f7670a
+sd0: 69879MB, 512 bytes/sector, 143112591 sectors
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+bootpath: /pci@7c0,0/pci@0,0/pci@8,0/scsi@2,0/disk@0,0
+root on sd0a (152533f8f2f223b9.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,318 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-09-09 02:22:47</em><br />
+<strong>From:</strong> <em>silverwizard</em><br />
+<strong>Description:</strong> <em>Old IBM Box</em><br />
+
+<pre>
+OpenBSD 6.0 (GENERIC.MP) #1992: Tue Jul 26 12:52:55 MDT 2016
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Pentium(R) 4 CPU 3.00GHz (&quot;GenuineIntel&quot; 686-class) 3.01 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,EST,CNXT-ID,CX16,xTPR,PERF
+real mem  = 1072054272 (1022MB)
+avail mem = 1038823424 (990MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 02/09/06, BIOS32 rev. 0 @ 0xfd460, SMBIOS rev. 2.33 @ 0x3feea000 (36 entries)
+bios0: vendor IBM version &quot;IBM BIOS Version 1.29-[PAE129AUS-1.29]-&quot; date 02/09/2006
+bios0: IBM IBM eServer 206m -[84851AU]-
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP SPCR MCFG APIC BOOT SSDT
+acpi0: wakeup devices PEG_(S4) EXP1(S4) EXP5(S4) EXP6(S4) PCIB(S5) COM1(S4) COM2(S4) KBC0(S1) MSE0(S1) AC97(S1) USB1(S1) USB2(S1) USB3(S1) USB4(S1) EUSB(S1)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-9
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Pentium(R) 4 CPU 3.00GHz (&quot;GenuineIntel&quot; 686-class) 3.01 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,EST,CNXT-ID,CX16,xTPR,PERF
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEG_)
+acpiprt2 at acpi0: bus -1 (PXHV)
+acpiprt3 at acpi0: bus 3 (EXP5)
+acpiprt4 at acpi0: bus 4 (EXP6)
+acpiprt5 at acpi0: bus 10 (PCIB)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+&quot;PNP0A05&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0401&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+bios0: ROM list: 0xc0000/0xb000 0xcb000/0x1600 0xe0000/0x1800!
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel E7230 Host&quot; rev 0x81
+ppb0 at pci0 dev 1 function 0 &quot;Intel E7230 PCIE&quot; rev 0x81: apic 2 int 16
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x01: apic 2 int 17
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 4 &quot;Intel 82801G PCIE&quot; rev 0x01: apic 2 int 17
+pci3 at ppb2 bus 3
+bge0 at pci3 dev 0 function 0 &quot;Broadcom BCM5721&quot; rev 0x11, BCM5750 B1 (0x4101): apic 2 int 16, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb3 at pci0 dev 28 function 5 &quot;Intel 82801G PCIE&quot; rev 0x01: apic 2 int 16
+pci4 at ppb3 bus 4
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 18
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xe1
+pci5 at ppb4 bus 10
+radeondrm0 at pci5 dev 4 function 0 &quot;ATI ES1000&quot; rev 0x01
+drm0 at radeondrm0
+radeondrm0: apic 2 int 16
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GB LPC&quot; rev 0x01: PM disabled
+pciide0 at pci0 dev 31 function 2 &quot;Intel 82801GB SATA&quot; rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;HL-DT-ST, CD-ROM GCR-8482B, 1.07&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+wd0 at pciide0 channel 1 drive 1: &lt;WDC WD10EZEX-08WN4A0&gt;
+wd0: 16-sector PIO, LBA48, 953869MB, 1953525168 sectors
+wd0(pciide0:1:1): using PIO mode 4, Ultra-DMA mode 5
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x01: apic 2 int 19
+iic0 at ichiic0
+iic0: addr 0x22 words 00=7fbf 01=7fbf 02=7fbf 03=7fbf 04=7fbf 05=7fbf 06=7fbf 07=7fbf
+iic0: addr 0x26 00=f7 01=f7 02=f7 03=f7 04=f7 05=f7 06=f7 07=f7 08=f7 09=f7 0a=f7 0b=f7 0c=f7 0d=f7 0e=f7 0f=f7 10=f7 11=f7 12=f7 13=f7 14=f7 15=f7 16=f7 17=f7 18=f7 19=f7 1a=f7 1b=f7 1c=f7 1d=f7 1e=f7 1f=f7 20=f7 21=f7 22=f7 23=f7 24=f7 25=f7 26=f7 27=f7 28=f7 29=f7 2a=f7 2b=f7 2c=f7 2d=f7 2e=f7 2f=f7 30=f7 31=f7 32=f7 33=f7 34=f7 35=f7 36=f7 37=f7 38=f7 39=f7 3a=f7 3b=f7 3c=f7 3d=f7 3e=f7 3f=f7 40=f7 41=f7 42=f7 43=f7 44=f7 45=f7 46=f7 47=f7 48=f7 49=f7 4a=f7 4b=f7 4c=f7 4d=f7 4e=f7 4f=f7 50=f7 51=f7 52=f7 53=f7 54=f7 55=f7 56=f7 57=f7 58=f7 59=f7 5a=f7 5b=f7 5c=f7 5d=f7 5e=f7 5f=f7 60=f7 61=f7 62=f7 63=f7 64=f7 65=f7 66=f7 67=f7 68=f7 69=f7 6a=f7 6b=f7 6c=f7 6d=f7 6e=f7 6f=f7 70=f7 71=f7 72=f7 73=f7 74=f7 75=f7 76=f7 77=f7 78=f7 79=f7 7a=f7 7b=f7 7c=f7 7d=f7 7e=f7 7f=f7 80=f7 81=f7 82=f7 83=f7 84=f7 85=f7 86=f7 87=f7 88=f7 89=f7 8a=f7 8b=f7 8c=f7 8d=f7 8e=f7 8f=f7 90=f7 91=f7 92=f7 93=f7 94=f7 95=f7 96=f7 97=f7 98=f7 99=f7 9a=f7 9b=f7 9c=f7 9d=f7 9e=f7 9f=f7 a0=f7 a1=f7 a2=f7 a3=f7 a4=f7 a5=f7 a6=f7 a7=f7 a8=f7 a9=f7 aa=f7 ab=f7 ac=f7 ad=f7 ae=f7 af=f7 b0=f7 b1=f7 b2=f7 b3=f7 b4=f7 b5=f7 b6=f7 b7=f7 b8=f7 b9=f7 ba=f7 bb=f7 bc=f7 bd=f7 be=f7 bf=f7 c0=f7 c1=f7 c2=f7 c3=f7 c4=f7 c5=f7 c6=f7 c7=f7 c8=f7 c9=f7 ca=f7 cb=f7 cc=f7 cd=f7 ce=f7 cf=f7 d0=f7 d1=f7 d2=f7 d3=f7 d4=f7 d5=f7 d6=f7 d7=f7 d8=f7 d9=f7 da=f7 db=f7 dc=f7 dd=f7 de=f7 df=f7 e0=f7 e1=f7 e2=f7 e3=f7 e4=f7 e5=f7 e6=f7 e7=f7 e8=f7 e9=f7 ea=f7 eb=f7 ec=f7 ed=f7 ee=f7 ef=f7 f0=f7 f1=f7 f2=f7 f3=f7 f4=f7 f5=f7 f6=f7 f7=f7 f8=f7 f9=f7 fa=f7 fb=f7 fc=f7 fd=f7 fe=f7 ff=f7 words 00=f780 01=f780 02=f780 03=f780 04=f780 05=f780 06=f780 07=f780
+iic0: addr 0x2c 1e=00 1f=00 20=ee 24=df 25=fe 2b=77 2c=77 2d=f6 2e=f2 2f=5f 31=7f 32=cf 33=df 35=bb 36=ed 37=aa 39=8d 3a=e7 3e=55 3f=20 40=08 41=00 42=00 47=01 49=80 4a=00 4b=1a 4c=00 4d=03 4f=00 50=7f 54=df 55=fe 56=9d 57=f8 58=db 59=9f words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+adt0 at iic0 addr 0x2e: adt7467 rev 0x71
+spdmem0 at iic0 addr 0x51: 512MB DDR2 SDRAM ECC PC2-4200CL5
+&quot;eeprom&quot; at iic0 addr 0x53 not configured
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uhidev0 at uhub2 port 2 configuration 1 interface 0 &quot;Gaming KB Gaming KB&quot; rev 1.10/30.11 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub2 port 2 configuration 1 interface 1 &quot;Gaming KB Gaming KB&quot; rev 1.10/30.11 addr 2
+uhidev1: iclass 3/1, 8 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=2, output=0, feature=0
+uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
+ukbd1 at uhidev1 reportid 6: 48 variable keys, 0 key codes
+wskbd2 at ukbd1 mux 1
+ukbd2 at uhidev1 reportid 7: 56 variable keys, 0 key codes
+wskbd3 at ukbd2 mux 1
+ukbd3 at uhidev1 reportid 8: 56 variable keys, 0 key codes
+wskbd4 at ukbd3 mux 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (4f057939367ff319.a) swap on wd0b dump on wd0b
+radeondrm0: 1920x1080
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wskbd2: connecting to wsdisplay0
+wskbd3: connecting to wsdisplay0
+wskbd4: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+wskbd1: disconnecting from wsdisplay0
+wskbd1 detached
+ukbd0 detached
+uhidev0 detached
+uhid0 detached
+uhid1 detached
+uhid2 detached
+wskbd2: disconnecting from wsdisplay0
+wskbd2 detached
+ukbd1 detached
+wskbd3: disconnecting from wsdisplay0
+wskbd3 detached
+ukbd2 detached
+wskbd4: disconnecting from wsdisplay0
+wskbd4 detached
+ukbd3 detached
+uhidev1 detached
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,293 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-03-24 13:23:22</em><br />
+<strong>From:</strong> <em>ax0n</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.2/i386 on Motorola ML900 rugged laptop</em><br />
+
+<pre>
+OpenBSD 6.2 (GENERIC) #163: Tue Oct  3 19:51:20 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Mobile Intel(R) Pentium(R) 4 - M CPU 1.70GHz (&quot;GenuineIntel&quot; 686-class) 1.70 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,CNXT-ID,xTPR,PERF
+real mem  = 1073168384 (1023MB)
+avail mem = 1038577664 (990MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 04/28/05, BIOS32 rev. 0 @ 0xe9b30, SMBIOS rev. 2.3 @ 0xecc1a (38 entries)
+bios0: vendor Insyde Software version &quot;Version R0.16&quot; date 04/28/2005
+bios0: MOTOROLA ML900
+acpi0 at bios0: rev 0
+acpi0: APIC checksum error
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC BOOT
+acpi0: wakeup devices SLPB(S3) LAN0(S3) USB3(S3) USB4(S3) USB5(S3) COM1(S4) COM4(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 1
+acpiprt0 at acpi0: bus 1 (PCI1)
+acpiprt1 at acpi0: bus 2 (PCI2)
+acpiprt2 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C1(@1 halt!), FVS, 1700, 1200 MHz
+acpitz0 at acpi0: critical temperature is 100 degC
+acpibat0 at acpi0: BAT0 not present
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;PNP0F13&quot; at acpi0 not configured
+&quot;PNP0401&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+bios0: ROM list: 0xc0000/0xe000 0xe4000/0x1800 0xe6000/0x1000! 0xeb000/0x5000!
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82845 Host&quot; rev 0x04
+intelagp0 at pchb0
+agp0 at intelagp0: aperture at 0xa0000000, size 0x4000000
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82845 AGP&quot; rev 0x04
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 0 function 0 &quot;ATI Radeon Mobility M9&quot; rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 1 int 16
+ppb1 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0x42
+pci2 at ppb1 bus 2
+bktr0 at pci2 dev 3 function 0 &quot;Brooktree BT878&quot; rev 0x11: apic 1 int 23
+bktr0: Warning - card vendor 0xffff (model 0xffff) unknown.
+bktr0: Pinnacle/Miro TV, &lt;no&gt; tuner.
+&quot;Brooktree BT878 Audio&quot; rev 0x11 at pci2 dev 3 function 1 not configured
+uhci0 at pci2 dev 5 function 0 &quot;VIA VT83C572 USB&quot; rev 0x50: apic 1 int 16
+uhci1 at pci2 dev 5 function 1 &quot;VIA VT83C572 USB&quot; rev 0x50: apic 1 int 17
+ehci0 at pci2 dev 5 function 2 &quot;VIA VT6202 USB&quot; rev 0x51: apic 1 int 18
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;VIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+iwi0 at pci2 dev 6 function 0 &quot;Intel PRO/Wireless 2200BG&quot; rev 0x05: apic 1 int 19, address xx:xx:xx:xx:xx:xx
+cbb0 at pci2 dev 7 function 0 &quot;TI PCI4451 CardBus&quot; rev 0x00: apic 1 int 16, CardBus support disabled
+cbb1 at pci2 dev 7 function 1 &quot;TI PCI4451 CardBus&quot; rev 0x00: apic 1 int 16, CardBus support disabled
+&quot;TI PCI4451 FireWire&quot; rev 0x00 at pci2 dev 7 function 2 not configured
+fxp0 at pci2 dev 8 function 0 &quot;Intel PRO/100 VE&quot; rev 0x42, i82562: apic 1 int 20, address xx:xx:xx:xx:xx:xx
+inphy0 at fxp0 phy 1: i82562ET 10/100 PHY, rev. 0
+puc0 at pci2 dev 9 function 0 &quot;Oxford OX16PCI952&quot; rev 0x00: ports: 2 com
+com4 at puc0 port 0 apic 1 int 20: st16650, 32 byte fifo
+com4: probed fifo depth: 16 bytes
+com5 at puc0 port 1 apic 1 int 20: st16650, 32 byte fifo
+com5: probed fifo depth: 16 bytes
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+cardslot0 at cbb0 slot 0 flags 0
+pcmcia0 at cardslot0
+cardslot1 at cbb1 slot 1 flags 0
+pcmcia1 at cardslot1
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801CAM LPC&quot; rev 0x02
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801CAM IDE&quot; rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;SAMSUNG MP0402H&gt;
+wd0: 16-sector PIO, LBA48, 38204MB, 78242976 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;TEAC, CD-224E, 1.9A&gt; ATAPI 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 2
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801CA/CAM SMBus&quot; rev 0x02: apic 1 int 17
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 512MB DDR SDRAM non-parity PC2700CL2.5
+spdmem1 at iic0 addr 0x51: 512MB DDR SDRAM non-parity PC2700CL2.5
+auich0 at pci0 dev 31 function 5 &quot;Intel 82801CA/CAM AC97&quot; rev 0x02: apic 1 int 17, ICH3
+ac97: codec id 0x414c4740 (Avance Logic ALC202)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, Realtek 3D
+audio0 at auich0
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 5.1, 0x8f40b1 0x0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uhub3 at uhub0 port 4 configuration 1 interface 0 &quot;NEC Corporation USB2.0 Hub Controller&quot; rev 2.00/1.00 addr 2
+uhub4 at uhub3 port 4 configuration 1 interface 0 &quot;NEC Corporation USB2.0 Hub Controller&quot; rev 2.00/1.00 addr 3
+ugen0 at uhub4 port 2 &quot;AuthenTec Fingerprint Sensor&quot; rev 1.10/0.00 addr 4
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on wd0a (f82189ffdb99db34.a) swap on wd0b dump on wd0b
+radeondrm0: 1024x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

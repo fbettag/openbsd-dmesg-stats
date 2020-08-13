@@ -1,0 +1,242 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-06-25 10:54:55</em><br />
+<strong>From:</strong> <em>rimshot</em><br />
+<strong>Description:</strong> <em>Apple iMac DV with G3 400 MHz and a broken internal cd drive, running OpenBSD 3.5/powerpc</em><br />
+
+<pre>
+OpenBSD 3.5 (GENERIC) #0: Fri Apr  2 23:27:10 CEST 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/macppc/compile/GENERIC
+real mem = 335544320 (327680K)
+avail mem = 296906752 (289948K)
+using 1254 buffers containing 16777216 bytes of memory
+mainbus0 (root)
+cpu0 at mainbus0: 750 (Revision 8300): 400 MHz: 512KB backside cache
+memc0 at mainbus0: uni-n
+mpcpcibr0 at mainbus0: uni-north, Revision 0xff
+pci0 at mpcpcibr0 bus 0
+pchb0 at pci0 dev 11 function 0 &quot;Apple Uni-N AGP&quot; rev 0x00
+vgafb0 at pci0 dev 16 function 0 &quot;ATI Rage 128 VR&quot; rev 0x00, mmio
+wsdisplay0 at vgafb0: console (std, vt100 emulation)
+mpcpcibr1 at mainbus0: uni-north, Revision 0x0
+pci1 at mpcpcibr1 bus 0
+pchb1 at pci1 dev 11 function 0 &quot;Apple Uni-N&quot; rev 0x00
+macobio0 at pci1 dev 23 function 0 &quot;Apple Keylargo&quot; rev 0x02
+openpic0 at macobio0: version 0x4614
+gpio_obio0 at macobio0
+gpio_obio1 at gpio_obio0 irq 47
+programmer-switch at gpio_obio0 not configured
+zsc0 at macobio0: irq 22,50
+zstty0 at zsc0 channel 0
+zstty1 at zsc0 channel 1
+awacs0 at macobio0: irq 24,9,10 speaker
+audio0 at awacs0
+adb0 at macobio0 irq 25: via-pmu 0 targets
+aed0 at adb0 addr 0: ADB Event device
+apm0 at adb0: battery flags 0x9, 0% charged
+ki2c0 at macobio0
+wdc0 at macobio0 irq 19: DMA
+wd0 at wdc0 channel 0 drive 0: &lt;ST340014A&gt;
+wd0: 16-sector PIO, LBA48, 38166MB, 78165360 sectors
+atapiscsi0 at wdc0 channel 0 drive 1
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;MATSHITA, DVD-ROM SR-8184, AA31&gt; SCSI0 5/cdrom removable
+wd0(wdc0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 2
+cd0(wdc0:0:1): using PIO mode 4, DMA mode 2, Ultra-DMA mode 2
+wdc1 at macobio0 irq 20: DMA
+wdc2 at macobio0 irq 21: DMA
+ohci0 at pci1 dev 24 function 0 &quot;Apple USB&quot; rev 0x00: irq 27, version 1.0
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Apple OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at uhub0 port 1
+uhub1: Alps Electric Hub in Apple USB Keyboard, class 9/0, rev 1.10/2.10, addr 2
+uhub1: 3 ports with 2 removable, bus powered
+uhidev0 at uhub1 port 1 configuration 1 interface 0
+uhidev0: Alps Electric Apple USB Keyboard, rev 1.10/1.03, addr 3, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0 (mux 1 ignored for console): console keyboard, using wsdisplay0
+ohci1 at pci1 dev 25 function 0 &quot;Apple USB&quot; rev 0x00: irq 28, version 1.0
+usb1 at ohci1: USB revision 1.0
+uhub2 at usb1
+uhub2: Apple OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+mpcpcibr2 at mainbus0: uni-north, Revision 0xff
+pci2 at mpcpcibr2 bus 0
+pchb2 at pci2 dev 11 function 0 &quot;Apple Uni-N Eth&quot; rev 0x00
+vendor &quot;Apple&quot;, unknown product 0x18 (class serial bus subclass Firewire, rev 0x01) at pci2 dev 14 function 0 not configured
+gem0 at pci2 dev 15 function 0 &quot;Apple GMAC&quot; rev 0x01
+gem0: address xx:xx:xx:xx:xx:xx
+bmtphy0 at gem0 phy 0: BCM5201 10/100 media interface, rev. 2
+gem0: using irq 41 for interrupt
+bootpath: `/pci@f2000000/mac-io@17/ata-4@1f000/disk@0/bsd`
+boot device: wd0.
+root on wd0a
+rootdev=0x0 rrootdev=0xb00 rawdev=0xb02
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

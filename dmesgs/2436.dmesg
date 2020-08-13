@@ -1,0 +1,315 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2013-02-01 07:03:50</em><br />
+<strong>From:</strong> <em>Seth</em><br />
+<strong>Description:</strong> <em>HP Compaq NC6510b</em><br />
+
+<pre>
+OpenBSD 5.2-current (GENERIC.MP) #20: Mon Jan 21 18:04:07 MST 2013
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Core(TM)2 Duo CPU T7100 @ 1.80GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,LAHF,PERF
+real mem  = 1064562688 (1015MB)
+avail mem = 1036161024 (988MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/02/07, BIOS32 rev. 0 @ 0xf0000, SMBIOS rev. 2.4 @ 0xf25ba (25 entries)
+bios0: vendor Hewlett-Packard version &quot;68DDU Ver. F.0B&quot; date 08/02/2007
+bios0: Hewlett-Packard HP Compaq 6510b (RM305UT#ABA)
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC HPET APIC MCFG TCPA SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices C0B0(S5) C108(S3) C10F(S3) C110(S3) C111(S3) C119(S3) C11A(S3) C11B(S3) C131(S5) C2A1(S5) C132(S5) C137(S5) C134(S5) C2A2(S5) C23D(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 199MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU T7100 @ 1.80GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,LAHF,PERF
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 2 (C0B0)
+acpiprt1 at acpi0: bus 8 (C11D)
+acpiprt2 at acpi0: bus 16 (C131)
+acpiprt3 at acpi0: bus 24 (C132)
+acpiprt4 at acpi0: bus 40 (C134)
+acpiprt5 at acpi0: bus 0 (C003)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpicpu1 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: C272
+acpipwrres1 at acpi0: C27F
+acpipwrres2 at acpi0: C29B
+acpipwrres3 at acpi0: C1C5
+acpipwrres4 at acpi0: C3B7
+acpipwrres5 at acpi0: C3B8
+acpipwrres6 at acpi0: C3B9
+acpipwrres7 at acpi0: C3BA
+acpipwrres8 at acpi0: C3BB
+acpitz0 at acpi0: critical temperature is 256 degC
+acpitz1 at acpi0: critical temperature is 108 degC
+acpitz2 at acpi0: critical temperature is 105 degC
+acpitz3 at acpi0: critical temperature is 108 degC
+acpitz4 at acpi0: critical temperature is 110 degC
+acpibat0 at acpi0: C23B model &quot;Primary&quot; serial 13214 2007/11/22 type LIon oem &quot;Hewlett-Packard&quot;
+acpibat1 at acpi0: C23A not present
+acpiac0 at acpi0: AC unit offline
+acpibtn0 at acpi0: C2BF
+acpibtn1 at acpi0: C153
+acpivideo0 at acpi0: C098
+acpivout0 at acpivideo0: C1AD
+bios0: ROM list: 0xc0000/0xee00! 0xd0000/0x1000 0xd1000/0x1a00
+cpu0: Enhanced SpeedStep 1996 MHz: speeds: 1801, 1800, 1200, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel GM965 Host&quot; rev 0x0c
+vga1 at pci0 dev 2 function 0 &quot;Intel GM965 Video&quot; rev 0x0c
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0 at vga1: apic 1 int 16
+drm0 at inteldrm0
+&quot;Intel GM965 Video&quot; rev 0x0c at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 16
+uhci1 at pci0 dev 26 function 1 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 17
+ehci0 at pci0 dev 26 function 7 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 18
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801H HD Audio&quot; rev 0x03: msi
+azalia0: codecs: Analog Devices AD1981HD, AT&amp;T/Lucent/0x1040, using Analog Devices AD1981HD
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801H PCIE&quot; rev 0x03
+pci1 at ppb0 bus 8
+ppb1 at pci0 dev 28 function 1 &quot;Intel 82801H PCIE&quot; rev 0x03: apic 1 int 17
+pci2 at ppb1 bus 16
+wpi0 at pci2 dev 0 function 0 &quot;Intel PRO/Wireless 3945ABG&quot; rev 0x02: msi, MoW1, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 2 &quot;Intel 82801H PCIE&quot; rev 0x03: apic 1 int 18
+pci3 at ppb2 bus 24
+bge0 at pci3 dev 0 function 0 &quot;Broadcom BCM5787M&quot; rev 0x02, BCM5754/5787 A2 (0xb002): apic 1 int 18, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5787 10/100/1000baseT PHY, rev. 0
+ppb3 at pci0 dev 28 function 4 &quot;Intel 82801H PCIE&quot; rev 0x03: apic 1 int 16
+pci4 at ppb3 bus 40
+uhci2 at pci0 dev 29 function 0 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 20
+uhci3 at pci0 dev 29 function 1 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 21
+uhci4 at pci0 dev 29 function 2 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 18
+ehci1 at pci0 dev 29 function 7 &quot;Intel 82801H USB&quot; rev 0x03: apic 1 int 20
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xf3
+pci5 at ppb4 bus 2
+cbb0 at pci5 dev 4 function 0 &quot;Ricoh 5C476 CardBus&quot; rev 0xb6: apic 1 int 16
+&quot;Ricoh 5C832 Firewire&quot; rev 0x02 at pci5 dev 4 function 1 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801HBM LPC&quot; rev 0x03: PM disabled
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801HBM IDE&quot; rev 0x03: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;MATSHITA, DVD-RAM UJ-861H, 1.50&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801HBM AHCI&quot; rev 0x03: msi, AHCI 1.1
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, INTEL SSDSA2M040, 2CV1&gt; SCSI3 0/direct fixed naa.50015179591a7511
+sd0: 38166MB, 512 bytes/sector, 78165360 sectors, thin
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.2
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (fb93343f7c0d4235.a) swap on sd0b dump on sd0b
+linux: syscall epoll_create is obsolete or not implemented (pid=27829)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

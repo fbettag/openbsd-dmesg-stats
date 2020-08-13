@@ -1,0 +1,347 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-12-16 23:53:37</em><br />
+<strong>From:</strong> <em>afresh1</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.4 (GENERIC.MP) i386 on Dell Inc. PowerEdge 1950</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC.MP) #943: Thu Oct 11 13:51:32 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+real mem  = 3484241920 (3322MB)
+avail mem = 3405598720 (3247MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 10/30/10, BIOS32 rev. 0 @ 0xffe90, SMBIOS rev. 2.5 @ 0xcfb9c000 (67 entries)
+bios0: vendor Dell Inc. version &quot;2.7.0&quot; date 10/30/2010
+bios0: Dell Inc. PowerEdge 1950
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC SPCR HPET MCFG WD__ SLIC ERST HEST BERT EINJ TCPA
+acpi0: wakeup devices PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU 5130 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz, 06-0f-06
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 332MHz
+cpu0: mwait min=64, max=64, C-substates=0.2, IBE
+cpu1 at mainbus0: apid 6 (application processor)
+cpu1: Intel(R) Xeon(R) CPU 5130 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz, 06-0f-06
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Xeon(R) CPU 5130 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz, 06-0f-06
+cpu2: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+cpu3 at mainbus0: apid 7 (application processor)
+cpu3: Intel(R) Xeon(R) CPU 5130 @ 2.00GHz (&quot;GenuineIntel&quot; 686-class) 2 GHz, 06-0f-06
+cpu3: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,TM2,SSSE3,CX16,xTPR,PDCM,DCA,NXE,LONG,LAHF,PERF,SENSOR,MELTDOWN
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins, remapped
+ioapic1 at mainbus0: apid 9 pa 0xfec80000, version 20, 24 pins, remapped
+ioapic2 at mainbus0: apid 10 pa 0xfec81000, version 20, 24 pins, remapped
+ioapic3 at mainbus0: apid 11 pa 0xfec82000, version 20, 24 pins, remapped
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 6 (PEX2)
+acpiprt2 at acpi0: bus 7 (UPST)
+acpiprt3 at acpi0: bus 8 (DWN1)
+acpiprt4 at acpi0: bus 10 (DWN2)
+acpiprt5 at acpi0: bus 11 (PE2X)
+acpiprt6 at acpi0: bus 1 (PEX3)
+acpiprt7 at acpi0: bus 2 (PE2P)
+acpiprt8 at acpi0: bus 12 (PEX4)
+acpiprt9 at acpi0: bus 13 (PE2P)
+acpiprt10 at acpi0: bus -1 (PE2P)
+acpiprt11 at acpi0: bus 4 (SBEX)
+acpiprt12 at acpi0: bus 17 (COMP)
+acpicpu0 at acpi0: C1(@1 halt!)
+acpicpu1 at acpi0: C1(@1 halt!)
+acpicpu2 at acpi0: C1(@1 halt!)
+acpicpu3 at acpi0: C1(@1 halt!)
+acpicmos0 at acpi0
+bios0: ROM list: 0xc0000/0x9000! 0xc9000/0x1000 0xca000/0x1e00 0xcc000/0x5400 0xd1800/0x1000! 0xec000/0x4000!
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 5000X Host&quot; rev 0x12
+ppb0 at pci0 dev 2 function 0 &quot;Intel 5000 PCIE&quot; rev 0x12
+pci1 at ppb0 bus 6
+ppb1 at pci1 dev 0 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci2 at ppb1 bus 7
+ppb2 at pci2 dev 0 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci3 at ppb2 bus 8
+ppb3 at pci3 dev 0 function 0 &quot;ServerWorks PCIE-PCIX&quot; rev 0xc3
+pci4 at ppb3 bus 9
+bnx0 at pci4 dev 0 function 0 &quot;Broadcom BCM5708&quot; rev 0x12: apic 8 int 16
+ppb4 at pci2 dev 1 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x01
+pci5 at ppb4 bus 10
+ppb5 at pci1 dev 0 function 3 &quot;Intel 6321ESB PCIE-PCIX&quot; rev 0x01
+pci6 at ppb5 bus 11
+ppb6 at pci0 dev 3 function 0 &quot;Intel 5000 PCIE&quot; rev 0x12
+pci7 at ppb6 bus 1
+ppb7 at pci7 dev 0 function 0 &quot;Intel IOP333 PCIE-PCIX&quot; rev 0x00
+pci8 at ppb7 bus 2
+mfi0 at pci8 dev 14 function 0 &quot;Dell PERC 5&quot; rev 0x00: apic 10 int 14
+mfi0: &quot;PERC 5/i Integrated&quot;, firmware 5.2.2-0072, 256MB cache
+scsibus1 at mfi0: 64 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;DELL, PERC 5/i, 1.03&gt; SCSI3 0/direct fixed naa.60019b90b63ee70017f9fe7655ed1f37
+sd0: 69376MB, 512 bytes/sector, 142082048 sectors
+ppb8 at pci7 dev 0 function 2 &quot;Intel IOP333 PCIE-PCIX&quot; rev 0x00
+pci9 at ppb8 bus 3
+ppb9 at pci0 dev 4 function 0 &quot;Intel 5000 PCIE&quot; rev 0x12
+pci10 at ppb9 bus 12
+ppb10 at pci10 dev 0 function 0 &quot;Intel 6702PXH PCIE-PCIX&quot; rev 0x09
+pci11 at ppb10 bus 13
+ppb11 at pci0 dev 5 function 0 &quot;Intel 5000 PCIE&quot; rev 0x12
+pci12 at ppb11 bus 14
+ppb12 at pci0 dev 6 function 0 &quot;Intel 5000 PCIE x8&quot; rev 0x12
+pci13 at ppb12 bus 15
+ppb13 at pci0 dev 7 function 0 &quot;Intel 5000 PCIE&quot; rev 0x12
+pci14 at ppb13 bus 16
+pchb1 at pci0 dev 16 function 0 &quot;Intel 5000 Error Reporting&quot; rev 0x12
+pchb2 at pci0 dev 16 function 1 &quot;Intel 5000 Error Reporting&quot; rev 0x12
+pchb3 at pci0 dev 16 function 2 &quot;Intel 5000 Error Reporting&quot; rev 0x12
+pchb4 at pci0 dev 17 function 0 &quot;Intel 5000 Reserved&quot; rev 0x12
+pchb5 at pci0 dev 19 function 0 &quot;Intel 5000 Reserved&quot; rev 0x12
+pchb6 at pci0 dev 21 function 0 &quot;Intel 5000 FBD&quot; rev 0x12
+pchb7 at pci0 dev 22 function 0 &quot;Intel 5000 FBD&quot; rev 0x12
+ppb14 at pci0 dev 28 function 0 &quot;Intel 6321ESB PCIE&quot; rev 0x09
+pci15 at ppb14 bus 4
+ppb15 at pci15 dev 0 function 0 &quot;ServerWorks PCIE-PCIX&quot; rev 0xc3
+pci16 at ppb15 bus 5
+bnx1 at pci16 dev 0 function 0 &quot;Broadcom BCM5708&quot; rev 0x12: apic 8 int 16
+uhci0 at pci0 dev 29 function 0 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 21
+uhci1 at pci0 dev 29 function 1 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 20
+uhci2 at pci0 dev 29 function 2 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 21
+ehci0 at pci0 dev 29 function 7 &quot;Intel 6321ESB USB&quot; rev 0x09: apic 8 int 21
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb16 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xd9
+pci17 at ppb16 bus 17
+radeondrm0 at pci17 dev 13 function 0 &quot;ATI ES1000&quot; rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 8 int 19
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 6321ESB LPC&quot; rev 0x09: PM disabled
+pciide0 at pci0 dev 31 function 1 &quot;Intel 6321ESB IDE&quot; rev 0x09: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus2 at atapiscsi0: 2 targets
+cd0 at scsibus2 targ 0 lun 0: &lt;TSSTcorp, CDRW/DVD TSL462D, DE01&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vmm0 at mainbus0: VMX
+uhub4 at uhub0 port 1 configuration 1 interface 0 &quot;Dell product 0xa001&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub4 port 1 configuration 1 interface 0 &quot;Dell DRAC5&quot; rev 1.10/0.00 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub4 port 1 configuration 1 interface 1 &quot;Dell DRAC5&quot; rev 1.10/0.00 addr 3
+uhidev1: iclass 3/1
+ums0 at uhidev1: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+umass0 at uhub4 port 2 configuration 1 interface 0 &quot;DELL  INC. DRAC5 VIRTUAL  MEDIA&quot; rev 2.00/0.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus3 at umass0: 2 targets, initiator 0
+cd1 at scsibus3 targ 1 lun 0: &lt;Dell, Virtual CDROM, 123&gt; SCSI0 5/cdrom removable serial.413c00011028_123456
+umass1 at uhub4 port 2 configuration 1 interface 1 &quot;DELL  INC. DRAC5 VIRTUAL  MEDIA&quot; rev 2.00/0.00 addr 4
+umass1: using SCSI over Bulk-Only
+scsibus4 at umass1: 2 targets, initiator 0
+sd1 at scsibus4 targ 1 lun 0: &lt;Dell, Virtual Floppy, 123&gt; SCSI0 0/direct removable serial.413c00011028_123456
+uhub5 at uhub0 port 5 configuration 1 interface 0 &quot;Cypress Semiconductor USB2 Hub&quot; rev 2.00/0.0b addr 5
+vscsi0 at root
+scsibus5 at vscsi0: 256 targets
+softraid0 at root
+scsibus6 at softraid0: 256 targets
+root on sd0a (f022bb09eb1f56a8.a) swap on sd0b dump on sd0b
+bnx0: address xx:xx:xx:xx:xx:xx
+brgphy0 at bnx0 phy 1: BCM5708C 10/100/1000baseT PHY, rev. 6
+bnx1: address xx:xx:xx:xx:xx:xx
+brgphy1 at bnx1 phy 1: BCM5708C 10/100/1000baseT PHY, rev. 6
+initializing kernel modesetting (RV100 0x1002:0x515E 0x1028:0x01B3).
+radeondrm0: 1280x1024, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

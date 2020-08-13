@@ -1,0 +1,344 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-02-13 03:03:58</em><br />
+<strong>From:</strong> <em>jorey</em><br />
+<strong>Description:</strong> <em>thinkpad t530 type 2429-2ug, 5.6-stable</em><br />
+
+<pre>
+OpenBSD 5.6 (GENERIC.MP) #5: Thu Dec 11 09:51:08 CET 2014
+    xxx@xxx.xxx:/binpatchng/work-binpatch56-amd64/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8255631360 (7873MB)
+avail mem = 8027078656 (7655MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xbae9c000 (68 entries)
+bios0: vendor LENOVO version &quot;G4ETA2WW (2.62 )&quot; date 08/21/2014
+bios0: LENOVO 24292UG
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC TCPA SSDT SSDT SSDT HPET APIC MCFG ECDT FPDT ASF! UEFI UEFI POAT SSDT SSDT UEFI DBG2
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP3(S4) XHCI(S3) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2295.21 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+cpu4 at mainbus0: apid 4 (application processor)
+cpu4: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu4: smt 0, core 2, package 0
+cpu5 at mainbus0: apid 5 (application processor)
+cpu5: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu5: smt 1, core 2, package 0
+cpu6 at mainbus0: apid 6 (application processor)
+cpu6: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu6: smt 0, core 3, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz, 2294.79 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu7: smt 1, core 3, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus 4 (EXP3)
+acpicpu0 at acpi0: C2, C1, PSS
+acpicpu1 at acpi0: C2, C1, PSS
+acpicpu2 at acpi0: C2, C1, PSS
+acpicpu3 at acpi0: C2, C1, PSS
+acpicpu4 at acpi0: C2, C1, PSS
+acpicpu5 at acpi0: C2, C1, PSS
+acpicpu6 at acpi0: C2, C1, PSS
+acpicpu7 at acpi0: C2, C1, PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 103 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpibat0 at acpi0: BAT0 model &quot;45N1007&quot; serial  3423 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 not present
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+cpu0: Enhanced SpeedStep 2295 MHz: speeds: 2301, 2300, 2200, 2100, 2000, 1900, 1800, 1700, 1600, 1500, 1400, 1300, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 3G Host&quot; rev 0x09
+ppb0 at pci0 dev 1 function 0 &quot;Intel Core 3G PCIE&quot; rev 0x09: msi
+pci1 at ppb0 bus 1
+vendor &quot;NVIDIA&quot;, unknown product 0x0def (class display subclass VGA, rev 0xa1) at pci1 dev 0 function 0 not configured
+vga1 at pci0 dev 2 function 0 &quot;Intel HD Graphics 4000&quot; rev 0x09
+intagp at vga1 not configured
+inteldrm0 at vga1
+drm0 at inteldrm0
+drm: Memory usable by graphics device = 2048M
+inteldrm0: 1920x1080
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 7 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel 82579LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 7 Series HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Realtek ALC269
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci2 at ppb1 bus 2
+sdhc0 at pci2 dev 0 function 0 &quot;Ricoh 5U823 SD/MMC&quot; rev 0x05: apic 2 int 16
+sdmmc0 at sdhc0
+&quot;Ricoh 5U832 Firewire&quot; rev 0x04 at pci2 dev 0 function 3 not configured
+ppb2 at pci0 dev 28 function 1 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 &quot;Intel Centrino Advanced-N 6205&quot; rev 0x34: msi, MIMO 2T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 2 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci4 at ppb3 bus 4
+ehci1 at pci0 dev 29 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel QM77 LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 7 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, INTEL SSDSC2BW18, LF1i&gt; SCSI3 0/direct fixed naa.5001517bb296a091
+sd0: 171705MB, 512 bytes/sector, 351651888 sectors, thin
+cd0 at scsibus1 targ 1 lun 0: &lt;HL-DT-ST, DVDRAM GT50N, LT20&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 7 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+scsibus2 at sdmmc0: 2 targets, initiator 0
+sd1 at scsibus2 targ 1 lun 0: &lt;SD/MMC, Drive #01, &gt; SCSI2 0/direct fixed
+sd1: 30436MB, 512 bytes/sector, 62333952 sectors
+uhub2 at uhub0 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub2 port 4 &quot;Broadcom Corp BCM20702A0&quot; rev 2.00/1.12 addr 3
+uvideo0 at uhub2 port 6 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. Integrated Camera&quot; rev 2.00/5.18 addr 4
+video0 at uvideo0
+uhub3 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+umodem0 at uhub3 port 4 configuration 1 interface 1 &quot;Lenovo H5321 gw&quot; rev 2.00/0.00 addr 3
+umodem0: data interface 2, has CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+umodem1 at uhub3 port 4 configuration 1 interface 3 &quot;Lenovo H5321 gw&quot; rev 2.00/0.00 addr 3
+umodem1: data interface 4, has CM over data, has break
+umodem1: status change notification available
+ucom1 at umodem1
+umodem2 at uhub3 port 4 configuration 1 interface 9 &quot;Lenovo H5321 gw&quot; rev 2.00/0.00 addr 3
+umodem2: data interface 10, has CM over data, has break
+umodem2: status change notification available
+ucom2 at umodem2
+ugen1 at uhub3 port 4 configuration 1 &quot;Lenovo H5321 gw&quot; rev 2.00/0.00 addr 3
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+sd2 at scsibus4 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 005&gt; SCSI2 0/direct fixed
+sd2: 163505MB, 512 bytes/sector, 334858332 sectors
+root on sd2a (0dea41285a1bfd9f.a) swap on sd2b dump on sd2b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

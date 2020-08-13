@@ -1,0 +1,270 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-08-01 11:13:38</em><br />
+<strong>From:</strong> <em>peter_ljung</em><br />
+<strong>Description:</strong> <em>HP t5720 Thin Client</em><br />
+
+<pre>
+OpenBSD 5.5 (GENERIC) #276: Wed Mar  5 09:57:06 MST 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: AMD Athlon(tm) Processor (&quot;AuthenticAMD&quot; 686-class, 256KB L2 cache) 1.01 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE,MPC,MMXX,3DNOW2,3DNOW
+real mem  = 251097088 (239MB)
+avail mem = 234692608 (223MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 12/14/05, BIOS32 rev. 0 @ 0xfa640, SMBIOS rev. 2.3 @ 0xf0800 (34 entries)
+bios0: vendor Phoenix Technologies, LTD version &quot;786A1 v1.03&quot; date 12/14/2005
+bios0: Hewlett-Packard hp t5000 series
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S5
+acpi0: tables DSDT FACP SSDT APIC
+acpi0: wakeup devices FUTS(S4) USB0(S5) USB1(S5) USB2(S5) USB3(S5) AMR0(S4) UAR1(S5) PS2M(S5) PS2K(S4) PCI0(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 266MHz
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 14, 24 pins
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: PSS
+acpitz0 at acpi0### AML PARSE ERROR (0x32c5): Undefined name: RBYT
+error evaluating: \\_TZ_.THRM._TMP
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: FUTS
+bios0: ROM list: 0xc0000/0x8000 0xc8000/0x4000! 0xcc000/0x2000
+cpu0: PowerNow! K7 1001 MHz: speeds: 1000 800 667 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;SiS 741 PCI&quot; rev 0x03
+sisagp0 at pchb0
+agp0 at sisagp0: aperture at 0xe8000000, size 0x4000000
+ppb0 at pci0 dev 1 function 0 &quot;SiS 648FX AGP&quot; rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;SiS 6330 VGA&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 2 function 0 &quot;SiS 85C503 System&quot; rev 0x25
+pciide0 at pci0 dev 2 function 5 &quot;SiS 5513 EIDE&quot; rev 0x00: 741: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt; 512MB ATA Flash Disk&gt;
+wd0: 1-sector PIO, LBA, 488MB, 1000944 sectors
+wd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+auich0 at pci0 dev 2 function 7 &quot;SiS 7012 AC97&quot; rev 0xa0: apic 2 int 18, SiS7012 AC97
+ac97: codec id 0x414c4760 (Avance Logic ALC655 rev 0)
+audio0 at auich0
+ohci0 at pci0 dev 3 function 0 &quot;SiS 5597/5598 USB&quot; rev 0x0f: apic 2 int 20, version 1.0, legacy support
+ohci1 at pci0 dev 3 function 1 &quot;SiS 5597/5598 USB&quot; rev 0x0f: apic 2 int 21, version 1.0, legacy support
+ehci0 at pci0 dev 3 function 2 &quot;SiS 7002 USB&quot; rev 0x00: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;SiS EHCI root hub&quot; rev 2.00/1.00 addr 1
+vr0 at pci0 dev 10 function 0 &quot;VIA RhineII-2&quot; rev 0x8d: apic 2 int 19, address xx:xx:xx:xx:xx:xx
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 13: OUI 0x004063, model 0x0034
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 &quot;SiS OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 &quot;SiS OHCI root hub&quot; rev 1.00/1.00 addr 1
+uhidev0 at uhub1 port 3 configuration 1 interface 0 &quot;CHICONY HP Basic USB Keyboard&quot; rev 1.10/3.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+vscsi0 at root
+scsibus0 at vscsi0: 256 targets
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on wd0a (698cc4681e6ccf55.a) swap on wd0b dump on wd0b
+hw.machine=i386
+hw.model=AMD Athlon(tm) Processor (&quot;AuthenticAMD&quot; 686-class, 256KB L2 cache)
+hw.ncpu=1
+hw.byteorder=1234
+hw.pagesize=4096
+hw.disknames=wd0:698cc4681e6ccf55
+hw.diskcount=1
+hw.cpuspeed=1001
+hw.setperf=100
+hw.vendor=Hewlett-Packard
+hw.product=hp t5000 series
+hw.serialno=CNV70401SQ
+hw.uuid=17363c50-3f86-7485-d711-601d20c44e03
+hw.physmem=251097088
+hw.usermem=251084800
+hw.ncpufound=1
+hw.allowpowerdown=1
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

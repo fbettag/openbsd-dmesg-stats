@@ -1,0 +1,271 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-10-20 18:48:15</em><br />
+<strong>From:</strong> <em>gumnos</em><br />
+<strong>Description:</strong> <em>Gateway Solo 1200</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC) #926: Thu Oct 11 13:43:06 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 326582272 (311MB)
+avail mem = 305590272 (291MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 02/06/02, BIOS32 rev. 0 @ 0xe8a10, SMBIOS rev. 2.3 @ 0xeb8b0 (47 entries)
+bios0: vendor Insyde Software version &quot;Version 27.02&quot; date 02/04/2002
+bios0: Gateway, Inc. Solo 1200
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP BOOT DBGP
+acpi0: wakeup devices LID_(S4) BAT0(S4) PCI0(S3) MODM(S3) CARD(S4) USB0(S1) USB1(S1) LAN0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpipwrres0 at acpi0: PFAN, resource for FAN0
+acpitz0 at acpi0: critical temperature is 89 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model &quot;QT08&quot; serial SANYOQT08 type NiMH oem &quot;SANYO&quot;
+acpicmos0 at acpi0
+&quot;PNP0C0B&quot; at acpi0 not configured
+acpivideo0 at acpi0: VGA0
+bios0: ROM list: 0xc0000/0xc000 0xe0000/0x1800 0xe5000/0x1000! 0xea000/0x5000!
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel Pentium III (&quot;GenuineIntel&quot; 686-class, 128KB L2 cache) 798 MHz, 06-08-0a
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PSE36,MMX,FXSR,SSE,PERF,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+0:10:0: mem address conflict 0xc000000/0x1000
+pchb0 at pci0 dev 0 function 0 &quot;VIA VT8605 PCI&quot; rev 0x00
+viaagp0 at pchb0: v2
+agp0 at viaagp0: aperture at 0xa0000000, size 0x10000000
+ppb0 at pci0 dev 1 function 0 &quot;VIA VT8605 AGP&quot; rev 0x00
+pci1 at ppb0 bus 1
+1:0:0: mem address conflict 0xc0000/0x10000
+vga1 at pci1 dev 0 function 0 &quot;S3 Twister&quot; rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+cbb0 at pci0 dev 10 function 0 &quot;O2 Micro OZ69[17]2 CardBus&quot; rev 0x00: irq 10
+cbb1 at pci0 dev 11 function 0 &quot;TI PCI1410 CardBus&quot; rev 0x01: irq 9
+pcib0 at pci0 dev 17 function 0 &quot;VIA VT8231 ISA&quot; rev 0x10
+pciide0 at pci0 dev 17 function 1 &quot;VIA VT82C571 IDE&quot; rev 0x06: ATA100, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;FUJITSU MHU2100AT&gt;
+wd0: 16-sector PIO, LBA, 95396MB, 195371568 sectors
+atapiscsi0 at pciide0 channel 0 drive 1
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;QSI, CD-ROM SCR-242, CHC7&gt; ATAPI 5/cdrom removable
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+cd0(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+uhci0 at pci0 dev 17 function 2 &quot;VIA VT83C572 USB&quot; rev 0x19: irq 9
+uhci1 at pci0 dev 17 function 3 &quot;VIA VT83C572 USB&quot; rev 0x19: irq 9
+viapm0 at pci0 dev 17 function 4 &quot;VIA VT8231 PMG&quot; rev 0x10: SMI
+iic0 at viapm0
+spdmem0 at iic0 addr 0x50: 256MB SDRAM non-parity PC133CL2
+viapm0: HWM disabled
+auvia0 at pci0 dev 17 function 5 &quot;VIA VT82C686 AC97&quot; rev 0x40: irq 10
+ac97: codec id 0x43585429 (Conexant CX20468 rev 1)
+ac97: codec features reserved, headphone, 18 bit DAC, 18 bit ADC, No 3D Stereo
+audio0 at auvia0
+&quot;VIA VT82C686 Modem&quot; rev 0x20 at pci0 dev 17 function 6 not configured
+vr0 at pci0 dev 18 function 0 &quot;VIA RhineII-2&quot; rev 0x51: irq 7, address xx:xx:xx:xx:xx:xx
+sqphy0 at vr0 phy 1: 84220 10/100 PHY, rev. 0
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 2 device 0 cacheline 0x0, lattimer 0x40
+pcmcia0 at cardslot0
+cardslot1 at cbb1 slot 1 flags 0
+cardbus1 at cardslot1: bus 2 device 0 cacheline 0x0, lattimer 0x20
+pcmcia1 at cardslot1
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: ALPS Glidepoint, version 0x7322
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 configuration 1 interface 0 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb1 at uhci1: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;VIA UHCI root hub&quot; rev 1.00/1.00 addr 1
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+wi0 at pcmcia1 function 0 &quot;Lucent Technologies, WaveLAN/IEEE, Version 01.01&quot; port 0xa000/64
+wi0: Firmware 8.10 variant 1, address xx:xx:xx:xx:xx:xx
+root on wd0a (9643cb28c07c0164.a) swap on wd0b dump on wd0b
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

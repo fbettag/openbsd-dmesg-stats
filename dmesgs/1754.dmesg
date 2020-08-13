@@ -1,0 +1,233 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2006-01-06 13:53:11</em><br />
+<strong>From:</strong> <em>kaw</em><br />
+<strong>Description:</strong> <em>My handmade "OpenBSD 3.8 LiveCD" running on QEMU 0.71. LiveCD ISO image is at http://kaw.ath.cx/dl/pub/OpenBSD/LiveCD/ . QEMU runs on Linux.</em><br />
+
+<pre>
+OpenBSD 3.8-stable (RDROOT) #0: Thu Nov  3 22:22:42 JST 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/RDROOT
+cpu0: Intel Pentium II (&quot;GenuineIntel&quot; 686-class) 1.81 GHz
+cpu0: FPU,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,PGE,CMOV,PAT,MMX,FXSR,SSE,SSE2
+real mem  = 268017664 (261736K)
+avail mem = 235761664 (230236K)
+using 3297 buffers containing 13504512 bytes (13188K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(b9) BIOS, date 06/23/99, BIOS32 rev. 0 @ 0xf9ca0
+apm0 at bios0: Power Management spec V1.2
+apm0: APM engage (device 1): unknown error code? (83)
+apm0: AC on, battery charge unknown
+apm0: flags 30102 dobusy 0 doidle 1
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0x0
+pcibios0: PCI IRQ Routing Table rev 1.0 @ 0xf9f40/128 (6 entries)
+pcibios0: PCI Interrupt Router at 000:01:0 (&quot;Intel 82371SB ISA&quot; rev 0x00)
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000
+cpu0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x02
+pcib0 at pci0 dev 1 function 0 &quot;Intel 82371SB ISA&quot; rev 0x00
+pciide0 at pci0 dev 1 function 1 &quot;Intel 82371SB IDE&quot; rev 0x00: DMA, channel 0 wi
+red to compatibility, channel 1 wired to compatibility
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;QEMU, QEMU CD-ROM, 0.7.&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 0, DMA mode 1
+vga1 at pci0 dev 2 function 0 &quot;Cirrus Logic CL-GD5446&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ne3 at pci0 dev 3 function 0 &quot;Realtek 8029&quot; rev 0x00: irq 11
+ne3: address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pmsi0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pmsi0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16450, no fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+fd1 at fdc0 drive 1: density unknown
+biomask e76d netmask ef6d ttymask ffef
+pctr: 686-class user-level performance counters enabled
+nvram: invalid checksum
+rd0: fixed, 3800 blocks
+root on rd0a
+rootdev=0x1100 rrootdev=0x2f00 rawdev=0x2f02
+clock: unknown CMOS layout
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

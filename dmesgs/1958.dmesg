@@ -1,0 +1,297 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2008-05-26 18:18:50</em><br />
+<strong>From:</strong> <em>Fred Noz</em><br />
+<strong>Description:</strong> <em>DELL SC1435 with 2-port Intel em0 NIC & CARP cluster</em><br />
+
+<pre>
+OpenBSD 4.3 (GENERIC.MP) #1582: Wed Mar 12 11:16:45 MDT 2008
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 1072267264 (1022MB)
+avail mem = 1029365760 (981MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0x3ffbc000 (49 entries)
+bios0: vendor Dell Inc. version 1.1.2 date 12/15/2006
+bios0: Dell Inc. PowerEdge SC1435
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP APIC SPCR HPET MCFG SRAT SSDT
+acpi0: wakeup devices RTC_(S5) PXB_(S5) EXB1(S5) EXB2(S5) EXB3(S5)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Dual-Core AMD Opteron(tm) Processor 2212 HE, 2000.40 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,NXE,MMXX,FFXSR,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: apic clock running at 200MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Dual-Core AMD Opteron(tm) Processor 2212 HE, 2000.07 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,CX16,NXE,MMXX,FFXSR,LONG,3DNOW2,3DNOW
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu1: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+ioapic0 at mainbus0 apid 2 pa 0xfec00000, version 11, 16 pins
+ioapic0: misconfigured as apic 0, remapped to apid 2
+ioapic1 at mainbus0 apid 3 pa 0xfec01000, version 11, 16 pins
+ioapic1: misconfigured as apic 0, remapped to apid 3
+ioapic2 at mainbus0 apid 4 pa 0xfec02000, version 11, 16 pins
+ioapic2: misconfigured as apic 0, remapped to apid 4
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (PXB_)
+acpiprt2 at acpi0: bus 4 (PPBX)
+acpiprt3 at acpi0: bus 5 (EXB0)
+acpiprt4 at acpi0: bus 1 (EXB1)
+acpiprt5 at acpi0: bus 2 (EXB2)
+acpiprt6 at acpi0: bus 6 (EXB3)
+acpiprt7 at acpi0: bus 7 (EXB4)
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0: configuration mode 1
+ppb0 at pci0 dev 1 function 0 ServerWorks HT-1000 PCI rev 0x00
+pci1 at ppb0 bus 3
+ppb1 at pci1 dev 13 function 0 ServerWorks HT-1000 PCIX rev 0xc0
+pci2 at ppb1 bus 4
+pciide0 at pci1 dev 14 function 0 ServerWorks HT-1000 SATA rev 0x00: DMA
+pciide0: using apic 2 int 6 (irq 6) for native-PCI interrupt
+pciide0: port 0: device present, speed: 1.5Gb/s
+wd0 at pciide0 channel 0 drive 0: &lt;WDC WD800JD-75MSA3&gt;
+wd0: 16-sector PIO, LBA48, 76293MB, 156250000 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+pciide0: port 1: PHY offline
+pciide0: port 2: PHY offline
+pciide0: port 3: PHY offline
+piixpm0 at pci0 dev 2 function 0 ServerWorks HT-1000 rev 0x00: polling
+iic0 at piixpm0
+pciide1 at pci0 dev 2 function 1 ServerWorks HT-1000 IDE rev 0x00: DMA
+atapiscsi0 at pciide1 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;HL-DT-ST, CDRW/DVD GCC4244, B101&gt; SCSI0 5/cdrom removable
+cd0(pciide1:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 0
+pcib0 at pci0 dev 2 function 2 ServerWorks HT-1000 LPC rev 0x00
+ohci0 at pci0 dev 3 function 0 ServerWorks HT-1000 USB rev 0x01: apic 2 int 11 (irq 11), version 1.0, legacy support
+ohci1 at pci0 dev 3 function 1 ServerWorks HT-1000 USB rev 0x01: apic 2 int 11 (irq 11), version 1.0, legacy support
+ehci0 at pci0 dev 3 function 2 ServerWorks HT-1000 USB rev 0x01: apic 2 int 11 (irq 11)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 ServerWorks EHCI root hub rev 2.00/1.00 addr 1
+vga1 at pci0 dev 4 function 0 ATI ES1000 rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb2 at pci0 dev 7 function 0 ServerWorks HT-2100 PCIE rev 0xa2
+pci3 at ppb2 bus 5
+ppb3 at pci0 dev 8 function 0 ServerWorks HT-2100 PCIE rev 0xa2
+pci4 at ppb3 bus 1
+bge0 at pci4 dev 0 function 0 Broadcom BCM5721 rev 0x21, BCM5750 C1 (0x4201): apic 3 int 1 (irq 5), address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb4 at pci0 dev 9 function 0 ServerWorks HT-2100 PCIE rev 0xa2
+pci5 at ppb4 bus 2
+bge1 at pci5 dev 0 function 0 Broadcom BCM5721 rev 0x21, BCM5750 C1 (0x4201): apic 3 int 5 (irq 10), address xx:xx:xx:xx:xx:xx
+brgphy1 at bge1 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb5 at pci0 dev 10 function 0 ServerWorks HT-2100 PCIE rev 0xa2: apic 3 int 3 (irq 6)
+pci6 at ppb5 bus 6
+em0 at pci6 dev 0 function 0 Intel PRO/1000 PT (82571EB) rev 0x06: apic 3 int 3 (irq 6), address xx:xx:xx:xx:xx:xx
+em1 at pci6 dev 0 function 1 Intel PRO/1000 PT (82571EB) rev 0x06: apic 3 int 3 (irq 6), address xx:xx:xx:xx:xx:xx
+ppb6 at pci0 dev 11 function 0 ServerWorks HT-2100 PCIE rev 0xa2
+pci7 at ppb6 bus 7
+pchb0 at pci0 dev 24 function 0 AMD AMD64 HyperTransport rev 0x00
+pchb1 at pci0 dev 24 function 1 AMD AMD64 Address Map rev 0x00
+pchb2 at pci0 dev 24 function 2 AMD AMD64 DRAM Cfg rev 0x00
+pchb3 at pci0 dev 24 function 3 AMD AMD64 Misc Cfg rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 ServerWorks OHCI root hub rev 1.00/1.00 addr 1
+usb2 at ohci1: USB revision 1.0
+uhub2 at usb2 ServerWorks OHCI root hub rev 1.00/1.00 addr 1
+uhub3 at uhub0 port 3 Dell product 0xa001 rev 2.00/0.00 addr 2
+softraid0 at root
+root on wd0a swap on wd0b dump on wd0b
+carp: carp21 demoted group carp to 129
+carp: carp22 demoted group carp to 130
+carp: carp24 demoted group carp to 131
+carp: pfsync0 demoted group carp to 132
+carp: pfsync0 demoted group pfsync to 1
+carp: carp24 demoted group carp to 132
+carp: carp22 demoted group carp to 131
+carp: carp21 demoted group carp to 130
+wsdisplay0: screen 5 deleted
+wsdisplay0: screen 5 added (80x50, vt100 emulation)
+carp: pfsync0 demoted group carp to 1
+carp: pfsync0 demoted group pfsync to 0
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,229 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2009-06-04 12:02:02</em><br />
+<strong>From:</strong> <em>ssm</em><br />
+<strong>Description:</strong> <em>Soekris 5501</em><br />
+
+<pre>
+OpenBSD 4.5 (RAMDISK_CD) #1112: Sat Feb 28 15:06:26 MST 2009
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/RAMDISK_CD
+cpu0: Geode(TM) Integrated Processor by AMD PCS (AuthenticAMD 586-class) 500 MHz
+cpu0: FPU,DE,PSE,TSC,MSR,CX8,SEP,PGE,CMOV,CFLUSH,MMX
+real mem  = 536440832 (511MB)
+avail mem = 512069632 (488MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 20/70/03, BIOS32 rev. 0 @ 0xfac40
+pcibios0 at bios0: rev 2.0 @ 0xf0000/0x10000
+pcibios0: pcibios_get_intr_routing - function not supported
+pcibios0: PCI IRQ Routing information unavailable.
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc8000/0xa800
+cpu0 at mainbus0: (uniprocessor)
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 1 function 0 AMD Geode LX rev 0x33
+AMD Geode LX Crypto rev 0x00 at pci0 dev 1 function 2 not configured
+vr0 at pci0 dev 6 function 0 VIA VT6105M RhineIII rev 0x96: irq 11, address xx:xx:xx:xx:xx:xx
+ukphy0 at vr0 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+vr1 at pci0 dev 7 function 0 VIA VT6105M RhineIII rev 0x96: irq 5, address xx:xx:xx:xx:xx:xx
+ukphy1 at vr1 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+vr2 at pci0 dev 8 function 0 VIA VT6105M RhineIII rev 0x96: irq 9, address xx:xx:xx:xx:xx:xx
+ukphy2 at vr2 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+vr3 at pci0 dev 9 function 0 VIA VT6105M RhineIII rev 0x96: irq 12, address xx:xx:xx:xx:xx:xx
+ukphy3 at vr3 phy 1: Generic IEEE 802.3u media interface, rev. 3: OUI 0x004063, model 0x0034
+glxpcib0 at pci0 dev 20 function 0 AMD CS5536 ISA rev 0x03: rev 0, 32-bit 3579545Hz timer
+pciide0 at pci0 dev 20 function 2 AMD CS5536 IDE rev 0x01: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;CF4GHS&gt;
+wd0: 1-sector PIO, LBA, 3823MB, 7831152 sectors
+wd1 at pciide0 channel 0 drive 1: &lt;SAMSUNG HM320JI&gt;
+wd1: 16-sector PIO, LBA48, 305245MB, 625142448 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+wd1(pciide0:0:1): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ohci0 at pci0 dev 21 function 0 AMD CS5536 USB rev 0x02: irq 15, version 1.0, legacy support
+ehci0 at pci0 dev 21 function 1 AMD CS5536 USB rev 0x02: irq 15
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 AMD EHCI root hub rev 2.00/1.00 addr 1
+isa0 at glxpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 AMD OHCI root hub rev 1.00/1.00 addr 1
+biomask e5c5 netmask ffe5 ttymask ffff
+rd0: fixed, 3800 blocks
+softraid0 at root
+PXE boot MAC address xx:xx:xx:xx:xx:xx, interface vr0
+root on rd0a swap on rd0b dump on rd0b
+WARNING: NVRAM century is 19 but RTC year is 2009
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

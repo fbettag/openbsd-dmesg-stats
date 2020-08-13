@@ -1,0 +1,491 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2013-09-18 09:40:22</em><br />
+<strong>From:</strong> <em>Sevan / Venture37</em><br />
+<strong>Description:</strong> <em>Supermicro X9SRE</em><br />
+
+<pre>
+OpenBSD 5.3 (GENERIC.MP) #62: Tue Mar 12 18:21:20 MDT 2013
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 68689596416 (65507MB)
+avail mem = 66838601728 (63742MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xeb2f0 (113 entries)
+bios0: vendor American Megatrends Inc. version &quot;1.0a&quot; date 03/06/2012
+bios0: DEPO Computers X9SRE/X9SRE-3F/X9SRi/X9SRi-3F
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC PRAD HPET SPMI SSDT MCFG DMAR
+acpi0: wakeup devices PS2K(S4) PS2M(S4) BR20(S1) EUSB(S4) USBE(S4) PEX0(S4) PEX1(S4) PEX2(S4) PEX3(S4) PEX4(S4) PXHA(S4) PXHB(S4) PEX5(S4) PEX6(S4) NPE2(S4) NPE4(S4) NPE5(S4) NPE6(S4) NPE8(S4) NPEA(S4) NPE1(S4) NPE3(S4) NPE7(S4) NPE9(S4) SLPB(S0) PWRB(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.50 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 100MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu4 at mainbus0: apid 8 (application processor)
+cpu4: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu4: 256KB 64b/line 8-way L2 cache
+cpu5 at mainbus0: apid 10 (application processor)
+cpu5: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu5: 256KB 64b/line 8-way L2 cache
+cpu6 at mainbus0: apid 1 (application processor)
+cpu6: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.01 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu6: 256KB 64b/line 8-way L2 cache
+cpu7 at mainbus0: apid 3 (application processor)
+cpu7: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.01 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu7: 256KB 64b/line 8-way L2 cache
+cpu8 at mainbus0: apid 5 (application processor)
+cpu8: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.01 MHz
+cpu8: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu8: 256KB 64b/line 8-way L2 cache
+cpu9 at mainbus0: apid 7 (application processor)
+cpu9: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.01 MHz
+cpu9: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu9: 256KB 64b/line 8-way L2 cache
+cpu10 at mainbus0: apid 9 (application processor)
+cpu10: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.01 MHz
+cpu10: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu10: 256KB 64b/line 8-way L2 cache
+cpu11 at mainbus0: apid 11 (application processor)
+cpu11: Intel(R) Xeon(R) CPU E5-1660 0 @ 3.30GHz, 3300.00 MHz
+cpu11: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,DCA,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,LONG,LAHF,PERF,ITSC
+cpu11: 256KB 64b/line 8-way L2 cache
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 24 pins
+ioapic1 at mainbus0: apid 2 pa 0xfec01000, version 20, 24 pins
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0x80000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 10 (BR20)
+acpiprt2 at acpi0: bus 9 (PEX0)
+acpiprt3 at acpi0: bus -1 (PEX1)
+acpiprt4 at acpi0: bus -1 (PEX2)
+acpiprt5 at acpi0: bus -1 (PEX3)
+acpiprt6 at acpi0: bus -1 (PEX4)
+acpiprt7 at acpi0: bus -1 (PXHA)
+acpiprt8 at acpi0: bus -1 (PXHB)
+acpiprt9 at acpi0: bus -1 (PEX5)
+acpiprt10 at acpi0: bus -1 (PEX6)
+acpiprt11 at acpi0: bus -1 (BR33)
+acpiprt12 at acpi0: bus 4 (NPE2)
+acpiprt13 at acpi0: bus -1 (NPE5)
+acpiprt14 at acpi0: bus 1 (NPE1)
+acpiprt15 at acpi0: bus 2 (BR2D)
+acpiprt16 at acpi0: bus 3 (BR32)
+acpiprt17 at acpi0: bus 5 (NPE3)
+acpiprt18 at acpi0: bus 6 (NPE7)
+acpiprt19 at acpi0: bus 8 (NPE9)
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpicpu1 at acpi0: C3, C2, C1, PSS
+acpicpu2 at acpi0: C3, C2, C1, PSS
+acpicpu3 at acpi0: C3, C2, C1, PSS
+acpicpu4 at acpi0: C3, C2, C1, PSS
+acpicpu5 at acpi0: C3, C2, C1, PSS
+acpicpu6 at acpi0: C3, C2, C1, PSS
+acpicpu7 at acpi0: C3, C2, C1, PSS
+acpicpu8 at acpi0: C3, C2, C1, PSS
+acpicpu9 at acpi0: C3, C2, C1, PSS
+acpicpu10 at acpi0: C3, C2, C1, PSS
+acpicpu11 at acpi0: C3, C2, C1, PSS
+acpibtn0 at acpi0: SLPB
+acpibtn1 at acpi0: PWRB
+ipmi at mainbus0 not configured
+cpu0: Enhanced SpeedStep 3300 MHz: speeds: 3301, 3300, 3100, 3000, 2800, 2700, 2500, 2400, 2200, 2100, 1900, 1800, 1600, 1500, 1300, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel E5 Host&quot; rev 0x07
+ppb0 at pci0 dev 1 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x1d74 rev 0x06
+pci2 at ppb1 bus 2
+ppb2 at pci2 dev 8 function 0 vendor &quot;Intel&quot;, unknown product 0x1d3f rev 0x06
+pci3 at ppb2 bus 3
+vendor &quot;Intel&quot;, unknown product 0x1d68 (class mass storage subclass SAS, rev 0x06) at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 1 function 1 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 2 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci5 at ppb4 bus 5
+ppb5 at pci0 dev 3 function 0 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci6 at ppb5 bus 6
+em0 at pci6 dev 0 function 0 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci6 dev 0 function 1 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+ppb6 at pci0 dev 3 function 2 &quot;Intel E5 PCIE&quot; rev 0x07: msi
+pci7 at ppb6 bus 8
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 0 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 1 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 2 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 3 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 4 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 5 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 6 not configured
+&quot;Intel E5 DMA&quot; rev 0x07 at pci0 dev 4 function 7 not configured
+&quot;Intel E5 Address Map&quot; rev 0x07 at pci0 dev 5 function 0 not configured
+&quot;Intel E5 Error Reporting&quot; rev 0x07 at pci0 dev 5 function 2 not configured
+&quot;Intel E5 I/O APIC&quot; rev 0x07 at pci0 dev 5 function 4 not configured
+&quot;Intel C600 MEI&quot; rev 0x05 at pci0 dev 22 function 0 not configured
+&quot;Intel C600 MEI&quot; rev 0x05 at pci0 dev 22 function 1 not configured
+ehci0 at pci0 dev 26 function 0 &quot;Intel C600 USB&quot; rev 0x06: apic 0 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb7 at pci0 dev 28 function 0 &quot;Intel C600 PCIE&quot; rev 0xb6: msi
+pci8 at ppb7 bus 9
+mpii0 at pci8 dev 0 function 0 &quot;Symbios Logic SAS2004&quot; rev 0x03: msi
+mpii0: SAS9211-4i, firmware xxx.xxx.xxx.xxx IR, MPI 2.0
+scsibus0 at mpii0: 258 targets
+sd0 at scsibus0 targ 14 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c491008
+sd0: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd1 at scsibus0 targ 15 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3c17b
+sd1: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd2 at scsibus0 targ 16 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3bd30
+sd2: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd3 at scsibus0 targ 17 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3c104
+sd3: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd4 at scsibus0 targ 18 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e9baf
+sd4: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd5 at scsibus0 targ 19 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48d6ca
+sd5: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd6 at scsibus0 targ 20 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3bdb0
+sd6: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd7 at scsibus0 targ 21 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e9cca
+sd7: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd8 at scsibus0 targ 22 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3bdb9
+sd8: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd9 at scsibus0 targ 23 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48dadd
+sd9: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd10 at scsibus0 targ 24 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c490f35
+sd10: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd11 at scsibus0 targ 25 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19ec410
+sd11: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd12 at scsibus0 targ 26 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3c196
+sd12: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd13 at scsibus0 targ 27 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48d89d
+sd13: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd14 at scsibus0 targ 28 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e9eb4
+sd14: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd15 at scsibus0 targ 29 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e9e40
+sd15: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd16 at scsibus0 targ 30 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3bfc2
+sd16: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd17 at scsibus0 targ 31 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48d698
+sd17: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd18 at scsibus0 targ 32 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48fc30
+sd18: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd19 at scsibus0 targ 33 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48dac6
+sd19: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd20 at scsibus0 targ 34 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee206f3c2fc
+sd20: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd21 at scsibus0 targ 35 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee25c48d874
+sd21: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd22 at scsibus0 targ 36 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e95b5
+sd22: 2861588MB, 512 bytes/sector, 5860533168 sectors
+sd23 at scsibus0 targ 37 lun 0: &lt;ATA, WDC WD30EZRX-00M, 0A80&gt; SCSI3 0/direct fixed naa.50014ee2b19e9e63
+sd23: 2861588MB, 512 bytes/sector, 5860533168 sectors
+ses0 at scsibus0 targ 38 lun 0: &lt;LSI CORP, SAS2X36, 0717&gt; SCSI3 13/enclosure services fixed naa.5003048001c7e17d
+ehci1 at pci0 dev 29 function 0 &quot;Intel C600 USB&quot; rev 0x06: apic 0 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb8 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xa6
+pci9 at ppb8 bus 10
+vga1 at pci9 dev 4 function 0 &quot;Matrox MGA G200eW&quot; rev 0x0a
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcib0 at pci0 dev 31 function 0 &quot;Intel C600 LPC&quot; rev 0x06
+ahci0 at pci0 dev 31 function 2 &quot;Intel C600 AHCI&quot; rev 0x06: msi, AHCI 1.3
+scsibus1 at ahci0: 32 targets
+sd24 at scsibus1 targ 0 lun 0: &lt;ATA, INTEL SSDSC2CT12, 300i&gt; SCSI3 0/direct fixed naa.5001517bb28e6605
+sd24: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+sd25 at scsibus1 targ 1 lun 0: &lt;ATA, INTEL SSDSC2CT12, 300i&gt; SCSI3 0/direct fixed naa.5001517bb28d5494
+sd25: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel C600 SMBus&quot; rev 0x06: apic 0 int 18
+iic0 at ichiic0
+lm1 at iic0 addr 0x2d: W83627DHG
+&quot;Intel C600 Thermal&quot; rev 0x06 at pci0 dev 31 function 6 not configured
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x2e/2: NCT6776F rev 0x33
+lm2 at wbsio0 port 0xa30/8: NCT6776F
+pci10 at mainbus0 bus 255
+vendor &quot;Intel&quot;, unknown product 0x3c80 (class system subclass miscellaneous, rev 0x07) at pci10 dev 8 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c83 (class system subclass miscellaneous, rev 0x07) at pci10 dev 8 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c84 (class system subclass miscellaneous, rev 0x07) at pci10 dev 8 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c90 (class system subclass miscellaneous, rev 0x07) at pci10 dev 9 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c93 (class system subclass miscellaneous, rev 0x07) at pci10 dev 9 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c94 (class system subclass miscellaneous, rev 0x07) at pci10 dev 9 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cc0 (class system subclass miscellaneous, rev 0x07) at pci10 dev 10 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cc1 (class system subclass miscellaneous, rev 0x07) at pci10 dev 10 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cc2 (class system subclass miscellaneous, rev 0x07) at pci10 dev 10 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cd0 (class system subclass miscellaneous, rev 0x07) at pci10 dev 10 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce0 (class system subclass miscellaneous, rev 0x07) at pci10 dev 11 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce3 (class system subclass miscellaneous, rev 0x07) at pci10 dev 11 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 12 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 12 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 12 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cf4 (class system subclass miscellaneous, rev 0x07) at pci10 dev 12 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cf6 (class system subclass miscellaneous, rev 0x07) at pci10 dev 12 function 7 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 13 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 13 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 13 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cf5 (class system subclass miscellaneous, rev 0x07) at pci10 dev 13 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ca0 (class system subclass miscellaneous, rev 0x07) at pci10 dev 14 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c46 (class DASP subclass Time and Frequency, rev 0x07) at pci10 dev 14 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ca8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c71 (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3caa (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cab (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cac (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cad (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cae (class system subclass miscellaneous, rev 0x07) at pci10 dev 15 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb0 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb1 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb2 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb3 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 3 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb4 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb5 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb6 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 6 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb7 (class system subclass miscellaneous, rev 0x07) at pci10 dev 16 function 7 not configured
+vendor &quot;Intel&quot;, unknown product 0x3cb8 (class system subclass miscellaneous, rev 0x07) at pci10 dev 17 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce4 (class system subclass miscellaneous, rev 0x07) at pci10 dev 19 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c43 (class DASP subclass Time and Frequency, rev 0x07) at pci10 dev 19 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x3ce6 (class DASP subclass Time and Frequency, rev 0x07) at pci10 dev 19 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c44 (class DASP subclass Time and Frequency, rev 0x07) at pci10 dev 19 function 5 not configured
+vendor &quot;Intel&quot;, unknown product 0x3c45 (class system subclass miscellaneous, rev 0x07) at pci10 dev 19 function 6 not configured
+mtrr: Pentium Pro MTRR support
+lm1: disabling sensors due to alias with lm2
+uhub2 at uhub0 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub2 port 6 configuration 1 interface 0 &quot;Winbond Electronics Corp Hermon USB hidmouse Device&quot; rev 1.10/0.01 addr 3
+uhidev0: iclass 3/1
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+uhidev1 at uhub2 port 6 configuration 1 interface 1 &quot;Winbond Electronics Corp Hermon USB hidmouse Device&quot; rev 1.10/0.01 addr 3
+uhidev1: iclass 3/1
+ukbd0 at uhidev1: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhub3 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd24a (7dbaecf3f2cc9c0c.a) swap on sd24b dump on sd24b                                                           
+hw.sensors.cpu0.temp0=53.00 degC
+hw.sensors.cpu1.temp0=53.00 degC
+hw.sensors.cpu2.temp0=53.00 degC
+hw.sensors.cpu3.temp0=53.00 degC
+hw.sensors.cpu4.temp0=53.00 degC
+hw.sensors.cpu5.temp0=53.00 degC
+hw.sensors.cpu6.temp0=53.00 degC
+hw.sensors.cpu7.temp0=53.00 degC
+hw.sensors.cpu8.temp0=53.00 degC
+hw.sensors.cpu9.temp0=53.00 degC
+hw.sensors.cpu10.temp0=53.00 degC
+hw.sensors.cpu11.temp0=53.00 degC
+hw.sensors.ses0.temp0=38.00 degC, OK
+hw.sensors.ses0.percent0=0.00% (Fan), UNKNOWN
+hw.sensors.ses0.percent1=0.00% (Fan), UNKNOWN
+hw.sensors.lm2.temp0=44.00 degC
+hw.sensors.lm2.temp1=0.00 degC
+hw.sensors.lm2.temp2=35.50 degC
+hw.sensors.lm2.fan0=4285 RPM
+hw.sensors.lm2.fan1=3103 RPM
+hw.sensors.lm2.fan2=3426 RPM
+hw.sensors.lm2.fan3=3316 RPM
+hw.sensors.lm2.fan4=3366 RPM
+hw.sensors.lm2.volt0=0.83 VDC (VCore)
+hw.sensors.lm2.volt1=12.14 VDC (+12V)
+hw.sensors.lm2.volt2=3.42 VDC (+3.3V)
+hw.sensors.lm2.volt3=3.42 VDC (+3.3V)
+hw.sensors.lm2.volt4=-10.73 VDC (-12V)
+hw.sensors.lm2.volt5=1.29 VDC
+hw.sensors.lm2.volt6=1.06 VDC
+hw.sensors.lm2.volt7=3.33 VDC (3.3VSB)
+hw.sensors.lm2.volt8=1.62 VDC (VBAT)
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

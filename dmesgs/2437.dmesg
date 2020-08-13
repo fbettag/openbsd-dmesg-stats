@@ -1,0 +1,242 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2013-02-12 02:32:13</em><br />
+<strong>From:</strong> <em>shikitohno</em><br />
+<strong>Description:</strong> <em>OpenBSD on a Dell Latitude D420</em><br />
+
+<pre>
+OpenBSD 5.2 (GENERIC.MP) #339: Wed Aug  1 10:13:24 MDT 2012
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 20
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xe1
+pci4 at ppb3 bus 2
+cbb0 at pci4 dev 1 function 0 &quot;Ricoh 5C476 CardBus&quot; rev 0xb4: apic 2 int 19
+&quot;Ricoh 5C552 Firewire&quot; rev 0x09 at pci4 dev 1 function 1 not configured
+sdhc0 at pci4 dev 1 function 2 &quot;Ricoh 5C822 SD/MMC&quot; rev 0x18: apic 2 int 18
+sdmmc0 at sdhc0
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GBM LPC&quot; rev 0x01: PM disabled
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;TOSHIBA MK6008GAH&gt;
+wd0: 16-sector PIO, LBA48, 57231MB, 117210240 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+pciide0: channel 1 ignored (disabled)
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x01: SMI
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x51: 2GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+sdmmc0: can't enable card
+uhub5 at uhub1 port 2 &quot;Dell product 0xa005&quot; rev 2.00/50.18 addr 2
+uhub6 at uhub5 port 3 &quot;vendor 0x0b97 product 0x7761&quot; rev 1.10/1.10 addr 3
+ugen0 at uhub6 port 2 &quot;O2 O2Micro CCID SC Reader&quot; rev 1.10/1.10 addr 4
+vscsi0 at root
+scsibus0 at vscsi0: 256 targets
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on wd0a (3a117c2f7b98beab.a) swap on wd0b dump on wd0b
+wpi0: fatal firmware error
+firmware error log (count=1):
+  error type = &quot;SYSASSERT&quot; (0x00000005)
+  error data      = 0x00000074
+  branch link     = 0x000008B600000274
+  interrupt link  = 0x0000032000003560
+  time            = 3955716352
+driver status:
+  tx ring  0: qid=0  cur=19  queued=0  
+  tx ring  1: qid=1  cur=0   queued=0  
+  tx ring  2: qid=2  cur=0   queued=0  
+  tx ring  3: qid=3  cur=0   queued=0  
+  tx ring  4: qid=4  cur=20  queued=0  
+  tx ring  5: qid=5  cur=0   queued=0  
+  rx ring: cur=34
+  802.11 state 4
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,285 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-03-12 12:13:02</em><br />
+<strong>From:</strong> <em>pbug</em><br />
+<strong>Description:</strong> <em>AMD64 3500+ CPU, MSI K8N Neo2 Motherboard with 1 GB Infineon RAM, Samsung SP1614C SATA Drive 160 GB, Plextor PX716A DVD-RW Drive, ATI Radeon VGA card, This system runs OpenBSD/amd64 -CURRENT last cvs updated on 20050306, This System only detected my wd0 drive with a snapshot from Feb. 12</em><br />
+
+<pre>
+OpenBSD 3.6-current (NEPTUNE) #1: Sun Mar  6 11:26:46 CET 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/NEPTUNE
+real mem = 1073278976 (1048124K)
+avail mem = 909459456 (888144K)
+using 22937 buffers containing 107536384 bytes (105016K) of memory
+mainbus0 (root)
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Athlon(tm) 64 Processor 3500+, 2210.34 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CF
+LUSH,MMX,FXSR,SSE,SSE2,NXE,MMXX,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 1
+6-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 &quot;Nvidia nForce3 250 PCI Host&quot; rev 0xa1
+&quot;Nvidia nForce3 250 ISA&quot; rev 0xa2 at pci0 dev 1 function 0 not configured
+&quot;Nvidia nForce3 250 SMBus&quot; rev 0xa1 at pci0 dev 1 function 1 not configured
+ohci0 at pci0 dev 2 function 0 &quot;Nvidia nForce3 250 USB&quot; rev 0xa1: irq 10, versio
+n 1.0, legacy support
+ohci0: SMM does not respond, resetting
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0
+uhub0: Nvidia OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 4 ports with 4 removable, self powered
+ohci1 at pci0 dev 2 function 1 &quot;Nvidia nForce3 250 USB&quot; rev 0xa1: irq 10, versio
+n 1.0, legacy support
+ohci1: SMM does not respond, resetting
+usb1 at ohci1: USB revision 1.0
+uhub1 at usb1
+uhub1: Nvidia OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 4 ports with 4 removable, self powered
+ehci0 at pci0 dev 2 function 2 &quot;Nvidia nForce3 250 USB2&quot; rev 0xa2: irq 10
+ehci0: EHCI version 1.0
+ehci0: companion controllers, 4 ports each: ohci0 ohci1
+usb2 at ehci0: USB revision 2.0
+uhub2 at usb2
+uhub2: Nvidia EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub2: 8 ports with 8 removable, self powered
+&quot;Nvidia nForce3 LAN&quot; rev 0xa2 at pci0 dev 5 function 0 not configured
+auich0 at pci0 dev 6 function 0 &quot;Nvidia nForce3 250 AC-97 Audio&quot; rev 0xa1: irq 1
+1, nForce3 AC97
+ac97: codec id 0x414c4790 (Avance Logic ALC850)
+audio0 at auich0
+pciide0 at pci0 dev 8 function 0 &quot;Nvidia nForce3 250 IDE&quot; rev 0xa2: DMA, channel
+ 0 configured to compatibility, channel 1 configured to compatibility
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;PLEXTOR, DVDR PX-716A, 1.03&gt; SCSI0 5/cdrom remova
+ble
+cd0(pciide0:1:0): using PIO mode 4, Ultra-DMA mode 4
+pciide1 at pci0 dev 9 function 0 vendor &quot;Nvidia&quot;, unknown product 0x00ee rev 0xa
+2: DMA (unsupported), channel 0 wired to native-PCI, channel 1 wired to native-P
+CI
+pciide1: using irq 10 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;SAMSUNG SP1614C&gt;
+wd0: 16-sector PIO, LBA48, 152627MB, 312581808 sectors
+pciide1: channel 1 ignored (not responding; disabled or no drives?)
+pciide2 at pci0 dev 10 function 0 &quot;Nvidia nForce3 250 SATA&quot; rev 0xa2: DMA (unsup
+ported), channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide2: using irq 5 for native-PCI interrupt
+pciide2: channel 0 ignored (not responding; disabled or no drives?)
+pciide2: channel 1 ignored (not responding; disabled or no drives?)
+ppb0 at pci0 dev 11 function 0 &quot;Nvidia nForce3 250 AGP&quot; rev 0xa2
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor &quot;ATI&quot;, unknown product 0x4153 rev 0x00
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+vendor &quot;ATI&quot;, unknown product 0x4173 (class display subclass miscellaneous, rev 
+0x00) at pci1 dev 0 function 1 not configured
+ppb1 at pci0 dev 14 function 0 &quot;Nvidia nForce3 250 PCI-PCI&quot; rev 0xa2
+pci2 at ppb1 bus 2
+wi0 at pci2 dev 6 function 0 &quot;Eumitcom WL11000P&quot; rev 0x02: irq 3
+wi0: &quot;Lucent Technologies, WaveLAN/IEEE, Version 01.01&quot;
+wi0: Firmware 6.06 variant 1, address xx:xx:xx:xx:xx:xx
+xl0 at pci2 dev 7 function 0 &quot;3Com 3c905 100Base-TX&quot; rev 0x00: irq 11, address 0
+0:60:08:5a:86:82
+nsphy0 at xl0 phy 24: DP83840 10/100 PHY, rev. 1
+rl0 at pci2 dev 8 function 0 &quot;Realtek 8139&quot; rev 0x10: irq 5 address 00:50:bf:70:
+76:87
+rlphy0 at rl0 phy 0: RTL internal phy
+rl1 at pci2 dev 9 function 0 &quot;Realtek 8139&quot; rev 0x10: irq 10 address 00:50:bf:70
+:76:a8
+rlphy1 at rl1 phy 0: RTL internal phy
+ahc0 at pci2 dev 10 function 0 &quot;Adaptec AHA-19160B U160&quot; rev 0x02: irq 11
+scsibus1 at ahc0: 16 targets
+&quot;VIA VT6306 FireWire&quot; rev 0x46 at pci2 dev 12 function 0 not configured
+re0 at pci2 dev 13 function 0 &quot;Realtek 8169&quot; rev 0x10: irq 3, address 00:11:09:c
+b:a6:2a
+rgephy0 at re0 phy 7: RTL8169S/8110S PHY, rev. 0
+pchb1 at pci0 dev 24 function 0 &quot;AMD AMD64 HyperTransport&quot; rev 0x00
+pchb2 at pci0 dev 24 function 1 &quot;AMD AMD64 Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD AMD64 DRAM Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 3 &quot;AMD AMD64 Misc Cfg&quot; rev 0x00
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0 (mux 1 ignored for console): console keyboard, using wsdisplay0
+pmsi0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pmsi0 mux 0
+pcppi0 at isa0 port 0x61
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+lm0 at isa0 port 0x290/8: W83627THF
+dkcsum: wd0 matched BIOS disk 80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+auich0: measured ac97 link rate at 47993 Hz, will use 48000 Hz
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

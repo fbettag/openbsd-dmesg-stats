@@ -1,0 +1,398 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-04-22 22:07:30</em><br />
+<strong>From:</strong> <em>afresh1</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.1-current (GENERIC.MP) on Tyan S2932-SI</em><br />
+
+<pre>
+OpenBSD 6.1-current (GENERIC.MP) #11: Fri Apr 21 18:42:28 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 34342895616 (32751MB)
+avail mem = 33297387520 (31754MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.5 @ 0xfc480 (62 entries)
+bios0: vendor American Megatrends Inc. version &quot;'V2.06     '&quot; date 10/22/2009
+bios0: empty empty
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP APIC MCFG OEMB SRAT HPET SSDT
+acpi0: wakeup devices PS2K(S4) USB0(S1) USB2(S1) NMAC(S5) NMAD(S5) P0P1(S4) HDAC(S4) BR10(S4) BR11(S4) BR12(S4) BR13(S4) BR14(S4) BR15(S4) NSMB(S4) PWRB(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 8 (boot processor)
+cpu0: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.33 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu0: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu0: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu0: AMD erratum 721 detected and fixed
+cpu0: TSC frequency 1800326570 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 200MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 9 (application processor)
+cpu1: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu1: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu1: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu1: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu1: AMD erratum 721 detected and fixed
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 10 (application processor)
+cpu2: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu2: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu2: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu2: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu2: AMD erratum 721 detected and fixed
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 11 (application processor)
+cpu3: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu3: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu3: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu3: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu3: AMD erratum 721 detected and fixed
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 12 (application processor)
+cpu4: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu4: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu4: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu4: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu4: AMD erratum 721 detected and fixed
+cpu4: smt 0, core 4, package 0
+cpu5 at mainbus0: apid 13 (application processor)
+cpu5: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu5: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu5: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu5: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu5: AMD erratum 721 detected and fixed
+cpu5: smt 0, core 5, package 0
+cpu6 at mainbus0: apid 16 (application processor)
+cpu6: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu6: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu6: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu6: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu6: AMD erratum 721 detected and fixed
+cpu6: smt 0, core 0, package 1
+cpu7 at mainbus0: apid 17 (application processor)
+cpu7: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu7: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu7: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu7: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu7: AMD erratum 721 detected and fixed
+cpu7: smt 0, core 1, package 1
+cpu8 at mainbus0: apid 18 (application processor)
+cpu8: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu8: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu8: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu8: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu8: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu8: AMD erratum 721 detected and fixed
+cpu8: smt 0, core 2, package 1
+cpu9 at mainbus0: apid 19 (application processor)
+cpu9: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu9: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu9: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu9: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu9: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu9: AMD erratum 721 detected and fixed
+cpu9: smt 0, core 3, package 1
+cpu10 at mainbus0: apid 20 (application processor)
+cpu10: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu10: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu10: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu10: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu10: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu10: AMD erratum 721 detected and fixed
+cpu10: smt 0, core 4, package 1
+cpu11 at mainbus0: apid 21 (application processor)
+cpu11: Six-Core AMD Opteron(tm) Processor 2419 EE, 1800.09 MHz
+cpu11: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,3DNOW2,3DNOW,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,ITSC
+cpu11: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache, 6MB 64b/line 48-way L3 cache
+cpu11: ITLB 32 4KB entries fully associative, 16 4MB entries fully associative
+cpu11: DTLB 48 4KB entries fully associative, 48 4MB entries fully associative
+cpu11: AMD erratum 721 detected and fixed
+cpu11: smt 0, core 5, package 1
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 11, 24 pins
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 25000000 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (P0P1)
+acpiprt2 at acpi0: bus 7 (BR10)
+acpiprt3 at acpi0: bus 6 (BR11)
+acpiprt4 at acpi0: bus 3 (BR12)
+acpiprt5 at acpi0: bus -1 (BR13)
+acpiprt6 at acpi0: bus -1 (BR14)
+acpiprt7 at acpi0: bus 2 (BR15)
+acpicpu0 at acpi0: C1(@1 halt!), PSS
+acpicpu1 at acpi0: C1(@1 halt!), PSS
+acpicpu2 at acpi0: C1(@1 halt!), PSS
+acpicpu3 at acpi0: C1(@1 halt!), PSS
+acpicpu4 at acpi0: C1(@1 halt!), PSS
+acpicpu5 at acpi0: C1(@1 halt!), PSS
+acpicpu6 at acpi0: C1(@1 halt!), PSS
+acpicpu7 at acpi0: C1(@1 halt!), PSS
+acpicpu8 at acpi0: C1(@1 halt!), PSS
+acpicpu9 at acpi0: C1(@1 halt!), PSS
+acpicpu10 at acpi0: C1(@1 halt!), PSS
+acpicpu11 at acpi0: C1(@1 halt!), PSS
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0501&quot; at acpi0 not configured
+&quot;PNP0303&quot; at acpi0 not configured
+acpibtn0 at acpi0: PWRB
+ipmi at mainbus0 not configured
+cpu0: 1800 MHz: speeds: 1800 1400 1200 1000 800 MHz
+pci0 at mainbus0 bus 0
+&quot;NVIDIA MCP55 Memory&quot; rev 0xa2 at pci0 dev 0 function 0 not configured
+pcib0 at pci0 dev 1 function 0 &quot;NVIDIA MCP55 ISA&quot; rev 0xa3
+nviic0 at pci0 dev 1 function 1 &quot;NVIDIA MCP55 SMBus&quot; rev 0xa3
+iic0 at nviic0
+iic1 at nviic0
+adt0 at iic1 addr 0x2c: sch5017 rev 0x8a
+adt1 at iic1 addr 0x2d: emc6d100 rev 0x68
+adt2 at iic1 addr 0x2e: emc6d100 rev 0x68
+spdmem0 at iic1 addr 0x50: 4GB DDR2 SDRAM registered cmd/addr parity, data ECC PC2-5300CL5
+spdmem1 at iic1 addr 0x51: 4GB DDR2 SDRAM registered cmd/addr parity, data ECC PC2-5300CL5
+spdmem2 at iic1 addr 0x52: 4GB DDR2 SDRAM registered cmd/addr parity, data ECC PC2-5300CL5
+spdmem3 at iic1 addr 0x53: 4GB DDR2 SDRAM registered cmd/addr parity, data ECC PC2-5300CL5
+ohci0 at pci0 dev 2 function 0 &quot;NVIDIA MCP55 USB&quot; rev 0xa1: apic 0 int 10, version 1.0, legacy support
+ehci0 at pci0 dev 2 function 1 &quot;NVIDIA MCP55 USB&quot; rev 0xa2: apic 0 int 11
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NVIDIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+pciide0 at pci0 dev 5 function 0 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide0: using apic 0 int 5 for native-PCI interrupt
+wd0 at pciide0 channel 0 drive 0: &lt;ST3250620AS&gt;
+wd0: 16-sector PIO, LBA48, 238475MB, 488397168 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 6
+pciide1 at pci0 dev 5 function 1 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide1: using apic 0 int 14 for native-PCI interrupt
+pciide2 at pci0 dev 5 function 2 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide2: using apic 0 int 10 for native-PCI interrupt
+ppb0 at pci0 dev 6 function 0 &quot;NVIDIA MCP55&quot; rev 0xa2
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 7 function 0 &quot;ATI ES1000&quot; rev 0x02
+drm0 at radeondrm0
+radeondrm0: apic 0 int 10
+ppb1 at pci0 dev 10 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 13 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3
+pci3 at ppb2 bus 3
+ppb3 at pci3 dev 0 function 0 &quot;NEC PCIE-PCIX&quot; rev 0x07
+pci4 at ppb3 bus 4
+ppb4 at pci3 dev 0 function 1 &quot;NEC PCIE-PCIX&quot; rev 0x07
+pci5 at ppb4 bus 5
+em0 at pci5 dev 0 function 0 &quot;Intel 82546EB&quot; rev 0x01: apic 0 int 11, address xx:xx:xx:xx:xx:xx
+em1 at pci5 dev 0 function 1 &quot;Intel 82546EB&quot; rev 0x01: apic 0 int 5, address xx:xx:xx:xx:xx:xx
+ppb5 at pci0 dev 14 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 15 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3
+pci7 at ppb6 bus 7
+pchb0 at pci0 dev 24 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb1 at pci0 dev 24 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb2 at pci0 dev 24 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb3 at pci0 dev 24 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+pchb4 at pci0 dev 25 function 0 &quot;AMD AMD64 10h HyperTransport&quot; rev 0x00
+pchb5 at pci0 dev 25 function 1 &quot;AMD AMD64 10h Address Map&quot; rev 0x00
+pchb6 at pci0 dev 25 function 2 &quot;AMD AMD64 10h DRAM Cfg&quot; rev 0x00
+km1 at pci0 dev 25 function 3 &quot;AMD AMD64 10h Misc Cfg&quot; rev 0x00
+pchb7 at pci0 dev 25 function 4 &quot;AMD AMD64 10h Link Cfg&quot; rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;NVIDIA OHCI root hub&quot; rev 1.00/1.00 addr 1
+uhidev0 at uhub1 port 2 configuration 1 interface 0 &quot;Fujitsu Component Type 6 Keyboard&quot; rev 1.10/2.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes, country code 33
+wskbd1 at ukbd0 mux 1
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (fe5e1d0c659ebc08.a) swap on wd0b dump on wd0b
+radeondrm0: 1280x1024, 8bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

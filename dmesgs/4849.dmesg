@@ -1,0 +1,320 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-04-07 19:07:57</em><br />
+<strong>From:</strong> <em>Kurt Mosiejczuk</em><br />
+<strong>Description:</strong> <em>HP 8200 Elite SFF Desktop</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC.MP) #7: Thu Feb 28 18:56:25 CET 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4161122304 (3968MB)
+avail mem = 4025729024 (3839MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xe87ee (85 entries)
+bios0: vendor Hewlett-Packard version &quot;J01 v02.25&quot; date 12/09/2013
+bios0: Hewlett-Packard HP Compaq 8200 Elite SFF PC
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC SSDT MCFG HPET ASF! SSDT SLIC TCPA DMAR
+acpi0: wakeup devices PS2K(S3) PS2M(S3) BR20(S4) EUSB(S3) USBE(S3) PEX0(S4) PEX1(S4) PEX2(S4) PEX3(S4) PEX4(S4) PEX5(S4) PEX6(S4) PEX7(S4) P0P1(S4) P0P2(S4) P0P3(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3093.96 MHz, 06-2a-07
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.96 MHz, 06-2a-07
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.96 MHz, 06-2a-07
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz, 3092.96 MHz, 06-2a-07
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 5 (BR20)
+acpiprt2 at acpi0: bus 1 (PEX0)
+acpiprt3 at acpi0: bus -1 (PEX1)
+acpiprt4 at acpi0: bus -1 (PEX2)
+acpiprt5 at acpi0: bus -1 (PEX3)
+acpiprt6 at acpi0: bus 2 (PEX4)
+acpiprt7 at acpi0: bus -1 (PEX5)
+acpiprt8 at acpi0: bus 3 (PEX6)
+acpiprt9 at acpi0: bus 4 (PEX7)
+acpiprt10 at acpi0: bus -1 (P0P1)
+acpiprt11 at acpi0: bus -1 (P0P2)
+acpiprt12 at acpi0: bus -1 (P0P3)
+acpiprt13 at acpi0: bus -1 (P0P4)
+acpicpu0 at acpi0: C3(350@104 mwait.3@0x20), C2(500@80 mwait.3@0x10), C1(1000@1 halt), PSS
+acpicpu1 at acpi0: C3(350@104 mwait.3@0x20), C2(500@80 mwait.3@0x10), C1(1000@1 halt), PSS
+acpicpu2 at acpi0: C3(350@104 mwait.3@0x20), C2(500@80 mwait.3@0x10), C1(1000@1 halt), PSS
+acpicpu3 at acpi0: C3(350@104 mwait.3@0x20), C2(500@80 mwait.3@0x10), C1(1000@1 halt), PSS
+acpicmos0 at acpi0
+tpm0 at acpi0: TPM_ addr 0xfed40000/0x5000: Infineon SLB9635 1.2 rev 0x10
+acpibtn0 at acpi0: PWRB
+&quot;PNP0C14&quot; at acpi0 not configured
+ipmi at mainbus0 not configured
+cpu0: Enhanced SpeedStep 3093 MHz: speeds: 3101, 3100, 2900, 2700, 2500, 2300, 2100, 1900, 1700, 1600 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 2G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 2000&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1440x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 6 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 6 Series KT&quot; rev 0x04: ports: 16 com
+com4 at puc0 port 0 apic 0 int 17: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel 82579LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 0 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 6 Series HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Realtek ALC662
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 4 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 6 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 7 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci4 at ppb3 bus 4
+ehci1 at pci0 dev 29 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 0 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xa4
+pci5 at ppb4 bus 5
+pcib0 at pci0 dev 31 function 0 &quot;Intel Q67 LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 6 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 2: 1.5Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, WDC WD2500AAKX-6, 16.0&gt; SCSI3 0/direct fixed naa.50014ee1599840c1
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors
+cd0 at scsibus1 targ 2 lun 0: &lt;hp, DVD RW AD-7251H5, 1H8D&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 6 Series SMBus&quot; rev 0x04: apic 0 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: VMX/EPT
+efifb at mainbus0 not configured
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub2 port 2 configuration 1 interface 0 &quot;LiteON HP Basic USB Keyboard&quot; rev 1.10/1.00 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhidev1 at uhub3 port 5 configuration 1 interface 0 &quot;SINO WEALTH USB KEYBOARD&quot; rev 1.10/1.00 addr 3
+uhidev1: iclass 3/1
+ukbd1 at uhidev1: 8 variable keys, 6 key codes
+wskbd2 at ukbd1 mux 1
+wskbd2: connecting to wsdisplay0
+uhidev2 at uhub3 port 5 configuration 1 interface 1 &quot;SINO WEALTH USB KEYBOARD&quot; rev 1.10/1.00 addr 3
+uhidev2: iclass 3/0, 5 report ids
+uhid0 at uhidev2 reportid 2: input=1, output=0, feature=0
+uhid1 at uhidev2 reportid 3: input=3, output=0, feature=0
+uhid2 at uhidev2 reportid 5: input=0, output=0, feature=5
+uhidev3 at uhub3 port 7 configuration 1 interface 0 &quot;PixArt USB Optical Mouse&quot; rev 2.00/1.00 addr 4
+uhidev3: iclass 3/1
+ums0 at uhidev3: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (cfff7d1e2208b87f.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

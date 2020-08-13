@@ -1,0 +1,344 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2012-06-20 12:21:25</em><br />
+<strong>From:</strong> <em>Marck</em><br />
+<strong>Description:</strong> <em>TOSHIBA Satellite A500 (OBSD 5.1 no wireless)</em><br />
+
+<pre>
+OpenBSD 5.1 (GENERIC.MP) #207: Sun Feb 12 09:42:14 MST 2012
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4081811456 (3892MB)
+avail mem = 3958988800 (3775MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xbb667000 (26 entries)
+bios0: vendor TOSHIBA version &quot;1.70&quot; date 06/24/10
+bios0: TOSHIBA Satellite A500
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG ASF! SLIC SSDT UEFI UEFI UEFI
+acpi0: wakeup devices EHC1(S3) USB1(S3) USB2(S3) USB4(S3) EHC2(S3) USB5(S3) USB6(S3) USB7(S3) HDEF(S3) PXSX(S3) RP01(S3) PXSX(S0) PXSX(S5) PXSX(S4) PXSX(S4) PXSX(S4) PXSX(S4) LID0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5 CPU M 430 @ 2.27GHz, 2261.33 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 132MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i5 CPU M 430 @ 2.27GHz, 2261.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Core(TM) i5 CPU M 430 @ 2.27GHz, 2261.00 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu3 at mainbus0: apid 5 (application processor)
+cpu3: Intel(R) Core(TM) i5 CPU M 430 @ 2.27GHz, 2261.00 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT,NXE,LONG,LAHF
+cpu3: 256KB 64b/line 8-way L2 cache
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 1
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P2)
+acpiprt2 at acpi0: bus 31 (P0P1)
+acpiprt3 at acpi0: bus 1 (RP01)
+acpiprt4 at acpi0: bus 6 (RP02)
+acpiprt5 at acpi0: bus 11 (RP03)
+acpiprt6 at acpi0: bus 16 (RP04)
+acpiprt7 at acpi0: bus 21 (RP05)
+acpiprt8 at acpi0: bus -1 (RP07)
+acpiprt9 at acpi0: bus -1 (RP08)
+acpiprt10 at acpi0: bus -1 (PEG3)
+acpiprt11 at acpi0: bus -1 (PEG5)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C1, PSS
+acpicpu1 at acpi0: C1, PSS
+acpicpu2 at acpi0: C1, PSS
+acpicpu3 at acpi0: C1, PSS
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model &quot;PA3534U-1BRS&quot; serial 41167 type Li-Ion oem &quot;COMPAL &quot;
+acpibtn0 at acpi0: LID0
+acpibtn1 at acpi0: PWRB
+acpivideo0 at acpi0: VGA_
+acpivideo1 at acpi0: GFX0
+acpivout0 at acpivideo1: DD02
+cpu0: Enhanced SpeedStep 2261 MHz: speeds: 2267, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core Host&quot; rev 0x02
+vga1 at pci0 dev 2 function 0 &quot;Intel Mobile HD graphics&quot; rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xc0000000, size 0x10000000
+inteldrm0 at vga1: apic 1 int 16
+drm0 at inteldrm0
+&quot;Intel 3400 MEI&quot; rev 0x06 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 1 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 3400 HD Audio&quot; rev 0x05: msi
+azalia0: codecs: Realtek ALC272, Intel/0x2804, using Realtek ALC272
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 28 function 1 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci2 at ppb1 bus 6
+&quot;Realtek 8192SE&quot; rev 0x10 at pci2 dev 0 function 0 not configured
+ppb2 at pci0 dev 28 function 2 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci3 at ppb2 bus 11
+re0 at pci3 dev 0 function 0 &quot;Realtek 8101E&quot; rev 0x02: RTL8102EL (0x2480), apic 1 int 18, address xx:xx:xx:xx:xx:xx
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+ppb3 at pci0 dev 28 function 3 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci4 at ppb3 bus 16
+ppb4 at pci0 dev 28 function 4 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci5 at ppb4 bus 21
+&quot;JMicron SD/MMC&quot; rev 0x20 at pci5 dev 0 function 0 not configured
+sdhc0 at pci5 dev 0 function 2 &quot;JMicron SD Host Controller&quot; rev 0x20: apic 1 int 16
+sdmmc0 at sdhc0
+&quot;JMicron Memory Stick&quot; rev 0x20 at pci5 dev 0 function 3 not configured
+&quot;JMicron xD&quot; rev 0x20 at pci5 dev 0 function 4 not configured
+ppb5 at pci0 dev 28 function 5 &quot;Intel 3400 PCIE&quot; rev 0x05: msi
+pci6 at ppb5 bus 26
+ehci1 at pci0 dev 29 function 0 &quot;Intel 3400 USB&quot; rev 0x05: apic 1 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb6 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xa5
+pci7 at ppb6 bus 31
+pcib0 at pci0 dev 31 function 0 &quot;Intel HM55 LPC&quot; rev 0x05
+ahci0 at pci0 dev 31 function 2 &quot;Intel 3400 AHCI&quot; rev 0x05: msi, AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 1 lun 0: &lt;ATA, TOSHIBA MK5055GS, GC00&gt; SCSI3 0/direct fixed naa.5000039243782f38
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors
+cd0 at scsibus0 targ 4 lun 0: &lt;TSSTcorp, CDDVDW TS-L633C, TF02&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 3400 SMBus&quot; rev 0x05: apic 1 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-8500 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-8500 SO-DIMM
+itherm0 at pci0 dev 31 function 6 &quot;Intel 3400 Thermal&quot; rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 4 configuration 1 interface 0 &quot;SuYin USB 2.0 HD Camera&quot; rev 2.00/1.30 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub3 port 1 configuration 1 interface 0 &quot;Logitech Logitech USB Keyboard&quot; rev 1.10/28.00 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub3 port 1 configuration 1 interface 1 &quot;Logitech Logitech USB Keyboard&quot; rev 1.10/28.00 addr 3
+uhidev1: iclass 3/0, 2 report ids
+uhid0 at uhidev1 reportid 1: input=2, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhidev2 at uhub3 port 2 configuration 1 interface 0 &quot;vendor 0x15ca USB Optical Mouse&quot; rev 2.00/5.12 addr 4
+uhidev2: iclass 3/1
+ums0 at uhidev2: 3 buttons, Z dir
+wsmouse1 at ums0 mux 0
+umass0 at uhub3 port 3 configuration 1 interface 0 &quot; USB DISK 2.0&quot; rev 2.00/1.10 addr 5
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;, USB DISK 2.0, PMAP&gt; SCSI0 0/direct removable serial.13fe31001901196C14B8
+sd1: 7640MB, 512 bytes/sector, 15646720 sectors
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd1d (3ceb0eda33beffa0.d) swap on sd1b dump on sd1b
+hw.sensors.cpu0.temp0=39.00 degC
+hw.sensors.cpu1.temp0=39.00 degC
+hw.sensors.cpu2.temp0=39.00 degC
+hw.sensors.cpu3.temp0=39.00 degC
+hw.sensors.acpiac0.indicator0=On (power supply)
+hw.sensors.acpibat0.volt0=11.10 VDC (voltage)
+hw.sensors.acpibat0.volt1=12.56 VDC (current voltage)
+hw.sensors.acpibat0.current0=64.55 A (rate)
+hw.sensors.acpibat0.amphour0=3.84 Ah (last full capacity)
+hw.sensors.acpibat0.amphour1=0.38 Ah (warning capacity)
+hw.sensors.acpibat0.amphour2=0.11 Ah (low capacity)
+hw.sensors.acpibat0.amphour3=3.51 Ah (remaining capacity), OK
+hw.sensors.acpibat0.raw0=130 (battery charging), OK
+hw.sensors.itherm0.temp1=43.04 degC (Core 1)
+hw.sensors.itherm0.temp4=45.00 degC (CPU/GPU Max temp)
+hw.sensors.itherm0.temp9=45.00 degC (GPU/Memory controller abs.)
+hw.sensors.itherm0.temp10=59.00 degC (PCH abs.)
+hw.sensors.itherm0.power0=6.00 W (CPU power consumption)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

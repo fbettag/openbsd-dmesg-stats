@@ -1,0 +1,215 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-02-02 10:05:58</em><br />
+<strong>From:</strong> <em>firebaugh</em><br />
+<strong>Description:</strong> <em>SPARCstation 20 75MHz</em><br />
+
+<pre>
+OpenBSD 3.6-current (GENERIC) #289: Mon Jan 31 00:31:22 MST 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc/compile/GENERIC
+real mem = 267706368
+avail mem = 240775168
+using 200 buffers containing 13107200 bytes of memory
+bootpath: /iommu@f,e0000000/sbus@f,e0001000/espdma@f,400000/esp@f,800000/sd@1,0
+mainbus0 (root): SUNW,SPARCstation-20
+cpu0 at mainbus0: TMS390Z50 v0 or TMS390Z55 @ 75 MHz, on-chip FPU
+cpu0: physical 20K instruction (64 b/l), 16K data (32 b/l), 1024K external (32 b/l) cache enabled
+obio0 at mainbus0
+clock0 at obio0 addr 0xf1200000: mk48t08 (eeprom)
+timer0 at obio0 addr 0xf1300000 delay constant 35
+zs0 at obio0 addr 0xf1100000 pri 12, softpri 6
+zstty0 at zs0 channel 0
+zstty1 at zs0 channel 1
+zs1 at obio0 addr 0xf1000000 pri 12, softpri 6
+zskbd0 at zs1 channel 0: keyboard, type 5, layout 0x22
+wskbd0 at zskbd0: console keyboard
+zstty2 at zs1 channel 1: mouse
+fdc0 at obio0 addr 0xf1700000 pri 11, softpri 4: chip 82077
+auxreg0 at obio0 addr 0xf1800000
+power0 at obio0 addr 0xf1a01000
+iommu0 at mainbus0 ioaddr 0xe0000000: version 0x3/0x1, page-size 4096, range 64MB
+sbus0 at iommu0: clock = 25 MHz
+dma0 at sbus0 slot 15 offset 0x400000: rev 2
+esp0 at dma0 offset 0x800000 pri 4: ESP200, 40MHz, SCSI ID 7
+scsibus0 at esp0: 8 targets
+sd0 at scsibus0 targ 1 lun 0: &lt;IBM, DORS32160SUN2.1G, WA7A&gt; SCSI2 0/direct fixed
+sd0: 2063MB, 6703 cyl, 5 head, 126 sec, 512 bytes/sec, 4226725 sec total
+sd1 at scsibus0 targ 3 lun 0: &lt;SEAGATE, ST32430W SUN2.1G, 0444&gt; SCSI2 0/direct fixed
+sd1: 2049MB, 3992 cyl, 9 head, 116 sec, 512 bytes/sec, 4197405 sec total
+cd0 at scsibus0 targ 6 lun 0: &lt;TOSHIBA, XM-4101TASUNSLCD, 1755&gt; SCSI2 5/cdrom removable
+ledma0 at sbus0 slot 15 offset 0x400010: rev 2
+le0 at ledma0 offset 0xc00000 pri 6: address xx:xx:xx:xx:xx:xx
+le0: 16 receive buffers, 4 transmit buffers
+bpp0 at sbus0 slot 15 offset 0x4800000: DMA2
+SUNW,DBRIe at sbus0 slot 14 offset 0x10000 not configured
+nm212 at sbus0 class network slot 0 offset 0x0 not configured
+cgsix0 at sbus0 slot 2 offset 0x0: SUNW,501-2325, 1152x900, rev 11
+wsdisplay0 at cgsix0: console (std, sun emulation), using wskbd0
+root on sd0a
+rootdev=0x700 rrootdev=0x1100 rawdev=0x1102
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,236 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-06-03 21:23:58</em><br />
+<strong>From:</strong> <em>Brian</em><br />
+<strong>Description:</strong> <em>HP J6700</em><br />
+
+<pre>
+[ using 818424 bytes of bsd ELF symbol table ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2019 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.5-current (GENERIC.MP) #524: Mon Jun  3 10:40:09 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/hppa/compile/GENERIC.MP
+HP 9000/785/J6700 (Duet W2) PA-RISC 2.0a
+real mem = 2147483648 (2048MB)
+rsvd mem = 524288 (512KB)
+avail mem = 2085965824 (1989MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root [flex fff80000]
+pdc0 at mainbus0
+power0 at mainbus0 offset 400804
+lcd0 at mainbus0 offset 5d0008: model 0
+cpu0 at mainbus0 offset ffa0000: PCXW2 L1-B 750MHz, FPU PCXW2 rev 1
+cpu0: 768K(64b/l) Icache, 1536K(64b/l) wr-back Dcache, 240 coherent TLB
+cpu1 at mainbus0 offset ffa2000: PCXW2 L1-B 750MHz, FPU PCXW2 rev 1
+cpu1: 768K(64b/l) Icache, 1536K(64b/l) wr-back Dcache, 240 coherent TLB
+mem0 at mainbus0 offset ed10200: size 2048MB
+astro0 at mainbus0 offset ed00000: Astro rev 2.1
+elroy0 at astro0 offset ed3c000: Elroy TR4.0 APIC ver 20, 7 pins
+pci0 at elroy0
+elroy1 at astro0 offset ed38000: Elroy TR4.0 APIC ver 20, 7 pins
+pci1 at elroy1
+sti0 at pci1 dev 2 function 0 &quot;Hewlett-Packard Visualize FX4&quot; rev 0x02
+sti0: rev 8.13;9, ID 0x35ACDA3009A02587
+sti0: A1299B, 1024x768 frame buffer, 1024x768x32 display
+sti0: 8x16 font type 1, 16 bpc, charset 0-255
+elroy2 at astro0 offset ed34000: Elroy TR4.0 APIC ver 20, 7 pins
+pci2 at elroy2
+elroy3 at astro0 offset ed30000: Elroy TR4.0 APIC ver 20, 7 pins
+pci3 at elroy3
+dc0 at pci3 dev 12 function 0 &quot;DEC 21142/3&quot; rev 0x41: line 2 irq 2, address xx:xx:xx:xx:xx:xx
+lxtphy0 at dc0 phy 1: LXT970 10/100 PHY, rev. 3
+&quot;Analog Devices AD1889 Audio&quot; rev 0x00 at pci3 dev 13 function 0 not configured
+pciide0 at pci3 dev 14 function 0 &quot;NS PC87415 IDE&quot; rev 0x03: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using line 0 irq 3 for native-PCI interrupt
+ssio0 at pci3 dev 14 function 1 &quot;NS 87560 Legacy I/O&quot; rev 0x01: line 0 irq 3
+com0 at ssio0 offset 3f8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at ssio0 offset 2f8 irq 3: ns16550a, 16 byte fifo
+lpt0 at ssio0 offset 378 irq 7
+ohci0 at pci3 dev 14 function 2 &quot;NS USB&quot; rev 0x02: line 0 irq 3, version 1.0, legacy support
+siop0 at pci3 dev 15 function 0 &quot;Symbios Logic 53c896&quot; rev 0x07: line 1 irq 5, using 8K of on-board RAM
+scsibus1 at siop0: 16 targets, initiator 7
+siop1 at pci3 dev 15 function 1 &quot;Symbios Logic 53c896&quot; rev 0x07: line 1 irq 5, using 8K of on-board RAM
+scsibus2 at siop1: 16 targets, initiator 7
+sd0 at scsibus2 targ 6 lun 0: &lt;TELEPLAN, TPD07380, JNZH&gt; SCSI3 0/direct fixed eui.0010b9fc080c0c72
+sd0: 70149MB, 512 bytes/sector, 143666192 sectors
+usb0 at ohci0: USB revision 1.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NS OHCI root hub&quot; rev 1.00/1.00 addr 1
+siop1: target 6 now using tagged 16 bit 40.0 MHz 31 REQ/ACK offset xfers
+wsdisplay0 at sti0 mux 1
+wsdisplay0: screen 0 added (std, vt100 emulation)
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+bootpath: 10/0/15/1.6 class=1 flags=0 hpa=0xf4004000 spa=0x0 io=0x19000
+root on sd0a (feba7bef7642577c.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

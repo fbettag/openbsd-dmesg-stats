@@ -1,0 +1,386 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-05-03 17:31:55</em><br />
+<strong>From:</strong> <em>janus</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.3-current on Lenovo X220</em><br />
+
+<pre>
+OpenBSD 6.3-current (GENERIC.MP) #12: Wed Apr 25 22:51:35 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8451125248 (8059MB)
+avail mem = 8187088896 (7807MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xdae9c000 (64 entries)
+bios0: vendor LENOVO version &quot;8DET72WW (1.42 )&quot; date 02/18/2016
+bios0: LENOVO 4291Z8U
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC SSDT SSDT SSDT HPET APIC MCFG ECDT ASF! TCPA SSDT SSDT DMAR UEFI UEFI UEFI
+acpi0: wakeup devices LID_(S3) SLPB(S3) IGBE(S4) EXP4(S4) EXP7(S4) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, 797.55 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, 797.41 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, 797.41 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, 797.41 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,IBRS,IBPB,STIBP,SENSOR,ARAT,MELTDOWN
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus 5 (EXP4)
+acpiprt5 at acpi0: bus 13 (EXP5)
+acpiprt6 at acpi0: bus -1 (EXP7)
+acpicpu0 at acpi0: C3(200@109 io@0x416), C2(500@80 io@0x414), C1(1000@1 halt), PSS
+acpicpu1 at acpi0: C3(200@109 io@0x416), C2(500@80 io@0x414), C1(1000@1 halt), PSS
+acpicpu2 at acpi0: C3(200@109 io@0x416), C2(500@80 io@0x414), C1(1000@1 halt), PSS
+acpicpu3 at acpi0: C3(200@109 io@0x416), C2(500@80 io@0x414), C1(1000@1 halt), PSS
+acpipwrres0 at acpi0: PUBS, resource for EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 99 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+&quot;LEN0020&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;42T4940&quot; serial  5160 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit offline
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+acpidock0 at acpi0: GDCK not docked (0)
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+acpivideo1 at acpi0: VID_
+cpu0: Enhanced SpeedStep 797 MHz: speeds: 2501, 2500, 2200, 2000, 1800, 1600, 1400, 1200, 1000, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 2G Host&quot; rev 0x09
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 3000&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1366x768, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+&quot;Intel 6 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel 82579LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 6 Series HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Conexant CX20590, Intel/0x2805, using Conexant CX20590
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 1 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci2 at ppb1 bus 3
+iwn0 at pci2 dev 0 function 0 &quot;Intel Centrino Advanced-N 6205&quot; rev 0x34: msi, MIMO 2T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 3 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci3 at ppb2 bus 5
+ppb3 at pci0 dev 28 function 4 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci4 at ppb3 bus 13
+sdhc0 at pci4 dev 0 function 0 &quot;Ricoh 5U823 SD/MMC&quot; rev 0x04: apic 2 int 16
+sdhc0: SDHC 3.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+ehci1 at pci0 dev 29 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel QM67 LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 6 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Samsung SSD 840, EXT0&gt; SCSI3 0/direct fixed naa.500253885006d327
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 6 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-10600 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.0, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+vmm0 at mainbus0: VMX/EPT
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 6 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. Integrated Camera&quot; rev 2.00/8.54 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+umodem0 at uhub3 port 4 configuration 1 interface 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem0: data interface 2, has CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+umodem1 at uhub3 port 4 configuration 1 interface 3 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem1: data interface 4, has CM over data, has break
+umodem1: status change notification available
+ucom1 at umodem1
+umodem2 at uhub3 port 4 configuration 1 interface 9 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem2: data interface 10, has CM over data, has break
+umodem2: status change notification available
+ucom2 at umodem2
+ugen0 at uhub3 port 4 configuration 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+sd1 at scsibus3 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd1: 476937MB, 512 bytes/sector, 976767473 sectors
+root on sd1a (2700b4d28b3f7da2.a) swap on sd1b dump on sd1b
+video0 detached
+uvideo0 detached
+uhub2 detached
+uhub0 detached
+ucom0 detached
+umodem0 detached
+ucom1 detached
+umodem1 detached
+ucom2 detached
+umodem2 detached
+ugen0 detached
+uhub3 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 6 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. Integrated Camera&quot; rev 2.00/8.54 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+umodem0 at uhub3 port 4 configuration 1 interface 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem0: data interface 2, has CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+umodem1 at uhub3 port 4 configuration 1 interface 3 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem1: data interface 4, has CM over data, has break
+umodem1: status change notification available
+ucom1 at umodem1
+umodem2 at uhub3 port 4 configuration 1 interface 9 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem2: data interface 10, has CM over data, has break
+umodem2: status change notification available
+ucom2 at umodem2
+ugen0 at uhub3 port 4 configuration 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+video0 detached
+uvideo0 detached
+uhub2 detached
+uhub0 detached
+ucom0 detached
+umodem0 detached
+ucom1 detached
+umodem1 detached
+ucom2 detached
+umodem2 detached
+ugen0 detached
+uhub3 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uvideo0 at uhub2 port 6 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. Integrated Camera&quot; rev 2.00/8.54 addr 3
+video0 at uvideo0
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+umodem0 at uhub3 port 4 configuration 1 interface 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem0: data interface 2, has CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+umodem1 at uhub3 port 4 configuration 1 interface 3 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem1: data interface 4, has CM over data, has break
+umodem1: status change notification available
+ucom1 at umodem1
+umodem2 at uhub3 port 4 configuration 1 interface 9 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+umodem2: data interface 10, has CM over data, has break
+umodem2: status change notification available
+ucom2 at umodem2
+ugen0 at uhub3 port 4 configuration 1 &quot;Lenovo F5521gw&quot; rev 2.00/0.00 addr 3
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

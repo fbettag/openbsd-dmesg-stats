@@ -1,0 +1,441 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-06-19 15:31:35</em><br />
+<strong>From:</strong> <em>Sergey Bronnikov</em><br />
+<strong>Description:</strong> <em>Lenovo W500</em><br />
+
+<pre>
+OpenBSD 4.8 (RAMDISK_CD) #600: Mon Aug 16 09:15:31 MDT 2010
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 3177934848 (3030MB)
+avail mem = 3081687040 (2938MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0010 (80 entries)
+bios0: vendor LENOVO version 7VET80WW (3.10 ) date 10/02/2009
+bios0: LENOVO 406257G
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT APIC MCFG HPET SLIC BOOT SSDT SSDT SSDT SSDT
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T9600 @ 2.80GHz, 2793.50 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG
+cpu0: 6MB 64b/line 16-way L2 cache
+cpu0: apic clock running at 265MHz
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 2, remapped to apid 1
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpi0: WARNING EC not initialized
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (AGP_)
+acpiprt2 at acpi0: bus 2 (EXP0)
+acpiprt3 at acpi0: bus 3 (EXP1)
+acpiprt4 at acpi0: bus 4 (EXP2)
+acpiprt5 at acpi0: bus 5 (EXP3)
+acpiprt6 at acpi0: bus 13 (EXP4)
+acpiprt7 at acpi0: bus 21 (PCI1)
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 Intel GM45 Host rev 0x07
+vga1 at pci0 dev 2 function 0 Intel GM45 Video rev 0x07
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+Intel GM45 Video rev 0x07 at pci0 dev 2 function 1 not configured
+Intel GM45 HECI rev 0x07 at pci0 dev 3 function 0 not configured
+em0 at pci0 dev 25 function 0 Intel ICH9 IGP M rev 0x03: apic 1 int 20 (irq 11), address xx:xx:xx:xx:xx:xx
+uhci0 at pci0 dev 26 function 0 Intel 82801I USB rev 0x03: apic 1 int 20 (irq 11)
+uhci1 at pci0 dev 26 function 1 Intel 82801I USB rev 0x03: apic 1 int 21 (irq 11)
+uhci2 at pci0 dev 26 function 2 Intel 82801I USB rev 0x03: apic 1 int 22 (irq 11)
+ehci0 at pci0 dev 26 function 7 Intel 82801I USB rev 0x03: apic 1 int 23 (irq 11)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+Intel 82801I HD Audio rev 0x03 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 Intel 82801I PCIE rev 0x03: apic 1 int 20 (irq 11)
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 1 Intel 82801I PCIE rev 0x03: apic 1 int 21 (irq 11)
+pci2 at ppb1 bus 3
+iwn0 at pci2 dev 0 function 0 Intel WiFi Link 5100 rev 0x00: apic 1 int 17 (irq 11), MIMO 1T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 2 Intel 82801I PCIE rev 0x03: apic 1 int 22 (irq 11)
+pci3 at ppb2 bus 4
+Intel Turbo Memory rev 0x11 at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 28 function 3 Intel 82801I PCIE rev 0x03: apic 1 int 23 (irq 11)
+pci4 at ppb3 bus 5
+ppb4 at pci0 dev 28 function 4 Intel 82801I PCIE rev 0x03: apic 1 int 20 (irq 11)
+pci5 at ppb4 bus 13
+uhci3 at pci0 dev 29 function 0 Intel 82801I USB rev 0x03: apic 1 int 16 (irq 11)
+uhci4 at pci0 dev 29 function 1 Intel 82801I USB rev 0x03: apic 1 int 17 (irq 11)
+uhci5 at pci0 dev 29 function 2 Intel 82801I USB rev 0x03: apic 1 int 18 (irq 11)
+ehci1 at pci0 dev 29 function 7 Intel 82801I USB rev 0x03: apic 1 int 19 (irq 11)
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0x93
+pci6 at ppb5 bus 21
+cbb0 at pci6 dev 0 function 0 Ricoh 5C476 CardBus rev 0xba: apic 1 int 16 (irq 11)
+Ricoh 5C832 Firewire rev 0x04 at pci6 dev 0 function 1 not configured
+Ricoh 5C822 SD/MMC rev 0x21 at pci6 dev 0 function 2 not configured
+Ricoh 5C843 MMC rev 0x11 at pci6 dev 0 function 3 not configured
+Ricoh 5C592 Memory Stick rev 0x11 at pci6 dev 0 function 4 not configured
+Ricoh 5C852 xD rev 0x11 at pci6 dev 0 function 5 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 22 device 0 cacheline 0x10, lattimer 0xb0
+pcmcia0 at cardslot0
+Intel 82801IBM LPC rev 0x03 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 Intel 82801I AHCI rev 0x03: apic 1 int 16 (irq 11), AHCI 1.2
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, ST9500420AS, 0003&gt; SCSI3 0/direct fixed
+sd0: 476940MB, 512 bytes/sec, 976773168 sec total
+cd0 at scsibus0 targ 1 lun 0: &lt;Optiarc, DVD RW AD-7910S, 1.D2&gt; ATAPI 5/cdrom removable
+Intel 82801I SMBus rev 0x03 at pci0 dev 31 function 3 not configured
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+rd0: fixed, 4480 blocks
+vendor 0x08ff Fingerprint Sensor rev 2.00/17.03 addr 2 at uhub3 port 1 not configured
+Lenovo Integrated Smart Card Reader rev 2.00/1.00 addr 2 at uhub7 port 2 not configured
+Lenovo Computer Corp ThinkPad Bluetooth with Enhanced Data Rate II rev 2.00/3.99 addr 3 at uhub3 port 2 not configured
+softraid0 at root
+root on rd0a swap on rd0b dump on rd0b
+syncing disks... done
+rebooting...
+OpenBSD 4.8 (GENERIC.MP) #335: Mon Aug 16 09:09:20 MDT 2010
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 3177934848 (3030MB)
+avail mem = 3079520256 (2936MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xe0010 (80 entries)
+bios0: vendor LENOVO version 7VET80WW (3.10 ) date 10/02/2009
+bios0: LENOVO 406257G
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT APIC MCFG HPET SLIC BOOT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices LID_(S3) SLPB(S3) UART(S3) IGBE(S4) EXP0(S4) EXP1(S4) EXP2(S4) EXP3(S4) EXP4(S4) PCI1(S4) USB0(S3) USB3(S3) USB5(S3) EHC0(S3) EHC1(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Duo CPU T9600 @ 2.80GHz, 2793.56 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG
+cpu0: 6MB 64b/line 16-way L2 cache
+cpu0: apic clock running at 265MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 Duo CPU T9600 @ 2.80GHz, 2793.00 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,XSAVE,NXE,LONG
+cpu1: 6MB 64b/line 16-way L2 cache
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 2, remapped to apid 1
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (AGP_)
+acpiprt2 at acpi0: bus 2 (EXP0)
+acpiprt3 at acpi0: bus 3 (EXP1)
+acpiprt4 at acpi0: bus 4 (EXP2)
+acpiprt5 at acpi0: bus 5 (EXP3)
+acpiprt6 at acpi0: bus 13 (EXP4)
+acpiprt7 at acpi0: bus 21 (PCI1)
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpicpu1 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: PUBS
+acpitz0 at acpi0: critical temperature 127 degC
+acpitz1 at acpi0: critical temperature 100 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpibat0 at acpi0: BAT0 model 42T4620 serial   929 type LION oem Panasonic
+acpibat1 at acpi0: BAT1 not present
+acpiac0 at acpi0: AC unit offline
+acpithinkpad0 at acpi0
+acpidock0 at acpi0: GDCK not docked (0)
+cpu0: Enhanced SpeedStep 2793 MHz: speeds: 2801, 2800, 2133, 1600, 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 Intel GM45 Host rev 0x07
+vga1 at pci0 dev 2 function 0 Intel GM45 Video rev 0x07
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xd0000000, size 0x10000000
+inteldrm0 at vga1: apic 1 int 16 (irq 11)
+drm0 at inteldrm0
+Intel GM45 Video rev 0x07 at pci0 dev 2 function 1 not configured
+Intel GM45 HECI rev 0x07 at pci0 dev 3 function 0 not configured
+em0 at pci0 dev 25 function 0 Intel ICH9 IGP M rev 0x03: apic 1 int 20 (irq 11), address xx:xx:xx:xx:xx:xx
+uhci0 at pci0 dev 26 function 0 Intel 82801I USB rev 0x03: apic 1 int 20 (irq 11)
+uhci1 at pci0 dev 26 function 1 Intel 82801I USB rev 0x03: apic 1 int 21 (irq 11)
+uhci2 at pci0 dev 26 function 2 Intel 82801I USB rev 0x03: apic 1 int 22 (irq 11)
+ehci0 at pci0 dev 26 function 7 Intel 82801I USB rev 0x03: apic 1 int 23 (irq 11)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 Intel 82801I HD Audio rev 0x03: apic 1 int 17 (irq 11)
+azalia0: codecs: Conexant CX20561, Conexant/0x2c06, using Conexant CX20561
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 Intel 82801I PCIE rev 0x03: apic 1 int 20 (irq 11)
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 1 Intel 82801I PCIE rev 0x03: apic 1 int 21 (irq 11)
+pci2 at ppb1 bus 3
+iwn0 at pci2 dev 0 function 0 Intel WiFi Link 5100 rev 0x00: apic 1 int 17 (irq 11), MIMO 1T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 2 Intel 82801I PCIE rev 0x03: apic 1 int 22 (irq 11)
+pci3 at ppb2 bus 4
+Intel Turbo Memory rev 0x11 at pci3 dev 0 function 0 not configured
+ppb3 at pci0 dev 28 function 3 Intel 82801I PCIE rev 0x03: apic 1 int 23 (irq 11)
+pci4 at ppb3 bus 5
+ppb4 at pci0 dev 28 function 4 Intel 82801I PCIE rev 0x03: apic 1 int 20 (irq 11)
+pci5 at ppb4 bus 13
+uhci3 at pci0 dev 29 function 0 Intel 82801I USB rev 0x03: apic 1 int 16 (irq 11)
+uhci4 at pci0 dev 29 function 1 Intel 82801I USB rev 0x03: apic 1 int 17 (irq 11)
+uhci5 at pci0 dev 29 function 2 Intel 82801I USB rev 0x03: apic 1 int 18 (irq 11)
+ehci1 at pci0 dev 29 function 7 Intel 82801I USB rev 0x03: apic 1 int 19 (irq 11)
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0x93
+pci6 at ppb5 bus 21
+cbb0 at pci6 dev 0 function 0 Ricoh 5C476 CardBus rev 0xba: apic 1 int 16 (irq 11)
+Ricoh 5C832 Firewire rev 0x04 at pci6 dev 0 function 1 not configured
+sdhc0 at pci6 dev 0 function 2 Ricoh 5C822 SD/MMC rev 0x21: apic 1 int 18 (irq 11)
+sdmmc0 at sdhc0
+Ricoh 5C843 MMC rev 0x11 at pci6 dev 0 function 3 not configured
+Ricoh 5C592 Memory Stick rev 0x11 at pci6 dev 0 function 4 not configured
+Ricoh 5C852 xD rev 0x11 at pci6 dev 0 function 5 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 22 device 0 cacheline 0x10, lattimer 0xb0
+pcmcia0 at cardslot0
+pcib0 at pci0 dev 31 function 0 Intel 82801IBM LPC rev 0x03
+ahci0 at pci0 dev 31 function 2 Intel 82801I AHCI rev 0x03: apic 1 int 16 (irq 11), AHCI 1.2
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, ST9500420AS, 0003&gt; SCSI3 0/direct fixed
+sd0: 476940MB, 512 bytes/sec, 976773168 sec total
+cd0 at scsibus0 targ 1 lun 0: &lt;Optiarc, DVD RW AD-7910S, 1.D2&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 Intel 82801I SMBus rev 0x03: apic 1 int 23 (irq 11)
+iic0 at ichiic0
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci1: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci2: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb5 at uhci3: USB revision 1.0
+uhub5 at usb5 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb6 at uhci4: USB revision 1.0
+uhub6 at usb6 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb7 at uhci5: USB revision 1.0
+uhub7 at usb7 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+mtrr: Pentium Pro MTRR support
+ugen0 at uhub3 port 1 AuthenTec Fingerprint Sensor rev 2.00/17.03 addr 2
+ugen1 at uhub7 port 2 Lenovo Integrated Smart Card Reader rev 2.00/1.00 addr 2
+ubt0 at uhub3 port 2 Lenovo Computer Corp ThinkPad Bluetooth with Enhanced Data Rate II rev 2.00/3.99 addr 3
+softraid0 at root
+root on sd0a swap on sd0b dump on sd0b
+kqemu: kqemu version 0x00010300 loaded, max locked mem=1551724kB
+DDB symbols added: 486840 bytes
+ugen0 detached
+ubt0 detached
+ugen1 detached
+ugen0 at uhub3 port 1 AuthenTec Fingerprint Sensor rev 2.00/17.03 addr 2
+ugen1 at uhub7 port 2 Lenovo Integrated Smart Card Reader rev 2.00/1.00 addr 2
+ubt0 at uhub3 port 2 Lenovo Computer Corp ThinkPad Bluetooth with Enhanced Data Rate II rev 2.00/3.99 addr 3
+ugen0 detached
+ubt0 detached
+ugen1 detached
+ugen0 at uhub3 port 1 AuthenTec Fingerprint Sensor rev 2.00/17.03 addr 2
+ugen1 at uhub7 port 2 Lenovo Integrated Smart Card Reader rev 2.00/1.00 addr 2
+ubt0 at uhub3 port 2 Lenovo Computer Corp ThinkPad Bluetooth with Enhanced Data Rate II rev 2.00/3.99 addr 3
+ugen0 detached
+ubt0 detached
+ugen1 detached
+ugen0 at uhub3 port 1 AuthenTec Fingerprint Sensor rev 2.00/17.03 addr 2
+ugen1 at uhub7 port 2 Lenovo Integrated Smart Card Reader rev 2.00/1.00 addr 2
+ubt0 at uhub3 port 2 Lenovo Computer Corp ThinkPad Bluetooth with Enhanced Data Rate II rev 2.00/3.99 addr 3
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

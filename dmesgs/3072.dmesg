@@ -1,0 +1,345 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2016-12-14 15:32:25</em><br />
+<strong>From:</strong> <em>tomten</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.0-Current on HP Compaq nx9420</em><br />
+
+<pre>
+OpenBSD 6.0-current (GENERIC.MP) #9: Sun Dec  4 23:32:23 MST 2016
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 2130509824 (2031MB)
+avail mem = 2061443072 (1965MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf3b69 (23 entries)
+bios0: vendor Hewlett-Packard version &quot;68YAF Ver. F.19&quot; date 12/14/2006
+bios0: Hewlett-Packard HP Compaq nx9420 (RH441EA#AK8)
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC HPET APIC MCFG TCPA SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices C09A(S5) C0F9(S3) C0FA(S3) C0FB(S3) C0FC(S3) C103(S5) C22D(S5) C113(S5) C238(S5) C119(S5) C239(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 CPU T5600 @ 1.83GHz, 1829.05 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR
+cpu0: 2MB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 166MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM)2 CPU T5600 @ 1.83GHz, 1828.75 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,NXE,LONG,LAHF,PERF,SENSOR
+cpu1: 2MB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 1 (C085)
+acpiprt1 at acpi0: bus 2 (C09A)
+acpiprt2 at acpi0: bus 8 (C103)
+acpiprt3 at acpi0: bus 16 (C113)
+acpiprt4 at acpi0: bus 32 (C119)
+acpiprt5 at acpi0: bus 0 (C003)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: C1F8, resource for C1F3
+acpipwrres1 at acpi0: C207, resource for C201
+acpipwrres2 at acpi0: C224, resource for C222
+acpipwrres3 at acpi0: C22C, resource for C11C
+acpipwrres4 at acpi0: C334, resource for C33F
+acpipwrres5 at acpi0: C335, resource for C340
+acpipwrres6 at acpi0: C336, resource for C341
+acpipwrres7 at acpi0: C337, resource for C342
+acpipwrres8 at acpi0: C338, resource for C343
+acpipwrres9 at acpi0: C339, resource for C344
+acpipwrres10 at acpi0: C33A, resource for C345
+acpipwrres11 at acpi0: C33B, resource for C346
+acpipwrres12 at acpi0: C33C, resource for C347
+acpipwrres13 at acpi0: C33D, resource for C348
+acpipwrres14 at acpi0: C33E, resource for C349
+acpitz0 at acpi0: critical temperature is 256 degC
+acpitz1 at acpi0: critical temperature is 102 degC
+acpitz2 at acpi0: critical temperature is 110 degC
+acpitz3 at acpi0: critical temperature is 105 degC
+acpitz4 at acpi0: critical temperature is 102 degC
+acpitz5 at acpi0: critical temperature is 110 degC
+&quot;PNP0A06&quot; at acpi0 not configured
+&quot;PNP0401&quot; at acpi0 not configured
+tpm0 at acpi0: C209 addr 0xfed40000/0x5000: Infineon SLB9635 1.2 rev 0x10
+&quot;PNP0303&quot; at acpi0 not configured
+&quot;SYN011D&quot; at acpi0 not configured
+&quot;HPQ0004&quot; at acpi0 not configured
+&quot;HPQ0006&quot; at acpi0 not configured
+acpibat0 at acpi0: C1C5 not present
+acpibat1 at acpi0: C1C4 not present
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: C24D
+acpibtn1 at acpi0: C245
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+&quot;PNP0C0B&quot; at acpi0 not configured
+acpivideo0 at acpi0: C130
+cpu0: Enhanced SpeedStep 1829 MHz: speeds: 1833, 1333, 1000 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945GM Host&quot; rev 0x03
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82945GM PCIE&quot; rev 0x03
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 0 function 0 &quot;ATI Radeon Mobility X1600&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801GB HD Audio&quot; rev 0x01: msi
+azalia0: codecs: Analog Devices AD1981HD, Conexant/0x2bfa, using Analog Devices AD1981HD
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci2 at ppb1 bus 8
+bge0 at pci2 dev 0 function 0 &quot;Broadcom BCM5753M&quot; rev 0x21, BCM5750 C1 (0x4201): msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5750 10/100/1000baseT PHY, rev. 0
+ppb2 at pci0 dev 28 function 1 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci3 at ppb2 bus 16
+wpi0 at pci3 dev 0 function 0 &quot;Intel PRO/Wireless 3945ABG&quot; rev 0x02: msi, MoW2, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 3 &quot;Intel 82801GB PCIE&quot; rev 0x01: msi
+pci4 at ppb3 bus 32
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x01: apic 1 int 20
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x01: apic 1 int 22
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x01: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x01: apic 1 int 19
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 1 int 20
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xe1
+pci5 at ppb4 bus 2
+cbb0 at pci5 dev 6 function 0 &quot;TI PCIXX12 CardBus&quot; rev 0x00: apic 1 int 18
+&quot;TI PCIXX12 FireWire&quot; rev 0x00 at pci5 dev 6 function 1 not configured
+&quot;TI PCIXX12 Multimedia Card Reader&quot; rev 0x00 at pci5 dev 6 function 2 not configured
+sdhc0 at pci5 dev 6 function 3 &quot;TI PCIXX12 SD&quot; rev 0x00: apic 1 int 22
+sdhc0: SDHC 1.0, 48 MHz base clock
+sdmmc0 at sdhc0: 4-bit
+&quot;TI PCIXX12 Smart Card&quot; rev 0x00 at pci5 dev 6 function 4 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 3 device 0 cacheline 0x10, lattimer 0x20
+pcmcia0 at cardslot0
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82801GBM LPC&quot; rev 0x01
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;HL-DT-ST, DVDRAM GMA-4082N, HQ04&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801GBM AHCI&quot; rev 0x01: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;ATA, HTS541010G9SA00, MBZO&gt; SCSI3 0/direct fixed t10.ATA_HTS541010G9SA00_MP2ZX0XLGREX2S
+sd0: 95396MB, 512 bytes/sector, 195371568 sectors
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.2
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+vmm0 at mainbus0: VMX
+uhidev0 at uhub3 port 1 configuration 1 interface 0 &quot;Logitech USB Optical Mouse&quot; rev 2.00/27.20 addr 2
+uhidev0: iclass 3/1
+ums0 at uhidev0: 8 buttons, Z and W dir
+wsmouse2 at ums0 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (bbc50fd7cf03272f.a) swap on sd0b dump on sd0b
+radeondrm0: 1680x1050
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,298 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-06-20 17:35:22</em><br />
+<strong>From:</strong> <em>Dave Anderson</em><br />
+<strong>Description:</strong> <em>sony vaio vpc-s132fx notebook</em><br />
+
+<pre>
+OpenBSD 4.9-current (GENERIC) #40: Sat Jun 18 18:27:19 MDT 2011
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Core(TM) i3 CPU M 380 @ 2.53GHz (GenuineIntel 686-class) 2.53 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,POPCNT
+real mem  = 3009466368 (2870MB)
+avail mem = 2950066176 (2813MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 09/21/10, SMBIOS rev. 2.6 @ 0xe8ea0 (18 entries)
+bios0: vendor INSYDE version R2100Q3 date 09/21/2010
+bios0: Sony Corporation VPCS132FX
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP ASF! HPET APIC MCFG SLIC SSDT BOOT SSDT SSDT
+acpi0: wakeup devices EHC1(S3) USB1(S3) USB2(S3) USB4(S3) EHC2(S3) USB5(S4) PXSX(S3) RP01(S3) PXSX(S3) PXSX(S3) RP03(S3) DKLN(S3) RP04(S3) PXSX(S3) RP05(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 132MHz
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 2
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P2)
+acpiprt2 at acpi0: bus 16 (P0P1)
+acpiprt3 at acpi0: bus 2 (RP01)
+acpiprt4 at acpi0: bus 3 (RP02)
+acpiprt5 at acpi0: bus 4 (RP03)
+acpiprt6 at acpi0: bus 5 (RP04)
+acpiprt7 at acpi0: bus 6 (RP05)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C1, PSS
+acpitz0 at acpi0: critical temperature is 88 degC
+acpibat0 at acpi0: BAT1 model VGP-BPS21A  serial 1931 type LION oem Sony Corp. 
+acpiac0 at acpi0: AC unit online
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID0
+acpidock0 at acpi0: DOCK not docked (0)
+acpisony0 at acpi0: SNC_
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xfa00! 0xd0000/0x2c00!
+cpu0: Enhanced SpeedStep 2528 MHz: speeds: 2533, 2399, 2266, 2133, 1999, 1866, 1733, 1599, 1466, 1333, 1199, 1066, 933 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 Intel Core Host rev 0x02
+vga1 at pci0 dev 2 function 0 Intel Mobile HD graphics rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0xc0000000, size 0x10000000
+inteldrm0 at vga1: msi
+drm0 at inteldrm0
+Intel 3400 MEI rev 0x06 at pci0 dev 22 function 0 not configured
+ehci0 at pci0 dev 26 function 0 Intel 3400 USB rev 0x05: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 Intel 3400 HD Audio rev 0x05: msi
+azalia0: codecs: Realtek/0x0275, Intel/0x2804, using Realtek/0x0275
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 Intel 3400 PCIE rev 0x05: msi
+pci1 at ppb0 bus 2
+iwn0 at pci1 dev 0 function 0 Intel Centrino Advanced-N 6200 rev 0x35: msi, MIMO 2T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb1 at pci0 dev 28 function 1 Intel 3400 PCIE rev 0x05: msi
+pci2 at ppb1 bus 3
+sdhc0 at pci2 dev 0 function 0 Ricoh 5U822 SD/MMC rev 0x00: apic 2 int 17
+sdmmc0 at sdhc0
+Ricoh 5U230 Memory Stick rev 0x00 at pci2 dev 0 function 1 not configured
+Ricoh 5U832 Firewire rev 0x00 at pci2 dev 0 function 3 not configured
+sdhc1 at pci2 dev 0 function 4 Ricoh 5U822 SD/MMC rev 0x00: apic 2 int 19
+sdmmc1 at sdhc1
+ppb2 at pci0 dev 28 function 2 Intel 3400 PCIE rev 0x05: msi
+pci3 at ppb2 bus 4
+alc0 at pci3 dev 0 function 0 Attansic Technology L1C rev 0xc0: msi, address xx:xx:xx:xx:xx:xx
+atphy0 at alc0 phy 0: F1 10/100/1000 PHY, rev. 11
+ppb3 at pci0 dev 28 function 3 Intel 3400 PCIE rev 0x05: msi
+pci4 at ppb3 bus 5
+ppb4 at pci0 dev 28 function 4 Intel 3400 PCIE rev 0x05: msi
+pci5 at ppb4 bus 6
+ehci1 at pci0 dev 29 function 0 Intel 3400 USB rev 0x05: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0xa5
+pci6 at ppb5 bus 16
+pcib0 at pci0 dev 31 function 0 Intel HM55 LPC rev 0x05
+ahci0 at pci0 dev 31 function 2 Intel 3400 AHCI rev 0x05: msi, AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, TOSHIBA MK3265GS, GH01&gt; SCSI3 0/direct fixed naa.50000392e5a8093a
+sd0: 305245MB, 512 bytes/sec, 625142448 sec total
+cd0 at scsibus0 targ 1 lun 0: &lt;MATSHITA, DVD-RAM UJ8A2AS, 1.00&gt; ATAPI 5/cdrom removable
+ichiic0 at pci0 dev 31 function 3 Intel 3400 SMBus rev 0x05: apic 2 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-8500 SO-DIMM
+spdmem1 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-8500 SO-DIMM
+itherm0 at pci0 dev 31 function 6 Intel 3400 Thermal rev 0x05
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 Intel Rate Matching Hub rev 2.00/0.00 addr 2
+ugen0 at uhub2 port 1 TouchStrip Fingerprint Sensor rev 1.00/0.43 addr 3
+uvideo0 at uhub2 port 2 configuration 1 interface 0 Chicony Electronics product 0xb1dc rev 2.00/41.17 addr 4
+video0 at uvideo0
+uhub3 at uhub1 port 1 Intel Rate Matching Hub rev 2.00/0.00 addr 2
+umass0 at uhub3 port 2 configuration 1 interface 0 HP v125w rev 2.00/40.96 addr 3
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;hp, v125w, 4096&gt; SCSI0 0/direct removable serial.03f03307104A00000902
+sd1: 3864MB, 512 bytes/sec, 7913472 sec total
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd1a (061e3ee72b1dcd8e.a) swap on sd1b dump on sd1b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

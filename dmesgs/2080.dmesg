@@ -1,0 +1,306 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-05-19 19:23:23</em><br />
+<strong>From:</strong> <em>Dave Anderson</em><br />
+<strong>Description:</strong> <em>dell inspiron duo notebook</em><br />
+
+<pre>
+OpenBSD 4.9-current (GENERIC) #23: Wed Apr 13 01:44:45 MDT 2011
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Atom(TM) CPU N550 @ 1.50GHz (GenuineIntel 686-class) 1.50 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE
+real mem  = 2134728704 (2035MB)
+avail mem = 2089660416 (1992MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 11/12/10, SMBIOS rev. 2.6 @ 0xe6a50 (48 entries)
+bios0: vendor Dell Inc. version A02 date 11/12/2010
+bios0: Dell Inc. Inspiron 1090
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET APIC MCFG SLIC BOOT OSFR SSDT SSDT SSDT WDAT
+acpi0: wakeup devices PWRB(S4) LID0(S3) P32_(S4) UHC1(S0) UHC2(S0) UHC3(S0) UHC4(S0) ECHI(S0) EXP2(S4) EXP3(S4) EXP4(S3) AZAL(S4) MODM(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 166MHz
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 4
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 5 (P32_)
+acpiprt2 at acpi0: bus 1 (EXP1)
+acpiprt3 at acpi0: bus 2 (EXP2)
+acpiprt4 at acpi0: bus 3 (EXP3)
+acpiprt5 at acpi0: bus 4 (EXP4)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpipwrres0 at acpi0: FN00
+acpitz0 at acpi0: critical temperature 92 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpibtn2 at acpi0: LID0
+acpiac0 at acpi0: AC unit online
+acpiac1 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model DELL TR2F10CD serial 0193 type Lion oem SANYO
+acpivideo0 at acpi0: OVGA
+acpivout0 at acpivideo0: DD02
+bios0: ROM list: 0xc0000/0xda00!
+ipmi: unknown register spacing
+ipmi at mainbus0 not configured
+cpu0: Enhanced SpeedStep 2784 MHz: speeds: 1500, 1000 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 Intel Pineview DMI rev 0x02
+vga1 at pci0 dev 2 function 0 Intel Pineview Video rev 0x02
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp0 at vga1
+agp0 at intagp0: aperture at 0x80000000, size 0x10000000
+inteldrm0 at vga1: apic 4 int 16 (irq 11)
+drm0 at inteldrm0
+Intel Pineview Video rev 0x02 at pci0 dev 2 function 1 not configured
+azalia0 at pci0 dev 27 function 0 Intel 82801GB HD Audio rev 0x02: apic 4 int 16 (irq 11)
+azalia0: codecs: Conexant/0x5069
+audio0 at azalia0
+ppb0 at pci0 dev 28 function 0 Intel 82801GB PCIE rev 0x02: apic 4 int 16 (irq 255)
+pci1 at ppb0 bus 1
+vendor Broadcom, unknown product 0x1615 (class multimedia subclass miscellaneous, rev 0x00) at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 28 function 1 Intel 82801GB PCIE rev 0x02: apic 4 int 17 (irq 255)
+pci2 at ppb1 bus 2
+athn0 at pci2 dev 0 function 0 Atheros AR9285 rev 0x01: apic 4 int 17 (irq 10)
+athn0: AR9285 rev 2 (1T1R), ROM rev 14, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 2 Intel 82801GB PCIE rev 0x02: apic 4 int 18 (irq 255)
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 3 Intel 82801GB PCIE rev 0x02: apic 4 int 19 (irq 255)
+pci4 at ppb3 bus 4
+uhci0 at pci0 dev 29 function 0 Intel 82801GB USB rev 0x02: apic 4 int 16 (irq 11)
+uhci1 at pci0 dev 29 function 1 Intel 82801GB USB rev 0x02: apic 4 int 17 (irq 10)
+uhci2 at pci0 dev 29 function 2 Intel 82801GB USB rev 0x02: apic 4 int 18 (irq 11)
+uhci3 at pci0 dev 29 function 3 Intel 82801GB USB rev 0x02: apic 4 int 19 (irq 11)
+ehci0 at pci0 dev 29 function 7 Intel 82801GB USB rev 0x02: apic 4 int 16 (irq 11)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 Intel 82801BAM Hub-to-PCI rev 0xe2
+pci5 at ppb4 bus 5
+pcib0 at pci0 dev 31 function 0 Intel Tigerpoint LPC rev 0x02
+ahci0 at pci0 dev 31 function 2 Intel 82801GR AHCI rev 0x02: apic 4 int 17 (irq 10), AHCI 1.1
+ahci0: PHY offline on port 1
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, Hitachi HTS72323, EC2O&gt; SCSI3 0/direct fixed naa.5000cca61dc26c0b
+sd0: 305245MB, 512 bytes/sec, 625142448 sec total
+ichiic0 at pci0 dev 31 function 3 Intel 82801GB SMBus rev 0x02: apic 4 int 17 (irq 10)
+iic0 at ichiic0
+iic0: addr 0x19 0f=32 10=83 11=0b 12=8e 13=4b 14=0a 15=04 16=e9 17=41 18=04 19=04 1a=40 1b=a1 20=37 23=80 27=ff 28=d0 29=fd 2a=20 2b=01 2c=20 2d=3e 30=95 31=25 32=97 33=0c 34=95 35=25 36=97 37=0c 8f=32 90=83 91=0b 92=8e 93=4b 94=0a 95=04 96=e9 97=41 98=04 99=04 9a=40 9b=a1 a0=37 a3=80 a7=ff a8=50 a9=fd aa=60 ac=30 ad=3e b0=95 b1=25 b2=97 b3=0c b4=95 b5=25 b6=97 b7=0c words 00=0000 01=0000 02=0000 03=0000 04=0000 05=0000 06=0000 07=0000
+iic0: addr 0x1e 00=10 01=20 02=03 04=20 06=20 08=20 0a=48 0b=34 0c=33 0e=10 10=10 11=20 12=03 13=fd 14=dd 15=01 16=48 18=46 19=01 1a=48 1b=34 1c=33 1e=10 20=10 21=20 22=03 23=fd 24=d9 25=01 26=59 28=43 29=01 2a=48 2b=34 2c=33 2e=10 30=10 31=20 32=03 33=fd 34=df 35=01 36=54 38=44 39=01 3a=48 3b=34 3c=33 3e=10 40=10 41=20 42=03 43=fd 44=df 45=01 46=54 48=20 49=03 4a=48 4b=34 4c=33 4e=10 50=10 51=20 52=03 53=fd 54=df 55=01 56=54 58=44 59=01 5a=48 5b=34 5c=33 5e=10 60=10 61=20 62=03 63=fd 64=de 65=01 66=53 68=46 69=01 6a=48 6b=34 6c=33 6e=10 70=10 71=20 72=03 73=fd 74=da 75=01 76=53 78=3f 79=01 7a=48 7b=34 7c=33 7e=10 80=10 81=20 82=03 83=fd 84=da 85=01 86=55 88=4c 89=01 8a=48 8b=34 8c=33 8e=10 90=10 91=20 92=03 93=fd 94=da 95=01 96=52 98=50 99=01 9a=48 9b=34 9c=33 9e=10 a0=10 a1=20 a2=03 a3=fd a4=dd a5=01 a6=4f a8=46 a9=01 aa=48 ab=34 ac=33 ae=10 b0=10 b1=20 b2=03 b3=fd b4=d8 b5=01 b6=56 b8=45 b9=01 ba=48 bb=34 bc=33 be=10 c0=10 c1=20 c2=03 c3=fd c4=dc c5=01 c6=4f c8=44 c9=01 ca=48 cb=34 cc=33 ce=10 d0=10 d1=20 d2=03 d3=fd d4=db d5=01 d6=58 d8=4b d9=01 da=48 db=34 dc=33 de=10 e0=10 e1=20 e2=03 e3=fd e4=db e5=01 e6=57 e8=47 e9=01 ea=48 eb=34 ec=33 ee=10 f0=10 f1=20 f2=03 f3=fd f4=d8 f5=01 f6=59 f8=4b f9=01 fa=48 fb=34 fc=33 fe=10 words 00=1020 01=2003 02=03fd 03=fdd8 04=d801 05=0159 06=5900 07=004b
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM PC3-10600 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+umass0 at uhub0 port 2 configuration 1 interface 0 HP v125w rev 2.00/40.96 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;hp, v125w, 4096&gt; SCSI0 0/direct removable serial.AA12104A00000902
+sd1: 3864MB, 512 bytes/sec, 7913472 sec total
+uvideo0 at uhub0 port 3 configuration 1 interface 0 CN0C7H5D724870CJ03FPA00 Laptop_Integrated_Webcam_1.3M rev 2.00/a.27 addr 3
+video0 at uvideo0
+uhidev0 at uhub3 port 1 configuration 1 interface 0 eGalax Inc. USB TouchController rev 1.10/10.04 addr 2
+uhidev0: iclass 3/1, 5 report ids
+uhid0 at uhidev0 reportid 1: input=5, output=0, feature=0
+uhts0 at uhidev0 reportid 2
+wsmouse1 at uhts0 mux 0
+uhid1 at uhidev0 reportid 3: input=63, output=63, feature=0
+uhts1 at uhidev0 reportid 4
+wsmouse2 at uhts1 mux 0
+uhid2 at uhidev0 reportid 5: input=0, output=0, feature=2
+ugen0 at uhub3 port 2 Atheros Communications product 0x3002 rev 1.10/0.01 addr 3
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+root on sd1a swap on sd1b dump on sd1b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

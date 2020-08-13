@@ -1,0 +1,351 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-07-20 00:47:03</em><br />
+<strong>From:</strong> <em>elalo</em><br />
+<strong>Description:</strong> <em>dmesg output</em><br />
+
+<pre>
+OpenBSD 5.6-beta (GENERIC.MP) #286: Thu Jul 17 20:53:36 MDT 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8572043264 (8174MB)
+avail mem = 8335069184 (7948MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.4 @ 0xf0000 (38 entries)
+bios0: vendor Phoenix Technologies, LTD version &quot;6.00 PG&quot; date 07/30/2008
+bios0: EVGA 132-YW-E179-FTW
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP HPET WDRT MCFG APIC
+acpi0: wakeup devices HUB0(S5) MXR0(S5) MXR1(S5) MXR2(S5) MXR3(S5) MXR4(S5) MXR5(S5) XVR0(S5) XVR1(S5) XVR2(S5) XVR3(S5) UAR1(S5) PS2M(S4) PS2K(S4) USB0(S4) USB2(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpihpet0 at acpi0: 25000000 Hz
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz, 2667.04 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF
+cpu0: 6MB 64b/line 16-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 333MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.0.0.0, IBE
+cpu1 at mainbus0: apid 3 (application processor)
+cpu1: Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz, 2666.67 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF
+cpu1: 6MB 64b/line 16-way L2 cache
+cpu1: smt 0, core 3, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz, 2666.67 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF
+cpu2: 6MB 64b/line 16-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 1 (application processor)
+cpu3: Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz, 2666.67 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,NXE,LONG,LAHF,PERF
+cpu3: 6MB 64b/line 16-way L2 cache
+cpu3: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 11, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 4
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (HUB0)
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+acpicpu2 at acpi0
+acpicpu3 at acpi0
+acpibtn0 at acpi0: PWRB
+cpu0: unknown Enhanced SpeedStep CPU, msr 0x061a482206000822
+cpu0: using only highest, current and lowest power states
+cpu0: Enhanced SpeedStep 2667 MHz: speeds: 24000, 2667, 2000 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x0802 rev 0xb1
+vendor &quot;NVIDIA&quot;, unknown product 0x0808 (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 1 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0809 (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 2 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080a (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 3 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080b (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 4 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080c (class memory subclass RAM, rev 0xb1) at pci0 dev 0 function 5 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080d (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 6 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080e (class memory subclass RAM, rev 0xa1) at pci0 dev 0 function 7 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080f (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 0 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0810 (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 1 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0811 (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 2 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0812 (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 3 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0813 (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 4 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x0814 (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 5 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x081a (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 6 not configured
+vendor &quot;NVIDIA&quot;, unknown product 0x080e (class memory subclass RAM, rev 0xa1) at pci0 dev 1 function 7 not configured
+ppb0 at pci0 dev 2 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x0815 rev 0xa1: msi
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x05e2 rev 0xa1
+vga1: aperture needed
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ppb1 at pci0 dev 4 function 0 vendor &quot;NVIDIA&quot;, unknown product 0x0817 rev 0xa1: msi
+pci2 at ppb1 bus 2
+vendor &quot;NVIDIA&quot;, unknown product 0x05e2 (class display subclass VGA, rev 0xa1) at pci2 dev 0 function 0 not configured
+&quot;NVIDIA MCP55 Memory&quot; rev 0xa2 at pci0 dev 9 function 0 not configured
+pcib0 at pci0 dev 10 function 0 &quot;NVIDIA MCP55 ISA&quot; rev 0xa3
+nviic0 at pci0 dev 10 function 1 &quot;NVIDIA MCP55 SMBus&quot; rev 0xa3
+iic0 at nviic0
+sdtemp0 at iic0 addr 0x18: stts2002
+sdtemp1 at iic0 addr 0x19: stts2002
+spdmem0 at iic0 addr 0x50: 2GB DDR3 SDRAM ECC PC3-10600 with thermal sensor
+spdmem1 at iic0 addr 0x51: 2GB DDR3 SDRAM ECC PC3-10600 with thermal sensor
+spdmem2 at iic0 addr 0x52: 2GB DDR3 SDRAM PC3-10600
+spdmem3 at iic0 addr 0x53: 2GB DDR3 SDRAM PC3-10600
+iic1 at nviic0
+lm1 at iic1 addr 0x28: W83627DHG
+iic1: addr 0x49 f8=06 f9=82 fa=80 fb=80 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+ohci0 at pci0 dev 11 function 0 &quot;NVIDIA MCP55 USB&quot; rev 0xa1: apic 4 int 10, version 1.0, legacy support
+ehci0 at pci0 dev 11 function 1 &quot;NVIDIA MCP55 USB&quot; rev 0xa2: apic 4 int 11
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;NVIDIA EHCI root hub&quot; rev 2.00/1.00 addr 1
+pciide0 at pci0 dev 13 function 0 &quot;NVIDIA MCP55 IDE&quot; rev 0xa1: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+pciide0: channel 0 disabled (no drives)
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 14 function 0 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide1: using apic 4 int 11 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;MB2000EBUCF&gt;
+wd0: 16-sector PIO, LBA48, 1907729MB, 3907029168 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 6
+pciide2 at pci0 dev 14 function 1 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide2: using apic 4 int 11 for native-PCI interrupt
+pciide3 at pci0 dev 14 function 2 &quot;NVIDIA MCP55 SATA&quot; rev 0xa3: DMA
+pciide3: using apic 4 int 10 for native-PCI interrupt
+ppb2 at pci0 dev 15 function 0 &quot;NVIDIA MCP55&quot; rev 0xa2
+pci3 at ppb2 bus 3
+&quot;TI TSB43AB22 FireWire&quot; rev 0x00 at pci3 dev 7 function 0 not configured
+ral0 at pci3 dev 9 function 0 &quot;Ralink RT2560&quot; rev 0x01: apic 4 int 10, address xx:xx:xx:xx:xx:xx
+ral0: MAC/BBP RT2560 (rev 0x04), RF RT2525
+azalia0 at pci0 dev 15 function 1 &quot;NVIDIA MCP55 HD Audio&quot; rev 0xa2: msi
+azalia0: codecs: Realtek ALC888
+audio0 at azalia0
+nfe0 at pci0 dev 17 function 0 &quot;NVIDIA MCP55 LAN&quot; rev 0xa3: apic 4 int 5, address xx:xx:xx:xx:xx:xx
+rgephy0 at nfe0 phy 3: RTL8169S/8110S PHY, rev. 2
+nfe1 at pci0 dev 18 function 0 &quot;NVIDIA MCP55 LAN&quot; rev 0xa3: apic 4 int 5, address xx:xx:xx:xx:xx:xx
+rgephy1 at nfe1 phy 3: RTL8169S/8110S PHY, rev. 2
+ppb3 at pci0 dev 20 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3: msi
+pci4 at ppb3 bus 4
+jmb0 at pci4 dev 0 function 0 &quot;JMicron JMB363 IDE/SATA&quot; rev 0x03
+ahci0 at jmb0: apic 4 int 11, AHCI 1.0
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, ST3500320NS, SN06&gt; SCSI3 0/direct fixed naa.5000c500195ec489
+sd0: 476684MB, 512 bytes/sector, 976248880 sectors
+cd0 at scsibus1 targ 1 lun 0: &lt;Memorex, BDBurner 800L v1, 5M61&gt; ATAPI 5/cdrom removable
+pciide4 at jmb0: DMA, channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide4: using apic 4 int 11 for native-PCI interrupt
+pciide4: channel 0 disabled (no drives)
+pciide4: channel 1 disabled (no drives)
+ppb4 at pci0 dev 21 function 0 &quot;NVIDIA MCP55 PCIE&quot; rev 0xa3: msi
+pci5 at ppb4 bus 5
+jmb1 at pci5 dev 0 function 0 &quot;JMicron JMB363 IDE/SATA&quot; rev 0x03
+ahci1 at jmb1: apic 4 int 10, AHCI 1.0
+scsibus2 at ahci1: 32 targets
+sd1 at scsibus2 targ 1 lun 0: &lt;ATA, OWC Mercury Elec, 501A&gt; SCSI3 0/direct fixed naa.0000120000000000
+sd1: 228936MB, 512 bytes/sector, 468862128 sectors, thin
+pciide5 at jmb1: DMA, channel 0 wired to native-PCI, channel 1 wired to native-PCI
+pciide5: using apic 4 int 10 for native-PCI interrupt
+pciide5: channel 0 disabled (no drives)
+pciide5: channel 1 disabled (no drives)
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+wbsio0 at isa0 port 0x2e/2: W83627DHG rev 0x25
+lm2 at wbsio0 port 0x290/8: W83627DHG
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+usb1 at ohci0: USB revision 1.0
+uhub1 at usb1 &quot;NVIDIA OHCI root hub&quot; rev 1.00/1.00 addr 1
+lm1: disabling sensors due to alias with lm2
+uhub2 at uhub0 port 1 &quot;NEC hub&quot; rev 2.00/1.00 addr 2
+uhub3 at uhub2 port 4 &quot;ATEN International product 0x8021&quot; rev 1.10/1.00 addr 3
+uhidev0 at uhub3 port 1 configuration 1 interface 0 &quot;ATEN DVI DL KVMP&quot; rev 1.10/1.00 addr 4
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub3 port 1 configuration 1 interface 1 &quot;ATEN DVI DL KVMP&quot; rev 1.10/1.00 addr 4
+uhidev1: iclass 3/1
+ums0 at uhidev1: 5 buttons, Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub1 port 3 configuration 1 interface 0 &quot;CPS CP 1500D&quot; rev 1.10/0.01 addr 2
+uhidev2: iclass 3/0, 24 report ids
+upd0 at uhidev2
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (826e29a387199cde.a) swap on sd0b dump on sd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

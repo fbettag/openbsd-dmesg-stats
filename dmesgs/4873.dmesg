@@ -1,0 +1,386 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-04-25 11:51:02</em><br />
+<strong>From:</strong> <em>Patch Adam</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.5 on Supermicro A2SDi-4C-HLN4F with Intel C3558</em><br />
+
+<pre>
+# OpenBSD 6.5 on Supermicro A2SDi-4C-HLN4F with Intel C3558
+
+# https://www.supermicro.com/products/system/Mini-ITX/SYS-E200-9A.cfm
+# https://www.supermicro.com/products/motherboard/Atom/A2SDi-4C-HLN4F.cfm
+
+# ----------------------------------------------------------------------------
+# 1. MANUAL BIOS SETTINGS
+
+01. at boot, press &quot;delete&quot; to run setup
+02. save &amp; exit&gt; restore optimized default
+03. advanced&gt; BOOT&gt; Quiet boot&gt; disabled
+04. advanced&gt; CPU&gt; CPU C state&gt; disabled
+05. SATA&gt; SATA 1&gt; I-SATA0: TOSHIBA MK5055GSX 500GB
+06. SERIAL&gt; COM1 console redirection&gt; enabled
+07. SERIAL&gt; COM1 console redirection&gt; COM1 bits per second&gt; 115200 (default)
+08. SERIAL&gt; COM1 console redirection&gt; COM1 data bits&gt; 8 (default)
+09. SERIAL&gt; COM1 console redirection&gt; COM1 parity&gt; none (default)
+10. SERIAL&gt; COM1 console redirection&gt; COM1 flow control&gt; none (default)
+11. SERIAL&gt; COM1 console redirection&gt; COM1 putty keypad&gt; vt100 (default)
+12. ACPI&gt; Headless support&gt; enabled
+
+NOTE: Intel Ethernet X544 1GbE
+
+NIC | PCI Device ID | PCI Address
+1   | 15E4          | 06:00:00
+2   | 15E4          | 06:00:01
+3   | 15E5          | 08:00:00
+4   | 15E5          | 08:00:01
+
+13. save &amp; exit&gt; save changes and reset
+
+# ----------------------------------------------------------------------------
+# 2. HEADLESS MODE
+
+IPA=&quot;192.168.1.3&quot;; # IPMI IP ADDRESS
+alias ipmi=&quot;ipmitool -o supermicro -H $IPA -p 623 -I lanplus -C 3 -U ADMIN -a -L ADMINISTRATOR&quot;;
+
+# &gt;ipmi power on; 
+# &gt;ipmi sol activate;
+# sol&gt; F11 (to invoke boot menu)
+# sol&gt; select UEFI: SanDisk, Partition 1 or similar for USB stick
+# boot&gt; stty com1 115200
+# boot&gt; set tty com1
+# boot&gt; boot -c
+# UKC&gt; help
+# UKC&gt; list
+# UKC&gt; find ne
+# UKC&gt; show channel
+# UKC&gt; show target
+# UKC&gt; exit
+# boot&gt; boot /bsd
+
+# ----------------------------------------------------------------------------
+# UKC LOG
+
+UKC&gt; find ne
+103 ne* at pci* dev -1 function -1 flags 0x0
+104 ne* at pcmcia* function -1 irq -1 flags 0x0
+
+UKC&gt; show channel
+ 33 atapiscsi* at wdc0|wdc1|wdc*|pciide*|pciide* channel -1 flags 0x0
+ 34 wd* at wdc0|wdc1|wdc*|pciide*|pciide* channel -1 flags 0x0
+
+UKC&gt; show target
+ 30 cd* at scsibus* target -1 lun -1 flags 0x0
+ 31 sd* at scsibus* target -1 lun -1 flags 0x0
+ 32 st* at scsibus* target -1 lun -1 flags 0x0
+
+# ----------------------------------------------------------------------------
+# BOOT LOG
+
+probing: pc0 com0 com1 mem[252K 384K 1898M 106M 148K 5M 14336M]
+disk: hd0 hd1* hd2*
+&gt;&gt; OpenBSD/amd64 BOOTX64 3.43
+boot&gt; stty com1 115200
+boot&gt; set tty com1
+switching console to com1
+&gt;&gt; OpenBSD/amd64 BOOTX64 3.43
+boot&gt; boot /bsd
+cannot open hd0a:/etc/random.seed: No such file or directory
+booting hd0a:/bsd: 3683153+1524736+3888856+0+593920=0x940360
+entry point at 0x1001000
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2019 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.5 (RAMDISK_CD) #3: Sat Apr 13 14:55:38 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 17125425152 (16332MB)
+avail mem = 16602427392 (15833MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0x7f0c4000 (34 entries)
+bios0: vendor American Megatrends Inc. version &quot;1.1&quot; date 08/28/2018
+bios0: Supermicro A2SDi-4C-HLN4F
+acpi0 at bios0: rev 2, can't enable ACPI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel(R) Atom(TM) CPU C3558 @ 2.20GHz, 2200.40 MHz, 06-5f-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,CX16,xTPR,PDCM,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,3DNOWP,PERF,ITSC,FSGSBASE,SMEP,ERMS,MPX,RDSEED,SMAP,CLFLUSHOPT,PT,SHA,IBRS,IBPB,STIBP,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu0: 2MB 64b/line 16-way L2 cache
+cpu0: cannot disable silicon debug
+cpu0: mwait min=64, max=64, C-substates=0.2.0.2, IBE
+pci0 at mainbus0 bus 0
+0:31:5: mem address conflict 0xfe010000/0x1000
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pchb0 at pci0 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x1980 rev 0x11
+pchb1 at pci0 dev 4 function 0 vendor &quot;Intel&quot;, unknown product 0x19a1 rev 0x11
+vendor &quot;Intel&quot;, unknown product 0x19a2 (class system subclass root complex event, rev 0x11) at pci0 dev 5 function 0 not configured
+ppb0 at pci0 dev 6 function 0 vendor &quot;Intel&quot;, unknown product 0x19a3 rev 0x11
+pci1 at ppb0 bus 1
+vendor &quot;Intel&quot;, unknown product 0x19e2 (class processor subclass Co-processor, rev 0x11) at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 10 function 0 vendor &quot;Intel&quot;, unknown product 0x19a5 rev 0x11
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 16 function 0 vendor &quot;Intel&quot;, unknown product 0x19aa rev 0x11
+pci3 at ppb2 bus 3
+nvme0 at pci3 dev 0 function 0 &quot;SanDisk WD Black NVMe&quot; rev 0x00: unable to map interrupt
+ppb3 at pci0 dev 17 function 0 vendor &quot;Intel&quot;, unknown product 0x19ab rev 0x11
+pci4 at ppb3 bus 4
+ppb4 at pci4 dev 0 function 0 &quot;ASPEED Technology AST1150 PCI&quot; rev 0x03
+pci5 at ppb4 bus 5
+&quot;ASPEED Technology AST2000&quot; rev 0x30 at pci5 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19ac (class system subclass miscellaneous, rev 0x11) at pci0 dev 18 function 0 not configured
+ahci0 at pci0 dev 19 function 0 vendor &quot;Intel&quot;, unknown product 0x19b2 rev 0x11: unable to map interrupt
+ahci1 at pci0 dev 20 function 0 vendor &quot;Intel&quot;, unknown product 0x19c2 rev 0x11: unable to map interrupt
+xhci0 at pci0 dev 21 function 0 vendor &quot;Intel&quot;, unknown product 0x19d0 rev 0x11: couldn't map interrupt
+ppb5 at pci0 dev 22 function 0 vendor &quot;Intel&quot;, unknown product 0x19d1 rev 0x11
+pci6 at ppb5 bus 6
+vendor &quot;Intel&quot;, unknown product 0x15e4 (class network subclass ethernet, rev 0x11) at pci6 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x15e4 (class network subclass ethernet, rev 0x11) at pci6 dev 0 function 1 not configured
+ppb6 at pci0 dev 23 function 0 vendor &quot;Intel&quot;, unknown product 0x19d2 rev 0x11
+pci7 at ppb6 bus 7
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci7 dev 0 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x15e5 (class network subclass ethernet, rev 0x11) at pci7 dev 0 function 1 not configured
+vendor &quot;Intel&quot;, unknown product 0x19d3 (class communications subclass miscellaneous, rev 0x11) at pci0 dev 24 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19dc (class bridge subclass ISA, rev 0x11) at pci0 dev 31 function 0 not configured
+vendor &quot;Intel&quot;, unknown product 0x19de (class memory subclass miscellaneous, rev 0x11) at pci0 dev 31 function 2 not configured
+vendor &quot;Intel&quot;, unknown product 0x19df (class serial bus subclass SMBus, rev 0x11) at pci0 dev 31 function 4 not configured
+vendor &quot;Intel&quot;, unknown product 0x19e0 (class serial bus unknown subclass 0x80, rev 0x11) at pci0 dev 31 function 5 not configured
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: console
+efifb0 at mainbus0: 1024x768, 32bpp
+wsdisplay at efifb0 not configured
+softraid0 at root
+scsibus0 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+erase ^?, werase ^W, kill ^U, intr ^C, status ^T
+
+Welcome to the OpenBSD/amd64 6.5 installation program.
+(I)nstall, (U)pgrade, (A)utoinstall or (S)hell? S
+# ls /dev
+MAKEDEV fd0a    rcd0c   rsd0d   rsd0p   rwd0k   sd0g    stdout  wd0g    wskbd2
+bio     fd0b    rd0a    rsd0e   rst0    rwd0l   sd0h    tty     wd0h    xf86
+bpf     fd0c    rd0c    rsd0f   rwd0a   rwd0m   sd0i    tty00   wd0i    zero
+bpf0    fd0i    rfd0a   rsd0g   rwd0b   rwd0n   sd0j    tty01   wd0j
+cd0a    klog    rfd0b   rsd0h   rwd0c   rwd0o   sd0k    ttyC0   wd0k
+cd0c    kmem    rfd0c   rsd0i   rwd0d   rwd0p   sd0l    urandom wd0l
+console ksyms   rfd0i   rsd0j   rwd0e   sd0a    sd0m    wd0a    wd0m
+cua00   mem     rrd0a   rsd0k   rwd0f   sd0b    sd0n    wd0b    wd0n
+cua01   nrst0   rrd0c   rsd0l   rwd0g   sd0c    sd0o    wd0c    wd0o
+diskmap null    rsd0a   rsd0m   rwd0h   sd0d    sd0p    wd0d    wd0p
+enrst0  random  rsd0b   rsd0n   rwd0i   sd0e    stderr  wd0e    wskbd0
+erst0   rcd0a   rsd0c   rsd0o   rwd0j   sd0f    stdin   wd0f    wskbd1
+# install
+At any prompt except password prompts you can escape to a shell by
+typing '!'. Default answers are shown in []'s and are selected by
+pressing RETURN.  You can exit this program at any time by pressing
+Control-C, but this can leave your system in an inconsistent state.
+
+Terminal type? [vt220] 
+System hostname? (short form, e.g. 'foo') test
+
+Available network interfaces are: vlan0.
+Which network interface do you wish to configure? (or 'done') [vlan0] done
+DNS domain name? (e.g. 'example.com') [my.domain] local
+DNS nameservers? (IP address list or 'none') [none] 192.168.1.1
+
+Password for root account? (will not echo) 
+Password for root account? (again) 
+Start sshd(8) by default? [yes] 
+Do you want the X Window System to be started by xenodm(1)? [no] 
+Change the default console to com1? [yes] 
+Available speeds are: 9600 19200 38400 57600 115200.
+Which speed should com1 use? (or 'done') [115200] 
+Setup a user? (enter a lower-case loginname, or 'no') [no] 
+Since no user was setup, root logins via sshd(8) might be useful.
+WARNING: root is targeted by password guessing attacks, pubkeys are safer.
+Allow root ssh login? (yes, no, prohibit-password) [no] yes
+
+Available disks are: none.
+Which disk is the root disk? ('?' for details) ^C
+
+test# reboot
+syncing disks... done
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+fatal double fault in supervisor mode
+trap type 13 code 0 rip ffffffff8103a904 cs 8 rflags 10246 cr2  ffff8000219ebff8 cpl d rsp ffff8000219ec000
+gsbase 0xffffffff818a1ff0  kgsbase 0x0
+panic: trap type 13, code=0, pc=ffffffff8103a904
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+panic: attempt to execute user address 0x0 in supervisor mode
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

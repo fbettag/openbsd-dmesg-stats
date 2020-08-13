@@ -1,0 +1,372 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2007-02-17 10:22:14</em><br />
+<strong>From:</strong> <em>bienc</em><br />
+<strong>Description:</strong> <em>amd64 ASUS A8V</em><br />
+
+<pre>
+OpenBSD 4.0-current (GENERIC) #826: Fri Feb  9 15:00:23 MST 2007
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 2146758656 (2096444K)
+avail mem = 1834647552 (1791648K)
+using 22937 buffers containing 214884352 bytes (209848K) of memory
+mainbus0 (root)
+bios0 at mainbus0: SMBIOS rev. 2.3 @ 0xf0530 (67 entries)
+bios0: ASUSTeK Computer Inc. A8V
+acpi at mainbus0 not configured
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Athlon(tm) 64 Processor 3200+, 2002.92 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,SSE3,NXE,MMXX,FFXSR,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 VIA K8HTB Host rev 0x00
+pchb1 at pci0 dev 0 function 1 VIA K8HTB Host rev 0x00
+pchb2 at pci0 dev 0 function 2 VIA K8HTB Host rev 0x00
+pchb3 at pci0 dev 0 function 3 VIA K8HTB Host rev 0x00
+pchb4 at pci0 dev 0 function 4 VIA K8HTB Host rev 0x00
+pchb5 at pci0 dev 0 function 7 VIA K8HTB Host rev 0x00
+ppb0 at pci0 dev 1 function 0 VIA K8HTB AGP rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 ATI Radeon 9600 XT rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ATI Radeon 9600 XT Sec rev 0x00 at pci1 dev 0 function 1 not configured
+skc0 at pci0 dev 10 function 0 Marvell Yukon 88E8001/8003/8010 rev 0x13, Yukon Lite (0x9): irq 10
+sk0 at skc0 port A, address xx:xx:xx:xx:xx:xx
+eephy0 at sk0 phy 0: Marvell 88E1011 Gigabit PHY, rev. 5
+cmpci0 at pci0 dev 13 function 0 C-Media Electronics CMI8738/C3DX Audio rev 0x10: irq 5
+audio0 at cmpci0
+opl at cmpci0 not configured
+mpu at cmpci0 not configured
+pciide0 at pci0 dev 15 function 0 VIA VT6420 SATA rev 0x80: DMA
+pciide0: using irq 10 for native-PCI interrupt
+pciide1 at pci0 dev 15 function 1 VIA VT82C571 IDE rev 0x06: ATA133, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide1 channel 0 drive 0: &lt;WDC WD2000JB-00KFA0&gt;
+wd0: 16-sector PIO, LBA48, 190782MB, 390721968 sectors
+wd1 at pciide1 channel 0 drive 1: &lt;WDC WD3200JB-00KFA0&gt;
+wd1: 16-sector PIO, LBA48, 305245MB, 625142448 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 5
+wd1(pciide1:0:1): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide1 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;PIONEER, DVD-RW DVR-109, 1.40&gt; SCSI0 5/cdrom removable
+cd0(pciide1:1:0): using PIO mode 4, Ultra-DMA mode 4
+uhci0 at pci0 dev 16 function 0 VIA VT83C572 USB rev 0x81: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhci1 at pci0 dev 16 function 1 VIA VT83C572 USB rev 0x81: irq 11
+usb1 at uhci1: USB revision 1.0
+uhub1 at usb1
+uhub1: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhci2 at pci0 dev 16 function 2 VIA VT83C572 USB rev 0x81: irq 10
+usb2 at uhci2: USB revision 1.0
+uhub2 at usb2
+uhub2: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhci3 at pci0 dev 16 function 3 VIA VT83C572 USB rev 0x81: irq 10
+usb3 at uhci3: USB revision 1.0
+uhub3 at usb3
+uhub3: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+ehci0 at pci0 dev 16 function 4 VIA VT6202 USB rev 0x86: irq 5
+usb4 at ehci0: USB revision 2.0
+uhub4 at usb4
+uhub4: VIA EHCI root hub, rev 2.00/1.00, addr 1
+uhub4: 8 ports with 8 removable, self powered
+viapm0 at pci0 dev 17 function 0 VIA VT8237 ISA rev 0x00
+iic0 at viapm0
+pchb6 at pci0 dev 24 function 0 AMD AMD64 HyperTransport rev 0x00
+pchb7 at pci0 dev 24 function 1 AMD AMD64 Address Map rev 0x00
+pchb8 at pci0 dev 24 function 2 AMD AMD64 DRAM Cfg rev 0x00
+pchb9 at pci0 dev 24 function 3 AMD AMD64 Misc Cfg rev 0x00
+isa0 at mainbus0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+lm0 at isa0 port 0x290/8: W83627THF
+uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0: Logitech USB RECEIVER, rev 1.10/25.10, addr 2, iclass 3/1
+ums0 at uhidev0: 16 buttons and Z dir.
+wsmouse0 at ums0 mux 0
+dkcsum: wd0 matches BIOS drive 0x80
+dkcsum: wd1 matches BIOS drive 0x81
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+syncing disks... 
+OpenBSD 4.0-current (GENERIC) #826: Fri Feb  9 15:00:23 MST 2007
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 2146758656 (2096444K)
+avail mem = 1834647552 (1791648K)
+using 22937 buffers containing 214884352 bytes (209848K) of memory
+mainbus0 (root)
+bios0 at mainbus0: SMBIOS rev. 2.3 @ 0xf0530 (67 entries)
+bios0: ASUSTeK Computer Inc. A8V
+acpi at mainbus0 not configured
+cpu0 at mainbus0: (uniprocessor)
+cpu0: AMD Athlon(tm) 64 Processor 3200+, 2002.92 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,SSE3,NXE,MMXX,FFXSR,LONG,3DNOW2,3DNOW
+cpu0: 64KB 64b/line 2-way I-cache, 64KB 64b/line 2-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 32 4KB entries fully associative, 8 4MB entries fully associative
+pci0 at mainbus0 bus 0: configuration mode 1
+pchb0 at pci0 dev 0 function 0 VIA K8HTB Host rev 0x00
+pchb1 at pci0 dev 0 function 1 VIA K8HTB Host rev 0x00
+pchb2 at pci0 dev 0 function 2 VIA K8HTB Host rev 0x00
+pchb3 at pci0 dev 0 function 3 VIA K8HTB Host rev 0x00
+pchb4 at pci0 dev 0 function 4 VIA K8HTB Host rev 0x00
+pchb5 at pci0 dev 0 function 7 VIA K8HTB Host rev 0x00
+ppb0 at pci0 dev 1 function 0 VIA K8HTB AGP rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 ATI Radeon 9600 XT rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+ATI Radeon 9600 XT Sec rev 0x00 at pci1 dev 0 function 1 not configured
+skc0 at pci0 dev 10 function 0 Marvell Yukon 88E8001/8003/8010 rev 0x13, Yukon Lite (0x9): irq 10
+sk0 at skc0 port A, address xx:xx:xx:xx:xx:xx
+eephy0 at sk0 phy 0: Marvell 88E1011 Gigabit PHY, rev. 5
+cmpci0 at pci0 dev 13 function 0 C-Media Electronics CMI8738/C3DX Audio rev 0x10: irq 5
+audio0 at cmpci0
+opl at cmpci0 not configured
+mpu at cmpci0 not configured
+pciide0 at pci0 dev 15 function 0 VIA VT6420 SATA rev 0x80: DMA
+pciide0: using irq 10 for native-PCI interrupt
+pciide1 at pci0 dev 15 function 1 VIA VT82C571 IDE rev 0x06: ATA133, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide1 channel 0 drive 0: &lt;WDC WD2000JB-00KFA0&gt;
+wd0: 16-sector PIO, LBA48, 190782MB, 390721968 sectors
+wd1 at pciide1 channel 0 drive 1: &lt;WDC WD3200JB-00KFA0&gt;
+wd1: 16-sector PIO, LBA48, 305245MB, 625142448 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 5
+wd1(pciide1:0:1): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide1 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;PIONEER, DVD-RW DVR-109, 1.40&gt; SCSI0 5/cdrom removable
+cd0(pciide1:1:0): using PIO mode 4, Ultra-DMA mode 4
+uhci0 at pci0 dev 16 function 0 VIA VT83C572 USB rev 0x81: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhci1 at pci0 dev 16 function 1 VIA VT83C572 USB rev 0x81: irq 11
+usb1 at uhci1: USB revision 1.0
+uhub1 at usb1
+uhub1: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhci2 at pci0 dev 16 function 2 VIA VT83C572 USB rev 0x81: irq 10
+usb2 at uhci2: USB revision 1.0
+uhub2 at usb2
+uhub2: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhci3 at pci0 dev 16 function 3 VIA VT83C572 USB rev 0x81: irq 10
+usb3 at uhci3: USB revision 1.0
+uhub3 at usb3
+uhub3: VIA UHCI root hub, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+ehci0 at pci0 dev 16 function 4 VIA VT6202 USB rev 0x86: irq 5
+usb4 at ehci0: USB revision 2.0
+uhub4 at usb4
+uhub4: VIA EHCI root hub, rev 2.00/1.00, addr 1
+uhub4: 8 ports with 8 removable, self powered
+viapm0 at pci0 dev 17 function 0 VIA VT8237 ISA rev 0x00
+iic0 at viapm0
+pchb6 at pci0 dev 24 function 0 AMD AMD64 HyperTransport rev 0x00
+pchb7 at pci0 dev 24 function 1 AMD AMD64 Address Map rev 0x00
+pchb8 at pci0 dev 24 function 2 AMD AMD64 DRAM Cfg rev 0x00
+pchb9 at pci0 dev 24 function 3 AMD AMD64 Misc Cfg rev 0x00
+isa0 at mainbus0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+lm0 at isa0 port 0x290/8: W83627THF
+uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0: Logitech USB RECEIVER, rev 1.10/25.10, addr 2, iclass 3/1
+ums0 at uhidev0: 16 buttons and Z dir.
+wsmouse0 at ums0 mux 0
+dkcsum: wd0 matches BIOS drive 0x80
+dkcsum: wd1 matches BIOS drive 0x81
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

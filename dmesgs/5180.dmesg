@@ -1,0 +1,1211 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-10-30 19:47:25</em><br />
+<strong>From:</strong> <em>jj</em><br />
+<strong>Description:</strong> <em>AMD Epyc Rome Supermicro box</em><br />
+
+<pre>
+OpenBSD 6.6-current (GENERIC.MP) #413: Tue Oct 29 20:11:52 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 1099353411584 (1048425MB)
+avail mem = 1066020851712 (1016636MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.2 @ 0xa8e45000 (90 entries)
+bios0: vendor American Megatrends Inc. version &quot;2.0&quot; date 09/12/2019
+bios0: Supermicro AS -2123BT-HNR
+acpi0 at bios0: ACPI 6.2
+acpi0: sleep states S0 S5
+acpi0: tables DSDT FACP SSDT SPMI FPDT FIDT MCFG SSDT SSDT BERT EINJ HPET UEFI PCCT SSDT SRAT MSCT SLIT CRAT CDIT SSDT WSMT APIC HEST ERST
+acpi0: wakeup devices S0D0(S3) BC00(S3) S0D1(S3) BC01(S3) S0D2(S3) BC02(S3) S0D3(S3) BC03(S3) S1D0(S3) BC10(S3) S1D1(S3) BC11(S3) S1D2(S3) BC12(S3) S1D3(S3) BC13(S3)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD EPYC 7502 32-Core Processor, 2500.32 MHz, 17-31-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu0: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu0: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 100MHz
+cpu0: mwait min=64, max=64, C-substates=1.1, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu1: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu1: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu1: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu2: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu2: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu2: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu3: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu3: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu3: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu3: smt 0, core 3, package 0
+cpu4 at mainbus0: apid 8 (application processor)
+cpu4: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu4: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu4: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu4: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu4: smt 0, core 4, package 0
+cpu5 at mainbus0: apid 10 (application processor)
+cpu5: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu5: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu5: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu5: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu5: smt 0, core 5, package 0
+cpu6 at mainbus0: apid 12 (application processor)
+cpu6: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu6: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu6: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu6: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu6: smt 0, core 6, package 0
+cpu7 at mainbus0: apid 14 (application processor)
+cpu7: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu7: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu7: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu7: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu7: smt 0, core 7, package 0
+cpu8 at mainbus0: apid 16 (application processor)
+cpu8: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu8: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu8: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu8: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu8: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu8: smt 0, core 8, package 0
+cpu9 at mainbus0: apid 18 (application processor)
+cpu9: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu9: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu9: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu9: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu9: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu9: smt 0, core 9, package 0
+cpu10 at mainbus0: apid 20 (application processor)
+cpu10: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu10: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu10: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu10: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu10: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu10: smt 0, core 10, package 0
+cpu11 at mainbus0: apid 22 (application processor)
+cpu11: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu11: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu11: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu11: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu11: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu11: smt 0, core 11, package 0
+cpu12 at mainbus0: apid 24 (application processor)
+cpu12: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu12: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu12: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu12: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu12: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu12: smt 0, core 12, package 0
+cpu13 at mainbus0: apid 26 (application processor)
+cpu13: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu13: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu13: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu13: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu13: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu13: smt 0, core 13, package 0
+cpu14 at mainbus0: apid 28 (application processor)
+cpu14: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu14: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu14: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu14: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu14: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu14: smt 0, core 14, package 0
+cpu15 at mainbus0: apid 30 (application processor)
+cpu15: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu15: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu15: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu15: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu15: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu15: smt 0, core 15, package 0
+cpu16 at mainbus0: apid 32 (application processor)
+cpu16: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu16: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu16: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu16: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu16: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu16: smt 0, core 16, package 0
+cpu17 at mainbus0: apid 34 (application processor)
+cpu17: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu17: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu17: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu17: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu17: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu17: smt 0, core 17, package 0
+cpu18 at mainbus0: apid 36 (application processor)
+cpu18: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu18: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu18: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu18: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu18: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu18: smt 0, core 18, package 0
+cpu19 at mainbus0: apid 38 (application processor)
+cpu19: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu19: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu19: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu19: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu19: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu19: smt 0, core 19, package 0
+cpu20 at mainbus0: apid 40 (application processor)
+cpu20: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu20: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu20: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu20: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu20: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu20: smt 0, core 20, package 0
+cpu21 at mainbus0: apid 42 (application processor)
+cpu21: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu21: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu21: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu21: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu21: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu21: smt 0, core 21, package 0
+cpu22 at mainbus0: apid 44 (application processor)
+cpu22: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu22: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu22: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu22: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu22: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu22: smt 0, core 22, package 0
+cpu23 at mainbus0: apid 46 (application processor)
+cpu23: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu23: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu23: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu23: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu23: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu23: smt 0, core 23, package 0
+cpu24 at mainbus0: apid 48 (application processor)
+cpu24: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu24: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu24: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu24: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu24: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu24: smt 0, core 24, package 0
+cpu25 at mainbus0: apid 50 (application processor)
+cpu25: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu25: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu25: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu25: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu25: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu25: smt 0, core 25, package 0
+cpu26 at mainbus0: apid 52 (application processor)
+cpu26: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu26: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu26: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu26: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu26: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu26: smt 0, core 26, package 0
+cpu27 at mainbus0: apid 54 (application processor)
+cpu27: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu27: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu27: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu27: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu27: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu27: smt 0, core 27, package 0
+cpu28 at mainbus0: apid 56 (application processor)
+cpu28: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu28: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu28: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu28: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu28: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu28: smt 0, core 28, package 0
+cpu29 at mainbus0: apid 58 (application processor)
+cpu29: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu29: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu29: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu29: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu29: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu29: smt 0, core 29, package 0
+cpu30 at mainbus0: apid 60 (application processor)
+cpu30: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu30: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu30: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu30: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu30: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu30: smt 0, core 30, package 0
+cpu31 at mainbus0: apid 62 (application processor)
+cpu31: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu31: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu31: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu31: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu31: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu31: smt 0, core 31, package 0
+cpu32 at mainbus0: apid 128 (application processor)
+cpu32: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu32: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu32: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu32: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu32: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu32: smt 0, core 0, package 1
+cpu33 at mainbus0: apid 130 (application processor)
+cpu33: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu33: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu33: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu33: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu33: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu33: smt 0, core 1, package 1
+cpu34 at mainbus0: apid 132 (application processor)
+cpu34: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu34: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu34: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu34: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu34: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu34: smt 0, core 2, package 1
+cpu35 at mainbus0: apid 134 (application processor)
+cpu35: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu35: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu35: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu35: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu35: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu35: smt 0, core 3, package 1
+cpu36 at mainbus0: apid 136 (application processor)
+cpu36: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu36: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu36: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu36: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu36: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu36: smt 0, core 4, package 1
+cpu37 at mainbus0: apid 138 (application processor)
+cpu37: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu37: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu37: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu37: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu37: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu37: smt 0, core 5, package 1
+cpu38 at mainbus0: apid 140 (application processor)
+cpu38: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu38: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu38: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu38: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu38: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu38: smt 0, core 6, package 1
+cpu39 at mainbus0: apid 142 (application processor)
+cpu39: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu39: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu39: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu39: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu39: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu39: smt 0, core 7, package 1
+cpu40 at mainbus0: apid 144 (application processor)
+cpu40: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu40: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu40: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu40: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu40: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu40: smt 0, core 8, package 1
+cpu41 at mainbus0: apid 146 (application processor)
+cpu41: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu41: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu41: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu41: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu41: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu41: smt 0, core 9, package 1
+cpu42 at mainbus0: apid 148 (application processor)
+cpu42: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu42: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu42: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu42: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu42: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu42: smt 0, core 10, package 1
+cpu43 at mainbus0: apid 150 (application processor)
+cpu43: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu43: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu43: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu43: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu43: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu43: smt 0, core 11, package 1
+cpu44 at mainbus0: apid 152 (application processor)
+cpu44: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu44: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu44: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu44: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu44: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu44: smt 0, core 12, package 1
+cpu45 at mainbus0: apid 154 (application processor)
+cpu45: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu45: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu45: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu45: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu45: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu45: smt 0, core 13, package 1
+cpu46 at mainbus0: apid 156 (application processor)
+cpu46: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu46: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu46: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu46: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu46: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu46: smt 0, core 14, package 1
+cpu47 at mainbus0: apid 158 (application processor)
+cpu47: AMD EPYC 7502 32-Core Processor, 2500.00 MHz, 17-31-00
+cpu47: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu47: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu47: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu47: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu47: smt 0, core 15, package 1
+cpu48 at mainbus0: apid 160 (application processor)
+cpu48: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu48: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu48: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu48: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu48: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu48: smt 0, core 16, package 1
+cpu49 at mainbus0: apid 162 (application processor)
+cpu49: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu49: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu49: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu49: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu49: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu49: smt 0, core 17, package 1
+cpu50 at mainbus0: apid 164 (application processor)
+cpu50: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu50: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu50: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu50: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu50: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu50: smt 0, core 18, package 1
+cpu51 at mainbus0: apid 166 (application processor)
+cpu51: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu51: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu51: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu51: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu51: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu51: smt 0, core 19, package 1
+cpu52 at mainbus0: apid 168 (application processor)
+cpu52: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu52: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu52: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu52: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu52: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu52: smt 0, core 20, package 1
+cpu53 at mainbus0: apid 170 (application processor)
+cpu53: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu53: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu53: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu53: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu53: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu53: smt 0, core 21, package 1
+cpu54 at mainbus0: apid 172 (application processor)
+cpu54: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu54: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu54: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu54: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu54: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu54: smt 0, core 22, package 1
+cpu55 at mainbus0: apid 174 (application processor)
+cpu55: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu55: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu55: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu55: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu55: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu55: smt 0, core 23, package 1
+cpu56 at mainbus0: apid 176 (application processor)
+cpu56: AMD EPYC 7502 32-Core Processor, 2500.03 MHz, 17-31-00
+cpu56: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu56: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu56: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu56: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu56: smt 0, core 24, package 1
+cpu57 at mainbus0: apid 178 (application processor)
+cpu57: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu57: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu57: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu57: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu57: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu57: smt 0, core 25, package 1
+cpu58 at mainbus0: apid 180 (application processor)
+cpu58: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu58: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu58: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu58: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu58: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu58: smt 0, core 26, package 1
+cpu59 at mainbus0: apid 182 (application processor)
+cpu59: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu59: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu59: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu59: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu59: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu59: smt 0, core 27, package 1
+cpu60 at mainbus0: apid 184 (application processor)
+cpu60: AMD EPYC 7502 32-Core Processor, 2500.02 MHz, 17-31-00
+cpu60: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu60: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu60: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu60: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu60: smt 0, core 28, package 1
+cpu61 at mainbus0: apid 186 (application processor)
+cpu61: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu61: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu61: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu61: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu61: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu61: smt 0, core 29, package 1
+cpu62 at mainbus0: apid 188 (application processor)
+cpu62: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu62: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu62: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu62: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu62: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu62: smt 0, core 30, package 1
+cpu63 at mainbus0: apid 190 (application processor)
+cpu63: AMD EPYC 7502 32-Core Processor, 2500.01 MHz, 17-31-00
+cpu63: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,PQM,RDSEED,ADX,SMAP,CLFLUSHOPT,CLWB,SHA,UMIP,IBPB,IBRS,STIBP,SSBD,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu63: 32KB 64b/line 8-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 128MB 64b/line disabled L3 cache
+cpu63: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu63: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu63: smt 0, core 31, package 1
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 240 pa 0xfec00000, version 21, 24 pins, can't remap
+ioapic1 at mainbus0: apid 241 pa 0xc3e80000, version 21, 32 pins, can't remap
+ioapic2 at mainbus0: apid 242 pa 0xf9380000, version 21, 32 pins, can't remap
+ioapic3 at mainbus0: apid 243 pa 0xf3580000, version 21, 32 pins, can't remap
+ioapic4 at mainbus0: apid 244 pa 0xfa380000, version 21, 32 pins, can't remap
+ioapic5 at mainbus0: apid 245 pa 0xc2e80000, version 21, 32 pins, can't remap
+ioapic6 at mainbus0: apid 246 pa 0xf2580000, version 21, 32 pins, can't remap
+ioapic7 at mainbus0: apid 247 pa 0xb3480000, version 21, 32 pins, can't remap
+ioapic8 at mainbus0: apid 248 pa 0xb2580000, version 21, 32 pins, can't remap
+acpiprt0 at acpi0: bus 96 (S0D0)
+acpiprt1 at acpi0: bus 97 (D0A0)
+acpiprt2 at acpi0: bus -1 (BRCE)
+acpiprt3 at acpi0: bus -1 (D0A1)
+acpiprt4 at acpi0: bus 99 (S0D0)
+acpiprt5 at acpi0: bus 100 (BC00)
+acpiprt6 at acpi0: bus -1 (BR17)
+acpiprt7 at acpi0: bus -1 (BR19)
+acpiprt8 at acpi0: bus 64 (S0D1)
+acpiprt9 at acpi0: bus 65 (D1A0)
+acpiprt10 at acpi0: bus -1 (D1A1)
+acpiprt11 at acpi0: bus 71 (S0D1)
+acpiprt12 at acpi0: bus 72 (BC01)
+acpiprt13 at acpi0: bus 73 (BR2F)
+acpiprt14 at acpi0: bus 74 (BR31)
+acpiprt15 at acpi0: bus 32 (S0D2)
+acpiprt16 at acpi0: bus 33 (D2B0)
+acpiprt17 at acpi0: bus -1 (D2B1)
+acpiprt18 at acpi0: bus 34 (S0D2)
+acpiprt19 at acpi0: bus 35 (BC02)
+acpiprt20 at acpi0: bus 36 (BR47)
+acpiprt21 at acpi0: bus 37 (BR49)
+acpiprt22 at acpi0: bus 0 (PCI0)
+acpiprt23 at acpi0: bus -1 (D3B0)
+acpiprt24 at acpi0: bus 1 (S0D3)
+acpiprt25 at acpi0: bus 2 (BC03)
+acpiprt26 at acpi0: bus -1 (BR60)
+acpiprt27 at acpi0: bus -1 (BR62)
+acpiprt28 at acpi0: bus 224 (S1D0)
+acpiprt29 at acpi0: bus 227 (S1D0)
+acpiprt30 at acpi0: bus 228 (BC10)
+acpiprt31 at acpi0: bus -1 (BR78)
+acpiprt32 at acpi0: bus -1 (BR7A)
+acpiprt33 at acpi0: bus 192 (S1D1)
+acpiprt34 at acpi0: bus 193 (S1D1)
+acpiprt35 at acpi0: bus 194 (BC11)
+acpiprt36 at acpi0: bus 195 (BR90)
+acpiprt37 at acpi0: bus 196 (BR92)
+acpiprt38 at acpi0: bus 160 (S1D2)
+acpiprt39 at acpi0: bus 165 (S1D2)
+acpiprt40 at acpi0: bus 166 (BC12)
+acpiprt41 at acpi0: bus 167 (BRA8)
+acpiprt42 at acpi0: bus 168 (BRAA)
+acpiprt43 at acpi0: bus 128 (S1D3)
+acpiprt44 at acpi0: bus 129 (S1D3)
+acpiprt45 at acpi0: bus 130 (BC13)
+acpiprt46 at acpi0: bus -1 (BRC0)
+acpiprt47 at acpi0: bus -1 (BRC2)
+acpipwrres0 at acpi0: P0SA
+acpipwrres1 at acpi0: P3SA
+acpipwrres2 at acpi0: P0SA
+acpipwrres3 at acpi0: P3SA
+acpipwrres4 at acpi0: P0SA
+acpipwrres5 at acpi0: P3SA
+acpipwrres6 at acpi0: P0SA
+acpipwrres7 at acpi0: P3SA
+acpipwrres8 at acpi0: P0SA
+acpipwrres9 at acpi0: P3SA
+acpipwrres10 at acpi0: P0SA
+acpipwrres11 at acpi0: P3SA
+acpipwrres12 at acpi0: P0SA
+acpipwrres13 at acpi0: P3SA
+acpipwrres14 at acpi0: P0SA
+acpipwrres15 at acpi0: P3SA
+acpipwrres16 at acpi0: P0SA
+acpipwrres17 at acpi0: P3SA
+acpipwrres18 at acpi0: P0SA
+acpipwrres19 at acpi0: P3SA
+acpipwrres20 at acpi0: P0SA
+acpipwrres21 at acpi0: P3SA
+acpipwrres22 at acpi0: P0SA
+acpipwrres23 at acpi0: P3SA
+acpipwrres24 at acpi0: P0SA
+acpipwrres25 at acpi0: P3SA
+acpipwrres26 at acpi0: P0SA
+acpipwrres27 at acpi0: P3SA
+acpipwrres28 at acpi0: P0SA
+acpipwrres29 at acpi0: P3SA
+acpipwrres30 at acpi0: P0SA
+acpipwrres31 at acpi0: P3SA
+acpipci0 at acpi0 S0D0: 0x00000010 0x00000011 0x00000000
+acpipci1 at acpi0 S0D1: 0x00000010 0x00000011 0x00000000
+acpipci2 at acpi0 S0D2: 0x00000010 0x00000011 0x00000000
+acpipci3 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+acpicmos0 at acpi0
+&quot;IPI0001&quot; at acpi0 not configured
+&quot;AMDI0030&quot; at acpi0 not configured
+acpipci4 at acpi0 S1D0: 0x00000010 0x00000011 0x00000000
+acpipci5 at acpi0 S1D1: 0x00000010 0x00000011 0x00000000
+acpipci6 at acpi0 S1D2: 0x00000010 0x00000011 0x00000000
+acpipci7 at acpi0 S1D3: 0x00000010 0x00000011 0x00000000
+acpibtn0 at acpi0: PWRB
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;ACPI0007&quot; at acpi0 not configured
+&quot;PNP0C33&quot; at acpi0 not configured
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0
+ksmn0 at pci0 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb0 at pci0 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb1 at pci0 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb2 at pci0 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb3 at pci0 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb4 at pci0 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb5 at pci0 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb0 at pci0 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci1 at ppb0 bus 1
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci1 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci1 dev 0 function 2 not configured
+pchb6 at pci0 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb1 at pci0 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci2 at ppb1 bus 2
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci2 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci2 dev 0 function 2 not configured
+xhci0 at pci2 dev 0 function 3 vendor &quot;AMD&quot;, unknown product 0x148c rev 0x00: msi, xHCI 1.10
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;AMD FCH SMBus&quot; rev 0x61 at pci0 dev 20 function 0 not configured
+pcib0 at pci0 dev 20 function 3 &quot;AMD FCH LPC&quot; rev 0x51
+pchb7 at pci0 dev 24 function 0 vendor &quot;AMD&quot;, unknown product 0x1490 rev 0x00
+pchb8 at pci0 dev 24 function 1 vendor &quot;AMD&quot;, unknown product 0x1491 rev 0x00
+pchb9 at pci0 dev 24 function 2 vendor &quot;AMD&quot;, unknown product 0x1492 rev 0x00
+pchb10 at pci0 dev 24 function 3 vendor &quot;AMD&quot;, unknown product 0x1493 rev 0x00
+pchb11 at pci0 dev 24 function 4 vendor &quot;AMD&quot;, unknown product 0x1494 rev 0x00
+pchb12 at pci0 dev 24 function 5 vendor &quot;AMD&quot;, unknown product 0x1495 rev 0x00
+pchb13 at pci0 dev 24 function 6 vendor &quot;AMD&quot;, unknown product 0x1496 rev 0x00
+pchb14 at pci0 dev 24 function 7 vendor &quot;AMD&quot;, unknown product 0x1497 rev 0x00
+pchb15 at pci0 dev 25 function 0 vendor &quot;AMD&quot;, unknown product 0x1490 rev 0x00
+pchb16 at pci0 dev 25 function 1 vendor &quot;AMD&quot;, unknown product 0x1491 rev 0x00
+pchb17 at pci0 dev 25 function 2 vendor &quot;AMD&quot;, unknown product 0x1492 rev 0x00
+pchb18 at pci0 dev 25 function 3 vendor &quot;AMD&quot;, unknown product 0x1493 rev 0x00
+pchb19 at pci0 dev 25 function 4 vendor &quot;AMD&quot;, unknown product 0x1494 rev 0x00
+pchb20 at pci0 dev 25 function 5 vendor &quot;AMD&quot;, unknown product 0x1495 rev 0x00
+pchb21 at pci0 dev 25 function 6 vendor &quot;AMD&quot;, unknown product 0x1496 rev 0x00
+pchb22 at pci0 dev 25 function 7 vendor &quot;AMD&quot;, unknown product 0x1497 rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+vga0 at isa0 port 0x3b0/48 iomem 0xa0000/131072
+wsdisplay0 at vga0 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+pci3 at mainbus0 bus 96
+ksmn1 at pci3 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb23 at pci3 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb24 at pci3 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb25 at pci3 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb2 at pci3 dev 3 function 1 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci4 at ppb2 bus 97
+ppb3 at pci4 dev 0 function 0 &quot;ASPEED Technology AST1150 PCI&quot; rev 0x04
+pci5 at ppb3 bus 98
+&quot;ASPEED Technology AST2000&quot; rev 0x41 at pci5 dev 0 function 0 not configured
+pchb26 at pci3 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb27 at pci3 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb28 at pci3 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb4 at pci3 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci6 at ppb4 bus 99
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci6 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci6 dev 0 function 2 not configured
+pchb29 at pci3 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb5 at pci3 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci7 at ppb5 bus 100
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci7 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci7 dev 0 function 2 not configured
+pci8 at mainbus0 bus 64
+ksmn2 at pci8 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb30 at pci8 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb6 at pci8 dev 1 function 1 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci9 at ppb6 bus 65
+ppb7 at pci9 dev 0 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca
+pci10 at ppb7 bus 66
+ppb8 at pci10 dev 8 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci11 at ppb8 bus 67
+vendor &quot;Mellanox&quot;, unknown product 0x1003 (class network subclass ethernet, rev 0x00) at pci11 dev 0 function 0 not configured
+ppb9 at pci10 dev 9 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci12 at ppb9 bus 68
+vendor &quot;Mellanox&quot;, unknown product 0x1003 (class network subclass ethernet, rev 0x00) at pci12 dev 0 function 0 not configured
+ppb10 at pci10 dev 16 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci13 at ppb10 bus 69
+ppb11 at pci10 dev 17 function 0 vendor &quot;PLX&quot;, unknown product 0x8747 rev 0xca: msi
+pci14 at ppb11 bus 70
+pchb31 at pci8 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb32 at pci8 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb33 at pci8 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb34 at pci8 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb35 at pci8 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb12 at pci8 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci15 at ppb12 bus 71
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci15 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci15 dev 0 function 2 not configured
+pchb36 at pci8 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb13 at pci8 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci16 at ppb13 bus 72
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci16 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci16 dev 0 function 2 not configured
+ppb14 at pci8 dev 8 function 2 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci17 at ppb14 bus 73
+ahci0 at pci17 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+ahci0: port 7: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 7 lun 0: &lt;ATA, INTEL SSDSCKKB24, XC31&gt; naa.55cd2e4150fbd4ee
+sd0: 228936MB, 512 bytes/sector, 468862128 sectors, thin
+ppb15 at pci8 dev 8 function 3 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci18 at ppb15 bus 74
+ahci1 at pci18 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus2 at ahci1: 32 targets
+pci19 at mainbus0 bus 32
+ksmn3 at pci19 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb37 at pci19 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb38 at pci19 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb39 at pci19 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb16 at pci19 dev 3 function 1 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci20 at ppb16 bus 33
+em0 at pci20 dev 0 function 0 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+em1 at pci20 dev 0 function 1 &quot;Intel I350&quot; rev 0x01: msi, address xx:xx:xx:xx:xx:xx
+pchb40 at pci19 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb41 at pci19 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb42 at pci19 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb17 at pci19 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci21 at ppb17 bus 34
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci21 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci21 dev 0 function 2 not configured
+pchb43 at pci19 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb18 at pci19 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci22 at ppb18 bus 35
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci22 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1486 (class crypto subclass miscellaneous, rev 0x00) at pci22 dev 0 function 1 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci22 dev 0 function 2 not configured
+xhci1 at pci22 dev 0 function 3 vendor &quot;AMD&quot;, unknown product 0x148c rev 0x00: msi, xHCI 1.10
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+ppb19 at pci19 dev 8 function 2 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci23 at ppb19 bus 36
+ahci2 at pci23 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus3 at ahci2: 32 targets
+ppb20 at pci19 dev 8 function 3 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci24 at ppb20 bus 37
+ahci3 at pci24 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus4 at ahci3: 32 targets
+pci25 at mainbus0 bus 224
+ksmn4 at pci25 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb44 at pci25 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb45 at pci25 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb46 at pci25 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb21 at pci25 dev 3 function 3 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci26 at ppb21 bus 225
+nvme0 at pci26 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x0a54 rev 0x00: msix, NVMe 1.2
+nvme0: INTEL SSDPE2KX040T8, firmware VDV10131, serial PHLJ922502NS4P0DGN
+scsibus5 at nvme0: 2 targets, initiator 0
+sd1 at scsibus5 targ 1 lun 0: &lt;NVMe, INTEL SSDPE2KX04, VDV1&gt;
+sd1: 3815447MB, 512 bytes/sector, 7814037168 sectors
+ppb22 at pci25 dev 3 function 4 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci27 at ppb22 bus 226
+nvme1 at pci27 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x0a54 rev 0x00: msix, NVMe 1.2
+nvme1: INTEL SSDPE2KX040T8, firmware VDV10131, serial PHLJ9212027K4P0DGN
+scsibus6 at nvme1: 2 targets, initiator 0
+sd2 at scsibus6 targ 1 lun 0: &lt;NVMe, INTEL SSDPE2KX04, VDV1&gt;
+sd2: 3815447MB, 512 bytes/sector, 7814037168 sectors
+pchb47 at pci25 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb48 at pci25 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb49 at pci25 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb23 at pci25 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci28 at ppb23 bus 227
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci28 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci28 dev 0 function 2 not configured
+pchb50 at pci25 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb24 at pci25 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci29 at ppb24 bus 228
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci29 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci29 dev 0 function 2 not configured
+pci30 at mainbus0 bus 192
+ksmn5 at pci30 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb51 at pci30 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb52 at pci30 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb53 at pci30 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb54 at pci30 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb55 at pci30 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb56 at pci30 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb25 at pci30 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci31 at ppb25 bus 193
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci31 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci31 dev 0 function 2 not configured
+pchb57 at pci30 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb26 at pci30 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci32 at ppb26 bus 194
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci32 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci32 dev 0 function 2 not configured
+ppb27 at pci30 dev 8 function 2 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci33 at ppb27 bus 195
+ahci4 at pci33 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus7 at ahci4: 32 targets
+ppb28 at pci30 dev 8 function 3 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci34 at ppb28 bus 196
+ahci5 at pci34 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus8 at ahci5: 32 targets
+pci35 at mainbus0 bus 160
+ksmn6 at pci35 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb58 at pci35 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb59 at pci35 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb60 at pci35 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb29 at pci35 dev 3 function 1 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci36 at ppb29 bus 161
+ppb30 at pci35 dev 3 function 2 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci37 at ppb30 bus 162
+ppb31 at pci35 dev 3 function 3 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci38 at ppb31 bus 163
+ppb32 at pci35 dev 3 function 4 vendor &quot;AMD&quot;, unknown product 0x1483 rev 0x00: msi
+pci39 at ppb32 bus 164
+pchb61 at pci35 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb62 at pci35 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb63 at pci35 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb33 at pci35 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci40 at ppb33 bus 165
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci40 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci40 dev 0 function 2 not configured
+pchb64 at pci35 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb34 at pci35 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci41 at ppb34 bus 166
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci41 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1486 (class crypto subclass miscellaneous, rev 0x00) at pci41 dev 0 function 1 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci41 dev 0 function 2 not configured
+xhci2 at pci41 dev 0 function 3 vendor &quot;AMD&quot;, unknown product 0x148c rev 0x00: msi, xHCI 1.10
+usb2 at xhci2: USB revision 3.0
+uhub2 at usb2 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+ppb35 at pci35 dev 8 function 2 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci42 at ppb35 bus 167
+ahci6 at pci42 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus9 at ahci6: 32 targets
+ppb36 at pci35 dev 8 function 3 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci43 at ppb36 bus 168
+ahci7 at pci43 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x51: msi, AHCI 1.3.1
+scsibus10 at ahci7: 32 targets
+pci44 at mainbus0 bus 128
+ksmn7 at pci44 dev 0 function 0 &quot;AMD AMD64 17h/3xh Root Complex&quot; rev 0x00
+pchb65 at pci44 dev 1 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb66 at pci44 dev 2 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb67 at pci44 dev 3 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb68 at pci44 dev 4 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb69 at pci44 dev 5 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+pchb70 at pci44 dev 7 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb37 at pci44 dev 7 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci45 at ppb37 bus 129
+vendor &quot;AMD&quot;, unknown product 0x148a (class instrumentation unknown subclass 0x00, rev 0x00) at pci45 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci45 dev 0 function 2 not configured
+pchb71 at pci44 dev 8 function 0 vendor &quot;AMD&quot;, unknown product 0x1482 rev 0x00
+ppb38 at pci44 dev 8 function 1 vendor &quot;AMD&quot;, unknown product 0x1484 rev 0x00
+pci46 at ppb38 bus 130
+vendor &quot;AMD&quot;, unknown product 0x1485 (class instrumentation unknown subclass 0x00, rev 0x00) at pci46 dev 0 function 0 not configured
+vendor &quot;AMD&quot;, unknown product 0x1498 (class crypto subclass miscellaneous, rev 0x00) at pci46 dev 0 function 2 not configured
+xhci3 at pci46 dev 0 function 3 vendor &quot;AMD&quot;, unknown product 0x148c rev 0x00: msi, xHCI 1.10
+usb3 at xhci3: USB revision 3.0
+uhub3 at usb3 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+vmm0 at mainbus0: SVM/RVI
+uhub4 at uhub1 port 1 configuration 1 interface 0 &quot;ATEN International product 0x7000&quot; rev 2.00/0.00 addr 2
+uhidev0 at uhub4 port 1 configuration 1 interface 0 &quot;ATEN International product 0x2419&quot; rev 1.10/1.00 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub4 port 1 configuration 1 interface 1 &quot;ATEN International product 0x2419&quot; rev 1.10/1.00 addr 3
+uhidev1: iclass 3/1
+ums0 at uhidev1: 3 buttons, Z dir
+wsmouse0 at ums0 mux 0
+vscsi0 at root
+scsibus11 at vscsi0: 256 targets
+softraid0 at root
+scsibus12 at softraid0: 256 targets
+root on sd0a (f0491b6f0d5459c5.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

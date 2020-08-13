@@ -1,0 +1,469 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2017-11-19 11:21:40</em><br />
+<strong>From:</strong> <em>Karsten</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.2/amd64 Lenovo Thinkpad T440</em><br />
+
+<pre>
+OpenBSD 6.2 (GENERIC.MP) #0: Thu Oct 12 19:53:18 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8244822016 (7862MB)
+avail mem = 7987924992 (7617MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xdcc0d000 (62 entries)
+bios0: vendor LENOVO version &quot;GJET94WW (2.44 )&quot; date 09/14/2017
+bios0: LENOVO 20B6007HGE
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC DBGP ECDT HPET APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT TCPA UEFI MSDM ASF! BATB FPDT UEFI
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2694.18 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2694175690 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 200 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;LEN0071&quot; at acpi0 not configured
+&quot;LEN0036&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;45N1773&quot; serial 11314 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial 25099 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit offline
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+acpivideo1 at acpi0: VID_
+cpu0: Enhanced SpeedStep 2694 MHz: speeds: 2701, 2700, 2600, 2400, 2300, 2100, 2000, 1800, 1700, 1600, 1400, 1300, 1100, 1000, 800, 756 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 4G Host&quot; rev 0x0b
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x0b
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1600x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 4G HD Audio&quot; rev 0x0b: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 8 Series xHCI&quot; rev 0x04: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 8 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 8 Series KT&quot; rev 0x04: ports: 1 com
+com4 at puc0 port 0 apic 2 int 17: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 8 Series HD Audio&quot; rev 0x04: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit
+ppb1 at pci0 dev 28 function 1 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7260&quot; rev 0x83, msi
+ehci0 at pci0 dev 29 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 8 Series LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 8 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 2: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Samsung SSD 850, EMT0&gt; SCSI3 0/direct fixed naa.5002538d4251698e
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors, thin
+sd1 at scsibus1 targ 2 lun 0: &lt;ATA, SanDisk SSD U110, U21B&gt; SCSI3 0/direct fixed naa.5001b44c5a77c9ef
+sd1: 15272MB, 512 bytes/sector, 31277232 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 8 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+error: [drm:pid0:intel_uncore_check_errors] *ERROR* Unclaimed register before interrupt
+error: [drm:pid0:ivybridge_set_fifo_underrun_reporting] *ERROR* uncleared fifo underrun on pipe A
+error: [drm:pid0:intel_cpu_fifo_underrun_irq_handler] *ERROR* CPU pipe A FIFO underrun
+umb0 at uhub0 port 4 configuration 1 interface 0 &quot;Sierra Wireless Inc. Sierra Wireless EM7345 4G LTE&quot; rev 2.00/17.29 addr 2
+umodem0 at uhub0 port 4 configuration 1 interface 2 &quot;Sierra Wireless Inc. Sierra Wireless EM7345 4G LTE&quot; rev 2.00/17.29 addr 2
+umodem0: data interface 3, has no CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+ugen0 at uhub0 port 6 &quot;Validity Sensors VFS5011 Fingerprint Reader&quot; rev 1.10/0.78 addr 3
+ugen1 at uhub0 port 7 &quot;Intel product 0x07dc&quot; rev 2.00/0.01 addr 4
+uvideo0 at uhub0 port 8 configuration 1 interface 0 &quot;SunplusIT INC. Integrated Camera&quot; rev 2.00/26.03 addr 5
+video0 at uvideo0
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (5430dd1031dd6306.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x140, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+error: [drm:pid47313:intel_uncore_check_errors] *ERROR* Unclaimed register before interrupt
+syncing disks... done
+rebooti
+OpenBSD 6.2 (GENERIC.MP) #0: Thu Oct 12 19:53:18 CEST 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8244822016 (7862MB)
+avail mem = 7987929088 (7617MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xdcc0d000 (62 entries)
+bios0: vendor LENOVO version &quot;GJET94WW (2.44 )&quot; date 09/14/2017
+bios0: LENOVO 20B6007HGE
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC DBGP ECDT HPET APIC MCFG SSDT SSDT SSDT SSDT SSDT SSDT SSDT SSDT PCCT SSDT TCPA UEFI MSDM ASF! BATB FPDT UEFI
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP2(S4) XHCI(S3) EHC1(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2694.18 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: TSC frequency 2694175610 Hz
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz, 2693.77 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus -1 (EXP3)
+acpicpu0 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1
+acpipwrres1 at acpi0: NVP3, resource for PEG_
+acpipwrres2 at acpi0: NVP2, resource for PEG_
+acpitz0 at acpi0: critical temperature is 200 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+&quot;LEN0071&quot; at acpi0 not configured
+&quot;LEN0036&quot; at acpi0 not configured
+&quot;SMO1200&quot; at acpi0 not configured
+acpibat0 at acpi0: BAT0 model &quot;45N1773&quot; serial 11314 type LION oem &quot;SANYO&quot;
+acpibat1 at acpi0: BAT1 model &quot;45N1775&quot; serial 25099 type LION oem &quot;SANYO&quot;
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;INT340F&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+acpivideo1 at acpi0: VID_
+cpu0: Enhanced SpeedStep 2694 MHz: speeds: 2701, 2700, 2600, 2400, 2300, 2100, 2000, 1800, 1700, 1600, 1400, 1300, 1100, 1000, 800, 756 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 4G Host&quot; rev 0x0b
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x0b
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1600x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 4G HD Audio&quot; rev 0x0b: msi
+xhci0 at pci0 dev 20 function 0 &quot;Intel 8 Series xHCI&quot; rev 0x04: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 8 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 8 Series KT&quot; rev 0x04: ports: 1 com
+com4 at puc0 port 0 apic 2 int 17: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel I218-LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+azalia1 at pci0 dev 27 function 0 &quot;Intel 8 Series HD Audio&quot; rev 0x04: msi
+azalia1: codecs: Realtek ALC292
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci1 at ppb0 bus 2
+rtsx0 at pci1 dev 0 function 0 &quot;Realtek RTS5227 Card Reader&quot; rev 0x01: msi
+sdmmc0 at rtsx0: 4-bit
+ppb1 at pci0 dev 28 function 1 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci2 at ppb1 bus 3
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7260&quot; rev 0x83, msi
+ehci0 at pci0 dev 29 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 8 Series LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 8 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 2: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Samsung SSD 850, EMT0&gt; SCSI3 0/direct fixed naa.5002538d4251698e
+sd0: 476940MB, 512 bytes/sector, 976773168 sectors, thin
+sd1 at scsibus1 targ 2 lun 0: &lt;ATA, SanDisk SSD U110, U21B&gt; SCSI3 0/direct fixed naa.5001b44c5a77c9ef
+sd1: 15272MB, 512 bytes/sector, 31277232 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 8 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1, 0x1e2b1 0x940300
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+error: [drm:pid0:intel_uncore_check_errors] *ERROR* Unclaimed register before interrupt
+error: [drm:pid0:ivybridge_set_fifo_underrun_reporting] *ERROR* uncleared fifo underrun on pipe A
+error: [drm:pid0:intel_cpu_fifo_underrun_irq_handler] *ERROR* CPU pipe A FIFO underrun
+umb0 at uhub0 port 4 configuration 1 interface 0 &quot;Sierra Wireless Inc. Sierra Wireless EM7345 4G LTE&quot; rev 2.00/17.29 addr 2
+umodem0 at uhub0 port 4 configuration 1 interface 2 &quot;Sierra Wireless Inc. Sierra Wireless EM7345 4G LTE&quot; rev 2.00/17.29 addr 2
+umodem0: data interface 3, has no CM over data, has break
+umodem0: status change notification available
+ucom0 at umodem0
+ugen0 at uhub0 port 6 &quot;Validity Sensors VFS5011 Fingerprint Reader&quot; rev 1.10/0.78 addr 3
+ugen1 at uhub0 port 7 &quot;Intel product 0x07dc&quot; rev 2.00/0.01 addr 4
+uvideo0 at uhub0 port 8 configuration 1 interface 0 &quot;SunplusIT INC. Integrated Camera&quot; rev 2.00/26.03 addr 5
+video0 at uvideo0
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (5430dd1031dd6306.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x140, fw ver 16.242414.0, address xx:xx:xx:xx:xx:xx
+error: [drm:pid34636:intel_uncore_check_errors] *ERROR* Unclaimed register before interrupt
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

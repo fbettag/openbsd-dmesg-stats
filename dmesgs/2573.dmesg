@@ -1,0 +1,290 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2014-08-02 19:09:41</em><br />
+<strong>From:</strong> <em>peter_ljung</em><br />
+<strong>Description:</strong> <em> Intel Desktop Board D945GCLF</em><br />
+
+<pre>
+OpenBSD 5.5 (GENERIC.MP) #262: Wed Mar  5 10:06:29 MST 2014
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+RTC BIOS diagnostic error 80&lt;clock_battery&gt;
+cpu0: Intel(R) Atom(TM) CPU 230 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,LAHF,PERF
+real mem  = 1061855232 (1012MB)
+avail mem = 1032175616 (984MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 08/14/08, SMBIOS rev. 2.4 @ 0xe3590 (23 entries)
+bios0: vendor Intel Corp. version &quot;LF94510J.86A.0103.2008.0814.1910&quot; date 08/14/2008
+bios0: Intel Corporation D945GCLF
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP APIC WDDT MCFG ASF!
+acpi0: wakeup devices SLPB(S4) P32_(S4) UAR1(S4) UAR2(S4) PEX0(S4) PEX1(S4) PEX2(S4) PEX3(S4) PEX4(S4) PEX5(S4) UHC1(S3) UHC2(S3) UHC3(S3) UHC4(S3) EHCI(S3) AC9M(S4) [...]
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.1.0.0.0, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU 230 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,LAHF,PERF
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 2
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-127
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 4 (P32_)
+acpiprt2 at acpi0: bus 1 (PEX0)
+acpiprt3 at acpi0: bus -1 (PEX1)
+acpiprt4 at acpi0: bus 2 (PEX2)
+acpiprt5 at acpi0: bus 3 (PEX3)
+acpiprt6 at acpi0: bus -1 (PEX4)
+acpiprt7 at acpi0: bus -1 (PEX5)
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+acpibtn0 at acpi0: SLPB
+bios0: ROM list: 0xc0000/0xae00! 0xcb000/0x1000
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945G Host&quot; rev 0x02
+vga1 at pci0 dev 2 function 0 &quot;Intel 82945G Video&quot; rev 0x02
+intagp0 at vga1
+agp0 at intagp0: aperture at 0x40000000, size 0x10000000
+inteldrm0 at vga1
+drm0 at inteldrm0
+inteldrm0: 1280x1024
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+ppb0 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x01: apic 2 int 17
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 &quot;Realtek 8101E&quot; rev 0x02: RTL8102EL (0x2480), msi, address xx:xx:xx:xx:xx:xx
+rlphy0 at re0 phy 7: RTL8201L 10/100 PHY, rev. 1
+ppb1 at pci0 dev 28 function 2 &quot;Intel 82801GB PCIE&quot; rev 0x01: apic 2 int 18
+pci2 at ppb1 bus 2
+ppb2 at pci0 dev 28 function 3 &quot;Intel 82801GB PCIE&quot; rev 0x01: apic 2 int 19
+pci3 at ppb2 bus 3
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 19
+uhci2 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x01: apic 2 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 30 function 0 &quot;Intel 82801BA Hub-to-PCI&quot; rev 0xe1
+pci4 at ppb3 bus 4
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GB LPC&quot; rev 0x01: PM disabled
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x01: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;PLEXTOR, CD-R PREMIUM, 1.02&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 31 function 2 &quot;Intel 82801GB SATA&quot; rev 0x01: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 2 int 19 for native-PCI interrupt
+wd0 at pciide1 channel 0 drive 0: &lt;WDC WD10EADS-00L5B1&gt;
+wd0: 16-sector PIO, LBA48, 953869MB, 1953525168 sectors
+wd0(pciide1:0:0): using PIO mode 4, Ultra-DMA mode 6
+wd1 at pciide1 channel 1 drive 0: &lt;WDC WD10EARS-00MVWB0&gt;
+wd1: 16-sector PIO, LBA48, 953869MB, 1953525168 sectors
+wd1(pciide1:1:0): using PIO mode 4, Ultra-DMA mode 6
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x01: apic 2 int 19
+iic0 at ichiic0
+admtm0 at iic0 addr 0x2d: 47m192
+spdmem0 at iic0 addr 0x50: 1GB DDR2 SDRAM non-parity PC2-4200CL5
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a swap on wd0b dump on wd0b
+hw.sensors.cpu0.temp0=27.00 degC
+hw.sensors.admtm0.temp0=32.00 degC (Internal)
+hw.sensors.admtm0.temp1=45.00 degC (External)
+hw.sensors.admtm0.temp2=35.00 degC (External)
+hw.sensors.admtm0.volt0=2.53 VDC (2.5 V)
+hw.sensors.admtm0.volt1=0.00 VDC (Vccp)
+hw.sensors.admtm0.volt2=3.37 VDC (3.3 V)
+hw.sensors.admtm0.volt3=5.10 VDC (5 V)
+hw.sensors.admtm0.volt4=-10.18 VDC (12 V)
+hw.sensors.admtm0.volt5=3.39 VDC (Vcc)
+hw.sensors.admtm0.volt6=1.57 VDC (1.5 V)
+hw.sensors.admtm0.volt7=1.77 VDC (1.8 V)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

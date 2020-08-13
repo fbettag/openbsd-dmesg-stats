@@ -1,0 +1,363 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-05-31 16:06:47</em><br />
+<strong>From:</strong> <em>nomadium</em><br />
+<strong>Description:</strong> <em>Pinebook Pro</em><br />
+
+<pre>
+OpenBSD 6.7 (RAMDISK) #572: Thu May  7 14:08:02 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/arm64/compile/RAMDISK
+real mem  = 4093034496 (3903MB)
+avail mem = 3891253248 (3710MB)
+mainbus0 at root: Pine64 Pinebook Pro
+cpu0 at mainbus0 mpidr 0: ARM Cortex-A53 r0p4
+cpu0: 32KB 64b/line 2-way L1 VIPT I-cache, 32KB 64b/line 4-way L1 D-cache
+cpu0: 512KB 64b/line 16-way L2 cache
+efi0 at mainbus0: UEFI 2.8
+efi0: Das U-Boot rev 0x20200100
+psci0 at mainbus0: PSCI 1.1, SMCCC 1.1
+agintc0 at mainbus0 sec shift 3:3 nirq 288 nredist 6: &quot;interrupt-controller&quot;
+agintcmsi0 at agintc0
+syscon0 at mainbus0: &quot;qos&quot;
+syscon1 at mainbus0: &quot;qos&quot;
+syscon2 at mainbus0: &quot;qos&quot;
+syscon3 at mainbus0: &quot;qos&quot;
+syscon4 at mainbus0: &quot;qos&quot;
+syscon5 at mainbus0: &quot;qos&quot;
+syscon6 at mainbus0: &quot;qos&quot;
+syscon7 at mainbus0: &quot;qos&quot;
+syscon8 at mainbus0: &quot;qos&quot;
+syscon9 at mainbus0: &quot;qos&quot;
+syscon10 at mainbus0: &quot;qos&quot;
+syscon11 at mainbus0: &quot;qos&quot;
+syscon12 at mainbus0: &quot;qos&quot;
+syscon13 at mainbus0: &quot;qos&quot;
+syscon14 at mainbus0: &quot;qos&quot;
+syscon15 at mainbus0: &quot;qos&quot;
+syscon16 at mainbus0: &quot;qos&quot;
+syscon17 at mainbus0: &quot;qos&quot;
+syscon18 at mainbus0: &quot;qos&quot;
+syscon19 at mainbus0: &quot;qos&quot;
+syscon20 at mainbus0: &quot;qos&quot;
+syscon21 at mainbus0: &quot;qos&quot;
+syscon22 at mainbus0: &quot;qos&quot;
+syscon23 at mainbus0: &quot;qos&quot;
+syscon24 at mainbus0: &quot;qos&quot;
+syscon25 at mainbus0: &quot;power-management&quot;
+&quot;power-controller&quot; at syscon25 not configured
+syscon26 at mainbus0: &quot;syscon&quot;
+&quot;io-domains&quot; at syscon26 not configured
+rkclock0 at mainbus0
+rkclock1 at mainbus0
+syscon27 at mainbus0: &quot;syscon&quot;
+&quot;io-domains&quot; at syscon27 not configured
+&quot;usb2-phy&quot; at syscon27 not configured
+&quot;usb2-phy&quot; at syscon27 not configured
+rkemmcphy0 at syscon27
+&quot;pcie-phy&quot; at syscon27 not configured
+rkpinctrl0 at mainbus0: &quot;pinctrl&quot;
+rkgpio0 at rkpinctrl0
+rkgpio1 at rkpinctrl0
+rkgpio2 at rkpinctrl0
+rkgpio3 at rkpinctrl0
+rkgpio4 at rkpinctrl0
+syscon28 at mainbus0: &quot;syscon&quot;
+syscon29 at mainbus0: &quot;syscon&quot;
+&quot;pmu_a53&quot; at mainbus0 not configured
+&quot;pmu_a72&quot; at mainbus0 not configured
+agtimer0 at mainbus0: tick rate 24000 KHz
+&quot;xin24m&quot; at mainbus0 not configured
+simplebus0 at mainbus0: &quot;amba&quot;
+&quot;dma-controller&quot; at simplebus0 not configured
+&quot;dma-controller&quot; at simplebus0 not configured
+rkpcie0 at mainbus0
+rkpcie0: link training timeout
+dwmmc0 at mainbus0: 50 MHz base clock
+sdmmc0 at dwmmc0: 4-bit, sd high-speed, dma
+dwmmc1 at mainbus0: 50 MHz base clock
+sdmmc1 at dwmmc1: 4-bit, sd high-speed, mmc high-speed, dma
+sdhc0 at mainbus0
+sdhc0: SDHC 3.0, 200 MHz base clock
+sdmmc2 at sdhc0: 8-bit, sd high-speed, mmc high-speed, dma
+ehci0 at mainbus0
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Generic EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci0 at mainbus0: version 1.0
+ehci1 at mainbus0
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Generic EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at mainbus0: version 1.0
+rkdwusb0 at mainbus0: &quot;usb&quot;
+xhci0 at rkdwusb0, xHCI 1.10
+usb2 at xhci0: USB revision 3.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+rkdwusb1 at mainbus0: &quot;usb&quot;
+xhci1 at rkdwusb1, xHCI 1.10
+usb3 at xhci1: USB revision 3.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Generic xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;dp&quot; at mainbus0 not configured
+&quot;saradc&quot; at mainbus0 not configured
+rkiic0 at mainbus0
+iic0 at rkiic0
+&quot;everest,es8316&quot; at iic0 addr 0x11 not configured
+rkiic1 at mainbus0
+iic1 at rkiic1
+com0 at mainbus0: ns16550, no working fifo
+com1 at mainbus0: ns16550, no working fifo
+com1: console
+&quot;spi&quot; at mainbus0 not configured
+&quot;tsadc&quot; at mainbus0 not configured
+rkiic2 at mainbus0
+iic2 at rkiic2
+rkpmic0 at iic2 addr 0x1b: RK808
+&quot;silergy,syr827&quot; at iic2 addr 0x40 not configured
+&quot;silergy,syr828&quot; at iic2 addr 0x41 not configured
+rkiic3 at mainbus0
+iic3 at rkiic3
+fusbtc0 at iic3 addr 0x22: unable to establish interrupt
+rkpwm0 at mainbus0
+rkpwm1 at mainbus0
+&quot;efuse&quot; at mainbus0 not configured
+&quot;phy&quot; at mainbus0 not configured
+&quot;phy&quot; at mainbus0 not configured
+&quot;watchdog&quot; at mainbus0 not configured
+&quot;rktimer&quot; at mainbus0 not configured
+&quot;i2s&quot; at mainbus0 not configured
+&quot;vop&quot; at mainbus0 not configured
+&quot;iommu&quot; at mainbus0 not configured
+&quot;vop&quot; at mainbus0 not configured
+&quot;iommu&quot; at mainbus0 not configured
+&quot;hdmi-sound&quot; at mainbus0 not configured
+&quot;edp&quot; at mainbus0 not configured
+&quot;gpu&quot; at mainbus0 not configured
+&quot;opp-table0&quot; at mainbus0 not configured
+&quot;opp-table1&quot; at mainbus0 not configured
+&quot;opp-table2&quot; at mainbus0 not configured
+&quot;edp-backlight&quot; at mainbus0 not configured
+&quot;edp-panel&quot; at mainbus0 not configured
+&quot;gpio-key-lid&quot; at mainbus0 not configured
+&quot;gpio-key-power&quot; at mainbus0 not configured
+&quot;leds&quot; at mainbus0 not configured
+&quot;sdio-pwrseq&quot; at mainbus0 not configured
+&quot;es8316-sound&quot; at mainbus0 not configured
+&quot;speaker-amplifier&quot; at mainbus0 not configured
+&quot;vcc-sysin&quot; at mainbus0 not configured
+&quot;vcc-12v&quot; at mainbus0 not configured
+&quot;vcc3v3-sys&quot; at mainbus0 not configured
+&quot;vcc5v0-usb-regulator&quot; at mainbus0 not configured
+&quot;vdd-log&quot; at mainbus0 not configured
+&quot;vcc-0v9&quot; at mainbus0 not configured
+&quot;vcc1v8-s3&quot; at mainbus0 not configured
+&quot;vcc3v0-sd&quot; at mainbus0 not configured
+&quot;vcc3v3-panel&quot; at mainbus0 not configured
+&quot;vcc3v3-ssd&quot; at mainbus0 not configured
+&quot;vcc5v0-otg&quot; at mainbus0 not configured
+&quot;vbus-5vout&quot; at mainbus0 not configured
+&quot;vcca0v9-s3&quot; at mainbus0 not configured
+&quot;dc-charger&quot; at mainbus0 not configured
+&quot;dfi&quot; at mainbus0 not configured
+&quot;dmc&quot; at mainbus0 not configured
+usb4 at ohci0: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Generic OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci1: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;Generic OHCI root hub&quot; rev 1.00/1.00 addr 1
+bwfm0 at sdmmc0 function 1
+manufacturer 0x02d0, product 0xa9bf at sdmmc0 function 2 not configured
+manufacturer 0x02d0, product 0xa9bf at sdmmc0 function 3 not configured
+scsibus0 at sdmmc1: 2 targets, initiator 0
+sd0 at scsibus0 targ 1 lun 0: &lt;SD/MMC, SC32G, 0080&gt; removable
+sd0: 30436MB, 512 bytes/sector, 62333952 sectors
+scsibus1 at sdmmc2: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: &lt;Sandisk, DA4064, 0000&gt; removable
+sd1: 59640MB, 512 bytes/sector, 122142720 sectors
+uhub6 at uhub1 port 1 configuration 1 interface 0 &quot;Genesys Logic USB2.0 Hub&quot; rev 2.00/85.36 addr 2
+&quot;Sonix Technology Co., Ltd. USB Camera&quot; rev 2.00/0.00 addr 3 at uhub6 port 2 not configured
+&quot;Realtek &quot; rev 2.00/0.00 addr 2 at uhub3 port 1 not configured
+uhidev0 at uhub4 port 1 configuration 1 interface 0 &quot;HAILUCK CO.,LTD USB KEYBOARD&quot; rev 1.10/1.00 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0
+uhidev1 at uhub4 port 1 configuration 1 interface 1 &quot;HAILUCK CO.,LTD USB KEYBOARD&quot; rev 1.10/1.00 addr 2
+uhidev1: iclass 3/0, 35 report ids
+uhid at uhidev1 reportid 1 not configured
+uhid at uhidev1 reportid 2 not configured
+uhid at uhidev1 reportid 3 not configured
+uhid at uhidev1 reportid 5 not configured
+uhid at uhidev1 reportid 6 not configured
+uhid at uhidev1 reportid 9 not configured
+uhid at uhidev1 reportid 30 not configured
+uhid at uhidev1 reportid 31 not configured
+uhid at uhidev1 reportid 32 not configured
+uhid at uhidev1 reportid 34 not configured
+uhid at uhidev1 reportid 35 not configured
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+bootfile: sd0a:/bsd
+boot device: sd0
+root on rd0a swap on rd0b dump on rd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

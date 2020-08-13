@@ -1,0 +1,412 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-11-28 14:39:32</em><br />
+<strong>From:</strong> <em>Denis</em><br />
+<strong>Description:</strong> <em>Intel NUC NUC8i7HNK</em><br />
+
+<pre>
+Nov 28 15:24:57 test /bsd: OpenBSD 6.6-current (GENERIC.MP) #493: Wed Nov 27 22:27:15 MST 2019
+Nov 28 15:24:57 test /bsd:     xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+Nov 28 15:24:57 test /bsd: real mem = 17078120448 (16286MB)
+Nov 28 15:24:57 test /bsd: avail mem = 16548134912 (15781MB)
+Nov 28 15:24:57 test /bsd: mpath0 at root
+Nov 28 15:24:57 test /bsd: scsibus0 at mpath0: 256 targets
+Nov 28 15:24:57 test /bsd: mainbus0 at root
+Nov 28 15:24:57 test /bsd: bios0 at mainbus0: SMBIOS rev. 2.8 @ 0x7cddf000 (70 entries)
+Nov 28 15:24:57 test /bsd: bios0: vendor Intel Corp. version &quot;HNKBLi70.86A.0059.2019.1112.1124&quot; date 11/12/2019
+Nov 28 15:24:57 test /bsd: bios0: Intel(R) Client Systems NUC8i7HNK
+Nov 28 15:24:57 test /bsd: acpi0 at bios0: ACPI 6.0
+Nov 28 15:24:57 test /bsd: acpi0: sleep states S0 S3 S4 S5
+Nov 28 15:24:57 test /bsd: acpi0: tables DSDT FACP APIC FPDT FIDT MCFG SSDT SSDT SSDT HPET SSDT SSDT UEFI SSDT SSDT LPIT SSDT SSDT SSDT SSDT SSDT DBGP DBG2 SSDT DMAR VFCT TPM2 BGRT WSMT
+Nov 28 15:24:57 test /bsd: acpi0: wakeup devices PEG0(S4) PEGP(S4) PEG1(S4) PEGP(S4) PEG2(S4) PEGP(S4) SIO1(S3) RP09(S4) PXSX(S4) RP10(S4) PXSX(S4) RP11(S4) PXSX(S4) RP12(S4) PXSX(S4) RP13(S4) [...]
+Nov 28 15:24:57 test /bsd: acpitimer0 at acpi0: 3579545 Hz, 24 bits
+Nov 28 15:24:57 test /bsd: acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+Nov 28 15:24:57 test /bsd: cpu0 at mainbus0: apid 0 (boot processor)
+Nov 28 15:24:57 test /bsd: cpu0: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3101.50 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu0: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu0: smt 0, core 0, package 0
+Nov 28 15:24:57 test /bsd: mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+Nov 28 15:24:57 test /bsd: cpu0: apic clock running at 24MHz
+Nov 28 15:24:57 test /bsd: cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+Nov 28 15:24:57 test /bsd: cpu1 at mainbus0: apid 2 (application processor)
+Nov 28 15:24:57 test /bsd: cpu1: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu1: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu1: smt 0, core 1, package 0
+Nov 28 15:24:57 test /bsd: cpu2 at mainbus0: apid 4 (application processor)
+Nov 28 15:24:57 test /bsd: cpu2: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu2: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu2: smt 0, core 2, package 0
+Nov 28 15:24:57 test /bsd: cpu3 at mainbus0: apid 6 (application processor)
+Nov 28 15:24:57 test /bsd: cpu3: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu3: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu3: smt 0, core 3, package 0
+Nov 28 15:24:57 test /bsd: cpu4 at mainbus0: apid 1 (application processor)
+Nov 28 15:24:57 test /bsd: cpu4: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu4: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu4: smt 1, core 0, package 0
+Nov 28 15:24:57 test /bsd: cpu5 at mainbus0: apid 3 (application processor)
+Nov 28 15:24:57 test /bsd: cpu5: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu5: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu5: smt 1, core 1, package 0
+Nov 28 15:24:57 test /bsd: cpu6 at mainbus0: apid 5 (application processor)
+Nov 28 15:24:57 test /bsd: cpu6: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu6: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu6: smt 1, core 2, package 0
+Nov 28 15:24:57 test /bsd: cpu7 at mainbus0: apid 7 (application processor)
+Nov 28 15:24:57 test /bsd: cpu7: Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3100.01 MHz, 06-9e-09
+Nov 28 15:24:57 test /bsd: cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,SDBG,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,RDTSCP,LONG,LAHF,ABM,3DNOWP,PERF,ITSC,FSGSBASE,TSC_ADJUST,SGX,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,MPX,RDSEED,ADX,SMAP,CLFLUSHOPT,PT,MD_CLEAR,TSXFA,IBRS,IBPB,STIBP,L1DF,SSBD,SENSOR,ARAT,XSAVEOPT,XSAVEC,XGETBV1,XSAVES,MELTDOWN
+Nov 28 15:24:57 test /bsd: cpu7: 256KB 64b/line 8-way L2 cache
+Nov 28 15:24:57 test /bsd: cpu7: smt 1, core 3, package 0
+Nov 28 15:24:57 test /bsd: ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 120 pins
+Nov 28 15:24:57 test /bsd: acpimcfg0 at acpi0
+Nov 28 15:24:57 test /bsd: acpimcfg0: addr 0xe0000000, bus 0-255
+Nov 28 15:24:57 test /bsd: acpihpet0 at acpi0: 23999999 Hz
+Nov 28 15:24:57 test /bsd: acpiprt0 at acpi0: bus 0 (PCI0)
+Nov 28 15:24:57 test /bsd: acpiprt1 at acpi0: bus 1 (PEG0)
+Nov 28 15:24:57 test /bsd: acpiprt2 at acpi0: bus 2 (PEG1)
+Nov 28 15:24:57 test /bsd: acpiprt3 at acpi0: bus 3 (PEG2)
+Nov 28 15:24:57 test /bsd: acpiprt4 at acpi0: bus 114 (RP09)
+Nov 28 15:24:57 test /bsd: acpiprt5 at acpi0: bus -1 (RP10)
+Nov 28 15:24:57 test /bsd: acpiprt6 at acpi0: bus -1 (RP11)
+Nov 28 15:24:57 test /bsd: acpiprt7 at acpi0: bus -1 (RP12)
+Nov 28 15:24:57 test /bsd: acpiprt8 at acpi0: bus -1 (RP13)
+Nov 28 15:24:57 test /bsd: acpiprt9 at acpi0: bus 4 (RP01)
+Nov 28 15:24:57 test /bsd: acpiprt10 at acpi0: bus 5 (RP02)
+Nov 28 15:24:57 test /bsd: acpiprt11 at acpi0: bus 6 (RP03)
+Nov 28 15:24:57 test /bsd: acpiprt12 at acpi0: bus -1 (RP04)
+Nov 28 15:24:57 test /bsd: acpiprt13 at acpi0: bus 7 (RP05)
+Nov 28 15:24:57 test /bsd: acpiprt14 at acpi0: bus -1 (RP06)
+Nov 28 15:24:57 test /bsd: acpiprt15 at acpi0: bus -1 (RP07)
+Nov 28 15:24:57 test /bsd: acpiprt16 at acpi0: bus -1 (RP08)
+Nov 28 15:24:57 test /bsd: acpiprt17 at acpi0: bus -1 (RP17)
+Nov 28 15:24:57 test /bsd: acpiprt18 at acpi0: bus -1 (RP18)
+Nov 28 15:24:57 test /bsd: acpiprt19 at acpi0: bus -1 (RP19)
+Nov 28 15:24:57 test /bsd: acpiprt20 at acpi0: bus -1 (RP20)
+Nov 28 15:24:57 test /bsd: acpiprt21 at acpi0: bus -1 (RP21)
+Nov 28 15:24:57 test /bsd: acpiprt22 at acpi0: bus -1 (RP22)
+Nov 28 15:24:57 test /bsd: acpiprt23 at acpi0: bus -1 (RP23)
+Nov 28 15:24:57 test /bsd: acpiprt24 at acpi0: bus -1 (RP24)
+Nov 28 15:24:57 test /bsd: acpiprt25 at acpi0: bus -1 (RP14)
+Nov 28 15:24:57 test /bsd: acpiprt26 at acpi0: bus -1 (RP15)
+Nov 28 15:24:57 test /bsd: acpiprt27 at acpi0: bus -1 (RP16)
+Nov 28 15:24:57 test /bsd: acpiec0 at acpi0
+Nov 28 15:24:57 test /bsd: acpicpu0 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu1 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu2 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu3 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu4 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu5 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu6 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpicpu7 at acpi0: C3(200@1034 mwait.1@0x60), C2(200@151 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+Nov 28 15:24:57 test /bsd: acpipwrres0 at acpi0: PG00, resource for PEG0
+Nov 28 15:24:57 test /bsd: acpipwrres1 at acpi0: PG01, resource for PEG1
+Nov 28 15:24:57 test /bsd: acpipwrres2 at acpi0: PG02, resource for PEG2
+Nov 28 15:24:57 test /bsd: acpipwrres3 at acpi0: FN00, resource for FAN0
+Nov 28 15:24:57 test /bsd: acpipwrres4 at acpi0: FN01, resource for FAN1
+Nov 28 15:24:57 test /bsd: acpipwrres5 at acpi0: FN02, resource for FAN2
+Nov 28 15:24:57 test /bsd: acpipwrres6 at acpi0: FN03, resource for FAN3
+Nov 28 15:24:57 test /bsd: acpipwrres7 at acpi0: FN04, resource for FAN4
+Nov 28 15:24:57 test /bsd: acpitz0 at acpi0: critical temperature is 119 degC
+Nov 28 15:24:57 test /bsd: acpitz1 at acpi0: critical temperature is 119 degC
+Nov 28 15:24:57 test /bsd: acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+Nov 28 15:24:57 test /bsd: acpicmos0 at acpi0
+Nov 28 15:24:57 test /bsd: &quot;INT345D&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: &quot;INT3515&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: acpibtn0 at acpi0: SLPB
+Nov 28 15:24:57 test /bsd: &quot;PNP0C14&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: &quot;INT33A1&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: acpibtn1 at acpi0: PWRB
+Nov 28 15:24:57 test /bsd: &quot;MSFT0101&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: &quot;PNP0C0B&quot; at acpi0 not configured
+Nov 28 15:24:57 test last message repeated 4 times
+Nov 28 15:24:57 test /bsd: &quot;PNP0C14&quot; at acpi0 not configured
+Nov 28 15:24:57 test /bsd: acpivideo0 at acpi0: GFX0
+Nov 28 15:24:57 test /bsd: acpivout0 at acpivideo0: DD1F
+Nov 28 15:24:57 test /bsd: cpu0: using VERW MDS workaround (except on vmm entry)
+Nov 28 15:24:57 test /bsd: cpu0: Enhanced SpeedStep 3101 MHz: speeds: 3101, 3100, 2900, 2800, 2600, 2400, 2300, 2100, 1900, 1800, 1600, 1500, 1300, 1100, 1000, 800 MHz
+Nov 28 15:24:57 test /bsd: pci0 at mainbus0 bus 0
+Nov 28 15:24:57 test /bsd: pchb0 at pci0 dev 0 function 0 &quot;Intel Xeon E3-1200 v6/7 Host&quot; rev 0x05
+Nov 28 15:24:57 test /bsd: ppb0 at pci0 dev 1 function 0 &quot;Intel Core 6G PCIE&quot; rev 0x05: msi
+Nov 28 15:24:57 test /bsd: pci1 at ppb0 bus 1
+Nov 28 15:24:57 test /bsd: amdgpu0 at pci1 dev 0 function 0 &quot;ATI Vega M&quot; rev 0xc0
+Nov 28 15:24:57 test /bsd: drm0 at amdgpu0
+Nov 28 15:24:57 test /bsd: amdgpu0: msi
+Nov 28 15:24:57 test /bsd: azalia0 at pci1 dev 0 function 1 vendor &quot;ATI&quot;, unknown product 0xab08 rev 0x00: msi
+Nov 28 15:24:57 test /bsd: azalia0: no supported codecs
+Nov 28 15:24:57 test /bsd: ppb1 at pci0 dev 1 function 1 &quot;Intel Core 6G PCIE&quot; rev 0x05: msi
+Nov 28 15:24:57 test /bsd: pci2 at ppb1 bus 2
+Nov 28 15:24:57 test /bsd: xhci0 at pci2 dev 0 function 0 vendor &quot;ASMedia&quot;, unknown product 0x2142 rev 0x00: msi, xHCI 1.10
+Nov 28 15:24:57 test /bsd: usb0 at xhci0: USB revision 3.0
+Nov 28 15:24:57 test /bsd: uhub0 at usb0 configuration 1 interface 0 &quot;ASMedia xHCI root hub&quot; rev 3.00/1.00 addr 1
+Nov 28 15:24:57 test /bsd: ppb2 at pci0 dev 1 function 2 &quot;Intel Core 6G PCIE&quot; rev 0x05: msi
+Nov 28 15:24:57 test /bsd: pci3 at ppb2 bus 3
+Nov 28 15:24:57 test /bsd: sdhc0 at pci3 dev 0 function 0 &quot;O2 Micro 0Z8621 SD/MMC&quot; rev 0x01: apic 2 int 18
+Nov 28 15:24:57 test /bsd: sdhc0: SDHC 4.0, 50 MHz base clock
+Nov 28 15:24:57 test /bsd: sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+Nov 28 15:24:57 test /bsd: inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 630&quot; rev 0x04
+Nov 28 15:24:57 test /bsd: drm1 at inteldrm0
+Nov 28 15:24:57 test /bsd: inteldrm0: msi
+Nov 28 15:24:57 test /bsd: &quot;Intel Core GMM&quot; rev 0x00 at pci0 dev 8 function 0 not configured
+Nov 28 15:24:57 test /bsd: xhci1 at pci0 dev 20 function 0 &quot;Intel 100 Series xHCI&quot; rev 0x31: msi, xHCI 1.0
+Nov 28 15:24:57 test /bsd: usb1 at xhci1: USB revision 3.0
+Nov 28 15:24:57 test /bsd: uhub1 at usb1 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+Nov 28 15:24:57 test /bsd: pchtemp0 at pci0 dev 20 function 2 &quot;Intel 100 Series Thermal&quot; rev 0x31
+Nov 28 15:24:57 test /bsd: dwiic0 at pci0 dev 21 function 0 &quot;Intel 100 Series I2C&quot; rev 0x31: apic 2 int 16
+Nov 28 15:24:57 test /bsd: iic0 at dwiic0
+Nov 28 15:24:57 test /bsd: &quot;INT3515&quot; at iic0 addr 0x3b not configured
+Nov 28 15:24:57 test /bsd: dwiic1 at pci0 dev 21 function 1 &quot;Intel 100 Series I2C&quot; rev 0x31: apic 2 int 17
+Nov 28 15:24:57 test /bsd: iic1 at dwiic1
+Nov 28 15:24:57 test /bsd: vendor &quot;Intel&quot;, unknown product 0xa162 (class DASP subclass miscellaneous, rev 0x31) at pci0 dev 21 function 2 not configured
+Nov 28 15:24:57 test /bsd: &quot;Intel 100 Series MEI&quot; rev 0x31 at pci0 dev 22 function 0 not configured
+Nov 28 15:24:57 test /bsd: ppb3 at pci0 dev 28 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1
+Nov 28 15:24:57 test /bsd: pci4 at ppb3 bus 4
+Nov 28 15:24:57 test /bsd: ppb4 at pci0 dev 28 function 1 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+Nov 28 15:24:57 test /bsd: pci5 at ppb4 bus 5
+Nov 28 15:24:57 test /bsd: em0 at pci5 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: msi, address xx:xx:xx:xx:xx:xx
+Nov 28 15:24:57 test /bsd: ppb5 at pci0 dev 28 function 2 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+Nov 28 15:24:57 test /bsd: pci6 at ppb5 bus 6
+Nov 28 15:24:57 test /bsd: iwm0 at pci6 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 8265&quot; rev 0x78, msi
+Nov 28 15:24:57 test /bsd: ppb6 at pci0 dev 28 function 4 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+Nov 28 15:24:57 test /bsd: pci7 at ppb6 bus 7
+Nov 28 15:24:57 test /bsd: ppb7 at pci0 dev 29 function 0 &quot;Intel 100 Series PCIE&quot; rev 0xf1: msi
+Nov 28 15:24:57 test /bsd: pci8 at ppb7 bus 114
+Nov 28 15:24:57 test /bsd: nvme0 at pci8 dev 0 function 0 unknown vendor 0xc0a9 product 0x2263 rev 0x03: msix, NVMe 1.3
+Nov 28 15:24:57 test /bsd: nvme0: CT500P1SSD8, firmware P3CR013, serial 1941E2237234
+Nov 28 15:24:57 test /bsd: scsibus1 at nvme0: 2 targets, initiator 0
+Nov 28 15:24:57 test /bsd: sd0 at scsibus1 targ 1 lun 0: &lt;NVMe, CT500P1SSD8, P3CR&gt;
+Nov 28 15:24:57 test /bsd: sd0: 476940MB, 512 bytes/sector, 976773168 sectors
+Nov 28 15:24:57 test /bsd: vendor &quot;Intel&quot;, unknown product 0xa127 (class DASP subclass miscellaneous, rev 0x31) at pci0 dev 30 function 0 not configured
+Nov 28 15:24:57 test /bsd: pcib0 at pci0 dev 31 function 0 &quot;Intel HM175 LPC&quot; rev 0x31
+Nov 28 15:24:57 test /bsd: &quot;Intel 100 Series PMC&quot; rev 0x31 at pci0 dev 31 function 2 not configured
+Nov 28 15:24:57 test /bsd: azalia1 at pci0 dev 31 function 3 &quot;Intel CM238 HD Audio Controller&quot; rev 0x31: msi
+Nov 28 15:24:57 test /bsd: azalia1: codecs: Realtek/0x0700, Intel/0x280b, using Realtek/0x0700
+Nov 28 15:24:57 test /bsd: audio0 at azalia1
+Nov 28 15:24:57 test /bsd: ichiic0 at pci0 dev 31 function 4 &quot;Intel 100 Series SMBus&quot; rev 0x31: apic 2 int 16
+Nov 28 15:24:57 test /bsd: iic2 at ichiic0
+Nov 28 15:24:57 test /bsd: em1 at pci0 dev 31 function 6 &quot;Intel I219-LM&quot; rev 0x31: msi, address xx:xx:xx:xx:xx:xx
+Nov 28 15:24:57 test /bsd: isa0 at pcib0
+Nov 28 15:24:57 test /bsd: isadma0 at isa0
+Nov 28 15:24:57 test /bsd: com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+Nov 28 15:24:57 test /bsd: com0: probed fifo depth: 0 bytes
+Nov 28 15:24:57 test /bsd: pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+Nov 28 15:24:57 test /bsd: pckbd0 at pckbc0 (kbd slot)
+Nov 28 15:24:57 test /bsd: wskbd0 at pckbd0: console keyboard
+Nov 28 15:24:57 test /bsd: pcppi0 at isa0 port 0x61
+Nov 28 15:24:57 test /bsd: spkr0 at pcppi0
+Nov 28 15:24:57 test /bsd: vmm0 at mainbus0: VMX/EPT
+Nov 28 15:24:57 test /bsd: efifb at mainbus0 not configured
+Nov 28 15:24:57 test /bsd: uhidev0 at uhub1 port 3 configuration 1 interface 0 &quot;Logitech Gaming Mouse G402&quot; rev 2.00/90.03 addr 2
+Nov 28 15:24:57 test /bsd: uhidev0: iclass 3/1
+Nov 28 15:24:57 test /bsd: ums0 at uhidev0: 16 buttons, Z and W dir
+Nov 28 15:24:57 test /bsd: wsmouse0 at ums0 mux 0
+Nov 28 15:24:57 test /bsd: uhidev1 at uhub1 port 3 configuration 1 interface 1 &quot;Logitech Gaming Mouse G402&quot; rev 2.00/90.03 addr 2
+Nov 28 15:24:57 test /bsd: uhidev1: iclass 3/0, 17 report ids
+Nov 28 15:24:57 test /bsd: ukbd0 at uhidev1 reportid 1: 8 variable keys, 6 key codes
+Nov 28 15:24:57 test /bsd: wskbd1 at ukbd0 mux 1
+Nov 28 15:24:57 test /bsd: uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
+Nov 28 15:24:57 test /bsd: uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
+Nov 28 15:24:57 test /bsd: uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
+Nov 28 15:24:57 test /bsd: uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
+Nov 28 15:24:57 test /bsd: ugen0 at uhub1 port 9 &quot;Intel Bluetooth&quot; rev 2.00/0.10 addr 3
+Nov 28 15:24:57 test /bsd: uhidev2 at uhub1 port 10 configuration 1 interface 0 &quot;Logitech USB Keyboard&quot; rev 1.10/64.00 addr 4
+Nov 28 15:24:57 test /bsd: uhidev2: iclass 3/1
+Nov 28 15:24:57 test /bsd: ukbd1 at uhidev2: 8 variable keys, 6 key codes
+Nov 28 15:24:57 test /bsd: wskbd2 at ukbd1 mux 1
+Nov 28 15:24:57 test /bsd: uhidev3 at uhub1 port 10 configuration 1 interface 1 &quot;Logitech USB Keyboard&quot; rev 1.10/64.00 addr 4
+Nov 28 15:24:57 test /bsd: uhidev3: iclass 3/0, 3 report ids
+Nov 28 15:24:57 test /bsd: uhid4 at uhidev3 reportid 1: input=1, output=0, feature=0
+Nov 28 15:24:57 test /bsd: uhid5 at uhidev3 reportid 2: input=1, output=0, feature=0
+Nov 28 15:24:57 test /bsd: uhid6 at uhidev3 reportid 3: input=3, output=0, feature=0
+Nov 28 15:24:57 test /bsd: vscsi0 at root
+Nov 28 15:24:57 test /bsd: scsibus2 at vscsi0: 256 targets
+Nov 28 15:24:57 test /bsd: softraid0 at root
+Nov 28 15:24:57 test /bsd: scsibus3 at softraid0: 256 targets
+Nov 28 15:24:57 test /bsd: root on sd0a (f1afa38b8284476a.a) swap on sd0b dump on sd0b
+Nov 28 15:24:57 test /bsd: initializing kernel modesetting (VEGAM 0x1002:0x694E 0x8086:0x2073 0xC0).
+Nov 28 15:24:57 test /bsd: amdgpu_irq_add_domain: stub
+Nov 28 15:24:57 test /bsd: amdgpu_device_resize_fb_bar: stub
+Nov 28 15:24:57 test /bsd: amdgpu: [powerplay] Failed to retrieve minimum clocks.
+Nov 28 15:24:57 test /bsd: [drm] dce110_link_encoder_construct: Failed to get encoder_cap_info from VBIOS with error code 4!
+Nov 28 15:24:57 test /bsd: [drm] dce110_link_encoder_construct: Failed to get encoder_cap_info from VBIOS with error code 4!
+Nov 28 15:24:57 test /bsd: amdgpu0: 1920x1080, 32bpp
+Nov 28 15:24:57 test /bsd: wsdisplay0 at amdgpu0 mux 1: console (std, vt100 emulation), using wskbd0
+Nov 28 15:24:57 test /bsd: wskbd1: connecting to wsdisplay0
+Nov 28 15:24:57 test /bsd: wskbd2: connecting to wsdisplay0
+Nov 28 15:24:57 test /bsd: wsdisplay0: screen 1-5 added (std, vt100 emulation)
+Nov 28 15:24:57 test /bsd: inteldrm0: 1024x768, 32bpp
+Nov 28 15:24:57 test /bsd: wsdisplay1 at inteldrm0
+Nov 28 15:24:57 test /bsd: wsdisplay1: screen 0-5 added (std, vt100 emulation)
+Nov 28 15:24:57 test /bsd: iwm0: hw rev 0x230, fw ver 34.0.1, address xx:xx:xx:xx:xx:xx
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

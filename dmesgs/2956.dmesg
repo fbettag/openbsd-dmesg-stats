@@ -1,0 +1,298 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2016-04-25 14:02:45</em><br />
+<strong>From:</strong> <em>devjr</em><br />
+<strong>Description:</strong> <em>HP ProLiant DL320e Gen8 v2</em><br />
+
+<pre>
+OpenBSD 5.7 (GENERIC.MP) #4: Wed Oct 14 19:46:39 CEST 2015
+    xxx@xxx.xxx:/binpatchng/work-binpatch57-amd64/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4108201984 (3917MB)
+avail mem = 3994918912 (3809MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xb7fcb000 (82 entries)
+bios0: vendor HP version &quot;P80&quot; date 04/02/2015
+bios0: HP ProLiant DL320e Gen8 v2
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP SPCR MCFG HPET FFFF SPMI ERST APIC FFFF BERT HEST DMAR FFFF SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices PCI0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimcfg0 at acpi0 addr 0xb8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Xeon(R) CPU E3-1271 v3 @ 3.60GHz, 3592.15 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4, IBE
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Xeon(R) CPU E3-1271 v3 @ 3.60GHz, 3591.69 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 4 (application processor)
+cpu2: Intel(R) Xeon(R) CPU E3-1271 v3 @ 3.60GHz, 3591.69 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 6 (application processor)
+cpu3: Intel(R) Xeon(R) CPU E3-1271 v3 @ 3.60GHz, 3591.69 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 8
+acpiprt0 at acpi0: bus 10 (IPT1)
+acpiprt1 at acpi0: bus -1 (IPT2)
+acpiprt2 at acpi0: bus -1 (IPT3)
+acpiprt3 at acpi0: bus -1 (IPT4)
+acpiprt4 at acpi0: bus -1 (IPT5)
+acpiprt5 at acpi0: bus 3 (IPT6)
+acpiprt6 at acpi0: bus -1 (IPT7)
+acpiprt7 at acpi0: bus 1 (IPT8)
+acpiprt8 at acpi0: bus 4 (PT02)
+acpiprt9 at acpi0: bus 7 (PT03)
+acpiprt10 at acpi0: bus 2 (PT04)
+acpiprt11 at acpi0: bus 0 (PCI0)
+acpicpu0 at acpi0: C2, C1
+acpicpu1 at acpi0: C2, C1
+acpicpu2 at acpi0: C2, C1
+acpitz0 at acpi0: critical temperature is 31 degC
+ipmi at mainbus0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Xeon E3-1200 v3 Host&quot; rev 0x06
+ppb0 at pci0 dev 1 function 0 &quot;Intel Core 4G PCIE&quot; rev 0x06: msi
+pci1 at ppb0 bus 4
+ciss0 at pci1 dev 0 function 0 &quot;Hewlett-Packard Smart Array&quot; rev 0x01: apic 8 int 16
+ciss0: 1 LD, HW rev 1, FW 6.64/6.64, 64bit fifo rro
+scsibus1 at ciss0: 1 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;HP, LOGICAL VOLUME, 6.64&gt; SCSI3 0/direct fixed
+sd0: 139979MB, 512 bytes/sector, 286677120 sectors
+ppb1 at pci0 dev 1 function 1 &quot;Intel Core 4G PCIE&quot; rev 0x06: msi
+pci2 at ppb1 bus 7
+bge0 at pci2 dev 0 function 0 &quot;Broadcom BCM5720&quot; rev 0x00, BCM5720 A0 (0x5720000), APE firmware NCSI 1.3.7.0: msi, address xx:xx:xx:xx:xx:xx
+brgphy0 at bge0 phy 1: BCM5720C 10/100/1000baseT PHY, rev. 0
+bge1 at pci2 dev 0 function 1 &quot;Broadcom BCM5720&quot; rev 0x00, BCM5720 A0 (0x5720000), APE firmware NCSI 1.3.7.0: msi, address xx:xx:xx:xx:xx:xx
+brgphy1 at bge1 phy 2: BCM5720C 10/100/1000baseT PHY, rev. 0
+ppb2 at pci0 dev 1 function 2 &quot;Intel Core 4G PCIE&quot; rev 0x06: msi
+pci3 at ppb2 bus 2
+unknown vendor 0x1590 product 0x005f (class memory subclass miscellaneous, rev 0x00) at pci3 dev 0 function 0 not configured
+xhci0 at pci0 dev 20 function 0 &quot;Intel 8 Series xHCI&quot; rev 0x04: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+ehci0 at pci0 dev 26 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 8 int 21
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb3 at pci0 dev 28 function 0 &quot;Intel 8 Series PCIE&quot; rev 0xd4
+pci4 at ppb3 bus 10
+ppb4 at pci0 dev 28 function 5 &quot;Intel 8 Series PCIE&quot; rev 0xd4
+pci5 at ppb4 bus 3
+bge2 at pci5 dev 0 function 0 &quot;Broadcom BCM5720&quot; rev 0x00, BCM5720 A0 (0x5720000), APE firmware NCSI 1.3.7.0: msi, address xx:xx:xx:xx:xx:xx
+brgphy2 at bge2 phy 1: BCM5720C 10/100/1000baseT PHY, rev. 0
+bge3 at pci5 dev 0 function 1 &quot;Broadcom BCM5720&quot; rev 0x00, BCM5720 A0 (0x5720000), APE firmware NCSI 1.3.7.0: msi, address xx:xx:xx:xx:xx:xx
+brgphy3 at bge3 phy 2: BCM5720C 10/100/1000baseT PHY, rev. 0
+ppb5 at pci0 dev 28 function 7 &quot;Intel 8 Series PCIE&quot; rev 0xd4
+pci6 at ppb5 bus 1
+&quot;Hewlett-Packard iLO3 Slave&quot; rev 0x05 at pci6 dev 0 function 0 not configured
+vga1 at pci6 dev 0 function 1 &quot;Matrox MGA G200eH&quot; rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+&quot;Hewlett-Packard iLO3 Management&quot; rev 0x05 at pci6 dev 0 function 2 not configured
+uhci0 at pci6 dev 0 function 4 &quot;Hewlett-Packard USB&quot; rev 0x02: apic 8 int 16
+usb2 at uhci0: USB revision 1.0
+uhub2 at usb2 &quot;Hewlett-Packard UHCI root hub&quot; rev 1.00/1.00 addr 1
+ehci1 at pci0 dev 29 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 8 int 20
+usb3 at ehci1: USB revision 2.0
+uhub3 at usb3 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel C222 LPC&quot; rev 0x04
+&quot;Intel 8 Series RAID&quot; rev 0x04 at pci0 dev 31 function 2 not configured
+isa0 at pcib0
+isadma0 at isa0
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com1: probed fifo depth: 0 bytes
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhub4 at uhub0 port 3 &quot;Standard Microsystems product 0x2660&quot; rev 2.00/8.01 addr 2
+uhub5 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+uhub6 at uhub3 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (c45f0f4bb8d6767b.a) swap on sd0b dump on sd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

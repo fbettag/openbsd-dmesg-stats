@@ -1,0 +1,233 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2006-05-08 21:36:08</em><br />
+<strong>From:</strong> <em>ctribo</em><br />
+<strong>Description:</strong> <em>First time multiuser boot of OpenBSD/dg88k on a Data General AViiON AV410</em><br />
+
+<pre>
+[PROM banner at 0x27ff4c4: ]
+CPU0 is associated to 2 MC88200 CMMUs
+CPU1 is associated to 2 MC88200 CMMUs
+[ no symbol table formats found ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2006 OpenBSD. All rights reserved. http://www.OpenBSD.org
+
+OpenBSD 3.9-current (GENERIC) #32: Mon May  8 10:32:20 GMT 2006
+    xxx@xxx.xxx:/usr/src/sys/arch/dg88k/compile/GENERIC
+real mem  = 41943040
+avail mem = 33697792 (8227 pages)
+using 537 buffers containing 2199552 bytes of memory
+[Boot device information: args 0x27ff37c (inen()) dev 0 unit 0 part 0]
+mainbus0 (root): , cpuid 0x7908
+cpu0: M88100 rev 0xb, 2 CMMU
+cpu0: M88200 (16K) rev 0x9, full Icache, M88200 (16K) rev 0x9, full Dcache
+syscon0 at mainbus0 addr 0xfff00000
+nvram0 at syscon0 offset 0x80000 ipl 0: MK48T02
+dart0 at syscon0 offset 0x82000 ipl 3: console
+le0 at syscon0 offset 0x8c000 ipl 1: address xx:xx:xx:xx:xx:xx
+le0: 32 receive buffers, 8 transmit buffers
+vme0 at syscon0 offset 0x85000 ipl 0
+vme0: A32 10000000-7fffffff
+vme0: A32 90000000-fdffffff
+vme0: A24 fe000000-feffffff
+vme0: A16 ffff0000-ffffffff
+boot device: &lt;unknown&gt;
+root device : le0
+/dev/ksyms: Symbol table not valid.
+nfs_boot: using network interface le0
+nfs_boot: client_addr=xxx.xxx.xxx.xxx
+nfs_boot: server_addr=xxx.xxx.xxx.xxx hostname=AViiON.
+root on xxx.xxx.xxx.xxx:/home/exports/av400/root
+swap on xxx.xxx.xxx.xxx:/home/exports/av400/swap
+Automatic boot in progress: starting file system checks.
+setting tty flags
+ddb.console: 0 -&gt; 1
+kern.splassert: 0 -&gt; 2
+starting network
+starting system logger
+starting initial daemons:.
+swapctl: adding xxx.xxx.xxx.xxx:/home/exports/av400/swap as swap device at priority 0
+savecore: no core dump (no dumpdev)
+checking quotas: done.
+building ps databases: kvmkvm_mkdb: cant open /dev/ksyms
+ dev.
+clearing /tmp
+starting pre-securelevel daemons:.
+setting kernel security level: kern.securelevel: 0 -&gt; 1
+creating runtime link editor directory cache.
+preserving editor files
+starting network daemons: sendmail inetd.
+starting local daemons:.
+standard daemons: cron.
+Mon May  8 21:09:00 EDT 2006
+
+OpenBSD/dg88k (AViiON.) (console)
+
+login:
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,1124 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2019-04-01 00:28:24</em><br />
+<strong>From:</strong> <em>Ipsen S Ripsbusker</em><br />
+<strong>Description:</strong> <em>ThinkPad T530 and dock, 82579LM wifi does not work, Logitech BRIO works</em><br />
+
+<pre>
+OpenBSD 6.4 (GENERIC) #349: Thu Oct 11 13:25:13 MDT 2018
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 16845565952 (16065MB)
+avail mem = 16325865472 (15569MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xbae9c000 (69 entries)
+bios0: vendor LENOVO version &quot;G4ETA7WW (2.67 )&quot; date 08/24/2016
+bios0: LENOVO 2392ASU
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SLIC TCPA SSDT SSDT SSDT HPET APIC MCFG ECDT FPDT ASF! UEFI UEFI MSDM SSDT SSDT UEFI DBG2
+acpi0: wakeup devices LID_(S4) SLPB(S3) IGBE(S4) EXP3(S4) XHCI(S3) EHC1(S3) EHC2(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz, 2893.93 MHz, 06-3a-09
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,FSGSBASE,SMEP,ERMS,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus 4 (EXP3)
+acpicpu0 at acpi0: C2(350@80 mwait.1@0x20), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for XHCI, EHC1, EHC2
+acpitz0 at acpi0: critical temperature is 103 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+acpicmos0 at acpi0
+tpm0 at acpi0: TPM_ addr 0xfed40000/0x5000: device 0x0000104a rev 0x4e
+acpibat0 at acpi0: BAT0 model &quot;45N1011&quot; serial  2086 type LION oem &quot;LGC&quot;
+acpiac0 at acpi0: AC unit online
+&quot;LEN0078&quot; at acpi0 not configured
+acpithinkpad0 at acpi0
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VID_
+acpivout at acpivideo0 not configured
+acpivideo1 at acpi0: VID_
+acpivout at acpivideo1 not configured
+cpu0: Enhanced SpeedStep 2893 MHz: speeds: 2901, 2900, 2800, 2700, 2500, 2400, 2300, 2200, 2000, 1900, 1800, 1700, 1600, 1400, 1300, 1200 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 3G Host&quot; rev 0x09
+ppb0 at pci0 dev 1 function 0 &quot;Intel Core 3G PCIE&quot; rev 0x09: msi
+pci1 at ppb0 bus 1
+1:0:0: mem address conflict 0xfff80000/0x80000
+vendor &quot;NVIDIA&quot;, unknown product 0x0def (class display subclass VGA, rev 0xa1) at pci1 dev 0 function 0 not configured
+inteldrm0 at pci0 dev 2 function 0 &quot;Intel HD Graphics 4000&quot; rev 0x09
+drm0 at inteldrm0
+inteldrm0: msi
+inteldrm0: 1600x900, 32bpp
+wsdisplay0 at inteldrm0 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+xhci0 at pci0 dev 20 function 0 &quot;Intel 7 Series xHCI&quot; rev 0x04: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 7 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3 &quot;Intel 7 Series KT&quot; rev 0x04: ports: 16 com
+com4 at puc0 port 0 apic 2 int 19: ns16550a, 16 byte fifo
+com4: probed fifo depth: 0 bytes
+em0 at pci0 dev 25 function 0 &quot;Intel 82579LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 16
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+azalia0 at pci0 dev 27 function 0 &quot;Intel 7 Series HD Audio&quot; rev 0x04: msi
+azalia0: codecs: Realtek ALC269
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci2 at ppb1 bus 2
+sdhc0 at pci2 dev 0 function 0 &quot;Ricoh 5U823 SD/MMC&quot; rev 0x05: apic 2 int 16
+sdhc0: SDHC 3.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+&quot;Ricoh 5U832 Firewire&quot; rev 0x04 at pci2 dev 0 function 3 not configured
+ppb2 at pci0 dev 28 function 1 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci3 at ppb2 bus 3
+iwn0 at pci3 dev 0 function 0 &quot;Intel Centrino Advanced-N 6205&quot; rev 0x34: msi, MIMO 2T2R, MoW, address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 2 &quot;Intel 7 Series PCIE&quot; rev 0xc4: msi
+pci4 at ppb3 bus 4
+ehci1 at pci0 dev 29 function 0 &quot;Intel 7 Series USB&quot; rev 0x04: apic 2 int 23
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel QM77 LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 7 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 2: 3.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, P3-2TB, T180&gt; SCSI3 0/direct fixed naa.5000000000000000
+sd0: 1953514MB, 512 bytes/sector, 4000797360 sectors, thin
+sd1 at scsibus1 targ 2 lun 0: &lt;ATA, MT-1TB, T180&gt; SCSI3 0/direct fixed naa.5000000000000000
+sd1: 976762MB, 512 bytes/sector, 2000409264 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 7 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 8GB DDR3 SDRAM PC3-12800 SO-DIMM
+spdmem1 at iic0 addr 0x51: 8GB DDR3 SDRAM PC3-12800 SO-DIMM
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 7.2, 0x1c0b1 0xb40000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+error: [drm:pid0:cpt_set_fifo_underrun_reporting] *ERROR* uncleared pch fifo underrun on pch transcoder A
+error: [drm:pid0:intel_pch_fifo_underrun_irq_handler] *ERROR* PCH transcoder A FIFO underrun
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+ugen0 at uhub3 port 3 &quot;Auth Biometric Coprocessor&quot; rev 1.10/0.01 addr 3
+uvideo0 at uhub3 port 6 configuration 1 interface 0 &quot;Chicony Electronics Co., Ltd. Integrated Camera&quot; rev 2.00/5.20 addr 4
+video0 at uvideo0
+uhub4 at uhub2 port 1 configuration 1 interface 0 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.00 addr 2
+uhub5 at uhub4 port 8 configuration 1 interface 0 &quot;Lenovo product 0x1009&quot; rev 2.00/0.00 addr 3
+umass0 at uhub5 port 1 configuration 1 interface 0 &quot;Generic Mass Storage Device&quot; rev 2.00/1.00 addr 4
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd2 at scsibus2 targ 1 lun 0: &lt;Multiple, Card Reader, 1.00&gt; SCSI0 0/direct removable serial.058f6366058F63666433
+sd2: 1910MB, 512 bytes/sector, 3911680 sectors
+uhidev0 at uhub5 port 4 configuration 1 interface 0 &quot;technomancy Atreus&quot; rev 1.10/0.24 addr 5
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub5 port 4 configuration 1 interface 1 &quot;technomancy Atreus&quot; rev 1.10/0.24 addr 5
+uhidev1: iclass 3/0
+uhid0 at uhidev1: input=32, output=32, feature=0
+uhidev2 at uhub5 port 4 configuration 1 interface 2 &quot;technomancy Atreus&quot; rev 1.10/0.24 addr 5
+uhidev2: iclass 3/0
+ukbd1 at uhidev2: 128 variable keys, 0 key codes
+wskbd2 at ukbd1 mux 1
+wskbd2: connecting to wsdisplay0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+softraid0: sd3 was not shutdown properly
+sd3 at scsibus4 targ 1 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd3: 976756MB, 512 bytes/sector, 2000397143 sectors
+root on sd3a (9067e68ce463822c.a) swap on sd3b dump on sd3b
+WARNING: / was not properly unmounted
+softraid0: sd4 was not shutdown properly
+softraid0: sd4 was not shutdown properly
+sd4 at scsibus4 targ 2 lun 0: &lt;OPENBSD, SR CRYPTO, 006&gt; SCSI2 0/direct fixed
+sd4: 1953513MB, 512 bytes/sector, 4000794878 sectors
+WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522320
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522320
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522321
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522322
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522323
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522324
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522325
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522326
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522327
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522328
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522329
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522330
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522331
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522332
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522333
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522334
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522335
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522336
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522337
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522338
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522339
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522340
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522341
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522342
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522343
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522344
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522345
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522346
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522347
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522348
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522349
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522350
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522351
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522352
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522353
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522354
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522355
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522356
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522357
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522358
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522359
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522360
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522361
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522362
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522363
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522364
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522365
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522366
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522367
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522368
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522369
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522370
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522371
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522372
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522373
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522374
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522375
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522376
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522377
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522378
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522379
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522380
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522381
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522382
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522383
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522384
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522385
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522386
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522387
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522388
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522389
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522390
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522391
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522392
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522393
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522394
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522395
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522396
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522397
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522398
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522399
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522400
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522401
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522402
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522403
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522404
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522405
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522406
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522407
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522408
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522409
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522410
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522411
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522412
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522413
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522414
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522415
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522416
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522417
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522418
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522419
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522420
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522421
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522422
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522423
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522424
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522425
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522426
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522427
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522428
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522429
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522430
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522431
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522432
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522433
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522434
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522435
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522436
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522437
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522438
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522439
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522440
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522441
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522442
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522443
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522444
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522445
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522446
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178522447
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529872
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529872
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529873
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529874
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529875
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529876
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529877
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529878
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529879
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529880
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529881
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529882
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529883
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529884
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529885
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529886
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529887
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529888
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529889
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529890
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529891
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529892
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529893
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529894
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529895
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529896
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529897
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529898
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529899
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529900
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529901
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529902
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529903
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529904
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529905
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529906
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529907
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529908
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529909
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529910
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529911
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529912
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529913
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529914
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529915
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529916
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529917
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529918
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529919
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529920
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529921
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529922
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529923
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529924
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529925
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529926
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529927
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529928
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529929
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529930
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529931
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529932
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529933
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529934
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529935
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529936
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529937
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529938
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529939
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529940
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529941
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529942
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529943
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529944
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529945
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529946
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529947
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529948
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529949
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529950
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529951
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529952
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529953
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529954
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529955
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529956
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529957
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529958
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529959
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529960
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529961
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529962
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529963
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529964
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529965
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529966
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529967
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529968
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529969
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529970
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529971
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529972
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529973
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529974
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529975
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529976
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529977
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529978
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529979
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529980
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529981
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529982
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529983
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529984
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529985
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529986
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529987
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529988
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529989
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529990
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529991
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529992
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529993
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529994
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529995
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529996
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529997
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529998
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178529999
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538960
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538960
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538961
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538962
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538963
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538964
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538965
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538966
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538967
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538968
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538969
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538970
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538971
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538972
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538973
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538974
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538975
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538976
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538977
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538978
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538979
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538980
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538981
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538982
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538983
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538984
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538985
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538986
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538987
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538988
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538989
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538990
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538991
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538992
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538993
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538994
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538995
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538996
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538997
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538998
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178538999
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539000
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539001
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539002
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539003
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539004
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539005
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539006
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539007
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539008
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539009
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539010
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539011
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539012
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539013
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539014
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539015
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539016
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539017
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539018
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539019
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539020
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539021
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539022
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539023
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539024
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539025
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539026
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539027
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539028
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539029
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539030
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539031
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539032
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539033
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539034
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539035
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539036
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539037
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539038
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539039
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539040
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539041
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539042
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539043
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539044
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539045
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539046
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539047
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539048
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539049
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539050
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539051
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539052
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539053
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539054
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539055
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539056
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539057
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539058
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539059
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539060
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539061
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539062
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539063
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539064
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539065
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539066
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539067
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539068
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539069
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539070
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539071
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539072
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539073
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539074
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539075
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539076
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539077
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539078
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539079
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539080
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539081
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539082
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539083
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539084
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539085
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539086
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178539087
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544336
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544336
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544337
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544338
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544339
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544340
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544341
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544342
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544343
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544344
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544345
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544346
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544347
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544348
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544349
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544350
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544351
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544352
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544353
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544354
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544355
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544356
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544357
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544358
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544359
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544360
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544361
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544362
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544363
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544364
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544365
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544366
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544367
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544368
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544369
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544370
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544371
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544372
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544373
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544374
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544375
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544376
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544377
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544378
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544379
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544380
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544381
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544382
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544383
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544384
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544385
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544386
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544387
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544388
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544389
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544390
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544391
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544392
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544393
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544394
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544395
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544396
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544397
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544398
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544399
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544400
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544401
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544402
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544403
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544404
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544405
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544406
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544407
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544408
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544409
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544410
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544411
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544412
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544413
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544414
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544415
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544416
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544417
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544418
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544419
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544420
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544421
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544422
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544423
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544424
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544425
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544426
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544427
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544428
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544429
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544430
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544431
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544432
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544433
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544434
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544435
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544436
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544437
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544438
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544439
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544440
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544441
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544442
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544443
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544444
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544445
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544446
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544447
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544448
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544449
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544450
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544451
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544452
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544453
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544454
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544455
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544456
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544457
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544458
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544459
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544460
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544461
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544462
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178544463
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547280
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547280
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547281
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547282
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547283
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547284
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547285
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547286
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547287
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547288
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547289
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547290
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547291
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547292
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547293
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547294
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547295
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547296
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547297
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547298
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547299
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547300
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547301
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547302
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547303
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547304
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547305
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547306
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547307
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547308
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547309
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547310
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547311
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547312
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547313
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547314
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547315
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547316
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547317
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547318
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547319
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547320
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547321
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547322
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547323
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547324
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547325
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547326
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547327
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547328
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547329
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547330
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547331
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547332
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547333
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547334
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547335
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547336
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547337
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547338
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547339
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547340
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547341
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547342
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547343
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547344
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547345
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547346
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547347
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547348
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547349
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547350
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547351
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547352
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547353
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547354
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547355
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547356
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547357
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547358
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547359
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547360
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547361
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547362
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547363
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547364
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547365
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547366
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547367
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547368
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547369
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547370
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547371
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547372
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547373
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547374
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547375
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547376
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547377
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547378
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547379
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547380
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547381
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547382
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547383
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547384
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547385
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547386
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547387
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547388
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547389
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547390
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547391
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547392
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547393
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547394
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547395
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547396
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547397
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547398
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547399
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547400
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547401
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547402
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547403
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547404
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547405
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547406
+softraid0: sd4: i/o error 5 @ CRYPTO block 3178547407
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569040
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569040
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569041
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569042
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569043
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569044
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569045
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569046
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569047
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569048
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569049
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569050
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569051
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569052
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569053
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569054
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569055
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569056
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569057
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569058
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569059
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569060
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569061
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569062
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569063
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569064
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569065
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569066
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569067
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569068
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569069
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569070
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569071
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569072
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569073
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569074
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569075
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569076
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569077
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569078
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569079
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569080
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569081
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569082
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569083
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569084
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569085
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569086
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569087
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569088
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569089
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569090
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569091
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569092
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569093
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569094
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569095
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569096
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569097
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569098
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569099
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569100
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569101
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569102
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569103
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569104
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569105
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569106
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569107
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569108
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569109
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569110
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569111
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569112
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569113
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569114
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569115
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569116
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569117
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569118
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569119
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569120
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569121
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569122
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569123
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569124
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569125
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569126
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569127
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569128
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569129
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569130
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569131
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569132
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569133
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569134
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569135
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569136
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569137
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569138
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569139
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569140
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569141
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569142
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569143
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569144
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569145
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569146
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569147
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569148
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569149
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569150
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569151
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569152
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569153
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569154
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569155
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569156
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569157
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569158
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569159
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569160
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569161
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569162
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569163
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569164
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569165
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569166
+softraid0: sd4: i/o error 5 @ CRYPTO block 104569167
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+error: [drm:pid10155:intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A
+uvideo1 at uhub4 port 5 configuration 1 interface 0 &quot;Logitech Logitech BRIO&quot; rev 2.10/0.17 addr 6
+video1 at uvideo1
+uaudio0 at uhub4 port 5 configuration 1 interface 2 &quot;Logitech Logitech BRIO&quot; rev 2.10/0.17 addr 6
+uaudio0: audio rev 1.00, 2 mixer controls
+audio1 at uaudio0
+video1 detached
+uvideo1 detached
+audio1 detached
+uaudio0 detached
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

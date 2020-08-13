@@ -1,0 +1,256 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-08-12 22:19:34</em><br />
+<strong>From:</strong> <em>zeurkous</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.7/amd64 bsd.rd on Thinkpad X220 (type 4290-LT8)</em><br />
+
+<pre>
+OpenBSD 6.7 (RAMDISK_CD) #177: Thu May  7 11:19:02 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4156157952 (3963MB)
+avail mem = 4026175488 (3839MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.6 @ 0xdae9c000 (66 entries)
+bios0: vendor LENOVO version &quot;8DET54WW (1.24 )&quot; date 10/18/2011
+bios0: LENOVO 4290LT8
+acpi0 at bios0: ACPI 4.0
+acpi0: tables DSDT FACP SLIC SSDT SSDT SSDT HPET APIC MCFG ECDT ASF! TCPA SSDT SSDT DMAR UEFI UEFI UEFI
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, 797.54 MHz, 06-2a-07
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,SMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,x2APIC,POPCNT,DEADLINE,AES,XSAVE,AVX,NXE,RDTSCP,LONG,LAHF,PERF,ITSC,SENSOR,ARAT,XSAVEOPT,MELTDOWN
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.1.2, IBE
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 24 pins
+acpiec0 at acpi0
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PEG_)
+acpiprt2 at acpi0: bus 2 (EXP1)
+acpiprt3 at acpi0: bus 3 (EXP2)
+acpiprt4 at acpi0: bus 5 (EXP4)
+acpiprt5 at acpi0: bus 13 (EXP5)
+acpiprt6 at acpi0: bus -1 (EXP7)
+acpicpu at acpi0 not configured
+acpipwrres at acpi0 not configured
+acpitz at acpi0 not configured
+&quot;PNP0C0D&quot; at acpi0 not configured
+&quot;PNP0C0E&quot; at acpi0 not configured
+&quot;PNP0A08&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;PNP0C0A&quot; at acpi0 not configured
+&quot;ACPI0003&quot; at acpi0 not configured
+&quot;LEN0068&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+cpu0: using IvyBridge MDS workaround
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 2G Host&quot; rev 0x09
+vga1 at pci0 dev 2 function 0 &quot;Intel HD Graphics 3000&quot; rev 0x09
+wsdisplay1 at vga1 mux 1: console (80x25, vt100 emulation)
+&quot;Intel 6 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+em0 at pci0 dev 25 function 0 &quot;Intel 82579LM&quot; rev 0x04: msi, address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 2 int 16
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel 6 Series HD Audio&quot; rev 0x04 at pci0 dev 27 function 0 not configured
+ppb0 at pci0 dev 28 function 0 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 1 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci2 at ppb1 bus 3
+rtwn0 at pci2 dev 0 function 0 &quot;Realtek 8188CE&quot; rev 0x01: msi
+rtwn0: MAC/BB RTL8188CE, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 3 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci3 at ppb2 bus 5
+ppb3 at pci0 dev 28 function 4 &quot;Intel 6 Series PCIE&quot; rev 0xb4: msi
+pci4 at ppb3 bus 13
+sdhc0 at pci4 dev 0 function 0 &quot;Ricoh 5U823 SD/MMC&quot; rev 0x04: apic 2 int 16
+sdhc0: SDHC 3.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+ehci1 at pci0 dev 29 function 0 &quot;Intel 6 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+&quot;Intel QM67 LPC&quot; rev 0x04 at pci0 dev 31 function 0 not configured
+ahci0 at pci0 dev 31 function 2 &quot;Intel 6 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 3.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, ST320LT020-9YG14, 0003&gt; naa.CENSOREDCENSORED
+sd0: 305245MB, 512 bytes/sector, 625142448 sectors
+&quot;Intel 6 Series SMBus&quot; rev 0x04 at pci0 dev 31 function 3 not configured
+isa0 at mainbus0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay1
+uhub2 at uhub0 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x0024&quot; rev 2.00/0.00 addr 2
+uhub3 at uhub1 port 1 configuration 1 interface 0 &quot;vendor 0x8087 product 0x0024&quot; rev 2.00/0.00 addr 2
+softraid0 at root
+scsibus1 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+WARNING: CHECK AND RESET THE DATE!
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

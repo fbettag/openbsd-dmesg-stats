@@ -1,0 +1,320 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2011-02-11 11:25:16</em><br />
+<strong>From:</strong> <em>TimL</em><br />
+<strong>Description:</strong> <em>Dell Poweredge 1800, ipmi enabled in kernel</em><br />
+
+<pre>
+OpenBSD 4.8 (GENERIC.MP) #359: Mon Aug 16 09:16:26 MDT 2010
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Intel(R) Xeon(TM) CPU 3.00GHz (GenuineIntel 686-class) 3 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR
+real mem  = 1073053696 (1023MB)
+avail mem = 1045516288 (997MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 09/29/06, BIOS32 rev. 0 @ 0xffe90, SMBIOS rev. 2.3 @ 0xfa4b0 (82 entries)
+bios0: vendor Dell Computer Corporation version A07 date 09/29/2006
+bios0: Dell Computer Corporation PowerEdge 1800
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S4 S5
+acpi0: tables DSDT FACP APIC SPCR HPET MCFG
+acpi0: wakeup devices PCI0(S5) PALO(S5) PBLO(S5) PCLO(S5) PICH(S5)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 199MHz
+cpu1 at mainbus0: apid 6 (application processor)
+cpu1: Intel(R) Xeon(TM) CPU 3.00GHz (GenuineIntel 686-class) 3 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR
+cpu2 at mainbus0: apid 1 (application processor)
+cpu2: Intel(R) Xeon(TM) CPU 3.00GHz (GenuineIntel 686-class) 3 GHz
+cpu2: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR
+cpu3 at mainbus0: apid 7 (application processor)
+cpu3: Intel(R) Xeon(TM) CPU 3.00GHz (GenuineIntel 686-class) 3 GHz
+cpu3: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,SSE3,MWAIT,DS-CPL,CNXT-ID,CX16,xTPR
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+ioapic0: misconfigured as apic 0, remapped to apid 8
+ioapic1 at mainbus0: apid 9 pa 0xfec80000, version 20, 24 pins
+ioapic1: misconfigured as apic 0, remapped to apid 9
+ioapic2 at mainbus0: apid 10 pa 0xfec80800, version 20, 24 pins
+ioapic2: misconfigured as apic 0, remapped to apid 10
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PALO)
+acpiprt2 at acpi0: bus 3 (PXHB)
+acpiprt3 at acpi0: bus 2 (PXHA)
+acpiprt4 at acpi0: bus 4 (PBLO)
+acpiprt5 at acpi0: bus 7 (PCLO)
+acpiprt6 at acpi0: bus 8 (PICH)
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+acpicpu2 at acpi0
+acpicpu3 at acpi0
+bios0: ROM list: 0xc0000/0xb000! 0xcb000/0x1000 0xcc000/0x800 0xcc800/0x1000 0xcd800/0x2200 0xec000/0x4000!
+ipmi0 at mainbus0: version 1.5 interface KCS iobase 0xca8/8 spacing 4
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 Intel E7520 Host rev 0x09
+ppb0 at pci0 dev 2 function 0 Intel E7520 PCIE rev 0x09
+pci1 at ppb0 bus 1
+ppb1 at pci1 dev 0 function 0 Intel PCIE-PCIE rev 0x09
+pci2 at ppb1 bus 2
+mpi0 at pci2 dev 4 function 0 Symbios Logic 53c1030 rev 0x08: apic 9 int 10 (irq 5)
+scsibus0 at mpi0: 16 targets, initiator 7
+ppb2 at pci1 dev 0 function 2 Intel PCIE-PCIE rev 0x09
+pci3 at ppb2 bus 3
+em0 at pci3 dev 7 function 0 Intel PRO/1000MT (82541GI) rev 0x05: apic 10 int 5 (irq 11), address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 4 function 0 Intel E7520 PCIE rev 0x09: apic 8 int 16 (irq 0)
+pci4 at ppb3 bus 4
+ppb4 at pci4 dev 0 function 0 Intel IOP332 PCIE-PCIX rev 0x07
+pci5 at ppb4 bus 5
+ami0 at pci5 dev 14 function 0 Symbios Logic MegaRAID 320-2E rev 0x07: apic 8 int 18 (irq 5)
+ami0: Dell 2, 32b, FW 522A, BIOS vH430, 128MB RAM
+ami0: 2 channels, 0 FC loops, 1 logical drives
+scsibus1 at ami0: 40 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;AMI, Host drive #00, &gt; SCSI2 0/direct fixed
+sd0: 286080MB, 512 bytes/sec, 585891840 sec total
+scsibus2 at ami0: 16 targets
+safte0 at scsibus2 targ 6 lun 0: &lt;SDR, GEM318P, 1&gt; SCSI2 3/processor fixed
+scsibus3 at ami0: 16 targets
+ppb5 at pci4 dev 0 function 2 Intel IOP332 PCIE-PCIX rev 0x07
+pci6 at ppb5 bus 6
+ppb6 at pci0 dev 6 function 0 Intel E7520 PCIE rev 0x09: apic 8 int 16 (irq 0)
+pci7 at ppb6 bus 7
+uhci0 at pci0 dev 29 function 0 Intel 82801EB/ER USB rev 0x02: apic 8 int 16 (irq 11)
+uhci1 at pci0 dev 29 function 1 Intel 82801EB/ER USB rev 0x02: apic 8 int 19 (irq 10)
+uhci2 at pci0 dev 29 function 2 Intel 82801EB/ER USB rev 0x02: apic 8 int 18 (irq 5)
+ehci0 at pci0 dev 29 function 7 Intel 82801EB/ER USB2 rev 0x02: apic 8 int 23 (irq 3)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 Intel EHCI root hub rev 2.00/1.00 addr 1
+ppb7 at pci0 dev 30 function 0 Intel 82801BA Hub-to-PCI rev 0xc2
+pci8 at ppb7 bus 8
+vga1 at pci8 dev 5 function 0 ATI Radeon VE rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+radeondrm0 at vga1: apic 8 int 17 (irq 11)
+drm0 at radeondrm0
+ichpcib0 at pci0 dev 31 function 0 Intel 82801EB/ER LPC rev 0x02
+pciide0 at pci0 dev 31 function 1 Intel 82801EB/ER IDE rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus4 at atapiscsi0: 2 targets
+cd0 at scsibus4 targ 0 lun 0: &lt;LITE-ON, CD-ROM LTN-4891S, NDS3&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+pciide1 at pci0 dev 31 function 2 Intel 82801EB SATA rev 0x02: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide1: using apic 8 int 18 (irq 5) for native-PCI interrupt
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 Intel UHCI root hub rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 Intel UHCI root hub rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+mtrr: Pentium Pro MTRR support
+uhidev0 at uhub3 port 1 configuration 1 interface 0 DELL DELL USB Keyboard rev 1.10/1.05 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+softraid0 at root
+root on sd0a swap on sd0b dump on sd0b
+
+*** sysctl hw.sensors
+hw.sensors.ami0.drive0=online (sd0), OK
+hw.sensors.ipmi0.temp0=34.00 degC (Temp), OK
+hw.sensors.ipmi0.temp1=32.00 degC (Temp), OK
+hw.sensors.ipmi0.temp2=17.00 degC (Ambient Temp), OK
+hw.sensors.ipmi0.temp3=29.00 degC (Planar Temp), OK
+hw.sensors.ipmi0.temp4=29.00 degC (VRD 0 Temp), OK
+hw.sensors.ipmi0.temp5=27.00 degC (VRD 1 Temp), OK
+hw.sensors.ipmi0.temp6=40.00 degC (Temp), UNKNOWN
+hw.sensors.ipmi0.temp7=40.00 degC (Temp), UNKNOWN
+hw.sensors.ipmi0.fan0=1500 RPM (Fan 1), OK
+hw.sensors.ipmi0.fan1=1425 RPM (Fan 2), OK
+hw.sensors.ipmi0.volt0=3.04 VDC (CMOS Battery), OK
+hw.sensors.ipmi0.indicator0=On (Status ), OK
+hw.sensors.ipmi0.indicator1=On (Status ), OK
+hw.sensors.ipmi0.indicator2=Off (Intrusion), OK
+
+*** bioctl sd0
+Volume  Status               Size Device
+ ami0 0 Online       299976622080 sd0     RAID1
+      0 Online       299995496448 0:0.0   noencl &lt;SEAGATE ST3300007LC     D704&gt;
+      1 Online       299995496448 0:1.0   noencl &lt;SEAGATE ST3300007LC     D704&gt;
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,248 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-02-29 19:52:12</em><br />
+<strong>From:</strong> <em>c-c-c-c</em><br />
+<strong>Description:</strong> <em>Thinkpad 240X</em><br />
+
+<pre>
+OpenBSD 6.6 (GENERIC) #298: Sat Oct 12 11:06:10 MDT 2019
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+real mem  = 133644288 (127MB)
+avail mem = 115552256 (110MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 12/21/99, BIOS32 rev. 0 @ 0xfd8b0, SMBIOS rev. 2.3 @ 0xec390 (31 entries)
+bios0: vendor IBM version &quot;1.03.09&quot; date 12/21/1999
+bios0: IBM 260961G
+acpi0 at bios0: ACPI 1.0
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP BOOT
+acpi0: wakeup devices MDEM(S3) CRD0(S3) LID_(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(@20 io@0x8015), !C2(@10 io@0x8014), C1(@1 halt!)
+acpipwrres0 at acpi0: PCR0
+acpipwrres1 at acpi0: PFAN, resource for FAN_
+acpitz0 at acpi0: critical temperature is 100 degC
+&quot;PNP0A03&quot; at acpi0 not configured
+acpicmos0 at acpi0
+&quot;IBM0071&quot; at acpi0 not configured
+acpibtn0 at acpi0: SBTN
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT1 model &quot;BQ2040&quot; serial   type LION oem &quot;SANYO&quot;
+acpibtn1 at acpi0: LID_
+&quot;PNP0C0B&quot; at acpi0 not configured
+bios0: ROM list: 0xc0000/0xc000
+cpu0 at mainbus0: (uniprocessor)
+cpu0: Intel Pentium III (&quot;GenuineIntel&quot; 686-class) 498 MHz, 06-08-03
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PSE36,MMX,FXSR,SSE,PERF,MELTDOWN
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82440MX Host&quot; rev 0x01
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82440MX ISA&quot; rev 0x01
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82440MX IDE&quot; rev 0x00: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;SanDisk X300 MSATA 256GB&gt;
+wd0: 1-sector PIO, LBA48, 244198MB, 500118192 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 disabled (no drives)
+uhci0 at pci0 dev 7 function 2 &quot;Intel 82440MX USB&quot; rev 0x00: irq 11
+piixpcib0 at pci0 dev 7 function 3 &quot;Intel 82440MX Power&quot; rev 0x00
+vga1 at pci0 dev 9 function 0 &quot;Silicon Motion LynxEM+&quot; rev 0xa0
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)cbb0 at pci0 dev 10 function 0 &quot;TI PCI1211 CardBus&quot; rev 0x00: irq 11
+clct0 at pci0 dev 11 function 0 &quot;Cirrus Logic CS4281 CrystalClear&quot; rev 0x01: irq 5
+ac97: codec id 0x43525914 (Cirrus Logic CS4297A rev 4)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, Crystal Semi 3D
+audio0 at clct0
+iwi0 at pci0 dev 12 function 0 &quot;Intel PRO/Wireless 2915ABG&quot; rev 0x05: irq 11, address xx:xx:xx:xx:xx:xx
+isa0 at pcib0
+isadma0 at isa0
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt2 at isa0 port 0x3bc/4: polled
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa at piixpcib0 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 1 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on wd0a (8a1341ee413d2b06.a) swap on wd0b dump on wd0b
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,309 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-05-29 06:31:49</em><br />
+<strong>From:</strong> <em>brycec</em><br />
+<strong>Description:</strong> <em>Lanner FW-8759, OpenBSD 4.9 with backported em(4), acpi(4), and lm(4) drivers from 5.7</em><br />
+
+<pre>
+OpenBSD 4.9 () #0: Wed May 13 18:54:03 EDT 2015
+cpu0: Intel(R) Celeron(R) CPU G1850 @ 2.90GHz (&quot;GenuineIntel&quot; 686-class) 2.91 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM
+,SBF,SSE3,PCLMUL,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,XSAVE
+real mem  = 2036146176 (1941MB)
+avail mem = 1992671232 (1900MB)
+mainbus0 at root
+bios0 at mainbus0: AT/286+ BIOS, date 12/14/12, SMBIOS rev. 2.8 @ 0xec200 (77 entries)
+bios0: vendor American Megatrends Inc. version &quot;4.6.5&quot; date 07/18/2014
+bios0: INTEL Corporation DENLOW_WS
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S5
+acpi0: tables DSDT FACP APIC FPDT SSDT MCFG HPET SSDT SSDT ASF! EINJ ERST HEST BERT
+acpi0: wakeup devices PS2K(S0) PS2M(S0) PXSX(S0) RP01(S0) PXSX(S0) RP02(S0) PXSX(S0) RP03(S0) PXSX(S0) RP04(S0) PXSX(S0)
+ RP05(S0) PXSX(S0) RP06(S0) PXSX(S0) RP07(S0) PXSX(S0) RP08(S0) GLAN(S0) EHC1(S0) EHC2(S0) XHC_(S0) HDEF(S0) PEG0(S0) PE
+GP(S0) PEG1(S0) PEG2(S0) PWRB(S0)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: unknown i686 model 0x3c, can't get bus clock (0x0)
+cpu0: apic clock running at 99MHz
+cpu1 at mainbus0: apid 2 (application processor)
+cpu1: Intel(R) Celeron(R) CPU G1850 @ 2.90GHz (&quot;GenuineIntel&quot; 686-class) 2.90 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM
+,SBF,SSE3,PCLMUL,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,SSE4.1,SSE4.2,MOVBE,POPCNT,XSAVE
+ioapic0 at mainbus0: apid 8 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (RP01)
+acpiprt2 at acpi0: bus 4 (RP02)
+acpiprt3 at acpi0: bus 5 (RP03)
+acpiprt4 at acpi0: bus 6 (RP04)
+acpiprt5 at acpi0: bus 7 (RP05)
+acpiprt6 at acpi0: bus 8 (RP06)
+acpiprt7 at acpi0: bus 9 (RP07)
+acpiprt8 at acpi0: bus 1 (PEG0)
+acpiprt9 at acpi0: bus 2 (PEG1)
+acpiprt10 at acpi0: bus -1 (PEG2)
+acpiec0 at acpi0: Failed to read resource settings
+acpicpu0 at acpi0
+acpicpu1 at acpi0
+acpipwrres0 at acpi0: FN00
+acpipwrres1 at acpi0: FN01
+acpipwrres2 at acpi0: FN02
+acpipwrres3 at acpi0: FN03
+acpipwrres4 at acpi0: FN04
+acpitz0 at acpi0: critical temperature 105 degC
+acpitz1 at acpi0: critical temperature 105 degC
+acpibat0 at acpi0: BAT0 not present
+acpibat1 at acpi0: BAT1 not present
+acpibat2 at acpi0: BAT2 not present
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID0
+acpivideo0 at acpi0: GFX0
+acpivout0 at acpivideo0: DD1F
+bios0: ROM list: 0xc0000/0xec00
+cpu0: Enhanced SpeedStep disabled by BIOS
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 vendor &quot;Intel&quot;, unknown product 0x0c00 rev 0x06
+ppb0 at pci0 dev 1 function 0 vendor &quot;Intel&quot;, unknown product 0x0c01 rev 0x06: apic 8 int 16 (irq 11)
+pci1 at ppb0 bus 1
+ppb1 at pci0 dev 1 function 1 vendor &quot;Intel&quot;, unknown product 0x0c05 rev 0x06: apic 8 int 16 (irq 11)
+pci2 at ppb1 bus 2
+vga1 at pci0 dev 2 function 0 vendor &quot;Intel&quot;, unknown product 0x0402 rev 0x06
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+intagp at vga1 not configured
+vendor &quot;Intel&quot;, unknown product 0x8c31 (class serial bus subclass USB, rev 0x05) at pci0 dev 20 function 0 not configure
+d
+vendor &quot;Intel&quot;, unknown product 0x8c3a (class communications subclass miscellaneous, rev 0x04) at pci0 dev 22 function 0
+ not configured
+em0 at pci0 dev 25 function 0 &quot;Intel I217-LM&quot; rev 0x05: apic 8 int 20 (irq 11), address xx:xx:xx:xx:xx:xx
+ehci0 at pci0 dev 26 function 0 vendor &quot;Intel&quot;, unknown product 0x8c2d rev 0x05: apic 8 int 16 (irq 11)
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb2 at pci0 dev 28 function 0 vendor &quot;Intel&quot;, unknown product 0x8c10 rev 0xd5: apic 8 int 16 (irq 11)
+pci3 at ppb2 bus 3
+em1 at pci3 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 16 (irq 11), address xx:xx:xx:xx:xx:xx
+ppb3 at pci0 dev 28 function 1 vendor &quot;Intel&quot;, unknown product 0x8c12 rev 0xd5: apic 8 int 17 (irq 10)
+pci4 at ppb3 bus 4
+em2 at pci4 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 17 (irq 10), address xx:xx:xx:xx:xx:xx
+ppb4 at pci0 dev 28 function 2 vendor &quot;Intel&quot;, unknown product 0x8c14 rev 0xd5: apic 8 int 18 (irq 11)
+pci5 at ppb4 bus 5
+em3 at pci5 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 18 (irq 11), address xx:xx:xx:xx:xx:xx
+ppb5 at pci0 dev 28 function 3 vendor &quot;Intel&quot;, unknown product 0x8c16 rev 0xd5: apic 8 int 19 (irq 10)
+pci6 at ppb5 bus 6
+em4 at pci6 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 19 (irq 10), address xx:xx:xx:xx:xx:xx
+ppb6 at pci0 dev 28 function 4 vendor &quot;Intel&quot;, unknown product 0x8c18 rev 0xd5: apic 8 int 16 (irq 11)
+pci7 at ppb6 bus 7
+em5 at pci7 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 16 (irq 11), address xx:xx:xx:xx:xx:xx
+ppb7 at pci0 dev 28 function 5 vendor &quot;Intel&quot;, unknown product 0x8c1a rev 0xd5: apic 8 int 17 (irq 10)
+pci8 at ppb7 bus 8
+em6 at pci8 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 17 (irq 10), address xx:xx:xx:xx:xx:xx
+ppb8 at pci0 dev 28 function 6 vendor &quot;Intel&quot;, unknown product 0x8c1c rev 0xd5: apic 8 int 18 (irq 11)
+pci9 at ppb8 bus 9
+em7 at pci9 dev 0 function 0 &quot;Intel I210&quot; rev 0x03: apic 8 int 18 (irq 11), address xx:xx:xx:xx:xx:xx
+ehci1 at pci0 dev 29 function 0 vendor &quot;Intel&quot;, unknown product 0x8c26 rev 0x05: apic 8 int 23 (irq 10)
+usb1 at ehci1: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 vendor &quot;Intel&quot;, unknown product 0x8c56 rev 0x05
+ahci0 at pci0 dev 31 function 2 vendor &quot;Intel&quot;, unknown product 0x8c02 rev 0x05: apic 8 int 19 (irq 10), AHCI 1.3
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;ATA, TS4GCF170, 2014&gt; SCSI3 0/direct fixed
+sd0: 3831MB, 512 bytes/sec, 7847280 sec total
+sd1 at scsibus0 targ 1 lun 0: &lt;ATA, WDC WD3200LPVX-2, 01.0&gt; SCSI3 0/direct fixed
+sd1: 305245MB, 512 bytes/sec, 625142448 sec total
+vendor &quot;Intel&quot;, unknown product 0x8c22 (class serial bus subclass SMBus, rev 0x05) at pci0 dev 31 function 3 not configu
+red
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: NCT6776F rev 0x33
+lm1 at wbsio0 port 0xa30/8: NCT6776F
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+mtrr: Pentium Pro MTRR support
+uhub2 at uhub0 port 1 &quot;Intel product 0x8008&quot; rev 2.00/0.05 addr 2
+uhub3 at uhub1 port 1 &quot;Intel product 0x8000&quot; rev 2.00/0.05 addr 2
+axe0 at uhub3 port 1 configuration 1 interface 0 &quot;ASIX Electronics AX88772&quot; rev 2.00/0.01 addr 3
+axe0: AX88772, address xx:xx:xx:xx:xx:xx
+ukphy0 at axe0 phy 16: Generic IEEE 802.3u media interface, rev. 1: OUI 0x000ec6, model 0x0006
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+root on sd1a swap on sd1b dump on sd1b
+cpu1: unknown i686 model 0x3c, can't get bus clock (0x0)
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

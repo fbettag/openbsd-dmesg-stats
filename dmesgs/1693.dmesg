@@ -1,0 +1,244 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-06-23 20:00:04</em><br />
+<strong>From:</strong> <em>sthen</em><br />
+<strong>Description:</strong> <em>Netra T1 105, OpenBSD 3.7</em><br />
+
+<pre>
+N.B. The PCI slot on the Netra T1 doesn`t work in OpenBSD (at least as of June 2005).
+
+console is /pci@1f,0/pci@1,1/ebus@1/su@14,3803f8
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2005 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+
+OpenBSD 3.7-current (GENERIC) #489: Fri Jun  3 23:02:53 MDT 2005
+    xxx@xxx.xxx:/usr/src/sys/arch/sparc64/compile/GENERIC
+total memory = 1073741824
+avail memory = 970104832
+using 6553 buffers containing 53682176 bytes of memory
+bootpath: /pci@1f,0/pci@1,1/scsi@2,0/disk@0,0
+mainbus0 (root): Netra t1 (UltraSPARC-IIi 440MHz)
+cpu0 at mainbus0: SUNW,UltraSPARC-IIi @ 440.047 MHz, version 0 FPU
+cpu0: physical 32K instruction (32 b/l), 16K data (32 b/l), 2048K external (64 b/l)
+psycho0 at mainbus0 addr 0xfffc0000
+SUNW,sabre: impl 0, version 0: ign 7c0 bus range 0 to 3; PCI bus 0
+DVMA map: c0000000 to e0000000
+IOTDB: 52f2000 to 5372000
+pci0 at psycho0
+ppb0 at pci0 dev 1 function 1 &quot;Sun Simba PCI-PCI&quot; rev 0x13
+pci1 at ppb0 bus 1
+ebus0 at pci1 dev 1 function 0 &quot;Sun PCIO Ebus2&quot; rev 0x01
+auxio0 at ebus0 addr 726000-726003, 728000-728003, 72a000-72a003, 72c000-72c003, 72f000-72f003
+power at ebus0 addr 724000-724003 ipl 37 not configured
+SUNW,pll at ebus0 addr 504000-504002 not configured
+com0 at ebus0 addr 3803f8-3803ff ipl 28: ns16550a, 16 byte fifo
+com0: console
+com1 at ebus0 addr 3602f8-3602ff ipl 20: ns16550a, 16 byte fifo
+lpt0 at ebus0 addr 340278-340287, 30015c-30015d, 700000-70000f ipl 34: polled
+fdthree at ebus0 addr 3203f0-3203f7, 706000-70600f, 720000-720003 ipl 39 not configured
+clock1 at ebus0 addr 0-1fff: mk48t59: hostid xxxxxxxx
+flashprom at ebus0 addr 0-fffff not configured
+watchdog at ebus0 addr 200000-20003f ipl 4 not configured
+display7seg at ebus0 addr 200040-200040 not configured
+beeper0 at ebus0 addr 722000-722003: can`t map register space
+flashprom at ebus0 addr 400000-5fffff not configured
+flashprom at ebus0 addr 800000-9fffff not configured
+i2c at ebus0 addr 600000-600003 ipl 40 not configured
+i2c at ebus0 addr 100000-100003 ipl 27 not configured
+SUNW,lom at ebus0 addr 400000-400063 not configured
+hme0 at pci1 dev 1 function 1 &quot;Sun HME&quot; rev 0x01: address xx:xx:xx:xx:xx:xx
+luphy0 at hme0 phy 0: LU6612 10/100 PHY, rev. 1
+hme0: using ivec 3021 for interrupt
+siop0 at pci1 dev 2 function 0 &quot;Symbios Logic 53c875&quot; rev 0x03: ivec 1820, using 4K of on-board RAM
+scsibus0 at siop0: 16 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;SEAGATE, ST318404LSUN18G, 5221&gt; SCSI3 0/direct fixed
+sd0: 17274MB, 7508 cyl, 19 head, 248 sec, 512 bytes/sec, 35378533 sec total
+sd1 at scsibus0 targ 1 lun 0: &lt;SEAGATE, ST318305LSUN18G, 0340&gt; SCSI3 0/direct fixed
+sd1: 17274MB, 7508 cyl, 19 head, 248 sec, 512 bytes/sec, 35378533 sec total
+hme1 at pci1 dev 3 function 1 &quot;Sun HME&quot; rev 0x01: address xx:xx:xx:xx:xx:xx
+luphy1 at hme1 phy 0: LU6612 10/100 PHY, rev. 1
+hme1: using ivec 301a for interrupt
+ppb1 at pci0 dev 1 function 0 &quot;Sun Simba PCI-PCI&quot; rev 0x13
+pci2 at ppb1 bus 2
+ppb2 at pci2 dev 1 function 0 &quot;DEC 21150 PCI-PCI&quot; rev 0x06
+pci3 at ppb2 bus 3
+pciide0 at pci3 dev 14 function 0 &quot;CMD Technology PCI0646&quot; rev 0x03: DMA, channel 0 configured to native-PCI, channel 1 configured to native-PCI
+pciide0: using ivec 1802 for native-PCI interrupt
+pciide0: channel 0 disabled (no drives)
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;TOSHIBA, CD-ROM XM-7002Bc, 1111&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+pcons at mainbus0 not configured
+No counter-timer -- using %tick at 440MHz as system clock.
+root on sd0a
+siop0: target 0 now using tagged 16 bit 20.0 MHz 16 REQ/ACK offset xfers
+rootdev=0x700 rrootdev=0x1100 rawdev=0x1102
+siop0: target 1 now using tagged 16 bit 20.0 MHz 16 REQ/ACK offset xfers
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

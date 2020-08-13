@@ -1,0 +1,260 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2004-08-26 03:44:21</em><br />
+<strong>From:</strong> <em>ruben</em><br />
+<strong>Description:</strong> <em>asus b1 laptop
+i386
+http://bolink.org</em><br />
+
+<pre>
+OpenBSD 3.4 (GENERIC) #18: Wed Sep 17 03:34:47 MDT 2003
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel Pentium III (Coppermine) (&quot;GenuineIntel&quot; 686-class) 997 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SIMD
+real mem  = 259604480 (253520K)
+avail mem = 234598400 (229100K)
+using 3194 buffers containing 13082624 bytes (12776K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(c2) BIOS, date 10/29/01, BIOS32 rev. 0 @ 0xf0a70
+apm0 at bios0: Power Management spec V1.2
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev. 2.1 @ 0xf0000/0x1262
+pcibios0: PCI IRQ Routing Table rev. 1.0 @ 0xf11e0/128 (6 entries)
+pcibios0: PCI Exclusive IRQs: 11
+pcibios0: PCI Interrupt Router at 000:17:0 (&quot;VIA VT8231 PCI-ISA&quot; rev 0x00)
+pcibios0: PCI bus #3 is the last bus
+bios0: ROM list: 0xc0000/0xc000
+pci0 at mainbus0 bus 0: configuration mode 1 (no bios)
+pchb0 at pci0 dev 0 function 0 &quot;VIA VT8605 Host-PCI&quot; rev 0x00
+ppb0 at pci0 dev 1 function 0 &quot;VIA VT8605 PCI-AGP&quot; rev 0x00
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;S3 Twister&quot; rev 0x02
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+cbb0 at pci0 dev 15 function 0 &quot;O2 Micro OZ6933 CardBus&quot; rev 0x02: irq 11
+cbb1 at pci0 dev 15 function 1 &quot;O2 Micro OZ6933 CardBus&quot; rev 0x02: irq 11
+vendor &quot;PCTEL&quot;, unknown product 0x7892 (class communications subclass modem, rev 0x02) at pci0 dev 16 function 0 not configured
+pcib0 at pci0 dev 17 function 0 &quot;VIA VT8231 PCI-ISA&quot; rev 0x10
+pciide0 at pci0 dev 17 function 1 &quot;VIA VT82C571 IDE&quot; rev 0x06: ATA100, channel 0 configured to compatibility, channel 1 configured to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;IC25N020ATDA04-0&gt;
+wd0: 16-sector PIO, LBA, 19077MB, 16383 cyl, 16 head, 63 sec, 39070080 sectors
+wd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 5
+atapiscsi0 at pciide0 channel 1 drive 0
+scsibus0 at atapiscsi0: 2 targets
+cd0 at scsibus0 targ 0 lun 0: &lt;MATSHITA, UJDA330, 1.01&gt; SCSI0 5/cdrom removable
+cd0(pciide0:1:0): using PIO mode 4, DMA mode 2
+uhci0 at pci0 dev 17 function 2 &quot;VIA VT83C572 USB&quot; rev 0x1e: irq 11
+usb0 at uhci0: USB revision 1.0
+uhub0 at usb0
+uhub0: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhci1 at pci0 dev 17 function 3 &quot;VIA VT83C572 USB&quot; rev 0x1e: irq 11
+usb1 at uhci1: USB revision 1.0
+uhub1 at usb1
+uhub1: VIA UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+vendor &quot;VIA&quot;, unknown product 0x8235 (class bridge subclass miscellaneous, rev 0x10) at pci0 dev 17 function 4 not configured
+auvia0 at pci0 dev 17 function 5 &quot;VIA VT82C686 AC97 Audio&quot; rev 0x40: irq 9
+ac97: codec id 0x43525934 (Cirrus Logic CS4299 rev 4)
+ac97: codec features headphone, 20 bit DAC, 18 bit ADC, Crystal Semi 3D
+audio0 at auvia0
+dc0 at pci0 dev 18 function 0 &quot;Davicom Technologies DM9102&quot; rev 0x31: irq 9, address xx:xx:xx:xx:xx:xx
+amphy0 at dc0 phy 1: Am79C873 10/100 media interface, rev. 0
+&quot;Texas Instruments TSB43AB22 FireWire&quot; rev 0x00 at pci0 dev 19 function 0 not configured
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 2 device 0 cacheline 0x0, lattimer 0x20
+pcmcia0 at cardslot0
+cardslot1 at cbb1 slot 1 flags 0
+cardbus1 at cardslot1: bus 3 device 0 cacheline 0x0, lattimer 0x20
+pcmcia1 at cardslot1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+biomask c800 netmask ca00 ttymask da82
+pctr: 686-class user-level performance counters enabled
+mtrr: Pentium Pro MTRR support
+dkcsum: wd0 matched BIOS disk 80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+wi0 at pcmcia1 function 0 &quot;Intersil, PRISM 2_5 PCMCIA ADAPTER, ISL37300P&quot; port 0xc000/64
+wi0: PRISM2.5 ISL3873, Firmware 1.0.7 (primary), 1.3.5 (station), address xx:xx:xx:xx:xx:xx
+ugen0 at uhub1 port 2
+ugen0: AuthenTec product 0x5500, rev 1.10/0.00, addr 2
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

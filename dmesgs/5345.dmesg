@@ -1,0 +1,332 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-02-03 04:29:29</em><br />
+<strong>From:</strong> <em>despair</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.6-CURRENT (GENERIC) on Joyent SmartDC HVM amd64</em><br />
+
+<pre>
+OpenBSD 6.6-current (RAMDISK_CD) #572: Sat Jan 11 18:59:05 MST 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4277514240 (4079MB)
+avail mem = 4143869952 (3951MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0xbfb58000 (14 entries)
+bios0: vendor BHYVE version &quot;1.00&quot; date 03/14/2014
+bios0: Joyent SmartDC HVM
+acpi0 at bios0: ACPI 4.0
+acpi0: tables DSDT FACP HPET APIC MCFG SPCR
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Opteron(tm) Processor 6386 SE, 2800.73 MHz, 15-02-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,F16C,HV,NXE,MMXX,PAGE1GB,LONG,LAHF,CMPLEG,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,XOP,SKINIT,FMA4,TBM,TOPEXT,BMI1
+cpu0: 64KB 64b/line 2-way I-cache, 16KB 64b/line 4-way D-cache, 2MB 64b/line 16-way L2 cache, 12MB 64b/line 128-way L3 cache
+cpu0: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu0: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: apic clock running at 134MHz
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 11, 32 pins, remapped
+acpiprt0 at acpi0: bus 0 (PC00)
+acpipci0 at acpi0 PC00
+acpicmos0 at acpi0
+pvbus0 at mainbus0: bhyve
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x00
+virtio0 at pci0 dev 4 function 0 &quot;Qumranet Virtio Storage&quot; rev 0x00
+vioblk0 at virtio0
+scsibus0 at vioblk0: 2 targets
+sd0 at scsibus0 targ 0 lun 0: &lt;VirtIO, Block Device, &gt;
+sd0: 40960MB, 512 bytes/sector, 83886080 sectors
+virtio0: msix shared
+virtio1 at pci0 dev 4 function 1 &quot;Qumranet Virtio Storage&quot; rev 0x00
+vioblk1 at virtio1
+scsibus1 at vioblk1: 2 targets
+sd1 at scsibus1 targ 0 lun 0: &lt;VirtIO, Block Device, &gt;
+sd1: 163840MB, 512 bytes/sector, 335544320 sectors
+virtio1: msix shared
+virtio2 at pci0 dev 6 function 0 &quot;Qumranet Virtio Network&quot; rev 0x00
+vio0 at virtio2: address xx:xx:xx:xx:xx:xx
+virtio2: msix shared
+vga1 at pci0 dev 30 function 0 unknown vendor 0xfb5d product 0x40fb rev 0x00
+vga1: aperture needed
+wsdisplay1 at vga1 mux 1: console (80x25, vt100 emulation)
+xhci0 at pci0 dev 30 function 1 &quot;Intel 7 Series xHCI&quot; rev 0x00: msi, xHCI 0.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 82371SB ISA&quot; rev 0x00 at pci0 dev 31 function 0 not configured
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay1
+efifb0 at mainbus0: 1920x1200, 32bpp
+wsdisplay at efifb0 not configured
+uhidev0 at uhub0 port 1 configuration 1 interface 0 &quot;BHYVE HID Tablet&quot; rev 3.00/0.00 addr 2
+uhidev0: iclass 3/1
+uhid at uhidev0 not configured
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+syncing disks... done
+rebooting...
+OpenBSD 6.6-current (GENERIC) #578: Sat Jan 11 18:42:30 MST 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC
+real mem = 4277514240 (4079MB)
+avail mem = 4135505920 (3943MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.0 @ 0xbfb58000 (14 entries)
+bios0: vendor BHYVE version &quot;1.00&quot; date 03/14/2014
+bios0: Joyent SmartDC HVM
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S5
+acpi0: tables DSDT FACP HPET APIC MCFG SPCR
+acpi0: wakeup devices
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpihpet0 at acpi0: 16777216 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Opteron(tm) Processor 6386 SE, 2800.66 MHz, 15-02-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,POPCNT,AES,XSAVE,AVX,F16C,HV,NXE,MMXX,PAGE1GB,LONG,LAHF,CMPLEG,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,XOP,SKINIT,FMA4,TBM,TOPEXT,BMI1
+cpu0: 64KB 64b/line 2-way I-cache, 16KB 64b/line 4-way D-cache, 2MB 64b/line 16-way L2 cache, 12MB 64b/line 128-way L3 cache
+cpu0: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu0: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: smt 0, core 2, package 6
+mtrr: CPU supports MTRRs but not enabled by BIOS
+cpu0: apic clock running at 134MHz
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 11, 32 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PC00)
+acpipci0 at acpi0 PC00
+extent `acpipci0 pcibus' (0x0 - 0xff), flags=0
+extent `acpipci0 pciio' (0x0 - 0xffffffff), flags=0
+     0xcf8 - 0xcff
+     0x10000 - 0xffffffff
+extent `acpipci0 pcimem' (0x0 - 0xffffffffffffffff), flags=0
+     0x0 - 0x9ffff
+     0xc0000 - 0xbfffffff
+     0xe0000000 - 0xefffffff
+     0xf0800000 - 0xcfffffffff
+     0xe000000000 - 0xffffffffffffffff
+acpicmos0 at acpi0
+pvbus0 at mainbus0: bhyve
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82441FX&quot; rev 0x00
+virtio0 at pci0 dev 4 function 0 &quot;Qumranet Virtio Storage&quot; rev 0x00
+vioblk0 at virtio0
+scsibus1 at vioblk0: 2 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;VirtIO, Block Device, &gt;
+sd0: 40960MB, 512 bytes/sector, 83886080 sectors
+virtio0: msix shared
+virtio1 at pci0 dev 4 function 1 &quot;Qumranet Virtio Storage&quot; rev 0x00
+vioblk1 at virtio1
+scsibus2 at vioblk1: 2 targets
+sd1 at scsibus2 targ 0 lun 0: &lt;VirtIO, Block Device, &gt;
+sd1: 163840MB, 512 bytes/sector, 335544320 sectors
+virtio1: msix shared
+virtio2 at pci0 dev 6 function 0 &quot;Qumranet Virtio Network&quot; rev 0x00
+vio0 at virtio2: address xx:xx:xx:xx:xx:xx
+virtio2: msix shared
+vga1 at pci0 dev 30 function 0 unknown vendor 0xfb5d product 0x40fb rev 0x00
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+xhci0 at pci0 dev 30 function 1 &quot;Intel 7 Series xHCI&quot; rev 0x00: msi, xHCI 0.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 82371SB ISA&quot; rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+efifb0 at mainbus0: 1920x1200, 32bpp
+wsdisplay at efifb0 not configured
+uhidev0 at uhub0 port 1 configuration 1 interface 0 &quot;BHYVE HID Tablet&quot; rev 3.00/0.00 addr 2
+uhidev0: iclass 3/1
+ums0 at uhidev0: 3 buttons, Z dir
+wsmouse1 at ums0 mux 0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (bba60ced8cd7fe68.a) swap on sd0b dump on sd0b
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

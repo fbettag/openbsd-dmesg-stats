@@ -1,0 +1,314 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2018-03-06 11:11:26</em><br />
+<strong>From:</strong> <em>Thiery SAMPY</em><br />
+<strong>Description:</strong> <em>HP Pavilion dv6000</em><br />
+
+<pre>
+OpenBSD 6.2 (GENERIC.MP) #166: Tue Oct  3 19:58:05 MDT 2017
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC.MP
+cpu0: Genuine Intel(R) CPU T2050 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,MWAIT,EST,TM2,xTPR,PDCM,PERF,SENSOR
+real mem  = 3219079168 (3069MB)
+avail mem = 3143299072 (2997MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 10/26/06, BIOS32 rev. 0 @ 0xfd610, SMBIOS rev. 2.4 @ 0xdf010 (22 entries)
+bios0: vendor Hewlett-Packard version &quot;F.06&quot; date 10/26/2006
+bios0: Hewlett-Packard HP Pavilion dv6000 (RR370EA#ABF)
+acpi0 at bios0: rev 0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC HPET MCFG BOOT APIC SSDT SSDT
+acpi0: wakeup devices RP02(S3) PXS3(S4) LANC(S4) PS2K(S3) PS2M(S3)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 133MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Genuine Intel(R) CPU T2050 @ 1.60GHz (&quot;GenuineIntel&quot; 686-class) 1.60 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,NXE,SSE3,MWAIT,EST,TM2,xTPR,PDCM,PERF,SENSOR
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+, remapped to apid 1
+acpihpet0 at acpi0: 14318179 Hz
+acpimcfg0 at acpi0 addr 0xe0000000, bus 0-255
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (PEGP)
+acpiprt2 at acpi0: bus 2 (RP01)
+acpiprt3 at acpi0: bus 3 (RP02)
+acpiprt4 at acpi0: bus 5 (RP03)
+acpiprt5 at acpi0: bus 7 (PCIB)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(100@57 io@0x1016), !C2(500@1 io@0x1014), C1(1000@1 halt), PSS
+acpicpu1 at acpi0: !C3(100@57 io@0x1016), !C2(500@1 io@0x1014), C1(1000@1 halt), PSS
+acpitz0 at acpi0: critical temperature is 85 degC
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: SLPB
+acpiac0 at acpi0: AC unit online
+acpibat0 at acpi0: BAT0 model &quot;Primary&quot; serial   type LION oem &quot;Hewlett-Packard&quot;
+acpibtn2 at acpi0: LID_
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;HPQ0006&quot; at acpi0 not configured
+&quot;*SYN012B&quot; at acpi0 not configured
+acpivideo0 at acpi0: VGA_
+acpivideo1 at acpi0: GFX0
+bios0: ROM list: 0xc0000/0xf000 0xcf000/0x1000 0xdf000/0x800! 0xe0000/0x1800!
+cpu0: Enhanced SpeedStep 1597 MHz: speeds: 1600, 1333, 1067, 800 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82945GM Host&quot; rev 0x03
+ppb0 at pci0 dev 1 function 0 &quot;Intel 82945GM PCIE&quot; rev 0x03: apic 1 int 16
+pci1 at ppb0 bus 1
+vga1 at pci1 dev 0 function 0 &quot;NVIDIA GeForce 7400 Go&quot; rev 0xa1
+wsdisplay0 at vga1 mux 1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+azalia0 at pci0 dev 27 function 0 &quot;Intel 82801GB HD Audio&quot; rev 0x02: msi
+azalia0: codecs: Conexant CX20549
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 17
+pci2 at ppb1 bus 2
+wpi0 at pci2 dev 0 function 0 &quot;Intel PRO/Wireless 3945ABG&quot; rev 0x02: msi, MoW2, address xx:xx:xx:xx:xx:xx
+ppb2 at pci0 dev 28 function 1 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 16
+pci3 at ppb2 bus 3
+ppb3 at pci0 dev 28 function 2 &quot;Intel 82801GB PCIE&quot; rev 0x02: apic 1 int 18
+pci4 at ppb3 bus 5
+em0 at pci4 dev 0 function 0 &quot;Intel 82573L&quot; rev 0x00: msi, address xx:xx:xx:xx:xx:xx
+uhci0 at pci0 dev 29 function 0 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 23
+uhci1 at pci0 dev 29 function 1 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 19
+uhci2 at pci0 dev 29 function 2 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 16
+ehci0 at pci0 dev 29 function 7 &quot;Intel 82801GB USB&quot; rev 0x02: apic 1 int 23
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+ppb4 at pci0 dev 30 function 0 &quot;Intel 82801BAM Hub-to-PCI&quot; rev 0xe2
+pci5 at ppb4 bus 7
+&quot;Ricoh 5C832 Firewire&quot; rev 0x00 at pci5 dev 5 function 0 not configured
+sdhc0 at pci5 dev 5 function 1 &quot;Ricoh 5C822 SD/MMC&quot; rev 0x19: apic 1 int 17
+sdhc0: SDHC 1.0, 33 MHz base clock
+sdmmc0 at sdhc0: 4-bit
+&quot;Ricoh 5C843 MMC&quot; rev 0x01 at pci5 dev 5 function 2 not configured
+&quot;Ricoh 5C592 Memory Stick&quot; rev 0x0a at pci5 dev 5 function 3 not configured
+&quot;Ricoh 5C852 xD&quot; rev 0x05 at pci5 dev 5 function 4 not configured
+ichpcib0 at pci0 dev 31 function 0 &quot;Intel 82801GBM LPC&quot; rev 0x02: PM disabled
+pciide0 at pci0 dev 31 function 1 &quot;Intel 82801GB IDE&quot; rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: &lt;MATSHITA, DVD-RAM UJ-850S, 1.05&gt; ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 &quot;Intel 82801GBM AHCI&quot; rev 0x02: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+ahci0: PHY offline on port 2
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: &lt;ATA, Hitachi HTS54168, SB2O&gt; SCSI3 0/direct fixed naa.5000cca522c3c0ee
+sd0: 76319MB, 512 bytes/sector, 156301488 sectors
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 82801GB SMBus&quot; rev 0x02: apic 1 int 19
+iic0 at ichiic0
+spdmem0 at iic0 addr 0x50: 2GB DDR2 SDRAM non-parity PC2-6400CL6 SO-DIMM
+spdmem1 at iic0 addr 0x52: 1GB DDR2 SDRAM non-parity PC2-5300CL5 SO-DIMM
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;Intel UHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.3, 0x1a0b1 0x200000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+uvideo0 at uhub0 port 4 configuration 1 interface 0 &quot;Sonix Technology Co., Ltd. USB 2.0 Camera&quot; rev 2.00/1.00 addr 2
+video0 at uvideo0
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (ab882d10be7c41bc.a) swap on sd0b dump on sd0b
+scsibus5 at sdmmc0: 2 targets, initiator 0
+sd1 at scsibus5 targ 1 lun 0: &lt;SD/MMC, SD, 0010&gt; SCSI2 0/direct removable
+sd1: 1944MB, 512 bytes/sector, 3981312 sectors
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 3)
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 0)
+pms0: not in sync yet, discard input (state 0)
+sd1 detached
+scsibus5 detached
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

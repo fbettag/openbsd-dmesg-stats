@@ -1,0 +1,388 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2015-09-08 00:08:07</em><br />
+<strong>From:</strong> <em>dekker</em><br />
+<strong>Description:</strong> <em>Thinkpad Yoga (OpenBSD -current 07/09/15)</em><br />
+
+<pre>
+OpenBSD 5.8-current (GENERIC.MP) #0: Fri Sep  4 14:32:42 EDT 2015
+    ---@---.---:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8480100352 (8087MB)
+avail mem = 8219189248 (7838MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S3 S4 S5
+acpi0: tables DSDT FACP SLIC ASF! HPET LPIT APIC MCFG SSDT SSDT SSDT TCPA SSDT UEFI MSDM BATB FPDT UEFI SSDT
+acpi0: wakeup devices P0P1(S4) XHC_(S3) HDEF(S4) PXSX(S4) RP01(S4) PXSX(S5) RP03(S4) PXSX(S4) PEG0(S4) PEGP(S4) PEG1(S4) PEG2(S4) LID0(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpihpet0 at acpi0: 14318179 Hz
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz, 1696.35 MHz
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu0: 256KB 64b/line 8-way L2 cache
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 10 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.1.2.4.1.1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz, 1696.07 MHz
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu1: 256KB 64b/line 8-way L2 cache
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz, 1696.07 MHz
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu2: 256KB 64b/line 8-way L2 cache
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz, 1696.07 MHz
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,PBE,SSE3,PCLMUL,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,FMA3,CX16,xTPR,PDCM,PCID,SSE4.1,SSE4.2,MOVBE,POPCNT,DEADLINE,AES,XSAVE,AVX,F16C,RDRAND,NXE,PAGE1GB,LONG,LAHF,ABM,PERF,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,ERMS,INVPCID,SENSOR,ARAT
+cpu3: 256KB 64b/line 8-way L2 cache
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 2 pa 0xfec00000, version 20, 40 pins
+acpimcfg0 at acpi0 addr 0xf8000000, bus 0-63
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (P0P1)
+acpiprt2 at acpi0: bus 2 (RP01)
+acpiprt3 at acpi0: bus -1 (RP02)
+acpiprt4 at acpi0: bus 4 (RP03)
+acpiprt5 at acpi0: bus -1 (RP05)
+acpiprt6 at acpi0: bus -1 (PEG0)
+acpiprt7 at acpi0: bus -1 (PEG1)
+acpiprt8 at acpi0: bus -1 (PEG2)
+acpiec0 at acpi0
+acpicpu0 at acpi0: !C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu1 at acpi0: !C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu2 at acpi0: !C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpicpu3 at acpi0: !C3(200@506 mwait.1@0x60), C2(200@148 mwait.1@0x33), C1(1000@1 mwait.1), PSS
+acpitz0 at acpi0acpitz0: TZ01: failed to read _TMP
+acpitz0: TZ01: failed to read _TMP
+acpithinkpad0 at acpi0
+acpibat0 at acpi0: BAT0 model &quot;45N1705&quot; serial  2130 type LiP oem &quot;SONY&quot;
+acpiac0 at acpi0: AC unit offline
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID0
+cpu0: Enhanced SpeedStep 1696 MHz: speeds: 2401, 2400, 2300, 2200, 2000, 1900, 1800, 1700, 1500, 1400, 1300, 1200, 1100, 900, 800, 768 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;Intel Core 4G Host&quot; rev 0x09
+vga1 at pci0 dev 2 function 0 &quot;Intel HD Graphics&quot; rev 0x09
+intagp at vga1 not configured
+inteldrm0 at vga1
+drm0 at inteldrm0
+error: [drm:pid0:i915_write32] *ERROR* Unknown unclaimed register before writing to 100000
+error: [drm:pid0:intel_dp_set_link_train] *ERROR* Timed out waiting for DP idle patterns
+error: [drm:pid0:i915_write32] *ERROR* Unknown unclaimed register before writing to 64040
+inteldrm0: 1920x1080
+wsdisplay0 at vga1 mux 1: console (std, vt100 emulation)
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+azalia0 at pci0 dev 3 function 0 &quot;Intel Core 4G HD Audio&quot; rev 0x09: msi
+azalia0: No codecs found
+xhci0 at pci0 dev 20 function 0 &quot;Intel 8 Series xHCI&quot; rev 0x04: msi
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+&quot;Intel 8 Series MEI&quot; rev 0x04 at pci0 dev 22 function 0 not configured
+azalia1 at pci0 dev 27 function 0 &quot;Intel 8 Series HD Audio&quot; rev 0x04: msi
+azalia1: codecs: Conexant/0x510f
+audio0 at azalia1
+ppb0 at pci0 dev 28 function 0 &quot;Intel 8 Series PCIE&quot; rev 0xe4
+pci1 at ppb0 bus 2
+ppb1 at pci0 dev 28 function 2 &quot;Intel 8 Series PCIE&quot; rev 0xe4: msi
+pci2 at ppb1 bus 4
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless AC 7260&quot; rev 0x83, msi
+ehci0 at pci0 dev 29 function 0 &quot;Intel 8 Series USB&quot; rev 0x04: apic 2 int 23
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+pcib0 at pci0 dev 31 function 0 &quot;Intel 8 Series LPC&quot; rev 0x04
+ahci0 at pci0 dev 31 function 2 &quot;Intel 8 Series AHCI&quot; rev 0x04: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, Samsung SSD 840, DXM0&gt; SCSI3 0/direct fixed naa.50025385a029f586
+sd0: 244198MB, 512 bytes/sector, 500118192 sectors, thin
+ichiic0 at pci0 dev 31 function 3 &quot;Intel 8 Series SMBus&quot; rev 0x04: apic 2 int 18
+iic0 at ichiic0
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics clickpad, firmware 8.1
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+uhidev0 at uhub0 port 5 configuration 1 interface 0 &quot;ELAN Touchscreen&quot; rev 2.01/11.12 addr 2
+uhidev0: iclass 3/0, 68 report ids
+ums0 at uhidev0 reportid 1: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid0 at uhidev0 reportid 2: input=64, output=0, feature=0
+uhid1 at uhidev0 reportid 3: input=0, output=31, feature=0
+uhid2 at uhidev0 reportid 4: input=19, output=0, feature=0
+uhid3 at uhidev0 reportid 10: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+uvideo0 at uhub0 port 6 configuration 1 interface 0 &quot;Vimicro corp. Integrated Camera&quot; rev 2.00/2.61 addr 3
+video0 at uvideo0
+uhub2 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+uhidev1 at uhub2 port 7 configuration 1 interface 0 &quot;STMicroelectronics ST_SENSOR_HUB&quot; rev 2.00/0.28 addr 3
+uhidev1: iclass 3/0, 14 report ids
+uhid4 at uhidev1 reportid 1: input=50, output=0, feature=55
+uhid5 at uhidev1 reportid 2: input=50, output=0, feature=55
+uhid6 at uhidev1 reportid 3: input=50, output=0, feature=55
+uhid7 at uhidev1 reportid 4: input=50, output=0, feature=55
+uhid8 at uhidev1 reportid 5: input=50, output=0, feature=55
+uhid9 at uhidev1 reportid 6: input=50, output=0, feature=55
+uhid10 at uhidev1 reportid 7: input=50, output=0, feature=55
+uhid11 at uhidev1 reportid 14: input=16, output=16, feature=0
+uhidev2 at uhub2 port 8 configuration 1 interface 0 &quot;Tablet ISD-V4&quot; rev 2.00/1.31 addr 4
+uhidev2: iclass 3/1, 17 report ids
+ums2 at uhidev2 reportid 1: 2 buttons
+wsmouse3 at ums2 mux 0
+ums3 at uhidev2 reportid 2: 3 buttons, tip, barrel, eraser
+wsmouse4 at ums3 mux 0
+uhid12 at uhidev2 reportid 17: input=7, output=0, feature=3
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (961c6ab6122378ab.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x140, fw ver 25.228 (API ver 9), address xx:xx:xx:xx:xx:xx
+iwm0: could not initiate scan
+error: [drm:pid23294:intel_dp_set_link_train] *ERROR* Timed out waiting for DP idle patterns
+error: [drm:pid23294:i915_write32] *ERROR* Unknown unclaimed register before writing to 64040
+error: [drm:pid22737:intel_dp_set_link_train] *ERROR* Timed out waiting for DP idle patterns
+error: [drm:pid22737:i915_write32] *ERROR* Unknown unclaimed register before writing to 64040
+error: [drm:pid28896:i915_write8] *ERROR* Unknown unclaimed register before writing to 3b4
+wsmouse2 detached
+ums0 detached
+uhid0 detached
+uhid1 detached
+uhid2 detached
+uhid3 detached
+ums1 detached
+uhidev0 detached
+video0 detached
+uvideo0 detached
+uhub0 detached
+uhid4 detached
+uhid5 detached
+uhid6 detached
+uhid7 detached
+uhid8 detached
+uhid9 detached
+uhid10 detached
+uhid11 detached
+uhidev1 detached
+wsmouse3 detached
+ums2 detached
+wsmouse4 detached
+ums3 detached
+uhid12 detached
+uhidev2 detached
+uhub2 detached
+uhub1 detached
+uhub0 at usb0 &quot;Intel xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhub1 at usb1 &quot;Intel EHCI root hub&quot; rev 2.00/1.00 addr 1
+error: [drm:pid28896:i915_write32] *ERROR* Unclaimed write to 70030
+error: [drm:pid28896:intel_dp_set_link_train] *ERROR* Timed out waiting for DP idle patterns
+error: [drm:pid28896:i915_write32] *ERROR* Unknown unclaimed register before writing to 64040
+uhidev0 at uhub0 port 5 configuration 1 interface 0 &quot;ELAN Touchscreen&quot; rev 2.01/11.12 addr 2
+uhidev0: iclass 3/0, 68 report ids
+ums0 at uhidev0 reportid 1: 1 button, tip
+wsmouse2 at ums0 mux 0
+uhid0 at uhidev0 reportid 2: input=64, output=0, feature=0
+uhid1 at uhidev0 reportid 3: input=0, output=31, feature=0
+uhid2 at uhidev0 reportid 4: input=19, output=0, feature=0
+uhid3 at uhidev0 reportid 10: input=0, output=0, feature=1
+ums1 at uhidev0 reportid 68
+ums1: mouse has no X report
+uvideo0 at uhub0 port 6 configuration 1 interface 0 &quot;Vimicro corp. Integrated Camera&quot; rev 2.00/2.61 addr 3
+video0 at uvideo0
+uhub2 at uhub1 port 1 &quot;Intel Rate Matching Hub&quot; rev 2.00/0.04 addr 2
+uhidev1 at uhub2 port 7 configuration 1 interface 0 &quot;STMicroelectronics ST_SENSOR_HUB&quot; rev 2.00/0.28 addr 3
+uhidev1: iclass 3/0, 14 report ids
+uhid4 at uhidev1 reportid 1: input=50, output=0, feature=55
+uhid5 at uhidev1 reportid 2: input=50, output=0, feature=55
+uhid6 at uhidev1 reportid 3: input=50, output=0, feature=55
+uhid7 at uhidev1 reportid 4: input=50, output=0, feature=55
+uhid8 at uhidev1 reportid 5: input=50, output=0, feature=55
+uhid9 at uhidev1 reportid 6: input=50, output=0, feature=55
+uhid10 at uhidev1 reportid 7: input=50, output=0, feature=55
+uhid11 at uhidev1 reportid 14: input=16, output=16, feature=0
+uhidev2 at uhub2 port 8 configuration 1 interface 0 &quot;Tablet ISD-V4&quot; rev 2.00/1.31 addr 4
+uhidev2: iclass 3/1, 17 report ids
+ums2 at uhidev2 reportid 1: 2 buttons
+wsmouse3 at ums2 mux 0
+ums3 at uhidev2 reportid 2: 3 buttons, tip, barrel, eraser
+wsmouse4 at ums3 mux 0
+uhid12 at uhidev2 reportid 17: input=7, output=0, feature=3
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

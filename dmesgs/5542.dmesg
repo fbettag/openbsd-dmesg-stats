@@ -1,0 +1,328 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-06-22 11:17:26</em><br />
+<strong>From:</strong> <em>rclayton</em><br />
+<strong>Description:</strong> <em>zotac zbox</em><br />
+
+<pre>
+OpenBSD 6.7 (GENERIC.MP) #2: Thu Jun  4 09:55:08 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 8150507520 (7772MB)
+avail mem = 7890862080 (7525MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xe9200 (50 entries)
+bios0: vendor American Megatrends Inc. version &quot;4.6.4&quot; date 04/18/2011
+bios0: ZOTAC AMD M1
+acpi0 at bios0: ACPI 4.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC MCFG SLIC HPET SSDT SSDT
+acpi0: wakeup devices SBAZ(S4) P0PC(S4) UHC1(S4) UHC2(S4) USB3(S4) UHC4(S4) USB5(S4) UHC6(S4) UHC7(S4) PE20(S4) PE21(S4) PE22(S4) PE23(S4) PWRB(S3)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD E-350 Processor, 1600.48 MHz, 14-01-00
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu0: 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 199MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD E-350 Processor, 1600.01 MHz, 14-01-00
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,MWAIT,SSSE3,CX16,POPCNT,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,IBS,SKINIT,ITSC
+cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 16-way L2 cache
+cpu1: 8 4MB entries fully associative
+cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 21, 24 pins, remapped
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xe0000000, bus 0-255
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 3 (PE20)
+acpiprt2 at acpi0: bus -1 (PE21)
+acpiprt3 at acpi0: bus -1 (PE22)
+acpiprt4 at acpi0: bus 6 (PE23)
+acpiprt5 at acpi0: bus 1 (BR14)
+acpiprt6 at acpi0: bus -1 (BR15)
+acpiprt7 at acpi0: bus -1 (PCE6)
+acpiprt8 at acpi0: bus -1 (PCE7)
+acpiprt9 at acpi0: bus -1 (PCE8)
+acpicpu0 at acpi0: C2(0@100 io@0x1771), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@100 io@0x1771), C1(@1 halt!), PSS
+acpipci0 at acpi0 PCI0: _OSC failed
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+acpibtn1 at acpi0: LID_
+cpu0: 1600 MHz: speeds: 1600 1280 800 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD 14h Host&quot; rev 0x00
+radeondrm0 at pci0 dev 1 function 0 &quot;ATI Radeon HD 6310&quot; rev 0x00
+drm0 at radeondrm0
+radeondrm0: msi
+azalia0 at pci0 dev 1 function 1 &quot;ATI Radeon HD 6310 HD Audio&quot; rev 0x00: msi
+azalia0: no supported codecs
+ppb0 at pci0 dev 4 function 0 &quot;AMD 14h PCIE&quot; rev 0x00: msi
+pci1 at ppb0 bus 1
+xhci0 at pci1 dev 0 function 0 &quot;NEC xHCI&quot; rev 0x03: msi, xHCI 0.96
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;NEC xHCI root hub&quot; rev 3.00/1.00 addr 1
+ahci0 at pci0 dev 17 function 0 &quot;ATI SBx00 SATA&quot; rev 0x40: apic 0 int 19, AHCI 1.2
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, WDC WDS250G1B0A-, X411&gt; naa.5001b448b64f4a87
+sd0: 238475MB, 512 bytes/sector, 488397168 sectors, thin
+ohci0 at pci0 dev 18 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 0 int 18, version 1.0, legacy support
+ehci0 at pci0 dev 18 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 0 int 17
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+ohci1 at pci0 dev 19 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 0 int 18, version 1.0, legacy support
+ehci1 at pci0 dev 19 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 0 int 17
+usb2 at ehci1: USB revision 2.0
+uhub2 at usb2 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;ATI SBx00 SMBus&quot; rev 0x42: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR3 SDRAM PC3-8500 SO-DIMM with thermal sensor
+spdmem1 at iic0 addr 0x51: 4GB DDR3 SDRAM PC3-8500 SO-DIMM
+pciide0 at pci0 dev 20 function 1 &quot;ATI SB700 IDE&quot; rev 0x40: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+azalia1 at pci0 dev 20 function 2 &quot;ATI SBx00 HD Audio&quot; rev 0x40: apic 0 int 16
+azalia1: codecs: Realtek/0x0892
+audio0 at azalia1
+pcib0 at pci0 dev 20 function 3 &quot;ATI SB700 ISA&quot; rev 0x40
+ppb1 at pci0 dev 20 function 4 &quot;ATI SB600 PCI&quot; rev 0x40
+pci2 at ppb1 bus 2
+ohci2 at pci0 dev 20 function 5 &quot;ATI SB700 USB&quot; rev 0x00: apic 0 int 18, version 1.0, legacy support
+ppb2 at pci0 dev 21 function 0 &quot;ATI SB800 PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+ral0 at pci3 dev 0 function 0 &quot;Ralink RT2790&quot; rev 0x00: apic 0 int 16, address xx:xx:xx:xx:xx:xx
+ral0: MAC/BBP RT2872 (rev 0x0200), RF RT2720 (MIMO 1T2R)
+ppb3 at pci0 dev 21 function 3 &quot;ATI SB800 PCIE&quot; rev 0x00
+pci4 at ppb3 bus 6
+re0 at pci4 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x06: RTL8168E/8111E (0x2c00), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8169S/8110S/8211 PHY, rev. 4
+ohci3 at pci0 dev 22 function 0 &quot;ATI SB700 USB&quot; rev 0x00: apic 0 int 18, version 1.0, legacy support
+ehci2 at pci0 dev 22 function 2 &quot;ATI SB700 USB2&quot; rev 0x00: apic 0 int 17
+usb3 at ehci2: USB revision 2.0
+uhub3 at usb3 configuration 1 interface 0 &quot;ATI EHCI root hub&quot; rev 2.00/1.00 addr 1
+pchb1 at pci0 dev 24 function 0 &quot;AMD 14h Link Cfg&quot; rev 0x43
+pchb2 at pci0 dev 24 function 1 &quot;AMD 14h Address Map&quot; rev 0x00
+pchb3 at pci0 dev 24 function 2 &quot;AMD 14h DRAM Cfg&quot; rev 0x00
+km0 at pci0 dev 24 function 3 &quot;AMD 14h Misc Cfg&quot; rev 0x00
+pchb4 at pci0 dev 24 function 4 &quot;AMD 14h CPU Power&quot; rev 0x00
+pchb5 at pci0 dev 24 function 5 &quot;AMD 14h Reserved&quot; rev 0x00
+pchb6 at pci0 dev 24 function 6 &quot;AMD 14h NB Power&quot; rev 0x00
+pchb7 at pci0 dev 24 function 7 &quot;AMD 14h Reserved&quot; rev 0x00
+usb4 at ohci0: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb5 at ohci1: USB revision 1.0
+uhub5 at usb5 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+it0 at isa0 port 0x2e/2: IT8721F rev 1, EC port 0xa00
+usb6 at ohci2: USB revision 1.0
+uhub6 at usb6 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+usb7 at ohci3: USB revision 1.0
+uhub7 at usb7 configuration 1 interface 0 &quot;ATI OHCI root hub&quot; rev 1.00/1.00 addr 1
+vmm0 at mainbus0: SVM/RVI
+umass0 at uhub0 port 3 configuration 1 interface 0 &quot;Sunplus Innovation Technology USB to Serial-ATA bridge&quot; rev 2.00/3.28 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+cd0 at scsibus2 targ 1 lun 0: &lt;ASUS, SDRW-08D2S-U, B102&gt; removable serial.1bcf0c31303123456789
+umass1 at uhub2 port 4 configuration 1 interface 0 &quot;ASMedia AS2115&quot; rev 2.10/1.00 addr 2
+umass1: using SCSI over Bulk-Only
+scsibus3 at umass1: 2 targets, initiator 0
+sd1 at scsibus3 targ 1 lun 0: &lt;LaCie, Rugged FW USB3, 1153&gt; serial.059f107f00000100B682
+sd1: 1907729MB, 512 bytes/sector, 3907029168 sectors
+uhidev0 at uhub4 port 2 configuration 1 interface 0 &quot;LITEON Technology USB Keyboard&quot; rev 1.10/1.11 addr 2
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd0a (7a052f9002d6eab5.a) swap on sd0b dump on sd0b
+initializing kernel modesetting (PALM 0x1002:0x9802 0x19DA:0xA183 0x00).
+radeondrm0: 1366x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+arp info overwritten for xxx.xxx.xxx.xxx by xx:xx:xx:xx:xx:xx on re0
+arp info overwritten for xxx.xxx.xxx.xxx by xx:xx:xx:xx:xx:xx on re0
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

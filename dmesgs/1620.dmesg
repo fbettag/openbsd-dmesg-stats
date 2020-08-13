@@ -1,0 +1,241 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2005-03-01 15:46:31</em><br />
+<strong>From:</strong> <em>matburt</em><br />
+<strong>Description:</strong> <em>OpenBSD running on a 133MHz P1, 3com 3c905B and ADMtek AN983.  Used as a router.</em><br />
+
+<pre>
+OpenBSD 3.6 (ATARI-11012004) #0: Tue Nov  2 00:18:19 CST 2004
+    xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/ATARI-11012004
+cpu0: Intel Pentium (P54C) (&quot;GenuineIntel&quot; 586-class) 134 MHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,MCE,CX8
+cpu0: F00F bug workaround installed
+real mem  = 33136640 (32360K)
+avail mem = 22241280 (21720K)
+using 430 buffers containing 1761280 bytes (1720K) of memory
+mainbus0 (root)
+bios0 at mainbus0: AT/286+(77) BIOS, date 02/13/97, BIOS32 rev. 0 @ 0xfb270
+apm0 at bios0: Power Management spec V1.2
+apm0: APM engage (device 1): power management disabled (1)
+apm0: AC on, battery charge unknown
+pcibios0 at bios0: rev 2.1 @ 0xf0000/0xb734
+pcibios0: PCI BIOS has 6 Interrupt Routing table entries
+pcibios0: PCI Interrupt Router at 000:07:0 (&quot;Intel 82371SB ISA&quot; rev 0x00)
+pcibios0: PCI bus #0 is the last bus
+bios0: ROM list: 0xc0000/0x8000
+cpu0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 &quot;Intel 82437VX&quot; rev 0x02
+pcib0 at pci0 dev 7 function 0 &quot;Intel 82371SB ISA&quot; rev 0x01
+pciide0 at pci0 dev 7 function 1 &quot;Intel 82371SB IDE&quot; rev 0x00: DMA, channel 0 wired to compatibility, channel 1 wired to compatibility
+wd0 at pciide0 channel 0 drive 0: &lt;ST31277A&gt;
+wd0: 16-sector PIO, LBA, 1221MB, 2501856 sectors
+wd0(pciide0:0:0): using PIO mode 4, DMA mode 2
+atapiscsi0 at pciide0 channel 1 drive 1
+scsibus0 at atapiscsi0: 2 targets
+pciide0:1:1: device timeout waiting to send SCSI packet
+pciide0:1:1: device timeout waiting to send SCSI packet
+pciide0:1:1: device timeout waiting to send SCSI packet
+atapiscsi0(pciide0:1:1): using PIO mode 4, DMA mode 2
+vga1 at pci0 dev 17 function 0 &quot;Trident TGUI 9660&quot; rev 0xd3
+wsdisplay0 at vga1: console (80x25, vt100 emulation)
+wsdisplay0: screen 1-5 added (80x25, vt100 emulation)
+xl0 at pci0 dev 19 function 0 &quot;3Com 3c905B 100Base-TX&quot; rev 0x30: irq 12, address xx:xx:xx:xx:xx:xx
+exphy0 at xl0 phy 24: 3Com internal media interface
+dc0 at pci0 dev 20 function 0 &quot;ADMtek AN983&quot; rev 0x11: irq 9, address xx:xx:xx:xx:xx:xx
+ukphy0 at dc0 phy 1: Generic IEEE 802.3u media interface
+ukphy0: OUI 0x000749, model 0x0001, rev. 1
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard, using wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: &lt;PC speaker&gt;
+sysbeep0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+npx0 at isa0 port 0xf0/16: using exception 16
+pccom0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pccom1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+fdc0 at isa0 port 0x3f0/6 irq 6 drq 2
+isapnp0 at isa0 port 0x279: read port 0x203
+&quot;ESS ES1868 Plug and Play AudioD, ESS0000, , &quot; at isapnp0 port 0x800/8 not configured
+ess0 at isapnp0 &quot;ESS ES1868 Plug and Play AudioD, ESS1868, , &quot; port 0x220/16,0x388/4,0x330/2 irq 5 drq 1,0: ESS Technology ES1868 [version 0x688b]
+ess0: audio1 interrupting at irq 5
+audio0 at ess0
+opl0 at ess0: model OPL3
+midi1 at opl0: &lt;ESS Yamaha OPL3&gt;
+joy0 at isapnp0 &quot;ESS ES1868 Plug and Play AudioD, ESS0001, , &quot; port 0x201/1
+wdc2 at isapnp0 &quot;ESS ES1868 Plug and Play AudioD, ESS0002, , &quot; port 0x168/8,0x36e/2 irq 10
+biomask ed45 netmask ff45 ttymask ffc7
+pctr: 586-class performance counters and user-level cycle counter enabled
+dkcsum: wd0 matched BIOS disk 80
+root on wd0a
+rootdev=0x0 rrootdev=0x300 rawdev=0x302
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+
