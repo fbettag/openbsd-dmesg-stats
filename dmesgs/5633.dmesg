@@ -1,0 +1,438 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-08-20 01:27:35</em><br />
+<strong>From:</strong> <em>zeurkous</em><br />
+<strong>Description:</strong> <em>NetBSD-9.0/i386 boot.iso on Thinkpad X220 (type 4290-LT8)</em><br />
+
+<pre>
+# Me still uses this for mbr_bootsel, which OpenBSD doesn't have.
+#
+# cd0 added by me (no CD drive in the damn thing).
+#
+#     --zeur.
+
+[     1.000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+[     1.000000]     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+[     1.000000]     2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
+[     1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[     1.000000]     The Regents of the University of California.  All rights reserved.
+
+[     1.000000] NetBSD 9.0 (GENERIC) #0: Fri Feb 14 00:06:28 UTC 2020
+[     1.000000] 	xxx@xxx.xxx:/usr/src/sys/arch/i386/compile/GENERIC
+[     1.000000] total memory = 3493 MB
+[     1.000000] avail memory = 3415 MB
+[     1.000000] WARNING: module error: module `cd9660' pushed by boot loader already exists
+[     1.000000] timecounter: Timecounters tick every 10.000 msec
+[     1.000000] Kernelized RAIDframe activated
+[     1.000000] running cgd selftest aes-xts-256 aes-xts-512 done
+[     1.000000] RTC BIOS diagnostic error 0x80&lt;clock_battery&gt;
+[     1.000000] timecounter: Timecounter &quot;i8254&quot; frequency 1193182 Hz quality 100
+[     1.000003] LENOVO 4290LT8 (ThinkPad X220)
+[     1.000003] mainbus0 (root)
+[     1.000003] ACPI: RSDP 0x00000000000F00E0 000024 (v02 LENOVO)
+[     1.000003] ACPI: XSDT 0x00000000DAFFE120 0000AC (v01 LENOVO TP-8D    00001240 PTEC 00000002)
+[     1.000003] ACPI: FACP 0x00000000DAFE7000 0000F4 (v04 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: DSDT 0x00000000DAFEA000 00F6A7 (v01 LENOVO TP-8D    00001240 INTL 20061109)
+[     1.000003] ACPI: FACS 0x00000000DAF2D000 000040
+[     1.000003] ACPI: SLIC 0x00000000DAFFD000 000176 (v01 LENOVO TP-8D    00001240 PTEC 00000001)
+[     1.000003] ACPI: SSDT 0x00000000DAFFC000 000249 (v01 LENOVO TP-SSDT2 00000200 INTL 20061109)
+[     1.000003] ACPI: SSDT 0x00000000DAFFB000 000033 (v01 LENOVO TP-SSDT1 00000100 INTL 20061109)
+[     1.000003] ACPI: SSDT 0x00000000DAFFA000 0007D1 (v01 LENOVO SataAhci 00001000 INTL 20061109)
+[     1.000003] ACPI: HPET 0x00000000DAFE6000 000038 (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: APIC 0x00000000DAFE5000 000098 (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: MCFG 0x00000000DAFE4000 00003C (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: ECDT 0x00000000DAFE3000 000052 (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: ASF! 0x00000000DAFE9000 0000A5 (v32 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: TCPA 0x00000000DAFE2000 000032 (v02 PTL    LENOVO   06040000 LNVO 00000001)
+[     1.000003] ACPI: SSDT 0x00000000DAFE1000 000A27 (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+[     1.000003] ACPI: SSDT 0x00000000DAFE0000 000996 (v01 PmRef  CpuPm    00003000 INTL 20061109)
+[     1.000003] ACPI: DMAR 0x00000000DAFDF000 0000E8 (v01 INTEL  SNB      00000001 INTL 00000001)
+[     1.000003] ACPI: UEFI 0x00000000DAFDE000 00003E (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: UEFI 0x00000000DAFDD000 000042 (v01 PTL    COMBUF   00000001 PTL  00000001)
+[     1.000003] ACPI: UEFI 0x00000000DAFDC000 000292 (v01 LENOVO TP-8D    00001240 PTL  00000002)
+[     1.000003] ACPI: 6 ACPI AML tables successfully acquired and loaded
+[     1.000003] ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 24 pins
+[     1.000003] x2APIC available but disabled for a suspected SandyBridge BIOS bug
+[     1.000003] cpu0 at mainbus0 apid 0
+[     1.000003] cpu0: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, id 0x206a7
+[     1.000003] cpu0: package 0, core 0, smt 0
+[     1.000003] cpu1 at mainbus0 apid 2
+[     1.000003] cpu1: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz, id 0x206a7
+[     1.000003] cpu1: package 0, core 1, smt 0
+[     1.000003] acpi0 at mainbus0: Intel ACPICA 20190405
+[     1.000003] acpi0: X/RSDT: OemId &lt;LENOVO,TP-8D   ,00001240&gt;, AslId &lt;PTEC,00000002&gt;
+[     1.000003] acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
+[     1.000003] acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
+[     1.000003] ACPI: Dynamic OEM Table Load:
+[     1.000003] ACPI: SSDT 0x00000000C53BB004 0008C0 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+[     1.000003] ACPI: Dynamic OEM Table Load:
+[     1.000003] ACPI: SSDT 0x00000000C4FF4804 000303 (v01 PmRef  ApIst    00003000 INTL 20061109)
+[     1.000003] ACPI: Dynamic OEM Table Load:
+[     1.000003] ACPI: SSDT 0x00000000C4EBDB84 000119 (v01 PmRef  ApCst    00003000 INTL 20061109)
+[     1.000003] acpi0: SCI interrupting at int 9
+[     1.000003] acpi0: fixed power button present
+[     1.000003] timecounter: Timecounter &quot;ACPI-Safe&quot; frequency 3579545 Hz quality 900
+[     1.032746] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+[     1.032746] timecounter: Timecounter &quot;hpet0&quot; frequency 14318180 Hz quality 2000
+[     1.032986] acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
+[     1.032986] MEM (PNP0C01) at acpi0 not configured
+[     1.032986] acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+[     1.032986] acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+[     1.032986] acpivga0 at acpi0 (VID): ACPI Display Adapter
+[     1.032986] acpiout0 at acpivga0 (LCD0, 0x0400): ACPI Display Output Device
+[     1.032986] acpiout0: brightness levels: [10,15,20,25,30,35,40,45,50,55,60,65,70,80,90,100]
+[     1.032986] acpiout1 at acpivga0 (CRT0, 0x0100): ACPI Display Output Device
+[     1.032986] acpiout2 at acpivga0 (DVI0, 0x0300): ACPI Display Output Device
+[     1.032986] acpiout3 at acpivga0 (DVI1, 0x0301): ACPI Display Output Device
+[     1.032986] acpiout4 at acpivga0 (DVI2, 0x0302): ACPI Display Output Device
+[     1.032986] acpiout5 at acpivga0 (DVI3, 0x0303): ACPI Display Output Device
+[     1.032986] acpiout6 at acpivga0 (DVI4, 0x0304): ACPI Display Output Device
+[     1.032986] acpiout7 at acpivga0 (DVI5, 0x0305): ACPI Display Output Device
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout1
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout2
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout3
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout4
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout5
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout6
+[     1.032986] acpivga0: autoconfiguration error: unknown output device acpiout7
+[     1.032986] acpivga0: connected output devices:
+[     1.032986] acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
+[     1.032986] SIO (PNP0C02) at acpi0 not configured
+[     1.032986] attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43 irq 0
+[     1.032986] pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+[     1.032986] midi0 at pcppi1: PC speaker
+[     1.032986] sysbeep0 at pcppi1
+[     1.032986] FPU (PNP0C04) at acpi0 not configured
+[     1.032986] pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+[     1.032986] pckbc2 at acpi0 (MOU, LEN0020) (aux port): irq 12
+[     1.032986] acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+[     1.032986] acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
+[     1.032986] thinkpad0 at acpi0 (HKEY, LEN0068)
+[     1.032986] acpiwmi0 at acpi0 (WMI1, PNP0C14-1): ACPI WMI Interface
+[     1.032986] acpiwmibus at acpiwmi0 not configured
+[     1.032986] acpiwmi1 at acpi0 (WMI2, PNP0C14-2): ACPI WMI Interface
+[     1.032986] acpiwmibus at acpiwmi1 not configured
+[     1.032986] acpitz0 at acpi0 (THM0)
+[     1.032986] acpitz0: levels: critical 99.0 C, passive cooling
+[     1.032986] apm0 at acpi0: Power Management spec V1.2
+[     1.032986] ACPI: Enabled 4 GPEs in block 00 to 3F
+[     1.032986] attimer1: attached to pcppi1
+[     1.032986] pckbd0 at pckbc1 (kbd slot)
+[     1.032986] pckbc1: using irq 1 for kbd slot
+[     1.032986] wskbd0 at pckbd0: console keyboard
+[     1.032986] pms0 at pckbc1 (aux slot)
+[     1.032986] pckbc1: using irq 12 for aux slot
+[     1.032986] wsmouse0 at pms0 mux 0
+[     1.032986] pci0 at mainbus0 bus 0: configuration mode 1
+[     1.032986] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+[     1.032986] pchb0 at pci0 dev 0 function 0: vendor 8086 product 0104 (rev. 0x09)
+[     1.032986] i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0126 (rev. 0x09)
+[     1.032986] vendor 8086 product 1c3a (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
+[     1.032986] wm0 at pci0 dev 25 function 0: PCH2 LAN (82579LM) Controller (rev. 0x04)
+[     1.032986] wm0: interrupting at msi0 vec 0
+[     1.032986] wm0: PCI-Express bus
+[     1.032986] wm0: 2048 words FLASH, version 0.13.3
+[     1.032986] wm0: Ethernet address xx:xx:xx:xx:xx:xx
+[     1.032986] wm0: 0x6a4480&lt;FLASH,IOH_VALID,PCIE,ASF_FIRM,AMT,WOL,EEE&gt;
+[     1.032986] ihphy0 at wm0 phy 2: i82579 10/100/1000 media interface, rev. 3
+[     1.032986] ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+[     1.032986] ehci0 at pci0 dev 26 function 0: vendor 8086 product 1c2d (rev. 0x04)
+[     1.032986] ehci0: interrupting at ioapic0 pin 16
+[     1.032986] ehci0: EHCI version 1.0
+[     1.032986] usb0 at ehci0: USB revision 2.0
+[     1.032986] hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+[     1.032986] hdaudio0: interrupting at msi1 vec 0
+[     1.032986] hdafg0 at hdaudio0: vendor 14f1 product 506e
+[     1.032986] hdafg0: DAC00 2ch: Speaker [Built-In]
+[     1.032986] hdafg0: DAC01 2ch: HP Out [Jack]
+[     1.032986] hdafg0: ADC02 2ch: Mic In [Jack]
+[     1.032986] hdafg0: ADC03 2ch: Mic In [Built-In]
+[     1.032986] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
+[     1.032986] audio0 at hdafg0: playback, capture, full duplex, independent
+[     1.032986] audio0: slinear_le:16 2ch 48000Hz, blk 40ms for playback
+[     1.032986] audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
+[     1.032986] hdafg1 at hdaudio0: vendor 8086 product 2805
+[     1.032986] hdafg1: DP00 8ch: Digital Out [Jack]
+[     1.032986] hdafg1: DP01 8ch: Digital Out [Jack]
+[     1.032986] hdafg1: DP02 8ch: Digital Out [Jack]
+[     1.032986] hdafg1: 8ch/0ch 48000Hz PCM16*
+[     1.032986] ppb0 at pci0 dev 28 function 0: vendor 8086 product 1c10 (rev. 0xb4)
+[     1.032986] ppb0: PCI Express capability version 2 &lt;Root Port of PCI-E Root Complex&gt; x1 @ 5.0GT/s
+[     1.032986] pci1 at ppb0 bus 2
+[     1.032986] pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+[     1.032986] ppb1 at pci0 dev 28 function 1: vendor 8086 product 1c12 (rev. 0xb4)
+[     1.032986] ppb1: PCI Express capability version 2 &lt;Root Port of PCI-E Root Complex&gt; x1 @ 5.0GT/s
+[     1.032986] ppb1: link is x1 @ 2.5GT/s
+[     1.032986] pci2 at ppb1 bus 3
+[     1.032986] pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+[     1.032986] rtwn0 at pci2 dev 0 function 0: vendor 10ec product 8176 (rev. 0x01)
+[     1.032986] rtwn0: interrupting at msi2 vec 0
+[     1.032986] rtwn0: MAC/BB RTL8188CE, RF 6052 1T1R, address xx:xx:xx:xx:xx:xx
+[     1.032986] rtwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+[     1.032986] rtwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+[     1.032986] ppb2 at pci0 dev 28 function 3: vendor 8086 product 1c16 (rev. 0xb4)
+[     1.032986] ppb2: PCI Express capability version 2 &lt;Root Port of PCI-E Root Complex&gt; x1 @ 5.0GT/s
+[     1.032986] pci3 at ppb2 bus 5
+[     1.032986] pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+[     1.032986] ppb3 at pci0 dev 28 function 4: vendor 8086 product 1c18 (rev. 0xb4)
+[     1.032986] ppb3: PCI Express capability version 2 &lt;Root Port of PCI-E Root Complex&gt; x1 @ 5.0GT/s
+[     1.032986] ppb3: link is x1 @ 2.5GT/s
+[     1.032986] pci4 at ppb3 bus 13
+[     1.032986] pci4: i/o space, memory space enabled, rd/line, wr/inv ok
+[     1.032986] sdhc0 at pci4 dev 0 function 0: vendor 1180 product e823 (rev. 0x04)
+[     1.032986] sdhc0: interrupting at ioapic0 pin 16
+[     1.032986] sdhc0: SDHC 3.0, rev 5, SDMA, 200000 kHz, HS SDR50 SDR104 HS200 3.3V, re-tuning mode 3, 512 byte blocks
+[     1.032986] sdmmc0 at sdhc0 slot 0
+[     1.032986] ehci1 at pci0 dev 29 function 0: vendor 8086 product 1c26 (rev. 0x04)
+[     1.032986] ehci1: interrupting at ioapic0 pin 23
+[     1.032986] ehci1: EHCI version 1.0
+[     1.032986] usb1 at ehci1: USB revision 2.0
+[     1.032986] ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 1c4f (rev. 0x04)
+[     1.032986] timecounter: Timecounter &quot;ichlpcib0&quot; frequency 3579545 Hz quality 1000
+[     1.032986] ichlpcib0: 24-bit timer
+[     1.032986] tco0 at ichlpcib0: TCO (watchdog) timer configured.
+[     1.032986] tco0: Min/Max interval 1/367 seconds
+[     1.032986] ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 1c03 (rev. 0x04)
+[     1.032986] ahcisata0: AHCI revision 1.30, 6 ports, 32 slots, CAP 0xff30ff65&lt;SXS,EMS,PSC,SSC,PMD,ISS=0x3=Gen3,SCLO,SAL,SALP,SSS,SMPS,SSNTF,SNCQ,S64A&gt;
+[     1.032986] ahcisata0: interrupting at msi3 vec 0
+[     1.032986] atabus0 at ahcisata0 channel 0
+[     1.032986] atabus1 at ahcisata0 channel 4
+[     1.032986] ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 1c22 (rev. 0x04)
+[     1.032986] ichsmb0: interrupting at ioapic0 pin 18
+[     1.032986] iic0 at ichsmb0: I2C bus
+[     1.032986] isa0 at ichlpcib0
+[     1.032986] tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7tpm0: device 0x0000104a rev 0x4e
+[     1.032986] acpicpu0 at cpu0: ACPI CPU
+[     1.032986] acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+[     1.032986] acpicpu0: C2: I/O, lat  80 us, pow   500 mW
+[     1.032986] acpicpu0: C3: I/O, lat 109 us, pow   200 mW
+[     1.032986] acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2501 MHz, turbo boost
+[     1.032986] acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2500 MHz
+[     1.032986] acpicpu0: P2: FFH, lat  10 us, pow 29755 mW, 2200 MHz
+[     1.032986] acpicpu0: P3: FFH, lat  10 us, pow 26426 mW, 2000 MHz
+[     1.032986] acpicpu0: P4: FFH, lat  10 us, pow 23233 mW, 1800 MHz
+[     1.032986] acpicpu0: P5: FFH, lat  10 us, pow 20164 mW, 1600 MHz
+[     1.032986] acpicpu0: P6: FFH, lat  10 us, pow 17226 mW, 1400 MHz
+[     1.032986] acpicpu0: P7: FFH, lat  10 us, pow 14408 mW, 1200 MHz
+[     1.032986] acpicpu0: P8: FFH, lat  10 us, pow 11713 mW, 1000 MHz
+[     1.032986] acpicpu0: P9: FFH, lat  10 us, pow  9140 mW,  800 MHz
+[     1.032986] acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+[     1.032986] acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+[     1.032986] acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+[     1.032986] acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+[     1.032986] acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+[     1.032986] acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+[     1.032986] acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+[     1.032986] acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+[     1.032986] coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+[     1.032986] acpicpu1 at cpu1: ACPI CPU
+[     1.032986] coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
+[     1.032986] timecounter: Timecounter &quot;clockinterrupt&quot; frequency 100 Hz quality 0
+[     1.454410] timecounter: Timecounter &quot;TSC&quot; frequency 2492060880 Hz quality 3000
+[     1.458576] acpiacad0: AC adapter offline.
+[     1.464416] IPsec: Initialized Security Association Processing.
+[     1.474420] acpibat0: LGC LION rechargeable battery
+[     1.474420] acpibat0: granularity: low-&gt;warn 0.001 Ah, warn-&gt;full 0.001 Ah
+[     1.474420] uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[     1.474420] uhub0: 3 ports with 3 removable, self powered
+[     1.474420] uhub1 at usb1: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[     1.474420] uhub1: 3 ports with 3 removable, self powered
+[     1.554466] ahcisata0 port 0: device present, speed: 3.0Gb/s
+[     3.085335] wd0 at atabus0 drive 0
+[     3.085335] wd0: &lt;ST320LT020-9YG142&gt;
+[     3.085335] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+[     3.085335] wd0: 298 GB, 620181 cyl, 16 head, 63 sec, 512 bytes/sect x 625142448 sectors
+[     3.205403] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), NCQ (32 tags)
+[     3.205403] wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
+[     3.725698] uhub2 at uhub0 port 1: vendor 8087 (0x8087) product 0024 (0x24), class 9/0, rev 2.00/0.00, addr 2
+[     3.725698] uhub2: single transaction translator
+[     3.725698] uhub3 at uhub1 port 1: vendor 8087 (0x8087) product 0024 (0x24), class 9/0, rev 2.00/0.00, addr 2
+[     3.725698] uhub3: single transaction translator
+[     3.725698] uhub2: 6 ports with 6 removable, self powered
+[     3.725698] uhub3: 8 ports with 8 removable, self powered
+[     5.046447] umass0 at uhub2 port 2 configuration 1 interface 0
+[     5.046447] umass0: Hitachi-LG Data Storage Inc (0x8564) Portable Super Multi Drive (0x8000), rev 2.00/0.00, addr 3
+[     5.046447] umass0: using ATAPI over Bulk-Only
+[     5.046447] atapibus0 at umass0: 2 targets
+[     5.046447] cd0 at atapibus0 drive 0: &lt;TS8XDVDS, TRANSCEND, 1.00&gt; cdrom removable
+[     5.056453] WARNING: 7 errors while detecting hardware; check system log.
+[     5.056453] boot device: cd0
+[     6.447241] root on cd0a dumps on cd0b
+[     7.527854] root file system type: cd9660
+[     7.788002] kern.module.path=/stand/i386/9.0/modules
+[     7.793242] kern info: [drm] Memory usable by graphics device = 2048M
+[     7.798006] kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[     7.798006] kern info: [drm] Driver supports precise vblank timestamp query.
+[     7.798006] i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+[     7.888059] kern info: [drm] GMBUS [i915 gmbus dpb] timed out, falling back to bit banging on pin 5
+[     7.948091] intelfb0 at i915drmkms0
+[     7.948091] intelfb0: framebuffer at 0xddb9f000, size 1366x768, depth 32, stride 5504
+[     8.708523] wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+[     8.718733] wsmux1: connecting to wsdisplay0
+[    31.491445] acpibat0: normal capacity on 'charge state'
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,428 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-08-16 15:46:42</em><br />
+<strong>From:</strong> <em>mario</em><br />
+<strong>Description:</strong> <em>Motile M142</em><br />
+
+<pre>
+OpenBSD 6.7-current (GENERIC.MP) #27: Sat Aug 15 10:11:43 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 6360055808 (6065MB)
+avail mem = 6152265728 (5867MB)
+random: good seed from bootblocks
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 3.2 @ 0xde394000 (43 entries)
+bios0: vendor American Megatrends Inc. version &quot;N.1.06&quot; date 11/27/2019
+bios0: MOTILE M141
+acpi0 at bios0: ACPI 6.0
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT SSDT MCFG HPET UEFI VFCT TPM2 IVRS SSDT CRAT CDIT BGRT SSDT SSDT SSDT SSDT WSMT SSDT
+acpi0: wakeup devices GPP0(S4) GPP1(S4) GPP2(S4) GPP3(S4) RLAN(S0) GPP4(S4) GPP5(S4) GPP6(S4) GP17(S4) XHC0(S4) XHC1(S4) GP18(S4)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.35 MHz, 17-18-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu0: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu0: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 24MHz
+cpu0: mwait min=64, max=64, C-substates=1.1, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.04 MHz, 17-18-01
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu1: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu1: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu1: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.03 MHz, 17-18-01
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu2: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu2: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu2: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.04 MHz, 17-18-01
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu3: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu3: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu3: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu3: smt 1, core 1, package 0
+cpu4 at mainbus0: apid 4 (application processor)
+cpu4: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.04 MHz, 17-18-01
+cpu4: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu4: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu4: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu4: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu4: smt 0, core 2, package 0
+cpu5 at mainbus0: apid 5 (application processor)
+cpu5: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.05 MHz, 17-18-01
+cpu5: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu5: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu5: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu5: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu5: smt 1, core 2, package 0
+cpu6 at mainbus0: apid 6 (application processor)
+cpu6: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.04 MHz, 17-18-01
+cpu6: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu6: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu6: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu6: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu6: smt 0, core 3, package 0
+cpu7 at mainbus0: apid 7 (application processor)
+cpu7: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 2096.04 MHz, 17-18-01
+cpu7: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,SKINIT,TCE,TOPEXT,CPCTR,DBKP,PCTRL3,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,RDSEED,ADX,SMAP,CLFLUSHOPT,SHA,IBPB,XSAVEOPT,XSAVEC,XGETBV1,XSAVES
+cpu7: 64KB 64b/line 4-way I-cache, 32KB 64b/line 8-way D-cache, 512KB 64b/line 8-way L2 cache, 4MB 64b/line 16-way L3 cache
+cpu7: ITLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu7: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu7: smt 1, core 3, package 0
+ioapic0 at mainbus0: apid 9 pa 0xfec00000, version 21, 24 pins
+ioapic1 at mainbus0: apid 10 pa 0xfec01000, version 21, 32 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (GPP0)
+acpiprt2 at acpi0: bus 1 (GPP1)
+acpiprt3 at acpi0: bus -1 (GPP2)
+acpiprt4 at acpi0: bus 2 (GPP3)
+acpiprt5 at acpi0: bus 3 (GPP4)
+acpiprt6 at acpi0: bus -1 (GPP5)
+acpiprt7 at acpi0: bus -1 (GPP6)
+acpiprt8 at acpi0: bus 4 (GP17)
+acpiprt9 at acpi0: bus 5 (GP18)
+acpiec0 at acpi0
+acpicpu0 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu1 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu2 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu3 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu4 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu5 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu6 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpicpu7 at acpi0: C2(0@400 io@0x414), C1(0@1 mwait), PSS
+acpitz0 at acpi0: critical temperature is 100 degC
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+extent `acpipci0 pcibus' (0x0 - 0xff), flags=0
+extent `acpipci0 pciio' (0x0 - 0xffffffff), flags=0
+     0xcf8 - 0xcff
+     0x10000 - 0xffffffff
+extent `acpipci0 pcimem' (0x0 - 0xffffffffffffffff), flags=0
+     0x0 - 0x9ffff
+     0xe0000 - 0xdfffffff
+     0xfec00000 - 0xfedfffff
+     0x100000000 - 0xffffffffffffffff
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+amdgpio0 at acpi0 GPIO uid 0 addr 0xfed81500/0x400 irq 7, 184 pins
+dwiic0 at acpi0 I2CC addr 0xfedc4000/0x1000 irq 14
+iic0 at dwiic0
+ihidev0 at iic0 addr 0x2c gpio 9, vendor 0x93a product 0x1336, UNIW0001
+ihidev0: 12 report ids
+imt0 at ihidev0: clickpad, 4 contacts
+wsmouse0 at imt0 mux 0
+ims0 at ihidev0 reportid 2: 2 buttons
+wsmouse1 at ims0 mux 0
+hid at ihidev0 reportid 4 not configured
+hid at ihidev0 reportid 5 not configured
+hid at ihidev0 reportid 7 not configured
+hid at ihidev0 reportid 8 not configured
+hid at ihidev0 reportid 12 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+acpibtn1 at acpi0: SLPB
+acpiac0 at acpi0: AC unit offline
+acpibat0 at acpi0: BAT0 model &quot;standard&quot; serial 00001 type LiON oem &quot;OEM&quot;
+acpibtn2 at acpi0: LID1
+&quot;PNP0C14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VGA_
+acpivideo1 at acpi0: VGA_
+acpivout0 at acpivideo1: LCD_
+cpu0: 2096 MHz: speeds: 2100 1700 1400 MHz
+pci0 at mainbus0 bus 0
+ksmn0 at pci0 dev 0 function 0 &quot;AMD 17h/1xh Root Complex&quot; rev 0x00
+&quot;AMD 17h/1xh IOMMU&quot; rev 0x00 at pci0 dev 0 function 2 not configured
+pchb0 at pci0 dev 1 function 0 &quot;AMD 17h PCIE&quot; rev 0x00
+ppb0 at pci0 dev 1 function 2 &quot;AMD 17h/1xh PCIE&quot; rev 0x00: msi
+pci1 at ppb0 bus 1
+nvme0 at pci1 dev 0 function 0 vendor &quot;Realtek&quot;, unknown product 0x5763 rev 0x01: msix, NVMe 1.3
+nvme0: ADATA SX6000LNP, firmware V9002s16, serial 2J4520178438
+scsibus1 at nvme0: 2 targets, initiator 0
+sd0 at scsibus1 targ 1 lun 0: &lt;NVMe, ADATA SX6000LNP, V900&gt;
+sd0: 122104MB, 512 bytes/sector, 250069680 sectors
+ppb1 at pci0 dev 1 function 4 &quot;AMD 17h/1xh PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+re0 at pci2 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x15: RTL8168H/8111H (0x5400), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
+ppb2 at pci0 dev 1 function 5 &quot;AMD 17h/1xh PCIE&quot; rev 0x00: msi
+pci3 at ppb2 bus 3
+iwm0 at pci3 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 3168&quot; rev 0x10, msi
+pchb1 at pci0 dev 8 function 0 &quot;AMD 17h PCIE&quot; rev 0x00
+ppb3 at pci0 dev 8 function 1 &quot;AMD 17h/1xh PCIE&quot; rev 0x00
+pci4 at ppb3 bus 4
+amdgpu0 at pci4 dev 0 function 0 &quot;ATI Picasso&quot; rev 0xc2
+drm0 at amdgpu0
+amdgpu0: msi
+azalia0 at pci4 dev 0 function 1 &quot;ATI Radeon Vega HD Audio&quot; rev 0x00: msi
+azalia0: no supported codecs
+ccp0 at pci4 dev 0 function 2 &quot;AMD 17h/1xh Crypto&quot; rev 0x00
+xhci0 at pci4 dev 0 function 3 &quot;AMD 17h/1xh xHCI&quot; rev 0x00: msi, xHCI 1.10
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+xhci1 at pci4 dev 0 function 4 &quot;AMD 17h/1xh xHCI&quot; rev 0x00: msi, xHCI 1.10
+usb1 at xhci1: USB revision 3.0
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+azalia1 at pci4 dev 0 function 6 &quot;AMD 17h/1xh HD Audio&quot; rev 0x00: apic 10 int 30
+azalia1: codecs: Realtek ALC269
+audio0 at azalia1
+ppb4 at pci0 dev 8 function 2 &quot;AMD 17h/1xh PCIE&quot; rev 0x00
+pci5 at ppb4 bus 5
+ahci0 at pci5 dev 0 function 0 &quot;AMD FCH AHCI&quot; rev 0x61: msi, AHCI 1.3.1
+ahci0: port 1: 6.0Gb/s
+scsibus2 at ahci0: 32 targets
+sd1 at scsibus2 targ 1 lun 0: &lt;ATA, BIWIN SSD, S070&gt; t10.ATA_BIWIN_SSD_1933010401597_
+sd1: 244198MB, 512 bytes/sector, 500118192 sectors, thin
+piixpm0 at pci0 dev 20 function 0 &quot;AMD FCH SMBus&quot; rev 0x61: SMI
+iic1 at piixpm0
+iic2 at piixpm0
+pcib0 at pci0 dev 20 function 3 &quot;AMD FCH LPC&quot; rev 0x51
+pchb2 at pci0 dev 24 function 0 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb3 at pci0 dev 24 function 1 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb4 at pci0 dev 24 function 2 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb5 at pci0 dev 24 function 3 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb6 at pci0 dev 24 function 4 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb7 at pci0 dev 24 function 5 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb8 at pci0 dev 24 function 6 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+pchb9 at pci0 dev 24 function 7 &quot;AMD 17h/1xh Data Fabric&quot; rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: SVM/RVI
+efifb at mainbus0 not configured
+uvideo0 at uhub1 port 1 configuration 1 interface 0 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video0 at uvideo0
+uvideo1 at uhub1 port 1 configuration 1 interface 2 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video1 at uvideo1
+uhub2 at uhub1 port 2 configuration 1 interface 0 &quot;Genesys Logic USB2.0 Hub&quot; rev 2.00/60.70 addr 3
+ugen0 at uhub2 port 2 &quot;Generic USB2.0-CRW&quot; rev 2.00/39.60 addr 4
+ugen1 at uhub2 port 4 &quot;Intel product 0x0aa7&quot; rev 2.00/0.01 addr 5
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (a40f474b93986d42.a) swap on sd0b dump on sd0b
+iwm0: hw rev 0x220, fw ver 29.1654887522.0, address xx:xx:xx:xx:xx:xx
+initializing kernel modesetting (RAVEN 0x1002:0x15D8 0x1D05:0x1077 0xC2).
+[drm] CP firmware version too old, please update!amdgpu0: 1920x1080, 32bpp
+wsdisplay0 at amdgpu0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+uhub0 detached
+video0 detached
+uvideo0 detached
+video1 detached
+uvideo1 detached
+ugen0 detached
+ugen1 detached
+uhub2 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+uvideo0 at uhub1 port 1 configuration 1 interface 0 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video0 at uvideo0
+uvideo1 at uhub1 port 1 configuration 1 interface 2 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video1 at uvideo1
+uhub2 at uhub1 port 2 configuration 1 interface 0 &quot;Genesys Logic USB2.0 Hub&quot; rev 2.00/60.70 addr 3
+ugen0 at uhub2 port 2 &quot;Generic USB2.0-CRW&quot; rev 2.00/39.60 addr 4
+ugen1 at uhub2 port 4 &quot;Intel product 0x0aa7&quot; rev 2.00/0.01 addr 5
+uhub0 detached
+video0 detached
+uvideo0 detached
+video1 detached
+uvideo1 detached
+ugen0 detached
+ugen1 detached
+uhub2 detached
+uhub1 detached
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+uvideo0 at uhub1 port 1 configuration 1 interface 0 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video0 at uvideo0
+uvideo1 at uhub1 port 1 configuration 1 interface 2 &quot;SunplusIT Inc HD Webcam&quot; rev 2.01/0.08 addr 2
+video1 at uvideo1
+uhub2 at uhub1 port 2 configuration 1 interface 0 &quot;Genesys Logic USB2.0 Hub&quot; rev 2.00/60.70 addr 3
+ugen0 at uhub2 port 2 &quot;Generic USB2.0-CRW&quot; rev 2.00/39.60 addr 4
+ugen1 at uhub2 port 4 &quot;Intel product 0x0aa7&quot; rev 2.00/0.01 addr 5
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

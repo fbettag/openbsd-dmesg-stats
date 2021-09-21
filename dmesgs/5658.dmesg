@@ -1,0 +1,410 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="keywords"
+	content="bsd, freebsd, openbsd, netbsd, dragonflybsd, nycbug, dmesgd" />
+<meta name="description" content="New York City BSD User Group dmesgd" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NYC*BUG dmesgd</title>
+<style>
+body {
+	text-align: left;
+	margin: 15px auto;
+	padding: 0px 10px;
+}
+@media (min-width: 800px) {
+	body {
+		max-width: 85%;
+	}
+}
+#header {
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 230%;
+	text-align: left;
+}
+#footer {
+	border-top: 1px solid #dbdbdb;
+	clear: both;
+	text-align: left;
+}
+.logo_bug {
+	color: #cc0033;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	background-color: #dbdbdb;
+	color: #000000;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 0px 6px 0px 6px;
+	text-decoration: none;
+}
+#content {
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+#content h1 {
+	font-size: 120%;
+	font-weight: bold;
+}
+#content h2 {
+	font-size: 110%;
+	font-weight: bold;
+}
+#content a {
+	text-decoration: none;
+}
+#content pre {
+	background-color: #dbdbdb;
+	padding: 5px 5px 5px 5px;
+	white-space: pre-wrap;		/* css-3 */
+	white-space: -moz-pre-wrap;	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;		/* Opera 4-6 */
+	white-space: -o-pre-wrap;	/* Opera 7 */
+	word-wrap: break-word;		/* Internet Explorer 5.5+ */
+}
+#content table {
+	border-collapse: collapse;
+}
+#content table th {
+	border: 1px solid #dbdbdb;
+	font-size: 85%;
+	white-space: nowrap;
+}
+#content table td {
+	border: 1px solid #dbdbdb;
+	font-size: 80%;
+}
+#content input {
+	font-size: 1em;
+}
+#content .full	{ width: 100%; }
+#content .left	{ text-align: left; }
+#content .right	{ text-align: right; }
+#content .center { text-align: center; }
+#content .flexbox {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+}
+#content .left_col {
+	min-width: 75px;
+	max-width: 50%;
+	flex-grow: 0;
+}
+#content .right_col {
+	flex-grow: 1;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#col {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<strong><em>NYC*</em><span class="logo_bug">BUG</span> dmesgd</strong>
+</div><!-- header -->
+
+<div id="menu">
+<ul>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=index">Home</a></li>
+<li><a href="https://dmesgd.nycbug.org/index.cgi?do=submit">Submit</a></li>
+<li><a href="https://www.nycbug.org/">NYC*BUG</a></li>
+</ul>
+</div><!-- menu -->
+
+<div id="content">
+
+<p>
+Launched in 2004, dmesgd aims to provide a
+<strong>user-submitted</strong> repository of searchable *BSD dmesgs.
+The dmesg(8) command displays the system message buffer's content, and
+during boot a copy is saved to <em>/var/run/dmesg.boot</em>.  This buffer
+contains the operating system release, name and version, a list of
+devices identified, plus a whole host of other useful information.  We
+hope others find this resource useful and further contribute to its
+growth. Contact us at [ admin at lists dot nycbug dot org ].
+</p>
+
+<hr />
+
+
+<strong>Date:</strong> <em>2020-09-10 00:27:41</em><br />
+<strong>From:</strong> <em>dgv</em><br />
+<strong>Description:</strong> <em>OpenBSD 6.7 (GENERIC.MP) on HP Thin Client t630</em><br />
+
+<pre>
+OpenBSD 6.7 (GENERIC.MP) #6: Thu Sep  3 14:08:18 MDT 2020
+    xxx@xxx.xxx:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 7456833536 (7111MB)
+avail mem = 7218225152 (6883MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.8 @ 0xecf40 (44 entries)
+bios0: vendor AMI version &quot;M40 v01.11&quot; date 06/25/2019
+bios0: HP HP t630 Thin Client
+acpi0 at bios0: ACPI 5.0
+acpi0: sleep states S0 S3 S5
+acpi0: tables DSDT FACP APIC FPDT FIDT MCFG HPET UEFI IVRS BGRT SSDT TPM2 SSDT SSDT CRAT SSDT SSDT
+acpi0: wakeup devices GPP1(S3) GPP2(S3) GPP3(S3) RTCR(S3) PS2K(S3) PS2M(S3) EHC1(S3) XHC0(S3)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 16 (boot processor)
+cpu0: AMD Embedded G-Series GX-420GI Radeon R7E, 1996.53 MHz, 15-60-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,XOP,SKINIT,WDT,FMA4,TCE,NODEID,TBM,CPCTR,DBKP,PERFTSC,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,IBPB,XSAVEOPT
+cpu0: 96KB 64b/line 3-way I-cache, 32KB 64b/line 8-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu0: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu0: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 17 (application processor)
+cpu1: AMD Embedded G-Series GX-420GI Radeon R7E, 1996.27 MHz, 15-60-01
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,XOP,SKINIT,WDT,FMA4,TCE,NODEID,TBM,CPCTR,DBKP,PERFTSC,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,IBPB,XSAVEOPT
+cpu1: 96KB 64b/line 3-way I-cache, 32KB 64b/line 8-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu1: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu1: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu1: smt 1, core 0, package 0
+cpu2 at mainbus0: apid 18 (application processor)
+cpu2: AMD Embedded G-Series GX-420GI Radeon R7E, 1996.27 MHz, 15-60-01
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,XOP,SKINIT,WDT,FMA4,TCE,NODEID,TBM,CPCTR,DBKP,PERFTSC,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,IBPB,XSAVEOPT
+cpu2: 96KB 64b/line 3-way I-cache, 32KB 64b/line 8-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu2: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu2: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu2: smt 0, core 1, package 0
+cpu3 at mainbus0: apid 19 (application processor)
+cpu3: AMD Embedded G-Series GX-420GI Radeon R7E, 1996.27 MHz, 15-60-01
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,MMX,FXSR,SSE,SSE2,HTT,SSE3,PCLMUL,MWAIT,SSSE3,FMA3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AES,XSAVE,AVX,F16C,RDRAND,NXE,MMXX,FFXSR,PAGE1GB,RDTSCP,LONG,LAHF,CMPLEG,SVM,EAPICSP,AMCR8,ABM,SSE4A,MASSE,3DNOWP,OSVW,IBS,XOP,SKINIT,WDT,FMA4,TCE,NODEID,TBM,CPCTR,DBKP,PERFTSC,MWAITX,ITSC,FSGSBASE,BMI1,AVX2,SMEP,BMI2,IBPB,XSAVEOPT
+cpu3: 96KB 64b/line 3-way I-cache, 32KB 64b/line 8-way D-cache, 1MB 64b/line 16-way L2 cache
+cpu3: ITLB 48 4KB entries fully associative, 24 4MB entries fully associative
+cpu3: DTLB 64 4KB entries fully associative, 64 4MB entries fully associative
+cpu3: smt 1, core 1, package 0
+ioapic0 at mainbus0: apid 0 pa 0xfec00000, version 21, 24 pins
+ioapic1 at mainbus0: apid 1 pa 0xfec01000, version 21, 32 pins
+acpimcfg0 at acpi0
+acpimcfg0: addr 0xf8000000, bus 0-63
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (GPP0)
+acpiprt2 at acpi0: bus 1 (GPP1)
+acpiprt3 at acpi0: bus 2 (GPP2)
+acpiprt4 at acpi0: bus -1 (GPP3)
+acpiprt5 at acpi0: bus -1 (GPP4)
+acpiprt6 at acpi0: bus -1 (GFX0)
+acpiprt7 at acpi0: bus -1 (GFX2)
+acpiprt8 at acpi0: bus -1 (GFX3)
+acpiprt9 at acpi0: bus -1 (GFX4)
+acpicpu0 at acpi0: C2(0@400 io@0x414), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@400 io@0x414), C1(@1 halt!), PSS
+acpicpu2 at acpi0: C2(0@400 io@0x414), C1(@1 halt!), PSS
+acpicpu3 at acpi0: C2(0@400 io@0x414), C1(@1 halt!), PSS
+acpipwrres0 at acpi0: P0SA
+acpipwrres1 at acpi0: P3SA
+acpipwrres2 at acpi0: P0U3, resource for XHC0
+acpipwrres3 at acpi0: P3U3, resource for XHC0
+acpipwrres4 at acpi0: P0U2, resource for EHC1
+acpipwrres5 at acpi0: P3U2, resource for EHC1
+acpipwrres6 at acpi0: P0SD, resource for SDIO
+acpipwrres7 at acpi0: P3SD, resource for SDIO
+acpipwrres8 at acpi0: P0ST, resource for SATA
+acpipwrres9 at acpi0: P3ST, resource for SATA
+acpipci0 at acpi0 PCI0: 0x00000010 0x00000011 0x00000000
+&quot;RTK0000&quot; at acpi0 not configured
+acpicmos0 at acpi0
+acpibtn0 at acpi0: PWRB
+&quot;BCM4752&quot; at acpi0 not configured
+&quot;BCM2F25&quot; at acpi0 not configured
+&quot;MSFT0101&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+&quot;PNP0C14&quot; at acpi0 not configured
+acpivideo0 at acpi0: VGA_
+acpivout0 at acpivideo0: LCD_
+acpivideo1 at acpi0: VGA_
+cpu0: 1996 MHz: speeds: 2000 1800 1600 1400 1200 1000 900 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 &quot;AMD 15h Root Complex&quot; rev 0x00
+&quot;AMD 15h IOMMU&quot; rev 0x00 at pci0 dev 0 function 2 not configured
+amdgpu0 at pci0 dev 1 function 0 &quot;ATI Carrizo&quot; rev 0x88
+drm0 at amdgpu0
+amdgpu0: msi
+azalia0 at pci0 dev 1 function 1 &quot;ATI Radeon HD Audio&quot; rev 0x00: msi
+azalia0: no supported codecs
+pchb1 at pci0 dev 2 function 0 &quot;AMD 15h Host&quot; rev 0x00
+ppb0 at pci0 dev 2 function 2 &quot;AMD 15h PCIE&quot; rev 0x00: msi
+pci1 at ppb0 bus 1
+re0 at pci1 dev 0 function 0 &quot;Realtek 8168&quot; rev 0x15: RTL8168H/8111H (0x5400), msi, address xx:xx:xx:xx:xx:xx
+rgephy0 at re0 phy 7: RTL8251 PHY, rev. 0
+ppb1 at pci0 dev 2 function 3 &quot;AMD 15h PCIE&quot; rev 0x00: msi
+pci2 at ppb1 bus 2
+iwm0 at pci2 dev 0 function 0 &quot;Intel Dual Band Wireless-AC 3168&quot; rev 0x10, msi
+pchb2 at pci0 dev 3 function 0 &quot;AMD 15h Host&quot; rev 0x00
+&quot;AMD 15h PSP 2.0&quot; rev 0x00 at pci0 dev 8 function 0 not configured
+pchb3 at pci0 dev 9 function 0 &quot;AMD 15h Host&quot; rev 0x00
+azalia1 at pci0 dev 9 function 2 &quot;AMD 15h HD Audio&quot; rev 0x00: apic 1 int 15
+azalia1: codecs: Realtek/0x0255
+audio0 at azalia1
+xhci0 at pci0 dev 16 function 0 &quot;AMD FCH xHCI&quot; rev 0x20: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 &quot;AMD xHCI root hub&quot; rev 3.00/1.00 addr 1
+ahci0 at pci0 dev 17 function 0 &quot;AMD FCH AHCI&quot; rev 0x49: apic 0 int 19, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+ahci0: port 1: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: &lt;ATA, KINGSTON SA400M8, SBFK&gt; naa.50026b76836f18a7
+sd0: 228936MB, 512 bytes/sector, 468862128 sectors, thin
+sd1 at scsibus1 targ 1 lun 0: &lt;ATA, PSSBN016GA27MC0, SBFH&gt; naa.5000000000000000
+sd1: 15272MB, 512 bytes/sector, 31277232 sectors, thin
+ehci0 at pci0 dev 18 function 0 &quot;AMD FCH USB2&quot; rev 0x49: apic 0 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 &quot;AMD EHCI root hub&quot; rev 2.00/1.00 addr 1
+piixpm0 at pci0 dev 20 function 0 &quot;AMD FCH SMBus&quot; rev 0x4a: SMI
+iic0 at piixpm0
+spdmem0 at iic0 addr 0x50: 4GB DDR4 SDRAM PC4-19200 SO-DIMM
+spdmem1 at iic0 addr 0x51: 4GB DDR4 SDRAM PC4-21300 SO-DIMM
+iic1 at piixpm0
+iic1: addr 0x4c 3e=00 48=00 4a=00 4e=00 fc=00 fe=00 words 00=ffff 01=ffff 02=ffff 03=ffff 04=ffff 05=ffff 06=ffff 07=ffff
+pcib0 at pci0 dev 20 function 3 &quot;AMD FCH LPC&quot; rev 0x11
+pchb4 at pci0 dev 24 function 0 &quot;AMD 15h Link Cfg&quot; rev 0x00
+pchb5 at pci0 dev 24 function 1 &quot;AMD 15h Address Map&quot; rev 0x00
+pchb6 at pci0 dev 24 function 2 &quot;AMD 15h DRAM Cfg&quot; rev 0x00
+pchb7 at pci0 dev 24 function 3 &quot;AMD 15h Misc Cfg&quot; rev 0x00
+pchb8 at pci0 dev 24 function 4 &quot;AMD 15h CPU Power&quot; rev 0x00
+pchb9 at pci0 dev 24 function 5 &quot;AMD 15h Misc Cfg&quot; rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+vmm0 at mainbus0: SVM/RVI
+efifb at mainbus0 not configured
+umass0 at uhub0 port 6 configuration 1 interface 0 &quot;Generic USB Mass Storage Device&quot; rev 2.00/2.20 addr 2
+umass0: using SCSI over Bulk-Only
+scsibus2 at umass0: 2 targets, initiator 0
+sd2 at scsibus2 targ 1 lun 0: &lt;Mass, Storage Device, 0 0&gt; serial.14cd6116116AC2101219
+sd2: 915715MB, 512 bytes/sector, 1875385006 sectors
+uhidev0 at uhub0 port 7 configuration 1 interface 0 &quot;Yubico Yubikey NEO OTP+U2F+CCID&quot; rev 2.00/3.49 addr 3
+uhidev0: iclass 3/1
+ukbd0 at uhidev0: 8 variable keys, 6 key codes
+wskbd1 at ukbd0 mux 1
+uhidev1 at uhub0 port 7 configuration 1 interface 1 &quot;Yubico Yubikey NEO OTP+U2F+CCID&quot; rev 2.00/3.49 addr 3
+uhidev1: iclass 3/0
+fido0 at uhidev1: input=64, output=64, feature=0
+ugen0 at uhub0 port 7 configuration 1 &quot;Yubico Yubikey NEO OTP+U2F+CCID&quot; rev 2.00/3.49 addr 3
+ugen1 at uhub0 port 8 &quot;Intel product 0x0aa7&quot; rev 2.00/0.01 addr 4
+uhub2 at uhub1 port 1 configuration 1 interface 0 &quot;Advanced Micro Devices Hub&quot; rev 2.00/0.18 addr 2
+umass1 at uhub2 port 1 configuration 1 interface 0 &quot;SanDisk Ultra&quot; rev 2.10/1.00 addr 3
+umass1: using SCSI over Bulk-Only
+scsibus3 at umass1: 2 targets, initiator 0
+sd3 at scsibus3 targ 1 lun 0: &lt;SanDisk, Ultra, 1.00&gt; removable serial.0781558a090306109264
+sd3: 14663MB, 512 bytes/sector, 30031250 sectors
+uhub3 at uhub2 port 4 configuration 1 interface 0 &quot;Microchip Tech USB2734&quot; rev 2.10/1.28 addr 4
+uhidev2 at uhub3 port 2 configuration 1 interface 0 &quot;Logitech USB Receiver&quot; rev 2.00/24.07 addr 5
+uhidev2: iclass 3/1
+ukbd1 at uhidev2: 8 variable keys, 6 key codes
+wskbd2 at ukbd1 mux 1
+uhidev3 at uhub3 port 2 configuration 1 interface 1 &quot;Logitech USB Receiver&quot; rev 2.00/24.07 addr 5
+uhidev3: iclass 3/1, 8 report ids
+ums0 at uhidev3 reportid 2: 16 buttons, Z and W dir
+wsmouse0 at ums0 mux 0
+uhid0 at uhidev3 reportid 3: input=4, output=0, feature=0
+uhid1 at uhidev3 reportid 4: input=1, output=0, feature=0
+uhid2 at uhidev3 reportid 8: input=1, output=0, feature=0
+uhidev4 at uhub3 port 2 configuration 1 interface 2 &quot;Logitech USB Receiver&quot; rev 2.00/24.07 addr 5
+uhidev4: iclass 3/0, 33 report ids
+uhid3 at uhidev4 reportid 16: input=6, output=6, feature=0
+uhid4 at uhidev4 reportid 17: input=19, output=19, feature=0
+uhid5 at uhidev4 reportid 32: input=14, output=14, feature=0
+uhid6 at uhidev4 reportid 33: input=31, output=31, feature=0
+uhub4 at uhub3 port 3 configuration 1 interface 0 &quot;Standard Microsystems product 0x2514&quot; rev 2.00/0.00 addr 6
+uhidev5 at uhub4 port 1 configuration 1 interface 0 &quot;MOSART Semi. 2.4G Keyboard Mouse&quot; rev 1.10/1.05 addr 7
+uhidev5: iclass 3/1
+ukbd2 at uhidev5: 8 variable keys, 6 key codes
+wskbd3 at ukbd2 mux 1
+uhidev6 at uhub4 port 1 configuration 1 interface 1 &quot;MOSART Semi. 2.4G Keyboard Mouse&quot; rev 1.10/1.05 addr 7
+uhidev6: iclass 3/1, 5 report ids
+uhid7 at uhidev6 reportid 1: input=2, output=0, feature=0
+uhid8 at uhidev6 reportid 2: input=1, output=0, feature=0
+ums1 at uhidev6 reportid 3: 5 buttons, Z and W dir
+wsmouse1 at ums1 mux 0
+uhid9 at uhidev6 reportid 5: input=5, output=6, feature=0
+uvideo0 at uhub4 port 3 configuration 1 interface 0 &quot;F17GAWCM031LON8920A5 Dell_Monitor_IR_Webcam&quot; rev 2.10/77.18 addr 8
+video0 at uvideo0
+uvideo1 at uhub4 port 3 configuration 1 interface 2 &quot;F17GAWCM031LON8920A5 Dell_Monitor_IR_Webcam&quot; rev 2.10/77.18 addr 8
+video1 at uvideo1
+uaudio0 at uhub4 port 4 configuration 1 interface 1 &quot;Dell P2418HZm&quot; rev 2.00/0.03 addr 9
+uaudio0: class v1, full-speed, sync, channels: 2 play, 2 rec, 7 ctls
+audio1 at uaudio0
+uhidev7 at uhub4 port 4 configuration 1 interface 3 &quot;Dell P2418HZm&quot; rev 2.00/0.03 addr 9
+uhidev7: iclass 3/0, 24 report ids
+uhid10 at uhidev7 reportid 1: input=1, output=0, feature=0
+uhid11 at uhidev7 reportid 2: input=2, output=0, feature=0
+uhid12 at uhidev7 reportid 3: input=0, output=2, feature=0
+uhid13 at uhidev7 reportid 4: input=0, output=36, feature=0
+uhid14 at uhidev7 reportid 5: input=32, output=0, feature=0
+uhid15 at uhidev7 reportid 6: input=0, output=36, feature=0
+uhid16 at uhidev7 reportid 7: input=32, output=0, feature=0
+uhid17 at uhidev7 reportid 8: input=1, output=0, feature=0
+uhid18 at uhidev7 reportid 9: input=0, output=1, feature=0
+uhid19 at uhidev7 reportid 23: input=0, output=1, feature=0
+uhid20 at uhidev7 reportid 24: input=0, output=1, feature=0
+uhidev8 at uhub3 port 4 configuration 1 interface 0 &quot;Microchip Tech Hub Controller&quot; rev 2.01/2.00 addr 10
+uhidev8: iclass 3/0
+uhid21 at uhidev8: input=64, output=64, feature=0
+vscsi0 at root
+scsibus4 at vscsi0: 256 targets
+softraid0 at root
+scsibus5 at softraid0: 256 targets
+root on sd1a (e34a2ece92128b25.a) swap on sd1b dump on sd1b
+initializing kernel modesetting (CARRIZO 0x1002:0x9874 0x103C:0x8158 0x88).
+amdgpu_irq_add_domain: stub
+[drm] *ERROR* construct: Invalid Connector ObjectID from Adapter Service for connector index:2! type 0 expected 3
+amdgpu0: 1600x900, 32bpp
+wsdisplay0 at amdgpu0 mux 1: console (std, vt100 emulation), using wskbd0
+wskbd1: connecting to wsdisplay0
+wskbd2: connecting to wsdisplay0
+wskbd3: connecting to wsdisplay0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+iwm0: hw rev 0x220, fw ver 29.1654887522.0, address xx:xx:xx:xx:xx:xx
+
+</pre>
+
+
+
+</div><!-- content -->
+<br />
+<div id="footer">
+All comments/news/posts are the property of their individual owner and
+is presented without warranty of suitability, and solely as an
+informational resource. <br />
+This site Copyright &copy; 2004-2020 NYC*BUG.
+</div><!-- footer -->
+
+</body>
+</html>
+

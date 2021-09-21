@@ -17,4 +17,4 @@ for _dmesg in dmesgs/*.dmesg; do
 done
 
 cat ${_out} | sort | uniq -c | sort -r > dmesgs/dmesg-${_openbsd_rel}.drivers
-rm -f ${_out}
+#rm -f ${_out}
